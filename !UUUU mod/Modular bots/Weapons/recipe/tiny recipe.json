@@ -1,0 +1,209 @@
+[
+  {
+    "type": "recipe",
+    "activity_level": "BRISK_EXERCISE",
+    "result": "bot_tinyhammerbot",
+    "category":  "CC_*",
+    "subcategory":  "CSC_*_NESTED",
+    "skill_used": "electronics",
+    "skills_required": [ [ "mechanics", 2 ], [ "computer", 2 ] ],
+    "reversible": true,
+    "decomp_learn": 8,
+    "autolearn": true,
+    "difficulty": 4,
+    "time": "50 m",
+    "using": [ [ "soldering_standard", 10 ], [ "welding_standard", 2 ] ],
+    "qualities": [
+      { "id": "SCREW", "level": 1 },
+      { "id": "SCREW_FINE", "level": 1 },
+      { "id": "WRENCH", "level": 2 },
+      { "id": "WRENCH_FINE", "level": 1 }
+    ],
+    "components": [ [ [ "bot_tinybot", 1 ] ], [ [ "jackhammer", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "BRISK_EXERCISE",
+    "result": "bot_tinywreckingbot",
+    "category":  "CC_*",
+    "subcategory":  "CSC_*_NESTED",
+    "skill_used": "electronics",
+    "skills_required": [ [ "mechanics", 2 ], [ "computer", 2 ] ],
+    "reversible": true,
+    "decomp_learn": 8,
+    "autolearn": true,
+    "difficulty": 4,
+    "time": "50 m",
+    "using": [ [ "soldering_standard", 10 ], [ "welding_standard", 2 ] ],
+    "qualities": [
+      { "id": "SCREW", "level": 1 },
+      { "id": "SCREW_FINE", "level": 1 },
+      { "id": "WRENCH", "level": 2 },
+      { "id": "WRENCH_FINE", "level": 1 }
+    ],
+    "components": [
+      [ [ "bot_tinybot", 1 ] ],
+      [ [ "scrap", 20 ], [ "steel_chunk", 8 ], [ "steel_lump", 2 ], [ "rock_large", 1 ] ],
+      [ [ "chain", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "BRISK_EXERCISE",
+    "result": "bot_tinysawbot",
+    "category":  "CC_*",
+    "subcategory":  "CSC_*_NESTED",
+    "skill_used": "electronics",
+    "skills_required": [ [ "mechanics", 2 ], [ "computer", 2 ] ],
+    "reversible": true,
+    "decomp_learn": 8,
+    "autolearn": true,
+    "difficulty": 4,
+    "time": "50 m",
+    "using": [ [ "soldering_standard", 10 ], [ "welding_standard", 2 ] ],
+    "qualities": [
+      { "id": "SCREW", "level": 1 },
+      { "id": "SCREW_FINE", "level": 1 },
+      { "id": "WRENCH", "level": 2 },
+      { "id": "WRENCH_FINE", "level": 1 }
+    ],
+    "components": [ [ [ "bot_tinybot", 1 ] ], [ [ "circsaw_blade", 1 ], [ "elec_chainsaw_off", 1 ], [ "chainsaw_off", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "BRISK_EXERCISE",
+    "result": "bot_tinydrillbot",
+    "category":  "CC_*",
+    "subcategory":  "CSC_*_NESTED",
+    "skill_used": "electronics",
+    "skills_required": [ [ "mechanics", 2 ], [ "computer", 2 ] ],
+    "reversible": true,
+    "decomp_learn": 8,
+    "autolearn": true,
+    "difficulty": 4,
+    "time": "50 m",
+    "using": [ [ "soldering_standard", 10 ], [ "welding_standard", 2 ] ],
+    "qualities": [
+      { "id": "SCREW", "level": 1 },
+      { "id": "SCREW_FINE", "level": 1 },
+      { "id": "WRENCH", "level": 2 },
+      { "id": "WRENCH_FINE", "level": 1 }
+    ],
+    "components": [ [ [ "bot_tinybot", 1 ] ], [ [ "cordless_drill", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "BRISK_EXERCISE",
+    "result": "bot_tinybladebot",
+    "category":  "CC_*",
+    "subcategory":  "CSC_*_NESTED",
+    "skill_used": "electronics",
+    "skills_required": [ [ "mechanics", 2 ], [ "computer", 2 ] ],
+    "reversible": true,
+    "decomp_learn": 8,
+    "autolearn": true,
+    "difficulty": 4,
+    "time": "50 m",
+    "using": [ [ "soldering_standard", 10 ], [ "welding_standard", 2 ] ],
+    "qualities": [
+      { "id": "SCREW", "level": 1 },
+      { "id": "SCREW_FINE", "level": 1 },
+      { "id": "WRENCH", "level": 2 },
+      { "id": "WRENCH_FINE", "level": 1 }
+    ],
+    "components": [ [ [ "bot_tinybot", 1 ] ], [ [ "blade", 2 ] ], [ [ "spring", 2 ] ], [ [ "motor", 1 ], [ "motor_tiny", 2 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "BRISK_EXERCISE",
+    "result": "bot_tinyjawbot",
+    "category":  "CC_*",
+    "subcategory":  "CSC_*_NESTED",
+    "skill_used": "electronics",
+    "skills_required": [ [ "mechanics", 2 ], [ "computer", 2 ] ],
+    "reversible": true,
+    "decomp_learn": 8,
+    "autolearn": true,
+    "difficulty": 4,
+    "time": "50 m",
+    "using": [ [ "soldering_standard", 10 ], [ "welding_standard", 2 ] ],
+    "qualities": [
+      { "id": "SCREW", "level": 1 },
+      { "id": "SCREW_FINE", "level": 1 },
+      { "id": "WRENCH", "level": 2 },
+      { "id": "WRENCH_FINE", "level": 1 }
+    ],
+    "components": [
+      [ [ "bot_tinybot", 1 ] ],
+      [ [ "scrap", 20 ], [ "steel_chunk", 8 ], [ "steel_lump", 2 ] ],
+      [ [ "chain", 1 ] ],
+      [ [ "motor", 1 ], [ "motor_tiny", 2 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "BRISK_EXERCISE",
+    "result": "bot_tinybugbot",
+    "category":  "CC_*",
+    "subcategory":  "CSC_*_NESTED",
+    "skill_used": "electronics",
+    "skills_required": [ [ "mechanics", 2 ], [ "computer", 2 ] ],
+    "reversible": true,
+    "decomp_learn": 8,
+    "autolearn": true,
+    "difficulty": 4,
+    "time": "50 m",
+    "using": [ [ "soldering_standard", 10 ], [ "welding_standard", 2 ] ],
+    "qualities": [
+      { "id": "SCREW", "level": 1 },
+      { "id": "SCREW_FINE", "level": 1 },
+      { "id": "WRENCH", "level": 2 },
+      { "id": "WRENCH_FINE", "level": 1 }
+    ],
+    "components": [ [ [ "bot_tinybot", 1 ] ], [ [ "chemical_thrower", 1 ] ], [ [ "boltcutters", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "BRISK_EXERCISE",
+    "result": "bot_tinyflamebot",
+    "category":  "CC_*",
+    "subcategory":  "CSC_*_NESTED",
+    "skill_used": "electronics",
+    "skills_required": [ [ "mechanics", 2 ], [ "computer", 2 ] ],
+    "reversible": true,
+    "decomp_learn": 8,
+    "autolearn": true,
+    "difficulty": 4,
+    "time": "50 m",
+    "using": [ [ "soldering_standard", 10 ], [ "welding_standard", 2 ] ],
+    "qualities": [
+      { "id": "SCREW", "level": 1 },
+      { "id": "SCREW_FINE", "level": 1 },
+      { "id": "WRENCH", "level": 2 },
+      { "id": "WRENCH_FINE", "level": 1 }
+    ],
+    "components": [ [ [ "bot_tinybot", 1 ] ], [ [ "element", 12 ] ], [ [ "boltcutters", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "BRISK_EXERCISE",
+    "result": "bot_tinyflashbot",
+    "category":  "CC_*",
+    "subcategory":  "CSC_*_NESTED",
+    "skill_used": "electronics",
+    "skills_required": [ [ "mechanics", 2 ], [ "computer", 2 ] ],
+    "reversible": true,
+    "decomp_learn": 8,
+    "autolearn": true,
+    "difficulty": 4,
+    "time": "50 m",
+    "using": [ [ "soldering_standard", 10 ], [ "welding_standard", 2 ] ],
+    "qualities": [
+      { "id": "SCREW", "level": 1 },
+      { "id": "SCREW_FINE", "level": 1 },
+      { "id": "WRENCH", "level": 2 },
+      { "id": "WRENCH_FINE", "level": 1 }
+    ],
+    "components": [ [ [ "bot_tinybot", 1 ] ], [ [ "floodlight", 1 ] ], [ [ "boltcutters", 1 ] ] ]
+  }
+]

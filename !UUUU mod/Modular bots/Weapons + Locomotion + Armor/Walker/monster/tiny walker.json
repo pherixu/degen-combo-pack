@@ -1,0 +1,219 @@
+[
+  {
+    "id": "mon_tinyhammerwalkersteel",
+    "copy-from": "mon_tinyhammerwalker",
+    "type": "MONSTER",
+    "name": "tiny hammer walker - steel",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a tiny clamp and a jackhammer. tiny tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 2, "armor_cut": 2, "armor_bullet": 2 }
+  },
+  {
+    "id": "mon_tinyhammerwalkermilitary",
+    "copy-from": "mon_tinyhammerwalker",
+    "type": "MONSTER",
+    "name": "tiny hammer walker - military",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a tiny clamp and a jackhammer. tiny tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 4, "armor_cut": 4, "armor_bullet": 4 }
+  },
+  {
+    "id": "mon_tinyhammerwalkerchitin",
+    "copy-from": "mon_tinyhammerwalker",
+    "type": "MONSTER",
+    "name": "tiny hammer walker - chitin",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a tiny clamp and a jackhammer. tiny tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 3, "armor_cut": 3, "armor_bullet": 3 }
+  },
+  {
+    "id": "mon_tinywreckingwalkersteel",
+    "copy-from": "mon_tinywreckingwalker",
+    "type": "MONSTER",
+    "name": "tiny wrecking walker - steel",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a motor, a set of chains, and a menacing bludgeon. tiny tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 2, "armor_cut": 2, "armor_bullet": 2 }
+  },
+  {
+    "id": "mon_tinywreckingwalkermilitary",
+    "copy-from": "mon_tinywreckingwalker",
+    "type": "MONSTER",
+    "name": "tiny wrecking walker - military",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a motor, a set of chains, and a menacing bludgeon. tiny tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 4, "armor_cut": 4, "armor_bullet": 4 }
+  },
+  {
+    "id": "mon_tinywreckingwalkerchitin",
+    "copy-from": "mon_tinywreckingwalker",
+    "type": "MONSTER",
+    "name": "tiny wrecking walker - chitin",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a motor, a set of chains, and a menacing bludgeon. tiny tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 3, "armor_cut": 3, "armor_bullet": 3 }
+  },
+  {
+    "id": "mon_tinysawwalkersteel",
+    "copy-from": "mon_tinysawwalker",
+    "type": "MONSTER",
+    "name": "tiny saw walker - steel",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with several motors and nasty saws. tiny tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 2, "armor_cut": 2, "armor_bullet": 2 }
+  },
+  {
+    "id": "mon_tinysawwalkermilitary",
+    "copy-from": "mon_tinysawwalker",
+    "type": "MONSTER",
+    "name": "tiny saw walker - military",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with several motors and nasty saws. tiny tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 4, "armor_cut": 4, "armor_bullet": 4 }
+  },
+  {
+    "id": "mon_tinysawwalkerchitin",
+    "copy-from": "mon_tinysawwalker",
+    "type": "MONSTER",
+    "name": "tiny saw walker - chitin",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with several motors and nasty saws. tiny tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 3, "armor_cut": 3, "armor_bullet": 3 }
+  },
+  {
+    "id": "mon_tinydrillwalkersteel",
+    "copy-from": "mon_tinydrillwalker",
+    "type": "MONSTER",
+    "name": "tiny drill walker - steel",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a tiny clamp, meant to hold prey into several powerful drills. tiny tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 2, "armor_cut": 2, "armor_bullet": 2 }
+  },
+  {
+    "id": "mon_tinydrillwalkermilitary",
+    "copy-from": "mon_tinydrillwalker",
+    "type": "MONSTER",
+    "name": "tiny drill walker - military",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a tiny clamp, meant to hold prey into several powerful drills. tiny tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 4, "armor_cut": 4, "armor_bullet": 4 }
+  },
+  {
+    "id": "mon_tinydrillwalkerchitin",
+    "copy-from": "mon_tinydrillwalker",
+    "type": "MONSTER",
+    "name": "tiny drill walker - chitin",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a tiny clamp, meant to hold prey into several powerful drills. tiny tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 3, "armor_cut": 3, "armor_bullet": 3 }
+  },
+  {
+    "id": "mon_tinybladewalkerssteel",
+    "copy-from": "mon_tinybladewalker",
+    "type": "MONSTER",
+    "name": "tiny blade walker - steel",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a tiny, sharp blade attached to heavy duty flexible material, pulled taut by a powerful motor and held by heavy-duty pins. tiny tires are constantly screeching as the bot actively scans the area for threat.",
+    "proportional": { "armor_bash": 2, "armor_cut": 2, "armor_bullet": 2 }
+  },
+  {
+    "id": "mon_tinybladewalkersmilitary",
+    "copy-from": "mon_tinybladewalker",
+    "type": "MONSTER",
+    "name": "tiny blade walker - military",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a tiny, sharp blade attached to heavy duty flexible material, pulled taut by a powerful motor and held by heavy-duty pins. tiny tires are constantly screeching as the bot actively scans the area for threat.",
+    "proportional": { "armor_bash": 4, "armor_cut": 4, "armor_bullet": 4 }
+  },
+  {
+    "id": "mon_tinybladewalkerschitin",
+    "copy-from": "mon_tinybladewalker",
+    "type": "MONSTER",
+    "name": "tiny blade walker - chitin",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a tiny, sharp blade attached to heavy duty flexible material, pulled taut by a powerful motor and held by heavy-duty pins. tiny tires are constantly screeching as the bot actively scans the area for threat.",
+    "proportional": { "armor_bash": 3, "armor_cut": 3, "armor_bullet": 3 }
+  },
+  {
+    "id": "mon_tinyjawwalkersteel",
+    "copy-from": "mon_tinyjawwalker",
+    "type": "MONSTER",
+    "name": "tiny jaw walker - steel",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a massive hydraulic jaw. tiny tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 2, "armor_cut": 2, "armor_bullet": 2 }
+  },
+  {
+    "id": "mon_tinyjawwalkermilitary",
+    "copy-from": "mon_tinyjawwalker",
+    "type": "MONSTER",
+    "name": "tiny jaw walker - military",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a massive hydraulic jaw. tiny tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 4, "armor_cut": 4, "armor_bullet": 4 }
+  },
+  {
+    "id": "mon_tinyjawwalkerchitin",
+    "copy-from": "mon_tinyjawwalker",
+    "type": "MONSTER",
+    "name": "tiny jaw walker - chitin",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a massive hydraulic jaw. tiny tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 3, "armor_cut": 3, "armor_bullet": 3 }
+  },
+  {
+    "id": "mon_tinyflamewalkersteel",
+    "copy-from": "mon_tinyflamewalker",
+    "type": "MONSTER",
+    "name": "tiny flame walker - steel",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a massive hydraulic flame. tiny tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 2, "armor_cut": 2, "armor_bullet": 2 }
+  },
+  {
+    "id": "mon_tinyflamewalkermilitary",
+    "copy-from": "mon_tinyflamewalker",
+    "type": "MONSTER",
+    "name": "tiny flame walker - military",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a massive hydraulic flame. tiny tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 4, "armor_cut": 4, "armor_bullet": 4 }
+  },
+  {
+    "id": "mon_tinyflamewalkerchitin",
+    "copy-from": "mon_tinyflamewalker",
+    "type": "MONSTER",
+    "name": "tiny flame walker - chitin",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a massive hydraulic flame. tiny tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 3, "armor_cut": 3, "armor_bullet": 3 }
+  },
+  {
+    "id": "mon_tinybugwalkersteel",
+    "copy-from": "mon_tinybugwalker",
+    "type": "MONSTER",
+    "name": "tiny exterminator walker - steel",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with tanks of insecticidal gas and powerful pincers. tiny tires are constantly screeching as the bot actively scans the area for threats.",
+    "revert_to_itype": "bot_tinybugbot",
+    "proportional": { "armor_bash": 2, "armor_cut": 2, "armor_bullet": 2 }
+  },
+  {
+    "id": "mon_tinybugwalkermilitary",
+    "copy-from": "mon_tinybugwalker",
+    "type": "MONSTER",
+    "name": "tiny exterminator walker - military",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with tanks of insecticidal gas and powerful pincers. tiny tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 4, "armor_cut": 4, "armor_bullet": 4 }
+  },
+  {
+    "id": "mon_tinybugwalkerchitin",
+    "copy-from": "mon_tinybugwalker",
+    "type": "MONSTER",
+    "name": "tiny exterminator walker - chitin",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with tanks of insecticidal gas and powerful pincers. tiny tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 3, "armor_cut": 3, "armor_bullet": 3 }
+  },
+  {
+    "id": "mon_tinyflashwalkersteel",
+    "copy-from": "mon_tinyflashwalker",
+    "type": "MONSTER",
+    "name": "tiny flash walker - steel",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with several hoses attached to a tiny tank of flash and powerful pincers. tiny tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 2, "armor_cut": 2, "armor_bullet": 2 }
+  },
+  {
+    "id": "mon_tinyflashwalkermilitary",
+    "copy-from": "mon_tinyflashwalker",
+    "type": "MONSTER",
+    "name": "tiny flash walker - military",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with several hoses attached to a tiny tank of flash and powerful pincers. tiny tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 4, "armor_cut": 4, "armor_bullet": 4 }
+  },
+  {
+    "id": "mon_tinyflashwalkerchitin",
+    "copy-from": "mon_tinyflashwalker",
+    "type": "MONSTER",
+    "name": "tiny flash walker - chitin",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with several hoses attached to a tiny tank of flash and powerful pincers. tiny tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 3, "armor_cut": 3, "armor_bullet": 3 }
+  }
+]

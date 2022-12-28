@@ -1,0 +1,15 @@
+[
+  {
+    "name": "GROUP_MALL",
+    "type": "monstergroup",
+    "monsters": [
+      { "monster": "mon_feral_human_pipe", "weight": 820 },
+      { "monster": "mon_feral_human_crowbar", "weight": 50 },
+      { "monster": "mon_feral_sapien_spear", "weight": 30, "cost_multiplier": 2 },
+      { "monster": "mon_feral_labsecurity_9mm", "weight": 25, "cost_multiplier": 2 },
+      { "monster": "mon_feral_prepper", "weight": 32, "cost_multiplier": 2 },
+      { "monster": "mon_feral_human_tool", "weight": 20 },
+      { "monster": "mon_feral_human_axe", "weight": 20 }
+    ]
+  }
+]

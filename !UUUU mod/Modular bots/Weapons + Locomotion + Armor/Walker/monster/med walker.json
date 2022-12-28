@@ -1,0 +1,219 @@
+[
+  {
+    "id": "mon_mediumhammerwalkersteel",
+    "copy-from": "mon_mediumhammerwalker",
+    "type": "MONSTER",
+    "name": "medium hammer walker - steel",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a medium clamp and a jackhammer. medium tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 2, "armor_cut": 2, "armor_bullet": 2 }
+  },
+  {
+    "id": "mon_mediumhammerwalkermilitary",
+    "copy-from": "mon_mediumhammerwalker",
+    "type": "MONSTER",
+    "name": "medium hammer walker - military",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a medium clamp and a jackhammer. medium tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 4, "armor_cut": 4, "armor_bullet": 4 }
+  },
+  {
+    "id": "mon_mediumhammerwalkerchitin",
+    "copy-from": "mon_mediumhammerwalker",
+    "type": "MONSTER",
+    "name": "medium hammer walker - chitin",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a medium clamp and a jackhammer. medium tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 3, "armor_cut": 3, "armor_bullet": 3 }
+  },
+  {
+    "id": "mon_mediumwreckingwalkersteel",
+    "copy-from": "mon_mediumwreckingwalker",
+    "type": "MONSTER",
+    "name": "medium wrecking walker - steel",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a motor, a set of chains, and a menacing bludgeon. medium tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 2, "armor_cut": 2, "armor_bullet": 2 }
+  },
+  {
+    "id": "mon_mediumwreckingwalkermilitary",
+    "copy-from": "mon_mediumwreckingwalker",
+    "type": "MONSTER",
+    "name": "medium wrecking walker - military",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a motor, a set of chains, and a menacing bludgeon. medium tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 4, "armor_cut": 4, "armor_bullet": 4 }
+  },
+  {
+    "id": "mon_mediumwreckingwalkerchitin",
+    "copy-from": "mon_mediumwreckingwalker",
+    "type": "MONSTER",
+    "name": "medium wrecking walker - chitin",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a motor, a set of chains, and a menacing bludgeon. medium tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 3, "armor_cut": 3, "armor_bullet": 3 }
+  },
+  {
+    "id": "mon_mediumsawwalkersteel",
+    "copy-from": "mon_mediumsawwalker",
+    "type": "MONSTER",
+    "name": "medium saw walker - steel",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with several motors and nasty saws. medium tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 2, "armor_cut": 2, "armor_bullet": 2 }
+  },
+  {
+    "id": "mon_mediumsawwalkermilitary",
+    "copy-from": "mon_mediumsawwalker",
+    "type": "MONSTER",
+    "name": "medium saw walker - military",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with several motors and nasty saws. medium tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 4, "armor_cut": 4, "armor_bullet": 4 }
+  },
+  {
+    "id": "mon_mediumsawwalkerchitin",
+    "copy-from": "mon_mediumsawwalker",
+    "type": "MONSTER",
+    "name": "medium saw walker - chitin",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with several motors and nasty saws. medium tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 3, "armor_cut": 3, "armor_bullet": 3 }
+  },
+  {
+    "id": "mon_mediumdrillwalkersteel",
+    "copy-from": "mon_mediumdrillwalker",
+    "type": "MONSTER",
+    "name": "medium drill walker - steel",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a medium clamp, meant to hold prey into several powerful drills. medium tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 2, "armor_cut": 2, "armor_bullet": 2 }
+  },
+  {
+    "id": "mon_mediumdrillwalkermilitary",
+    "copy-from": "mon_mediumdrillwalker",
+    "type": "MONSTER",
+    "name": "medium drill walker - military",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a medium clamp, meant to hold prey into several powerful drills. medium tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 4, "armor_cut": 4, "armor_bullet": 4 }
+  },
+  {
+    "id": "mon_mediumdrillwalkerchitin",
+    "copy-from": "mon_mediumdrillwalker",
+    "type": "MONSTER",
+    "name": "medium drill walker - chitin",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a medium clamp, meant to hold prey into several powerful drills. medium tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 3, "armor_cut": 3, "armor_bullet": 3 }
+  },
+  {
+    "id": "mon_mediumbladewalkersteel",
+    "copy-from": "mon_mediumbladewalker",
+    "type": "MONSTER",
+    "name": "medium blade walker - steel",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a medium, sharp blade attached to heavy duty flexible material, pulled taut by a powerful motor and held by heavy-duty pins. medium tires are constantly screeching as the bot actively scans the area for threat.",
+    "proportional": { "armor_bash": 2, "armor_cut": 2, "armor_bullet": 2 }
+  },
+  {
+    "id": "mon_mediumbladewalkermilitary",
+    "copy-from": "mon_mediumbladewalker",
+    "type": "MONSTER",
+    "name": "medium blade walker - military",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a medium, sharp blade attached to heavy duty flexible material, pulled taut by a powerful motor and held by heavy-duty pins. medium tires are constantly screeching as the bot actively scans the area for threat.",
+    "proportional": { "armor_bash": 4, "armor_cut": 4, "armor_bullet": 4 }
+  },
+  {
+    "id": "mon_mediumbladewalkerchitin",
+    "copy-from": "mon_mediumbladewalker",
+    "type": "MONSTER",
+    "name": "medium blade walker - chitin",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a medium, sharp blade attached to heavy duty flexible material, pulled taut by a powerful motor and held by heavy-duty pins. medium tires are constantly screeching as the bot actively scans the area for threat.",
+    "proportional": { "armor_bash": 3, "armor_cut": 3, "armor_bullet": 3 }
+  },
+  {
+    "id": "mon_mediumjawwalkersteel",
+    "copy-from": "mon_mediumjawwalker",
+    "type": "MONSTER",
+    "name": "medium jaw walker - steel",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a massive hydraulic jaw. medium tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 2, "armor_cut": 2, "armor_bullet": 2 }
+  },
+  {
+    "id": "mon_mediumjawwalkermilitary",
+    "copy-from": "mon_mediumjawwalker",
+    "type": "MONSTER",
+    "name": "medium jaw walker - military",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a massive hydraulic jaw. medium tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 4, "armor_cut": 4, "armor_bullet": 4 }
+  },
+  {
+    "id": "mon_mediumjawwalkerchitin",
+    "copy-from": "mon_mediumjawwalker",
+    "type": "MONSTER",
+    "name": "medium jaw walker - chitin",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a massive hydraulic jaw. medium tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 3, "armor_cut": 3, "armor_bullet": 3 }
+  },
+  {
+    "id": "mon_mediumflamewalkersteel",
+    "copy-from": "mon_mediumflamewalker",
+    "type": "MONSTER",
+    "name": "medium flame walker - steel",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a massive hydraulic flame. medium tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 2, "armor_cut": 2, "armor_bullet": 2 }
+  },
+  {
+    "id": "mon_mediumflamewalkermilitary",
+    "copy-from": "mon_mediumflamewalker",
+    "type": "MONSTER",
+    "name": "medium flame walker - military",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a massive hydraulic flame. medium tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 4, "armor_cut": 4, "armor_bullet": 4 }
+  },
+  {
+    "id": "mon_mediumflamewalkerchitin",
+    "copy-from": "mon_mediumflamewalker",
+    "type": "MONSTER",
+    "name": "medium flame walker - chitin",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a massive hydraulic flame. medium tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 3, "armor_cut": 3, "armor_bullet": 3 }
+  },
+  {
+    "id": "mon_mediumbugwalkersteel",
+    "copy-from": "mon_mediumbugwalker",
+    "type": "MONSTER",
+    "name": "medium exterminator walker - steel",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with tanks of insecticidal gas and powerful pincers. medium tires are constantly screeching as the bot actively scans the area for threats.",
+    "revert_to_itype": "bot_mediumbugbot",
+    "proportional": { "armor_bash": 2, "armor_cut": 2, "armor_bullet": 2 }
+  },
+  {
+    "id": "mon_mediumbugwalkermilitary",
+    "copy-from": "mon_mediumbugwalker",
+    "type": "MONSTER",
+    "name": "medium exterminator walker - military",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with tanks of insecticidal gas and powerful pincers. medium tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 4, "armor_cut": 4, "armor_bullet": 4 }
+  },
+  {
+    "id": "mon_mediumbugwalkerchitin",
+    "copy-from": "mon_mediumbugwalker",
+    "type": "MONSTER",
+    "name": "medium exterminator walker - chitin",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with tanks of insecticidal gas and powerful pincers. medium tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 3, "armor_cut": 3, "armor_bullet": 3 }
+  },
+  {
+    "id": "mon_mediumflashwalkersteel",
+    "copy-from": "mon_mediumflashwalker",
+    "type": "MONSTER",
+    "name": "medium flash walker - steel",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with several hoses attached to a medium tank of flash and powerful pincers. medium tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 2, "armor_cut": 2, "armor_bullet": 2 }
+  },
+  {
+    "id": "mon_mediumflashwalkermilitary",
+    "copy-from": "mon_mediumflashwalker",
+    "type": "MONSTER",
+    "name": "medium flash walker - military",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with several hoses attached to a medium tank of flash and powerful pincers. medium tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 4, "armor_cut": 4, "armor_bullet": 4 }
+  },
+  {
+    "id": "mon_mediumflashwalkerchitin",
+    "copy-from": "mon_mediumflashwalker",
+    "type": "MONSTER",
+    "name": "medium flash walker - chitin",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with several hoses attached to a medium tank of flash and powerful pincers. medium tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 3, "armor_cut": 3, "armor_bullet": 3 }
+  }
+]

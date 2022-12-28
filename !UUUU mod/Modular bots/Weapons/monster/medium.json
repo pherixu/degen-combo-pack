@@ -1,0 +1,136 @@
+[
+  {
+    "id": "mon_mediumhammerbot",
+    "copy-from": "mon_mediumbot",
+    "type": "MONSTER",
+    "name": "medium hammer bot",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a large clamp and a jackhammer",
+    "melee_skill": 4,
+    "melee_dice": 2,
+    "melee_dice_sides": 8,
+    "melee_damage": [ { "damage_type": "cut", "amount": 2 } ],
+    "special_attacks": [ [ "GRAB", 30 ] ],
+    "extend": { "flags": [ "GRABS" ] }
+  },
+  {
+    "id": "mon_mediumwreckingbot",
+    "copy-from": "mon_mediumbot",
+    "type": "MONSTER",
+    "name": "medium wrecking bot",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a motor, a set of chains, and a menacing bludgeon",
+    "special_attacks": [ { "id": "smash", "throw_strength": 30 } ],
+    "melee_skill": 1,
+    "melee_dice": 4,
+    "melee_dice_sides": 12,
+    "melee_damage": [ { "damage_type": "cut", "amount": 0 } ]
+  },
+  {
+    "id": "mon_mediumsawbot",
+    "copy-from": "mon_mediumbot",
+    "type": "MONSTER",
+    "name": "medium saw bot",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with several motors and nasty saws",
+    "melee_skill": 4,
+    "melee_dice": 2,
+    "melee_dice_sides": 4,
+    "melee_damage": [ { "damage_type": "cut", "amount": 20 } ]
+  },
+  {
+    "id": "mon_mediumdrillbot",
+    "copy-from": "mon_mediumbot",
+    "type": "MONSTER",
+    "name": "medium drill bot",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a large clamp, meant to hold prey into several powerful drills",
+    "melee_skill": 4,
+    "melee_dice": 2,
+    "melee_dice_sides": 6,
+    "melee_damage": [ { "damage_type": "cut", "amount": 10 } ],
+    "special_attacks": [ [ "GRAB", 30 ] ],
+    "extend": { "flags": [ "GRABS" ] }
+  },
+  {
+    "id": "mon_mediumbladebot",
+    "copy-from": "mon_mediumbot",
+    "type": "MONSTER",
+    "name": "medium blade bot",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a large, sharp blade attached to heavy duty flexible material, pulled taut by a powerful motor and held by heavy-duty pins..",
+    "melee_skill": 6,
+    "melee_dice": 2,
+    "melee_dice_sides": 6,
+    "melee_damage": [ { "damage_type": "cut", "amount": 16 } ]
+  },
+  {
+    "id": "mon_mediumjawbot",
+    "copy-from": "mon_mediumbot",
+    "type": "MONSTER",
+    "name": "medium jaw bot",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a massive hydraulic jaw",
+    "special_attacks": [ [ "GRAB", 30 ] ],
+    "extend": { "flags": [ "GRABS" ] },
+    "melee_skill": 6,
+    "melee_dice": 4,
+    "melee_dice_sides": 4,
+    "melee_damage": [ { "damage_type": "cut", "amount": 12 } ]
+  },
+  {
+    "id": "mon_mediumbugbot",
+    "copy-from": "mon_mediumbot",
+    "type": "MONSTER",
+    "name": "medium exterminator bot",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with tanks of insecticidal gas and powerful pincers",
+    "special_attacks": [ { "type": "spell", "spell_data": { "id": "insectgas_attack", "min_level": 3 }, "cooldown": 10 } ],
+    "melee_skill": 2,
+    "melee_dice": 2,
+    "melee_dice_sides": 10,
+    "melee_damage": [ { "damage_type": "cut", "amount": 2 } ]
+  },
+  {
+    "id": "mon_mediumflamebot",
+    "copy-from": "mon_mediumbot",
+    "type": "MONSTER",
+    "name": "medium flame bot",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with tanks of insecticidal gas and powerful pincers",
+        "special_attacks": [
+      {
+        "type": "gun",
+        "cooldown": 1,
+        "gun_type": "rm451_flamethrower",
+        "ammo_type": "napalm",
+        "fake_skills": [ [ "gun", 4 ], [ "launcher", 5 ] ],
+        "fake_dex": 10,
+        "no_ammo_sound": "hiss!",
+        "ranges": [ [ 0, 10, "DEFAULT" ] ],
+        "require_targeting_player": true,
+        "require_targeting_npc": true,
+        "require_targeting_monster": true,
+        "targeting_cost": 800,
+        "targeting_timeout_extend": -10,
+        "targeting_sound": "\"Hostile Detected.\"",
+        "targeting_volume": 10
+      }
+    ],
+    "melee_skill": 2,
+	"starting_ammo": { "napalm": 6000 },
+    "melee_dice": 2,
+    "melee_dice_sides": 6,
+    "melee_damage": [ { "damage_type": "heat", "amount": 20 } ],
+	"extend": { "flags": [ "FIREPROOF" ] }
+  },
+  {
+    "id": "mon_mediumflashbot",
+    "copy-from": "mon_mediumbot",
+    "type": "MONSTER",
+    "name": "medium flash bot",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with several hoses attached to a large tank of flash and powerful pincers.",
+	"special_attacks": [
+    [ "SEARCHLIGHT", 1 ],
+    { "type": "spell", "spell_data": { "id": "flashburst_attack", "min_level": 3 }, "cooldown": 10 }
+	],
+    "melee_skill": 2,
+    "melee_dice": 2,
+    "melee_dice_sides": 10,
+	"luminance": 40,
+    "melee_damage": [ { "damage_type": "cut", "amount": 2 } ],
+    "extend": { "flags": [ "HARDTOSHOOT" ] }
+  }
+]

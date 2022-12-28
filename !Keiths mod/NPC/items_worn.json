@@ -1,0 +1,151 @@
+[
+  {
+    "type": "item_group",
+    "id": "NC_MAGIC_OPERATOR_worn",
+    "subtype": "collection",
+    "items": [
+      { "item": "parabolan_silk_undersuit", "prob": 1 },
+      { "group": "NC_SOLDIER_gloves" },
+      { "item": "jacket_eod_light" },
+      { "item": "trousers_eod_light" },
+      { "item": "observation_platform", "prob": 1 },
+      { "item": "tac_fullhelmet" },
+      { "group": "NC_SOLDIER_shoes" },
+      { "item": "spearsling" },
+      { "item": "magic_mantle" },
+      { "item": "flight_aura", "prob": 1 },
+      { "item": "magicians_duff" },
+      { "item": "back_holster" },
+      { "item": "sheath" },
+      { "item": "ring_signet" },
+      { "item": "holster" },
+      { "item": "sf_watch_stasis", "prob": 1 },
+      { "item": "professional_pendant", "prob": 1 },
+      { "item": "suit_aura" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_MAGIC_OPERATOR_carry",
+    "subtype": "collection",
+    "items": [
+      { "group": "enchanted_melee_weapons_plus2" },
+      { "group": "NC_SOLDIER_misc" },
+      { "group": "operator_pistols" },
+      { "group": "NC_MAGIC_OPERATOR_weapon" },
+      { "group": "any_MRE", "count": [ 1, 5 ] },
+      { "item": "classified_intelligence" },
+      { "item": "money_hundred", "count": [ 10, 300 ] },
+      { "item": "crystallized_mana" },
+      { "item": "quikclot", "count": [ 10, 15 ] }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_MAGIC_OPERATOR2_carry",
+    "subtype": "collection",
+    "items": [
+      { "group": "enchanted_melee_weapons_plus2" },
+      { "group": "operator_pistols" },
+      { "group": "NC_MAGIC_OPERATOR_weapon" },
+      { "group": "any_MRE", "count": [ 1, 5 ] },
+      { "item": "classified_intelligence", "prob": 33 },
+      { "item": "crystallized_mana" },
+      { "item": "money_hundred", "count": [ 10, 100 ] },
+      { "group": "NC_SOLDIER_misc" },
+      { "item": "quikclot", "count": [ 10, 15 ] }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_MAGIC_OPERATOR3_carry",
+    "subtype": "collection",
+    "items": [
+      { "group": "enchanted_melee_weapons_plus2" },
+      { "group": "operator_pistols" },
+      { "group": "NC_MAGIC_OPERATOR_weapon" },
+      { "group": "any_MRE", "count": [ 1, 5 ] },
+      { "item": "money_hundred", "count": [ 10, 500 ] },
+      { "item": "crystallized_mana" },
+      { "group": "NC_SOLDIER_misc" },
+      { "item": "quikclot", "count": [ 10, 15 ] }
+    ]
+  },
+  {
+    "id": "operator_pistols",
+    "type": "item_group",
+    "subtype": "collection",
+    "items": [
+      { "group": "medusa_with_ammo", "prob": 25 },
+      { "group": "redhawk_with_ammo", "prob": 25 },
+      { "group": "ragingbull_with_ammo", "prob": 25 },
+      { "group": "flintlock_with_ammo", "prob": 25 }
+    ]
+  },
+  {
+    "id": "ragingbull_with_ammo",
+    "type": "item_group",
+    "subtype": "collection",
+    "items": [ { "item": "raging_bull" }, { "item": "410shot_000", "count": [ 1, 3 ] } ]
+  },
+  {
+    "id": "medusa_with_ammo",
+    "type": "item_group",
+    "subtype": "collection",
+    "items": [ { "item": "m47a1" }, { "item": "357mag_fmj", "count": [ 1, 2 ] } ]
+  },
+  {
+    "id": "redhawk_with_ammo",
+    "type": "item_group",
+    "subtype": "collection",
+    "items": [ { "item": "ruger_redhawk" }, { "item": "44magnum", "count": [ 1, 3 ] } ]
+  },
+  {
+    "id": "flintlock_with_ammo",
+    "type": "item_group",
+    "subtype": "collection",
+    "items": [ { "item": "enchanted_blackpowder_pistol" }, { "item": "flintlock_ammo", "count": [ 1, 4 ] } ]
+  },
+  {
+    "id": "gunblade_with_ammo",
+    "type": "item_group",
+    "subtype": "collection",
+    "items": [ { "item": "gunblade" }, { "item": "shot_dragon", "count": [ 6, 12 ] } ]
+  },
+  {
+    "id": "saw_with_ammo",
+    "type": "item_group",
+    "subtype": "collection",
+    "items": [ { "item": "pocketsaw" }, { "item": "belt223", "count": [ 1, 3 ] } ]
+  },
+  {
+    "id": "bow_with_ammo",
+    "type": "item_group",
+    "subtype": "collection",
+    "items": [ { "item": "ichaival" }, { "item": "arrow_odin", "count": [ 1, 3 ] } ]
+  },
+  {
+    "id": "sniper_with_ammo",
+    "type": "item_group",
+    "subtype": "collection",
+    "items": [ { "item": "bfg50" }, { "item": "50bmg" } ]
+  },
+  {
+    "id": "boreal_with_ammo",
+    "type": "item_group",
+    "subtype": "collection",
+    "items": [ { "item": "boreal_mosin" }, { "item": "308", "count": [ 1, 5 ] } ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_MAGIC_OPERATOR_weapon",
+    "subtype": "collection",
+    "items": [
+      { "group": "gunblade_with_ammo", "prob": 20 },
+      { "group": "sniper_with_ammo", "prob": 20 },
+      { "group": "boreal_with_ammo", "prob": 20 },
+      { "group": "bow_with_ammo", "prob": 20 },
+      { "group": "saw_with_ammo", "prob": 20 }
+    ]
+  }
+]

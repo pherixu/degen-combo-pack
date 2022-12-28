@@ -1,0 +1,67 @@
+[
+  {
+    "type": "overmap_terrain",
+    "id": "magic_academy_ground_operator",
+    "name": "magic academy",
+    "sym": "#",
+    "color": "light_blue",
+    "looks_like": "campus_lecture_0_0_0",
+    "see_cost": 5,
+    "mondensity": 2,
+    "flags": [ "SIDEWALK" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "magic_academy_2nd_operator",
+    "name": "magic academy",
+    "sym": "#",
+    "color": "light_blue",
+    "looks_like": "campus_lecture_0_0_1",
+    "mondensity": 2,
+    "see_cost": 5
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "magic_academy_3rd_operator",
+    "copy-from": "magic_academy_2nd_operator"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "magic_academy_4th_operator",
+    "copy-from": "magic_academy_3rd_operator"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "magic_academy_5th_operator",
+    "copy-from": "magic_academy_4th_operator"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "magic_academy_6th_operator",
+    "copy-from": "magic_academy_5th_operator"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "magic_academy_7th_operator",
+    "copy-from": "magic_academy_6th_operator"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "magic_academy_8th_operator",
+    "copy-from": "magic_academy_7th_operator"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "magic_academy_basement_operator",
+    "copy-from": "magic_academy_2nd_operator"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "magic_academy_roof_operator",
+    "name": "magic academy",
+    "sym": "#",
+    "color": "light_blue",
+    "looks_like": "campus_lecture_0_0_3",
+    "see_cost": 5
+  }
+]

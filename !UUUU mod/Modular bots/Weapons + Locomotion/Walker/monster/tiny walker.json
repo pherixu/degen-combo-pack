@@ -1,0 +1,101 @@
+[
+  {
+    "id": "mon_tinyhammerwalker",
+    "copy-from": "mon_tinyhammerbot",
+    "type": "MONSTER",
+    "looks_like": "mon_skitterbot",
+    "name": "tiny hammer walker",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a tiny clamp and a jackhammer. tiny spidery legs clink noisily against the ground.",
+    "revert_to_itype": "bot_tinyhammerwalker",
+    "extend": { "special_attacks": [ { "type": "leap", "cooldown": 10, "max_range": 4 } ] },
+    "relative": { "speed": 140 }
+  },
+  {
+    "id": "mon_tinywreckingwalker",
+    "copy-from": "mon_tinywreckingbot",
+    "type": "MONSTER",
+    "looks_like": "mon_skitterbot",
+    "name": "tiny wrecking walker",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a motor, a set of chains, and a menacing bludgeon. tiny spidery legs clink noisily against the ground.",
+    "revert_to_itype": "bot_tinywreckingwalker",
+    "extend": { "special_attacks": [ { "type": "leap", "cooldown": 10, "max_range": 4 } ] },
+    "relative": { "speed": 140 }
+  },
+  {
+    "id": "mon_tinysawwalker",
+    "copy-from": "mon_tinysawbot",
+    "type": "MONSTER",
+    "looks_like": "mon_skitterbot",
+    "name": "tiny saw walker",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with several motors and nasty saws. tiny spidery legs clink noisily against the ground.",
+    "revert_to_itype": "bot_tinysawwalker",
+    "extend": { "special_attacks": [ { "type": "leap", "cooldown": 10, "max_range": 4 } ] },
+    "relative": { "speed": 140 }
+  },
+  {
+    "id": "mon_tinydrillwalker",
+    "copy-from": "mon_tinydrillbot",
+    "type": "MONSTER",
+    "looks_like": "mon_skitterbot",
+    "name": "tiny drill walker",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a tiny clamp, meant to hold prey into several powerful drills. tiny spidery legs clink noisily against the ground.",
+    "revert_to_itype": "bot_tinydrillwalker",
+    "extend": { "special_attacks": [ { "type": "leap", "cooldown": 10, "max_range": 4 } ] },
+    "relative": { "speed": 140 }
+  },
+  {
+    "id": "mon_tinybladewalker",
+    "copy-from": "mon_tinybladebot",
+    "type": "MONSTER",
+    "looks_like": "mon_skitterbot",
+    "name": "tiny blade walker",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a tiny, sharp blade attached to heavy duty flexible material, pulled taut by a powerful motor and held by heavy-duty pins..",
+    "revert_to_itype": "bot_tinybladewalker",
+    "extend": { "special_attacks": [ { "type": "leap", "cooldown": 10, "max_range": 4 } ] },
+    "relative": { "speed": 140 }
+  },
+  {
+    "id": "mon_tinyjawwalker",
+    "copy-from": "mon_tinyjawbot",
+    "type": "MONSTER",
+    "looks_like": "mon_skitterbot",
+    "name": "tiny jaw walker",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a massive hydraulic jaw. tiny spidery legs clink noisily against the ground.",
+    "revert_to_itype": "bot_tinyjawwalker",
+    "extend": { "special_attacks": [ { "type": "leap", "cooldown": 10, "max_range": 4 } ] },
+    "relative": { "speed": 140 }
+  },
+  {
+    "id": "mon_tinyflamewalker",
+    "copy-from": "mon_tinyflamebot",
+    "type": "MONSTER",
+    "looks_like": "mon_skitterbot",
+    "name": "tiny flame walker",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a massive hydraulic flame. tiny spidery legs clink noisily against the ground.",
+    "revert_to_itype": "bot_tinyflamewalker",
+    "extend": { "special_attacks": [ { "type": "leap", "cooldown": 10, "max_range": 4 } ] },
+    "relative": { "speed": 140 }
+  },
+  {
+    "id": "mon_tinybugwalker",
+    "copy-from": "mon_tinybugbot",
+    "type": "MONSTER",
+    "looks_like": "mon_skitterbot",
+    "name": "tiny exterminator walker",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with tanks of insecticidal gas and powerful pincers. tiny spidery legs clink noisily against the ground.",
+    "revert_to_itype": "bot_tinybugwalker",
+    "extend": { "special_attacks": [ { "type": "leap", "cooldown": 10, "max_range": 4 } ] },
+    "relative": { "speed": 140 }
+  },
+  {
+    "id": "mon_tinyflashwalker",
+    "copy-from": "mon_tinyflashbot",
+    "type": "MONSTER",
+    "looks_like": "mon_skitterbot",
+    "name": "tiny flash walker",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with several hoses attached to a tiny tank of flash and powerful pincers. tiny spidery legs clink noisily against the ground.",
+    "revert_to_itype": "bot_tinyflashwalker",
+    "extend": { "special_attacks": [ { "type": "leap", "cooldown": 10, "max_range": 4 } ] },
+    "relative": { "speed": 140 }
+  }
+]

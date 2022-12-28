@@ -1,0 +1,341 @@
+[
+  {
+    "id": "spells_for_the_modern_professional",
+    "type": "BOOK",
+    "category": "manuals",
+    "name": { "str": "Spells for the Modern Professional", "str_pl": "copies of Spells for the Modern Professional" },
+    "//": "2 Magus, 1 classless spell",
+    "description": "A tome for only the bravest of readers, it's seemingly infinite ramblings on the importance of order in the wizarding world are occassionally interrupted with genuinely useful spells.",
+    "weight": "1200 g",
+    "volume": "1200 ml",
+    "price": 200000,
+    "material": [ "paper" ],
+    "symbol": "?",
+    "color": "light_red",
+    "fun": -6,
+    "use_action": {
+      "type": "learn_spell",
+      "spells": [ "first_things_first", "summon_bike", "summon_lab_rat", "summon_cold", "magic_drive", "beautification" ]
+    }
+  },
+  {
+    "id": "big_book_of_metaknowledge",
+    "type": "BOOK",
+    "category": "manuals",
+    "name": { "str": "The Big Book of Metaknowledge", "str_pl": "copies of The Big Book of Metaknowledge" },
+    "description": "A legendary book amongst the tabletop community, written by an author who later died of 'unnatural causes.' The prolific book is written like most game manuals except the information contained with isn't describing a game, it's describing the reality the author truly perceives. Sections like 'How to Avoid Miscommunication With the Devil,' and 'Walking In Their Shoes' have a tendency to diatribe, not so subtely ranting about how black and psychic operations being performed by the government are negatively effecting the vibrational field of our reality, attracting paradimensional alien life forms that to us may as well be actual bonified demons. He describes how these creatures want to enslave humanity by trapping them under the weight of financial burden, something they invented. Some of this is disguised behind magical-mumbo-jumbo and the like, but most of it's written like a history book for a world that doesn't exist. The author takes this opportunity to explain how there are secret labs all over the world being used by wizards 'of a Gold and Silver Order' to conduct dark rituals in exchange for power from these 'demons'. He explains that the recent ghost-sitings are more like afterimages, things 'burnt into the photo of our reality' by people's passing-on. He says their spirits have been traded to a lower field of energy in exchange for material gain, in most cases without their knowledge. He urges the 'Hero' (as he calls the reader) to investigate and 'Play the Game.'",
+    "weight": "1200 g",
+    "volume": "1200 ml",
+    "price": 1000000,
+    "material": [ "paper" ],
+    "symbol": "?",
+    "fun": 2,
+    "intelligence": 13,
+    "color": "light_red",
+    "use_action": {
+      "type": "learn_spell",
+      "spells": [ "rpg_die_poly", "52_card_shuffle_attacks", "scrying", "enlarge", "gambit1", "spawn_camp" ]
+    }
+  },
+  {
+    "id": "vergists_manual",
+    "type": "BOOK",
+    "category": "manuals",
+    "name": { "str": "Vergery", "str_pl": "copies of Vergery" },
+    "description": "A small black leather notebook with clear instructions on how to craft powerful magic relics known as 'Verges'. Similar to wands, except through some means they never run out of power. There are elements of their creation that are amoral at best, but a skilled wizard may be able to create them without dipping too far in to the wrong pool.",
+    "weight": "1200 g",
+    "volume": "1200 ml",
+    "price": 1000000,
+    "material": [ "paper" ],
+    "symbol": "?",
+    "fun": -6,
+    "intelligence": 13,
+    "color": "black"
+  },
+  {
+    "id": "nonlocal_spellbook",
+    "type": "BOOK",
+    "category": "manuals",
+    "name": { "str": "Nonlocal Spellbook", "str_pl": "Copies of Nonlocal Spellbook" },
+    "description": "This tiny journal is inscribed with deranged symbols that as you stare reveal themselves to be overlapping letters you can decipher, though only through intense effort. The paper itself feels somehow liquid-like, both wanting to stay in and fall straight through your hand. It's knowledge has the same quality; it just won't stick in your mind's eye.",
+    "weight": "300 g",
+    "volume": "700 ml",
+    "price": 500000,
+    "material": [ "paper" ],
+    "symbol": "?",
+    "color": "light_red",
+    "fun": -3,
+    "intelligence": 15,
+    "use_action": {
+      "type": "learn_spell",
+      "spells": [ "resonant_shift", "transgate_place", "dimensional_step", "let_loose", "dislocate" ]
+    }
+  },
+  {
+    "id": "magic_operatives_handbook",
+    "type": "BOOK",
+    "category": "manuals",
+    "name": { "str": "Magic Operative's Handbook", "str_pl": "Copies of Magic Operative's Handbook" },
+    "description": "A small book about the size of a passport which briefly and effectively conveys how to use multiple useful spells and maneuvers in the field.",
+    "weight": "300 g",
+    "volume": "700 ml",
+    "price": 400000,
+    "material": [ "paper" ],
+    "symbol": "?",
+    "intelligence": 12,
+    "color": "light_red",
+    "use_action": {
+      "type": "learn_spell",
+      "spells": [
+        "COLD_FLASH",
+        "artillery",
+        "drain_nervous_system",
+        "auto_tazer",
+        "anti_teleport",
+        "indirected_prone",
+        "pocket_sniper"
+      ]
+    }
+  },
+  {
+    "id": "energy_in_combat",
+    "type": "BOOK",
+    "category": "manuals",
+    "name": { "str": "Effective Usage of Energy in Combat", "str_pl": "Copies of Effective Usage of Energy in Combat" },
+    "description": "A somewhat lengthy book designed to teach the reader how to more aptly use the energy they hold within their body, man.",
+    "weight": "900 g",
+    "volume": "1700 ml",
+    "price": 200000,
+    "material": [ "paper" ],
+    "symbol": "?",
+    "color": "light_red",
+    "fun": 4,
+    "martial_art": "style_dragon",
+    "use_action": {
+      "type": "learn_spell",
+      "spells": [ "recover_mana_stamina", "center_of_gravity", "stance_spawn", "soul_bind", "yank" ]
+    }
+  },
+  {
+    "id": "tales_from_other_planes",
+    "type": "BOOK",
+    "category": "manuals",
+    "name": { "str": "Tales From Other Planes", "str_pl": "Copies of Tales From Other Planes" },
+    "description": "A wacky little paperback book about various adventures had in fantastic worlds. Each tale is also a lesson in how to cast a spell thematic to the story.",
+    "weight": "700 g",
+    "volume": "1200 ml",
+    "price": 200000,
+    "material": [ "paper" ],
+    "symbol": "?",
+    "fun": 2,
+    "color": "light_red",
+    "use_action": { "type": "learn_spell", "spells": [ "enlarge", "spawn_white_wolfs_staff", "shadow_realm", "crystal_place" ] }
+  },
+  {
+    "id": "mind_over_magic",
+    "type": "BOOK",
+    "category": "manuals",
+    "name": { "str": "Mind over Magic", "str_pl": "copies of Mind over Magic" },
+    "description": "What appears at first to be an average book of sleight of hand tricks and illusions is actually a cleverly disguised treatise on illusion itself. The book delves into the nature of the mind and reality, opening the reader's mind to the psychic realms of possibility and the power of their Self.",
+    "weight": "1200 g",
+    "volume": "1200 ml",
+    "price": 400000,
+    "material": [ "paper" ],
+    "symbol": "?",
+    "intelligence": 15,
+    "color": "light_red",
+    "use_action": {
+      "type": "learn_spell",
+      "spells": [
+        "summon_bunny",
+        "magicians_duffel",
+        "golden_aura",
+        "directed_prone",
+        "distraction",
+        "flight",
+        "spiritual_invisibility"
+      ]
+    }
+  },
+  {
+    "id": "essential_estate_enchantments",
+    "type": "BOOK",
+    "category": "manuals",
+    "name": { "str": "Essential Estate Enchantments", "str_pl": "Essential Estate Enchantments" },
+    "description": "In an almost condescending way, this small pamphlet presents some simple spells, as well as how to create a 'lil helper' for use around the ranch. Colorful drawings describe each step, and it even has a pop-up horse.",
+    "weight": "500 g",
+    "volume": "700 ml",
+    "price": 100000,
+    "material": [ "cardboard" ],
+    "symbol": "?",
+    "fun": 1,
+    "color": "light_red",
+    "use_action": { "type": "learn_spell", "spells": [ "summon_horse", "spawn_rope", "double_trouble", "spur_steed", "spawn_spit_trap" ] }
+  },
+  {
+    "id": "spinning_the_wheel",
+    "type": "BOOK",
+    "category": "manuals",
+    "name": { "str": "Spinning the Wheel", "str_pl": "Copies of Spinning the Wheel" },
+    "description": "In much the same style as a game manual, this small paper booklet describes different rulesets for household games such as poker, chess, or checkers. Some of them are just mundane rule sets, but others are surprisingly accurate depictions of rituals capable of 'drawing the magic from the game.'",
+    "weight": "500 g",
+    "volume": "700 ml",
+    "price": 200000,
+    "material": [ "paper" ],
+    "symbol": "?",
+    "fun": 7,
+    "color": "light_red",
+    "use_action": {
+      "type": "learn_spell",
+      "spells": [ "52_card_shuffle", "recover_health_denarius", "spawn_camp", "sorcery", "gambit1", "scrying" ]
+    }
+  },
+  {
+    "id": "coloring_book",
+    "type": "BOOK",
+    "category": "manuals",
+    "name": { "str": "Coloring Book", "str_pl": "Coloring Books" },
+    "//": "2 Magus, 1 classless spell",
+    "description": "A child's coloring book with a cartoonish wizard on the front. He holds a finger over his mouth as if to quiet the reader and points for them to open it... When opened the book unleashes the magic of color, though it tells the tale of two wolves, one from the future and the other the past.",
+    "weight": "1200 g",
+    "volume": "1200 ml",
+    "price": 700000,
+    "material": [ "paper" ],
+    "symbol": "?",
+    "color": "white",
+    "fun": 5,
+    "use_action": { "type": "cast_spell", "spell_id": "sorcery_no_comp", "no_fail": true, "level": 1, "need_wielding": true }
+  },
+  {
+    "type": "BOOK",
+    "category": "manuals",
+    "id": "icon",
+    "name": { "str": "icon" },
+    "description": "This is a small picture, about the same size as an ID card, symbolizing a religious figure.  On the back, there is a text that faintly reads 'New England Church Community'.",
+    "price": 200,
+    "price_postapoc": 250,
+    "weight": "1 g",
+    "volume": "2 ml",
+    "to_hit": -3,
+    "color": "white",
+    "intelligence": 12,
+    "fun": 1,
+    "symbol": "$",
+    "use_action": { "type": "learn_spell", "spells": [ "prayer" ] },
+    "material": [ "paper" ]
+  },
+  {
+    "id": "book_of_blood",
+    "type": "BOOK",
+    "category": "manuals",
+    "name": { "str": "Book of Blood", "str_pl": "Copies of Book of Blood" },
+    "description": "A black 'leather' tome that's made entirely of scabs, black with congealed blood. Inside, rituals of malice are detailed with grim care.",
+    "weight": "500 g",
+    "volume": "700 ml",
+    "price": 1000000,
+    "material": [ "paper" ],
+    "symbol": "?",
+    "fun": -2,
+    "flags": [ "TRADER_AVOID" ],
+    "color": "black",
+    "use_action": {
+      "type": "learn_spell",
+      "spells": [ "summon_hemor", "circle_of_blood", "bind_via_blood", "spawn_cold_aura", "heal_ally_blood" ]
+    }
+  },
+  {
+    "id": "book_of_smoke",
+    "type": "BOOK",
+    "category": "manuals",
+    "name": { "str": "Book of Smoke", "str_pl": "Copies of Book of Smoke" },
+    "description": "A book that's pages endlessly turn to dust. It tells a tale of destruction, endless and all-reaching.",
+    "weight": "500 g",
+    "volume": "700 ml",
+    "price": 1000000,
+    "material": [ "paper" ],
+    "flags": [ "TRADER_AVOID" ],
+    "symbol": "?",
+    "fun": -2,
+    "color": "blue",
+    "use_action": {
+      "type": "learn_spell",
+      "spells": [ "summon_dune_brood", "circle_of_smoke", "bind_via_smoke", "heal_ally_smoke", "spawn_electric_aura" ]
+    }
+  },
+  {
+    "id": "book_of_bile",
+    "type": "BOOK",
+    "category": "manuals",
+    "name": { "str": "Book of Bile", "str_pl": "Copies of Book of Bile" },
+    "description": "A small book made of flesh that's moist with a foul-smelling liquid, fresh but still having long stained the pages.",
+    "weight": "500 g",
+    "volume": "700 ml",
+    "price": 1000000,
+    "flags": [ "TRADER_AVOID" ],
+    "material": [ "paper" ],
+    "symbol": "?",
+    "fun": -4,
+    "color": "green",
+    "use_action": {
+      "type": "learn_spell",
+      "spells": [
+        "summon_slime",
+        "circle_of_bile",
+        "spawn_biological_aura",
+        "induce_vomit",
+        "summon_zombie_fat",
+        "heal_ally_bile",
+        "bind_via_bile"
+      ]
+    }
+  },
+  {
+    "id": "book_of_flame",
+    "type": "BOOK",
+    "category": "manuals",
+    "name": { "str": "Book of Flame", "str_pl": "Copies of Book of Flame" },
+    "description": "A charred stone tablet made entirely of brimstone which is slowly burning away to reveal symbols of destruction that pierce into your understanding, only for those to burn away as well. It's written as though this were the daily memo, or perhaps a cruel teacher's attendance report.",
+    "weight": "500 g",
+    "volume": "700 ml",
+    "price": 2000000,
+    "flags": [ "TRADER_AVOID" ],
+    "material": [ "paper" ],
+    "symbol": "?",
+    "fun": -5,
+    "color": "red",
+    "use_action": {
+      "type": "learn_spell",
+      "spells": [
+        "summon_flame",
+        "circle_of_flame",
+        "summon_heat",
+        "spawn_fire_aura",
+        "summon_zombie_scorched",
+        "summon_ortiel",
+        "heal_ally_flame",
+        "bind_via_flame"
+      ]
+    }
+  },
+  {
+    "id": "spellcraft_mastery",
+    "type": "BOOK",
+    "category": "manuals",
+    "name": { "str": "Haramein's Theory", "str_pl": "copies of Haramein's Theory" },
+    "description": "The magnum opus of spellcraft theory, massive and unwieldy. Only understood by those who have practiced spellcraft their entire lives, and only useful to them as well.",
+    "weight": "7000 g",
+    "volume": "12000 ml",
+    "longest_side": "30 cm",
+    "price": 800000,
+    "bashing": 5,
+    "material": [ "paper" ],
+    "symbol": "?",
+    "color": "blue",
+    "skill": "spellcraft",
+    "required_level": 9,
+    "max_level": 10,
+    "intelligence": 17,
+    "time": "24 h",
+    "fun": -10
+  }
+]

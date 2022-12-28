@@ -1,0 +1,293 @@
+[
+  {
+    "type": "enchantment",
+    "id": "pact_of_blood_enchantment",
+    "condition": "ALWAYS",
+    "values": [
+      { "value": "MAX_MANA", "add": 750 },
+      { "value": "ATTACK_COST", "add": -25 },
+      { "value": "REGEN_MANA", "multiply": 0.2 }
+    ],
+    "intermittent_activation": { "effects": [ { "frequency": "10 d", "spell_effects": [ { "id": "spawn_spell_scroll_devil" } ] } ] }
+  },
+  {
+    "type": "enchantment",
+    "id": "pact_of_smoke_enchantment",
+    "condition": "ALWAYS",
+    "intermittent_activation": { "effects": [ { "frequency": "10 d", "spell_effects": [ { "id": "spawn_spell_scroll_devil" } ] } ] },
+    "values": [
+      { "value": "CARRY_WEIGHT", "add": -25 },
+      { "value": "REGEN_MANA", "multiply": 0.2 },
+      { "value": "MAX_MANA", "add": 750 }
+    ]
+  },
+  {
+    "type": "enchantment",
+    "id": "pact_of_smoke_enchantment2",
+    "condition": "ALWAYS",
+    "intermittent_activation": { "effects": [ { "frequency": "12 h", "spell_effects": [ { "id": "phase_door" } ] } ] }
+  },
+  {
+    "type": "enchantment",
+    "id": "pact_of_bile_enchantment",
+    "condition": "ALWAYS",
+    "intermittent_activation": { "effects": [ { "frequency": "7 d", "spell_effects": [ { "id": "spawn_spell_scroll_devil" } ] } ] },
+    "values": [
+      { "value": "FOOTSTEP_NOISE", "add": 7 },
+      { "value": "REGEN_MANA", "multiply": 0.5 },
+      { "value": "MAX_MANA", "add": 1500 }
+    ]
+  },
+  {
+    "type": "enchantment",
+    "id": "pact_of_flame_enchantment",
+    "condition": "ALWAYS",
+    "intermittent_activation": { "effects": [ { "frequency": "7 d", "spell_effects": [ { "id": "spawn_spell_scroll_devil" } ] } ] },
+    "values": [ { "value": "MAX_MANA", "add": 1500 }, { "value": "REGEN_MANA", "multiply": 0.5 } ]
+  },
+  {
+    "type": "enchantment",
+    "id": "pact_of_flame_enchantment2",
+    "condition": "ALWAYS",
+    "intermittent_activation": { "effects": [ { "frequency": "6 h", "spell_effects": [ { "id": "summon_flame" } ] } ] },
+    "values": [ { "value": "INTELLIGENCE", "add": 2 } ]
+  },
+  {
+    "id": "recover_stamina_blood_pact",
+    "type": "SPELL",
+    "name": "Blood Thirst",
+    "description": "Drawing blood keeps you going.",
+    "valid_targets": [ "self" ],
+    "min_damage": 100,
+    "max_damage": 100,
+    "max_level": 10,
+    "effect": "recover_energy",
+    "effect_str": "STAMINA",
+    "shape": "blast",
+    "energy_source": "MANA",
+    "base_casting_time": 0,
+    "base_energy_cost": 0,
+    "flags": [ "SOMATIC", "VERBAL", "SILENT", "NO_LEGS" ],
+    "difficulty": 3
+  },
+  {
+    "id": "pact_of_blood",
+    "type": "ARMOR",
+    "name": { "str": "Pact of Blood" },
+    "description": "You have made a pact with an entity almost entirely unknown to you. In exchange for knowledge you have given away some of your soul, and it takes it's toll.",
+    "weight": "1 g",
+    "volume": "1 ml",
+    "longest_side": "1 cm",
+    "price": 2000,
+    "price_postapoc": 250,
+    "to_hit": 3,
+    "bashing": 14,
+    "cutting": 3,
+    "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "ONLY_ONE", "TRADER_AVOID", "AURA", "NO_TAKEOFF", "NONCONDUCTIVE" ],
+    "material": [ "steel" ],
+    "symbol": "/",
+    "color": "brown",
+    "use_action": [ { "type": "cast_spell", "spell_id": "spawn_book_of_blood", "no_fail": true, "need_worn": true, "level": 25 } ],
+    "relic_data": {
+      "passive_effects": [
+        { "id": "pact_of_blood_enchantment" },
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "hit_you_effect": [ { "id": "recover_stamina_blood_pact", "hit_self": true } ]
+        },
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "mutations": [ "BADTEMPER", "JEKYLL", "CURELIGHTWOUNDS_SPELL", "SCHIZOPHRENIC", "PSYCHOPATH" ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "pact_of_smoke",
+    "type": "ARMOR",
+    "name": { "str": "Pact of Smoke" },
+    "description": "You have made a pact with an entity almost entirely unknown to you. In exchange for knowledge you have given away some of your soul, and it takes it's toll.",
+    "weight": "1 g",
+    "volume": "1 ml",
+    "longest_side": "1 cm",
+    "price": 2000,
+    "price_postapoc": 250,
+    "to_hit": 3,
+    "bashing": 14,
+    "cutting": 3,
+    "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "ONLY_ONE", "TRADER_AVOID", "AURA", "NO_TAKEOFF", "NONCONDUCTIVE" ],
+    "material": [ "steel" ],
+    "symbol": "/",
+    "color": "brown",
+    "use_action": [ { "type": "cast_spell", "spell_id": "spawn_book_of_smoke", "no_fail": true, "need_worn": true, "level": 25 } ],
+    "relic_data": {
+      "passive_effects": [
+        { "id": "pact_of_smoke_enchantment" },
+        { "id": "pact_of_smoke_enchantment2" },
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "mutations": [ "WAKEFUL", "XS", "spiritwalk_SPELL", "summonwisps_SPELL", "PSYCHOPATH", "FLIMSY", "GLASSJAW" ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "pact_of_bile",
+    "type": "ARMOR",
+    "name": { "str": "Pact of Bile" },
+    "description": "You have made a pact with an entity almost entirely unknown to you. In exchange for knowledge you have given away some of your soul, and it takes it's toll.",
+    "weight": "1 g",
+    "volume": "1 ml",
+    "longest_side": "1 cm",
+    "price": 2000,
+    "price_postapoc": 250,
+    "to_hit": 3,
+    "bashing": 14,
+    "cutting": 3,
+    "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "ONLY_ONE", "TRADER_AVOID", "AURA", "NO_TAKEOFF", "NONCONDUCTIVE" ],
+    "material": [ "steel" ],
+    "use_action": [ { "type": "cast_spell", "spell_id": "spawn_book_of_bile", "no_fail": true, "need_worn": true, "level": 25 } ],
+    "symbol": "/",
+    "color": "brown",
+    "relic_data": {
+      "passive_effects": [
+        { "id": "pact_of_bile_enchantment" },
+        { "has": "WORN", "condition": "ALWAYS", "hit_me_effect": [ { "id": "summon_acid", "hit_self": true } ] },
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "mutations": [
+            "XXXL",
+            "DEFORMED3",
+            "VOMITOUS",
+            "BADKNEES",
+            "ACIDPROOF",
+            "ACIDBLOOD",
+            "ENLARGE_SPELL",
+            "PSYCHOPATH",
+            "BADCARDIO",
+            "SMELLY"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "pact_of_flame",
+    "type": "ARMOR",
+    "name": { "str": "Pact of Flame" },
+    "description": "You have made a pact with an entity almost entirely unknown to you. In exchange for knowledge you have given away some of your soul, and it takes it's toll.",
+    "weight": "1 g",
+    "volume": "1 ml",
+    "longest_side": "1 cm",
+    "price": 2000,
+    "price_postapoc": 250,
+    "to_hit": 3,
+    "bashing": 14,
+    "cutting": 3,
+    "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "ONLY_ONE", "TRADER_AVOID", "AURA", "NO_TAKEOFF", "NONCONDUCTIVE" ],
+    "material": [ "steel" ],
+    "symbol": "/",
+    "color": "brown",
+    "use_action": [ { "type": "cast_spell", "spell_id": "spawn_book_of_flame", "no_fail": true, "need_worn": true, "level": 25 } ],
+    "relic_data": {
+      "passive_effects": [
+        { "id": "pact_of_flame_enchantment" },
+        { "id": "pact_of_flame_enchantment2" },
+        { "has": "WORN", "condition": "ALWAYS", "hit_me_effect": [ { "id": "summon_flame", "hit_self": true } ] },
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "mutations": [
+            "SAVANT",
+            "JITTERY",
+            "PYROMANIA",
+            "PSYCHOPATH",
+            "THERMALIGNORANCE",
+            "SLOWHEALER",
+            "HATES_WATER",
+            "FIREBALL_SPELL",
+            "NYCTOPHOBIA"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "spawn_book_of_blood",
+    "type": "SPELL",
+    "name": "Pact Magic",
+    "description": "You flick your wrist and a book appears in your hand.",
+    "valid_targets": [ "self" ],
+    "min_damage": 1,
+    "max_damage": 1,
+    "base_casting_time": 0,
+    "energy_source": "MANA",
+    "max_level": 25,
+    "difficulty": 1,
+    "base_energy_cost": 10,
+    "flags": [ "SOMATIC", "PERMANENT" ],
+    "shape": "blast",
+    "effect": "spawn_item",
+    "effect_str": "book_of_blood"
+  },
+  {
+    "id": "spawn_book_of_smoke",
+    "type": "SPELL",
+    "name": "Pact Magic",
+    "description": "You flick your wrist and a book appears in your hand.",
+    "valid_targets": [ "self" ],
+    "min_damage": 1,
+    "max_damage": 1,
+    "base_casting_time": 0,
+    "energy_source": "MANA",
+    "max_level": 25,
+    "difficulty": 1,
+    "base_energy_cost": 10,
+    "flags": [ "SOMATIC", "PERMANENT" ],
+    "shape": "blast",
+    "effect": "spawn_item",
+    "effect_str": "book_of_smoke"
+  },
+  {
+    "id": "spawn_book_of_bile",
+    "type": "SPELL",
+    "name": "Pact Magic",
+    "description": "You flick your wrist and a book appears in your hand.",
+    "valid_targets": [ "self" ],
+    "min_damage": 1,
+    "max_damage": 1,
+    "base_casting_time": 0,
+    "energy_source": "MANA",
+    "max_level": 25,
+    "difficulty": 1,
+    "base_energy_cost": 10,
+    "flags": [ "SOMATIC", "PERMANENT" ],
+    "shape": "blast",
+    "effect": "spawn_item",
+    "effect_str": "book_of_bile"
+  },
+  {
+    "id": "spawn_book_of_flame",
+    "type": "SPELL",
+    "name": "Pact Magic",
+    "description": "You flick your wrist and a book appears in your hand.",
+    "valid_targets": [ "self" ],
+    "min_damage": 1,
+    "max_damage": 1,
+    "base_casting_time": 0,
+    "energy_source": "MANA",
+    "min_duration": 50000,
+    "max_duration": 50000,
+    "max_level": 25,
+    "difficulty": 1,
+    "base_energy_cost": 10,
+    "flags": [ "SOMATIC", "PERMANENT" ],
+    "shape": "blast",
+    "effect": "spawn_item",
+    "effect_str": "book_of_flame"
+  }
+]

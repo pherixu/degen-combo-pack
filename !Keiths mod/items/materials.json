@@ -1,0 +1,14 @@
+[
+  {
+    "type": "material",
+    "id": "brimstone",
+    "name": "brimstone",
+    "copy-from": "gemstone"
+  },
+  {
+    "type": "material",
+    "id": "aether",
+    "name": "aether",
+    "copy-from": "sunlight"
+  }
+]

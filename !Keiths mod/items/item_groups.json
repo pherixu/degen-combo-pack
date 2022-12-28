@@ -1,0 +1,1253 @@
+[
+  {
+    "type": "item_group",
+    "id": "spell_scroll_tier_0",
+    "copy-from": "spell_scroll_tier_0",
+    "extend": {
+      "items": [
+        [ "spell_scroll_sorcery", 50 ],
+        [ "spell_scroll_estrangement", 50 ],
+        [ "spell_scroll_spur_steed", 50 ],
+        [ "spell_scroll_center_of_gravity", 50 ],
+        [ "spell_scroll_drain_nervous_system", 50 ],
+        [ "spell_scroll_summon_cold", 50 ],
+        [ "spell_scroll_charge_attack", 50 ],
+        [ "spell_scroll_yank", 50 ],
+        [ "spell_scroll_summon_cold4", 50 ],
+        [ "spell_scroll_beautification", 50 ],
+        [ "spell_scroll_recover_mana_fatigue", 50 ],
+        [ "spell_scroll_marinate", 50 ],
+        [ "spell_scroll_brain_freeze", 50 ],
+        [ "spell_scroll_summon_heat", 50 ],
+        [ "spell_scroll_directed_mana", 50 ]
+      ]
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "spell_scroll_tier_1",
+    "copy-from": "spell_scroll_tier_1",
+    "extend": {
+      "items": [
+        [ "spell_scroll_flight", 50 ],
+        [ "spell_scroll_let_loose", 50 ],
+        [ "spell_scroll_gambit1", 50 ],
+        [ "spell_scroll_auto_tazer", 50 ],
+        [ "spell_scroll_soul_bind", 50 ],
+        [ "spell_scroll_spawn_camp", 50 ],
+        [ "spell_scroll_double_trouble", 50 ],
+        [ "spell_scroll_spawn_car", 50 ],
+        [ "spell_scroll_airlift", 50 ],
+        [ "spell_scroll_summon_kayak", 50 ],
+        [ "spell_scroll_soft_step", 50 ],
+        [ "spell_scroll_induce", 50 ],
+        [ "spell_scroll_bullet_immune", 50 ],
+        [ "spell_scroll_first_things_first", 50 ],
+        [ "spell_scroll_summon_lab_rat", 50 ],
+        [ "spell_scroll_recover_health_denarius", 50 ],
+        [ "spell_scroll_recover_mana_stamina", 50 ],
+        [ "spell_scroll_distraction", 50 ]
+      ]
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "spell_scroll_tier_2",
+    "copy-from": "spell_scroll_tier_2",
+    "extend": {
+      "items": [
+        [ "spell_scroll_extract_memory", 50 ],
+        [ "spell_scroll_golden_aura", 50 ],
+        [ "spell_scroll_scrying", 50 ],
+        [ "spell_scroll_shadow_realm", 50 ],
+        [ "spell_scroll_summon_horse", 50 ],
+        [ "spell_scroll_dislocate", 50 ],
+        [ "spell_scroll_close_tear", 50 ],
+        [ "spell_scroll_translocate_self_no_hands", 50 ],
+        [ "spell_scroll_love", 50 ],
+        [ "spell_scroll_rabbits_foot", 50 ],
+        [ "spell_scroll_enlarge", 50 ],
+        [ "spell_scroll_anti_teleport", 50 ],
+        [ "spell_scroll_wicked_ritual", 25 ],
+        [ "spell_scroll_ghost_cleanse", 50 ],
+        [ "spell_scroll_summon_bike", 50 ],
+        [ "spell_scroll_cold_flash", 50 ],
+        [ "spell_scroll_summon_bunny", 50 ],
+        [ "spell_scroll_52_card_shuffle", 50 ]
+      ]
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "spell_scroll_tier_3",
+    "copy-from": "spell_scroll_tier_3",
+    "extend": {
+      "items": [
+        [ "spell_scroll_pocket_sniper", 50 ],
+        [ "spell_scroll_crystal_place", 50 ],
+        [ "spell_scroll_transgate_place", 50 ],
+        [ "spell_scroll_charge_energy", 50 ],
+        [ "spell_scroll_bend_will", 35 ],
+        [ "spell_scroll_abolish_spirit", 35 ],
+        [ "spell_scroll_reanimate_golem", 50 ],
+        [ "classified_intelligence_scroll", 50 ],
+        [ "spell_scroll_spawn_gas", 50 ],
+        [ "spell_scroll_spiritual_invisibility", 50 ],
+        [ "spell_scroll_artillery", 50 ],
+        [ "spell_scroll_new_life", 50 ],
+        [ "spell_scroll_summon_atraxa", 35 ],
+        [ "spell_scroll_dimensional_step", 50 ],
+        [ "spell_scroll_spawn_white_wolfs_staff", 50 ],
+        [ "spell_scroll_spawn_spit_trap", 50 ],
+        [ "spell_scroll_call_storm", 50 ],
+        [ "spell_scroll_magicians_duffel", 50 ],
+        [ "spell_scroll_summon_flame", 50 ]
+      ]
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "spellbook_tier_0",
+    "copy-from": "spellbook_tier_0",
+    "extend": {
+      "items": [
+        [ "spinning_the_wheel", 40 ],
+        [ "book_of_blood", 20 ],
+        [ "spells_for_the_modern_professional", 25 ],
+        [ "energy_in_combat", 25 ]
+      ]
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "spellbook_tier_1",
+    "copy-from": "spellbook_tier_1",
+    "extend": { "items": [ [ "book_of_bile", 20 ], [ "book_of_smoke", 20 ], [ "heli_book", 50 ] ] }
+  },
+  {
+    "type": "item_group",
+    "id": "spellbook_tier_2",
+    "copy-from": "spellbook_tier_2",
+    "extend": {
+      "items": [
+        [ "essential_estate_enchantments", 40 ],
+        [ "mind_over_magic", 40 ],
+        [ "vergists_manual", 60 ],
+        [ "coloring_book", 60 ],
+        [ "tales_from_other_planes", 40 ]
+      ]
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "spellbook_tier_3",
+    "copy-from": "spellbook_tier_3",
+    "extend": {
+      "items": [
+        [ "book_of_flame", 20 ],
+        [ "big_book_of_metaknowledge", 10 ],
+        [ "magic_operatives_handbook", 40 ],
+        [ "spellcraft_mastery", 10 ],
+        [ "nonlocal_spellbook", 20 ]
+      ]
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "farming_tools",
+    "copy-from": "farming_tools",
+    "extend": { "items": [ [ "spit_trap", 1 ] ] }
+  },
+  {
+    "type": "item_group",
+    "id": "tools_earthworking",
+    "copy-from": "tools_earthworking",
+    "extend": { "items": [ [ "spit_trap", 1 ] ] }
+  },
+  {
+    "type": "item_group",
+    "id": "electronics",
+    "copy-from": "electronics",
+    "extend": {
+      "items": [
+        [ "portable_game_magic", 5 ],
+        [ "magic_camera", 5 ],
+        [ "magic_camera_pro", 5 ],
+        [ "magic_smart_phone", 5 ],
+        [ "magicvibrator", 5 ],
+        [ "all_purpose_watch", 1 ]
+      ]
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "displays",
+    "copy-from": "displays",
+    "extend": {
+      "items": [
+        [ "coldlight_flashbang", 20 ],
+        [ "cuppa", 35 ],
+        [ "twisted_soul", 1 ],
+        [ "smart_rug", 1 ],
+        [ "antoninianus", 1 ],
+        [ "white_wolfs_staff", 1 ],
+        [ "mana_potion_lesser", 2 ],
+        [ "observation_platform", 2 ],
+        [ "spit_trap", 1 ],
+        [ "magic_camera", 5 ],
+        [ "magic_eink_tablet_pc", 1 ],
+        [ "magic_camera_pro", 5 ],
+        [ "magic_smart_phone", 5 ],
+        [ "magicvibrator", 5 ],
+        [ "wash_kit_magic", 5 ],
+        [ "magic_laptop", 1 ],
+        [ "portable_game_magic", 5 ],
+        [ "all_purpose_watch", 1 ],
+        [ "mana_potion_lesser", 50 ],
+        [ "magi_staff_minor", 5 ],
+        [ "bleed_staff_minor", 1 ],
+        [ "antoninianus", 10 ],
+        [ "wizard_hat", 5 ],
+        [ "cauldron_demon_chitin", 3 ],
+        [ "manatouched_serum", 3 ],
+        [ "wolfsbane", 2 ],
+        [ "wolfshead_cufflinks", 3 ],
+        [ "magic_knife_bag", 3 ]
+      ]
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "consumer_electronics",
+    "copy-from": "consumer_electronics",
+    "extend": {
+      "items": [
+        [ "portable_game_magic", 1 ],
+        [ "magic_camera", 5 ],
+        [ "magic_camera_pro", 5 ],
+        [ "magic_eink_tablet_pc", 1 ],
+        [ "magic_laptop", 1 ],
+        [ "magic_smart_phone", 5 ],
+        [ "magicvibrator", 5 ],
+        [ "all_purpose_watch", 1 ]
+      ]
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "games",
+    "copy-from": "games",
+    "extend": { "items": [ [ "portable_game_magic", 1 ] ] }
+  },
+  {
+    "type": "item_group",
+    "id": "antique_rare",
+    "copy-from": "antique_rare",
+    "extend": { "items": [ [ "white_wolfs_staff", 10 ], [ "black_wolfs_ring_bullet", 10 ], [ "white_wolfs_ring_cold", 10 ] ] }
+  },
+  {
+    "type": "item_group",
+    "id": "medieval",
+    "copy-from": "medieval",
+    "extend": { "items": [ [ "white_wolfs_staff", 1 ] ] }
+  },
+  {
+    "type": "item_group",
+    "id": "antique",
+    "copy-from": "antique",
+    "extend": { "items": [ [ "white_wolfs_staff", 1 ] ] }
+  },
+  {
+    "type": "item_group",
+    "id": "guns_swat",
+    "copy-from": "guns_swat",
+    "extend": { "items": [ [ "handgun_retrofitting", 5 ] ] }
+  },
+  {
+    "type": "item_group",
+    "id": "swat_gear",
+    "copy-from": "swat_gear",
+    "subtype": "distribution",
+    "extend": { "items": [ [ "magic_mantle", 2 ], [ "darkswitch", 1 ], [ "observation_platform", 1 ] ] }
+  },
+  {
+    "type": "item_group",
+    "id": "magic_tools_and_loot",
+    "subtype": "collection",
+    "copy-from": "magic_tools_and_loot",
+    "extend": { "items": [ { "item": "crystal_mana", "prob": 50, "count-min": 1, "count-max": 100 } ] }
+  },
+  {
+    "type": "item_group",
+    "id": "coffee_locker",
+    "copy-from": "coffee_locker",
+    "extend": { "items": [ [ "cuppa", 1 ] ] }
+  },
+  {
+    "id": "coffee_display_2",
+    "type": "item_group",
+    "copy-from": "coffee_display_2",
+    "extend": { "items": [ [ "cuppa", 2 ] ] }
+  },
+  {
+    "id": "pawn",
+    "type": "item_group",
+    "copy-from": "pawn",
+    "extend": {
+      "items": [
+        [ "cuppa", 5 ],
+        [ "antoninianus", 10 ],
+        [ "portable_game_magic", 2 ],
+        [ "decaying_soul", 5 ],
+        [ "magic_laptop", 1 ],
+        [ "soft_steppers_socks", 1 ],
+        [ "magic_camera", 5 ],
+        [ "magic_camera_pro", 5 ],
+        [ "magic_smart_phone", 5 ],
+        [ "magicvibrator", 5 ],
+        [ "all_purpose_watch", 1 ],
+        [ "twisted_soul", 1 ]
+      ]
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "rare",
+    "subtype": "distribution",
+    "copy-from": "rare",
+    "extend": {
+      "entries": [
+        { "item": "cuppa", "prob": 20 },
+        { "item": "darkswitch", "prob": 10 },
+        { "item": "twisted_soul", "prob": 20 },
+        { "item": "magic_mantle", "prob": 5 },
+        { "item": "all_purpose_watch", "prob": 5 },
+        { "item": "magic_laptop", "prob": 20 },
+        { "item": "magic_smart_phone", "prob": 20 },
+        { "item": "professional_pendant", "prob": 10 },
+        { "item": "observation_platform", "prob": 10 },
+        { "item": "antoninianus", "prob": 20 },
+        { "item": "interdimensional_cage", "prob": 20 },
+        { "item": "parabolan_silk_undersuit", "prob": 5 },
+        { "item": "handgun_retrofitting", "prob": 5 },
+        { "item": "spit_trap", "prob": 10 },
+        { "item": "smart_rug", "prob": 5 },
+        { "item": "black_wolfs_ring_bullet", "prob": 5 },
+        { "item": "white_wolfs_ring_cold", "prob": 5 },
+        { "item": "white_wolfs_staff", "prob": 5 }
+      ]
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "enchanted_misc",
+    "copy-from": "enchanted_misc",
+    "extend": {
+      "items": [
+        [ "cuppa", 10 ],
+        [ "twisted_soul", 10 ],
+        [ "decaying_soul", 5 ],
+        [ "magic_camera", 10 ],
+        [ "magic_camera_pro", 10 ],
+        [ "soft_steppers_socks", 1 ],
+        [ "magic_eink_tablet_pc", 3 ],
+        [ "foodplace_subscription_box", 5 ],
+        [ "magic_smart_phone", 5 ],
+        [ "wash_kit_magic", 5 ],
+        [ "clay_golem_token", 1 ],
+        [ "gate_token", 1 ],
+        [ "bag_of_rocks", 10 ],
+        { "group": "unendingpens", "prob": 35 },
+        { "group": "spellbook_loot_0", "prob": 10 },
+        { "group": "spellbook_loot_1", "prob": 7 },
+        { "group": "spellbook_loot_2", "prob": 3 },
+        [ "plastic_golem_token", 1 ],
+        [ "crystallized_mana", 33 ],
+        [ "magic_laptop", 10 ],
+        [ "magicvibrator", 25 ],
+        [ "antoninianus", 10 ],
+        [ "interdimensional_rack", 1 ],
+        { "group": "waywardmemories", "prob": 5 },
+        [ "portable_game_magic", 25 ],
+        [ "spit_trap", 1 ]
+      ]
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "grenades",
+    "copy-from": "grenades",
+    "extend": { "items": [ [ "coldlight_flashbang", 1 ] ] }
+  },
+  {
+    "type": "item_group",
+    "id": "cleaning",
+    "copy-from": "cleaning",
+    "subtype": "distribution",
+    "extend": { "items": [ [ "wash_kit_magic", 1 ] ] }
+  },
+  {
+    "type": "item_group",
+    "id": "home_display_case",
+    "copy-from": "home_display_case",
+    "extend": { "items": [ { "group": "enchanted_combat_items", "prob": 1 } ] }
+  },
+  {
+    "type": "item_group",
+    "id": "everyday_gear",
+    "copy-from": "everyday_gear",
+    "extend": { "items": [ { "group": "enchanted_small_items", "prob": 10 } ] }
+  },
+  {
+    "type": "item_group",
+    "id": "kitchen",
+    "copy-from": "kitchen",
+    "subtype": "distribution",
+    "extend": { "items": [ { "item": "foodplace_subscription_box", "prob": 1 } ] }
+  },
+  {
+    "type": "item_group",
+    "id": "fast_food",
+    "copy-from": "fast_food",
+    "subtype": "distribution",
+    "extend": { "entries": [ { "item": "foodplace_subscription_box", "prob": 1 } ] }
+  },
+  {
+    "type": "item_group",
+    "id": "snacks_fancy",
+    "copy-from": "snacks_fancy",
+    "subtype": "distribution",
+    "extend": { "entries": [ { "item": "foodplace_subscription_box", "prob": 1 } ] }
+  },
+  {
+    "type": "item_group",
+    "id": "trash_forest",
+    "copy-from": "trash_forest",
+    "extend": {
+      "items": [ [ "tear_of_child", 10 ], [ "antoninianus", 5 ], [ "brimstone_sliver", 5 ], { "group": "waywardmemories", "prob": 1 } ]
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "trash",
+    "copy-from": "trash",
+    "extend": {
+      "items": [ [ "tear_of_child", 10 ], [ "decaying_soul", 1 ], [ "antoninianus", 5 ], { "group": "waywardmemories", "prob": 5 } ]
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "waywardmemories",
+    "items": [
+      [ "wayward_memory_EEE", 1 ],
+      [ "wayward_memory_SFMP", 1 ],
+      [ "wayward_memory_NLS", 1 ],
+      [ "wayward_memory_MOH", 1 ],
+      [ "wayward_memory_EIC", 1 ],
+      [ "wayward_memory_TFOP", 1 ],
+      [ "wayward_memory_MOM", 1 ],
+      [ "wayward_memory_STW", 1 ],
+      [ "wayward_memory_BGTM", 1 ],
+      [ "wayward_memory_IAP", 1 ],
+      [ "wayward_memory_WGB", 1 ],
+      [ "wayward_memory_PFH", 1 ],
+      [ "wayward_memory_TOME", 1 ],
+      [ "wayward_memory_ITTD", 1 ],
+      [ "wayward_memory_PGTMS", 1 ],
+      [ "wayward_memory_WEG", 1 ],
+      [ "wayward_memory_CASH", 1 ],
+      [ "wayward_memory_CASH", 1 ],
+      [ "wayward_memory_CASH", 1 ],
+      [ "wayward_memory_TOOS", 1 ],
+      [ "wayward_memory_NS", 1 ],
+      [ "wayward_memory_OLAF", 1 ],
+      [ "wayward_memory_TTOF", 1 ],
+      [ "wayward_memory_TBOT", 1 ],
+      [ "wayward_memory_TUOMAES", 1 ],
+      [ "wayward_memory_TOBM", 1 ],
+      [ "wayward_memory_TOHE", 1 ],
+      [ "wayward_memory_TOMM", 1 ],
+      [ "wayward_memory_NMFD", 1 ],
+      [ "wayward_memory_FOT", 1 ],
+      [ "wayward_memory_IGT", 1 ],
+      [ "wayward_memory_TAES", 1 ],
+      [ "wayward_memory_LP", 1 ],
+      [ "wayward_memory_GSLOL", 1 ],
+      [ "wayward_memory_FT", 1 ],
+      [ "wayward_memory_VM", 1 ],
+      [ "wayward_memory_THC", 1 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "demondrops",
+    "subtype": "collection",
+    "entries": [
+      { "item": "tear_of_child", "prob": 20 },
+      { "item": "brimstone_sliver", "prob": 10 },
+      { "item": "brimstone_chunk", "prob": 1 },
+      { "item": "chunk_sulfur", "count": [ 0, 3 ], "prob": 20 },
+      { "item": "decaying_soul", "prob": 7 },
+      { "item": "twisted_soul", "prob": 1 },
+      { "item": "antoninianus", "prob": 5 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "benjamins",
+    "subtype": "collection",
+    "entries": [
+      { "item": "money_hundred", "prob": 50, "count": [ 0, 25 ] },
+      { "item": "money_strap_hundred", "prob": 25, "count": [ 0, 3 ] },
+      { "item": "money_bundle_hundred", "prob": 5 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "impdrops",
+    "subtype": "collection",
+    "entries": [
+      { "item": "tear_of_child", "count": [ 0, 3 ], "prob": 20 },
+      { "item": "swag_bag" },
+      { "item": "brimstone_sliver", "count": [ 0, 2 ], "prob": 25 },
+      { "item": "brimstone_chunk", "prob": 10 },
+      { "item": "chunk_sulfur", "count": [ 0, 9 ], "prob": 50 },
+      { "group": "benjamins" },
+      { "group": "enchanted_misc", "prob": 10 },
+      { "group": "trash", "count": [ 0, 10 ], "prob": 75 },
+      { "group": "spellbook_loot_0", "prob": 7 },
+      { "item": "twisted_soul", "prob": 10 },
+      { "item": "decaying_soul", "prob": 33, "count": [ 1, 2 ] },
+      { "item": "antoninianus", "prob": 25, "count": [ 0, 3 ] },
+      { "item": "denarius", "prob": 50, "count": [ 0, 5 ] }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "ortieldrops",
+    "subtype": "collection",
+    "entries": [
+      { "item": "tear_of_child", "count": [ 0, 3 ], "prob": 20 },
+      { "item": "brimstone_sliver", "count": [ 0, 10 ], "prob": 40 },
+      { "item": "brimstone_chunk", "count": [ 0, 5 ], "prob": 40 },
+      { "item": "decaying_soul", "prob": 33, "count": [ 1, 7 ] },
+      { "item": "chunk_sulfur", "count": [ 0, 10 ], "prob": 20 },
+      { "item": "twisted_soul_engorged" },
+      { "group": "verges", "prob": 5 },
+      { "item": "ortiels_aura" },
+      { "item": "antoninianus", "prob": 10, "count": [ 0, 15 ] }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "omnathdrops",
+    "subtype": "collection",
+    "entries": [
+      { "item": "tear_of_child", "count": [ 0, 3 ], "prob": 20 },
+      { "item": "brimstone_sliver", "count": [ 0, 10 ], "prob": 40 },
+      { "item": "decaying_soul", "prob": 33, "count": [ 1, 7 ] },
+      { "item": "chunk_sulfur", "count": [ 0, 10 ], "prob": 20 },
+      { "item": "twisted_soul_engorged" },
+      { "group": "verges", "prob": 5 },
+      { "group": "enchanted_combat_items", "prob": 10 },
+      { "item": "omnaths_aura" },
+      { "item": "antoninianus", "prob": 10, "count": [ 0, 15 ] }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "yidrisdrops",
+    "subtype": "collection",
+    "entries": [
+      { "item": "tear_of_child", "count": [ 0, 3 ], "prob": 20 },
+      { "item": "brimstone_sliver", "count": [ 0, 10 ], "prob": 40 },
+      { "item": "decaying_soul", "prob": 33, "count": [ 1, 7 ] },
+      { "item": "chunk_sulfur", "count": [ 0, 10 ], "prob": 20 },
+      { "item": "twisted_soul_engorged" },
+      { "group": "verges", "prob": 5 },
+      { "group": "alchemy_items", "count": [ 1, 10 ] },
+      { "item": "yidris_aura" },
+      { "item": "antoninianus", "prob": 10, "count": [ 0, 15 ] }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "atraxadrops",
+    "subtype": "collection",
+    "entries": [
+      { "item": "tear_of_child", "count": [ 0, 7 ], "prob": 20 },
+      { "item": "chunk_sulfur", "count": [ 0, 10 ], "prob": 20 },
+      { "item": "twisted_soul_engorged" },
+      { "group": "verges", "prob": 5 },
+      { "item": "atraxas_aura" },
+      { "item": "antoninianus", "prob": 30, "count": [ 0, 15 ] }
+    ]
+  },
+  {
+    "//": "This group picks out one of the excluding traits.",
+    "type": "trait_group",
+    "id": "trait_group_SPELLS",
+    "subtype": "distribution",
+    "traits": [
+      { "trait": "MARINATE_SPELL", "prob": 1 },
+      { "trait": "REANIMATEGOLEM_SPELL", "prob": 1 },
+      { "trait": "STONEFIST_SPELL", "prob": 1 },
+      { "trait": "SEISMICSTOMP_SPELL", "prob": 1 },
+      { "trait": "SHOCKINGLASH_SPELL", "prob": 1 },
+      { "trait": "BEAUTIFICATION_SPELL", "prob": 1 },
+      { "trait": "ANTIPROJECTILE_SPELL", "prob": 1 },
+      { "trait": "SHARDSPRAY_SPELL", "prob": 1 },
+      { "trait": "SEEDOFGROWTH_SPELL", "prob": 1 },
+      { "trait": "WINDRUNNING_SPELL", "prob": 1 },
+      { "trait": "AIRLIFT_SPELL", "prob": 1 },
+      { "trait": "TAZE_SPELL", "prob": 1 },
+      { "trait": "LESSERQUANTUMTUNNEL_SPELL", "prob": 1 },
+      { "trait": "PHASEDOOR_SPELL", "prob": 1 },
+      { "trait": "CATSGRACE_SPELL", "prob": 1 },
+      { "trait": "EAGLESSIGHT_SPELL", "prob": 1 },
+      { "trait": "IMPACTSLING_SPELL", "prob": 1 },
+      { "trait": "OGRESSTRENGTH_SPELL", "prob": 1 },
+      { "trait": "FOXSCUNNING_SPELL", "prob": 1 },
+      { "trait": "HOLOGRAPHICTRANSPOSITION_SPELL", "prob": 1 },
+      { "trait": "WALLOFFOG_SPELL", "prob": 1 },
+      { "trait": "KNOCK_SPELL", "prob": 1 },
+      { "trait": "JAROFFORCE_SPELL", "prob": 1 },
+      { "trait": "FREEZINGTOUCH_SPELL", "prob": 1 },
+      { "trait": "SUMMONFLAMESWORD_SPELL", "prob": 1 },
+      { "trait": "FLAMEBREATH_SPELL", "prob": 1 },
+      { "trait": "CENTEROFGRAVITY_SPELL", "prob": 1 },
+      { "trait": "POINTFLARE_SPELL", "prob": 1 },
+      { "trait": "ICESHIELD_SPELL", "prob": 1 },
+      { "trait": "KNIFESHOT_SPELL", "prob": 1 },
+      { "trait": "OPTICALSNEEZEBEAM_SPELL", "prob": 1 },
+      { "trait": "SPAWNCAR_SPELL", "prob": 1 },
+      { "trait": "DRAINNERVOUSSYSTEM_SPELL", "prob": 1 },
+      { "trait": "ANTITELEPORT_SPELL", "prob": 1 },
+      { "trait": "WOODSHAFT_SPELL", "prob": 1 },
+      { "trait": "ROOTSTRIKE_SPELL", "prob": 1 },
+      { "trait": "ABOLISHSPIRIT_SPELL", "prob": 1 },
+      { "trait": "VEGETATIVEGRASP_SPELL", "prob": 1 },
+      { "trait": "Acidresist_SPELL", "prob": 1 },
+      { "trait": "52CARD_SPELL", "prob": 1 },
+      { "trait": "GLIDEONICE_SPELL", "prob": 1 },
+      { "trait": "CHILLINGTOUCH_SPELL", "prob": 1 },
+      { "trait": "SUMMONCOLD_SPELL", "prob": 1 },
+      { "trait": "ACIDSPRAY_SPELL", "prob": 1 },
+      { "trait": "CATALYST_SPELL", "prob": 1 },
+      { "trait": "INDUCEGUILT_SPELL", "prob": 1 },
+      { "trait": "INDUCEVOMIT_SPELL", "prob": 1 },
+      { "trait": "BURNINGHANDS_SPELL", "prob": 1 },
+      { "trait": "FLESHPOUCH_SPELL", "prob": 1 },
+      { "trait": "CLOSETEAR_SPELL", "prob": 1 },
+      { "trait": "ATOMICLIGHT_SPELL", "prob": 1 },
+      { "trait": "BLINDINGFLASH_SPELL", "prob": 1 },
+      { "trait": "HOLYBLADE_SPELL", "prob": 1 },
+      { "trait": "BLESS_SPELL", "prob": 1 },
+      { "trait": "ETHEREALGRASP_SPELL", "prob": 1 },
+      { "trait": "SUMMONHEAT_SPELL", "prob": 1 },
+      { "trait": "DISTRACTION_SPELL", "prob": 1 },
+      { "trait": "CONJUREBONSPEAR_SPELL", "prob": 1 },
+      { "trait": "DIRECTEDMANA_SPELL", "prob": 1 },
+      { "trait": "LABWORK_SPELL", "prob": 1 },
+      { "trait": "INSTANTCAMP_SPELL", "prob": 1 },
+      { "trait": "ENTRAPMENT_SPELL", "prob": 1 },
+      { "trait": "SPUR_SPELL", "prob": 1 },
+      { "trait": "LETLOOSE_SPELL", "prob": 1 },
+      { "trait": "HELLFIRE_SPELL", "prob": 1 },
+      { "trait": "GOLDENAURA_SPELL", "prob": 1 },
+      { "trait": "BLEED_SPELL", "prob": 1 },
+      { "trait": "FUELERUP_SPELL", "prob": 1 },
+      { "trait": "SPIRITUALINVISIBILITY_SPELL", "prob": 1 },
+      { "trait": "ESTRANGEMENT_SPELL", "prob": 1 },
+      { "trait": "summonwisps_SPELL", "prob": 1 },
+      { "trait": "spiritwalk_SPELL", "prob": 1 },
+      { "trait": "NECROTICGAZE_SPELL", "prob": 1 },
+      { "trait": "CAUSTICAURA_SPELL", "prob": 1 },
+      { "trait": "VICIOUSTENTACLE_SPELL", "prob": 1 },
+      { "trait": "FUNGICIDE_SPELL", "prob": 1 },
+      { "trait": "DRUIDICREGROWTH_SPELL", "prob": 1 },
+      { "trait": "DRUIDICHEALING_SPELL", "prob": 1 },
+      { "trait": "CAUSEBEAR_SPELL", "prob": 1 },
+      { "trait": "CRYSTALPLACE_SPELL", "prob": 1 },
+      { "trait": "SUMMONBIKE_SPELL", "prob": 1 },
+      { "trait": "AUTOTAZER_SPELL", "prob": 1 },
+      { "trait": "DECAYINGBONECLUB_SPELL", "prob": 1 },
+      { "trait": "PURIFICATIONSEED_SPELL", "prob": 1 },
+      { "trait": "DARKSIGHT_SPELL", "prob": 1 },
+      { "trait": "RUPTURE_SPELL", "prob": 1 },
+      { "trait": "VISCERALPROJECTION_SPELL", "prob": 1 },
+      { "trait": "PARALYTICDART_SPELL", "prob": 1 },
+      { "trait": "LESSERBANISH_SPELL", "prob": 1 },
+      { "trait": "SMITE_SPELL", "prob": 1 },
+      { "trait": "IONIZATION_SPELL", "prob": 1 },
+      { "trait": "PIERCINGBOLT_SPELL", "prob": 1 },
+      { "trait": "SHARDSTORM_SPELL", "prob": 1 },
+      { "trait": "ROCKBOLT_SPELL", "prob": 1 },
+      { "trait": "LIFECONVERSION_SPELL", "prob": 1 },
+      { "trait": "NATURESTRANCE_SPELL", "prob": 1 },
+      { "trait": "STORMHAMMER_SPELL", "prob": 1 },
+      { "trait": "MANATRICITY_SPELL", "prob": 1 },
+      { "trait": "ICESPIKE_SPELL", "prob": 1 },
+      { "trait": "FROSTARMOR_SPELL", "prob": 1 },
+      { "trait": "SPIRITUALARMOR_SPELL", "prob": 1 },
+      { "trait": "BAGOFCATS_SPELL", "prob": 1 },
+      { "trait": "SUMMONZOMBIE_SPELL", "prob": 1 },
+      { "trait": "SUMMONTOUGHZOMBIE_SPELL", "prob": 1 },
+      { "trait": "RECOVERSTAMINA_SPELL", "prob": 1 },
+      { "trait": "REPELLINGARC_SPELL", "prob": 1 },
+      { "trait": "SUMMONSKELETON_SPELL", "prob": 1 },
+      { "trait": "RECOVERPAIN_SPELL", "prob": 1 },
+      { "trait": "ESCAPE_SPELL", "prob": 1 },
+      { "trait": "MANABEAM_SPELL", "prob": 1 },
+      { "trait": "HATTRICK_SPELL", "prob": 1 },
+      { "trait": "MANABOLT_SPELL", "prob": 1 },
+      { "trait": "SOULBIND_SPELL", "prob": 1 },
+      { "trait": "IMPROVEDKNOCK_SPELL", "prob": 1 },
+      { "trait": "SUMMONSTEED_SPELL", "prob": 1 },
+      { "trait": "AURAOFPROTECTION_SPELL", "prob": 1 },
+      { "trait": "LOVE_SPELL", "prob": 1 },
+      { "trait": "DISLOCATE_SPELL", "prob": 1 },
+      { "trait": "LAZE_SPELL", "prob": 1 },
+      { "trait": "MIRRORIMAGE_SPELL", "prob": 1 },
+      { "trait": "ANIMATEDBLADE_SPELL", "prob": 1 },
+      { "trait": "FROSTSPRAY_SPELL", "prob": 1 },
+      { "trait": "FOCUSEDBOLT_SPELL", "prob": 1 },
+      { "trait": "OBFUSTCATEBODY_SPELL", "prob": 1 },
+      { "trait": "NOVAFLARE_SPELL", "prob": 1 },
+      { "trait": "LIGHTNINGBOLT_SPELL", "prob": 1 },
+      { "trait": "FIRSTTHINGSFIRST_SPELL", "prob": 1 },
+      { "trait": "DOUBLETROUBLE_SPELL", "prob": 1 },
+      { "trait": "FLIGHT_SPELL", "prob": 1 },
+      { "trait": "SUMMONCOLD4_SPELL", "prob": 1 },
+      { "trait": "SUMMONFLOATINGDISK_SPELL", "prob": 1 },
+      { "trait": "GAMBIT_SPELL", "prob": 1 },
+      { "trait": "DIMENSIONALRESONANCE_SPELL", "prob": 1 },
+      { "trait": "HYPERVELOCITYKNIFESHOT_SPELL", "prob": 1 },
+      { "trait": "DIMENSIONDOOR_SPELL", "prob": 1 },
+      { "trait": "GRAVITYWELL_SPELL", "prob": 1 },
+      { "trait": "SHADOWFIELD_SPELL", "prob": 1 },
+      { "trait": "BRAINFREEZE_SPELL", "prob": 1 },
+      { "trait": "SOFTSTEP_SPELL", "prob": 1 },
+      { "trait": "STONESKIN_SPELL", "prob": 1 },
+      { "trait": "CLAIRVOYANCE_SPELL", "prob": 1 },
+      { "trait": "RABBITSFOOT_SPELL", "prob": 1 },
+      { "trait": "MAGICDRIVE_SPELL", "prob": 1 },
+      { "trait": "INVISIBILITY_SPELL", "prob": 1 },
+      { "trait": "ENLARGE_SPELL", "prob": 1 },
+      { "trait": "DISRUPTIONBOLT_SPELL", "prob": 1 },
+      { "trait": "BENDWILLMAINTAIN_SPELL", "prob": 1 },
+      { "trait": "PAINSPLIT_SPELL", "prob": 1 },
+      { "trait": "MEDITATE_SPELL", "prob": 1 },
+      { "trait": "PILLAROFSTONE_SPELL", "prob": 1 },
+      { "trait": "BALEFULPOLY_SPELL", "prob": 1 },
+      { "trait": "TRANSLOCATESELF_SPELL", "prob": 1 },
+      { "trait": "CAUSEROT_SPELL", "prob": 1 },
+      { "trait": "EXTRACTMEMORY_SPELL", "prob": 1 },
+      { "trait": "TRANSGATEPLACE_SPELL", "prob": 1 },
+      { "trait": "SUMMONDECAYEDPOUNCER_SPELL", "prob": 1 },
+      { "trait": "COAGULANTWEAVE_SPELL", "prob": 1 },
+      { "trait": "LIGHTNINGSTORM_SPELL", "prob": 1 },
+      { "trait": "SOULREND_SPELL", "prob": 1 },
+      { "trait": "WRATHFULSPIRITS_SPELL", "prob": 1 },
+      { "trait": "ARTILLERY_SPELL", "prob": 1 },
+      { "trait": "GROTESQUEENHANCE_SPELL", "prob": 1 },
+      { "trait": "MEGABLAST_SPELL", "prob": 1 },
+      { "trait": "SUMMONSPEARCATHUNTER_SPELL", "prob": 1 },
+      { "trait": "DIMENSIONALSTEP_SPELL", "prob": 1 },
+      { "trait": "ENDEAVOR_SPELL", "prob": 1 },
+      { "trait": "CURELIGHTWOUNDS_SPELL", "prob": 1 },
+      { "trait": "HASTE_SPELL", "prob": 1 },
+      { "trait": "SCRYING_SPELL", "prob": 1 },
+      { "trait": "SUMMONWOLF_SPELL", "prob": 1 },
+      { "trait": "MANABLAST_SPELL", "prob": 1 },
+      { "trait": "SHADOWREALM_SPELL", "prob": 1 },
+      { "trait": "HOARYBLAST_SPELL", "prob": 1 },
+      { "trait": "SPITTRAP_SPELL", "prob": 1 },
+      { "trait": "CALLSTORM_SPELL", "prob": 1 },
+      { "trait": "MOJOCYCLE_SPELL", "prob": 1 },
+      { "trait": "FIREBALL_SPELL", "prob": 1 },
+      { "trait": "CONEOFCOLD_SPELL", "prob": 1 },
+      { "trait": "CHARGEENERGY_SPELL", "prob": 1 },
+      { "trait": "PRAYER_SPELL", "prob": 1 },
+      { "trait": "WHITEWOLFSTAFF_SPELL", "prob": 1 },
+      { "trait": "COLDFLASH_SPELL", "prob": 1 },
+      { "trait": "XRAYVISION_SPELL", "prob": 1 },
+      { "trait": "BENDWILL_SPELL", "prob": 1 },
+      { "trait": "DIVERGENCEFROMREALITY_SPELL", "prob": 1 },
+      { "trait": "NATURESBOW_SPELL", "prob": 1 },
+      { "trait": "SYNAPTICSTIMULATION_SPELL", "prob": 1 },
+      { "trait": "POCKETSNIPER_SPELL", "prob": 1 },
+      { "trait": "FERALFORM_SPELL", "prob": 1 },
+      { "trait": "MAGICIANSDUFFEL_SPELL", "prob": 1 },
+      { "trait": "SHOVE_SPELL", "prob": 1 },
+      { "trait": "SHOULDERCHARGE_SPELL", "prob": 1 },
+      { "trait": "LAMP_SPELL", "prob": 1 },
+      { "trait": "SUMMONKAYAK_SPELL", "prob": 1 },
+      { "trait": "SORCERY_SPELL", "prob": 1 },
+      { "trait": "WICKEDRITUAL_SPELL", "prob": 1 },
+      { "trait": "NATURESCOMMUNE_SPELL", "prob": 1 },
+      { "trait": "CRYSTALLIZEMANA_SPELL", "prob": 1 },
+      { "trait": "MOVEEARTH_SPELL", "prob": 1 },
+      { "trait": "FINGERFIRELIGHTER_SPELL", "prob": 1 },
+      { "trait": "WINDSTRIKE_SPELL", "prob": 1 },
+      { "trait": "YANK_SPELL", "prob": 1 },
+      { "trait": "UPGRADEALLY_SPELL", "prob": 1 },
+      { "trait": "REVIVEALLY_SPELL", "prob": 1 },
+      { "trait": "MAGICMISSILE_SPELL", "prob": 1 },
+      { "trait": "LIGHTNINGBLAST_SPELL", "prob": 1 },
+      { "trait": "JOLT_SPELL", "prob": 1 },
+      { "trait": "HOMEWARD_SPELL", "prob": 1 },
+      { "trait": "CHARGEATTACK_SPELL", "prob": 1 },
+      { "trait": "WILLTOPOWER_SPELL", "prob": 1 },
+      { "trait": "GHOSTCLEANSE_SPELL", "prob": 1 },
+      { "trait": "JUMP_SPELL", "prob": 1 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "unendingpens",
+    "items": [
+      { "item": "unending_pen", "prob": 25 },
+      { "item": "unending_pen_blue", "prob": 25 },
+      { "item": "unending_pen_red", "prob": 25 },
+      { "item": "white_pen", "prob": 5 },
+      { "item": "unending_pen_green", "prob": 25 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "crystallized_ink_colors",
+    "items": [
+      { "item": "crystallized_ink_red", "prob": 25 },
+      { "item": "crystallized_ink_blue", "prob": 25 },
+      { "item": "crystallized_ink_black", "prob": 25 },
+      { "item": "crystallized_ink_green", "prob": 25 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "drawings",
+    "items": [
+      { "item": "drawing_wolf", "prob": 75 },
+      { "item": "drawing_balrog", "prob": 10 },
+      { "item": "drawing_troll", "prob": 20 },
+      { "item": "drawing_gelatin", "prob": 20 },
+      { "item": "drawing_dragon", "prob": 1 },
+      { "item": "drawing_artist", "prob": 1 },
+      { "item": "drawing_push", "prob": 1 },
+      { "item": "drawing_pull", "prob": 1 },
+      { "item": "drawing_scrying", "prob": 1 },
+      { "item": "drawing_stop", "prob": 1 },
+      { "item": "drawing_translocate", "prob": 10 },
+      { "item": "drawing_step", "prob": 5 },
+      { "item": "drawing_dislocate", "prob": 1 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "verges",
+    "subtype": "distribution",
+    "items": [
+      { "item": "verge_soul_bind", "prob": 1 },
+      { "item": "verge_scrying", "prob": 1 },
+      { "item": "verge_greater_banishment", "prob": 1 },
+      { "item": "verge_cleansing", "prob": 1 },
+      { "item": "verge_abolish_spirit", "prob": 1 },
+      { "item": "verge_resonant_shift", "prob": 1 },
+      { "item": "verge_summon_horse", "prob": 1 },
+      { "item": "verge_improved_knock", "prob": 1 },
+      { "item": "verge_first_things_first", "prob": 1 },
+      { "item": "verge_cold_flash", "prob": 1 },
+      { "item": "verge_instant_camp", "prob": 1 },
+      { "item": "verge_distraction", "prob": 1 },
+      { "item": "verge_fireball", "prob": 1 },
+      { "item": "verge_cone_of_cold", "prob": 1 },
+      { "item": "verge_lightning_bolt", "prob": 1 },
+      { "item": "verge_magus_haste", "prob": 1 },
+      { "item": "verge_purify_seed", "prob": 1 },
+      { "item": "verge_protection_aura", "prob": 1 },
+      { "item": "verge_coagulant_weave", "prob": 1 },
+      { "item": "verge_soulrend", "prob": 1 },
+      { "item": "verge_conjure_crystal", "prob": 1 },
+      { "item": "verge_create_atomic_light", "prob": 10 },
+      { "item": "verge_blinding_flash", "prob": 1 },
+      { "item": "verge_summon_bike", "prob": 1 },
+      { "item": "verge_summon_helicoptor", "prob": 1 },
+      { "item": "verge_marinate", "prob": 1 },
+      { "item": "verge_flight", "prob": 1 },
+      { "item": "verge_beautification", "prob": 1 },
+      { "item": "verge_brain_freeze", "prob": 1 },
+      { "item": "verge_transgate_place", "prob": 1 },
+      { "item": "verge_baleful_polymorph", "prob": 1 },
+      { "item": "verge_ethereal_grasp", "prob": 1 },
+      { "item": "verge_escape", "prob": 1 },
+      { "item": "verge_spawn_gas", "prob": 1 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "magedrops",
+    "items": [
+      [ "cards_magic", 15 ],
+      { "item": "tear_of_child", "prob": 33, "count": [ 0, 5 ] },
+      { "item": "brimstone_sliver", "prob": 50, "count": [ 0, 3 ] },
+      { "item": "brimstone_chunk", "prob": 33, "count": [ 0, 2 ] },
+      { "item": "twisted_soul" },
+      { "item": "robe" },
+      { "item": "decaying_soul", "prob": 50 },
+      { "item": "crazed_note", "prob": 10 },
+      { "item": "denarius", "prob": 33, "count": [ 0, 3 ] },
+      { "item": "antoninianus", "prob": 33 },
+      { "group": "enchanted_small_items", "prob": 10 },
+      { "group": "harddrugs", "prob": 33, "count": [ 0, 3 ] },
+      { "group": "enchanted_misc", "prob": 1 },
+      { "group": "enchanted_combat_items", "prob": 1 },
+      { "group": "waywardmemories", "prob": 10 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "madartist",
+    "items": [
+      [ "cards_magic", 50 ],
+      { "item": "crystallized_ink", "prob": 33, "count": [ 1, 2 ] },
+      { "item": "twisted_soul", "prob": 33 },
+      { "item": "sf_watch" },
+      { "item": "antoninianus", "prob": 33 },
+      { "group": "unendingpens", "count": [ 1, 1 ] },
+      { "group": "crystallized_ink_colors", "prob": 25 },
+      { "group": "waywardmemories", "prob": 10 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mil_armor",
+    "copy-from": "mil_armor",
+    "extend": { "items": [ { "item": "magic_mantle", "prob": 3 } ] }
+  },
+  {
+    "type": "item_group",
+    "id": "book_military",
+    "//": "Military combat manuals and related books",
+    "copy-from": "book_military",
+    "extend": { "items": [ { "item": "magic_operatives_handbook", "prob": 1 }, { "item": "heli_book", "prob": 30 } ] }
+  },
+  {
+    "type": "item_group",
+    "id": "magazines",
+    "copy-from": "magazines",
+    "extend": { "items": [ { "item": "heli_book", "prob": 5 } ] }
+  },
+  {
+    "type": "item_group",
+    "id": "SUS_office_desk",
+    "copy-from": "SUS_office_desk",
+    "subtype": "collection",
+    "extend": { "items": [ { "group": "enchanted_small_items", "prob": 10 } ] }
+  },
+  {
+    "type": "item_group",
+    "id": "office_supplies",
+    "copy-from": "office_supplies",
+    "extend": {
+      "items": [
+        { "item": "professional_pendant", "prob": 1 },
+        { "item": "crystallized_ink", "prob": 1 },
+        { "item": "dragonhide_journal", "prob": 10 },
+        { "group": "crystallized_ink_colors", "prob": 5 },
+        { "group": "unendingpens", "prob": 5 }
+      ]
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "book_martial",
+    "//": "Books about martial arts",
+    "copy-from": "book_martial",
+    "extend": { "items": [ { "item": "energy_in_combat", "prob": 3 }, { "item": "smite_gloves", "prob": 1 } ] }
+  },
+  {
+    "type": "item_group",
+    "id": "book_school",
+    "//": "Books found in school library",
+    "subtype": "collection",
+    "copy-from": "book_school",
+    "extend": { "items": [ { "item": "spells_for_the_modern_professional", "prob": 1 } ] }
+  },
+  {
+    "id": "kids_books",
+    "type": "item_group",
+    "copy-from": "kids_books",
+    "extend": { "items": [ { "item": "tales_from_other_planes", "prob": 1 }, { "item": "coloring_book", "prob": 5 } ] }
+  },
+  {
+    "id": "livingroom",
+    "type": "item_group",
+    "copy-from": "livingroom",
+    "subtype": "distribution",
+    "extend": { "items": [ { "group": "enchanted_misc", "prob": 3 } ] }
+  },
+  {
+    "id": "bedroom",
+    "type": "item_group",
+    "copy-from": "bedroom",
+    "subtype": "distribution",
+    "extend": { "items": [ { "group": "enchanted_misc", "prob": 1 } ] }
+  },
+  {
+    "id": "animist_items",
+    "type": "item_group",
+    "copy-from": "animist_items",
+    "subtype": "collection",
+    "extend": { "items": [ { "group": "enchanted_misc", "prob": 3 } ] }
+  },
+  {
+    "id": "kelvinist_items",
+    "type": "item_group",
+    "copy-from": "kelvinist_items",
+    "subtype": "collection",
+    "extend": { "items": [ { "group": "enchanted_misc", "prob": 3 } ] }
+  },
+  {
+    "id": "technomancer_items",
+    "type": "item_group",
+    "copy-from": "technomancer_items",
+    "subtype": "collection",
+    "extend": { "items": [ { "group": "enchanted_misc", "prob": 3 } ] }
+  },
+  {
+    "id": "stormshaper_items",
+    "type": "item_group",
+    "copy-from": "stormshaper_items",
+    "subtype": "collection",
+    "extend": { "items": [ { "group": "enchanted_misc", "prob": 3 } ] }
+  },
+  {
+    "id": "earthshaper_items",
+    "type": "item_group",
+    "copy-from": "earthshaper_items",
+    "subtype": "collection",
+    "extend": { "items": [ { "group": "enchanted_misc", "prob": 3 } ] }
+  },
+  {
+    "id": "biomancer_items",
+    "type": "item_group",
+    "copy-from": "biomancer_items",
+    "subtype": "collection",
+    "extend": { "items": [ { "group": "enchanted_misc", "prob": 3 } ] }
+  },
+  {
+    "id": "druid_items",
+    "type": "item_group",
+    "copy-from": "druid_items",
+    "subtype": "collection",
+    "extend": { "items": [ { "group": "enchanted_misc", "prob": 3 } ] }
+  },
+  {
+    "type": "item_group",
+    "id": "magic_shop_wands",
+    "copy-from": "magic_shop_wands",
+    "extend": {
+      "items": [
+        { "item": "artillerant_wand", "prob": 1, "charges-min": 1, "charges-max": 50 },
+        { "group": "enchanted_misc", "prob": 5 },
+        { "group": "enchanted_combat_items", "prob": 1 }
+      ]
+    }
+  },
+  {
+    "id": "enchanted_small_items",
+    "//": "A distribution of small magical items for general loot areas like desks, shelves, personal items.",
+    "type": "item_group",
+    "subtype": "distribution",
+    "copy-from": "enchanted_small_items",
+    "extend": {
+      "items": [
+        [ "crystallized_mana", 100 ],
+        { "group": "unendingpens", "prob": 5 },
+        { "group": "harddrugs", "prob": 5 },
+        { "group": "enchanted_misc", "prob": 1 },
+        [ "magic_smart_phone", 20 ],
+        [ "magic_smart_phone", 15 ],
+        [ "magic_smart_phone", 10 ],
+        [ "magic_smart_phone", 5 ]
+      ]
+    }
+  },
+  {
+    "id": "fridgesnacks",
+    "type": "item_group",
+    "subtype": "distribution",
+    "copy-from": "fridgesnacks",
+    "extend": { "items": [ { "item": "crystallized_mana", "prob": 40 } ] }
+  },
+  {
+    "id": "alchemy_items",
+    "type": "item_group",
+    "copy-from": "alchemy_items",
+    "extend": {
+      "items": [
+        { "item": "brimstone_sliver", "prob": 10, "count-min": 1, "count-max": 2 },
+        { "item": "antoninianus", "prob": 15, "count-min": 1, "count-max": 3 },
+        { "item": "brimstone_chunk", "prob": 5 },
+        { "item": "decaying_soul", "prob": 10 },
+        { "item": "chunk_sulfur", "prob": 20 },
+        { "item": "twisted_soul", "prob": 3 },
+        { "item": "cleansed_soul", "prob": 1 },
+        { "item": "crystallized_ink", "prob": 5 },
+        { "item": "mirrored_page", "prob": 5 },
+        { "item": "dragonhide_journal", "prob": 15 },
+        { "group": "crystallized_ink_colors", "prob": 5 },
+        { "item": "white_pen_ink", "prob": 10, "count-min": 1, "count-max": 3 },
+        { "group": "waywardmemories", "prob": 5 },
+        { "item": "tear_of_child", "prob": 20, "count-min": 1, "count-max": 3 },
+        { "item": "crystal_mana", "prob": 5, "count": [ 1, 100 ] },
+        { "item": "crystallized_alcohol", "prob": 5, "count-min": 1, "count-max": 5 },
+        { "item": "crystallized_heroin", "prob": 5 },
+        { "item": "crystallized_meth_low", "prob": 5, "count-min": 1, "count-max": 5 },
+        { "item": "crystallized_meth_pure", "prob": 1 }
+      ]
+    }
+  },
+  {
+    "id": "newspaper_recent",
+    "type": "item_group",
+    "copy-from": "newspaper_recent",
+    "extend": { "items": [ { "item": "magical_times_recent", "prob": 10 } ] }
+  },
+  {
+    "id": "newspaper_old",
+    "type": "item_group",
+    "copy-from": "newspaper_old",
+    "extend": { "items": [ { "item": "magical_times_old", "prob": 10 } ] }
+  },
+  {
+    "id": "electronics",
+    "type": "item_group",
+    "copy-from": "electronics",
+    "extend": {
+      "items": [
+        { "item": "all_purpose_watch", "prob": 10 },
+        { "item": "magic_camera", "prob": 10 },
+        { "item": "magic_camera_pro", "prob": 10 },
+        { "item": "magic_eink_tablet_pc", "prob": 10 },
+        { "item": "magic_laptop", "prob": 10 }
+      ]
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "harddrugs",
+    "copy-from": "harddrugs",
+    "extend": {
+      "items": [
+        { "item": "crystal_mana", "prob": 10, "count-min": 1, "count-max": 10 },
+        { "item": "crazed_note", "prob": 5, "count-min": 1, "count-max": 1 },
+        { "item": "crystallized_mana", "prob": 20, "count-min": 1, "count-max": 2 },
+        { "item": "crystallized_alcohol", "prob": 20, "count-min": 1, "count-max": 5 },
+        { "item": "crystallized_heroin", "prob": 10, "count-min": 1, "count-max": 5 },
+        { "item": "crystallized_meth_low", "prob": 10, "count-min": 1, "count-max": 5 },
+        { "item": "crystallized_meth_pure", "prob": 5 }
+      ]
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "enchanted_rings_uncommon",
+    "copy-from": "enchanted_rings_uncommon",
+    "subtype": "collection",
+    "extend": { "items": [ { "item": "black_wolfs_ring_bullet", "prob": 5 }, { "item": "white_wolfs_ring_cold", "prob": 5 } ] }
+  },
+  {
+    "type": "item_group",
+    "id": "wigs",
+    "subtype": "collection",
+    "items": [
+      { "item": "hair_black_crewcut_wig", "prob": 5 },
+      { "item": "hair_black_mohawk_wig", "prob": 5 },
+      { "item": "hair_black_fro_wig", "prob": 5 },
+      { "item": "hair_black_short_wig", "prob": 5 },
+      { "item": "hair_black_medium_wig", "prob": 5 },
+      { "item": "hair_black_long_wig", "prob": 5 },
+      { "item": "hair_brown_crewcut_wig", "prob": 5 },
+      { "item": "hair_brown_mohawk_wig", "prob": 5 },
+      { "item": "hair_brown_fro_wig", "prob": 5 },
+      { "item": "hair_brown_short_wig", "prob": 5 },
+      { "item": "hair_brown_medium_wig", "prob": 5 },
+      { "item": "hair_brown_long_wig", "prob": 5 },
+      { "item": "hair_blond_crewcut_wig", "prob": 5 },
+      { "item": "hair_blond_mohawk_wig", "prob": 5 },
+      { "item": "hair_blond_fro_wig", "prob": 5 },
+      { "item": "hair_blond_short_wig", "prob": 5 },
+      { "item": "hair_blond_medium_wig", "prob": 5 },
+      { "item": "hair_blond_long_wig", "prob": 5 },
+      { "item": "hair_red_crewcut_wig", "prob": 5 },
+      { "item": "hair_red_mohawk_wig", "prob": 5 },
+      { "item": "hair_red_fro_wig", "prob": 5 },
+      { "item": "hair_red_short_wig", "prob": 5 },
+      { "item": "hair_red_medium_wig", "prob": 5 },
+      { "item": "hair_red_long_wig", "prob": 5 },
+      { "item": "hair_gray_crewcut_wig", "prob": 5 },
+      { "item": "hair_gray_mohawk_wig", "prob": 5 },
+      { "item": "hair_gray_fro_wig", "prob": 5 },
+      { "item": "hair_gray_short_wig", "prob": 5 },
+      { "item": "hair_gray_medium_wig", "prob": 5 },
+      { "item": "hair_gray_long_wig", "prob": 5 },
+      { "item": "hair_white_crewcut_wig", "prob": 5 },
+      { "item": "hair_white_mohawk_wig", "prob": 5 },
+      { "item": "hair_white_fro_wig", "prob": 5 },
+      { "item": "hair_white_short_wig", "prob": 5 },
+      { "item": "hair_white_medium_wig", "prob": 5 },
+      { "item": "hair_white_long_wig", "prob": 5 },
+      { "item": "baldcap", "prob": 5 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "costume_accessories",
+    "copy-from": "costume_accessories",
+    "subtype": "distribution",
+    "extend": { "items": [ { "group": "wigs", "prob": 40 } ] }
+  },
+  {
+    "type": "item_group",
+    "id": "magic_shop_clothes",
+    "copy-from": "magic_shop_clothes",
+    "extend": { "items": [ { "group": "wigs", "prob": 25 } ] }
+  },
+  {
+    "type": "item_group",
+    "id": "enchanted_combat_items",
+    "copy-from": "enchanted_combat_items",
+    "extend": {
+      "items": [
+        [ "white_wolfs_staff", 3 ],
+        [ "smart_rug", 5 ],
+        [ "walking_key", 5 ],
+        [ "artillerant_wand", 10 ],
+        [ "interdimensional_cage", 5 ],
+        [ "parabolan_silk_undersuit", 5 ],
+        [ "smite_gloves", 5 ],
+        { "group": "drawings", "prob": 1 },
+        [ "summon_dragon_item", 5 ],
+        [ "coloring_book", 5 ],
+        [ "black_wolfs_ring_bullet", 1 ],
+        [ "white_wolfs_ring_cold", 1 ],
+        [ "mtoken_pocketsaw", 5 ],
+        [ "nondescript_briefcase", 1 ],
+        [ "coldlight_flashbang", 25 ],
+        [ "greensteel_spear", 1 ],
+        [ "redsteel_morningstar", 1 ],
+        [ "intrapsychological_nesting", 5 ],
+        [ "sf_watch_stasis", 5 ],
+        [ "magic_mantle", 5 ],
+        [ "bluesteel_longsword", 3 ],
+        [ "all_purpose_watch", 5 ],
+        [ "professional_pendant", 5 ],
+        [ "handgun_retrofitting", 5 ],
+        [ "observation_platform", 5 ],
+        [ "darkswitch", 10 ]
+      ]
+    }
+  }
+]
