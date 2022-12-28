@@ -1,0 +1,319 @@
+[
+  {
+    "type": "talk_topic",
+    "id": "TALK_MAGIC_OPERATOR",
+    "dynamic_line": {
+      "u_has_var": "talked_to_magic_operator",
+      "type": "dialogue",
+      "context": "magic_operator",
+      "value": "yes",
+      "no": "Designate yourself immediately.",
+      "yes": "Just stay where I can see you."
+    },
+    "responses": [
+      {
+        "text": "I, uh, designate myself?",
+        "topic": "TALK_MAGIC_OPERATOR_INTRO",
+        "effect": { "u_add_var": "talked_to_magic_operator", "type": "dialogue", "context": "magic_operator", "value": "yes" }
+      },
+      {
+        "switch": true,
+        "default": true,
+        "text": "Alright, alright. I'm not here to hurt anybody.",
+        "trial": { "type": "PERSUADE", "difficulty": 10 },
+        "success": { "topic": "TALK_OPERATOR_FRIENDLY", "opinion": { "trust": 0, "value": 1 } },
+        "failure": { "topic": "TALK_OPERATOR_WARY", "opinion": { "anger": 3, "fear": 0 } }
+      },
+      {
+        "switch": true,
+        "default": true,
+        "text": "You don't look so tough. Why should I?",
+        "trial": { "type": "INTIMIDATE", "difficulty": 40, "mod": [ [ "AGGRESSION", -2 ], [ "BRAVERY", -2 ] ] },
+        "success": { "topic": "TALK_OPERATOR_FEARFUL", "opinion": { "trust": -4, "fear": 3, "value": -1, "anger": 4 } },
+        "failure": { "topic": "TALK_OPERATOR_ANGRY", "opinion": { "trust": -4, "value": -5, "anger": 10 } }
+      },
+      {
+        "text": "Need anything done?",
+        "topic": "TALK_MISSION_LIST",
+        "condition": {
+          "and": [
+            { "not": "has_assigned_mission" },
+            {
+              "not": { "npc_has_var": "npc_operator_intel_done", "type": "dialogue", "context": "magic_operator", "value": "yes" }
+            }
+          ]
+        }
+      },
+      { "text": "About the mission…", "topic": "TALK_MISSION_INQUIRE", "condition": "has_assigned_mission" },
+      {
+        "text": "About one of those missions…",
+        "topic": "TALK_MISSION_LIST_ASSIGNED",
+        "condition": "has_many_assigned_missions"
+      },
+      { "text": "Goodbye.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "TALK_OPERATOR_FRIENDLY",
+    "type": "talk_topic",
+    "dynamic_line": "Fine. But stay where I can see you, you hear me?",
+    "responses": [
+      {
+        "text": "Come with me.  We can help each other out.",
+        "trial": { "type": "PERSUADE", "difficulty": 10, "mod": [ [ "value", 2 ] ] },
+        "success": { "topic": "TALK_AGREE_FOLLOW", "effect": "follow", "opinion": { "trust": 1, "value": 1 } },
+        "failure": { "topic": "TALK_DENY_FOLLOW", "effect": "deny_follow", "opinion": { "trust": -1, "fear": 1 } }
+      },
+      { "text": "We both go our separate ways. No trouble here.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "TALK_OPERATOR_WARY",
+    "type": "talk_topic",
+    "dynamic_line": "Something just seems off about you...",
+    "responses": [
+      {
+        "text": "I'm not here to hurt anybody. Just getting by like the rest of us.",
+        "trial": { "type": "PERSUADE", "difficulty": 15, "mod": [ [ "TRUST", 2 ], [ "VALUE", 2 ] ] },
+        "success": { "topic": "TALK_OPERATOR_FRIENDLY", "opinion": { "trust": 1, "value": 1 } },
+        "failure": { "topic": "TALK_OPERATOR_LEAVE" }
+      },
+      {
+        "text": "Something's gonna be off about you pretty soon if you don't do what I say.",
+        "trial": { "type": "INTIMIDATE", "difficulty": 20, "mod": [ [ "AGGRESSION", -2 ], [ "BRAVERY", -2 ] ] },
+        "success": { "topic": "TALK_OPERATOR_FEARFUL", "opinion": { "trust": -4, "fear": 3, "value": -1, "anger": 4 } },
+        "failure": { "topic": "TALK_OPERATOR_ANGRY", "opinion": { "trust": -4, "value": -5, "anger": 10 } }
+      },
+      { "text": "Forget it. No use to anybody.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "TALK_OPERATOR_FEARFUL",
+    "type": "talk_topic",
+    "dynamic_line": "Jesus, just what the hell are you?!",
+    "responses": [
+      {
+        "text": "Join me or die.",
+        "trial": { "type": "INTIMIDATE", "difficulty": 20, "mod": [ [ "VALUE", 2 ], [ "TRUST", 2 ], [ "BRAVERY", -2 ] ] },
+        "success": { "topic": "TALK_AGREE_FOLLOW", "effect": "follow", "opinion": { "trust": -4, "fear": 3, "value": -1, "anger": 4 } },
+        "failure": { "topic": "TALK_OPERATOR_ANGRY", "opinion": { "trust": 4, "value": -5, "anger": 10 } }
+      },
+      {
+        "text": "Get out of my sight.",
+        "topic": "TALK_DONE",
+        "effect": "flee",
+        "opinion": { "trust": -1, "fear": -2, "anger": -2 }
+      },
+      {
+        "text": "I'm leaving.",
+        "trial": { "type": "PERSUADE", "difficulty": 10 },
+        "success": { "topic": "TALK_DONE", "opinion": { "trust": 1, "value": 1, "anger": -1 } },
+        "failure": { "topic": "TALK_OPERATOR_ANGRY", "opinion": { "trust": 4, "value": -5, "anger": 10 } }
+      }
+    ]
+  },
+  {
+    "id": "TALK_OPERATOR_ANGRY",
+    "type": "talk_topic",
+    "dynamic_line": "Why shouldn't I just kill you now and be done with it?",
+    "responses": [
+      {
+        "text": "You wanna live, don't you?",
+        "trial": { "type": "INTIMIDATE", "difficulty": 20, "mod": [ [ "VALUE", 2 ], [ "TRUST", 2 ], [ "BRAVERY", -2 ] ] },
+        "success": { "topic": "TALK_DONE", "effect": "flee" },
+        "failure": { "topic": "TALK_DONE", "effect": "hostile" }
+      },
+      { "text": "Why shouldn't you?", "topic": "TALK_DONE", "effect": "hostile" },
+      {
+        "text": "I'm sorry! Please, I want to live.",
+        "trial": { "type": "PERSUADE", "difficulty": 30 },
+        "success": { "topic": "TALK_DONE", "opinion": { "trust": 1, "value": 1, "anger": -1 } },
+        "failure": { "topic": "TALK_DONE", "effect": "hostile" }
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_MAGIC_OPERATOR_INTRO",
+    "dynamic_line": "This better be worth my time.",
+    "responses": [
+      { "text": "What are you doing here? Shouldn't you be out helping people?", "topic": "TALK_MAGIC_OPERATOR_LEAVE" },
+      { "text": "Anything you want to pawn off?", "effect": "start_trade", "topic": "TALK_MAGIC_OPERATOR" },
+      { "text": "I gotta go.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_MAGIC_OPERATOR_LEAVE",
+    "dynamic_line": "There's these things called translocation gates. I am 'out helping people,' the ones worth helping.",
+    "responses": [
+      { "text": "Think you could help me?", "topic": "TALK_MAGIC_OPERATOR", "effect": "start_trade" },
+      { "text": "I gotta go.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_MAGIC_OPERATOR_WAITING",
+    "dynamic_line": {
+      "u_has_var": "talked_to_magic_operator",
+      "type": "dialogue",
+      "context": "magic_operator",
+      "value": "yes",
+      "no": "Yo, you new around here?",
+      "yes": "Been kinda slow recently."
+    },
+    "responses": [
+      {
+        "text": "Just passing through.",
+        "topic": "TALK_MAGIC_OPERATOR_INTRO_WAITING",
+        "effect": { "u_add_var": "talked_to_magic_operator", "type": "dialogue", "context": "magic_operator", "value": "yes" }
+      },
+      {
+        "switch": true,
+        "default": true,
+        "text": "I, uh, yes?",
+        "trial": { "type": "PERSUADE", "difficulty": 7 },
+        "success": { "topic": "TALK_OPERATOR_FRIENDLY_WAITING", "opinion": { "trust": 0, "value": 1 } },
+        "failure": { "topic": "TALK_OPERATOR_WARY_WAITING", "opinion": { "anger": 3, "fear": 0 } }
+      },
+      {
+        "switch": true,
+        "default": true,
+        "text": "No, I'm just here for loot.",
+        "trial": { "type": "INTIMIDATE", "difficulty": 20, "mod": [ [ "AGGRESSION", -2 ], [ "BRAVERY", -2 ] ] },
+        "success": { "topic": "TALK_OPERATOR_FEARFUL_WAITING", "opinion": { "trust": -4, "fear": 3, "value": -1, "anger": 4 } },
+        "failure": { "topic": "TALK_OPERATOR_ANGRY_WAITING", "opinion": { "trust": -4, "value": -5, "anger": 10 } }
+      },
+      {
+        "text": "Need help with anything?",
+        "topic": "TALK_MISSION_LIST",
+        "condition": {
+          "and": [
+            { "not": "has_assigned_mission" },
+            {
+              "not": {
+                "npc_has_var": "npc_operator_intel_done_waiting",
+                "type": "dialogue",
+                "context": "magic_operator_waiting",
+                "value": "yes"
+              }
+            }
+          ]
+        }
+      },
+      { "text": "About the mission…", "topic": "TALK_MISSION_INQUIRE", "condition": "has_assigned_mission" },
+      {
+        "text": "About one of those missions…",
+        "topic": "TALK_MISSION_LIST_ASSIGNED",
+        "condition": "has_many_assigned_missions"
+      },
+      { "text": "Goodbye.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "TALK_OPERATOR_FRIENDLY_WAITING",
+    "type": "talk_topic",
+    "dynamic_line": "Damn. I've been standing here a while and I ain't heard nothin' from the brass.",
+    "responses": [
+      {
+        "text": "You should probably just come with me.",
+        "trial": { "type": "PERSUADE", "difficulty": 5, "mod": [ [ "value", 2 ] ] },
+        "success": { "topic": "TALK_AGREE_FOLLOW", "effect": "follow", "opinion": { "trust": 1, "value": 1 } },
+        "failure": { "topic": "TALK_DENY_FOLLOW", "effect": "deny_follow", "opinion": { "trust": -1, "fear": 1 } }
+      },
+      { "text": "Don't know, don't care.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "TALK_OPERATOR_WARY_WAITING",
+    "type": "talk_topic",
+    "dynamic_line": "Hmm... What's your designation?",
+    "responses": [
+      {
+        "text": "I could ask you the same thing. You're the one standing around doing nothing.",
+        "trial": { "type": "PERSUADE", "difficulty": 10, "mod": [ [ "TRUST", 2 ], [ "VALUE", 2 ] ] },
+        "success": { "topic": "TALK_OPERATOR_FRIENDLY_WAITING", "opinion": { "trust": 1, "value": 1 } },
+        "failure": { "topic": "TALK_OPERATOR_LEAVE_WAITING" }
+      },
+      {
+        "text": "You have one second to quiet down.",
+        "trial": { "type": "INTIMIDATE", "difficulty": 10, "mod": [ [ "AGGRESSION", -2 ], [ "BRAVERY", -2 ] ] },
+        "success": { "topic": "TALK_OPERATOR_FEARFUL_WAITING", "opinion": { "trust": -4, "fear": 3, "value": -1, "anger": 4 } },
+        "failure": { "topic": "TALK_OPERATOR_ANGRY_WAITING", "opinion": { "trust": -4, "value": -5, "anger": 10 } }
+      },
+      { "text": "No time, brass needs me in their office. Later.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "TALK_OPERATOR_FEARFUL_WAITING",
+    "type": "talk_topic",
+    "dynamic_line": "...Alright.",
+    "responses": [
+      {
+        "text": "Come with me or die.",
+        "trial": { "type": "INTIMIDATE", "difficulty": 10, "mod": [ [ "VALUE", 2 ], [ "TRUST", 2 ], [ "BRAVERY", -2 ] ] },
+        "success": { "topic": "TALK_AGREE_FOLLOW", "effect": "follow", "opinion": { "trust": -4, "fear": 3, "value": -1, "anger": 4 } },
+        "failure": { "topic": "TALK_OPERATOR_ANGRY_WAITING", "opinion": { "trust": 4, "value": -5, "anger": 10 } }
+      },
+      {
+        "text": "Get out of my sight.",
+        "topic": "TALK_DONE",
+        "effect": "flee",
+        "opinion": { "trust": -1, "fear": -2, "anger": -2 }
+      },
+      {
+        "text": "I'm leaving. You should too.",
+        "trial": { "type": "PERSUADE", "difficulty": 10 },
+        "success": { "topic": "TALK_DONE", "opinion": { "trust": 1, "value": 1, "anger": -1 } },
+        "failure": { "topic": "TALK_OPERATOR_ANGRY_WAITING", "opinion": { "trust": 4, "value": -5, "anger": 10 } }
+      }
+    ]
+  },
+  {
+    "id": "TALK_OPERATOR_ANGRY_WAITING",
+    "type": "talk_topic",
+    "dynamic_line": "Hey now, you wait just a second! I'm the one who gives orders around here.",
+    "responses": [
+      {
+        "text": "You wanna live, you'll leave right now.",
+        "trial": { "type": "INTIMIDATE", "difficulty": 10, "mod": [ [ "VALUE", 2 ], [ "TRUST", 2 ], [ "BRAVERY", -2 ] ] },
+        "success": { "topic": "TALK_DONE", "effect": "flee" },
+        "failure": { "topic": "TALK_DONE", "effect": "hostile" }
+      },
+      { "text": "That's enough. I'm out of here.", "topic": "TALK_DONE", "effect": "hostile" },
+      {
+        "text": "I think I'm just gonna go...",
+        "trial": { "type": "PERSUADE", "difficulty": 20 },
+        "success": { "topic": "TALK_DONE", "opinion": { "trust": 1, "value": 1, "anger": -1 } },
+        "failure": { "topic": "TALK_DONE", "effect": "hostile" }
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_MAGIC_OPERATOR_INTRO_WAITING",
+    "dynamic_line": "Oh, alrighty. Take it easy.",
+    "responses": [
+      { "text": "What are you doing here?", "topic": "TALK_MAGIC_OPERATOR_LEAVE_WAITING" },
+      {
+        "text": "Got anything you wanna drop off with me?",
+        "effect": "start_trade",
+        "topic": "TALK_MAGIC_OPERATOR_WAITING"
+      },
+      { "text": "I gotta go.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_MAGIC_OPERATOR_LEAVE_WAITING",
+    "dynamic_line": "Got told to guard a file. I set it down to tie my shoe and it fell into this cage... So I'm here until I can get it back.",
+    "responses": [
+      {
+        "text": "Is there anything you still have and want to sell?",
+        "topic": "TALK_MAGIC_OPERATOR_WAITING",
+        "effect": "start_trade"
+      },
+      { "text": "See you.", "topic": "TALK_DONE" }
+    ]
+  }
+]

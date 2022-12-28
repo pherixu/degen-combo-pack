@@ -1,0 +1,151 @@
+[
+
+{
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "magic_blood",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft",
+    "difficulty": 1,
+    "time": "15 m",
+    "autolearn": true,
+    "components": [ [ [ "edible_blood", 2, "LIST" ] ] ]
+  } ,
+  
+  {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "nox_blood",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft",
+    "difficulty": 1,
+    "time": "15 m",
+    "autolearn": true,
+    "components": [ [ [ "crys_blood", 1 ] ], [["fetid_goop", 5]] ]
+  } ,
+  
+  {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "nox_kidney",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft",
+    "difficulty": 1,
+    "time": "15 m",
+    "autolearn": true,
+    "components": [ [ [ "magic_kidney", 1 ] ], [["fetid_goop", 15]] ]
+  } ,
+   {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "dark_spirit2",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft",
+    "difficulty": 5,
+    "time": "15 m",
+    "autolearn": true,
+    "components": [ [ [ "dark_spirit", 4 ] ] ]
+  } ,
+{
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "blood",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft",
+    "difficulty": 1,
+	"byproducts": [ [ "blood", 9 ] , [ "fetid_goop", 10 ] ],
+    "time": "30 m",
+    "autolearn": true,
+    "components": [ [ [ "blood_tainted", 20 ] ] ]
+  } ,
+  	{
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "magic_corpse",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft",
+    "difficulty": 1,
+    "time": "1 h",
+    "autolearn": true,
+    "components": [ [ [ "rmi2_corpse", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "crys_puppet",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft",
+    "difficulty": 6,
+    "time": "1 h",
+    "autolearn": true,
+  "components": [
+	[["crys_soul", 1 ]],
+	[["crys_shell", 1 ]], [[ "crystal_heart", 1 ]],
+	[[ "magic_kidney", 1 ]], [[ "crys_blood", 10 ]]
+	]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "nox_puppet",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft",
+    "difficulty": 6,
+    "time": "1 h",
+    "autolearn": true,
+  "components": [
+	[["nox_heart", 1 ]],
+	[["nox_shell", 1 ]], [[ "nox_heart", 1 ]],
+	[[ "husk_spawner", 1 ]], [[ "nox_blood", 10 ]]
+	]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "husk_spawner",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft",
+    "difficulty": 3,
+    "time": "1 h",
+    "autolearn": true,
+    "components": [ [ [ "magic_corpse", 1 ] ], [["magic_blood", 5]] ]
+  },
+   	{
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "rmi2_corpse",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft",
+    "difficulty": 1,
+    "time": "30 m",
+    "autolearn": true,
+    "components": [ [ [ "corpse_generic_gunned", 1 ],
+					[ "corpse", 1 ],
+					 [ "corpse_half_beheaded", 1 ] ,
+					 [ "corpse_halved_upper", 1 ] ,
+					 [ "corpse_gunned", 1 ] ,
+					 [ "corpse_stabbed", 1  ],
+					 [ "corpse_scorched", 1  ],
+					 [ "corpse_painful", 1  ],
+					 [ "corpse_bloody", 1  ],
+					 [ "corpse_oldwoman_jewelry", 1  ],
+					 [ "corpse_child_gunned", 1  ],
+					 [ "corpse_child_calm", 1  ],
+					 [ "corpse_generic_girl", 1  ],
+					 [ "corpse_generic_boy", 1  ],
+					 [ "corpse_generic_female", 1  ],
+					 [ "corpse_generic_male", 1  ],
+					 [ "corpse_generic_human", 1 ] ] ]
+  }
+  
+  ]

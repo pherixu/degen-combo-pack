@@ -1,0 +1,219 @@
+[
+  {
+    "id": "mon_smallhammerdronesteel",
+    "copy-from": "mon_smallhammerdrone",
+    "type": "MONSTER",
+    "name": "small hammer drone - steel",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a small clamp and a jackhammer. small tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 2, "armor_cut": 2, "armor_bullet": 2 }
+  },
+  {
+    "id": "mon_smallhammerdronemilitary",
+    "copy-from": "mon_smallhammerdrone",
+    "type": "MONSTER",
+    "name": "small hammer drone - military",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a small clamp and a jackhammer. small tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 4, "armor_cut": 4, "armor_bullet": 4 }
+  },
+  {
+    "id": "mon_smallhammerdronechitin",
+    "copy-from": "mon_smallhammerdrone",
+    "type": "MONSTER",
+    "name": "small hammer drone - chitin",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a small clamp and a jackhammer. small tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 3, "armor_cut": 3, "armor_bullet": 3 }
+  },
+  {
+    "id": "mon_smallwreckingdronesteel",
+    "copy-from": "mon_smallwreckingdrone",
+    "type": "MONSTER",
+    "name": "small wrecking drone - steel",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a motor, a set of chains, and a menacing bludgeon. small tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 2, "armor_cut": 2, "armor_bullet": 2 }
+  },
+  {
+    "id": "mon_smallwreckingdronemilitary",
+    "copy-from": "mon_smallwreckingdrone",
+    "type": "MONSTER",
+    "name": "small wrecking drone - military",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a motor, a set of chains, and a menacing bludgeon. small tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 4, "armor_cut": 4, "armor_bullet": 4 }
+  },
+  {
+    "id": "mon_smallwreckingdronechitin",
+    "copy-from": "mon_smallwreckingdrone",
+    "type": "MONSTER",
+    "name": "small wrecking drone - chitin",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a motor, a set of chains, and a menacing bludgeon. small tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 3, "armor_cut": 3, "armor_bullet": 3 }
+  },
+  {
+    "id": "mon_smallsawdronesteel",
+    "copy-from": "mon_smallsawdrone",
+    "type": "MONSTER",
+    "name": "small saw drone - steel",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with several motors and nasty saws. small tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 2, "armor_cut": 2, "armor_bullet": 2 }
+  },
+  {
+    "id": "mon_smallsawdronemilitary",
+    "copy-from": "mon_smallsawdrone",
+    "type": "MONSTER",
+    "name": "small saw drone - military",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with several motors and nasty saws. small tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 4, "armor_cut": 4, "armor_bullet": 4 }
+  },
+  {
+    "id": "mon_smallsawdronechitin",
+    "copy-from": "mon_smallsawdrone",
+    "type": "MONSTER",
+    "name": "small saw drone - chitin",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with several motors and nasty saws. small tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 3, "armor_cut": 3, "armor_bullet": 3 }
+  },
+  {
+    "id": "mon_smalldrilldronesteel",
+    "copy-from": "mon_smalldrilldrone",
+    "type": "MONSTER",
+    "name": "small drill drone - steel",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a small clamp, meant to hold prey into several powerful drills. small tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 2, "armor_cut": 2, "armor_bullet": 2 }
+  },
+  {
+    "id": "mon_smalldrilldronemilitary",
+    "copy-from": "mon_smalldrilldrone",
+    "type": "MONSTER",
+    "name": "small drill drone - military",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a small clamp, meant to hold prey into several powerful drills. small tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 4, "armor_cut": 4, "armor_bullet": 4 }
+  },
+  {
+    "id": "mon_smalldrilldronechitin",
+    "copy-from": "mon_smalldrilldrone",
+    "type": "MONSTER",
+    "name": "small drill drone - chitin",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a small clamp, meant to hold prey into several powerful drills. small tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 3, "armor_cut": 3, "armor_bullet": 3 }
+  },
+  {
+    "id": "mon_smallbladedronesteel",
+    "copy-from": "mon_smallbladedrone",
+    "type": "MONSTER",
+    "name": "small blade drone - steel",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a small, sharp blade attached to heavy duty flexible material, pulled taut by a powerful motor and held by heavy-duty pins. small tires are constantly screeching as the bot actively scans the area for threat.",
+    "proportional": { "armor_bash": 2, "armor_cut": 2, "armor_bullet": 2 }
+  },
+  {
+    "id": "mon_smallbladedronemilitary",
+    "copy-from": "mon_smallbladedrone",
+    "type": "MONSTER",
+    "name": "small blade drone - military",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a small, sharp blade attached to heavy duty flexible material, pulled taut by a powerful motor and held by heavy-duty pins. small tires are constantly screeching as the bot actively scans the area for threat.",
+    "proportional": { "armor_bash": 4, "armor_cut": 4, "armor_bullet": 4 }
+  },
+  {
+    "id": "mon_smallbladedronechitin",
+    "copy-from": "mon_smallbladedrone",
+    "type": "MONSTER",
+    "name": "small blade drone - chitin",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a small, sharp blade attached to heavy duty flexible material, pulled taut by a powerful motor and held by heavy-duty pins. small tires are constantly screeching as the bot actively scans the area for threat.",
+    "proportional": { "armor_bash": 3, "armor_cut": 3, "armor_bullet": 3 }
+  },
+  {
+    "id": "mon_smalljawdronesteel",
+    "copy-from": "mon_smalljawdrone",
+    "type": "MONSTER",
+    "name": "small jaw drone - steel",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a massive hydraulic jaw. small tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 2, "armor_cut": 2, "armor_bullet": 2 }
+  },
+  {
+    "id": "mon_smalljawdronemilitary",
+    "copy-from": "mon_smalljawdrone",
+    "type": "MONSTER",
+    "name": "small jaw drone - military",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a massive hydraulic jaw. small tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 4, "armor_cut": 4, "armor_bullet": 4 }
+  },
+  {
+    "id": "mon_smalljawdronechitin",
+    "copy-from": "mon_smalljawdrone",
+    "type": "MONSTER",
+    "name": "small jaw drone - chitin",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a massive hydraulic jaw. small tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 3, "armor_cut": 3, "armor_bullet": 3 }
+  },
+  {
+    "id": "mon_smallflamedronesteel",
+    "copy-from": "mon_smallflamedrone",
+    "type": "MONSTER",
+    "name": "small flame drone - steel",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a massive hydraulic flame. small tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 2, "armor_cut": 2, "armor_bullet": 2 }
+  },
+  {
+    "id": "mon_smallflamedronemilitary",
+    "copy-from": "mon_smallflamedrone",
+    "type": "MONSTER",
+    "name": "small flame drone - military",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a massive hydraulic flame. small tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 4, "armor_cut": 4, "armor_bullet": 4 }
+  },
+  {
+    "id": "mon_smallflamedronechitin",
+    "copy-from": "mon_smallflamedrone",
+    "type": "MONSTER",
+    "name": "small flame drone - chitin",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a massive hydraulic flame. small tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 3, "armor_cut": 3, "armor_bullet": 3 }
+  },
+  {
+    "id": "mon_smallbugdronesteel",
+    "copy-from": "mon_smallbugdrone",
+    "type": "MONSTER",
+    "name": "small exterminator drone - steel",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with tanks of insecticidal gas and powerful pincers. small tires are constantly screeching as the bot actively scans the area for threats.",
+    "revert_to_itype": "bot_smallbugbot",
+    "proportional": { "armor_bash": 2, "armor_cut": 2, "armor_bullet": 2 }
+  },
+  {
+    "id": "mon_smallbugdronemilitary",
+    "copy-from": "mon_smallbugdrone",
+    "type": "MONSTER",
+    "name": "small exterminator drone - military",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with tanks of insecticidal gas and powerful pincers. small tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 4, "armor_cut": 4, "armor_bullet": 4 }
+  },
+  {
+    "id": "mon_smallbugdronechitin",
+    "copy-from": "mon_smallbugdrone",
+    "type": "MONSTER",
+    "name": "small exterminator drone - chitin",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with tanks of insecticidal gas and powerful pincers. small tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 3, "armor_cut": 3, "armor_bullet": 3 }
+  },
+  {
+    "id": "mon_smallflashdronesteel",
+    "copy-from": "mon_smallflashdrone",
+    "type": "MONSTER",
+    "name": "small flash drone - steel",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with several hoses attached to a small tank of flash and powerful pincers. small tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 2, "armor_cut": 2, "armor_bullet": 2 }
+  },
+  {
+    "id": "mon_smallflashdronemilitary",
+    "copy-from": "mon_smallflashdrone",
+    "type": "MONSTER",
+    "name": "small flash drone - military",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with several hoses attached to a small tank of flash and powerful pincers. small tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 4, "armor_cut": 4, "armor_bullet": 4 }
+  },
+  {
+    "id": "mon_smallflashdronechitin",
+    "copy-from": "mon_smallflashdrone",
+    "type": "MONSTER",
+    "name": "small flash drone - chitin",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with several hoses attached to a small tank of flash and powerful pincers. small tires are constantly screeching as the bot actively scans the area for threats.",
+    "proportional": { "armor_bash": 3, "armor_cut": 3, "armor_bullet": 3 }
+  }
+]

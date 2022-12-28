@@ -1,0 +1,13 @@
+[
+  {
+    "type": "MOD_INFO",
+    "ident": "new stuff",
+    "name": "Stuff UUUU",
+    "authors": [ "UUUU" ] ,
+    "maintainers": [ "UUUU" ] ,
+    "description": "Various weapons,gear and balance changes invented by me, obviously." ,
+    "category": "content",
+    "dependencies": [ "dda" ]
+  }
+  
+]

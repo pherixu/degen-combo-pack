@@ -1,0 +1,407 @@
+[
+  {
+    "id": "bot_smallhammerwalkersteel",
+    "type": "TOOL",
+    "copy-from": "bot_smallhammerwalker",
+    "name": "inactive small hammer walker - steel",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a small clamp and a jackhammer. Servos and metal plating grind against each other as the small wheels easily roll over most surfaces.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_smallhammerwalkersteel",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  },
+  {
+    "id": "bot_smallhammerwalkermilitary",
+    "type": "TOOL",
+    "copy-from": "bot_smallhammerwalker",
+    "name": "inactive small hammer walker - military",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a small clamp and a jackhammer. Servos and metal plating grind against each other as the small wheels easily roll over most surfaces.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_smallhammerwalkermilitary",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  },
+  {
+    "id": "bot_smallhammerwalkerchitin",
+    "type": "TOOL",
+    "copy-from": "bot_smallhammerwalker",
+    "name": "inactive small hammer walker - chitin",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a small clamp and a jackhammer. Servos and metal plating grind against each other as the small wheels easily roll over most surfaces.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_smallhammerwalkerchitin",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  },
+  {
+    "id": "bot_smallwreckingwalkersteel",
+    "type": "TOOL",
+    "copy-from": "bot_smallwreckingwalker",
+    "name": "inactive small wrecking walker - steel",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a small clamp and a jackwrecking. Servos and metal plating grind against each other as the small wheels easily roll over most surfaces.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_smallwreckingwalkersteel",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  },
+  {
+    "id": "bot_smallwreckingwalkermilitary",
+    "type": "TOOL",
+    "copy-from": "bot_smallwreckingwalker",
+    "name": "inactive small wrecking walker - military",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a small clamp and a jackwrecking. Servos and metal plating grind against each other as the small wheels easily roll over most surfaces.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_smallwreckingwalkermilitary",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  },
+  {
+    "id": "bot_smallwreckingwalkerchitin",
+    "type": "TOOL",
+    "copy-from": "bot_smallwreckingwalker",
+    "name": "inactive small wrecking walker - chitin",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a small clamp and a jackwrecking. Servos and metal plating grind against each other as the small wheels easily roll over most surfaces.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_smallwreckingwalkerchitin",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  },
+  {
+    "id": "bot_smallsawwalkersteel",
+    "type": "TOOL",
+    "copy-from": "bot_smallsawwalker",
+    "name": "inactive small saw walker - steel",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a small clamp and a jacksaw. Servos and metal plating grind against each other as the small wheels easily roll over most surfaces.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_smallsawwalkersteel",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  },
+  {
+    "id": "bot_smallsawwalkermilitary",
+    "type": "TOOL",
+    "copy-from": "bot_smallsawwalker",
+    "name": "inactive small saw walker - military",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a small clamp and a jacksaw. Servos and metal plating grind against each other as the small wheels easily roll over most surfaces.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_smallsawwalkermilitary",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  },
+  {
+    "id": "bot_smallsawwalkerchitin",
+    "type": "TOOL",
+    "copy-from": "bot_smallsawwalker",
+    "name": "inactive small saw walker - chitin",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a small clamp and a jacksaw. Servos and metal plating grind against each other as the small wheels easily roll over most surfaces.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_smallsawwalkerchitin",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  },
+  {
+    "id": "bot_smalldrillwalkersteel",
+    "type": "TOOL",
+    "copy-from": "bot_smalldrillwalker",
+    "name": "inactive small drill walker - steel",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a small clamp and a jackdrill. Servos and metal plating grind against each other as the small wheels easily roll over most surfaces.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_smalldrillwalkersteel",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  },
+  {
+    "id": "bot_smalldrillwalkermilitary",
+    "type": "TOOL",
+    "copy-from": "bot_smalldrillwalker",
+    "name": "inactive small drill walker - military",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a small clamp and a jackdrill. Servos and metal plating grind against each other as the small wheels easily roll over most surfaces.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_smalldrillwalkermilitary",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  },
+  {
+    "id": "bot_smalldrillwalkerchitin",
+    "type": "TOOL",
+    "copy-from": "bot_smalldrillwalker",
+    "name": "inactive small drill walker - chitin",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a small clamp and a jackdrill. Servos and metal plating grind against each other as the small wheels easily roll over most surfaces.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_smalldrillwalkerchitin",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  },
+  {
+    "id": "bot_smallbladewalkersteel",
+    "type": "TOOL",
+    "copy-from": "bot_smallbladewalker",
+    "name": "inactive small blade walker - steel",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a small clamp and a jackblade. Servos and metal plating grind against each other as the small wheels easily roll over most surfaces.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_smallbladewalkersteel",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  },
+  {
+    "id": "bot_smallbladewalkermilitary",
+    "type": "TOOL",
+    "copy-from": "bot_smallbladewalker",
+    "name": "inactive small blade walker - military",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a small clamp and a jackblade. Servos and metal plating grind against each other as the small wheels easily roll over most surfaces.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_smallbladewalkermilitary",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  },
+  {
+    "id": "bot_smallbladewalkerchitin",
+    "type": "TOOL",
+    "copy-from": "bot_smallbladewalker",
+    "name": "inactive small blade walker - chitin",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a small clamp and a jackblade. Servos and metal plating grind against each other as the small wheels easily roll over most surfaces.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_smallbladewalkerchitin",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  },
+  {
+    "id": "bot_smalljawwalkersteel",
+    "type": "TOOL",
+    "copy-from": "bot_smalljawwalker",
+    "name": "inactive small jaw walker - steel",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a small clamp and a jackjaw. Servos and metal plating grind against each other as the small wheels easily roll over most surfaces.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_smalljawwalkersteel",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  },
+  {
+    "id": "bot_smalljawwalkermilitary",
+    "type": "TOOL",
+    "copy-from": "bot_smalljawwalker",
+    "name": "inactive small jaw walker - military",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a small clamp and a jackjaw. Servos and metal plating grind against each other as the small wheels easily roll over most surfaces.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_smalljawwalkermilitary",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  },
+  {
+    "id": "bot_smalljawwalkerchitin",
+    "type": "TOOL",
+    "copy-from": "bot_smalljawwalker",
+    "name": "inactive small jaw walker - chitin",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a small clamp and a jackjaw. Servos and metal plating grind against each other as the small wheels easily roll over most surfaces.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_smalljawwalkerchitin",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  },
+  {
+    "id": "bot_smallflamewalkersteel",
+    "type": "TOOL",
+    "copy-from": "bot_smallflamewalker",
+    "name": "inactive small flame walker - steel",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a small clamp and a jackflame. Servos and metal plating grind against each other as the small wheels easily roll over most surfaces.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_smallflamewalkersteel",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  },
+  {
+    "id": "bot_smallflamewalkermilitary",
+    "type": "TOOL",
+    "copy-from": "bot_smallflamewalker",
+    "name": "inactive small flame walker - military",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a small clamp and a jackflame. Servos and metal plating grind against each other as the small wheels easily roll over most surfaces.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_smallflamewalkermilitary",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  },
+  {
+    "id": "bot_smallflamewalkerchitin",
+    "type": "TOOL",
+    "copy-from": "bot_smallflamewalker",
+    "name": "inactive small flame walker - chitin",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a small clamp and a jackflame. Servos and metal plating grind against each other as the small wheels easily roll over most surfaces.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_smallflamewalkerchitin",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  },
+  {
+    "id": "bot_smallbugwalkersteel",
+    "type": "TOOL",
+    "copy-from": "bot_smallbugwalker",
+    "name": "inactive small exterminator walker - steel",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a small clamp and a jackbug. Servos and metal plating grind against each other as the small wheels easily roll over most surfaces.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_smallbugwalkersteel",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  },
+  {
+    "id": "bot_smallbugwalkermilitary",
+    "type": "TOOL",
+    "copy-from": "bot_smallbugwalker",
+    "name": "inactive small exterminator walker - military",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a small clamp and a jackbug. Servos and metal plating grind against each other as the small wheels easily roll over most surfaces.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_smallbugwalkermilitary",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  },
+  {
+    "id": "bot_smallbugwalkerchitin",
+    "type": "TOOL",
+    "copy-from": "bot_smallbugwalker",
+    "name": "inactive small exterminator walker - chitin",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a small clamp and a jackbug. Servos and metal plating grind against each other as the small wheels easily roll over most surfaces.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_smallbugwalkerchitin",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  },
+  {
+    "id": "bot_smallflashwalkersteel",
+    "type": "TOOL",
+    "copy-from": "bot_smallflashwalker",
+    "name": "inactive small flash walker - steel",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a small clamp and a jackflash. Servos and metal plating grind against each other as the small wheels easily roll over most surfaces.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_smallflashwalkersteel",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  },
+  {
+    "id": "bot_smallflashwalkermilitary",
+    "type": "TOOL",
+    "copy-from": "bot_smallflashwalker",
+    "name": "inactive small flash walker - military",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a small clamp and a jackflash. Servos and metal plating grind against each other as the small wheels easily roll over most surfaces.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_smallflashwalkermilitary",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  },
+  {
+    "id": "bot_smallflashwalkerchitin",
+    "type": "TOOL",
+    "copy-from": "bot_smallflashwalker",
+    "name": "inactive small flash walker - chitin",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a small clamp and a jackflash. Servos and metal plating grind against each other as the small wheels easily roll over most surfaces.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_smallflashwalkerchitin",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  }
+]

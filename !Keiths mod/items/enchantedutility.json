@@ -1,0 +1,2586 @@
+[
+  {
+    "id": "coldlight_flashbang",
+    "type": "COMESTIBLE",
+    "category": "weapons",
+    "name": { "str": "coldlight flashbang" },
+    "comestible_type": "MED",
+    "description": "This sleek black cylinder can be rotated clockwise to release the cold magic trapped within, soon detonating, blinding and freezing those around it.",
+    "weight": "236 g",
+    "volume": "270 ml",
+    "looks_like": "flashbang",
+    "price": 5000,
+    "to_hit": -1,
+    "bashing": 5,
+    "material": [ "steel", "plastic" ],
+    "symbol": "*",
+    "color": "dark_gray",
+    "use_action": { "type": "cast_spell", "spell_id": "COLD_FLASH", "no_fail": true, "level": 1, "need_wielding": true },
+    "flags": [ "RADIO_MODABLE", "RADIO_INVOKE_PROC" ]
+  },
+  {
+    "id": "clay_golem_token",
+    "name": "inanimate clay golem",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "color": "brown",
+    "symbol": "G",
+    "looks_like": "mon_claygolem",
+    "description": "A massive golem made of clay, waiting only to be awakened by your touch. Carefully, it may not quite understand what's happening.",
+    "weight": "122 kg",
+    "volume": "120 L",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_claygolem1",
+      "friendly_msg": "The clay golem rears it's ugly head, and smiles warmly at you.",
+      "hostile_msg": "The clay golem's eyes slowly open, and you briefly see fear taking over.",
+      "difficulty": 2,
+      "moves": 60,
+      "place_randomly": true,
+      "skills": [ "spellcraft", "survival" ]
+    }
+  },
+  {
+    "id": "plastic_golem_token",
+    "name": "inanimate plastic golem",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "color": "white",
+    "symbol": "G",
+    "looks_like": "mon_plasticgolem",
+    "description": "A massive golem made of plastic, waiting only to be awakened by your touch. Carefully, it may not quite understand what's happening.",
+    "weight": "50 kg",
+    "volume": "150 L",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_plasticgolem",
+      "friendly_msg": "The plastic golem looks abruptly up and slowly nods at your for it's next task.",
+      "hostile_msg": "The plastic golem's eyes slowly open, and you see anger flood them.",
+      "difficulty": 4,
+      "moves": 60,
+      "place_randomly": true,
+      "skills": [ "spellcraft" ]
+    }
+  },
+  {
+    "type": "enchantment",
+    "id": "philostone_enchantment",
+    "intermittent_activation": { "effects": [ { "frequency": "24 h", "spell_effects": [ { "id": "spawn_spell_scroll_devil" } ] } ] }
+  },
+  {
+    "id": "philosophers_stone",
+    "type": "ARMOR",
+    "name": { "str": "philosopher's stone" },
+    "description": "The Fountain of Youth. The Holy Grail. Even they pale in comparison to this most holy of objects, for the divinity rests entirely within itself. The wearer is said to be blessed by the powers that be, a true demi-god.",
+    "weight": "25 g",
+    "volume": "10 ml",
+    "price": 10000000,
+    "material": [ "iron" ],
+    "symbol": "S",
+    "looks_like": "copper_locket",
+    "relic_data": {
+      "passive_effects": [
+        { "id": "philostone_enchantment" },
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            { "value": "MAX_MANA", "add": 6000 },
+            { "value": "REGEN_MANA", "multiply": 5 },
+            { "value": "EFFECTIVE_HEALTH_MOD", "add": 2 },
+            { "value": "STRENGTH", "add": 4 },
+            { "value": "DEXTERITY", "add": 4 },
+            { "value": "PERCEPTION", "add": 4 },
+            { "value": "INTELLIGENCE", "add": 4 },
+            { "value": "MAX_STAMINA", "multiply": 5 },
+            { "value": "SKILL_RUST_RESIST", "add": 100 },
+            { "value": "METABOLISM", "multiply": -4 },
+            { "value": "FATIGUE", "multiply": -5 },
+            { "value": "CARRY_WEIGHT", "multiply": 3 }
+          ]
+        }
+      ]
+    },
+    "color": "yellow"
+  },
+  {
+    "id": "nondescript_briefcase",
+    "repairs_like": "backpack_hiking",
+    "type": "TOOL_ARMOR",
+    "name": { "str": "nondescript case" },
+    "description": "Useful for carrying money, documents, or smuggled goods. This particular briefcase has a trick bottom that shines with a golden light when you open it. That light calls you to it, but you shut the case.",
+    "weight": "1700 g",
+    "volume": "15750 ml",
+    "price": 1100000,
+    "to_hit": -2,
+    "bashing": 5,
+    "material": [ "plastic" ],
+    "symbol": "[",
+    "looks_like": "briefcase",
+    "properties": [ [ "creature_size_capacity", "HUGE" ] ],
+    "color": "light_gray",
+    "sided": true,
+    "charges_per_use": 3,
+    "use_action": [
+      "CAPTURE_MONSTER_ACT",
+      { "type": "cast_spell", "spell_id": "abolish_spirit", "no_fail": true, "level": 1, "need_wielding": true }
+    ],
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "rigid": true,
+        "max_contains_volume": "15 L",
+        "max_contains_weight": "30 kg",
+        "max_item_length": "50 cm",
+        "moves": 200
+      },
+      { "pocket_type": "MAGAZINE", "ammo_restriction": { "decaying_soul_ammo": 100 } }
+    ],
+    "material_thickness": 2,
+    "flags": [ "FANCY", "OVERSIZE", "BELTED", "RESTRICT_HANDS", "WATER_FRIENDLY", "RADIO_INVOKE_PROC", "RADIO_MODABLE" ],
+    "armor": [ { "encumbrance": 30, "coverage": 10, "covers": [ "arm_l", "arm_r", "hand_l", "hand_r" ] } ]
+  },
+  {
+    "id": "darkswitch",
+    "type": "TOOL",
+    "name": { "str": "darkswitch", "str_pl": "darkswitches" },
+    "description": "A military grade device used to make the world a darker place, and to operate more efficiently in it. You get the feeling something is watching you, for some unknown reason.",
+    "material": [ "steel" ],
+    "symbol": ";",
+    "color": "blue",
+    "looks_like": "EMPbomb",
+    "weight": "280 g",
+    "volume": "270 ml",
+    "longest_side": "14 cm",
+    "price": 700000,
+    "charges_per_use": 3,
+    "flags": [ "BELT_CLIP", "STURDY", "NO_UNLOAD", "RADIO_INVOKE_PROC", "RADIO_MODABLE" ],
+    "relic_data": { "charge_info": { "recharge_type": "periodic", "time": "16 h", "regenerate_ammo": true } },
+    "use_action": { "type": "cast_spell", "spell_id": "shadow_realm_nested", "no_fail": true, "level": 1, "need_wielding": true },
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "decaying_soul_ammo": 21 } } ]
+  },
+  {
+    "type": "enchantment",
+    "id": "pact_of_flame_enchantment3",
+    "condition": "ALWAYS",
+    "intermittent_activation": { "effects": [ { "frequency": "12 h", "spell_effects": [ { "id": "summon_flame" } ] } ] },
+    "values": [ { "value": "INTELLIGENCE", "add": 2 } ]
+  },
+  {
+    "id": "fiddle_golden",
+    "type": "TOOL_ARMOR",
+    "name": { "str": "accursed golden fiddle" },
+    "description": "A shiny golden fiddle, with a strange aura around it.  You feel like it once belonged to the best there's ever been. Now it belongs to you.",
+    "weight": "13000 g",
+    "volume": "2500 ml",
+    "longest_side": "60 cm",
+    "price": 1000000,
+    "to_hit": { "grip": "solid", "length": "short", "surface": "any", "balance": "clumsy" },
+    "bashing": 9,
+    "material": [ "gold" ],
+    "symbol": "}",
+    "color": "yellow",
+    "charges_per_use": 1,
+    "relic_data": {
+      "passive_effects": [ { "id": "pact_of_flame_enchantment3" } ],
+      "charge_info": { "recharge_type": "periodic", "time": "3 d", "regenerate_ammo": true }
+    },
+    "flags": [ "NO_UNLOAD", "NO_RELOAD", "STURDY", "NO_TAKEOFF" ],
+    "use_action": [
+      {
+        "type": "musical_instrument",
+        "volume": 25,
+        "fun": 1,
+        "fun_bonus": 4,
+        "speed_penalty": 25,
+        "description_frequency": 10,
+        "player_descriptions": [
+          "You play a quick, folksy tune on your fiddle.",
+          "As you pull the bow across its strings, it makes an evil hiss.",
+          "You play a tune so fierce, it feels like hell's broke loose."
+        ]
+      },
+      {
+        "type": "cast_spell",
+        "spell_id": "bend_will_item_spell_comp",
+        "no_fail": true,
+        "need_wielding": true,
+        "level": 1
+      }
+    ],
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "decaying_soul_ammo": 1 } } ]
+  },
+  {
+    "type": "ammunition_type",
+    "id": "human_skull_ammo",
+    "name": "human skull",
+    "default": "skull_human"
+  },
+  {
+    "type": "AMMO",
+    "id": "skull_human",
+    "name": { "str": "human skull" },
+    "description": "The skull of a human being.  Carrying this around probably isn't going to win you any friends.",
+    "flags": [ "CANNIBALISM", "TRADER_AVOID" ],
+    "ammo_type": "human_skull_ammo",
+    "looks_like": "fencing_mask",
+    "weight": "1 kg",
+    "volume": "1400 ml",
+    "symbol": "@",
+    "color": "white",
+    "price": 0,
+    "price_postapoc": 10,
+    "material": [ "bone" ]
+  },
+  {
+    "id": "intrapsychological_nesting",
+    "type": "TOOL",
+    "name": { "str": "nested contrapsychological parascope", "str_pl": "nested contrapsychological parascopes" },
+    "description": "A military grade device used to peer into a mind and take it's secrets. Highly unethical and illegal, but also highly effective. Looks somewhat like a mask, but with hundreds of 'branches' shooting out in all directions. When a skull is inserted and the device is activated, these branches pierce it and the 'mouth' of the mask begins printing data.",
+    "material": [ "steel" ],
+    "symbol": ";",
+    "color": "blue",
+    "weight": "800 g",
+    "volume": "1100 ml",
+    "longest_side": "14 cm",
+    "looks_like": "fencing_mask",
+    "price": 400000,
+    "charges_per_use": 1,
+    "flags": [ "BELT_CLIP", "STURDY" ],
+    "use_action": { "type": "cast_spell", "spell_id": "extract_memory_no_comp", "no_fail": true, "level": 1, "need_wielding": false },
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "human_skull_ammo": 1 } } ]
+  },
+  {
+    "id": "magic_laptop",
+    "type": "TOOL",
+    "category": "tools",
+    "name": { "str": "magical laptop computer" },
+    "description": "A laptop computer that would run forever, if you wanted it to.",
+    "symbol": ",",
+    "color": "dark_gray",
+    "material": [ "plastic", "aluminum" ],
+    "weight": "2721 g",
+    "volume": "2500 ml",
+    "longest_side": "40 cm",
+    "price": 750000,
+    "bashing": 6,
+    "use_action": [
+      "EINKTABLETPC",
+      "PORTABLE_GAME",
+      {
+        "target": "magic_laptop_screen_lit",
+        "msg": "You light up the screen.",
+        "menu_text": "Light up the screen",
+        "active": true,
+        "type": "transform"
+      }
+    ],
+    "flags": [ "WATCH", "WATER_BREAK" ]
+  },
+  {
+    "id": "magic_laptop_screen_lit",
+    "copy-from": "magic_laptop",
+    "type": "TOOL",
+    "name": { "str": "laptop computer - lit screen", "str_pl": "laptop computers - lit screen" },
+    "revert_to": "magic_laptop",
+    "use_action": [
+      "EINKTABLETPC",
+      "PORTABLE_GAME",
+      {
+        "target": "magic_laptop",
+        "msg": "You stop lighting up the screen.",
+        "menu_text": "Turn off",
+        "type": "transform"
+      }
+    ],
+    "flags": [ "WATCH", "LIGHT_10", "WATER_BREAK", "TRADER_AVOID" ]
+  },
+  {
+    "id": "magicvibrator",
+    "type": "TOOL",
+    "name": { "str": "shower buddy" },
+    "description": "This is just the thing to knead the tension out and help you relax.  Use it to take a break and unwind.",
+    "weight": "453 g",
+    "volume": "500 ml",
+    "longest_side": "25 cm",
+    "price": 80000,
+    "material": [ "aluminum", "plastic" ],
+    "symbol": ";",
+    "color": "dark_gray",
+    "use_action": [ "VIBE" ]
+  },
+  {
+    "id": "magic_eink_tablet_pc",
+    "type": "TOOL",
+    "name": { "str": "magical e-ink tablet PC" },
+    "description": "A tablet PC using an efficient color e-ink display.  Before the Cataclysm, these were nifty gadgets; now, it's an almost priceless resource.  Never runs out of juice.",
+    "weight": "250 g",
+    "volume": "250 ml",
+    "longest_side": "25 cm",
+    "price": 300000,
+    "to_hit": -1,
+    "material": [ "plastic" ],
+    "symbol": ";",
+    "color": "blue",
+    "use_action": [
+      "EINKTABLETPC",
+      "ELECTRICSTORAGE",
+      "EBOOKSAVE",
+      "EBOOKREAD",
+      {
+        "type": "transform",
+        "menu_text": "Turn on the screen",
+        "msg": "You power up the screen.",
+        "target": "magic_eink_tablet_pc_on",
+        "active": true
+      }
+    ],
+    "flags": [ "WATCH", "WATER_BREAK" ],
+    "pocket_data": [
+      {
+        "pocket_type": "EBOOK",
+        "rigid": true,
+        "max_contains_volume": "1 ml",
+        "max_contains_weight": "1 g",
+        "weight_multiplier": 0.0
+      }
+    ]
+  },
+  {
+    "type": "TOOL",
+    "id": "magic_eink_tablet_pc_on",
+    "copy-from": "magic_eink_tablet_pc",
+    "name": { "str": "magical e-ink tablet PC (on)", "str_pl": "e-ink tablet PCs (on)" },
+    "revert_to": "eink_tablet_pc",
+    "use_action": [
+      "EINKTABLETPC",
+      "EBOOKSAVE",
+      "EBOOKREAD",
+      {
+        "type": "transform",
+        "menu_text": "Turn off the screen",
+        "msg": "You power down the screen.",
+        "target": "magic_eink_tablet_pc"
+      }
+    ],
+    "//": "LIGHT_10 is the bare minimum for reading without penalties",
+    "flags": [ "LIGHT_10", "TRADER_AVOID", "WATCH", "WATER_BREAK" ]
+  },
+  {
+    "id": "magic_camera",
+    "type": "TOOL",
+    "name": { "str": "magic camera" },
+    "description": "A point-and-shoot digital camera, with digital viewfinder, a backup 'iron-sight', and flash.  You can look at your photos on the digital screen, or transfer them with a memory card.",
+    "weight": "907 g",
+    "volume": "250 ml",
+    "price": 30000,
+    "bashing": 1,
+    "material": [ "plastic", "steel" ],
+    "symbol": ";",
+    "color": "yellow",
+    "flags": [ "WATER_BREAK" ],
+    "use_action": [ "CAMERA" ]
+  },
+  {
+    "id": "magic_camera_pro",
+    "type": "TOOL",
+    "name": { "str": "magic professional camera" },
+    "description": "A 35mm digital SLR (single-lens reflex) camera, with optical and digital viewfinders, zoom lens with auto-focus and stabilizer, and flash.  You can view your photos on it or transfer them with a memory card.  Before the Cataclysm, you could have taken professional-grade photos using this.",
+    "weight": "2268 g",
+    "volume": "1250 ml",
+    "price": 50000,
+    "bashing": 1,
+    "material": [ "plastic", "steel" ],
+    "symbol": ";",
+    "color": "yellow",
+    "use_action": [ "CAMERA" ],
+    "flags": [ "CAMERA_PRO", "ALWAYS_TWOHAND" ]
+  },
+  {
+    "id": "magic_smart_phone",
+    "type": "TOOL",
+    "name": { "str": "magic smartphone" },
+    "description": "A smartphone that was advertised to never stop working, even underwater. What they didn't advertise was it's bulky design and lack of ability to play music.",
+    "weight": "400 g",
+    "volume": "200 ml",
+    "price": 50000,
+    "material": [ "plastic", "aluminum" ],
+    "looks_like": "cell_phone",
+    "symbol": ";",
+    "color": "light_gray",
+    "pocket_data": [
+      {
+        "pocket_type": "EBOOK",
+        "rigid": true,
+        "max_contains_volume": "1 ml",
+        "max_contains_weight": "1 g",
+        "weight_multiplier": 0.0
+      }
+    ],
+    "use_action": [
+      "CAMERA",
+      "CALORIES_INTAKE_TRACKER",
+      "PORTABLE_GAME",
+      "EINKTABLETPC",
+      "ELECTRICSTORAGE",
+      "EBOOKSAVE",
+      "EBOOKREAD",
+      {
+        "target": "magic_smart_phone_flashlight",
+        "msg": "You activate the flashlight app.",
+        "menu_text": "Turn on flashlight",
+        "type": "transform"
+      }
+    ],
+    "flags": [ "WATCH", "ALARMCLOCK", "NO_UNLOAD", "NO_RELOAD", "WATER_BREAK", "CALORIES_INTAKE" ]
+  },
+  {
+    "id": "magic_smart_phone_flashlight",
+    "copy-from": "magic_smart_phone",
+    "type": "TOOL",
+    "name": { "str": "magic smartphone - Flashlight", "str_pl": "magic smartphones - Flashlight" },
+    "use_action": [
+      "CAMERA",
+      "CALORIES_INTAKE_TRACKER",
+      "PORTABLE_GAME",
+      "EINKTABLETPC",
+      "ELECTRICSTORAGE",
+      "EBOOKSAVE",
+      "EBOOKREAD",
+      {
+        "target": "magic_smart_phone",
+        "msg": "You deactivate the flashlight app.",
+        "menu_text": "Turn off flashlight",
+        "type": "transform"
+      }
+    ],
+    "extend": { "flags": [ "LIGHT_20", "TRADER_AVOID", "WATER_BREAK" ] }
+  },
+  {
+    "type": "enchantment",
+    "id": "soft_step_enchantment",
+    "condition": "ALWAYS",
+    "values": [ { "value": "FOOTSTEP_NOISE", "add": -15 } ]
+  },
+  {
+    "id": "soft_steppers_socks",
+    "type": "ARMOR",
+    "name": { "str": "pair of soft-stepper's socks", "str_pl": "pairs of soft-stepper's socks" },
+    "description": "A thin and light pair of socks made of nomex that magically reduce the sound you make while wearing them.",
+    "weight": "200 g",
+    "volume": "750 ml",
+    "price": 200000,
+    "to_hit": -5,
+    "material": [ "nomex" ],
+    "symbol": "[",
+    "looks_like": "socks",
+    "color": "light_gray",
+    "warmth": 5,
+    "material_thickness": 1,
+    "environmental_protection": 2,
+    "flags": [ "VARSIZE", "WATER_FRIENDLY", "SKINTIGHT", "STURDY" ],
+    "relic_data": { "passive_effects": [ { "id": "soft_step_enchantment" } ] },
+    "armor": [ { "encumbrance": 6, "coverage": 100, "covers": [ "foot_l", "foot_r" ] } ]
+  },
+  {
+    "id": "gate_token",
+    "name": { "str": "favor of the gate" },
+    "description": "A small glass flask filled with blue and white liquid. When ingested, the drinker will 'burp up' a translocation gate over the course of the next minute.",
+    "use_action": { "type": "cast_spell", "spell_id": "transgate_place_favor", "no_fail": true, "level": 1 },
+    "type": "COMESTIBLE",
+    "weight": "265 g",
+    "quench": 10,
+    "calories": 33,
+    "volume": "250ml",
+    "charges": 1,
+    "fun": -3,
+    "healthy": 1,
+    "symbol": "~",
+    "container": "flask_glass",
+    "color": "light_blue",
+    "comestible_type": "DRINK",
+    "flags": [ "EATEN_COLD", "NUTRIENT_OVERRIDE", "NO_AUTO_CONSUME" ],
+    "phase": "liquid",
+    "price": 250000,
+    "freezing_point": 4
+  },
+  {
+    "id": "scroll_token",
+    "name": { "str": "favor of magic" },
+    "description": "A small glass flask filled with blue and white liquid. When ingested, the drinker will 'burp up' something that teaches spells ( such as a scroll ) over the course of the next minute.",
+    "use_action": { "type": "cast_spell", "spell_id": "spawn_spell_scroll_devil", "no_fail": true, "level": 1 },
+    "type": "COMESTIBLE",
+    "weight": "265 g",
+    "quench": 10,
+    "calories": 33,
+    "volume": "250ml",
+    "charges": 1,
+    "fun": -3,
+    "healthy": 1,
+    "symbol": "~",
+    "container": "flask_glass",
+    "color": "light_blue",
+    "comestible_type": "DRINK",
+    "flags": [ "EATEN_COLD", "NUTRIENT_OVERRIDE", "NO_AUTO_CONSUME" ],
+    "phase": "liquid",
+    "price": 250000,
+    "freezing_point": 4
+  },
+  {
+    "type": "TOOL_ARMOR",
+    "id": "all_purpose_watch",
+    "name": { "str": "all purpose watch", "str_pl": "all purpose watches" },
+    "category": "clothing",
+    "volume": "250 ml",
+    "description": "A magical wrist mounted 'watch' that has a plethora of features. When questioned why you cannot play music through it, the spokesman said 'Well the boys in development tell me that magic and music just do. not. mix!' He was soon fired.",
+    "weight": "112 g",
+    "to_hit": -1,
+    "color": "light_gray",
+    "looks_like": "sf_watch",
+    "sided": true,
+    "price": 500000,
+    "material": [ "plastic" ],
+    "qualities": [ [ "LOCKPICK", 1 ] ],
+    "flags": [
+      "WATCH",
+      "ALARMCLOCK",
+      "BAROMETER",
+      "TARDIS",
+      "HYGROMETER",
+      "WATER_FRIENDLY",
+      "WRITE_MESSAGE",
+      "CALORIES_INTAKE",
+      "RADIO_MODABLE",
+      "RADIO_INVOKE_PROC",
+      "TWO_WAY_RADIO",
+      "ALLOWS_REMOTE_USE",
+      "FANCY",
+      "RAIN_PROTECT",
+      "THERMOMETER",
+      "BELTED",
+      "FRAGILE",
+      "FIRESTARTER",
+      "PERFECT_LOCKPICK",
+      "ZOOM",
+      "ALLOWS_NATURAL_ATTACKS",
+      "OVERSIZE"
+    ],
+    "symbol": "[",
+    "use_action": [
+      "PORTABLE_GAME",
+      "FITNESS_CHECK",
+      "EINKTABLETPC",
+      "REMOTEVEH",
+      "CALORIES_INTAKE_TRACKER",
+      "RADIOCONTROL",
+      "EBOOKSAVE",
+      "BLOOD_DRAW",
+      "EBOOKREAD",
+      "GEIGER",
+      "TAZER",
+      "BELL",
+      "HAND_CRANK",
+      "PICK_LOCK",
+      "ROBOTCONTROL",
+      {
+        "type": "effect_on_conditions",
+        "description": "Activate the recorder's printer",
+        "effect_on_conditions": [ "print_portal_storm_data" ]
+      },
+      { "type": "inscribe", "verb": "Write", "gerund": "Written", "on_terrain": true, "material_restricted": false },
+      {
+        "type": "reveal_map",
+        "radius": 90,
+        "terrain": [
+          "hiway",
+          "road",
+          "bridge",
+          "field",
+          "swamp",
+          "forest",
+          "lake",
+          "river",
+          "subway",
+          "sub_station",
+          "fema_entrance",
+          "hiway",
+          "road",
+          "bridge",
+          "station_radio",
+          "bank",
+          "bank_1",
+          "bank_raiders",
+          "hospital_1",
+          { "om_terrain": "magic_shop", "om_terrain_match_type": "TYPE" },
+          { "om_terrain": "silo", "om_terrain_match_type": "TYPE" },
+          { "om_terrain": "shelter", "om_terrain_match_type": "TYPE" },
+          "police",
+          "s_pharm",
+          "s_gun",
+          "s_grocery",
+          "s_hunting",
+          "mil_surplus",
+          "s_gas",
+          "mil_base_road_entrance"
+        ],
+        "message": "You add terrain and roads to your map."
+      },
+      {
+        "target": "all_purpose_watch_lit",
+        "msg": "You light up the screen.",
+        "menu_text": "Light up the screen",
+        "active": true,
+        "type": "transform"
+      }
+    ],
+    "pocket_data": [
+      {
+        "pocket_type": "EBOOK",
+        "rigid": true,
+        "max_contains_volume": "1 ml",
+        "max_contains_weight": "1 g",
+        "weight_multiplier": 0.0
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "watertight": true,
+        "rigid": true,
+        "max_contains_volume": "250 ml",
+        "max_contains_weight": "500 g"
+      }
+    ],
+    "armor": [ { "coverage": 100, "covers": [ "hand_l", "hand_r" ], "specifically_covers": [ "hand_wrist_l", "hand_wrist_r" ] } ]
+  },
+  {
+    "type": "TOOL_ARMOR",
+    "id": "all_purpose_watch_lit",
+    "name": { "str": "all purpose watch", "str_pl": "all purpose watches" },
+    "category": "clothing",
+    "volume": "250 ml",
+    "description": "A magical wrist mounted 'watch' that has a plethora of features. When questioned why you cannot play music through it, the spokesman said 'Well the boys in development tell me that magic and music just do. not. mix!' He was soon fired.",
+    "weight": "112 g",
+    "to_hit": -1,
+    "color": "light_gray",
+    "sided": true,
+    "price": 500000,
+    "looks_like": "sf_watch",
+    "material": [ "plastic" ],
+    "qualities": [ [ "LOCKPICK", 1 ] ],
+    "flags": [
+      "WATCH",
+      "ALARMCLOCK",
+      "HYGROMETER",
+      "TARDIS",
+      "WATER_FRIENDLY",
+      "BAROMETER",
+      "WRITE_MESSAGE",
+      "LIGHT_10",
+      "CALORIES_INTAKE",
+      "RADIO_MODABLE",
+      "RADIO_INVOKE_PROC",
+      "TWO_WAY_RADIO",
+      "ALLOWS_REMOTE_USE",
+      "FANCY",
+      "RAIN_PROTECT",
+      "THERMOMETER",
+      "BELTED",
+      "ZOOM",
+      "FRAGILE",
+      "FIRESTARTER",
+      "PERFECT_LOCKPICK",
+      "ALLOWS_NATURAL_ATTACKS",
+      "OVERSIZE"
+    ],
+    "symbol": "[",
+    "use_action": [
+      "PORTABLE_GAME",
+      "FITNESS_CHECK",
+      "EINKTABLETPC",
+      "BLOOD_DRAW",
+      "REMOTEVEH",
+      "CALORIES_INTAKE_TRACKER",
+      "RADIOCONTROL",
+      "EBOOKSAVE",
+      "EBOOKREAD",
+      "GEIGER",
+      "TAZER",
+      "BELL",
+      "HAND_CRANK",
+      "PICK_LOCK",
+      "ROBOTCONTROL",
+      {
+        "type": "effect_on_conditions",
+        "description": "Activate the recorder's printer",
+        "effect_on_conditions": [ "print_portal_storm_data" ]
+      },
+      { "type": "inscribe", "verb": "Write", "gerund": "Written", "on_terrain": true, "material_restricted": false },
+      {
+        "type": "reveal_map",
+        "radius": 90,
+        "terrain": [
+          "hiway",
+          "road",
+          "bridge",
+          "field",
+          "swamp",
+          "forest",
+          "lake",
+          "river",
+          "subway",
+          "sub_station",
+          "fema_entrance",
+          "hiway",
+          "road",
+          "bridge",
+          "station_radio",
+          "hospital_1",
+          { "om_terrain": "magic_shop", "om_terrain_match_type": "TYPE" },
+          { "om_terrain": "silo", "om_terrain_match_type": "TYPE" },
+          { "om_terrain": "shelter", "om_terrain_match_type": "TYPE" },
+          "police",
+          "bank",
+          "bank_1",
+          "bank_raiders",
+          "s_pharm",
+          "s_gun",
+          "s_grocery",
+          "s_hunting",
+          "mil_surplus",
+          "s_gas",
+          "mil_base_road_entrance"
+        ],
+        "message": "You add terrain and roads to your map."
+      },
+      {
+        "target": "all_purpose_watch",
+        "msg": "You stop lighting up the screen.",
+        "menu_text": "Turn off",
+        "type": "transform"
+      }
+    ],
+    "pocket_data": [
+      {
+        "pocket_type": "EBOOK",
+        "rigid": true,
+        "max_contains_volume": "1 ml",
+        "max_contains_weight": "1 g",
+        "weight_multiplier": 0.0
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "watertight": true,
+        "rigid": true,
+        "max_contains_volume": "250 ml",
+        "max_contains_weight": "500 g"
+      }
+    ],
+    "armor": [ { "coverage": 100, "covers": [ "hand_l", "hand_r" ], "specifically_covers": [ "hand_wrist_l", "hand_wrist_r" ] } ]
+  },
+  {
+    "id": "teddy",
+    "name": "teddy bear",
+    "copy-from": "teddy",
+    "type": "TOOL",
+    "flags": [ "NO_UNLOAD" ],
+    "charges_per_use": 5,
+    "description": "An old and half rotten teddy bear. Looks like this one commemorates the grave of the child who once owned it. If it had a soul, who knows what power it might hold over children? Just a thought.",
+    "use_action": { "type": "cast_spell", "spell_id": "bend_will_item_spell_teddy", "no_fail": true, "level": 1, "need_worn": true },
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "decaying_soul_ammo": 5 } } ],
+    "relic_data": { "charge_info": { "recharge_type": "periodic", "time": "10 h", "regenerate_ammo": true } }
+  },
+  {
+    "id": "sf_watch_stasis",
+    "type": "TOOL_ARMOR",
+    "name": { "str": "fancy gold watch", "str_pl": "fancy gold watches" },
+    "//": "That's about the midpoint for a rolex.",
+    "description": "A rather large and expensively-made wristwatch with multiple time displays, magically enhanced to make you invincible for a short period of time. As with almost every corporate-made magic product, they failed to advertise the fact that the stasis applied locks you in place for nearly 5 minutes, or that it was powered by the souls of those who cannot pass into death. There's also a 'feature' wherein if a dollar bill gets too close, the watch will swallow it whole. The wearer is able to withdraw the cash at any time, but most customers were dissatisfied with it's implementation. It's really the only timepiece suitable for someone of your exquisitely discerning tastes.",
+    "weight": "300 g",
+    "volume": "100 ml",
+    "price": 1000000,
+    "looks_like": "sf_watch",
+    "to_hit": -1,
+    "material": [ "gold", "silver" ],
+    "symbol": "[",
+    "color": "yellow",
+    "sided": true,
+    "charges_per_use": 1,
+    "pocket_data": [
+      { "pocket_type": "MAGAZINE", "ammo_restriction": { "decaying_soul_ammo": 2 } },
+      {
+        "rigid": true,
+        "max_contains_volume": "10000 ml",
+        "max_contains_weight": "10000 g",
+        "moves": 1,
+        "item_restriction": [ "money_one", "money_two", "money_five", "money_ten", "money_twenty", "money_fifty", "money_hundred" ]
+      }
+    ],
+    "relic_data": { "charge_info": { "recharge_type": "periodic", "time": "24 h", "regenerate_ammo": true } },
+    "use_action": { "type": "cast_spell", "spell_id": "golden_aura", "no_fail": true, "level": 1, "need_worn": true },
+    "flags": [
+      "WATCH",
+      "ALARMCLOCK",
+      "SUPER_FANCY",
+      "BELTED",
+      "FRAGILE",
+      "ALLOWS_NATURAL_ATTACKS",
+      "TARDIS",
+      "WATER_FRIENDLY",
+      "RADIO_INVOKE_PROC",
+      "RADIO_MODABLE",
+      "OVERSIZE",
+      "NO_UNLOAD"
+    ],
+    "armor": [
+      {
+        "coverage": 100,
+        "encumbrance": 2,
+        "covers": [ "hand_l", "hand_r" ],
+        "specifically_covers": [ "hand_wrist_l", "hand_wrist_r" ]
+      }
+    ]
+  },
+  {
+    "id": "artillerant_wand",
+    "name": { "str": "Artillerant Wand" },
+    "type": "TOOL",
+    "description": "An immaculate 'wand' of deep red and purple wood that can and has been used to rain death and destruction.",
+    "weight": "460 g",
+    "volume": "1000 ml",
+    "longest_side": "76 cm",
+    "price": 400000,
+    "bashing": 3,
+    "to_hit": 1,
+    "material": [ "wood" ],
+    "symbol": "|",
+    "color": "red",
+    "looks_like": "pipebomb",
+    "flags": [ "BELT_CLIP", "NONCONDUCTIVE", "MAGIC_FOCUS", "RADIO_INVOKE_PROC", "RADIO_MODABLE" ],
+    "charges_per_use": 50,
+    "ammo": [ "crystallized_mana" ],
+    "use_action": { "type": "cast_spell", "spell_id": "artillery", "no_fail": true, "level": 10, "need_wielding": true },
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE_WELL",
+        "holster": true,
+        "max_contains_volume": "20 L",
+        "max_contains_weight": "20 kg",
+        "item_restriction": [ "small_mana_crystal" ]
+      }
+    ]
+  },
+  {
+    "id": "observation_platform",
+    "repairs_like": "survivor_goggles",
+    "type": "TOOL_ARMOR",
+    "name": { "str": "observation platform", "str_pl": "pairs of observation platforms" },
+    "description": "A pair of shaded glasses that have a second magical lens over the first, providing a series of benefits. A nodule on the stem allows the wearer to temporarily blind themselves in exchange for vision of unknown territory.",
+    "weight": "30 g",
+    "volume": "250 ml",
+    "price": 600000,
+    "to_hit": -2,
+    "material": [ "glass", "plastic" ],
+    "symbol": "[",
+    "looks_like": "glasses_eye",
+    "color": "cyan",
+    "material_thickness": 1,
+    "charges_per_use": 1,
+    "environmental_protection": 1,
+    "use_action": [
+      { "type": "cast_spell", "spell_id": "scrying_no_comp", "no_fail": true, "level": 10, "need_worn": true },
+      {
+        "target": "observation_platform_off",
+        "msg": "You stop lighting up the screen.",
+        "menu_text": "Turn off Night Vision",
+        "type": "transform"
+      }
+    ],
+    "relic_data": {
+      "charge_info": { "recharge_type": "periodic", "time": "2 d", "regenerate_ammo": true },
+      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "PERCEPTION", "multiply": 0.15, "add": 2 } ] } ]
+    },
+    "flags": [
+      "NO_UNLOAD",
+      "FIX_NEARSIGHT",
+      "FIX_FARSIGHT",
+      "WATER_FRIENDLY",
+      "SUN_GLASSES",
+      "GNV_EFFECT",
+      "IR_EFFECT",
+      "FRAGILE",
+      "ZOOM"
+    ],
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "decaying_soul_ammo": 7 } } ],
+    "armor": [ { "coverage": 75, "covers": [ "eyes" ], "rigid_layer_only": true } ]
+  },
+  {
+    "id": "observation_platform_off",
+    "repairs_like": "survivor_goggles",
+    "type": "TOOL_ARMOR",
+    "name": { "str": "observation platform", "str_pl": "pairs of observation platforms" },
+    "description": "A pair of shaded glasses that have a second magical lens over the first, providing a series of benefits. A nodule on the stem allows the wearer to temporarily blind themselves in exchange for vision of unknown territory.",
+    "weight": "30 g",
+    "volume": "250 ml",
+    "price": 1000000,
+    "to_hit": -2,
+    "material": [ "glass", "plastic" ],
+    "symbol": "[",
+    "looks_like": "glasses_eye",
+    "color": "cyan",
+    "material_thickness": 1,
+    "charges_per_use": 1,
+    "environmental_protection": 1,
+    "use_action": [
+      { "type": "cast_spell", "spell_id": "scrying_no_comp", "no_fail": true, "level": 10, "need_worn": true },
+      {
+        "target": "observation_platform",
+        "msg": "You light up the screen.",
+        "menu_text": "Turn on Night Vision",
+        "type": "transform"
+      }
+    ],
+    "relic_data": {
+      "charge_info": { "recharge_type": "periodic", "time": "2 d", "regenerate_ammo": true },
+      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "PERCEPTION", "multiply": 0.15, "add": 2 } ] } ]
+    },
+    "flags": [ "NO_UNLOAD", "FIX_NEARSIGHT", "FIX_FARSIGHT", "WATER_FRIENDLY", "SUN_GLASSES", "IR_EFFECT", "FRAGILE", "ZOOM" ],
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "decaying_soul_ammo": 7 } } ],
+    "armor": [ { "coverage": 75, "covers": [ "eyes" ], "rigid_layer_only": true } ]
+  },
+  {
+    "id": "smart_rug",
+    "type": "TOOL_ARMOR",
+    "name": { "str": "smart rug" },
+    "description": "A wig of salt and pepper hair that when worn provides the user with a great deal of personal importance. It was marketed as the next big thing in fashion, but was quickly disregarded by the community as being pointless.",
+    "weight": "160 g",
+    "volume": "250 ml",
+    "price": 700000,
+    "material": [ "wool" ],
+    "symbol": "[",
+    "color": "dark_gray",
+    "charges_per_use": 25,
+    "warmth": 6,
+    "material_thickness": 0.3,
+    "flags": [ "VARSIZE", "WATERPROOF", "NO_UNLOAD" ],
+    "use_action": [ { "type": "cast_spell", "spell_id": "synaptic_stimulation", "no_fail": true, "level": 15, "need_worn": true } ],
+    "relic_data": {
+      "charge_info": { "recharge_type": "periodic", "time": "2 h", "regenerate_ammo": true },
+      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "mutations": [ "hair_white_long", "INT_UP_2" ] } ]
+    },
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "crystallized_mana": 175 } } ],
+    "armor": [ { "encumbrance_modifiers": [ "NONE" ], "coverage": 40, "covers": [ "head" ] } ]
+  },
+  {
+    "id": "professional_pendant",
+    "repairs_like": "silver_necklace",
+    "type": "TOOL_ARMOR",
+    "name": { "str": "professional's pendant", "str_pl": "professional's pendants" },
+    "description": "An all in one badge for your every office need! Made of our patented meta-absorbant material, never worry about a spill or stain again! And forget about pesky fires, the stored messes can be used as an extinguishing agent in any emergency. Get the Professional's Pendant for your office, today!",
+    "weight": "18 g",
+    "volume": "30 ml",
+    "price": 800000,
+    "to_hit": -2,
+    "material": [ "alien_liquid" ],
+    "symbol": "[",
+    "looks_like": "silver_necklace",
+    "color": "cyan",
+    "material_thickness": 1,
+    "environmental_protection": 1,
+    "use_action": [
+      "TOWEL",
+      "MOP",
+      "SIPHON",
+      "WASH_ALL_ITEMS",
+      "EXTINGUISHER",
+      { "type": "cast_spell", "spell_id": "translocate_self", "no_fail": true, "level": 1, "need_worn": true }
+    ],
+    "relic_data": { "charge_info": { "recharge_type": "periodic", "time": "16 h", "regenerate_ammo": true } },
+    "flags": [ "NO_UNLOAD", "WATER_FRIENDLY", "SKINTIGHT", "RADIO_INVOKE_PROC", "RADIO_MODABLE" ]
+  },
+  {
+    "id": "magi_staff_minor",
+    "type": "GENERIC",
+    "looks_like": "stick_long",
+    "name": { "str": "minor staff of the magi", "str_pl": "minor staves of the magi" },
+    "copy-from": "magi_staff_minor"
+  },
+  {
+    "id": "magi_staff_lesser",
+    "type": "GENERIC",
+    "looks_like": "stick_long",
+    "name": { "str": "lesser staff of the magi", "str_pl": "lesser staves of the magi" },
+    "copy-from": "magi_staff_lesser"
+  },
+  {
+    "id": "magi_staff_greater",
+    "type": "GENERIC",
+    "looks_like": "stick_long",
+    "name": { "str": "greater staff of the magi", "str_pl": "greater staves of the magi" },
+    "copy-from": "magi_staff_greater"
+  },
+  {
+    "id": "foodplace_subscription_box",
+    "description": "A small cardboard box inscribed with the ever-recognizable Foodplace's delicious food™ logo, which can be activated to become filled with Foodplace's delicious food™. And as a special bonus, every 5 (or so) purchases we'll reward you with cash back! Requires a foodplace loyalty card in order to be used.",
+    "name": "Foodplace's delicious food™ Subscription Box",
+    "price": 1100000,
+    "type": "TOOL",
+    "copy-from": "box_small",
+    "charges_per_use": 1,
+    "use_action": [ { "type": "cast_spell", "spell_id": "foodplace_subscription", "no_fail": true, "level": 1 } ],
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "fp_loyalty_card_ammo": 1 } } ]
+  },
+  {
+    "id": "foodplace_subscription",
+    "type": "SPELL",
+    "name": "Delivery!",
+    "description": "Suddenly, your life has meaning again.",
+    "valid_targets": [ "self" ],
+    "effect": "spawn_item",
+    "effect_str": "foodplace_food",
+    "extra_effects": [ { "id": "spawn_component_subscription" } ],
+    "shape": "blast",
+    "min_duration": 600000,
+    "max_duration": 600000,
+    "base_casting_time": 0,
+    "base_energy_cost": 0,
+    "energy_source": "MANA",
+    "flags": [ "PERMANENT" ],
+    "difficulty": 5,
+    "max_level": 1,
+    "min_damage": 1,
+    "max_damage": 1,
+    "min_range": 1,
+    "max_range": 1,
+    "sound_description": "a swipe"
+  },
+  {
+    "id": "spawn_component_subscription",
+    "type": "SPELL",
+    "name": "Delivery!",
+    "description": "Suddenly, your life has meaning again.",
+    "valid_targets": [ "self" ],
+    "effect": "spawn_item",
+    "effect_str": "fp_loyalty_card",
+    "extra_effects": [
+      { "id": "spawn_loyalty_card" },
+      { "id": "spawn_loyalty_card" },
+      { "id": "spawn_loyalty_card" },
+      { "id": "spawn_loyalty_card" },
+      { "id": "spawn_cash" }
+    ],
+    "shape": "blast",
+    "min_duration": 600000,
+    "max_duration": 600000,
+    "base_casting_time": 0,
+    "base_energy_cost": 0,
+    "energy_source": "MANA",
+    "flags": [ "PERMANENT", "WONDER" ],
+    "difficulty": 5,
+    "max_level": 1,
+    "min_damage": 1,
+    "max_damage": 1,
+    "min_range": 1,
+    "max_range": 1,
+    "sound_description": "a munch"
+  },
+  {
+    "id": "spawn_cash",
+    "type": "SPELL",
+    "name": "Delivery!",
+    "description": "Suddenly, your life has meaning again.",
+    "valid_targets": [ "self" ],
+    "effect": "spawn_item",
+    "effect_str": "money_one",
+    "shape": "blast",
+    "min_duration": 600000,
+    "max_duration": 600000,
+    "base_casting_time": 0,
+    "base_energy_cost": 0,
+    "energy_source": "MANA",
+    "flags": [ "PERMANENT" ],
+    "difficulty": 5,
+    "max_level": 1,
+    "min_damage": 1,
+    "max_damage": 1,
+    "min_range": 1,
+    "max_range": 1,
+    "sound_description": "a munch"
+  },
+  {
+    "id": "spawn_loyalty_card",
+    "type": "SPELL",
+    "name": "Delivery!",
+    "description": "Suddenly, your life has meaning again.",
+    "valid_targets": [ "self" ],
+    "effect": "spawn_item",
+    "effect_str": "fp_loyalty_card",
+    "shape": "blast",
+    "min_duration": 600000,
+    "max_duration": 600000,
+    "base_casting_time": 0,
+    "base_energy_cost": 0,
+    "energy_source": "MANA",
+    "flags": [ "PERMANENT" ],
+    "difficulty": 5,
+    "max_level": 1,
+    "min_damage": 1,
+    "max_damage": 1,
+    "min_range": 1,
+    "max_range": 1,
+    "sound_description": "a munch"
+  },
+  {
+    "id": "bag_of_rocks",
+    "type": "ARMOR",
+    "name": { "str": "big bag of rocks" },
+    "description": "A large canvas sack that rejects the presence of anything other than rocks.",
+    "weight": "415 g",
+    "volume": "1 L",
+    "price": 0,
+    "price_postapoc": 100000,
+    "to_hit": -5,
+    "material": [ "cotton" ],
+    "symbol": "[",
+    "looks_like": "duffelbag",
+    "color": "brown",
+    "sided": true,
+    "armor": [
+      { "covers": [ "hand_l", "hand_r" ], "coverage": 5, "encumbrance": 4, "volume_encumber_modifier": 0.5 },
+      { "covers": [ "arm_l", "arm_r" ], "coverage": 5, "encumbrance": 4, "volume_encumber_modifier": 0.5 }
+    ],
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "250 L",
+        "max_contains_weight": "300 kg",
+        "max_item_length": "60 cm",
+        "weight_multiplier": 0.01,
+        "volume_multiplier": 0.01,
+        "item_restriction": [ "rock_flaking", "rock_large", "flint", "rock" ],
+        "moves": 300
+      }
+    ],
+    "material_thickness": 1,
+    "flags": [ "OVERSIZE", "BELTED", "RESTRICT_HANDS", "WATER_FRIENDLY", "TARDIS" ]
+  },
+  {
+    "id": "white_pen",
+    "type": "TOOL",
+    "category": "tools",
+    "name": { "str": "colorless fountain pen" },
+    "description": "This is a fountain pen that writes solely in the language of magic, meaning anything you try to write with it is invisible. It's useful for artisticly weaving magic into things, but not much else.",
+    "weight": "20 g",
+    "volume": "10 ml",
+    "price": 25000,
+    "material": [ "steel" ],
+    "symbol": ";",
+    "color": "light_gray",
+    "qualities": [ [ "MANA_WEAVE", 1 ], [ "MANA_FOCUS", 1 ] ],
+    "pocket_data": [
+      {
+        "rigid": false,
+        "watertight": true,
+        "max_contains_volume": "9 ml",
+        "max_contains_weight": "19 g",
+        "moves": 10,
+        "item_restriction": [
+          "white_pen_ink",
+          "crystallized_ink",
+          "crystallized_ink_red",
+          "crystallized_ink_green",
+          "crystallized_ink_blue",
+          "crystallized_ink_black"
+        ]
+      }
+    ],
+    "flags": [ "STAB", "FRAGILE_MELEE" ]
+  },
+  {
+    "id": "unending_pen",
+    "type": "TOOL",
+    "category": "tools",
+    "name": { "str": "onyx fountain pen" },
+    "description": "This is a fine fountain pen with a giant squid etched into the back, pushing down each of the tentacles switches to a different color. It also never runs out of ink, unlike a normal fountain pen.",
+    "weight": "20 g",
+    "volume": "10 ml",
+    "price": 10000,
+    "material": [ "steel" ],
+    "symbol": ";",
+    "color": "light_gray",
+    "charges_per_use": 1,
+    "qualities": [ [ "MANA_WEAVE", 1 ] ],
+    "relic_data": { "charge_info": { "recharge_type": "periodic", "time": "30 s", "regenerate_ammo": true } },
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "black_pen_ink": 500 }, "watertight": true, "rigid": true } ],
+    "use_action": [
+      { "type": "inscribe", "verb": "Write", "gerund": "Written", "on_terrain": false, "material_restricted": false },
+      { "target": "unending_pen_green", "msg": "You click the pen.", "menu_text": "Green Ink", "type": "transform" }
+    ],
+    "flags": [ "STAB", "FRAGILE_MELEE", "WRITE_MESSAGE" ]
+  },
+  {
+    "id": "unending_pen_green",
+    "type": "TOOL",
+    "category": "tools",
+    "name": { "str": "emerald fountain pen" },
+    "description": "This is a fine fountain pen with a giant squid etched into the back, pushing down each of the tentacles switches to a different color. It also never runs out of ink, unlike a normal fountain pen.",
+    "weight": "20 g",
+    "volume": "10 ml",
+    "price": 10000,
+    "material": [ "steel" ],
+    "symbol": ";",
+    "color": "light_gray",
+    "charges_per_use": 1,
+    "qualities": [ [ "MANA_WEAVE", 1 ] ],
+    "relic_data": { "charge_info": { "recharge_type": "periodic", "time": "30 s", "regenerate_ammo": true } },
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "green_pen_ink": 500 }, "watertight": true, "rigid": true } ],
+    "use_action": [
+      { "type": "inscribe", "verb": "Write", "gerund": "Written", "on_terrain": false, "material_restricted": false },
+      { "target": "unending_pen_blue", "msg": "You click the pen.", "menu_text": "Blue Ink", "type": "transform" }
+    ],
+    "flags": [ "STAB", "FRAGILE_MELEE", "WRITE_MESSAGE" ]
+  },
+  {
+    "id": "unending_pen_red",
+    "type": "TOOL",
+    "category": "tools",
+    "name": { "str": "ruby fountain pen" },
+    "description": "This is a fine fountain pen with a giant squid etched into the back, pushing down each of the tentacles switches to a different color. It also never runs out of ink, unlike a normal fountain pen.",
+    "weight": "20 g",
+    "volume": "10 ml",
+    "price": 10000,
+    "material": [ "steel" ],
+    "symbol": ";",
+    "color": "light_gray",
+    "qualities": [ [ "MANA_WEAVE", 1 ] ],
+    "charges_per_use": 1,
+    "relic_data": { "charge_info": { "recharge_type": "periodic", "time": "30 s", "regenerate_ammo": true } },
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "red_pen_ink": 500 }, "watertight": true, "rigid": true } ],
+    "use_action": [
+      { "type": "inscribe", "verb": "Write", "gerund": "Written", "on_terrain": false, "material_restricted": false },
+      { "target": "unending_pen", "msg": "You click the pen.", "menu_text": "Black Ink", "type": "transform" }
+    ],
+    "flags": [ "STAB", "FRAGILE_MELEE", "WRITE_MESSAGE" ]
+  },
+  {
+    "id": "unending_pen_blue",
+    "type": "TOOL",
+    "category": "tools",
+    "name": { "str": "azure fountain pen" },
+    "description": "This is a fine fountain pen with a giant squid etched into the back, pushing down each of the tentacles switches to a different color. It also never runs out of ink, unlike a normal fountain pen.",
+    "weight": "20 g",
+    "volume": "10 ml",
+    "price": 10000,
+    "material": [ "steel" ],
+    "symbol": ";",
+    "color": "light_gray",
+    "charges_per_use": 1,
+    "qualities": [ [ "MANA_WEAVE", 1 ] ],
+    "relic_data": { "charge_info": { "recharge_type": "periodic", "time": "30 s", "regenerate_ammo": true } },
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "blue_pen_ink": 500 }, "watertight": true, "rigid": true } ],
+    "use_action": [
+      { "type": "inscribe", "verb": "Write", "gerund": "Written", "on_terrain": false, "material_restricted": false },
+      { "target": "unending_pen_red", "msg": "You click the pen.", "menu_text": "Red Ink", "type": "transform" }
+    ],
+    "flags": [ "STAB", "FRAGILE_MELEE", "WRITE_MESSAGE" ]
+  },
+  {
+    "id": "walking_key",
+    "type": "TOOL_ARMOR",
+    "name": { "str": "key of many steps", "str_pl": "keys of many steps" },
+    "description": "A dingy, normal looking house key that reflects a tad too much light, and in it you catch fleeting glimpses of reflected doors only somewhat nostalgic to you. While holding it you also know how many steps you've taken and how to open any lock.",
+    "weight": "20 g",
+    "volume": "1 ml",
+    "price": 1200000,
+    "material": [ "gold" ],
+    "symbol": "[",
+    "color": "yellow",
+    "material_thickness": 1,
+    "environmental_protection": 0,
+    "qualities": [ [ "LOCKPICK", 1 ] ],
+    "charges_per_use": 1,
+    "relic_data": { "charge_info": { "recharge_type": "periodic", "time": "8 h", "regenerate_ammo": true } },
+    "flags": [ "NO_UNLOAD", "NO_RELOAD", "WATER_FRIENDLY", "SKINTIGHT", "CALORIES_INTAKE", "PERFECT_LOCKPICK" ],
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "decaying_soul_ammo": 3 } } ],
+    "use_action": [
+      "CALORIES_INTAKE_TRACKER",
+      { "type": "cast_spell", "spell_id": "dimensional_step", "no_fail": true, "level": 1, "need_worn": true }
+    ]
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "crystallized_alcohol",
+    "name": { "str_sp": "crystallized alcohol" },
+    "weight": "36 g",
+    "color": "brown",
+    "addiction_type": "alcohol",
+    "use_action": { "type": "cast_spell", "spell_id": "spawn_crystallized_alcohol_aura", "no_fail": true, "level": 1 },
+    "stim": -12,
+    "container": "bottle_glass",
+    "comestible_type": "DRINK",
+    "symbol": "~",
+    "quench": -12,
+    "healthy": -1,
+    "addiction_potential": 7,
+    "description": "An alcoholic drink mixed with crystallized mana. Drinking it increases your mana capacity.",
+    "calories": 79,
+    "price": 21000,
+    "material": [ "alcohol" ],
+    "volume": "250 ml",
+    "flags": [ "EATEN_COLD", "NO_AUTO_CONSUME" ],
+    "freezing_point": -30,
+    "phase": "liquid",
+    "charges": 1,
+    "fun": 15
+  },
+  {
+    "id": "crystallized_alcohol_aura",
+    "type": "ARMOR",
+    "name": { "str": "magic of alcohol" },
+    "description": "Your mana capacity is greatly increased by alcohol.",
+    "weight": "1 g",
+    "volume": "1 ml",
+    "longest_side": "1 cm",
+    "price": 2000,
+    "to_hit": 3,
+    "bashing": 14,
+    "cutting": 3,
+    "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "ONLY_ONE", "TRADER_AVOID", "AURA", "NONCONDUCTIVE" ],
+    "material": [ "steel" ],
+    "symbol": "/",
+    "color": "brown",
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [ { "value": "MAX_MANA", "multiply": 0.2, "add": 1000 }, { "value": "REGEN_MANA", "multiply": 0.1 } ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "spawn_crystallized_alcohol_aura",
+    "type": "SPELL",
+    "name": "On the Rocks",
+    "description": "creates an alcoholic aura",
+    "valid_targets": [ "self" ],
+    "flags": [ "SILENT" ],
+    "energy_source": "MANA",
+    "effect": "spawn_item",
+    "effect_str": "crystallized_alcohol_aura",
+    "shape": "blast",
+    "base_casting_time": 0,
+    "min_damage": 1,
+    "max_damage": 1,
+    "min_duration": 50000,
+    "max_duration": 50000,
+    "max_level": 25,
+    "base_energy_cost": 0,
+    "difficulty": 4
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_CRYSTALLIZED_ADDICTION",
+    "condition": {
+      "compare_int": [
+        { "rand": 2000 },
+        "<=",
+        { "u_val": "addiction_intensity", "addiction": "crystallized_mana", "mod": { "val": 2000, "step": 20 } }
+      ]
+    },
+    "effect": [
+      { "u_message": "You want some crystallized mana.", "type": "warning" },
+      { "u_add_morale": "morale_craving_crystallized", "bonus": -5, "max_bonus": -30 },
+      {
+        "run_eocs": [
+          {
+            "id": "EOC_CRYSTALLIZED_ADDICTION_MODSTIM",
+            "condition": {
+              "and": [
+                {
+                  "compare_int": [ { "u_val": "stim" }, ">", { "u_val": "addiction_intensity", "addiction": "crystallized_mana", "mod": -10 } ]
+                },
+                {
+                  "compare_int": [ { "rand": 10 }, "<", { "u_val": "addiction_intensity", "addiction": "crystallized_mana" } ]
+                }
+              ]
+            },
+            "effect": { "arithmetic": [ { "u_val": "stim" }, "-=", { "const": 1 } ] }
+          },
+          {
+            "id": "EOC_CRYSTALLIZED_ADDICTION_SHAKES",
+            "condition": {
+              "and": [
+                { "compare_int": [ { "u_val": "addiction_intensity", "addiction": "crystallized_mana" }, ">=", { "const": 8 } ] },
+                {
+                  "compare_int": [ { "rand": 392 }, "<", { "u_val": "addiction_intensity", "addiction": "crystallized_mana" } ]
+                }
+              ]
+            },
+            "effect": [
+              { "u_message": "Your hands start shaking… you need it bad!", "type": "bad" },
+              { "u_add_effect": "shakes", "duration": "2 minutes" }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "morale_craving_crystallized",
+    "type": "morale_type",
+    "text": "Craving crystallized mana"
+  },
+  {
+    "type": "addiction_type",
+    "id": "crystallized_mana",
+    "name": "Crystallized Mana Withdrawal",
+    "type_name": "crystallized_mana",
+    "description": "Strength - 1;   Slight sluggishness;   Occasional cravings",
+    "craving_morale": "morale_craving_crystallized",
+    "effect_on_condition": "EOC_CRYSTALLIZED_ADDICTION_ADDICTION"
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "crystal_mana",
+    "name": { "str_sp": "powdered crystallized mana" },
+    "symbol": "=",
+    "comestible_type": "DRINK",
+    "color": "white",
+    "price": 500,
+    "addiction_potential": 10,
+    "addiction_type": "crystallized_mana",
+    "description": "Some crystallized mana, crushed into a powder. Not quite as elegant as mana dust. Ingested it injects mana straight into the bloodstream, overusage causes tiredness and is somewhat addictive.",
+    "flags": [ "ZERO_WEIGHT" ],
+    "volume": "10 ml",
+    "use_action": { "type": "cast_spell", "spell_id": "snort_crystallized_mana", "no_fail": true, "level": 1 },
+    "material": [ "crystallized_mana" ],
+    "looks_like": "coke"
+  },
+  {
+    "id": "interdimensional_cage",
+    "type": "TOOL",
+    "name": { "str": "interdimensional cage" },
+    "description": "A dark black box that only seems large enough to hold a small bird, but you could fit just about anybody in there.",
+    "weight": "100 g",
+    "volume": "1000 ml",
+    "price": 300000,
+    "bashing": 1,
+    "cutting": 1,
+    "material": [ "steel" ],
+    "symbol": "I",
+    "color": "black",
+    "properties": [ [ "creature_size_capacity", "HUGE" ] ],
+    "use_action": [ "CAPTURE_MONSTER_ACT" ],
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "70 L",
+        "max_contains_weight": "100 kg",
+        "rigid": true,
+        "max_item_length": "100 cm",
+        "weight_multiplier": 0.7,
+        "moves": 300
+      }
+    ],
+    "flags": [ "TRADER_AVOID", "TARDIS", "SEMITANGIBLE", "RADIO_INVOKE_PROC", "RADIO_MODABLE", "ZERO_WEIGHT" ]
+  },
+  {
+    "type": "TOOL",
+    "id": "mirrored_page",
+    "name": { "str": "mirrored page" },
+    "weight": "3 g",
+    "color": "white",
+    "symbol": "`",
+    "looks_like": "mirror",
+    "description": "A piece of paper that has been magically enhanced to have the property of containment. Small objects or creatures can be stored inside. Most commonly used by mages to store magic circles.",
+    "properties": [ [ "creature_size_capacity", "TINY" ] ],
+    "use_action": [ "CAPTURE_MONSTER_ACT" ],
+    "price": 50000,
+    "material": [ "paper" ],
+    "volume": "8 ml",
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "7 ml",
+        "max_contains_weight": "7 g",
+        "max_item_length": "100 cm",
+        "rigid": true,
+        "weight_multiplier": 0.1,
+        "moves": 300
+      }
+    ],
+    "flags": [ "TARDIS", "ZERO_WEIGHT" ],
+    "longest_side": "297 mm"
+  },
+  {
+    "id": "parabolan_silk_undersuit",
+    "type": "ARMOR",
+    "name": "parabolan silk undersuit",
+    "description": "A lithe half-body undersuit made of parabolan silk, an adaptation of parabolan wool that shows reflections of things that could never be. When the wearer is harmed they will suddenly find themself somewhere else.",
+    "looks_like": "bondage_suit",
+    "weight": "60 g",
+    "volume": "750 ml",
+    "price": 600000,
+    "symbol": "s",
+    "color": "black",
+    "relic_data": {
+      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "hit_me_effect": [ { "id": "phase_door", "hit_self": true } ] } ]
+    },
+    "armor": [
+      { "encumbrance": 1, "coverage": 95, "covers": [ "torso" ] },
+      { "encumbrance": 1, "coverage": 85, "covers": [ "arm_r", "arm_l" ] }
+    ],
+    "material": [ "parabolan_wool" ],
+    "material_thickness": 0.5,
+    "flags": [ "VARSIZE", "FANCY", "WATER_FRIENDLY" ]
+  },
+  {
+    "name": { "str": "cuppa joe" },
+    "id": "cuppa",
+    "type": "GENERIC",
+    "copy-from": "thermos",
+    "price": 200000,
+    "price_postapoc": 200000,
+    "category": "container",
+    "looks_like": "ceramic_mug",
+    "description": "A mug of coffee that never ends and never spills.",
+    "relic_data": { "charge_info": { "recharge_type": "periodic", "time": "1 m", "regenerate_ammo": true } },
+    "use_action": {
+      "target": "coffee",
+      "msg": "You open the thermos and discover it full of sweet, sweet, coffee!",
+      "container": "cuppa",
+      "target_charges": 1,
+      "moves": 50,
+      "type": "transform"
+    }
+  },
+  {
+    "id": "magic_mantle",
+    "repairs_like": "survivor_suit",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+    "name": { "str": "magic mantle" },
+    "description": "A lightweight, bullet resistant vest made to block damage from heat. Most magical forms of damage can be resisted if the vest is attuned to do so. Suitable for wearing under clothing. Highly recommended for any field operator of a magical nature.",
+    "weight": "2860 g",
+    "volume": "6 L",
+    "price": 1500000,
+    "to_hit": -3,
+    "bashing": 6,
+    "material": [ "kevlar_layered" ],
+    "symbol": "[",
+    "environmental_protection": 7,
+    "looks_like": "kevlar",
+    "color": "light_gray",
+    "warmth": 15,
+    "use_action": {
+      "target": "magic_mantle_cold",
+      "msg": "You attune the mantle to block cold damage.",
+      "menu_text": "Attune: Cold",
+      "moves": 1000,
+      "type": "transform"
+    },
+    "relic_data": { "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "ARMOR_HEAT", "add": -10 } ] } ] },
+    "material_thickness": 3,
+    "flags": [ "STURDY", "SKINTIGHT", "PSYSHIELD_PARTIAL", "NO_UNLOAD" ],
+    "armor": [ { "encumbrance": 5, "coverage": 85, "covers": [ "torso" ] } ]
+  },
+  {
+    "id": "magic_mantle_cold",
+    "repairs_like": "survivor_suit",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+    "name": { "str": "magic mantle" },
+    "description": "A lightweight, bullet resistant vest made to block damage from cold. Most magical forms of damage can be resisted if the vest is attuned to do so. Suitable for wearing under clothing. Highly recommended for any field operator of a magical nature.",
+    "weight": "2860 g",
+    "volume": "6 L",
+    "price": 1500000,
+    "to_hit": -3,
+    "bashing": 6,
+    "material": [ "kevlar_layered" ],
+    "symbol": "[",
+    "environmental_protection": 7,
+    "looks_like": "kevlar",
+    "color": "light_gray",
+    "warmth": 15,
+    "use_action": {
+      "target": "magic_mantle_elec",
+      "msg": "You attune the mantle to block electric damage.",
+      "menu_text": "Attune: Electric",
+      "moves": 1000,
+      "type": "transform"
+    },
+    "relic_data": { "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "ARMOR_COLD", "add": -10 } ] } ] },
+    "material_thickness": 3,
+    "flags": [ "STURDY", "SKINTIGHT", "PSYSHIELD_PARTIAL", "NO_UNLOAD" ],
+    "armor": [ { "encumbrance": 5, "coverage": 85, "covers": [ "torso" ] } ]
+  },
+  {
+    "id": "magic_mantle_elec",
+    "repairs_like": "survivor_suit",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+    "name": { "str": "magic mantle" },
+    "description": "A lightweight, bullet resistant vest made to block damage from electricity. Most magical forms of damage can be resisted if the vest is attuned to do so. Suitable for wearing under clothing. Highly recommended for any field operator of a magical nature.",
+    "weight": "2860 g",
+    "volume": "6 L",
+    "price": 1500000,
+    "to_hit": -3,
+    "bashing": 6,
+    "material": [ "kevlar_layered" ],
+    "symbol": "[",
+    "environmental_protection": 7,
+    "looks_like": "kevlar",
+    "color": "light_gray",
+    "warmth": 15,
+    "use_action": {
+      "target": "magic_mantle_acid",
+      "msg": "You attune the mantle to block acid damage.",
+      "menu_text": "Attune: Acid",
+      "moves": 1000,
+      "type": "transform"
+    },
+    "relic_data": { "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "ARMOR_ELEC", "add": -10 } ] } ] },
+    "material_thickness": 3,
+    "flags": [ "STURDY", "SKINTIGHT", "PSYSHIELD_PARTIAL", "NO_UNLOAD" ],
+    "armor": [ { "encumbrance": 5, "coverage": 85, "covers": [ "torso" ] } ]
+  },
+  {
+    "id": "magic_mantle_acid",
+    "repairs_like": "survivor_suit",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+    "name": { "str": "magic mantle" },
+    "description": "A lightweight, bullet resistant vest made to block damage from acid. Most magical forms of damage can be resisted if the vest is attuned to do so. Suitable for wearing under clothing. Highly recommended for any field operator of a magical nature.",
+    "weight": "2860 g",
+    "volume": "6 L",
+    "price": 1500000,
+    "to_hit": -3,
+    "bashing": 6,
+    "material": [ "kevlar_layered" ],
+    "symbol": "[",
+    "environmental_protection": 7,
+    "looks_like": "kevlar",
+    "color": "light_gray",
+    "warmth": 15,
+    "use_action": {
+      "target": "magic_mantle_bio",
+      "msg": "You attune the mantle to block biological damage.",
+      "menu_text": "Attune: Biological",
+      "moves": 1000,
+      "type": "transform"
+    },
+    "relic_data": { "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "ARMOR_ACID", "add": -10 } ] } ] },
+    "material_thickness": 3,
+    "flags": [ "STURDY", "SKINTIGHT", "PSYSHIELD_PARTIAL", "NO_UNLOAD" ],
+    "armor": [ { "encumbrance": 5, "coverage": 85, "covers": [ "torso" ] } ]
+  },
+  {
+    "id": "magic_mantle_bio",
+    "repairs_like": "survivor_suit",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+    "name": { "str": "magic mantle" },
+    "description": "A lightweight, bullet resistant vest made to block biological damage. Most magical forms of damage can be resisted if the vest is attuned to do so. Suitable for wearing under clothing. Highly recommended for any field operator of a magical nature.",
+    "weight": "2860 g",
+    "volume": "6 L",
+    "price": 1500000,
+    "to_hit": -3,
+    "bashing": 6,
+    "material": [ "kevlar_layered" ],
+    "symbol": "[",
+    "environmental_protection": 7,
+    "looks_like": "kevlar",
+    "color": "light_gray",
+    "warmth": 15,
+    "use_action": {
+      "target": "magic_mantle",
+      "msg": "You attune the mantle to block heat damage.",
+      "menu_text": "Attune: Heat",
+      "moves": 1000,
+      "type": "transform"
+    },
+    "relic_data": { "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "ARMOR_BIO", "add": -10 } ] } ] },
+    "material_thickness": 3,
+    "flags": [ "STURDY", "SKINTIGHT", "PSYSHIELD_PARTIAL", "NO_UNLOAD" ],
+    "armor": [ { "encumbrance": 5, "coverage": 85, "covers": [ "torso" ] } ]
+  },
+  {
+    "copy-from": "mring_platinum",
+    "type": "TOOL_ARMOR",
+    "id": "black_wolfs_ring_bash",
+    "name": { "str": "ring of the black wolf", "str_pl": "ring of the black wolf" },
+    "description": "A ring of a polished dull-grey metal with an intricate and technologically superior design woven into it, that when properly manipulated allow it to change shape and function. The wearer deals more ballistic damage. It can be attuned to assist with different kinds of physical combat.",
+    "price": 500000,
+    "price_postapoc": 500000,
+    "use_action": {
+      "target": "black_wolfs_ring_stab",
+      "msg": "You attune the ring to assist with stabbing.",
+      "menu_text": "Attune: Stab",
+      "moves": 1000,
+      "type": "transform"
+    },
+    "relic_data": {
+      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "EXTRA_BASH", "multiply": 0.1 } ] } ]
+    }
+  },
+  {
+    "copy-from": "mring_platinum",
+    "type": "TOOL_ARMOR",
+    "id": "black_wolfs_ring_stab",
+    "name": { "str": "ring of the black wolf", "str_pl": "ring of the black wolf" },
+    "description": "A ring of a polished dull-grey metal with an intricate and technologically superior design woven into it, that when properly manipulated allow it to change shape and function. The wearer deals more ballistic damage. It can be attuned to assist with different kinds of physical combat.",
+    "price": 500000,
+    "price_postapoc": 500000,
+    "use_action": {
+      "target": "black_wolfs_ring_cut",
+      "msg": "You attune the ring to assist with cutting.",
+      "menu_text": "Attune: Cut",
+      "moves": 1000,
+      "type": "transform"
+    },
+    "relic_data": {
+      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "EXTRA_STAB", "multiply": 0.1 } ] } ]
+    }
+  },
+  {
+    "copy-from": "mring_platinum",
+    "type": "TOOL_ARMOR",
+    "id": "black_wolfs_ring_cut",
+    "name": { "str": "ring of the black wolf", "str_pl": "ring of the black wolf" },
+    "description": "A ring of a polished dull-grey metal with an intricate and technologically superior design woven into it, that when properly manipulated allow it to change shape and function. The wearer deals more ballistic damage. It can be attuned to assist with different kinds of physical combat.",
+    "price": 500000,
+    "price_postapoc": 500000,
+    "use_action": {
+      "target": "black_wolfs_ring_bullet",
+      "msg": "You attune the ring to assist with ballistics.",
+      "menu_text": "Attune: Ballistic",
+      "moves": 1000,
+      "type": "transform"
+    },
+    "relic_data": {
+      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "EXTRA_CUT", "multiply": 0.1 } ] } ]
+    }
+  },
+  {
+    "copy-from": "mring_platinum",
+    "type": "TOOL_ARMOR",
+    "id": "black_wolfs_ring_bullet",
+    "name": { "str": "ring of the black wolf", "str_pl": "ring of the black wolf" },
+    "description": "A ring of a polished dull-grey metal with an intricate and technologically superior design woven into it, that when properly manipulated allow it to change shape and function. The wearer deals more ballistic damage. It can be attuned to assist with different kinds of physical combat.",
+    "price": 500000,
+    "price_postapoc": 500000,
+    "use_action": {
+      "target": "black_wolfs_ring_bash",
+      "msg": "You attune the ring to assist with bashing.",
+      "menu_text": "Attune: Bash",
+      "moves": 1000,
+      "type": "transform"
+    },
+    "relic_data": {
+      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "EXTRA_BULLET", "multiply": 0.1 } ] } ]
+    }
+  },
+  {
+    "copy-from": "mring_platinum",
+    "type": "TOOL_ARMOR",
+    "id": "white_wolfs_ring_heat",
+    "name": { "str": "ring of the white wolf", "str_pl": "ring of the white wolf" },
+    "description": "A ring of cold ice that never melts, said to have been used by the white wolf himself. The wearer deals more heat damage. It can be attuned to assist with different kinds of magical combat.",
+    "price": 500000,
+    "price_postapoc": 500000,
+    "use_action": {
+      "target": "white_wolfs_ring_cold",
+      "msg": "You attune the ring to assist with freezing.",
+      "menu_text": "Attune: Cold",
+      "moves": 1000,
+      "type": "transform"
+    },
+    "relic_data": {
+      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "EXTRA_HEAT", "multiply": 0.1 } ] } ]
+    }
+  },
+  {
+    "copy-from": "mring_platinum",
+    "type": "TOOL_ARMOR",
+    "id": "white_wolfs_ring_cold",
+    "name": { "str": "ring of the white wolf", "str_pl": "ring of the white wolf" },
+    "description": "A ring of cold ice that never melts, said to have been used by the white wolf himself. The wearer deals more cold damage. It can be attuned to assist with different kinds of magical combat.",
+    "price": 500000,
+    "price_postapoc": 500000,
+    "use_action": {
+      "target": "white_wolfs_ring_elec",
+      "msg": "You attune the ring to assist with sparking.",
+      "menu_text": "Attune: Electric",
+      "moves": 1000,
+      "type": "transform"
+    },
+    "relic_data": {
+      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "EXTRA_COLD", "multiply": 0.1 } ] } ]
+    }
+  },
+  {
+    "copy-from": "mring_platinum",
+    "type": "TOOL_ARMOR",
+    "id": "white_wolfs_ring_elec",
+    "name": { "str": "ring of the white wolf", "str_pl": "ring of the white wolf" },
+    "description": "A ring of cold ice that never melts, said to have been used by the white wolf himself. The wearer deals more electric damage. It can be attuned to assist with different kinds of magical combat.",
+    "price": 500000,
+    "price_postapoc": 500000,
+    "use_action": {
+      "target": "white_wolfs_ring_acid",
+      "msg": "You attune the ring to assist with melting.",
+      "menu_text": "Attune: Acid",
+      "moves": 1000,
+      "type": "transform"
+    },
+    "relic_data": {
+      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "EXTRA_ELEC", "multiply": 0.1 } ] } ]
+    }
+  },
+  {
+    "copy-from": "mring_platinum",
+    "type": "TOOL_ARMOR",
+    "id": "white_wolfs_ring_acid",
+    "name": { "str": "ring of the white wolf", "str_pl": "ring of the white wolf" },
+    "description": "A ring of cold ice that never melts, said to have been used by the white wolf himself. The wearer deals more acid damage. It can be attuned to assist with different kinds of magical combat.",
+    "price": 500000,
+    "price_postapoc": 500000,
+    "use_action": {
+      "target": "white_wolfs_ring_bio",
+      "msg": "You attune the ring to assist with draining.",
+      "menu_text": "Attune: Biological",
+      "moves": 1000,
+      "type": "transform"
+    },
+    "relic_data": {
+      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "EXTRA_ACID", "multiply": 0.1 } ] } ]
+    }
+  },
+  {
+    "copy-from": "mring_platinum",
+    "type": "TOOL_ARMOR",
+    "id": "white_wolfs_ring_bio",
+    "name": { "str": "ring of the white wolf", "str_pl": "ring of the white wolf" },
+    "description": "A ring of cold ice that never melts, said to have been used by the white wolf himself. The wearer deals more biological damage. It can be attuned to assist with different kinds of magical combat.",
+    "price": 500000,
+    "price_postapoc": 500000,
+    "use_action": {
+      "target": "white_wolfs_ring_heat",
+      "msg": "You attune the ring to assist with burning.",
+      "menu_text": "Attune: Heat",
+      "moves": 1000,
+      "type": "transform"
+    },
+    "relic_data": {
+      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "EXTRA_BIO", "multiply": 0.1 } ] } ]
+    }
+  },
+  {
+    "id": "snort_crystallized_mana",
+    "type": "SPELL",
+    "name": "Snort Mana",
+    "description": "You snort crystallized mana, much the same as coke but not quite as magical.",
+    "valid_targets": [ "self" ],
+    "min_damage": 25,
+    "max_damage": 150,
+    "max_level": 1,
+    "effect": "recover_energy",
+    "effect_str": "MANA",
+    "extra_effects": [ { "id": "drain_fatigue_self_crystal", "hit_self": true } ],
+    "shape": "blast",
+    "energy_source": "MANA",
+    "difficulty": 8,
+    "base_casting_time": 100,
+    "base_energy_cost": 0,
+    "flags": [ "SILENT", "RANDOM_DAMAGE" ]
+  },
+  {
+    "id": "drain_fatigue_self_crystal",
+    "type": "SPELL",
+    "name": "Crystal Sickness",
+    "description": "Snorting crystal leaves you weary for the day.",
+    "valid_targets": [ "self" ],
+    "flags": [ "SILENT", "RANDOM_DAMAGE" ],
+    "energy_source": "MANA",
+    "effect": "recover_energy",
+    "effect_str": "FATIGUE",
+    "shape": "blast",
+    "base_casting_time": 0,
+    "min_damage": -1,
+    "max_damage": -5,
+    "max_level": 25,
+    "base_energy_cost": 0,
+    "difficulty": 4
+  },
+  {
+    "id": "crystallized_meth_low",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": { "str_sp": "low-grade crystallized methamphetamine" },
+    "description": "A profoundly addictive and powerful stimulant. Magicians find it extremely useful for enhancing combat abilities, as well as a renowned ability to tire them out.",
+    "weight": "1 g",
+    "volume": "250 ml",
+    "price": 25000,
+    "charges": 1,
+    "stack_size": 100,
+    "material": [ "powder" ],
+    "symbol": "!",
+    "color": "light_cyan",
+    "container": "bag_zipper",
+    "quench": -2,
+    "stim": 20,
+    "healthy": -7,
+    "fun": 30,
+    "addiction_potential": 50,
+    "addiction_type": "amphetamine",
+    "flags": [ "NO_INGEST", "WATER_DISSOLVE", "EDIBLE_FROZEN" ],
+    "use_action": { "type": "cast_spell", "spell_id": "spawn_meth_low_aura", "no_fail": true, "level": 1 }
+  },
+  {
+    "id": "spawn_meth_low_aura",
+    "type": "SPELL",
+    "name": "spawn meth aura",
+    "description": "Meth aura",
+    "valid_targets": [ "self" ],
+    "flags": [ "SILENT" ],
+    "energy_source": "MANA",
+    "effect": "spawn_item",
+    "effect_str": "meth_low_aura",
+    "extra_effects": [ { "id": "drain_fatigue_self", "hit_self": true } ],
+    "shape": "blast",
+    "base_casting_time": 0,
+    "min_duration": 100000,
+    "max_duration": 100000,
+    "min_damage": 1,
+    "max_damage": 1,
+    "max_level": 1,
+    "base_energy_cost": 0,
+    "difficulty": 4
+  },
+  {
+    "id": "meth_low_aura",
+    "type": "ARMOR",
+    "name": { "str": "meth magic" },
+    "description": "You feel more magically attuned now that you've had your morning meth.",
+    "weight": "1 g",
+    "volume": "1 ml",
+    "longest_side": "1 cm",
+    "price": 2000,
+    "to_hit": 3,
+    "bashing": 14,
+    "cutting": 3,
+    "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "ONLY_ONE", "TRADER_AVOID", "AURA", "NO_TAKEOFF", "NONCONDUCTIVE" ],
+    "material": [ "steel" ],
+    "symbol": "/",
+    "color": "brown",
+    "relic_data": { "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "INTELLIGENCE", "add": 4 } ] } ] }
+  },
+  {
+    "id": "crystallized_meth_pure",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": { "str_sp": "pure crystallized methamphetamine" },
+    "description": "A profoundly addictive and powerful stimulant. Magicians find it extremely useful for enhancing combat abilities, as well as a renowned ability to tire them out.",
+    "weight": "1 g",
+    "volume": "250 ml",
+    "price": 50000,
+    "charges": 1,
+    "stack_size": 100,
+    "material": [ "powder" ],
+    "symbol": "!",
+    "color": "light_cyan",
+    "container": "bag_zipper",
+    "quench": -2,
+    "stim": 20,
+    "healthy": -7,
+    "fun": 30,
+    "addiction_potential": 75,
+    "addiction_type": "amphetamine",
+    "flags": [ "NO_INGEST", "WATER_DISSOLVE", "EDIBLE_FROZEN" ],
+    "use_action": { "type": "cast_spell", "spell_id": "spawn_meth_pure_aura", "no_fail": true, "level": 1 }
+  },
+  {
+    "id": "spawn_meth_pure_aura",
+    "type": "SPELL",
+    "name": "spawn meth aura",
+    "description": "Meth aura",
+    "valid_targets": [ "self" ],
+    "flags": [ "SILENT" ],
+    "energy_source": "MANA",
+    "effect": "spawn_item",
+    "effect_str": "meth_pure_aura",
+    "extra_effects": [ { "id": "drain_fatigue_self", "hit_self": true } ],
+    "shape": "blast",
+    "base_casting_time": 0,
+    "min_duration": 100000,
+    "max_duration": 100000,
+    "min_damage": 1,
+    "max_damage": 1,
+    "max_level": 1,
+    "base_energy_cost": 0,
+    "difficulty": 4
+  },
+  {
+    "id": "meth_pure_aura",
+    "type": "ARMOR",
+    "name": { "str": "pure meth magic" },
+    "description": "You feel more magically attuned now that you've had your morning meth.",
+    "weight": "1 g",
+    "volume": "1 ml",
+    "longest_side": "1 cm",
+    "price": 2000,
+    "to_hit": 3,
+    "bashing": 14,
+    "cutting": 3,
+    "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "ONLY_ONE", "TRADER_AVOID", "AURA", "NO_TAKEOFF", "NONCONDUCTIVE" ],
+    "material": [ "steel" ],
+    "symbol": "/",
+    "color": "brown",
+    "relic_data": { "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "INTELLIGENCE", "add": 8 } ] } ] }
+  },
+  {
+    "id": "crystallized_heroin",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": { "str_sp": "crystallized heroin" },
+    "description": "An extremely potent substance made from heroin mixed with crystallized mana. Injection leads to an incredibly heightened reading comprehension, as well as extreme fragility of the body. Experts believed this to be related to non-locality, but they couldn't find the missing link.",
+    "weight": "1 g",
+    "volume": "250 ml",
+    "price": 50000,
+    "charges": 1,
+    "stack_size": 100,
+    "material": [ "powder" ],
+    "symbol": "!",
+    "color": "light_gray",
+    "container": "bag_zipper",
+    "stim": -10,
+    "healthy": -5,
+    "fun": 50,
+    "addiction_potential": 85,
+    "addiction_type": "opiate",
+    "flags": [ "NO_INGEST", "IRREPLACEABLE_CONSUMABLE", "WATER_DISSOLVE", "EDIBLE_FROZEN" ],
+    "use_action": { "type": "cast_spell", "spell_id": "spawn_fast_reader_aura_heroin", "no_fail": true, "level": 1 }
+  },
+  {
+    "id": "spawn_fast_reader_aura_heroin",
+    "type": "SPELL",
+    "name": "spawn fast reader aura",
+    "description": "Fast reader aura",
+    "valid_targets": [ "self" ],
+    "flags": [ "SILENT" ],
+    "energy_source": "MANA",
+    "effect": "spawn_item",
+    "effect_str": "fast_reader_aura_heroin",
+    "shape": "blast",
+    "base_casting_time": 0,
+    "min_duration": 1000000,
+    "max_duration": 1000000,
+    "min_damage": 1,
+    "max_damage": 1,
+    "max_level": 1,
+    "base_energy_cost": 0,
+    "difficulty": 4
+  },
+  {
+    "id": "fast_reader_aura_heroin",
+    "type": "ARMOR",
+    "name": { "str": "conscious" },
+    "description": "You feel much smarter in general.",
+    "weight": "1 g",
+    "volume": "1 ml",
+    "longest_side": "1 cm",
+    "price": 2000,
+    "price_postapoc": 250,
+    "to_hit": 3,
+    "bashing": 14,
+    "cutting": 3,
+    "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "AURA", "ONLY_ONE", "TRADER_AVOID", "NO_TAKEOFF", "NONCONDUCTIVE" ],
+    "material": [ "steel" ],
+    "symbol": "/",
+    "color": "brown",
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "mutations": [ "FASTREADER", "CLUMSY", "SLOWRUNNER", "FLIMSY3", "SKIN_ROUGH", "SLOWHEALER3", "INT_UP_3" ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "smoking_mana",
+    "type": "SPELL",
+    "name": "Puff",
+    "description": "",
+    "valid_targets": [ "self" ],
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE" ],
+    "energy_source": "MANA",
+    "effect": "recover_energy",
+    "effect_str": "MANA",
+    "shape": "blast",
+    "base_casting_time": 0,
+    "min_damage": 1,
+    "max_damage": 2,
+    "max_level": 1,
+    "base_energy_cost": 0,
+    "difficulty": 0
+  },
+  {
+    "type": "enchantment",
+    "id": "cigarette_enchantment",
+    "condition": "ALWAYS",
+    "intermittent_activation": { "effects": [ { "frequency": "30 s", "spell_effects": [ { "id": "smoking_mana", "hit_self": true } ] } ] }
+  },
+  {
+    "id": "cig_lit",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": { "str": "cigarette" },
+    "copy-from": "cig_lit",
+    "relic_data": { "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "id": "cigarette_enchantment" } ] }
+  },
+  {
+    "type": "enchantment",
+    "id": "cigar_enchantment",
+    "condition": "ALWAYS",
+    "intermittent_activation": { "effects": [ { "frequency": "20 s", "spell_effects": [ { "id": "smoking_mana", "hit_self": true } ] } ] }
+  },
+  {
+    "id": "cigar_lit",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": { "str": "cigar" },
+    "copy-from": "cigar_lit",
+    "flags": [ "FANCY" ],
+    "relic_data": { "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "id": "cigar_enchantment" } ] }
+  },
+  {
+    "type": "enchantment",
+    "id": "blunt_enchantment",
+    "condition": "ALWAYS",
+    "intermittent_activation": { "effects": [ { "frequency": "20 s", "spell_effects": [ { "id": "smoking_mana", "hit_self": true } ] } ] }
+  },
+  {
+    "id": "joint_lit",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": { "str": "blunt" },
+    "description": "A twist of the herb wrapped in tobaccy, perfect for a relaxing evening.",
+    "copy-from": "joint_lit",
+    "relic_data": { "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "id": "blunt_enchantment" } ] }
+  },
+  {
+    "type": "ammunition_type",
+    "id": "butt",
+    "name": "Butts",
+    "default": "cig_butt"
+  },
+  {
+    "type": "AMMO",
+    "id": "cig_butt",
+    "name": { "str": "cigarette butt" },
+    "copy-from": "cig_butt",
+    "count": 1,
+    "armor_data": {
+      "warmth": 3,
+      "armor": [
+        {
+          "material": [ { "type": "paper", "covered_by_mat": 100, "thickness": 0.1 } ],
+          "encumbrance": 50,
+          "coverage": 25,
+          "covers": [ "mouth" ]
+        }
+      ]
+    },
+    "flags": [ "CANT_WEAR" ],
+    "ammo_type": "butt"
+  },
+  {
+    "type": "AMMO",
+    "id": "cigar_butt",
+    "name": { "str": "cigar butt" },
+    "copy-from": "cigar_butt",
+    "flags": [ "CANT_WEAR", "FANCY" ],
+    "armor_data": {
+      "warmth": 3,
+      "armor": [
+        {
+          "material": [ { "type": "paper", "covered_by_mat": 100, "thickness": 0.1 } ],
+          "encumbrance": 50,
+          "coverage": 25,
+          "covers": [ "mouth" ]
+        }
+      ]
+    },
+    "count": 1,
+    "ammo_type": "butt"
+  },
+  {
+    "type": "AMMO",
+    "id": "joint_roach",
+    "name": { "str": "blunt roach" },
+    "copy-from": "joint_roach",
+    "description": "A twist of the herb wrapped in tobaccy, perfect for a relaxing evening.",
+    "count": 1,
+    "armor_data": {
+      "warmth": 3,
+      "armor": [
+        {
+          "material": [ { "type": "paper", "covered_by_mat": 100, "thickness": 0.1 } ],
+          "encumbrance": 50,
+          "coverage": 25,
+          "covers": [ "mouth" ]
+        }
+      ]
+    },
+    "flags": [ "CANT_WEAR" ],
+    "ammo_type": "butt"
+  },
+  {
+    "id": "coffee",
+    "type": "COMESTIBLE",
+    "name": { "str": "coffee" },
+    "copy-from": "coffee",
+    "use_action": { "type": "cast_spell", "spell_id": "coffee_max_mana", "no_fail": true, "level": 1 }
+  },
+  {
+    "id": "coffee_max_mana",
+    "type": "SPELL",
+    "name": "coffee manamization",
+    "description": "Recovers mana",
+    "valid_targets": [ "self" ],
+    "flags": [ "SILENT" ],
+    "energy_source": "MANA",
+    "effect": "spawn_item",
+    "effect_str": "coffee_aura",
+    "shape": "blast",
+    "base_casting_time": 0,
+    "min_damage": 1,
+    "max_damage": 1,
+    "min_duration": 90000,
+    "max_duration": 90000,
+    "max_level": 1,
+    "base_energy_cost": 0,
+    "difficulty": 4
+  },
+  {
+    "id": "coffee_recover_mana",
+    "type": "SPELL",
+    "name": "Recover mana",
+    "description": "Recovers mana",
+    "valid_targets": [ "self" ],
+    "flags": [ "SILENT" ],
+    "energy_source": "MANA",
+    "effect": "recover_energy",
+    "effect_str": "MANA",
+    "shape": "blast",
+    "base_casting_time": 0,
+    "min_damage": 250,
+    "max_damage": 250,
+    "max_level": 1,
+    "base_energy_cost": 0,
+    "difficulty": 4
+  },
+  {
+    "id": "coffee_aura",
+    "type": "ARMOR",
+    "name": { "str": "coffee manamization" },
+    "description": "You feel more magically attuned now that you've had your morning joe. You can activate this to gain a burst of mana.",
+    "weight": "1 g",
+    "volume": "1 ml",
+    "longest_side": "1 cm",
+    "price": 2000,
+    "to_hit": 3,
+    "bashing": 14,
+    "cutting": 3,
+    "flags": [
+      "PERSONAL",
+      "SEMITANGIBLE",
+      "OVERSIZE",
+      "NO_UNLOAD",
+      "NO_RELOAD",
+      "ONLY_ONE",
+      "TRADER_AVOID",
+      "AURA",
+      "NO_TAKEOFF",
+      "NONCONDUCTIVE"
+    ],
+    "material": [ "steel" ],
+    "symbol": "/",
+    "color": "brown",
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [ { "value": "MAX_MANA", "add": 250 }, { "value": "REGEN_MANA", "multiply": 0.2 } ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "LEARNSUITSPELL",
+    "name": { "str": "Learn Suit Spell" },
+    "points": 1,
+    "description": "You know how to make your suit disappear.",
+    "starting_trait": false,
+    "valid": false,
+    "player_display": false,
+    "spells_learned": [ [ "remove_suit", 1 ] ],
+    "category": [ "HUMAN" ]
+  },
+  {
+    "id": "joint",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": { "str": "blunt" },
+    "description": "A twist of the herb wrapped in tobaccy, perfect for a relaxing evening.",
+    "copy-from": "joint"
+  },
+  {
+    "id": "crack",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": { "str_sp": "crack" },
+    "copy-from": "crack",
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You smoke your crack rocks.  Mother would be proud.",
+      "effects": [ { "id": "high", "duration": 15 }, { "id": "crack_magic", "duration": 15 } ],
+      "stat_adjustments": { "hunger": -10 },
+      "fields_produced": { "fd_cracksmoke": 2 },
+      "charges_needed": { "fire": 1 },
+      "tools_needed": { "apparatus": -1 }
+    }
+  },
+  {
+    "type": "effect_type",
+    "id": "crack_magic",
+    "name": [ "Magic of Crack" ],
+    "desc": [ "You can't trust everything that you see." ],
+    "rating": "good",
+    "base_mods": { "int_mod": [ -2 ], "str_mod": [ 4 ], "dex_mod": [ 4 ], "per_mod": [ -2 ] },
+    "blood_analysis_description": "Magic of Crack"
+  },
+  {
+    "id": "lsd",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": { "str": "pink tab" },
+    "copy-from": "lsd",
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You eat the pink tablet.",
+      "effects": [ { "id": "hallu", "duration": 3600 }, { "id": "lsd_magic", "duration": 3600 } ]
+    }
+  },
+  {
+    "type": "effect_type",
+    "id": "lsd_magic",
+    "name": [ "Magic of LSD" ],
+    "desc": [ "You can't trust everything that you see." ],
+    "rating": "good",
+    "base_mods": { "int_mod": [ 4 ], "str_mod": [ -4 ], "dex_mod": [ -4 ], "per_mod": [ 4 ] },
+    "blood_analysis_description": "Magic of LSD"
+  },
+  {
+    "id": "melatonin_tablet",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": { "str": "melatonin tablet" },
+    "copy-from": "melatonin_tablet",
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You pop a melatonin tablet.",
+      "effects": [ { "id": "melatonin", "duration": "16 h" }, { "id": "smoke_magic", "duration": 3600 } ]
+    }
+  },
+  {
+    "id": "prussian_blue",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": { "str": "Prussian blue tablet" },
+    "copy-from": "prussian_blue",
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You take some Prussian blue.",
+      "effects": [ { "id": "pblue", "duration": 3600 }, { "id": "smoke_magic", "duration": 1000 } ]
+    }
+  },
+  {
+    "id": "morphine",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": { "str": "morphine" },
+    "copy-from": "morphine",
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You shoot up.",
+      "tools_needed": { "syringe": -1 },
+      "effects": [
+        { "id": "pkill3", "duration": 120 },
+        { "id": "pkill2", "duration": 1200 },
+        { "id": "morphine_magic", "duration": 1200 }
+      ]
+    }
+  },
+  {
+    "type": "effect_type",
+    "id": "morphine_magic",
+    "name": [ "Magic of Morphine" ],
+    "desc": [ "You can't trust everything that you see." ],
+    "rating": "good",
+    "base_mods": { "int_mod": [ 6 ], "speed_mod": [ -50 ] },
+    "blood_analysis_description": "Magic of Morphine"
+  },
+  {
+    "id": "hi_q_wax",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": { "str": "cannabis wax" },
+    "copy-from": "hi_q_wax",
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You take a dab of some wax.  *cough cough* good stuff!",
+      "effects": [
+        { "id": "weed_high", "duration": "150 m" },
+        { "id": "pkill1", "duration": "100 m" },
+        { "id": "pkill2", "duration": "5 m" },
+        { "id": "high", "duration": "60 m" },
+        { "id": "smoke_magic2", "duration": "60 m" },
+        { "id": "smoke", "duration": "2 m" }
+      ],
+      "stat_adjustments": { "hunger": 5, "thirst": 7 },
+      "fields_produced": { "fd_weedsmoke": 2 },
+      "charges_needed": { "fire": 1 },
+      "tools_needed": { "apparatus": -1 },
+      "moves": 6000
+    }
+  },
+  {
+    "id": "hi_q_distillate",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": { "str": "cannabis distillate" },
+    "copy-from": "hi_q_distillate",
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You take a dab of some distillate.  Sooooo smooth…",
+      "effects": [
+        { "id": "weed_high", "duration": "180 m" },
+        { "id": "pkill1", "duration": "120 m" },
+        { "id": "pkill2", "duration": "5 m" },
+        { "id": "high", "duration": "60 m" },
+        { "id": "smoke_magic2", "duration": "60 m" },
+        { "id": "smoke", "duration": "1 m" }
+      ],
+      "stat_adjustments": { "hunger": 4, "thirst": 6 },
+      "fields_produced": { "fd_weedsmoke": 2 },
+      "charges_needed": { "advanced_ecig": 1 },
+      "moves": 1500
+    }
+  },
+  {
+    "id": "adderall",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": { "str": "adderall" },
+    "copy-from": "adderall",
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You pop an adderall.",
+      "effects": [ { "id": "pblue", "duration": 3600 } ]
+    }
+  },
+  {
+    "type": "effect_type",
+    "id": "adderall_magic",
+    "name": [ "Adderall Magic" ],
+    "desc": [ "You can't trust everything that you see." ],
+    "rating": "good",
+    "base_mods": { "int_mod": [ 3 ] },
+    "blood_analysis_description": "Adderall Magic"
+  },
+  {
+    "type": "effect_type",
+    "id": "smoke_magic",
+    "name": [ "High Magic" ],
+    "desc": [ "You can't trust everything that you see." ],
+    "rating": "good",
+    "base_mods": { "int_mod": [ 1 ] },
+    "blood_analysis_description": "High Magic"
+  },
+  {
+    "type": "effect_type",
+    "id": "smoke_magic2",
+    "name": [ "High Magic" ],
+    "desc": [ "You can't trust everything that you see." ],
+    "rating": "good",
+    "base_mods": { "int_mod": [ 2 ] },
+    "blood_analysis_description": "High Magic"
+  },
+  {
+    "id": "weed",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": { "str_sp": "marijuana" },
+    "copy-from": "weed",
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You smoke some weed.  Good stuff, man!",
+      "effects": [ { "id": "weed_high", "duration": 90 }, { "id": "pkill1", "duration": 360 }, { "id": "smoke_magic", "duration": 100 } ],
+      "stat_adjustments": { "hunger": 4, "thirst": 6 },
+      "fields_produced": { "fd_weedsmoke": 2 },
+      "charges_needed": { "fire": 1 },
+      "tools_needed": { "apparatus": -1 },
+      "moves": 40
+    }
+  },
+  {
+    "id": "tobacco",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": { "str": "rolling tobacco" },
+    "copy-from": "tobacco",
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You smoke some tobacco.",
+      "effects": [ { "id": "cig", "duration": 200 }, { "id": "smoke_magic", "duration": 100 } ],
+      "stat_adjustments": { "hunger": -2, "thirst": 1 },
+      "fields_produced": { "fd_cigsmoke": 2 },
+      "charges_needed": { "fire": 1 },
+      "tools_needed": { "apparatus": -1 },
+      "moves": 250
+    }
+  },
+  {
+    "id": "spit_trap",
+    "type": "TOOL",
+    "name": { "str": "spit trap" },
+    "description": "What appears at first to be a shovel, grown over with weeds and covered in dirt, is actually a living breathing creature. The shovels head now splits like a mouth and the hilt writhes at a touch, the 'head' snapping at whatever comes close, eyes perpetually closed like a newborn infant.",
+    "weight": "2032 g",
+    "volume": "3500 ml",
+    "longest_side": "140 cm",
+    "price": 700000,
+    "to_hit": 3,
+    "bashing": 14,
+    "cutting": 3,
+    "material": [ "steel", "wood" ],
+    "symbol": "/",
+    "color": "brown",
+    "qualities": [ [ "DIG", 5 ], [ "COOK", 1 ], [ "BUTCHER", -70 ] ],
+    "techniques": [ "WBLOCK_1" ],
+    "charges_per_use": 15,
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "chemical_spray": 15 }, "watertight": true, "rigid": true } ],
+    "use_action": {
+      "type": "place_trap",
+      "allow_underwater": true,
+      "trap": "tr_pitfall",
+      "moves": 100,
+      "practice": 1,
+      "done_message": "Your shovely lithely rips a huge chunk of dirt out of the earth, swallowing it whole. Where it goes, no one knows, but the shovel seems happy."
+    }
+  }
+]

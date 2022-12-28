@@ -1,0 +1,92 @@
+[
+  {
+    "id": "mon_largehammerdrone",
+    "copy-from": "mon_largehammerbot",
+    "type": "MONSTER",
+    "name": "large hammer drone",
+    "looks_like": "mon_secubot",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a large clamp and a jackhammer. The tires are constantly screeching as the bot actively scans the area for threats.",
+    "revert_to_itype": "bot_largehammerdrone",
+    "relative": { "speed": 150 }
+  },
+  {
+    "id": "mon_largewreckingdrone",
+    "copy-from": "mon_largewreckingbot",
+    "type": "MONSTER",
+    "name": "large wrecking drone",
+    "looks_like": "mon_secubot",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a motor, a set of chains, and a menacing bludgeon. The tires are constantly screeching as the bot actively scans the area for threats.",
+    "revert_to_itype": "bot_largewreckingdrone",
+    "relative": { "speed": 150 }
+  },
+  {
+    "id": "mon_largesawdrone",
+    "copy-from": "mon_largesawbot",
+    "type": "MONSTER",
+    "name": "large saw drone",
+    "looks_like": "mon_secubot",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with several motors and nasty saws. The tires are constantly screeching as the bot actively scans the area for threats.",
+    "revert_to_itype": "bot_largesawdrone",
+    "relative": { "speed": 150 }
+  },
+  {
+    "id": "mon_largedrilldrone",
+    "copy-from": "mon_largedrillbot",
+    "type": "MONSTER",
+    "name": "large drill drone",
+    "looks_like": "mon_secubot",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a large clamp, meant to hold prey into several powerful drills. The tires are constantly screeching as the bot actively scans the area for threats.",
+    "revert_to_itype": "bot_largedrilldrone",
+    "relative": { "speed": 150 }
+  },
+  {
+    "id": "mon_largebladedrone",
+    "copy-from": "mon_largebladebot",
+    "type": "MONSTER",
+    "name": "large blade drone",
+    "looks_like": "mon_secubot",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a large, sharp blade attached to heavy duty flexible material, pulled taut by a powerful motor and held by heavy-duty pins..",
+    "revert_to_itype": "bot_largebladedrone",
+    "relative": { "speed": 150 }
+  },
+  {
+    "id": "mon_largejawdrone",
+    "copy-from": "mon_largejawbot",
+    "type": "MONSTER",
+    "name": "large jaw drone",
+    "looks_like": "mon_secubot",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a massive hydraulic jaw. The tires are constantly screeching as the bot actively scans the area for threats.",
+    "revert_to_itype": "bot_largejawdrone",
+    "relative": { "speed": 150 }
+  },
+  {
+    "id": "mon_largebugdrone",
+    "copy-from": "mon_largebugbot",
+    "type": "MONSTER",
+    "name": "large exterminator drone",
+    "looks_like": "mon_secubot",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with secus of insecticidal gas and powerful pincers. The tires are constantly screeching as the bot actively scans the area for threats.",
+    "revert_to_itype": "bot_largebugdrone",
+    "relative": { "speed": 150 }
+  },
+  {
+    "id": "mon_largeflamedrone",
+    "copy-from": "mon_largeflamebot",
+    "type": "MONSTER",
+    "name": "large flame drone",
+    "looks_like": "mon_secubot",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with secus of insecticidal gas and powerful pincers. The tires are constantly screeching as the bot actively scans the area for threats.",
+    "revert_to_itype": "bot_largeflamedrone",
+    "relative": { "speed": 150 }
+  },
+  {
+    "id": "mon_largeflashdrone",
+    "copy-from": "mon_largeflashbot",
+    "type": "MONSTER",
+    "name": "large flash drone",
+    "looks_like": "mon_secubot",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with several hoses attached to a large secu of flash and powerful pincers. The tires are constantly screeching as the bot actively scans the area for threats.",
+    "revert_to_itype": "bot_largeflashdrone",
+    "relative": { "speed": 150 }
+  }
+]

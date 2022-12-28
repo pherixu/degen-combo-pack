@@ -1,0 +1,407 @@
+[
+  {
+    "id": "bot_mediumhammerdronesteel",
+    "type": "TOOL",
+    "copy-from": "bot_mediumhammerdrone",
+    "name": "inactive medium hammer drone - steel",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a medium clamp and a jackhammer. Servos and metal plating grind against each other as the medium wheels easily roll over most surfaces.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_mediumhammerdronesteel",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  },
+  {
+    "id": "bot_mediumhammerdronemilitary",
+    "type": "TOOL",
+    "copy-from": "bot_mediumhammerdrone",
+    "name": "inactive medium hammer drone - military",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a medium clamp and a jackhammer. Servos and metal plating grind against each other as the medium wheels easily roll over most surfaces.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_mediumhammerdronemilitary",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  },
+  {
+    "id": "bot_mediumhammerdronechitin",
+    "type": "TOOL",
+    "copy-from": "bot_mediumhammerdrone",
+    "name": "inactive medium hammer drone - chitin",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a medium clamp and a jackhammer. Servos and metal plating grind against each other as the medium wheels easily roll over most surfaces.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_mediumhammerdronechitin",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  },
+  {
+    "id": "bot_mediumwreckingdronesteel",
+    "type": "TOOL",
+    "copy-from": "bot_mediumwreckingdrone",
+    "name": "inactive medium wrecking drone - steel",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a medium clamp and a jackwrecking. Servos and metal plating grind against each other as the medium wheels easily roll over most surfaces.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_mediumwreckingdronesteel",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  },
+  {
+    "id": "bot_mediumwreckingdronemilitary",
+    "type": "TOOL",
+    "copy-from": "bot_mediumwreckingdrone",
+    "name": "inactive medium wrecking drone - military",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a medium clamp and a jackwrecking. Servos and metal plating grind against each other as the medium wheels easily roll over most surfaces.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_mediumwreckingdronemilitary",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  },
+  {
+    "id": "bot_mediumwreckingdronechitin",
+    "type": "TOOL",
+    "copy-from": "bot_mediumwreckingdrone",
+    "name": "inactive medium wrecking drone - chitin",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a medium clamp and a jackwrecking. Servos and metal plating grind against each other as the medium wheels easily roll over most surfaces.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_mediumwreckingdronechitin",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  },
+  {
+    "id": "bot_mediumsawdronesteel",
+    "type": "TOOL",
+    "copy-from": "bot_mediumsawdrone",
+    "name": "inactive medium saw drone - steel",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a medium clamp and a jacksaw. Servos and metal plating grind against each other as the medium wheels easily roll over most surfaces.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_mediumsawdronesteel",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  },
+  {
+    "id": "bot_mediumsawdronemilitary",
+    "type": "TOOL",
+    "copy-from": "bot_mediumsawdrone",
+    "name": "inactive medium saw drone - military",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a medium clamp and a jacksaw. Servos and metal plating grind against each other as the medium wheels easily roll over most surfaces.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_mediumsawdronemilitary",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  },
+  {
+    "id": "bot_mediumsawdronechitin",
+    "type": "TOOL",
+    "copy-from": "bot_mediumsawdrone",
+    "name": "inactive medium saw drone - chitin",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a medium clamp and a jacksaw. Servos and metal plating grind against each other as the medium wheels easily roll over most surfaces.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_mediumsawdronechitin",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  },
+  {
+    "id": "bot_mediumdrilldronesteel",
+    "type": "TOOL",
+    "copy-from": "bot_mediumdrilldrone",
+    "name": "inactive medium drill drone - steel",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a medium clamp and a jackdrill. Servos and metal plating grind against each other as the medium wheels easily roll over most surfaces.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_mediumdrilldronesteel",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  },
+  {
+    "id": "bot_mediumdrilldronemilitary",
+    "type": "TOOL",
+    "copy-from": "bot_mediumdrilldrone",
+    "name": "inactive medium drill drone - military",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a medium clamp and a jackdrill. Servos and metal plating grind against each other as the medium wheels easily roll over most surfaces.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_mediumdrilldronemilitary",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  },
+  {
+    "id": "bot_mediumdrilldronechitin",
+    "type": "TOOL",
+    "copy-from": "bot_mediumdrilldrone",
+    "name": "inactive medium drill drone - chitin",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a medium clamp and a jackdrill. Servos and metal plating grind against each other as the medium wheels easily roll over most surfaces.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_mediumdrilldronechitin",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  },
+  {
+    "id": "bot_mediumbladedronesteel",
+    "type": "TOOL",
+    "copy-from": "bot_mediumbladedrone",
+    "name": "inactive medium blade drone - steel",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a medium clamp and a jackblade. Servos and metal plating grind against each other as the medium wheels easily roll over most surfaces.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_mediumbladedronesteel",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  },
+  {
+    "id": "bot_mediumbladedronemilitary",
+    "type": "TOOL",
+    "copy-from": "bot_mediumbladedrone",
+    "name": "inactive medium blade drone - military",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a medium clamp and a jackblade. Servos and metal plating grind against each other as the medium wheels easily roll over most surfaces.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_mediumbladedronemilitary",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  },
+  {
+    "id": "bot_mediumbladedronechitin",
+    "type": "TOOL",
+    "copy-from": "bot_mediumbladedrone",
+    "name": "inactive medium blade drone - chitin",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a medium clamp and a jackblade. Servos and metal plating grind against each other as the medium wheels easily roll over most surfaces.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_mediumbladedronechitin",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  },
+  {
+    "id": "bot_mediumjawdronesteel",
+    "type": "TOOL",
+    "copy-from": "bot_mediumjawdrone",
+    "name": "inactive medium jaw drone - steel",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a medium clamp and a jackjaw. Servos and metal plating grind against each other as the medium wheels easily roll over most surfaces.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_mediumjawdronesteel",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  },
+  {
+    "id": "bot_mediumjawdronemilitary",
+    "type": "TOOL",
+    "copy-from": "bot_mediumjawdrone",
+    "name": "inactive medium jaw drone - military",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a medium clamp and a jackjaw. Servos and metal plating grind against each other as the medium wheels easily roll over most surfaces.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_mediumjawdronemilitary",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  },
+  {
+    "id": "bot_mediumjawdronechitin",
+    "type": "TOOL",
+    "copy-from": "bot_mediumjawdrone",
+    "name": "inactive medium jaw drone - chitin",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a medium clamp and a jackjaw. Servos and metal plating grind against each other as the medium wheels easily roll over most surfaces.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_mediumjawdronechitin",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  },
+  {
+    "id": "bot_mediumflamedronesteel",
+    "type": "TOOL",
+    "copy-from": "bot_mediumflamedrone",
+    "name": "inactive medium flame drone - steel",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a medium clamp and a jackflame. Servos and metal plating grind against each other as the medium wheels easily roll over most surfaces.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_mediumflamedronesteel",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  },
+  {
+    "id": "bot_mediumflamedronemilitary",
+    "type": "TOOL",
+    "copy-from": "bot_mediumflamedrone",
+    "name": "inactive medium flame drone - military",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a medium clamp and a jackflame. Servos and metal plating grind against each other as the medium wheels easily roll over most surfaces.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_mediumflamedronemilitary",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  },
+  {
+    "id": "bot_mediumflamedronechitin",
+    "type": "TOOL",
+    "copy-from": "bot_mediumflamedrone",
+    "name": "inactive medium flame drone - chitin",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a medium clamp and a jackflame. Servos and metal plating grind against each other as the medium wheels easily roll over most surfaces.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_mediumflamedronechitin",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  },
+  {
+    "id": "bot_mediumbugdronesteel",
+    "type": "TOOL",
+    "copy-from": "bot_mediumbugdrone",
+    "name": "inactive medium exterminator drone - steel",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a medium clamp and a jackbug. Servos and metal plating grind against each other as the medium wheels easily roll over most surfaces.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_mediumbugdronesteel",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  },
+  {
+    "id": "bot_mediumbugdronemilitary",
+    "type": "TOOL",
+    "copy-from": "bot_mediumbugdrone",
+    "name": "inactive medium exterminator drone - military",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a medium clamp and a jackbug. Servos and metal plating grind against each other as the medium wheels easily roll over most surfaces.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_mediumbugdronemilitary",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  },
+  {
+    "id": "bot_mediumbugdronechitin",
+    "type": "TOOL",
+    "copy-from": "bot_mediumbugdrone",
+    "name": "inactive medium exterminator drone - chitin",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a medium clamp and a jackbug. Servos and metal plating grind against each other as the medium wheels easily roll over most surfaces.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_mediumbugdronechitin",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  },
+  {
+    "id": "bot_mediumflashdronesteel",
+    "type": "TOOL",
+    "copy-from": "bot_mediumflashdrone",
+    "name": "inactive medium flash drone - steel",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a medium clamp and a jackflash. Servos and metal plating grind against each other as the medium wheels easily roll over most surfaces.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_mediumflashdronesteel",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  },
+  {
+    "id": "bot_mediumflashdronemilitary",
+    "type": "TOOL",
+    "copy-from": "bot_mediumflashdrone",
+    "name": "inactive medium flash drone - military",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a medium clamp and a jackflash. Servos and metal plating grind against each other as the medium wheels easily roll over most surfaces.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_mediumflashdronemilitary",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  },
+  {
+    "id": "bot_mediumflashdronechitin",
+    "type": "TOOL",
+    "copy-from": "bot_mediumflashdrone",
+    "name": "inactive medium flash drone - chitin",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a medium clamp and a jackflash. Servos and metal plating grind against each other as the medium wheels easily roll over most surfaces.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_mediumflashdronechitin",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "id": "mon_tinyhammerdrone",
+    "copy-from": "mon_tinyhammerbot",
+    "type": "MONSTER",
+    "name": "tiny hammer drone",
+    "looks_like": "mon_copbot",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a tiny clamp and a jackhammer. tiny tires are constantly screeching as the bot actively scans the area for threats.",
+    "revert_to_itype": "bot_tinyhammerbot",
+    "relative": { "speed": 180 }
+  },
+  {
+    "id": "mon_tinywreckingdrone",
+    "copy-from": "mon_tinywreckingbot",
+    "type": "MONSTER",
+    "name": "tiny wrecking drone",
+    "looks_like": "mon_copbot",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a motor, a set of chains, and a menacing bludgeon. tiny tires are constantly screeching as the bot actively scans the area for threats.",
+    "revert_to_itype": "bot_tinywreckingbot",
+    "relative": { "speed": 180 }
+  },
+  {
+    "id": "mon_tinysawdrone",
+    "copy-from": "mon_tinysawbot",
+    "type": "MONSTER",
+    "name": "tiny saw drone",
+    "looks_like": "mon_copbot",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with several motors and nasty saws. tiny tires are constantly screeching as the bot actively scans the area for threats.",
+    "revert_to_itype": "bot_tinysawbot",
+    "relative": { "speed": 180 }
+  },
+  {
+    "id": "mon_tinydrilldrone",
+    "copy-from": "mon_tinydrillbot",
+    "looks_like": "mon_copbot",
+    "type": "MONSTER",
+    "name": "tiny drill drone",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a tiny clamp, meant to hold prey into several powerful drills. tiny tires are constantly screeching as the bot actively scans the area for threats.",
+    "revert_to_itype": "bot_tinydrillbot",
+    "relative": { "speed": 180 }
+  },
+  {
+    "id": "mon_tinybladedrone",
+    "copy-from": "mon_tinybladebot",
+    "looks_like": "mon_copbot",
+    "type": "MONSTER",
+    "name": "tiny blade drone",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a tiny, sharp blade attached to heavy duty flexible material, pulled taut by a powerful motor and held by heavy-duty pins..",
+    "revert_to_itype": "bot_tinybladebot",
+    "relative": { "speed": 180 }
+  },
+  {
+    "id": "mon_tinyjawdrone",
+    "copy-from": "mon_tinyjawbot",
+    "looks_like": "mon_copbot",
+    "type": "MONSTER",
+    "name": "tiny jaw drone",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a massive hydraulic jaw. tiny tires are constantly screeching as the bot actively scans the area for threats.",
+    "revert_to_itype": "bot_tinyjawbot",
+    "relative": { "speed": 180 }
+  },
+  {
+    "id": "mon_tinyflamedrone",
+    "copy-from": "mon_tinyflamebot",
+    "looks_like": "mon_copbot",
+    "type": "MONSTER",
+    "name": "tiny flame drone",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a massive hydraulic flame. tiny tires are constantly screeching as the bot actively scans the area for threats.",
+    "revert_to_itype": "bot_tinyflamebot",
+    "relative": { "speed": 180 }
+  },
+  {
+    "id": "mon_tinybugdrone",
+    "copy-from": "mon_tinybugbot",
+    "looks_like": "mon_copbot",
+    "type": "MONSTER",
+    "name": "tiny exterminator drone",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with tanks of insecticidal gas and powerful pincers. tiny tires are constantly screeching as the bot actively scans the area for threats.",
+    "revert_to_itype": "bot_tinybugbot",
+    "relative": { "speed": 180 }
+  },
+  {
+    "id": "mon_tinyflashdrone",
+    "copy-from": "mon_tinyflashbot",
+    "looks_like": "mon_copbot",
+    "type": "MONSTER",
+    "name": "tiny flash drone",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with several hoses attached to a tiny tank of flash and powerful pincers. tiny tires are constantly screeching as the bot actively scans the area for threats.",
+    "revert_to_itype": "bot_tinyflashbot",
+    "relative": { "speed": 180 }
+  }
+]

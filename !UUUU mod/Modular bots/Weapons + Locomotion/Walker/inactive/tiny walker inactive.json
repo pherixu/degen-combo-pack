@@ -1,0 +1,137 @@
+[
+  {
+    "id": "bot_tinyhammerwalker",
+    "type": "TOOL",
+    "copy-from": "bot_tinyhammerbot",
+    "name": "inactive tiny hammer walker",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a tiny clamp and a jackhammer. tiny spidery legs clink noisily against the ground.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_tinyhammerwalker",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  },
+  {
+    "id": "bot_tinywreckingwalker",
+    "type": "TOOL",
+    "copy-from": "bot_tinywreckingbot",
+    "name": "inactive tiny wrecking walker",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a motor, a set of chains, and a menacing bludgeon. tiny spidery legs clink noisily against the ground.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_tinywreckingwalker",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  },
+  {
+    "id": "bot_tinysawwalker",
+    "type": "TOOL",
+    "copy-from": "bot_tinysawbot",
+    "name": "inactive tiny saw walker",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with several motors and nasty saws. tiny spidery legs clink noisily against the ground.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_tinysawwalker",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  },
+  {
+    "id": "bot_tinydrillwalker",
+    "type": "TOOL",
+    "copy-from": "bot_tinydrillbot",
+    "name": "inactive tiny drill walker",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a tiny clamp, meant to hold prey into several powerful drills. tiny spidery legs clink noisily against the ground.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_tinydrillwalker",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  },
+  {
+    "id": "bot_tinybladewalker",
+    "type": "TOOL",
+    "copy-from": "bot_tinybladebot",
+    "name": "inactive tiny blade walker",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a tiny, sharp blade attached to heavy duty flexible material, pulled taut by a powerful motor and held by heavy-duty pins..",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_tinybladewalker",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  },
+  {
+    "id": "bot_tinyjawwalker",
+    "type": "TOOL",
+    "copy-from": "bot_tinyjawbot",
+    "name": "inactive tiny jaw walker",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a massive hydraulic jaw. tiny spidery legs clink noisily against the ground.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_tinyjawwalker",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  },
+  {
+    "id": "bot_tinyflamewalker",
+    "type": "TOOL",
+    "copy-from": "bot_tinyflamebot",
+    "name": "inactive tiny flame walker",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a massive hydraulic flame. tiny spidery legs clink noisily against the ground.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_tinyflamewalker",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  },
+  {
+    "id": "bot_tinybugwalker",
+    "type": "TOOL",
+    "copy-from": "bot_tinybugbot",
+    "name": "inactive tiny exterminator walker",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with tanks of insecticidal gas and powerful pincers. tiny spidery legs clink noisily against the ground.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_tinybugwalker",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  },
+  {
+    "id": "bot_tinyflashwalker",
+    "type": "TOOL",
+    "copy-from": "bot_tinyflashbot",
+    "name": "inactive tiny flash walker",
+    "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with several hoses attached to a tiny tank of flash and powerful pincers. tiny spidery legs clink noisily against the ground.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_tinyflashwalker",
+      "friendly_msg": "The bot rolls into action ready to pursue.",
+      "difficulty": 2,
+      "moves": 100,
+      "skills": [ "electronics", "computer" ]
+    }
+  }
+]
