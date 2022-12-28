@@ -704,7 +704,7 @@
     "max_damage": 0,
     "max_level": 35,
     "effect": "attack",
-    "extra_effects": [ { "id": "green_stance", "hit_self": true }, { "id": "white_stance", "hit_self": true } ],
+    "extra_effects": [ { "id": "52_card_shuffle", "hit_self": true }, { "id": "white_stance", "hit_self": true } ],
     "shape": "blast",
     "flags": [ "VERBAL", "SILENT", "NO_LEGS", "RANDOM_TARGET" ],
     "difficulty": 3
@@ -736,7 +736,7 @@
     "max_damage": 0,
     "max_level": 35,
     "effect": "attack",
-    "extra_effects": [ { "id": "red_stance", "hit_self": true }, { "id": "white_stance", "hit_self": true } ],
+    "extra_effects": [ { "id": "red_stance", "hit_self": true }, { "id": "naya_slow", "hit_self": true } ],
     "shape": "blast",
     "flags": [ "VERBAL", "SILENT", "NO_LEGS", "RANDOM_TARGET" ],
     "difficulty": 3
@@ -767,7 +767,7 @@
     "max_damage": 0,
     "max_level": 35,
     "effect": "attack",
-    "extra_effects": [ { "id": "blue_stance", "hit_self": true }, { "id": "white_stance", "hit_self": true } ],
+    "extra_effects": [ { "id": "summon_mages", "hit_self": true }, { "id": "summon_sludge", "hit_self": true } ],
     "shape": "blast",
     "flags": [ "VERBAL", "SILENT", "NO_LEGS", "RANDOM_TARGET" ],
     "difficulty": 3
@@ -800,7 +800,7 @@
     "effect": "attack",
     "min_range": 1,
     "max_range": 1,
-    "extra_effects": [ { "id": "blue_stance", "hit_self": true }, { "id": "black_stance", "hit_self": true } ],
+    "extra_effects": [ { "id": "blue_effect_extinguisher", "hit_self": true }, { "id": "sorcery_timestop_dazzle", "hit_self": true } ],
     "shape": "blast",
     "flags": [ "VERBAL", "SILENT", "NO_LEGS", "RANDOM_TARGET" ],
     "difficulty": 3
@@ -848,7 +848,7 @@
     "max_damage": 0,
     "max_level": 35,
     "effect": "attack",
-    "extra_effects": [ { "id": "green_stance", "hit_self": true }, { "id": "black_stance", "hit_self": true } ],
+    "extra_effects": [ { "id": "gruul_effect_troll", "hit_self": true }, { "id": "black_effect_flesh", "hit_self": true } ],
     "shape": "blast",
     "flags": [ "VERBAL", "SILENT", "NO_LEGS", "RANDOM_TARGET", "RANDOM_DAMAGE", "HOSTILE_50" ],
     "difficulty": 3
@@ -880,7 +880,7 @@
     "max_damage": 0,
     "max_level": 35,
     "effect": "attack",
-    "extra_effects": [ { "id": "green_stance", "hit_self": true }, { "id": "red_stance", "hit_self": true } ],
+    "extra_effects": [ { "id": "green_effect_gas", "hit_self": true }, { "id": "distraction", "hit_self": true } ],
     "shape": "blast",
     "flags": [ "VERBAL", "SILENT", "NO_LEGS", "RANDOM_TARGET" ],
     "difficulty": 3
@@ -920,7 +920,7 @@
   {
     "id": "izzet_effects",
     "type": "SPELL",
-    "name": "",
+    "name": "izzet effects",
     "description": "",
     "valid_targets": [ "self" ],
     "min_damage": 1,
@@ -1017,7 +1017,7 @@
     "effect": "attack",
     "extra_effects": [
       { "id": "blue_stance", "hit_self": true },
-      { "id": "red_stance", "hit_self": true },
+      { "id": "red_effect_fire", "hit_self": true },
       { "id": "sunny_disposition", "hit_self": true }
     ],
     "shape": "blast",
@@ -1035,8 +1035,8 @@
     "max_level": 35,
     "effect": "attack",
     "extra_effects": [
-      { "id": "blue_stance", "hit_self": true },
-      { "id": "black_stance", "hit_self": true },
+      { "id": "summon_mages", "hit_self": true },
+      { "id": "black_effect_shadow", "hit_self": true },
       { "id": "green_stance", "hit_self": true }
     ],
     "shape": "blast",
@@ -1099,7 +1099,7 @@
     "effect": "attack",
     "extra_effects": [
       { "id": "pocket_sniper", "hit_self": true },
-      { "id": "red_stance", "hit_self": true },
+      { "id": "summon_mages", "hit_self": true },
       { "id": "induce_guilt", "hit_self": true }
     ],
     "shape": "blast",
@@ -1119,7 +1119,7 @@
     "extra_effects": [
       { "id": "induce_guilt", "hit_self": true },
       { "id": "red_stance", "hit_self": true },
-      { "id": "green_stance", "hit_self": true }
+      { "id": "summon_acid", "hit_self": true }
     ],
     "shape": "blast",
     "flags": [ "VERBAL", "SILENT", "NO_LEGS" ],
@@ -1350,9 +1350,8 @@
   {
     "id": "mon_yidris",
     "type": "MONSTER",
-    "name": {
-      "str": "A grey skinned ogre with ringed horns and a mouth filled with flame wields a tall axe that he holds with such obvious expertise and confidence that you almost mistake him for a brute. Were it not for the cold intelligence in his eye..."
-    },
+	"name": "Yidris, Maelstrom Wielder",
+    "description": "A grey skinned ogre with ringed horns and a mouth filled with flame wields a tall axe that he holds with such obvious expertise and confidence that you almost mistake him for a brute. Were it not for the cold intelligence in his eye...",
     "bodytype": "human",
     "default_faction": "nether",
     "species": [ "HORROR" ],

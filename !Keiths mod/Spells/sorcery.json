@@ -14,14 +14,14 @@
     "min_range": 1,
     "max_range": 1,
     "min_damage": 1,
-    "max_damage": 5,
+    "max_damage": 3,
     "difficulty": 0,
     "max_level": 10,
     "effect": "none",
     "shape": "blast",
     "extra_effects": [ { "id": "white_roll" }, { "id": "blue_roll" }, { "id": "black_roll" }, { "id": "red_roll" }, { "id": "green_roll" } ],
     "energy_source": "MANA",
-    "damage_type": "pure"
+    "damage_type": "heat"
   },
   {
     "type": "SPELL",

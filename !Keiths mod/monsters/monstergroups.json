@@ -569,6 +569,17 @@
   },
   {
     "type": "monstergroup",
+    "name": "GROUP_BOSSES",
+    "monsters": [
+      { "monster": "mon_ortiel", "weight": 20 },
+      { "monster": "mon_yidris", "weight": 20 },
+      { "monster": "mon_omnath", "weight": 20 },
+      { "monster": "mon_atraxa", "weight": 20 },
+	  { "monster": "mon_ghost_generator", "weight": 20 }
+    ]
+  },
+  {
+    "type": "monstergroup",
     "name": "GROUP_GHOSTS",
     "monsters": [
       { "monster": "mon_mage_ghost", "weight": 20 },

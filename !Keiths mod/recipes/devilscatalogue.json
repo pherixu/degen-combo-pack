@@ -1,0 +1,2141 @@
+[
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "white_pen",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", 
+    "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    "difficulty": 5,
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "coloring_book", 1 ], [ "wayward_memory_SFMP", 1 ], [ "big_book_of_metaknowledge", 1 ], [ "devils_catalogue", 1 ], [ "occult_economicon", 1 ] ],
+    "components": [ [ [ "money_bundle_hundred", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "twisted_soul",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],    
+    "difficulty": 7,
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "occult_economicon", 1 ], [ "big_book_of_metaknowledge", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_bundle_hundred", 2 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "pointed_hat",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],   
+    "difficulty": 1,
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "occult_economicon", 1 ], [ "big_book_of_metaknowledge", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_hundred", 6 ] ], [ [ "money_twenty", 3 ] ], [ [ "money_one", 6 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "onyx_silver_ring",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],   
+    "difficulty": 3,
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "occult_economicon", 1 ], [ "big_book_of_metaknowledge", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_hundred", 6 ] ], [ [ "money_twenty", 3 ] ], [ [ "money_one", 6 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "darkswitch",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],  
+    "difficulty": 8,
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "occult_economicon", 1 ], [ "big_book_of_metaknowledge", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_bundle_hundred", 10 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "nondescript_briefcase",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],  
+    "difficulty": 8,
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "occult_economicon", 1 ], [ "big_book_of_metaknowledge", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_bundle_hundred", 10 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "boss_token",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],  
+    "difficulty": 8,
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "occult_economicon", 1 ], [ "big_book_of_metaknowledge", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_bundle_hundred", 10 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "coldlight_flashbang",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    "difficulty": 3,
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "occult_economicon", 1 ], [ "big_book_of_metaknowledge", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_bundle_hundred", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "mtoken_pocketsaw",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],   
+    "difficulty": 5,
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "occult_economicon", 1 ], [ "big_book_of_metaknowledge", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_bundle_hundred", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "crystallized_mana",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    "difficulty": 2,
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "occult_economicon", 1 ], [ "big_book_of_metaknowledge", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 3 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "disinfectant",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    "difficulty": 2,
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "occult_economicon", 1 ], [ "big_book_of_metaknowledge", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_hundred", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "bandages",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    "difficulty": 2,
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "occult_economicon", 1 ], [ "big_book_of_metaknowledge", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_hundred", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "bluesteel_longsword",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],  
+    "difficulty": 8,
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "occult_economicon", 1 ], [ "big_book_of_metaknowledge", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_bundle_hundred", 25 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "linguistics_lesson_one",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    "difficulty": 1,
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "linguistics_lesson_two",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    "difficulty": 1,
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_bundle_hundred", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "linguistics_lesson_three",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ], 
+    "difficulty": 1,
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_bundle_hundred", 15 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "light_plus_battery_cell",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],   
+    "difficulty": 1,
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "occult_economicon", 1 ], [ "big_book_of_metaknowledge", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_hundred", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "money_strap_hundred",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],   
+    "difficulty": 1,
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "occult_economicon", 1 ], [ "big_book_of_metaknowledge", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [
+        [ "wayward_memory_EEE", 1 ],
+        [ "wayward_memory_SFMP", 1 ],
+        [ "wayward_memory_NLS", 1 ],
+        [ "wayward_memory_MOH", 1 ],
+        [ "wayward_memory_EIC", 1 ],
+        [ "wayward_memory_TFOP", 1 ],
+        [ "wayward_memory_MOM", 1 ],
+        [ "wayward_memory_STW", 1 ],
+        [ "wayward_memory_BGTM", 1 ],
+        [ "wayward_memory_IAP", 1 ],
+        [ "wayward_memory_WGB", 1 ],
+        [ "wayward_memory_PFH", 1 ],
+        [ "wayward_memory_TOME", 1 ],
+        [ "wayward_memory_ITTD", 1 ],
+        [ "wayward_memory_PGTMS", 1 ],
+        [ "wayward_memory_WEG", 1 ],
+        [ "wayward_memory_TOOS", 1 ],
+        [ "wayward_memory_NS", 1 ],
+        [ "wayward_memory_OLAF", 1 ],
+        [ "wayward_memory_TTOF", 1 ],
+        [ "wayward_memory_TBOT", 1 ],
+        [ "wayward_memory_TUOMAES", 1 ],
+        [ "wayward_memory_TOBM", 1 ],
+        [ "wayward_memory_TOHE", 1 ],
+        [ "wayward_memory_TOMM", 1 ],
+        [ "wayward_memory_NMFD", 1 ],
+        [ "wayward_memory_FOT", 1 ],
+        [ "wayward_memory_IGT", 1 ],
+        [ "wayward_memory_TAES", 1 ],
+        [ "wayward_memory_LP", 1 ],
+        [ "wayward_memory_GSLOL", 1 ],
+        [ "wayward_memory_FT", 1 ],
+        [ "wayward_memory_THC", 1 ],
+		[ "wayward_memory_BAAA", 1 ],
+		[ "wayward_memory_HECVW", 1 ],
+		[ "wayward_memory_BYA", 1 ]
+      ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "greensteel_spear",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],  
+    "difficulty": 8,
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "occult_economicon", 1 ], [ "big_book_of_metaknowledge", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_bundle_hundred", 25 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "redsteel_morningstar",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],    
+    "difficulty": 8,
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "occult_economicon", 1 ], [ "big_book_of_metaknowledge", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_bundle_hundred", 25 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "soft_steppers_socks",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],  
+    "difficulty": 4,
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "occult_economicon", 1 ], [ "big_book_of_metaknowledge", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_bundle_hundred", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "magicians_duff",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],  
+    "difficulty": 6,
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "occult_economicon", 1 ], [ "big_book_of_metaknowledge", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_bundle_hundred", 10 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "spell_scroll_spiritual_invisibility",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],  
+    "difficulty": 7,
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "occult_economicon", 1 ], [ "big_book_of_metaknowledge", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_bundle_hundred", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "dragonhide_journal",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],  
+    "difficulty": 4,
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "occult_economicon", 1 ], [ "big_book_of_metaknowledge", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_bundle_hundred", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "spell_scroll_spawn_car",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],   
+    "difficulty": 6,
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "occult_economicon", 1 ], [ "big_book_of_metaknowledge", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_bundle_hundred", 3 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "spell_scroll_airlift",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],   
+    "difficulty": 6,
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "occult_economicon", 1 ], [ "big_book_of_metaknowledge", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_bundle_hundred", 10 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "folded_bicycle",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],   
+    "difficulty": 5,
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "occult_economicon", 1 ], [ "big_book_of_metaknowledge", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_bundle_hundred", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "folded_inflatable_boat",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],    
+    "difficulty": 5,
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "occult_economicon", 1 ], [ "big_book_of_metaknowledge", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_bundle_hundred", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "interdimensional_cage",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],   
+    "difficulty": 7,
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "occult_economicon", 1 ], [ "big_book_of_metaknowledge", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_bundle_hundred", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "spell_scroll_wicked_ritual",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],   
+    "difficulty": 10,
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "occult_economicon", 1 ], [ "big_book_of_metaknowledge", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_bundle_hundred", 25 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "skull_human",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ], 
+    "difficulty": 3,
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "occult_economicon", 1 ], [ "big_book_of_metaknowledge", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_bundle_hundred", 1 ] ] ]
+  },{
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "denarius",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    "difficulty": 2,
+    "time": "5 m",
+    "autolearn": true,
+    
+    "book_learn": [ [ "wayward_memory_SFMP", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "brimstone_sliver",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    "difficulty": 2,
+    "time": "1 m",
+    "autolearn": true,
+    
+    "book_learn": [ [ "wayward_memory_SFMP", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "brimstone_chunk",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    "difficulty": 5,
+    "time": "1 m",
+    
+    "book_learn": [ [ "wayward_memory_SFMP", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "antoninianus",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    "difficulty": 4,
+    "time": "1 m",
+    "autolearn": true,
+    
+    "book_learn": [ [ "wayward_memory_SFMP", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ]],
+    "components": [ [ [ "money_strap_hundred", 3 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "money_strap_hundred",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    "difficulty": 4,
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "wayward_memory_SFMP", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ]],
+    "components": [ [ [ "antoninianus", 1 ] ] ]
+  },
+   {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "plastic_golem_token",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    "difficulty": 8,
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "wayward_memory_BAAA", 1 ], [ "devils_catalogue", 1 ]],
+    "components": [ [ [ "money_bundle_hundred", 10 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "decaying_soul",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    "difficulty": 2,
+    "time": "1 m",
+    "autolearn": true,
+    
+    "book_learn": [ [ "wayward_memory_EIC", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 1 ] ] ]
+  },{
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "pact_of_flame",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    "difficulty": 1,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "vergists_manual", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 10 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "pact_of_bile",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    "difficulty": 1,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "vergists_manual", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 10 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "pact_of_smoke",
+    "category": "CC_ENCHANTED",
+    "id_suffix": "made via money",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    "difficulty": 1,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "vergists_manual", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "pact_of_blood",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    "difficulty": 1,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "vergists_manual", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "gate_token",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    "difficulty": 5,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "wayward_memory_NLS", 1 ], [ "vergists_manual", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_bundle_hundred", 3 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "scroll_token",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    "difficulty": 5,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "wayward_memory_NLS", 1 ], [ "vergists_manual", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_bundle_hundred", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "money_hundred",
+    "id_suffix": "pennies and blood",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", 
+    "difficulty": 1,
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "POWER_ALTAR", "level": 1 } ],
+    "tools": [ [ [ "surface_heat", 1, "LIST" ] ] ],
+    "time": "10 s",
+    "autolearn": true,
+    "book_learn": [
+      [ "big_book_of_metaknowledge", 1 ],
+      [ "wayward_memory_STW", 1 ],
+      [ "vergists_manual", 1 ],
+	  [ "devils_catalogue", 1 ],
+      [ "occult_economicon", 1 ]
+    ],
+    "components": [
+      [
+        [ "money_one", 100 ],
+        [ "money_two", 50 ],
+        [ "money_five", 20 ],
+        [ "money_ten", 10 ],
+        [ "money_twenty", 5 ],
+        [ "money_fifty", 2 ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "crystallized_meth_pure",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    "difficulty": 8,   
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "vergists_manual", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_bundle_hundred", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "pocket_doc",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    "difficulty": 8,   
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "vergists_manual", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_bundle_hundred", 25 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "crystallized_meth_low",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    "difficulty": 6,   
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "wayward_memory_STW", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "crystallized_heroin",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    "difficulty": 6,   
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "vergists_manual", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_hundred", 500 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "crack",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", 
+	"qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    "difficulty": 5,   
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "vergists_manual", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 3 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "lsd",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", 
+	"qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    "difficulty": 5,   
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "vergists_manual", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 3 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "morphine",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", 
+	"qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    "difficulty": 7,  
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "vergists_manual", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "cig",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    "difficulty": 2,   
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "wayward_memory_STW", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_hundred", 10 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "cigar",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    "difficulty": 5,   
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "wayward_memory_STW", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_hundred", 25 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "cards_magic",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    "difficulty": 3,	
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "wayward_memory_STW", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "tear_of_child",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    "difficulty": 3,
+	
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "wayward_memory_STW", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_hundred", 25 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "ring_signet",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    "difficulty": 7,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "wayward_memory_PGTMS", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_bundle_hundred", 1 ] ], [ [ "skull_human", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "crystallized_alcohol",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    "difficulty": 7,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [
+      [ "vergists_manual", 1 ],
+      [ "wayward_memory_STW", 1 ],
+      [ "big_book_of_metaknowledge", 1 ],
+      [ "occult_economicon", 1 ],
+	  [ "devils_catalogue", 1 ]
+    ],
+    "components": [ [ [ "money_hundred", 50 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "potion_starter",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    "difficulty": 7,   
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [
+      [ "vergists_manual", 1 ],
+      [ "wayward_memory_STW", 1 ],
+      [ "big_book_of_metaknowledge", 1 ],
+      [ "occult_economicon", 1 ],
+	  [ "devils_catalogue", 1 ]
+    ],
+    "components": [ [ [ "money_strap_hundred", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "money_hundred",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    "difficulty": 1,
+    
+    "time": "1 m",
+    "byproducts": [ [ "money_hundred", 9 ] ],
+    "autolearn": true,
+    "book_learn": [ [ "wayward_memory_CASH", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [
+	[ 
+	[  "laptop", 5  ],
+	[  "mp3", 10  ],
+	[  "wristwatch", 10  ],
+	[  "light_plus_battery_cell", 5  ],
+	[  "usb_drive", 10  ],
+	[  "lighter", 10  ],
+	[  "e_tool", 3  ],
+	[
+        "edible_blood",
+        100,
+        "LIST"
+    ],
+	[  "smart_phone", 10 ],
+	[  "skull_human", 1 ],
+	[  "diamond", 1 ],
+	[  "cards_magic", 1 ],
+	[  "gold_small", 100 ], 
+	[  "ring_signet", 1 ], 
+	[  "silver_small", 200  ] 
+	]
+	]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "money_hundred",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    "difficulty": 1,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "byproducts": [ [ "money_hundred", 49 ] ],
+    "book_learn": [ [ "wayward_memory_CASH", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "denarius", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "money_hundred",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    "difficulty": 1,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "byproducts": [ [ "money_hundred", 24 ] ],
+    "book_learn": [
+      [ "big_book_of_metaknowledge", 1 ],
+      [ "wayward_memory_CASH", 1 ],
+      [ "wayward_memory_TOBM", 1 ],
+      [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ]
+    ],
+    "components": [ [ [ "decaying_soul", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "white_pen_ink",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    "difficulty": 8,   
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "wayward_memory_CASH", 1 ], [ "wayward_memory_IGT", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "devils_catalogue",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    "difficulty": 1,    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "wayward_memory_BGTM", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "wizard_beginner",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    "difficulty": 5,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "wayward_memory_BGTM", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_bundle_hundred", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "biomancer_spellbook",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    "difficulty": 5,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "wayward_memory_TTOF", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_bundle_hundred", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "pyro",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    "difficulty": 5,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "wayward_memory_PFH", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_bundle_hundred", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "handgun_retrofitting",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    "difficulty": 7,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_bundle_hundred", 2 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "glock_19",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 3,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "shotgun_410",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 5,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 3 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "mac_10",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 8,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "armor_lc_lightplate",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 7,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_bundle_hundred", 3 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "armor_chitin",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 5,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_bundle_hundred", 2 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "armor_larmor",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 3,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_bundle_hundred", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "backpack",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 1,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "duffelbag",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 3,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "lobotomizer",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 1,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "mask_hockey",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 1,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "mask_skull",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 1,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "bat_metal",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", 
+	"qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],   
+    "difficulty": 3,   
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "knuckle_skewer",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],    
+    "difficulty": 3,   
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "javelin_iron",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],  
+    "difficulty": 5,   
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "knife_trench",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],    
+    "difficulty": 5,   
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "iceaxe",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],    
+    "difficulty": 5,   
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "picklocks",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],   
+    "difficulty": 5,  
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "lc_longsword",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 7,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_bundle_hundred", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "warhammer",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 7,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_bundle_hundred", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "glaive",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 7,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_bundle_hundred", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "helmet_larmor",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 3,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "helmet_chitin",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 5,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "helmet_plate",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 8,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_bundle_hundred", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "aquatic_aura",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 10,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_bundle_hundred", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "c4",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 8,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_bundle_hundred", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "molotov",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 5,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "acidbomb",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 5,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "scrambler",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 7,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 5 ] ] ]
+  },
+   {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "press",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 7,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_bundle_hundred", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "puller",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 7,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_bundle_hundred", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "electrohack",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 5,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_bundle_hundred", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "hacksaw",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 5,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_bundle_hundred", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "lighter",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 1,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_hundred", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "sf_watch",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 1,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_bundle_hundred", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "mre_package",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 1,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "banjo",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 1,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "bone_flute",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 1,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "clarinet",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 1,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "flute",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 1,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "clarinet",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 1,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "trumpet",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 1,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "ukulele",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 1,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "violin",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 1,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_bundle_hundred", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "violin_golden",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 1,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_bundle_hundred", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "harmonica_holder",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 1,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "acoustic_guitar",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 1,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "guitar_electric",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 1,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "bagpipes",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 1,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "tuba",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 1,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "saxophone",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 1,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "candle",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 1,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_hundred", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "beartrap",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 5,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "landmine",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 8,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_bundle_hundred", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "gasoline",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 7,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_bundle_hundred", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "wristrocket",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 5,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "crossbow",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 7,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "longbow",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 7,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_bundle_hundred", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "laser_rifle",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 8,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_bundle_hundred", 10 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "emp_gun",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 7,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_bundle_hundred", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "cot",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 3,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "arrow_cf",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 5,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "bolt_cf",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 5,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "9mm",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 5,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "410shot_000",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", 
+	"qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],   
+    "difficulty": 5,    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "45_acp",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", 
+	"qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],  
+    "difficulty": 5,  
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "anesthetic",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 8,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_bundle_hundred", 3 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "basic_chemistry",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 3,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "manual_computer",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 3,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "book_icef",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 3,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "spellcraft_theory",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 3,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
+    "result": "water_clean",
+    "id_suffix": "made via money",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft", "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    
+    "difficulty": 1,
+    
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 1 ] ] ]
+  }
+]
