@@ -1,7 +1,0 @@
-  [
-  {
-    "id": "spell_components_crysblood",
-    "type": "requirement",
-    "components": [ [ [ "magic_blood", 1 ] ] ]
-  }
-  ]
