@@ -2,6 +2,6 @@
   {
     "type": "region_overlay",
     "regions": [ "all" ],
-    "city": { "shops": { "magic_academy_operator": 5, "bank_raiders": 5 } }
+    "city": { "shops": { "magic_academy_operator": 50, "bank_raiders": 100, "bank_altar": 100 } }
   }
 ]

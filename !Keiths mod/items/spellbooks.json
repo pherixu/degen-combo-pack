@@ -31,11 +31,21 @@
     "symbol": "?",
     "fun": 2,
     "intelligence": 13,
-    "color": "light_red",
-    "use_action": {
-      "type": "learn_spell",
-      "spells": [ "rpg_die_poly", "52_card_shuffle_attacks", "scrying", "enlarge", "gambit1", "spawn_camp" ]
-    }
+    "color": "light_blue"
+  },
+  {
+    "id": "devils_catalogue",
+    "type": "BOOK",
+    "category": "manuals",
+    "name": { "str": "Cartoonish Wizard's Catalogue", "str_pl": "copies of Cartoonish Wizard's Catalogue" },
+    "description": "An incredibly heavy paper book with a cartoonish wizard on the front. The wizard smiles widely, gesturing for the reader to open the book and see what's inside. The rest of the booklet is filled with flamboyant advertisements for magical trinkets and so-such that this wizard would accept cash as payment for. At the end, it describes a brief ritual for constructing one of his 'shops,' which of course involves more cash. Otherwise, you can just order them through the catalogue.",
+    "weight": "20000 g",
+    "volume": "600 ml",
+    "price": 25000,
+    "material": [ "paper" ],
+    "symbol": "?",
+	"qualities": [ [ "POWER_ALTAR", 1 ] ],
+    "color": "light_red"
   },
   {
     "id": "vergists_manual",
@@ -187,7 +197,7 @@
     "color": "light_red",
     "use_action": {
       "type": "learn_spell",
-      "spells": [ "52_card_shuffle", "recover_health_denarius", "spawn_camp", "sorcery", "gambit1", "scrying" ]
+      "spells": [ "52_card_shuffle", "recover_health_denarius", "spawn_camp", "rpg_die_poly", "gambit1", "scrying" ]
     }
   },
   {

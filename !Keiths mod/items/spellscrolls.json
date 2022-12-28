@@ -61,6 +61,16 @@
   {
     "type": "BOOK",
     "copy-from": "spell_scroll",
+    "id": "spell_scroll_bio_for_stamina",
+    "//": "Classless spell",
+    "looks_like": "net",
+    "name": { "str": "cerebral lattice", "str_pl": "cerebral lattices" },
+    "description": "An electronic weave that goes over the head that interacts with the neurons, rewiring them to understand a new magics.",
+    "use_action": { "type": "learn_spell", "spells": [ "bio_for_stamina", "pain_nervous_system" ] }
+  },
+  {
+    "type": "BOOK",
+    "copy-from": "spell_scroll",
     "id": "spell_scroll_summon_atraxa",
     "//": "Classless spell",
     "looks_like": "fd_biolum",
@@ -155,6 +165,26 @@
     "intelligence": 14,
     "description": "A scroll much like a blueprint, showing the intricacies of golems and their craft.",
     "use_action": { "type": "learn_spell", "spells": [ "summon_plastic_golem" ] }
+  },
+  {
+    "type": "BOOK",
+    "copy-from": "spell_scroll",
+    "id": "spell_scroll_conjure_wire",
+    "//": "Classless spell",
+    "looks_like": "mag_news",
+    "name": { "str": "baltimore sun", "str_pl": "baltimore suns" },
+    "description": "A newspaper that details the goings-on in Baltimore. At the very end is a coupon for a free spell-o-gram, a last ditch effort to gain readers.",
+    "use_action": { "type": "learn_spell", "spells": [ "conjure_wire" ] }
+  },
+  {
+    "type": "BOOK",
+    "copy-from": "spell_scroll",
+    "id": "spell_scroll_conjure_string",
+    "//": "Classless spell",
+    "looks_like": "envelope",
+    "name": { "str": "busy-man's bell", "str_pl": "busy-man's bells" },
+    "description": "A small chime that, when rung, reminds you of days spent rushing around. When you come back to your senses, you feel as though you've learned something.",
+    "use_action": { "type": "learn_spell", "spells": [ "conjure_string" ] }
   },
   {
     "type": "BOOK",
@@ -285,7 +315,7 @@
     "name": { "str": "filth-steeped water", "str_pl": "filth-steeped waters" },
     "fun": -2,
     "description": "A jar of murky water that smells distinctly of the ocean, you hope. As you sniff, you discover you can read it by smell alone. Doesn't make it smell any better.",
-    "use_action": { "type": "learn_spell", "spells": [ "marinate" ] }
+    "use_action": { "type": "learn_spell", "spells": [ "marinate", "conjure_fish_bait" ] }
   },
   {
     "type": "BOOK",
@@ -479,6 +509,156 @@
   {
     "type": "BOOK",
     "copy-from": "spell_scroll",
+    "id": "spell_scroll_conjure_mirror",
+    "//": "Classless spell",
+    "looks_like": "envelope",
+    "name": { "str": "reflecting letter", "str_pl": "reflecting letters" },
+    "fun": -1,
+    "description": "A marked envelope from one of many corporate spell-casting services. This one seems to have been written by an employee who was desperate to make a change.",
+    "use_action": { "type": "learn_spell", "spells": [ "conjure_mirror" ] }
+  },
+  {
+    "type": "BOOK",
+    "copy-from": "spell_scroll",
+    "id": "spell_scroll_conjure_wash_kit",
+    "//": "Classless spell",
+    "looks_like": "envelope",
+    "name": { "str": "sparkling letter", "str_pl": "sparkling letters" },
+    "description": "A marked envelope from one of many corporate spell-casting services. It is clean as a whistle, in language and presentation alike.",
+    "use_action": { "type": "learn_spell", "spells": [ "conjure_wash_kit" ] }
+  },
+  {
+    "type": "BOOK",
+    "copy-from": "spell_scroll",
+    "id": "spell_scroll_conjure_rope_6",
+    "//": "Classless spell",
+    "looks_like": "envelope",
+    "name": { "str": "leading letter", "str_pl": "leading letters" },
+    "description": "A marked envelope from one of many corporate spell-casting services. It keeps using language as though it's all going somewhere...",
+    "use_action": { "type": "learn_spell", "spells": [ "conjure_rope_6" ] }
+  },
+  {
+    "type": "BOOK",
+    "copy-from": "spell_scroll",
+    "id": "spell_scroll_conjure_apple_cider",
+    "//": "Classless spell",
+    "looks_like": "envelope",
+    "name": { "str": "shredded letter", "str_pl": "shredded letters" },
+    "description": "A marked envelope from one of many corporate spell-casting services. This one looks as though it was shredded some time ago and barely managed to survive. It is stamped: 'DONT RUIN, OPEN INSIDE'",
+    "use_action": { "type": "learn_spell", "spells": [ "conjure_apple_cider" ] }
+  },
+  {
+    "type": "BOOK",
+    "copy-from": "spell_scroll",
+    "id": "spell_scroll_conjure_jumper_cable",
+    "//": "Classless spell",
+    "looks_like": "envelope",
+    "name": { "str": "ground working letter", "str_pl": "ground working letters" },
+    "description": "A marked envelope from one of many corporate spell-casting services. It emphasizes the importance of making sure everything is actually where it's supposed to be; red to red, black to black...",
+    "use_action": { "type": "learn_spell", "spells": [ "conjure_jumper_cable" ] }
+  },
+  {
+    "type": "BOOK",
+    "copy-from": "spell_scroll",
+    "id": "spell_scroll_conjure_mask",
+    "//": "Classless spell",
+    "looks_like": "envelope",
+    "name": { "str": "hushed letter", "str_pl": "hushed letters" },
+    "description": "A marked envelope from one of many corporate spell-casting services. It presents information on how to conjure a mask, for whatever purpose one desires.",
+    "use_action": { "type": "learn_spell", "spells": [ "conjure_mask" ] }
+  },
+  {
+    "type": "BOOK",
+    "copy-from": "spell_scroll",
+    "id": "spell_scroll_conjure_phone",
+    "//": "Classless spell",
+    "looks_like": "envelope",
+    "name": { "str": "emergency letter", "str_pl": "emergency letters" },
+    "description": "A marked envelope from one of many corporate spell-casting services. This one shows you how to create a phone in times of need.",
+    "use_action": { "type": "learn_spell", "spells": [ "conjure_phone" ] }
+  },
+  {
+    "type": "BOOK",
+    "copy-from": "spell_scroll",
+    "id": "spell_scroll_call_wild",
+    "//": "Classless spell",
+    "looks_like": "envelope",
+    "name": { "str": "ancient flower's petal", "str_pl": "ancient flower's petals" },
+    "description": "A flower at the absolute end of it's days. Each moment that passes you expect it to die, and it just keeps on living...",
+    "use_action": { "type": "learn_spell", "spells": [ "call_wild" ] }
+  },
+  {
+    "type": "BOOK",
+    "copy-from": "spell_scroll",
+    "id": "spell_scroll_distance_self",
+    "//": "Classless spell",
+    "name": { "str": "?", "str_pl": "???" },
+    "description": "You...",
+    "use_action": { "type": "learn_spell", "spells": [ "distance_self" ] }
+  },
+  {
+    "type": "BOOK",
+    "copy-from": "spell_scroll",
+    "id": "spell_scroll_mutamanation",
+    "//": "Classless spell",
+    "looks_like": "stick",
+    "name": { "str": "old agitated impetus", "str_pl": "old agitated impetus" },
+    "description": "You're fairly certain this squirming wooden thing is a tool, but you can't be certain. Guess you'll have to use it if you want to find out...",
+    "use_action": { "type": "learn_spell", "spells": [ "mutamanation" ] }
+  },
+  {
+    "type": "BOOK",
+    "copy-from": "spell_scroll",
+    "id": "spell_scroll_realign_pigment",
+    "//": "Classless spell",
+    "looks_like": "flask_glass",
+    "name": { "str": "unstoppable varnish", "str_pl": "unstoppable varnishes" },
+    "description": "A tiny jar of varnish that won't stop moving. Sliding, leaping, outright teleporting. The thing has a mind of it's own.",
+    "use_action": { "type": "learn_spell", "spells": [ "realign_pigment" ] }
+  },
+  {
+    "type": "BOOK",
+    "copy-from": "spell_scroll",
+    "id": "spell_scroll_sacrificial_bloom",
+    "//": "Classless spell",
+    "looks_like": "flask_glass",
+    "name": { "str": "tempered sod", "str_pl": "tempered sod" },
+    "description": "A small jar of soil that's been blackened into stone by years of hardship. The contours tell a barely legible story.",
+    "use_action": { "type": "learn_spell", "spells": [ "sacrificial_bloom" ] }
+  },
+  {
+    "type": "BOOK",
+    "copy-from": "spell_scroll",
+    "id": "spell_scroll_conjure_anesthetic",
+    "//": "Classless spell",
+    "looks_like": "envelope",
+    "name": { "str": "resting letter", "str_pl": "resting letters" },
+    "description": "A marked envelope from one of many corporate spell-casting services. It looks old, as if it's been quietly tucked away for some time now.",
+    "use_action": { "type": "learn_spell", "spells": [ "conjure_anesthetic" ] }
+  },
+  {
+    "type": "BOOK",
+    "copy-from": "spell_scroll",
+    "id": "spell_scroll_precipitate_manipulation",
+    "//": "Classless spell",
+    "looks_like": "envelope",
+    "name": { "str": "enthralling droplet", "str_pl": "enthralling droplets" },
+    "description": "A single raindrop that runs as if under the direction of a foreign gravity that takes it in all directions. Watching it run, one might make out symbols in the pattern it draws...",
+    "use_action": { "type": "learn_spell", "spells": [ "precipitate_manipulation" ] }
+  },
+  {
+    "type": "BOOK",
+    "copy-from": "spell_scroll",
+    "id": "spell_scroll_untether_mana",
+    "//": "Classless spell",
+    "looks_like": "bottle_glass",
+    "name": { "str": "comet diarama", "str_pl": "comet diaramas" },
+    "description": "A model comet on a stand that's slowly making it's way further down the bottle that contains it. The more you think about it, it must be heading for something.",
+    "use_action": { "type": "learn_spell", "spells": [ "untether_mana" ] }
+  },
+  {
+    "type": "BOOK",
+    "copy-from": "spell_scroll",
     "id": "spell_scroll_summon_cold",
     "//": "Classless spell",
     "looks_like": "envelope",
@@ -508,6 +688,17 @@
     "fun": 4,
     "description": "A bowl of soup that brings back only your warmest memories, but still leaves you hungry.",
     "use_action": { "type": "learn_spell", "spells": [ "summon_heat" ] }
+  },
+  {
+    "type": "BOOK",
+    "copy-from": "spell_scroll",
+    "id": "spell_scroll_summon_hot4",
+    "//": "Classless spell",
+    "looks_like": "pot_canning",
+    "name": { "str": "ethereal sauce", "str_pl": "ethereal sauces" },
+    "fun": -10,
+    "description": "A bottle of a sauce so hot you can't even hold the bottle. Once you drink it, who knows what'll come out.",
+    "use_action": { "type": "learn_spell", "spells": [ "summon_hot4" ] }
   },
   {
     "type": "BOOK",
@@ -550,6 +741,16 @@
     "name": { "str": "meditation letter", "str_pl": "meditation letters" },
     "description": "A marked envelope from one of many corporate spell-casting services, containing both abrupt and frustrating instructions on how to cast a spell.",
     "use_action": { "type": "learn_spell", "spells": [ "recover_mana_stamina" ] }
+  },
+  {
+    "type": "BOOK",
+    "copy-from": "spell_scroll",
+    "id": "spell_scroll_conjure_flask",
+    "//": "Classless spell",
+    "looks_like": "envelope",
+    "name": { "str": "stoppered letter", "str_pl": "stoppered letters" },
+    "description": "A marked envelope from one of many corporate spell-casting services, containing both abrupt and frustrating instructions on how to cast a spell.",
+    "use_action": { "type": "learn_spell", "spells": [ "conjure_flask" ] }
   },
   {
     "type": "BOOK",
@@ -815,7 +1016,7 @@
     "name": { "str": "electrostatic condenser", "str_pl": "electrostatic condensers" },
     "fun": -8,
     "description": "A little machine similar to an old camera with a long cylinder on the front above a slot. Reaching out to touch the cylinder results in an electrostatic shock, after which the machine prints a readout of data. Enough data, and you might have something.",
-    "use_action": { "type": "learn_spell", "spells": [ "auto_tazer" ] }
+    "use_action": { "type": "learn_spell", "spells": [ "auto_tazer", "bionic_battery_gun" ] }
   },
   {
     "type": "BOOK",
@@ -836,6 +1037,22 @@
     "name": { "str": "sorcerer's flipbook", "str_pl": "sorcerer's flipbooks" },
     "fun": 1,
     "description": "A tiny little paperback notebook emblazoned with the silhouette of a wizard grinning cheekily and pointing down. If the pages of the book are flipped rapidly, drawings of the wizard display the proper form for drawing the magic from within the cards. Careful, it looks chaotic.",
+    "use_action": { "type": "learn_spell", "spells": [ "sorcery" ] }
+  },
+  {
+    "id": "cards_magic",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "deck of Sorcery cards", "str_pl": "decks of Sorcery cards" },
+    "description": "A set of cards meant to play the game \"Sorcery.\"  Each card has a fun picture of a different monster.",
+    "weight": "210 g",
+    "volume": "250 ml",
+    "price": 2300,
+    "price_postapoc": 100,
+    "material": [ "paper" ],
+    "symbol": "?",
+    "color": "blue",
+    "flags": [ "NO_REPAIR" ],
     "use_action": { "type": "learn_spell", "spells": [ "sorcery" ] }
   }
 ]

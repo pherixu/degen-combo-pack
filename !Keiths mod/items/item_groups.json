@@ -11,9 +11,16 @@
         [ "spell_scroll_center_of_gravity", 50 ],
         [ "spell_scroll_drain_nervous_system", 50 ],
         [ "spell_scroll_summon_cold", 50 ],
+		[ "spell_scroll_conjure_flask", 50 ],
         [ "spell_scroll_charge_attack", 50 ],
         [ "spell_scroll_yank", 50 ],
+		[ "spell_scroll_conjure_mask", 50 ],
+		[ "spell_scroll_conjure_jumper_cable", 50 ],
         [ "spell_scroll_summon_cold4", 50 ],
+		[ "spell_scroll_conjure_wash_kit", 50 ],
+		[ "spell_scroll_conjure_phone", 50 ],
+		[ "spell_scroll_summon_hot4", 50 ],
+		[ "spell_scroll_conjure_rope_6", 50 ],
         [ "spell_scroll_beautification", 50 ],
         [ "spell_scroll_recover_mana_fatigue", 50 ],
         [ "spell_scroll_marinate", 50 ],
@@ -38,6 +45,8 @@
         [ "spell_scroll_double_trouble", 50 ],
         [ "spell_scroll_spawn_car", 50 ],
         [ "spell_scroll_airlift", 50 ],
+		[ "spell_scroll_conjure_wire", 50 ],
+		[ "spell_scroll_conjure_string", 50 ],
         [ "spell_scroll_summon_kayak", 50 ],
         [ "spell_scroll_soft_step", 50 ],
         [ "spell_scroll_induce", 50 ],
@@ -67,9 +76,15 @@
         [ "spell_scroll_love", 50 ],
         [ "spell_scroll_rabbits_foot", 50 ],
         [ "spell_scroll_enlarge", 50 ],
+		[ "spell_scroll_conjure_apple_cider", 50 ],
+		[ "spell_scroll_mutamanation", 50 ],
         [ "spell_scroll_anti_teleport", 50 ],
         [ "spell_scroll_wicked_ritual", 25 ],
         [ "spell_scroll_ghost_cleanse", 50 ],
+		[ "spell_scroll_untether_mana", 50 ],
+		[ "spell_scroll_bio_for_stamina", 50 ],
+		[ "spell_scroll_conjure_anesthetic", 50 ],
+		[ "spell_scroll_precipitate_manipulation", 50 ],
         [ "spell_scroll_summon_bike", 50 ],
         [ "spell_scroll_cold_flash", 50 ],
         [ "spell_scroll_summon_bunny", 50 ],
@@ -89,8 +104,12 @@
         [ "spell_scroll_charge_energy", 50 ],
         [ "spell_scroll_bend_will", 35 ],
         [ "spell_scroll_abolish_spirit", 35 ],
+		[ "spell_scroll_distance_self", 35 ],
+		[ "spell_scroll_call_wild", 35 ],
+		[ "spell_scroll_realign_pigment", 35 ],
         [ "spell_scroll_reanimate_golem", 50 ],
         [ "classified_intelligence_scroll", 50 ],
+		[ "spell_scroll_sacrificial_bloom", 50 ],
         [ "spell_scroll_spawn_gas", 50 ],
         [ "spell_scroll_spiritual_invisibility", 50 ],
         [ "spell_scroll_artillery", 50 ],
@@ -275,7 +294,7 @@
     "id": "magic_tools_and_loot",
     "subtype": "collection",
     "copy-from": "magic_tools_and_loot",
-    "extend": { "items": [ { "item": "crystal_mana", "prob": 50, "count-min": 1, "count-max": 100 } ] }
+    "extend": { "items": [ { "item": "crystal_mana", "prob": 20, "count-min": 1, "count-max": 75 } ] }
   },
   {
     "type": "item_group",
@@ -346,7 +365,7 @@
       "items": [
         [ "cuppa", 10 ],
         [ "twisted_soul", 10 ],
-        [ "decaying_soul", 5 ],
+        [ "decaying_soul", 15 ],
         [ "magic_camera", 10 ],
         [ "magic_camera_pro", 10 ],
         [ "soft_steppers_socks", 1 ],
@@ -355,12 +374,14 @@
         [ "magic_smart_phone", 5 ],
         [ "wash_kit_magic", 5 ],
         [ "clay_golem_token", 1 ],
+		[ "unending_tape", 5],
         [ "gate_token", 1 ],
         [ "bag_of_rocks", 10 ],
         { "group": "unendingpens", "prob": 35 },
         { "group": "spellbook_loot_0", "prob": 10 },
         { "group": "spellbook_loot_1", "prob": 7 },
         { "group": "spellbook_loot_2", "prob": 3 },
+		{ "item": "cards_magic", "prob": 100, "count": [ 5, 10 ] },
         [ "plastic_golem_token", 1 ],
         [ "crystallized_mana", 33 ],
         [ "magic_laptop", 10 ],
@@ -390,13 +411,13 @@
     "type": "item_group",
     "id": "home_display_case",
     "copy-from": "home_display_case",
-    "extend": { "items": [ { "group": "enchanted_combat_items", "prob": 1 } ] }
+    "extend": { "items": [ { "group": "enchanted_misc", "prob": 1 } ] }
   },
   {
     "type": "item_group",
     "id": "everyday_gear",
     "copy-from": "everyday_gear",
-    "extend": { "items": [ { "group": "enchanted_small_items", "prob": 10 } ] }
+    "extend": { "items": [ { "group": "enchanted_misc", "prob": 1 }, { "group": "benjamins", "prob": 2 } ] }
   },
   {
     "type": "item_group",
@@ -424,7 +445,7 @@
     "id": "trash_forest",
     "copy-from": "trash_forest",
     "extend": {
-      "items": [ [ "tear_of_child", 10 ], [ "antoninianus", 5 ], [ "brimstone_sliver", 5 ], { "group": "waywardmemories", "prob": 1 } ]
+      "items": [ [ "tear_of_child", 10 ], [ "antoninianus", 5 ], [ "brimstone_sliver", 5 ], [ "spell_scroll_call_wild", 1 ], { "group": "waywardmemories", "prob": 1 } ]
     }
   },
   {
@@ -475,7 +496,10 @@
       [ "wayward_memory_GSLOL", 1 ],
       [ "wayward_memory_FT", 1 ],
       [ "wayward_memory_VM", 1 ],
-      [ "wayward_memory_THC", 1 ]
+      [ "wayward_memory_THC", 1 ],
+	  [ "wayward_memory_BAAA", 1 ],
+	  [ "wayward_memory_HECVW", 1 ],
+	  [ "wayward_memory_BYA", 1 ]
     ]
   },
   {
@@ -488,7 +512,7 @@
       { "item": "brimstone_chunk", "prob": 1 },
       { "item": "chunk_sulfur", "count": [ 0, 3 ], "prob": 20 },
       { "item": "decaying_soul", "prob": 7 },
-      { "item": "twisted_soul", "prob": 1 },
+      { "item": "twisted_soul", "prob": 5 },
       { "item": "antoninianus", "prob": 5 }
     ]
   },
@@ -497,7 +521,7 @@
     "id": "benjamins",
     "subtype": "collection",
     "entries": [
-      { "item": "money_hundred", "prob": 50, "count": [ 0, 25 ] },
+      { "item": "money_hundred", "prob": 75, "count": [ 0, 15 ] },
       { "item": "money_strap_hundred", "prob": 25, "count": [ 0, 3 ] },
       { "item": "money_bundle_hundred", "prob": 5 }
     ]
@@ -888,10 +912,10 @@
     "type": "item_group",
     "id": "magedrops",
     "items": [
-      [ "cards_magic", 15 ],
+	  { "item": "cards_magic", "prob": 100, "count": [ 1, 3 ] },
       { "item": "tear_of_child", "prob": 33, "count": [ 0, 5 ] },
-      { "item": "brimstone_sliver", "prob": 50, "count": [ 0, 3 ] },
-      { "item": "brimstone_chunk", "prob": 33, "count": [ 0, 2 ] },
+      { "item": "brimstone_sliver", "prob": 25, "count": [ 0, 3 ] },
+      { "item": "brimstone_chunk", "prob": 10, "count": [ 0, 2 ] },
       { "item": "twisted_soul" },
       { "item": "robe" },
       { "item": "decaying_soul", "prob": 50 },
@@ -900,16 +924,16 @@
       { "item": "antoninianus", "prob": 33 },
       { "group": "enchanted_small_items", "prob": 10 },
       { "group": "harddrugs", "prob": 33, "count": [ 0, 3 ] },
-      { "group": "enchanted_misc", "prob": 1 },
+      { "group": "enchanted_misc", "prob": 2 },
       { "group": "enchanted_combat_items", "prob": 1 },
-      { "group": "waywardmemories", "prob": 10 }
+      { "group": "waywardmemories", "prob": 100 }
     ]
   },
   {
     "type": "item_group",
     "id": "madartist",
     "items": [
-      [ "cards_magic", 50 ],
+	  { "item": "cards_magic", "prob": 100, "count": [ 5, 10 ] },
       { "item": "crystallized_ink", "prob": 33, "count": [ 1, 2 ] },
       { "item": "twisted_soul", "prob": 33 },
       { "item": "sf_watch" },
@@ -936,7 +960,7 @@
     "type": "item_group",
     "id": "magazines",
     "copy-from": "magazines",
-    "extend": { "items": [ { "item": "heli_book", "prob": 5 } ] }
+    "extend": { "items": [ { "item": "heli_book", "prob": 5 }, { "item": "devils_catalogue", "prob": 5 } ] }
   },
   {
     "type": "item_group",
@@ -951,10 +975,25 @@
     "copy-from": "office_supplies",
     "extend": {
       "items": [
-        { "item": "professional_pendant", "prob": 1 },
         { "item": "crystallized_ink", "prob": 1 },
         { "item": "dragonhide_journal", "prob": 10 },
         { "group": "crystallized_ink_colors", "prob": 5 },
+        { "group": "unendingpens", "prob": 5 }
+      ]
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "office",
+    "copy-from": "office",
+    "extend": {
+      "items": [
+        { "item": "professional_pendant", "prob": 5 },
+        { "item": "crystallized_ink", "prob": 1 },
+        { "item": "leather_journal", "prob": 10 },
+		{ "item": "auto_fan", "prob": 10 },
+        { "group": "crystallized_ink_colors", "prob": 1 },
+		{ "group": "benjamins", "prob": 15 },
         { "group": "unendingpens", "prob": 5 }
       ]
     }
@@ -978,21 +1017,27 @@
     "id": "kids_books",
     "type": "item_group",
     "copy-from": "kids_books",
-    "extend": { "items": [ { "item": "tales_from_other_planes", "prob": 1 }, { "item": "coloring_book", "prob": 5 } ] }
+    "extend": { "items": [ { "item": "tales_from_other_planes", "prob": 1 }, { "item": "coloring_book", "prob": 3 }, { "item": "devils_catalogue", "prob": 5 } ] }
+  },
+  {
+    "id": "waitingroom",
+    "type": "item_group",
+    "copy-from": "waitingroom",
+    "extend": { "items": [ { "item": "devils_catalogue", "prob": 5 } ] }
   },
   {
     "id": "livingroom",
     "type": "item_group",
     "copy-from": "livingroom",
     "subtype": "distribution",
-    "extend": { "items": [ { "group": "enchanted_misc", "prob": 3 } ] }
+    "extend": { "items": [ { "group": "enchanted_misc", "prob": 3 }, { "item": "cards_magic", "prob": 10 }, { "item": "devils_catalogue", "prob": 10 } ] }
   },
   {
     "id": "bedroom",
     "type": "item_group",
     "copy-from": "bedroom",
     "subtype": "distribution",
-    "extend": { "items": [ { "group": "enchanted_misc", "prob": 1 } ] }
+    "extend": { "items": [ { "group": "enchanted_misc", "prob": 1 }, { "item": "cards_magic", "prob": 10 } ] }
   },
   {
     "id": "animist_items",
@@ -1068,6 +1113,7 @@
         { "group": "harddrugs", "prob": 5 },
         { "group": "enchanted_misc", "prob": 1 },
         [ "magic_smart_phone", 20 ],
+		[ "auto_fan", 10 ],
         [ "magic_smart_phone", 15 ],
         [ "magic_smart_phone", 10 ],
         [ "magic_smart_phone", 5 ]
@@ -1100,6 +1146,7 @@
         { "group": "crystallized_ink_colors", "prob": 5 },
         { "item": "white_pen_ink", "prob": 10, "count-min": 1, "count-max": 3 },
         { "group": "waywardmemories", "prob": 5 },
+		{ "group": "benjamins", "prob": 5 },
         { "item": "tear_of_child", "prob": 20, "count-min": 1, "count-max": 3 },
         { "item": "crystal_mana", "prob": 5, "count": [ 1, 100 ] },
         { "item": "crystallized_alcohol", "prob": 5, "count-min": 1, "count-max": 5 },
@@ -1143,10 +1190,10 @@
       "items": [
         { "item": "crystal_mana", "prob": 10, "count-min": 1, "count-max": 10 },
         { "item": "crazed_note", "prob": 5, "count-min": 1, "count-max": 1 },
-        { "item": "crystallized_mana", "prob": 20, "count-min": 1, "count-max": 2 },
-        { "item": "crystallized_alcohol", "prob": 20, "count-min": 1, "count-max": 5 },
-        { "item": "crystallized_heroin", "prob": 10, "count-min": 1, "count-max": 5 },
-        { "item": "crystallized_meth_low", "prob": 10, "count-min": 1, "count-max": 5 },
+        { "item": "crystallized_mana", "prob": 10, "count-min": 1, "count-max": 2 },
+        { "item": "crystallized_alcohol", "prob": 5, "count-min": 1, "count-max": 5 },
+        { "item": "crystallized_heroin", "prob": 5, "count-min": 1, "count-max": 5 },
+        { "item": "crystallized_meth_low", "prob": 5, "count-min": 1, "count-max": 5 },
         { "item": "crystallized_meth_pure", "prob": 5 }
       ]
     }
@@ -1213,7 +1260,14 @@
     "type": "item_group",
     "id": "magic_shop_clothes",
     "copy-from": "magic_shop_clothes",
-    "extend": { "items": [ { "group": "wigs", "prob": 25 } ] }
+    "extend": { "items": [ { "group": "wigs", "prob": 25 }, { "item": "alchemists_tool_belt", "prob": 1 } ] }
+  },
+  {
+    "type": "item_group",
+    "id": "surgery",
+	"copy-from": "surgery",
+     "extend": { "items": [ 
+	 { "item": "pocket_doc", "prob": 3 } ] }
   },
   {
     "type": "item_group",
@@ -1237,7 +1291,9 @@
         [ "nondescript_briefcase", 1 ],
         [ "coldlight_flashbang", 25 ],
         [ "greensteel_spear", 1 ],
+		[ "pocket_doc", 3 ],
         [ "redsteel_morningstar", 1 ],
+		[ "alchemists_tool_belt", 1 ],
         [ "intrapsychological_nesting", 5 ],
         [ "sf_watch_stasis", 5 ],
         [ "magic_mantle", 5 ],

@@ -613,7 +613,7 @@
     "material": [ "concentrated_mana" ],
     "symbol": "o",
     "color": "black",
-    "use_action": [ { "type": "cast_spell", "spell_id": "summon_dragon", "no_fail": true, "level": 1 } ]
+    "use_action": [ { "type": "cast_spell", "spell_id": "summon_dragon", "no_fail": true, "level": 15 } ]
   },
   {
     "id": "summon_dragon",
@@ -661,7 +661,7 @@
     "id": "bend_will_item",
     "type": "TOOL_ARMOR",
     "name": { "str": "manifested manipulation" },
-    "description": "A charm made of pure manipulation, channeled from a symbol of friendship.",
+    "description": "A charm made of pure manipulation. Activate it to stir hearts and minds.",
     "weight": "1 g",
     "volume": "1 ml",
     "longest_side": "1 cm",
@@ -741,8 +741,8 @@
     "base_casting_time": 0,
     "min_damage": 1,
     "max_damage": 1,
-    "min_duration": 9999999,
-    "max_duration": 9999999,
+    "min_duration": 60000,
+    "max_duration": 60000,
     "max_level": 1,
     "base_energy_cost": 0,
     "difficulty": 4
@@ -761,8 +761,8 @@
     "base_casting_time": 0,
     "min_damage": 1,
     "max_damage": 1,
-    "min_duration": 9999999,
-    "max_duration": 9999999,
+    "min_duration": 60000,
+    "max_duration": 60000,
     "max_level": 1,
     "base_energy_cost": 0,
     "difficulty": 4
@@ -781,8 +781,8 @@
     "base_casting_time": 0,
     "min_damage": 1,
     "max_damage": 1,
-    "min_duration": 9999999,
-    "max_duration": 9999999,
+    "min_duration": 60000,
+    "max_duration": 60000,
     "max_level": 1,
     "base_energy_cost": 0,
     "difficulty": 4
@@ -804,7 +804,7 @@
     "material": [ "concentrated_mana" ],
     "symbol": ".",
     "color": "brown",
-    "relic_data": { "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "mutations": [ "FASTREADER", "INT_UP" ] } ] }
+    "relic_data": { "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "INTELLIGENCE", "add": 2 } ] } ] }
   },
   {
     "id": "fast_reader_aura2",
@@ -823,7 +823,7 @@
     "material": [ "concentrated_mana" ],
     "symbol": ".",
     "color": "brown",
-    "relic_data": { "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "mutations": [ "FASTREADER", "INT_UP_2" ] } ] }
+    "relic_data": { "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "INTELLIGENCE", "add": 4 } ] } ] }
   },
   {
     "id": "fast_reader_aura3",
@@ -842,7 +842,7 @@
     "material": [ "concentrated_mana" ],
     "symbol": ".",
     "color": "brown",
-    "relic_data": { "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "mutations": [ "FASTREADER", "INT_UP_3" ] } ] }
+    "relic_data": { "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "INTELLIGENCE", "add": 6 } ] } ] }
   },
   {
     "id": "charge_aura",
@@ -1243,6 +1243,35 @@
       "NONCONDUCTIVE",
       "BULLET_IMMUNE"
     ],
+    "material": [ "concentrated_mana" ],
+    "symbol": ".",
+    "color": "brown"
+  },
+  {
+    "id": "dislocation_aura",
+    "type": "ARMOR",
+    "name": { "str": "Dislocation Anchor" },
+    "description": "A field that is keeping you tethered to the physical realm while simultaneously changing your position in it.",
+    "weight": "1 g",
+    "volume": "1 ml",
+    "longest_side": "1 cm",
+    "price": 2000,
+    "to_hit": 3,
+    "bashing": 14,
+    "cutting": 3,
+    "flags": [
+      "PERSONAL",
+      "SEMITANGIBLE",
+      "OVERSIZE",
+      "ONLY_ONE",
+      "TRADER_AVOID",
+      "AURA",
+      "NO_TAKEOFF",
+      "NONCONDUCTIVE"
+    ],
+	"relic_data": {
+      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "hit_me_effect": [ { "id": "phase_door", "hit_self": true } ] } ]
+    },
     "material": [ "concentrated_mana" ],
     "symbol": ".",
     "color": "brown"
@@ -1935,6 +1964,60 @@
     "type": "BOOK",
     "category": "other",
     "name": { "str": "wayward memory of a game" },
+    "description": "Pure white and warm as the sunrise, this dancing ball of energy contains what used to make someone, someone.",
+    "weight": "1 g",
+    "volume": "10 ml",
+    "longest_side": "1 cm",
+    "intelligence": 13,
+    "time": "30 m",
+    "fun": 1,
+    "price": 1000000,
+    "flags": [ "TRADER_AVOID" ],
+    "material": [ "aether" ],
+    "symbol": "c",
+    "color": "white"
+  },
+  {
+    "id": "wayward_memory_BAAA",
+    "type": "BOOK",
+    "category": "other",
+    "name": { "str": "wayward memory of living dangerously" },
+    "description": "Pure white and warm as the sunrise, this dancing ball of energy contains what used to make someone, someone.",
+    "weight": "1 g",
+    "volume": "10 ml",
+    "longest_side": "1 cm",
+    "intelligence": 13,
+    "time": "30 m",
+    "fun": 1,
+    "price": 1000000,
+    "flags": [ "TRADER_AVOID" ],
+    "material": [ "aether" ],
+    "symbol": "c",
+    "color": "white"
+  },
+  {
+    "id": "wayward_memory_HECVW",
+    "type": "BOOK",
+    "category": "other",
+    "name": { "str": "wayward memory of discharge" },
+    "description": "Pure white and warm as the sunrise, this dancing ball of energy contains what used to make someone, someone.",
+    "weight": "1 g",
+    "volume": "10 ml",
+    "longest_side": "1 cm",
+    "intelligence": 13,
+    "time": "30 m",
+    "fun": 1,
+    "price": 1000000,
+    "flags": [ "TRADER_AVOID" ],
+    "material": [ "aether" ],
+    "symbol": "c",
+    "color": "white"
+  },
+  {
+    "id": "wayward_memory_BYA",
+    "type": "BOOK",
+    "category": "other",
+    "name": { "str": "wayward memory of instability" },
     "description": "Pure white and warm as the sunrise, this dancing ball of energy contains what used to make someone, someone.",
     "weight": "1 g",
     "volume": "10 ml",

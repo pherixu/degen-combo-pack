@@ -63,9 +63,134 @@
     }
   },
   {
+    "type": "SPELL",
+    "id": "summon_cold_auto_fan",
+    "name": "Cooling Breeze",
+    "description": "Projects a light puff of cold air.",
+    "valid_targets": [ "hostile", "ground", "ally", "self" ],
+    "max_level": 3,
+    "flags": [ "SOMATIC", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
+    "base_casting_time": 0,
+    "base_energy_cost": 0,
+    "difficulty": 0,
+    "effect": "attack",
+    "shape": "blast",
+    "energy_source": "MANA",
+    "field_id": "fd_cold_air1",
+    "field_chance": 1,
+    "min_duration": 1000,
+    "max_duration": 1000,
+    "min_field_intensity": 2,
+    "max_field_intensity": 2
+  },
+  {
+    "type": "SPELL",
+    "id": "summon_hot_auto_fan",
+    "name": "Cooling Breeze",
+    "description": "Projects a light puff of cold air.",
+    "valid_targets": [ "hostile", "ground", "ally", "self" ],
+    "max_level": 3,
+    "flags": [ "SOMATIC", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
+    "base_casting_time": 0,
+    "base_energy_cost": 0,
+    "difficulty": 0,
+    "effect": "attack",
+    "shape": "blast",
+    "energy_source": "MANA",
+    "field_id": "fd_hot_air1",
+    "field_chance": 1,
+    "min_duration": 1000,
+    "max_duration": 1000,
+    "min_field_intensity": 2,
+    "max_field_intensity": 2
+  },
+   {
+    "type": "enchantment",
+    "id": "auto_fan_enchantment",
+    "intermittent_activation": { "effects": [ { "frequency": "5 s", "spell_effects": [ { "id": "summon_cold_auto_fan" } ] } ] }
+  },
+  {
+    "type": "enchantment",
+    "id": "auto_fan_enchantment_hot",
+    "intermittent_activation": { "effects": [ { "frequency": "5 s", "spell_effects": [ { "id": "summon_hot_auto_fan" } ] } ] }
+  },
+  {
+    "id": "auto_fan",
+    "type": "TOOL",
+    "name": { "str": "handheld automatic magical temperature regulator - cold" },
+    "description": "A little plastic fan that looks much like a toy. Right now it's giving off puffs of cool air, but it can be cycled to give off warm air or turned off completely.",
+    "weight": "467 g",
+    "volume": "250 ml",
+    "price": 50000,
+    "to_hit": -4,
+    "bashing": 3,
+    "material": [ "plastic", "aluminum" ],
+    "symbol": ";",
+    "color": "red",
+	"use_action": {
+      "target": "auto_fan_hot",
+      "msg": "You turn the heat up.",
+      "menu_text": "Turn Up Heat",
+      "moves": 1000,
+      "type": "transform"
+    },
+    "relic_data": {
+      "passive_effects": [
+        { "id": "auto_fan_enchantment" }
+      ]
+    }
+  },
+  {
+    "id": "auto_fan_hot",
+    "type": "TOOL",
+    "name": { "str": "handheld automatic magical temperature regulator - hot" },
+    "description": "A little plastic fan that looks much like a toy. Right now it's giving off puffs of hot air, but it can be cycled to give off cool air or turned off completely.",
+    "weight": "467 g",
+    "volume": "250 ml",
+    "price": 50000,
+    "to_hit": -4,
+    "bashing": 3,
+    "material": [ "plastic", "aluminum" ],
+    "symbol": ";",
+    "color": "red",
+	"use_action": {
+      "target": "auto_fan_off",
+      "msg": "You turn the fan off.",
+      "menu_text": "Turn Off",
+      "moves": 1000,
+      "type": "transform"
+    },
+    "relic_data": {
+      "passive_effects": [
+        { "id": "auto_fan_enchantment_hot" }
+      ]
+    }
+  },
+  {
+    "id": "auto_fan_off",
+    "type": "TOOL",
+    "name": { "str": "handheld automatic magical temperature regulator - off" },
+    "description": "A little plastic fan that looks much like a toy. Right now it's off, but it can be cycled to give off cool or hot air.",
+    "weight": "467 g",
+    "volume": "250 ml",
+    "price": 50000,
+    "to_hit": -4,
+    "bashing": 3,
+    "material": [ "plastic", "aluminum" ],
+    "symbol": ";",
+    "color": "red",
+	"use_action": {
+      "target": "auto_fan",
+      "msg": "You turn the fan on.",
+      "menu_text": "Turn Fan On",
+      "moves": 1000,
+      "type": "transform"
+    }
+  },
+  {
     "type": "enchantment",
     "id": "philostone_enchantment",
-    "intermittent_activation": { "effects": [ { "frequency": "24 h", "spell_effects": [ { "id": "spawn_spell_scroll_devil" } ] } ] }
+    "intermittent_activation": { "effects": [ { "frequency": "18 h", "spell_effects": [ { "id": "spawn_spell_scroll_devil" } ] } ] }
   },
   {
     "id": "philosophers_stone",
@@ -85,7 +210,7 @@
           "has": "WORN",
           "condition": "ALWAYS",
           "values": [
-            { "value": "MAX_MANA", "add": 6000 },
+            { "value": "MAX_MANA", "add": 10000 },
             { "value": "REGEN_MANA", "multiply": 5 },
             { "value": "EFFECTIVE_HEALTH_MOD", "add": 2 },
             { "value": "STRENGTH", "add": 4 },
@@ -102,6 +227,314 @@
       ]
     },
     "color": "yellow"
+  },
+  {
+    "id": "alchemists_tool_belt",
+    "type": "ARMOR",
+    "name": { "str": "homebrewer's utility belt" },
+    "description": "A common belt with pockets, loops and sheaths to store up to six tools or blades. It also comes equipped with several useful tools, such as a chemistry set, a distillery, and a state of the art magical altar.",
+    "weight": "3850 g",
+    "volume": "3500 ml",
+    "price": 2000000,
+    "bashing": 5,
+    "material": [ "leather" ],
+    "symbol": "[",
+    "looks_like": "holster",
+    "color": "brown",
+    "material_thickness": 2,
+    "pocket_data": [
+      { "max_contains_volume": "1 L", "max_contains_weight": "1500 g", "max_item_length": "40 cm", "moves": 50 },
+      {
+        "holster": true,
+        "min_item_volume": "50 ml",
+        "max_contains_volume": "1500 ml",
+        "max_contains_weight": "1500 g",
+        "max_item_length": "70 cm",
+        "moves": 25,
+        "flag_restriction": [ "BELT_CLIP", "SHEATH_KNIFE" ]
+      },
+      {
+        "holster": true,
+        "min_item_volume": "50 ml",
+        "max_contains_volume": "1500 ml",
+        "max_contains_weight": "1500 g",
+        "max_item_length": "70 cm",
+        "moves": 25,
+        "flag_restriction": [ "BELT_CLIP", "SHEATH_KNIFE" ]
+      },
+      {
+        "holster": true,
+        "min_item_volume": "50 ml",
+        "max_contains_volume": "1 L",
+        "max_contains_weight": "1500 g",
+        "max_item_length": "70 cm",
+        "moves": 25,
+        "flag_restriction": [ "BELT_CLIP", "SHEATH_KNIFE" ]
+      },
+      {
+        "holster": true,
+        "min_item_volume": "50 ml",
+        "max_contains_volume": "1 L",
+        "max_contains_weight": "1500 g",
+        "max_item_length": "70 cm",
+        "moves": 25,
+        "flag_restriction": [ "BELT_CLIP", "SHEATH_KNIFE" ]
+      },
+      {
+        "holster": true,
+        "min_item_volume": "50 ml",
+        "max_contains_volume": "1 L",
+        "max_contains_weight": "1500 g",
+        "max_item_length": "70 cm",
+        "moves": 25,
+        "flag_restriction": [ "BELT_CLIP", "SHEATH_KNIFE" ]
+      }
+    ],
+    "use_action": [ { "type": "holster", "holster_prompt": "Store tool or blade", "holster_msg": "You put your %1$s in your %2$s" }, "HOTPLATE_ATOMIC" ],
+    "flags": [ "BELTED", "WATER_FRIENDLY" ],
+	"qualities": [ [ "POWER_ALTAR", 3 ], [ "CHEM", 3 ], [ "SCREW", 2 ], [ "CUT", 2 ], [ "SAW_M", 2 ], [ "DISTILL", 2 ], [ "CONCENTRATE", 2 ] ],
+    "armor": [ { "encumbrance": [ 2, 12 ], "coverage": 100, "covers": [ "torso" ], "specifically_covers": [ "torso_waist" ] } ]
+  },
+  {
+    "id": "pocket_doc",
+    "type": "COMESTIBLE",
+    "category": "other",
+	"comestible_type": "MED",
+    "name": { "str": "pocket doc" },
+    "description": "Probably the most impactful invention of the 21st century. A small metal cylinder that contains the magically shrunken versions of everything needed to install CBMs. This invention led to 'home chipping,' a practice both effective and consequential.",
+    "weight": "907 g",
+    "volume": "5030 ml",
+    "longest_side": "21 cm",
+    "price": 1000000,
+    "to_hit": -4,
+    "bashing": 5,
+    "material": [ "steel" ],
+    "symbol": ";",
+    "color": "green",
+	 "use_action": [ 
+	{ "type": "cast_spell", "spell_id": "spawn_doc_makers", "no_fail": true, "level": 1, "need_wielding": true }
+	]
+  },
+  {
+    "id": "spawn_doc_makers",
+    "type": "SPELL",
+    "name": "Delivery!",
+    "description": "Suddenly, your life has meaning again.",
+    "valid_targets": [ "self" ], 
+	"effect": "spawn_item",
+    "effect_str": "doc_maker",
+	"extra_effects": [ {"id": "spawn_couch_maker" }, {"id": "spawn_anesthetic" } ],
+	"shape": "blast",
+	"min_duration": 600000,
+	"max_duration": 600000,
+    "base_casting_time": 0,
+    "base_energy_cost": 0,
+    "energy_source": "MANA",
+    "flags": [ "PERMANENT" ],
+    "difficulty": 5,
+    "max_level": 1,
+	"min_damage": 1,
+	"max_damage": 1,
+    "sound_description": "a swipe"
+  },
+  {
+    "id": "spawn_couch_maker",
+    "type": "SPELL",
+    "name": "Delivery!",
+    "description": "Suddenly, your life has meaning again.",
+    "valid_targets": [ "self" ], 
+	"effect": "spawn_item",
+    "effect_str": "couch_maker",
+	"shape": "blast",
+	"min_duration": 600000,
+	"max_duration": 600000,
+    "base_casting_time": 0,
+    "base_energy_cost": 0,
+    "energy_source": "MANA",
+    "flags": [ "PERMANENT" ],
+    "difficulty": 5,
+    "max_level": 1,
+	"min_damage": 1,
+	"max_damage": 1,
+    "sound_description": "a swipe"
+  },
+  {
+    "id": "spawn_anesthetic",
+    "type": "SPELL",
+    "name": "Delivery!",
+    "description": "Suddenly, your life has meaning again.",
+    "valid_targets": [ "self" ], 
+	"effect": "spawn_item",
+    "effect_str": "anesthetic_kit",
+	"extra_effects": [ { "id": "spawn_anesthesia" } ],
+	"shape": "blast",
+	"min_duration": 600000,
+	"max_duration": 600000,
+    "base_casting_time": 0,
+    "base_energy_cost": 0,
+    "energy_source": "MANA",
+    "flags": [ "PERMANENT" ],
+    "difficulty": 5,
+    "max_level": 1,
+	"min_damage": 1,
+	"max_damage": 1,
+    "sound_description": "a swipe"
+  },
+  {
+    "id": "spawn_anesthesia",
+    "type": "SPELL",
+    "name": "Delivery!",
+    "description": "Suddenly, your life has meaning again.",
+    "valid_targets": [ "self" ], 
+	"effect": "spawn_item",
+    "effect_str": "anesthetic",
+	"shape": "blast",
+	"min_duration": 600000,
+	"max_duration": 600000,
+    "base_casting_time": 0,
+    "base_energy_cost": 0,
+    "energy_source": "MANA",
+    "flags": [ "PERMANENT", "WITH_CONTAINER", "RANDOM_DAMAGE" ],
+    "difficulty": 5,
+    "max_level": 1,
+	"min_damage": 0,
+	"max_damage": 3,
+    "sound_description": "a swipe"
+  },
+  {
+    "id": "doc_maker",
+    "type": "COMESTIBLE",
+    "category": "other",
+	"comestible_type": "MED",
+    "looks_like": "keg",
+    "name": { "str": "nested autodoc computer", "str_pl": "nested autodoc computer" },
+    "description": "A small metal cylinder that was recently contained within a larger cylinder. This cylinder contains the computer portion of an autodoc, you think.",
+    "weight": "800 g",
+    "volume": "2010 ml",
+    "price": 1000,
+    "to_hit": -4,
+    "bashing": 5,
+    "material": [ "steel" ],
+	"flags": [ "TRADER_AVOID" ],
+	"use_action": [ 
+	{ "type": "cast_spell", "spell_id": "autodoc_computer_place", "no_fail": true, "level": 1, "need_wielding": true }
+	],
+    "symbol": "}",
+    "color": "light_cyan"
+  },
+  {
+    "id": "couch_maker",
+    "type": "COMESTIBLE",
+    "category": "other",
+	"comestible_type": "MED",
+    "looks_like": "keg",
+    "name": { "str": "nested autodoc couch", "str_pl": "nested autodoc couch" },
+    "description": "A small metal cylinder that was recently contained within a larger cylinder. This cylinder contains the couch portion of an autodoc, you think.",
+    "weight": "800 g",
+    "volume": "2010 ml",
+    "price": 1000,
+    "to_hit": -4,
+    "bashing": 5,
+    "material": [ "steel" ],
+	"flags": [ "TRADER_AVOID" ],
+	"use_action": [ 
+	{ "type": "cast_spell", "spell_id": "autodoc_couch_place", "no_fail": true, "level": 1, "need_wielding": true }
+	],
+    "symbol": "}",
+    "color": "light_cyan"
+  },
+
+  {
+    "id": "autodoc_computer_place",
+    "type": "SPELL",
+    "name": "Conjure Autodoc Computer",
+    "description": "Computerator",
+    "valid_targets": [ "ground" ],
+    "effect": "ter_transform",
+    "effect_str": "computer_place",
+    "shape": "blast",
+    "flags": [ "LOUD", "PERMANENT" ],
+    "energy_source": "MANA",
+    "difficulty": 5,
+    "base_casting_time": 0,
+	"final_casting_time": 0,
+    "base_energy_cost": 0,
+    "max_level": 10,
+    "min_range": 1,
+    "max_range": 3
+  },
+  {
+    "id": "autodoc_couch_place",
+    "type": "SPELL",
+    "name": "Conjure Autodoc Couch",
+    "description": "Couchinator",
+    "valid_targets": [ "ground" ],
+    "effect": "ter_transform",
+    "effect_str": "couch_place",
+    "shape": "blast",
+    "flags": [ "LOUD", "PERMANENT" ],
+    "energy_source": "MANA",
+    "difficulty": 5,
+    "base_casting_time": 0,
+	"final_casting_time": 0,
+    "base_energy_cost": 0,
+    "max_level": 10,
+    "min_range": 1,
+    "max_range": 3
+  },
+  {
+    "type": "ter_furn_transform",
+    "id": "computer_place",
+    "furniture": [
+      {
+        "result": "f_autodoc",
+        "valid_furniture": [ "f_null" ],
+        "message": "There's a rippling in the air and a blast of cold air, then the computer portion of the autodoc forms."
+      }
+    ]
+  },
+  {
+    "type": "ter_furn_transform",
+    "id": "couch_place",
+    "furniture": [
+      {
+        "result": "f_autodoc_couch",
+        "valid_furniture": [ "f_null" ],
+        "message": "There's a rippling in the air and a blast of cold air, then the couch portion of the autodoc forms."
+      }
+    ]
+  },
+  {
+	  "id": "unending_tape",
+	  "description": "A small cardboard box with a small muscular arm sticking out of it's lid. The arm holds a roll of duct tape which never seems to run out.",
+	  "name": "REAL Man's Toolbox",
+	  "price": 400000,
+	  "type": "TOOL",
+	  "copy-from": "box_small",
+	  "use_action": [ {"type": "cast_spell", "spell_id": "spawn_tape", "no_fail": true, "level": 1 } ]
+  },
+  {
+    "id": "spawn_tape",
+    "type": "SPELL",
+    "name": "Delivery!",
+    "description": "Suddenly, your life has meaning again.",
+    "valid_targets": [ "self" ], 
+	"effect": "spawn_item",
+    "effect_str": "duct_tape",
+	"shape": "blast",
+	"min_duration": 600000,
+	"max_duration": 600000,
+    "base_casting_time": 0,
+    "base_energy_cost": 0,
+    "energy_source": "MANA",
+    "flags": [ "PERMANENT" ],
+    "difficulty": 5,
+    "max_level": 1,
+	"min_damage": 200,
+	"max_damage": 200,
+    "min_range": 1,
+    "max_range": 1,
+    "sound_description": "a swipe"
   },
   {
     "id": "nondescript_briefcase",
@@ -501,7 +934,7 @@
     "comestible_type": "DRINK",
     "flags": [ "EATEN_COLD", "NUTRIENT_OVERRIDE", "NO_AUTO_CONSUME" ],
     "phase": "liquid",
-    "price": 250000,
+    "price": 500000,
     "freezing_point": 4
   },
   {
@@ -523,7 +956,29 @@
     "comestible_type": "DRINK",
     "flags": [ "EATEN_COLD", "NUTRIENT_OVERRIDE", "NO_AUTO_CONSUME" ],
     "phase": "liquid",
-    "price": 250000,
+    "price": 500000,
+    "freezing_point": 4
+  },
+  {
+    "id": "boss_token",
+    "name": { "str": "favor of colors" },
+    "description": "A small glass flask filled with a liquid that is absolutely roaring with color. You haven't seen most of them before, but somehow you know that if you drink this a creature of great power and opportunity will be called.",
+    "use_action": { "type": "cast_spell", "spell_id": "summon_boss", "no_fail": true, "level": 1 },
+    "type": "COMESTIBLE",
+    "weight": "265 g",
+    "quench": 10,
+    "calories": 33,
+    "volume": "250ml",
+    "charges": 1,
+    "fun": -3,
+    "healthy": 1,
+    "symbol": "~",
+    "container": "flask_glass",
+    "color": "white",
+    "comestible_type": "DRINK",
+    "flags": [ "EATEN_COLD", "NUTRIENT_OVERRIDE", "NO_AUTO_CONSUME" ],
+    "phase": "liquid",
+    "price": 500000,
     "freezing_point": 4
   },
   {
@@ -1482,7 +1937,7 @@
         "moves": 300
       }
     ],
-    "flags": [ "TRADER_AVOID", "TARDIS", "SEMITANGIBLE", "RADIO_INVOKE_PROC", "RADIO_MODABLE", "ZERO_WEIGHT" ]
+    "flags": [ "TRADER_AVOID", "TARDIS", "RADIO_INVOKE_PROC", "RADIO_MODABLE" ]
   },
   {
     "type": "TOOL",
@@ -1493,7 +1948,7 @@
     "symbol": "`",
     "looks_like": "mirror",
     "description": "A piece of paper that has been magically enhanced to have the property of containment. Small objects or creatures can be stored inside. Most commonly used by mages to store magic circles.",
-    "properties": [ [ "creature_size_capacity", "TINY" ] ],
+    "properties": [ [ "creature_size_capacity", "MEDIUM" ] ],
     "use_action": [ "CAPTURE_MONSTER_ACT" ],
     "price": 50000,
     "material": [ "paper" ],
@@ -1720,7 +2175,7 @@
       "type": "transform"
     },
     "relic_data": {
-      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "EXTRA_BASH", "multiply": 0.1 } ] } ]
+      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "ARMOR_BASH", "multiply": 0.1 } ] } ]
     }
   },
   {
@@ -1739,7 +2194,7 @@
       "type": "transform"
     },
     "relic_data": {
-      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "EXTRA_STAB", "multiply": 0.1 } ] } ]
+      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "ARMOR_STAB", "multiply": 0.1 } ] } ]
     }
   },
   {
@@ -1758,7 +2213,7 @@
       "type": "transform"
     },
     "relic_data": {
-      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "EXTRA_CUT", "multiply": 0.1 } ] } ]
+      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "ARMOR_CUT", "multiply": 0.1 } ] } ]
     }
   },
   {
@@ -1777,7 +2232,7 @@
       "type": "transform"
     },
     "relic_data": {
-      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "EXTRA_BULLET", "multiply": 0.1 } ] } ]
+      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "ARMOR_BULLET", "multiply": 0.1 } ] } ]
     }
   },
   {
@@ -1796,7 +2251,7 @@
       "type": "transform"
     },
     "relic_data": {
-      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "EXTRA_HEAT", "multiply": 0.1 } ] } ]
+      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "ARMOR_HEAT", "multiply": 0.1 } ] } ]
     }
   },
   {
@@ -1815,7 +2270,7 @@
       "type": "transform"
     },
     "relic_data": {
-      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "EXTRA_COLD", "multiply": 0.1 } ] } ]
+      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "ARMOR_COLD", "multiply": 0.1 } ] } ]
     }
   },
   {
@@ -1834,7 +2289,7 @@
       "type": "transform"
     },
     "relic_data": {
-      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "EXTRA_ELEC", "multiply": 0.1 } ] } ]
+      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "ARMOR_ELEC", "multiply": 0.1 } ] } ]
     }
   },
   {
@@ -1853,7 +2308,7 @@
       "type": "transform"
     },
     "relic_data": {
-      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "EXTRA_ACID", "multiply": 0.1 } ] } ]
+      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "ARMOR_ACID", "multiply": 0.1 } ] } ]
     }
   },
   {
@@ -1872,7 +2327,7 @@
       "type": "transform"
     },
     "relic_data": {
-      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "EXTRA_BIO", "multiply": 0.1 } ] } ]
+      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "ARMOR_BIO", "multiply": 0.1 } ] } ]
     }
   },
   {
@@ -2103,8 +2558,10 @@
         {
           "has": "WORN",
           "condition": "ALWAYS",
-          "mutations": [ "FASTREADER", "CLUMSY", "SLOWRUNNER", "FLIMSY3", "SKIN_ROUGH", "SLOWHEALER3", "INT_UP_3" ]
-        }
+          "mutations": [ "FASTREADER", "CLUMSY", "SLOWRUNNER", "FLIMSY3", "SKIN_ROUGH", "SLOWHEALER3" ]
+        },
+		{ "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "READING_EXP", "multiply": 0.3 } ] },
+		{ "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "LEARNING_FOCUS", "multiply": 0.3 } ] }
       ]
     }
   },

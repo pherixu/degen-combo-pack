@@ -11,7 +11,7 @@
     "difficulty": 0,
     "time": "0 s",
     "autolearn": [ [ "spellcraft", 3 ] ],
-    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "vergists_manual", 1 ] ],
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "devils_catalogue", 1 ] ],
     "components": [ [ [ "money_hundred", 333 ] ], [ [ "blood", 1 ] ] ]
   },
   {
@@ -26,7 +26,7 @@
     "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
     "time": "0 s",
     "autolearn": [ [ "spellcraft", 5 ] ],
-    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "vergists_manual", 1 ] ],
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "devils_catalogue", 1 ] ],
     "components": [ [ [ "money_hundred", 500 ] ], [ [ "blood", 1 ] ] ]
   },
   {
@@ -41,7 +41,7 @@
     "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
     "time": "0 s",
     "autolearn": [ [ "spellcraft", 7 ] ],
-    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "vergists_manual", 1 ] ],
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "devils_catalogue", 1 ] ],
     "components": [ [ [ "money_hundred", 777 ] ], [ [ "blood", 1 ] ] ]
   },
   {
@@ -56,7 +56,7 @@
     "qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
     "time": "0 s",
     "autolearn": [ [ "spellcraft", 10 ] ],
-    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "vergists_manual", 1 ] ],
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "devils_catalogue", 1 ] ],
     "components": [ [ [ "money_hundred", 1000 ] ], [ [ "blood", 1 ] ] ]
   },
   {
@@ -121,7 +121,7 @@
   {
     "id": "run_eoc_invocation",
     "type": "SPELL",
-    "name": "",
+    "name": "Invocation EOC",
     "description": "",
     "valid_targets": [ "self" ],
     "effect": "effect_on_condition",
@@ -192,8 +192,8 @@
     "name": "Summon Goblins",
     "description": "Summons an army of goblins.",
     "valid_targets": [ "ground" ],
-    "min_damage": 5,
-    "max_damage": 15,
+    "min_damage": 10,
+    "max_damage": 20,
     "max_level": 30,
     "difficulty": 5,
     "effect": "summon",
@@ -232,7 +232,7 @@
     "id": "invocation_gate",
     "type": "SPELL",
     "name": "Conjure Gate",
-    "description": "Utilitzing a massive burst of mana you conjure a translocation gate into existence.",
+    "description": "Utilitzing a massive burst of mana you translocate yourself.",
     "valid_targets": [ "ground" ],
     "effect": "ter_transform",
     "effect_str": "trans_gate_place",
@@ -270,7 +270,7 @@
     "category": "other",
     "comestible_type": "DRINK",
     "name": { "str": "laughing invocation" },
-    "description": "You hear someone laughing over your shoulder. Activate the invocation by looking over your shoulder in order to make someone invincible for 13 seconds.",
+    "description": "You hear someone laughing over your shoulder. Activate the invocation by looking over your shoulder in order to make someone disregard the physical realm for 13 seconds.",
     "weight": "1 g",
     "volume": "1 ml",
     "longest_side": "1 cm",
@@ -290,7 +290,7 @@
     "min_damage": 1,
     "max_damage": 1,
     "effect": "attack",
-    "effect_str": "debug_full_protection",
+    "effect_str": "incorporeal",
     "extra_effects": [ { "id": "run_eoc_invocation", "hit_self": true } ],
     "shape": "blast",
     "energy_source": "MANA",

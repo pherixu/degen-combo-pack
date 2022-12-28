@@ -62,7 +62,7 @@
     "symbol": "[",
     "color": "light_red",
     "material_thickness": 2,
-    "flags": [ "VARSIZE", "STURDY", "OUTER", "NONCONDUCTIVE" ],
+    "flags": [ "VARSIZE", "STURDY", "OUTER", "ELECTRIC_IMMUNE" ],
     "use_action": {
       "type": "manualnoise",
       "moves": 10,
@@ -80,7 +80,7 @@
           "has": "WORN",
           "condition": "ALWAYS",
           "values": [ { "value": "ARMOR_ELEC", "add": -10 } ],
-          "hit_you_effect": [ { "id": "smite" } ]
+          "hit_you_effect": [ { "id": "cone_smite" } ]
         }
       ]
     },

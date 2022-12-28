@@ -178,6 +178,7 @@
     "name": { "str": "nether mage of smoke" },
     "description": "Fallen prey to the magics they once wielded, this mage is some half-alive thing, animated only by the magic running through them. They seem to lose presence with each moment, less and less behind their eyes.",
     "bodytype": "human",
+	"looks_like": "mon_zombie_phase_shrike", 
     "default_faction": "nether",
     "species": [ "HORROR" ],
     "volume": "48000 ml",
@@ -263,6 +264,7 @@
     "name": { "str": "nether mage of flame" },
     "description": "Fallen prey to the magics they once wielded, this mage is some half-alive thing, animated only by the magic running through them. Flame blankets the world around them, and rage unending has taken their soul.",
     "bodytype": "human",
+	"looks_like": "fd_fire",
     "default_faction": "nether",
     "species": [ "HORROR" ],
     "volume": "48000 ml",
@@ -375,6 +377,7 @@
     "description": "Fallen prey to the magics they once wielded, this mage is some half-alive thing, animated only by the magic running through them. Gore drips from their body, all flesh slowly falling away, except their eyes. Pain is reflected deeply in their sunken, untouched eyes.",
     "bodytype": "human",
     "default_faction": "nether",
+	"looks_like": "mon_blood_sacrifice",
     "species": [ "HORROR" ],
     "volume": "48000 ml",
     "weight": "800 kg",
@@ -471,6 +474,7 @@
     "description": "Fallen prey to the magics they once wielded, this mage is some half-alive thing, animated only by the magic running through them. Bloated terribly with drained, stretched skin and wandering about in retching agony. Still, the yearn for power drives them to live and to kill.",
     "bodytype": "human",
     "default_faction": "nether",
+	"looks_like": "mon_breather_hub",
     "species": [ "HORROR" ],
     "volume": "48000 ml",
     "weight": "800 kg",
@@ -572,13 +576,13 @@
       {
         "type": "spell",
         "spell_data": { "id": "manatouched_seeker_bolts", "min_level": 1 },
-        "cooldown": 10,
+        "cooldown": 20,
         "monster_message": "The mage allows the magic trapped in him to released."
       },
       {
         "type": "spell",
         "spell_data": { "id": "summon_goblin_squad", "min_level": 1 },
-        "cooldown": 20,
+        "cooldown": 40,
         "monster_message": "The goblin mage conjures forth more imps from the darkest reach."
       }
     ],
