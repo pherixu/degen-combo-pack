@@ -1,0 +1,8 @@
+[
+  {
+    "type": "enchantment",
+    "id": "crys_puppet_aura",
+    "values": [ { "value": "STRENGTH", "add": 4 } ],
+    "has": "WIELD"
+  }
+]
