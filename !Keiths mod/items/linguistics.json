@@ -7,9 +7,11 @@
     "subcategory": "CSC_ENCHANTED_OTHER",
     "skill_used": "speech",
     "difficulty": 1,
+	"skills_required": [ "spellcraft", 1 ],
     "time": "1 m",
+	"flags": [ "UNCRAFT_LIQUIDS_CONTAINED" ],
     "autolearn": true,
-    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "wayward_memory_STW", 1 ], [ "devils_catalogue", 1 ] ],
+    "book_learn": [ [ "wayward_memory_STW", 1 ] ],
     "components": [ [ [ "money_hundred", 1 ] ], [ [ "cards_magic", 1 ] ], [ [ "flask_glass", 1 ] ] ]
   },
   {
@@ -19,10 +21,12 @@
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_OTHER",
     "skill_used": "speech",
+	"skills_required": [ "spellcraft", 5 ],
+	"flags": [ "UNCRAFT_LIQUIDS_CONTAINED" ],
     "difficulty": 5,
     "time": "1 m",
     "autolearn": true,
-    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "wayward_memory_THC", 1 ], [ "devils_catalogue", 1 ] ],
+    "book_learn": [ [ "wayward_memory_THC", 1 ] ],
     "components": [ [ [ "money_strap_hundred", 1 ] ], [ [ "white_pen_ink", 1 ] ], [ [ "flask_glass", 1 ] ] ]
   },
   {
@@ -32,10 +36,12 @@
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_OTHER",
     "skill_used": "speech",
+	"skills_required": [ "spellcraft", 10 ],
+	"flags": [ "UNCRAFT_LIQUIDS_CONTAINED" ],
     "difficulty": 10,
     "time": "1 m",
     "autolearn": true,
-    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "wayward_memory_FT", 1 ], [ "devils_catalogue", 1 ] ],
+    "book_learn": [ [ "wayward_memory_FT", 1 ] ],
     "components": [ [ [ "money_bundle_hundred", 1 ] ], [ [ "crystallized_ink", 1 ] ], [ [ "flask_glass", 1 ] ] ]
   },
   {

@@ -592,7 +592,7 @@
     "vision_day": 25,
     "vision_night": 25,
     "special_attacks": [ [ "STARE", 12 ] ],
-    "emit_fields": [ { "emit_id": "emit_smoke_plume", "delay": "10 s" }, { "emit_id": "emit_clairvoyant", "delay": "1 s" } ],
+    "emit_fields": [ { "emit_id": "emit_smoke_plume", "delay": "10 s" } ],
     "harvest": "exempt",
     "death_function": {
       "effect": { "id": "smoke_death_summon", "hit_self": true },
@@ -633,7 +633,6 @@
     "emit_fields": [
       { "emit_id": "emit_hot_air2_stream", "delay": "4 s" },
       { "emit_id": "emit_flame", "delay": "30 s" },
-	  { "emit_id": "emit_clairvoyant", "delay": "1 s" },
       { "emit_id": "emit_smoke_plume", "delay": "10 s" }
     ],
     "harvest": "exempt",
@@ -673,7 +672,7 @@
     "vision_day": 25,
     "vision_night": 25,
     "special_attacks": [ [ "STARE", 12 ] ],
-    "emit_fields": [ { "emit_id": "emit_bile", "delay": "4 s" }, { "emit_id": "emit_clairvoyant", "delay": "1 s" } ],
+    "emit_fields": [ { "emit_id": "emit_bile", "delay": "4 s" } ],
     "harvest": "exempt",
     "death_function": {
       "effect": { "id": "bile_death_summon", "hit_self": true },

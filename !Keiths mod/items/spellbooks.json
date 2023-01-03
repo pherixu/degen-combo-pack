@@ -38,7 +38,7 @@
     "type": "BOOK",
     "category": "manuals",
     "name": { "str": "Cartoonish Wizard's Catalogue", "str_pl": "copies of Cartoonish Wizard's Catalogue" },
-    "description": "An incredibly heavy paper book with a cartoonish wizard on the front. The wizard smiles widely, gesturing for the reader to open the book and see what's inside. The rest of the booklet is filled with flamboyant advertisements for magical trinkets and so-such that this wizard would accept cash as payment for. At the end, it describes a brief ritual for constructing one of his 'shops,' which of course involves more cash. Otherwise, you can just order them through the catalogue.",
+    "description": "An incredibly heavy paper book with a cartoonish wizard on the front. The wizard smiles widely, gesturing for the reader to open the book and see what's inside. The rest of the booklet is filled with flamboyant advertisements for magical trinkets and so-such for which this wizard would accept cash as payment. At the end, it describes a brief ritual for constructing one of his 'shops', or you can just order directly through the catalogue.",
     "weight": "20000 g",
     "volume": "600 ml",
     "price": 25000,

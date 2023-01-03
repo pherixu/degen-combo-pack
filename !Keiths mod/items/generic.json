@@ -25,6 +25,17 @@
   },
   {
     "type": "construction",
+    "id": "constr_stone_altar",
+    "group": "build_stone_altar",
+    "category": "FURN",
+    "required_skills": [ [ "spellcraft", 5 ], [ "fabrication", 3 ] ],
+    "time": "6 h",
+    "components": [ [ [ "skull_human", 3 ] ], [ [ "rock_large", 3 ] ], [ [ "blood", 3 ] ] ],
+    "pre_terrain": "t_pit",
+    "post_terrain": "f_altar"
+  },
+  {
+    "type": "construction",
     "id": "constr_stone_altar2",
     "group": "build_stone_altar",
     "category": "FURN",
@@ -33,30 +44,6 @@
     "components": [ [ [ "glow_dust", 3 ] ], [ [ "dragon_blood", 10 ] ], [ [ "crystallized_mana", 333 ] ], [ [ "enchanted_wood", 25 ] ] ],
     "pre_terrain": "f_glow_boulder",
     "post_terrain": "f_altar_of_power"
-  },
-  {
-    "type": "construction",
-    "id": "constr_stone_altar",
-    "group": "build_stone_altar",
-    "category": "FURN",
-    "required_skills": [ [ "spellcraft", 5 ], [ "fabrication", 3 ] ],
-    "time": "6 h",
-    "components": [ [ [ "skull_human", 3 ] ], [ [ "tear_of_child", 3 ] ], [ [ "rock_large", 7 ] ], [ [ "blood", 13 ] ] ],
-    "pre_terrain": "t_pit",
-    "post_terrain": "f_altar"
-  },
-  {
-    "type": "construction",
-    "id": "constr_stone_altar_money",
-    "group": "build_stone_altar",
-    "category": "FURN",
-    "required_skills": [ [ "spellcraft", 5 ] ],
-    "time": "1 h",
-    "components": [ [ [ "money_strap_hundred", 5 ] ] ],
-    "pre_special": "check_empty",
-    "post_flags": [ "keep_items" ],
-    "dark_craftable": true,
-    "post_terrain": "f_altar"
   },
   {
     "id": "fake_altar",
@@ -156,7 +143,7 @@
     "category": "FURN",
     "required_skills": [ [ "spellcraft", 7 ], [ "fabrication", 7 ], [ "chemistry", 7 ] ],
     "time": "12 h",
-    "components": [ [ [ "skull_human", 33 ], [ "dragon_essence", 3 ], [ "crystallized_mana", 1000 ], [ "money_hundred", 1000 ] ] ],
+  "components": [ [ [ "skull_human", 33 ],  [ "dragon_essence", 33 ] ], [ [ "crystallized_mana", 1000 ], [ "money_hundred", 1000 ] ] ],
     "pre_terrain": "f_altar_of_power",
     "post_terrain": "f_altar_of_essence"
   },
@@ -216,6 +203,21 @@
     },
     "examine_action": "workbench",
     "workbench": { "multiplier": 2.5, "mass": 900000, "volume": "100L" }
+  },
+  {
+    "type": "GENERIC",
+    "id": "money_strap_hundred",
+    "name": { "str": "hundred-dollar currency strap" },
+    "description": "A hundred hundred-dollar bills held together by a mustard currency strap. Most people have figured out by now that if you offer it as payment, a creature will come to your aid.",
+    "looks_like": "money_strap_one",
+    "copy-from": "money_strap_one",
+    "color": "green",
+    "symbol": "$",
+	"use_action": [ 
+	{ "type": "cast_spell", "spell_id": "use_strap", "no_fail": true, "level": 1, "need_wielding": true }
+	],
+    "price": 1000000,
+    "price_postapoc": 100
   },
   {
     "id": "syringe",
@@ -1651,6 +1653,7 @@
     "base_casting_time": 0,
     "min_damage": 5000,
     "max_damage": 5000,
+	"components": "spell_components_decaying_soul",
     "max_level": 1,
     "base_energy_cost": 0,
     "difficulty": 4
@@ -1842,7 +1845,7 @@
     "category": "other",
     "comestible_type": "MED",
     "name": { "str": "steeped soul of a lost mage" },
-    "description": "A dimly glowing soul, slowly turning over and over in itself. This soul is heavy with a life of pain. A skilled mage could siphon more mana from it. Using it will increase your maximum mana by 50.",
+    "description": "A dimly glowing soul, slowly turning over and over in itself. This soul is heavy with a life of pain. A skilled mage could siphon more mana from it. Using it will increase your maximum mana and your Intelligence.",
     "weight": "100 g",
     "volume": "10 ml",
     "longest_side": "1 cm",
@@ -1898,7 +1901,7 @@
     "category": "other",
     "comestible_type": "MED",
     "name": { "str": "soaked soul of a lost mage" },
-    "description": "A dimly glowing soul, slowly turning over and over in itself. This soul is leaking magic, but perhaps a more skilled wizard could wrench even more mana from it... Using it will increase your maximum mana by 150.",
+    "description": "A dimly glowing soul, slowly turning over and over in itself. This soul is leaking magic, but perhaps a more skilled wizard could wrench even more mana from it... Using it will increase your maximum mana and your Intelligence",
     "weight": "500 g",
     "volume": "10 ml",
     "longest_side": "1 cm",
@@ -1954,7 +1957,7 @@
     "category": "other",
     "comestible_type": "MED",
     "name": { "str": "drenched soul of a lost mage" },
-    "description": "A dimly glowing soul, slowly turning over and over in itself. It is absolutely drenched in magic. No mage could tear more magic from it. Using it will increase your maximum mana by 300.",
+    "description": "A dimly glowing soul, slowly turning over and over in itself. It is absolutely drenched in magic. No mage could tear more magic from it. Using it will increase your maximum mana and your Intelligence",
     "weight": "1000 g",
     "volume": "10 ml",
     "longest_side": "1 cm",
@@ -2218,7 +2221,7 @@
     "type": "AMMO",
     "ammo_type": "brimstone_ammo",
     "name": { "str": "tear of a child" },
-    "description": "A lone tear, glistening so brightly that it could only drop from the innocent eye of a child. Essentially sadness. Use it to gain some of their mana.",
+    "description": "A lone tear, glistening so brightly that it could only drop from the innocent eye of a child. Essentially sadness. Crush in in the palm of your hand to stave off the encroaching tide of apathy.",
     "weight": "1 g",
     "volume": "10 ml",
     "count": 1,

@@ -20,6 +20,16 @@
     "components": [ [ [ "cards_magic", 1 ], [ "money_hundred", 33 ], [ "ring_signet", 1 ] ] ]
   },
   {
+    "id": "spell_components_decaying_soul",
+    "type": "requirement",
+    "components": [ [ [ "decaying_soul", 1 ] ] ]
+  },
+  {
+    "id": "spell_components_use_strap",
+    "type": "requirement",
+    "components": [ [ [ "money_strap_hundred", 1 ] ] ]
+  },
+  {
     "id": "spell_components_coldlight_flashbang",
     "type": "requirement",
     "components": [ [ [ "money_hundred", 50 ], [ "armor_frost", 1 ], [ "shield_ice", 1 ], [ "ice_gliders", 1 ], [ "spell_scroll_brain_freeze", 1 ], [ "ring_signet", 1 ] ] ]

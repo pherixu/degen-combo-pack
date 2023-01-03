@@ -805,10 +805,9 @@
         "gloves_light",
         "mask_ski",
         "swag_bag",
-        "crowbar",
         "hacksaw",
         "wristwatch",
-        "boltcutters",
+        "grapnel",
         "stethoscope"
       ],
       "male": [ "briefs" ],

@@ -375,7 +375,7 @@
         [ "wash_kit_magic", 5 ],
         [ "clay_golem_token", 1 ],
 		[ "unending_tape", 5],
-        [ "gate_token", 1 ],
+        [ "gate_token", 10 ],
         [ "bag_of_rocks", 10 ],
         { "group": "unendingpens", "prob": 35 },
         { "group": "spellbook_loot_0", "prob": 10 },
@@ -450,6 +450,28 @@
   },
   {
     "type": "item_group",
+    "id": "potions_rare",
+    "copy-from": "potions_rare",
+    "extend": {
+      "items": [ [ "gate_token", 1 ], [ "scroll_token", 1 ], [ "boss_token", 1 ], [ "ship_token", 1 ], [ "semi_truck_token", 1 ], [ "mojocycle_token", 1 ], [ "linguistics_lesson_one", 1 ], [ "linguistics_lesson_two", 1 ], [ "linguistics_lesson_three", 1 ] ]
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "mail",
+    "copy-from": "mail",
+	"subtype": "distribution",
+    "extend": { "entries": [ { "group": "spell_scroll_tier_0", "prob": 5 }, { "group": "spell_scroll_tier_1", "prob": 1 } ] }
+  },
+  {
+    "type": "item_group",
+    "id": "mail_postal",
+    "copy-from": "mail_postal",
+	"subtype": "collection",
+    "extend": { "entries": [ { "group": "spellbook_loot_0", "prob": 5 }, { "group": "spellbook_loot_1", "prob": 1 } ] }
+  },
+  {
+    "type": "item_group",
     "id": "trash",
     "copy-from": "trash",
     "extend": {
@@ -511,9 +533,10 @@
       { "item": "brimstone_sliver", "prob": 10 },
       { "item": "brimstone_chunk", "prob": 1 },
       { "item": "chunk_sulfur", "count": [ 0, 3 ], "prob": 20 },
-      { "item": "decaying_soul", "prob": 7 },
+      { "item": "decaying_soul", "prob": 5 },
+	  { "group": "enchanted_misc", "prob": 1 },
       { "item": "twisted_soul", "prob": 5 },
-      { "item": "antoninianus", "prob": 5 }
+      { "item": "antoninianus", "prob": 100, "count": [ 1, 2 ] }
     ]
   },
   {
