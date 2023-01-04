@@ -43,11 +43,37 @@
             { "value": "MAX_STAMINA", "add": 250 },
             { "value": "METABOLISM", "add": -5 },
             { "value": "FATIGUE", "add": -15 },
+            { "value": "PAIN", "add": -150 },
             { "value": "CARRY_WEIGHT", "add": 25 }
           ]
         }
       ]
   }
+  },
+  {
+    "type": "enchantment",
+    "id": "crys_puppet_aura",
+     "values": [
+            { "value": "MAX_MANA", "add": 500 },
+			{ "value": "ARMOR_BASH", "add": 8 },
+			{ "value": "ARMOR_CUT", "add": 14 },
+			{ "value": "ARMOR_STAB", "add": 14 },
+			{ "value": "ARMOR_HEAT", "add": 20 },
+			{ "value": "MELEE_DAMAGE", "add": 28 },
+			{ "value": "ARMOR_BULLET", "add": 55 },
+            { "value": "STRENGTH", "add": 1 },
+            { "value": "DEXTERITY", "add": 2 },
+            { "value": "BONUS_BLOCK", "add": 4 },
+            { "value": "BONUS_DODGE", "add": 4 },
+            { "value": "SPEED", "add": 20 },
+            { "value": "MAX_STAMINA", "add": 1500 },
+            { "value": "REGEN_STAMINA", "add": 25 },
+            { "value": "MAX_HP", "add": 10 },
+            { "value": "METABOLISM", "add": -20 },
+            { "value": "FATIGUE", "add": -60 },
+            { "value": "CARRY_WEIGHT", "multiply": 1.25 }
+          ],
+    "has": "WIELD"
   },
   
   {
@@ -85,20 +111,20 @@
     ],
 	"relic_data": {
       "passive_effects": [
-	  { "id": "AEP_STR_UP" },
+	  { "id": "crys_puppet_aura" },
         {
           "values": [
             { "value": "MAX_MANA", "add": 500 },
-			{ "value": "ARMOR_BASH", "add": 8 },
-			{ "value": "ARMOR_CUT", "add": 14 },
-			{ "value": "ARMOR_STAB", "add": 14 },
-			{ "value": "ARMOR_HEAT", "add": 20 },
-			{ "value": "MELEE_DAMAGE", "add": 28 },
-			{ "value": "ARMOR_BULLET", "add": 55 },
+			{ "value": "ARMOR_BASH", "add": 2 },
+			{ "value": "ARMOR_CUT", "add": 8 },
+			{ "value": "ARMOR_STAB", "add": 8 },
+			{ "value": "ARMOR_HEAT", "add": 10 },
+			{ "value": "MELEE_DAMAGE", "add": 8 },
+			{ "value": "ARMOR_BULLET", "add": 25 },
             { "value": "STRENGTH", "add": 1 },
             { "value": "DEXTERITY", "add": 2 },
-            { "value": "BONUS_BLOCK", "add": 4 },
-            { "value": "BONUS_DODGE", "add": 4 },
+            { "value": "BONUS_BLOCK", "add": 2 },
+            { "value": "BONUS_DODGE", "add": 2 },
             { "value": "SPEED", "add": 20 },
             { "value": "MAX_STAMINA", "add": 1500 },
             { "value": "REGEN_STAMINA", "add": 25 },
