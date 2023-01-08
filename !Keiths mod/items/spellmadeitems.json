@@ -899,7 +899,7 @@
     "symbol": "[",
     "color": "white",
     "use_action": { "type": "cast_spell", "spell_id": "sacred_chain_freeze", "no_fail": true, "level": 1, "need_worn": true },
-    "flags": [ "SUPER_FANCY", "NO_WEAR_EFFECT" ]
+    "flags": [ "SUPER_FANCY" ]
   },
   {
     "id": "minute_orrery",
@@ -923,7 +923,7 @@
       }
     ],
     "use_action": { "type": "cast_spell", "spell_id": "minute_orrery_gambit", "no_fail": true, "level": 1, "need_worn": true },
-    "flags": [ "BELTED", "NO_WEAR_EFFECT", "OVERSIZE", "SUPER_FANCY" ]
+    "flags": [ "BELTED", "OVERSIZE", "SUPER_FANCY" ]
   },
   {
     "id": "chained_orrery",
@@ -938,7 +938,7 @@
     "looks_like": "silver_necklace",
     "color": "brown",
     "use_action": { "type": "cast_spell", "spell_id": "chained_orrery_time_stop", "no_fail": true, "level": 1, "need_worn": true },
-    "flags": [ "NO_WEAR_EFFECT", "SUPER_FANCY", "LIGHT_10" ]
+    "flags": [ "SUPER_FANCY", "LIGHT_10" ]
   },
   {
     "id": "estrangement_aura",

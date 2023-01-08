@@ -639,6 +639,42 @@
   {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
+    "result": "scroll_token",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft",
+    "difficulty": 10,
+	"flags": [ "UNCRAFT_LIQUIDS_CONTAINED" ],
+    "qualities": [ { "id": "POWER_ALTAR", "level": 4 } ],
+    "time": "1 h",
+	"autolearn": false,
+    "book_learn": [ [ "sunandmoon", 1 ] ],
+    "components": [
+      [ [ "paper", 500 ] ],
+      [ [ "white_pen_ink", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "money_strap_hundred",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft",
+    "difficulty": 10,
+	"autolearn": false,
+	"flags": [ "UNCRAFT_LIQUIDS_CONTAINED" ],
+    "qualities": [ { "id": "POWER_ALTAR", "level": 4 } ],
+    "time": "1 h",
+    "book_learn": [ [ "sunandmoon", 1 ] ],
+    "components": [
+      [ [ "paper", 500 ] ],
+      [ [ "white_pen_ink", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
     "result": "vergists_manual",
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_OTHER",
@@ -2805,8 +2841,8 @@
     "time": "0 s",
     "autolearn": true,
     "byproducts": [ [ "decaying_soul", 2 ] ],
-    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "decoy_elfa" ] ],
-    "components": [ [ [ "twisted_soul", 1 ], [ "white_pen_ink", 3 ] ] ]
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "decoy_elfa" ], [ "occult_economicon" ] ],
+    "components": [ [ [ "twisted_soul", 1 ], [ "white_pen_ink", 3 ], [ "brimstone_chunk", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -2848,6 +2884,25 @@
   {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
+    "result": "crystal_ball",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+	"autolearn": false,
+    "difficulty": 7,
+    "qualities": [ { "id": "MANA_FOCUS", "level": 1 }, { "id": "MANA_INFUSE", "level": 1 }, { "id": "MANA_WEAVE", "level": 1 }, { "id": "POWER_ALTAR", "level": 2 } ],
+    "time": "24 h", 
+    "book_learn": [ [ "transient_crystal_ball", 1 ], [ "wayward_memory_OLAF", 1 ] ],
+    "components": [
+      [ [ "transient_crystal_ball", 1 ] ],
+	  [ [ "twisted_soul", 1 ], [ "cleansed_soul", 1 ] ],
+      [ [ "crystallized_mana", 333 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
     "result": "bluesteel_longsword",
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_OTHER",
@@ -2865,7 +2920,7 @@
       { "proficiency": "prof_bladesmith" },
       { "proficiency": "prof_carving", "time_multiplier": 1.2, "fail_multiplier": 1, "learning_time_multiplier": 0.2 }
     ],
-    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "wayward_memory_OLAF", 1 ] ],
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "wayward_memory_HECVW", 1 ] ],
     "components": [
       [ [ "orichalcum_ingot", 7 ] ],
       [ [ "mithril_ingot", 1 ] ],
@@ -2895,7 +2950,7 @@
       { "proficiency": "prof_bladesmith" },
       { "proficiency": "prof_carving", "time_multiplier": 1.2, "fail_multiplier": 1, "learning_time_multiplier": 0.2 }
     ],
-    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "wayward_memory_OLAF", 1 ] ],
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "wayward_memory_BAAA", 1 ] ],
     "components": [
       [ [ "orichalcum_ingot", 7 ] ],
       [ [ "mithril_ingot", 1 ] ],
@@ -2925,7 +2980,7 @@
       { "proficiency": "prof_bladesmith" },
       { "proficiency": "prof_carving", "time_multiplier": 1.2, "fail_multiplier": 1, "learning_time_multiplier": 0.2 }
     ],
-    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "wayward_memory_OLAF", 1 ] ],
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "wayward_memory_BYA", 1 ] ],
     "components": [
       [ [ "orichalcum_ingot", 7 ] ],
       [ [ "mithril_ingot", 1 ] ],

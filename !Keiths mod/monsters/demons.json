@@ -475,15 +475,15 @@
     "id": "open_tindalos_rift",
     "name": { "str": "Tindalos Rift" },
     "description": "",
-    "valid_targets": [ "ground" ],
+    "valid_targets": [ "ground", "field" ],
     "max_level": 1,
-    "flags": [ "VERBAL", "SOMATIC", "NO_LEGS", "RANDOM_TARGET" ],
-    "min_aoe": 0,
-    "max_aoe": 0,
+    "flags": [ "NO_LEGS", "RANDOM_TARGET", "NO_PROJECTILE", "IGNORE_WALLS" ],
+    "min_aoe": 1,
+    "max_aoe": 1,
     "base_casting_time": 0,
     "base_energy_cost": 0,
-    "min_range": 0,
-    "max_range": 20,
+    "min_range": 1,
+    "max_range": 5,
     "difficulty": 0,
     "effect": "attack",
     "shape": "blast",
@@ -491,14 +491,21 @@
     "field_id": "fd_tindalos_rift",
     "min_duration": 1000,
     "max_duration": 1000,
-    "min_field_intensity": 2,
-    "max_field_intensity": 2
+    "min_field_intensity": 3,
+    "max_field_intensity": 3
+  },
+  {
+    "id": "emit_tindalos_rift",
+    "type": "emit",
+    "field": "fd_tindalos_rift",
+    "intensity": 3,
+    "qty": 2
   },
   {
     "id": "mon_demon_portal",
     "type": "MONSTER",
-    "name": "Portal of Brimstone",
-    "description": "A portal that seems to be spewing demons.",
+    "name": "Glimpse of Brimstone",
+    "description": "An extremely odd fractal division in the air that seems to split itself into pieces. This 'thing' moves on as it's pieces combust, foul creatures falling from their corpses.",
     "default_faction": "magical_beast",
     "bodytype": "blob",
     "species": [ "HORROR" ],
@@ -508,7 +515,7 @@
     "volume": "30000 ml",
     "weight": "40750 g",
     "hp": 100,
-    "speed": 0,
+    "speed": 100,
     "symbol": ".",
     "color": "red",
     "aggression": 100,
@@ -518,45 +525,16 @@
     "armor_fire": 999,
     "melee_dice_sides": 1,
     "melee_damage": [ { "damage_type": "pure", "amount": 5 } ],
-    "dodge": 5,
+    "dodge": 0,
+	"emit_fields": [
+      { "emit_id": "emit_tindalos_rift", "delay": "30 s" }
+    ],
     "vision_day": 25,
     "vision_night": 25,
-    "special_attacks": [
-      {
-        "type": "spell",
-        "spell_data": { "id": "summon_demons", "min_level": 1 },
-        "cooldown": 20,
-        "monster_message": "The portal screeches and demons pour out."
-      }
-    ],
     "harvest": "exempt",
-    "death_function": { "effect": { "id": "summon_demons" }, "corpse_type": "NO_CORPSE", "message": "The % melts away." },
+    "death_function": { "effect": { "id": "summon_flame" }, "corpse_type": "NO_CORPSE", "message": "The portal shrieks and dissipates." },
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "STALK", "PLAYER_WEAK", "PLAYER_CLOSE" ],
-    "flags": [ "SEES", "IMMOBILE", "RANGED_ATTACKER" ]
-  },
-  {
-    "id": "summon_demons",
-    "type": "SPELL",
-    "name": "Hellfire Task Squadron",
-    "description": "Survival not guaranteed.",
-    "valid_targets": [ "ground" ],
-    "min_damage": 1,
-    "max_damage": 2,
-    "min_range": 10,
-    "max_range": 10,
-    "min_aoe": 5,
-    "max_aoe": 5,
-    "base_casting_time": 0,
-    "energy_source": "MANA",
-    "max_level": 10,
-    "difficulty": 6,
-    "min_duration": 120000,
-    "max_duration": 120000,
-    "base_energy_cost": 500,
-    "flags": [ "HOSTILE_SUMMON", "RANDOM_TARGET", "RANDOM_DAMAGE", "NO_PROJECTILE", "PERMANENT", "SPAWN_GROUP" ],
-    "shape": "blast",
-    "effect": "summon",
-    "effect_str": "GROUP_DEMONS"
+    "flags": [ "SEES", "RANGED_ATTACKER", "IMMOBILE", "NOHEAD", "FLIES", "HARDTOSHOOT", "NO_BREATHE" ]
   },
   {
     "id": "mon_atraxa",
@@ -698,7 +676,7 @@
       {
         "type": "spell",
         "spell_data": { "id": "dune", "min_level": 1 },
-        "cooldown": 100,
+        "cooldown": 50,
         "monster_message": "The nephilims stomach sack engorges and it rears open it's mouth for more to be added to the brood, already lashing out for something to eat. They slither and claw out of it's throat fully grown and hunting for more."
       }
     ],

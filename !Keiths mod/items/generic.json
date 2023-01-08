@@ -205,6 +205,89 @@
     "workbench": { "multiplier": 2.5, "mass": 900000, "volume": "100L" }
   },
   {
+    "type": "construction",
+    "id": "constr_stone_altar4",
+    "group": "build_stone_altar",
+    "category": "FURN",
+    "required_skills": [ [ "spellcraft", 10 ], [ "fabrication", 10 ] ],
+    "time": "12 h",
+  "components": [ [ [ "impression_cylinder", 1 ] ], [ [ "crystallized_mana", 1000 ], [ "money_hundred", 1000 ] ] ],
+    "pre_terrain": "f_altar_of_essence",
+    "post_terrain": "f_altar_of_essence"
+  },
+  {
+    "id": "fake_scroll_printer",
+    "type": "TOOL",
+    "name": { "str": "fake altar (pseudo item)", "str_pl": "fake altar (pseudo items)" },
+    "description": "Pseudo item for the altar of power.",
+    "weight": "1 g",
+    "volume": "1 ml",
+    "symbol": "[",
+    "color": "dark_gray",
+    "qualities": [ [ "POWER_ALTAR", 4 ] ],
+    "flags": [ "TRADER_AVOID" ]
+  },
+  {
+    "id": "impression_cylinder",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "impression cylinder" },
+    "description": "The core of an infernal press that's been ripped straight out. Now that you're looking at it, you can tell it's just made of brimstone and crystallized mana, mixed so perfectly they're nearly indistinguishable. It radiates with magical energy, only some of it pure.",
+    "weight": "150 g",
+    "volume": "150 ml",
+    "longest_side": "12 cm",
+    "price": 2000000,
+    "material": [ "brimstone" ],
+    "symbol": "B",
+    "color": "red"
+  },
+  {
+    "type": "furniture",
+    "id": "f_scroll_printer",
+    "name": "infernal press",
+    "description": "A dastardly machine containing an element capable of turning regular paper into liquid magic. If only you knew how to do so...",
+    "symbol": "0",
+    "bgcolor": "white",
+    "move_cost_mod": 2,
+    "coverage": 60,
+    "required_str": -1,
+    "crafting_pseudo_item": "f_orrery",
+    "looks_like": "f_standing_tank",
+    "emissions": [ "emit_glimmer" ],
+    "flags": [ "TRANSPARENT", "PLACE_ITEM", "MOUNTABLE", "FLAT_SURF", "USABLE_FIRE" ],
+    "deconstruct": {
+      "items": [
+        { "item": "pipe", "count": [ 6, 12 ] },
+		{ "item": "impression_cylinder" },
+        { "item": "cu_pipe", "count": [ 1, 4 ] },
+        { "item": "cable", "charges": [ 1, 4 ] },
+        { "item": "epoxy_chunk", "count": [ 50, 75 ] },
+        { "item": "blood", "count": [ 10, 20 ] },
+        { "item": "sheet_metal", "count": [ 1, 2 ] },
+        { "item": "sheet_metal_small", "count": [ 0, 4 ] }
+      ]
+    },
+    "max_volume": "1750 L",
+    "bash": {
+      "str_min": 35,
+      "str_max": 80,
+      "sound": "metal screeching!",
+      "sound_fail": "clang!",
+      "items": [
+        { "item": "scrap", "count": [ 2, 8 ] },
+        { "item": "steel_chunk", "count": [ 2, 4 ] },
+        { "item": "sheet_metal_small", "count": [ 6, 10 ] },
+        { "item": "epoxy_chunk", "count": [ 30, 50 ] },
+        { "item": "pipe", "count": 1 },
+        { "item": "blood", "count": [ 10, 20 ] },
+        { "item": "cable", "charges": [ 1, 3 ] },
+        { "item": "cu_pipe", "count": 1 }
+      ]
+    },
+    "examine_action": "workbench",
+    "workbench": { "multiplier": 2.5, "mass": 900000, "volume": "100L" }
+  },
+  {
     "type": "GENERIC",
     "id": "money_strap_hundred",
     "name": { "str": "hundred-dollar currency strap" },
@@ -250,7 +333,7 @@
     "type": "ARMOR",
 	"copy-from": "ring_signet",
     "name": { "str": "signet ring" },
-    "description": "A gold and silver ring with a wide stamp attached to the band.  A long time ago, the stamp was legible, but now the pattern is too worn to discern its former use.",
+    "description": "A gold and silver ring with a wide stamp attached to the band.  A long time ago, the stamp was legible, but now the patterns have faded into each other.",
     "weight": "14 g",
     "volume": "1 ml",
     "price": 10000,
@@ -259,11 +342,11 @@
     "symbol": "[",
     "color": "yellow",
     "sided": true,
-	 "use_action": [ 
-	{ "type": "cast_spell", "spell_id": "translocate_self", "no_fail": true, "level": 1, "need_wielding": true }
+	"use_action": [ 
+	{ "type": "cast_spell", "spell_id": "use_ring_signet", "no_fail": true, "level": 1, "need_worn": true }
 	],
     "armor": [ { "coverage": 0, "covers": [ "hand_l", "hand_r" ], "specifically_covers": [ "hand_fingers_l", "hand_fingers_r" ] } ],
-    "flags": [ "FANCY", "NO_WEAR_EFFECT", "SKINTIGHT", "SINGLE_USE", "ONE_PER_LAYER", "ALLOWS_NATURAL_ATTACKS" ]
+    "flags": [ "FANCY", "SKINTIGHT", "SINGLE_USE", "ONE_PER_LAYER", "ALLOWS_NATURAL_ATTACKS" ]
   },
   {
     "id": "crystallized_ink",

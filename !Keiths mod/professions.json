@@ -836,7 +836,7 @@
     "id": "drunkard",
     "name": "Useless Drunk",
     "description": "Gotta fin' sometin ta drink...",
-    "points": 1,
+    "points": 0,
     "items": {
       "both": { "items": [ "house_coat", "flask_hip", "slippers", "energy_in_combat" ] },
       "male": [ "boxer_shorts" ],
@@ -853,7 +853,7 @@
     "points": -1,
     "items": {
       "both": {
-        "items": [ "hoodie", "pact_of_flame", "socks", "sneakers", "wristwatch", "money_strap_hundred" ],
+        "items": [ "hoodie", "pact_of_flame", "socks", "sneakers", "wristwatch", "spell_scroll_wicked_ritual", "money_strap_hundred" ],
         "entries": [ { "item": "onyx_silver_earring", "variant": "dark_earring" }, { "item": "onyx_silver_ring", "variant": "dark_ring" } ]
       },
       "male": [ "jeans", "tank_top", "boxer_shorts" ],

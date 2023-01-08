@@ -1298,6 +1298,64 @@
     "armor": [ { "coverage": 100, "covers": [ "hand_l", "hand_r" ], "specifically_covers": [ "hand_wrist_l", "hand_wrist_r" ] } ]
   },
   {
+    "id": "bangles_of_kelk",
+    "type": "ARMOR",
+    "name": { "str": "Bangles of Kelkemmemmnon" },
+    "description": "A set of fancy golden bracelets that are worn around either arm, warm to the touch and faintly glowing with light. Activate them to call down flames from the sky.",
+    "weight": "40 g",
+    "volume": "25 ml",
+    "price": 500000,
+    "material": [ "gold" ],
+    "symbol": "[",
+    "color": "yellow",
+    "sided": true,
+	"use_action": { "type": "cast_spell", "spell_id": "artillery_flame_bangles", "no_fail": true, "level": 10, "need_worn": true },
+	"relic_data": {
+      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "ARMOR_HEAT", "add": 25 } ] } ]
+    },
+    "armor": [
+      {
+        "encumbrance": 0,
+        "coverage": 1,
+        "covers": [ "hand_l", "hand_r" ],
+        "specifically_covers": [ "hand_wrist_l", "hand_wrist_r" ]
+      }
+    ],
+    "flags": [ "FANCY", "BELTED", "OVERSIZE", "LIGHT_10" ]
+  },
+  {
+    "id": "ball_of_azarkan",
+    "type": "ARMOR",
+    "name": { "str": "Orb of Azarkan" },
+    "description": "A small orb of cool light that forms to the pommel of a blade, magically attaching it to your back. Activate it to gaze into the orb and gain insight...",
+    "weight": "1 g",
+    "volume": "1 ml",
+    "price": 500000,
+    "bashing": 4,
+    "material": [ "gold" ],
+    "symbol": "[",
+    "looks_like": "baldric",
+    "color": "brown",
+    "material_thickness": 1,
+	"use_action": [
+	{ "type": "cast_spell", "spell_id": "scrying_no_comp", "no_fail": true, "level": 1, "need_worn": true }, 
+	{ "type": "holster", "holster_prompt": "Sheath sword", "holster_msg": "The orb settles unto your blade, magically attaching it to your back." }
+	],
+    "pocket_data": [
+      {
+        "magazine_well": "17500 ml",
+        "max_contains_volume": "37500 ml",
+        "max_contains_weight": "50 kg",
+        "max_item_length": "1800 cm",
+        "holster": true,
+        "moves": 50,
+        "flag_restriction": [ "SHEATH_SWORD" ]
+      }
+    ],
+    "flags": [ "BELTED", "OVERSIZE", "WATER_FRIENDLY", "LIGHT_10", "TARDIS", "ZERO_WEIGHT" ],
+    "armor": [ { "encumbrance": 0, "coverage": 1, "covers": [ "torso" ], "specifically_covers": [ "torso_hanging_back" ] } ]
+  },
+  {
     "id": "teddy",
     "name": "teddy bear",
     "copy-from": "teddy",
@@ -1306,8 +1364,7 @@
     "charges_per_use": 5,
     "description": "An old and half rotten teddy bear. Looks like this one commemorates the grave of the child who once owned it. If it had a soul, who knows what power it might hold over children? Just a thought.",
     "use_action": { "type": "cast_spell", "spell_id": "bend_will_item_spell_teddy", "no_fail": true, "level": 1, "need_worn": true },
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "decaying_soul_ammo": 5 } } ],
-    "relic_data": { "charge_info": { "recharge_type": "periodic", "time": "10 h", "regenerate_ammo": true } }
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "decaying_soul_ammo": 5 } } ]
   },
   {
     "id": "sf_watch_stasis",
@@ -1390,11 +1447,42 @@
     ]
   },
   {
+    "id": "transient_crystal_ball",
+    "type": "BOOK",
+    "category": "manuals",
+    "name": { "str": "Transient Crystal Ball" },
+    "description": "You're not sure if this thing is really here or if you're just seeing it. It feels so familiar, like you've already looked for so long. You feel that there must be some way to bring it to life...",
+    "weight": "70 g",
+    "volume": "200 ml",
+    "longest_side": "24 cm",
+    "price": 10000,
+	"flags": [ "SEMITANGIBLE" ],
+    "material": [ "glass" ],
+    "symbol": "o",
+    "color": "white"
+  },
+  {
+    "id": "crystal_ball",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "Crystal Ball" },
+    "description": "An apparatus renowned amongst wizards for ages. Taking time to gaze deep into it allows you to see places far, far away...",
+    "weight": "70 g",
+    "volume": "200 ml",
+    "longest_side": "24 cm",
+    "price": 100000,
+	"flags": [ "LIGHT_10", "MAGIC_FOCUS", "UNBREAKABLE_MELEE" ],
+    "material": [ "glass", "crystallized_mana" ],
+    "symbol": "o",
+    "color": "white",
+    "use_action": [ { "type": "cast_spell", "spell_id": "scrying_crystal_ball", "no_fail": true, "level": 10, "need_wielding": true } ]
+  },
+  {
     "id": "observation_platform",
     "repairs_like": "survivor_goggles",
     "type": "TOOL_ARMOR",
     "name": { "str": "observation platform", "str_pl": "pairs of observation platforms" },
-    "description": "A pair of shaded glasses that have a second magical lens over the first, providing a series of benefits. A nodule on the stem allows the wearer to temporarily blind themselves in exchange for vision of unknown territory.",
+    "description": "A pair of shaded glasses that have a second crystal lens over the first, providing a series of benefits. A nodule on the stem allows the wearer to temporarily blind themselves in exchange for vision of unknown territory.",
     "weight": "30 g",
     "volume": "250 ml",
     "price": 600000,

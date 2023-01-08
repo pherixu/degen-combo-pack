@@ -374,6 +374,46 @@
   {
     "type": "BOOK",
     "copy-from": "spell_scroll",
+    "id": "spell_scroll_inundate_vaultism",
+    "//": "Classless spell",
+    "looks_like": "bottle_glass",
+    "name": { "str": "sought after-shave", "str_pl": "sought after-shaves" },
+    "description": "A little glass bottle filled with an extremely expensive hygienic product. When worn it slowly seeps into the wearer's skin, and eventually into their very mind.",
+    "use_action": { "type": "learn_spell", "spells": [ "inundate_vaultism" ] }
+  },
+  {
+    "type": "BOOK",
+    "copy-from": "spell_scroll",
+    "id": "spell_scroll_prepared_prof",
+    "//": "Classless spell",
+    "looks_like": "inhaler",
+    "name": { "str": "nebulous nebulizer", "str_pl": "nebulous nebulizer" },
+    "description": "A small inhaler that, when boofed, plants a cooling agent in your stomach capable of producing extinguishing gas. Makes you feel a tad... queezy.",
+    "use_action": { "type": "learn_spell", "spells": [ "summon_extinguisher" ] }
+  },
+  {
+    "type": "BOOK",
+    "copy-from": "spell_scroll",
+    "id": "spell_scroll_summon_safe_shoppers",
+    "//": "Classless spell",
+    "looks_like": "survivor_scope",
+    "name": { "str": "sightless spyglass", "str_pl": "sightless spyglasses" },
+    "description": "A spyglass that seems useless at first as you can see nothing through it. Soon, you start to realize how this technology really works...",
+    "use_action": { "type": "learn_spell", "spells": [ "summon_safe_shoppers" ] }
+  },
+  {
+    "type": "BOOK",
+    "copy-from": "spell_scroll",
+    "id": "spell_scroll_precipitate_stick",
+    "//": "Classless spell",
+    "looks_like": "fd_gibs_veggy",
+    "name": { "str": "baby bush", "str_pl": "baby bushes" },
+    "description": "A small handful of leaves and veggies that still loosely cling to life. Nurturing it, you learn a little something about life.",
+    "use_action": { "type": "learn_spell", "spells": [ "precipitate_stick" ] }
+  },
+  {
+    "type": "BOOK",
+    "copy-from": "spell_scroll",
     "id": "spell_scroll_spawn_car",
     "//": "Classless spell",
     "symbol": "c",

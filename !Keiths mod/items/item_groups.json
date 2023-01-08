@@ -17,6 +17,7 @@
 		[ "spell_scroll_conjure_mask", 50 ],
 		[ "spell_scroll_conjure_jumper_cable", 50 ],
         [ "spell_scroll_summon_cold4", 50 ],
+		[ "spell_scroll_precipitate_stick", 50 ],
 		[ "spell_scroll_conjure_wash_kit", 50 ],
 		[ "spell_scroll_conjure_phone", 50 ],
 		[ "spell_scroll_summon_hot4", 50 ],
@@ -50,6 +51,7 @@
         [ "spell_scroll_summon_kayak", 50 ],
         [ "spell_scroll_soft_step", 50 ],
         [ "spell_scroll_induce", 50 ],
+		[ "spell_scroll_prepared_prof", 50 ],
         [ "spell_scroll_bullet_immune", 50 ],
         [ "spell_scroll_first_things_first", 50 ],
         [ "spell_scroll_summon_lab_rat", 50 ],
@@ -76,6 +78,7 @@
         [ "spell_scroll_love", 50 ],
         [ "spell_scroll_rabbits_foot", 50 ],
         [ "spell_scroll_enlarge", 50 ],
+		[ "spell_scroll_summon_safe_shoppers", 50 ],
 		[ "spell_scroll_conjure_apple_cider", 50 ],
 		[ "spell_scroll_mutamanation", 50 ],
         [ "spell_scroll_anti_teleport", 50 ],
@@ -111,6 +114,7 @@
         [ "classified_intelligence_scroll", 50 ],
 		[ "spell_scroll_sacrificial_bloom", 50 ],
         [ "spell_scroll_spawn_gas", 50 ],
+		[ "spell_scroll_inundate_vaultism", 50 ],
         [ "spell_scroll_spiritual_invisibility", 50 ],
         [ "spell_scroll_artillery", 50 ],
         [ "spell_scroll_new_life", 50 ],
@@ -551,6 +555,15 @@
   },
   {
     "type": "item_group",
+    "id": "jugofwhiteink",
+    "subtype": "collection",
+    "entries": [
+      { "item": "jug_plastic" },
+	  { "item": "white_pen_ink", "count": [ 15, 15 ] }
+    ]
+  },
+  {
+    "type": "item_group",
     "id": "impdrops",
     "subtype": "collection",
     "entries": [
@@ -954,6 +967,52 @@
   },
   {
     "type": "item_group",
+    "id": "kelkdrops",
+    "items": [
+	  { "item": "cards_magic", "prob": 100, "count": [ 1, 3 ] },
+      { "item": "tear_of_child", "prob": 33, "count": [ 0, 5 ] },
+      { "item": "brimstone_sliver", "prob": 25, "count": [ 0, 3 ] },
+      { "item": "brimstone_chunk", "prob": 10, "count": [ 0, 2 ] },
+      { "item": "twisted_soul", "count": [ 1, 3 ] },
+      { "item": "robe" },
+	  { "item": "bangles_of_kelk" },
+      { "item": "decaying_soul", "prob": 50 },
+      { "item": "crazed_note", "prob": 10 },
+      { "item": "denarius", "prob": 33, "count": [ 0, 3 ] },
+	  { "item": "crystallized_ink", "count": [ 0, 3 ] },
+      { "item": "antoninianus", "prob": 33 },
+      { "group": "enchanted_small_items", "prob": 10 },
+      { "group": "harddrugs", "prob": 33, "count": [ 0, 3 ] },
+      { "group": "enchanted_misc", "prob": 2 },
+      { "group": "enchanted_combat_items", "prob": 1 },
+      { "group": "waywardmemories", "prob": 100 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "azarkdrops",
+    "items": [
+	  { "item": "cards_magic", "prob": 100, "count": [ 1, 3 ] },
+      { "item": "tear_of_child", "prob": 33, "count": [ 0, 5 ] },
+      { "item": "brimstone_sliver", "prob": 25, "count": [ 0, 3 ] },
+      { "item": "brimstone_chunk", "prob": 10, "count": [ 0, 2 ] },
+      { "item": "twisted_soul", "count": [ 1, 3 ] },
+	  { "item": "crystallized_ink", "count": [ 0, 3 ] },
+      { "item": "robe" },
+	  { "item": "ball_of_azarkan" },
+      { "item": "decaying_soul", "prob": 50 },
+      { "item": "crazed_note", "prob": 10 },
+      { "item": "denarius", "prob": 33, "count": [ 0, 3 ] },
+      { "item": "antoninianus", "prob": 33 },
+      { "group": "enchanted_small_items", "prob": 10 },
+      { "group": "harddrugs", "prob": 33, "count": [ 0, 3 ] },
+      { "group": "enchanted_misc", "prob": 2 },
+      { "group": "enchanted_combat_items", "prob": 1 },
+      { "group": "waywardmemories", "prob": 100 }
+    ]
+  },
+  {
+    "type": "item_group",
     "id": "madartist",
     "items": [
 	  { "item": "cards_magic", "prob": 100, "count": [ 5, 10 ] },
@@ -1226,7 +1285,7 @@
     "id": "enchanted_rings_uncommon",
     "copy-from": "enchanted_rings_uncommon",
     "subtype": "collection",
-    "extend": { "items": [ { "item": "black_wolfs_ring_bullet", "prob": 5 }, { "item": "white_wolfs_ring_cold", "prob": 5 } ] }
+    "extend": { "items": [ { "item": "black_wolfs_ring_bullet", "prob": 1 }, { "item": "white_wolfs_ring_cold", "prob": 1 }, { "item": "ring_signet", "prob": 25 } ] }
   },
   {
     "type": "item_group",
@@ -1290,7 +1349,7 @@
     "id": "surgery",
 	"copy-from": "surgery",
      "extend": { "items": [ 
-	 { "item": "pocket_doc", "prob": 3 } ] }
+	 { "item": "pocket_doc", "prob": 2 } ] }
   },
   {
     "type": "item_group",
@@ -1307,6 +1366,7 @@
         [ "smite_gloves", 5 ],
         { "group": "drawings", "prob": 1 },
         [ "summon_dragon_item", 5 ],
+		[ "crystal_ball", 5 ],
         [ "coloring_book", 5 ],
         [ "black_wolfs_ring_bullet", 1 ],
         [ "white_wolfs_ring_cold", 1 ],

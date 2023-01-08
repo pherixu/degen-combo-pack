@@ -517,7 +517,7 @@
     "player_display": false,
     "valid": false,
     "category": [ "HUMAN" ],
-    "spells_learned": [ [ "magic_one", 5 ] ]
+    "spells_learned": [ [ "magic_one", 5 ], [ "spirit_armor", 5 ] ]
   },
   {
     "type": "mutation",
@@ -1269,7 +1269,7 @@
     "valid_targets": [ "self" ],
     "effect": "spawn_item",
     "effect_str": "money_hundred",
-    "flags": [ "PERMANENT" ],
+    "flags": [ "PERMANENT", "NO_HANDS", "NO_LEGS" ],
     "shape": "blast",
 	"components": "spell_components_devil_two",
     "min_damage": 1,

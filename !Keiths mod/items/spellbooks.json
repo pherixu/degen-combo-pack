@@ -15,7 +15,7 @@
     "fun": -6,
     "use_action": {
       "type": "learn_spell",
-      "spells": [ "first_things_first", "summon_bike", "summon_lab_rat", "summon_cold", "magic_drive", "beautification" ]
+      "spells": [ "first_things_first", "summon_bike", "summon_lab_rat", "summon_cold", "bio_for_stamina", "magic_drive", "summon_extinguisher", "beautification" ]
     }
   },
   {
@@ -45,6 +45,19 @@
     "material": [ "paper" ],
     "symbol": "?",
 	"qualities": [ [ "POWER_ALTAR", 1 ] ],
+    "color": "light_red"
+  },
+  {
+    "id": "sunandmoon",
+    "type": "BOOK",
+    "category": "manuals",
+    "name": { "str": "Notes from the Sun and Moon", "str_pl": "copies of Notes from the Sun and Moon" },
+    "description": "A leather journal that recants the tale of two brothers, one dark and one light. Over it's course the two prove their inner strength and realign the dark with the light, bringing harmony to the world. At the end the two take jobs in the R&D department of a major corporation.",
+    "weight": "2000 g",
+    "volume": "600 ml",
+    "price": 25000,
+    "material": [ "paper" ],
+    "symbol": "?",
     "color": "light_red"
   },
   {
@@ -78,7 +91,7 @@
     "intelligence": 15,
     "use_action": {
       "type": "learn_spell",
-      "spells": [ "resonant_shift", "transgate_place", "dimensional_step", "let_loose", "dislocate" ]
+      "spells": [ "resonant_shift", "transgate_place", "estrangement", "let_loose", "dislocate" ]
     }
   },
   {
@@ -101,6 +114,8 @@
         "artillery",
         "drain_nervous_system",
         "auto_tazer",
+		"bionic_battery_gun",
+		"conjure_jumper_cable",
         "anti_teleport",
         "indirected_prone",
         "pocket_sniper"
@@ -123,7 +138,7 @@
     "martial_art": "style_dragon",
     "use_action": {
       "type": "learn_spell",
-      "spells": [ "recover_mana_stamina", "center_of_gravity", "stance_spawn", "soul_bind", "yank" ]
+      "spells": [ "recover_mana_stamina", "center_of_gravity", "stance_spawn", "soul_bind", "soft_step", "yank", "shove_down", "Jump", "charge_attack" ]
     }
   },
   {
@@ -139,7 +154,7 @@
     "symbol": "?",
     "fun": 2,
     "color": "light_red",
-    "use_action": { "type": "learn_spell", "spells": [ "enlarge", "spawn_white_wolfs_staff", "shadow_realm", "crystal_place" ] }
+    "use_action": { "type": "learn_spell", "spells": [ "enlarge", "spawn_white_wolfs_staff", "shadow_realm", "dimensional_step", "crystal_place" ] }
   },
   {
     "id": "mind_over_magic",
@@ -160,10 +175,13 @@
         "summon_bunny",
         "magicians_duffel",
         "golden_aura",
-        "directed_prone",
+		"conjure_flask", 
+		"conjure_string", 
+		"conjure_mirror",
+		"conjure_mask",
+        "yank",
         "distraction",
-        "flight",
-        "spiritual_invisibility"
+        "flight"
       ]
     }
   },
@@ -180,7 +198,7 @@
     "symbol": "?",
     "fun": 1,
     "color": "light_red",
-    "use_action": { "type": "learn_spell", "spells": [ "summon_horse", "spawn_rope", "double_trouble", "spur_steed", "spawn_spit_trap" ] }
+    "use_action": { "type": "learn_spell", "spells": [ "summon_horse", "spawn_rope", "double_trouble", "conjure_fish_bait", "spur_steed", "spawn_spit_trap" ] }
   },
   {
     "id": "spinning_the_wheel",
@@ -197,7 +215,7 @@
     "color": "light_red",
     "use_action": {
       "type": "learn_spell",
-      "spells": [ "52_card_shuffle", "recover_health_denarius", "spawn_camp", "rpg_die_poly", "gambit1", "scrying" ]
+      "spells": [ "52_card_shuffle", "recover_health_denarius", "spawn_camp", "wicked_ritual", "rpg_die_poly", "gambit1", "scrying" ]
     }
   },
   {
@@ -342,10 +360,10 @@
     "symbol": "?",
     "color": "blue",
     "skill": "spellcraft",
-    "required_level": 9,
+    "required_level": 1,
     "max_level": 10,
-    "intelligence": 17,
+    "intelligence": 20,
     "time": "24 h",
-    "fun": -10
+    "fun": -1
   }
 ]

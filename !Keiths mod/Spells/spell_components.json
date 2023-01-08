@@ -77,7 +77,7 @@
   {
     "id": "spell_components_gambit",
     "type": "requirement",
-    "components": [ [ [ "chess", 1 ], [ "checkers", 1 ], [ "money_strap_hundred", 1 ], [ "ring_signet", 1 ] ] ]
+    "components": [ [ [ "chess", 1 ], [ "checkers", 1 ], [ "shogi", 1 ], [ "senet", 1 ], [ "money_strap_hundred", 1 ], [ "ring_signet", 1 ] ] ]
   },
   {
     "id": "spell_components_scrying",
@@ -85,8 +85,10 @@
     "components": [
       [
         [ "pictionary", 1 ],
+		[ "crystal_ball", 1 ],
         [ "g_warhammer40k", 1 ],
         [ "battleship", 1 ],
+		[ "ambush", 1 ],
         [ "clue", 1 ],
         [ "magic_8_ball", 1 ],
         [ "money_strap_hundred", 1 ],
@@ -215,6 +217,7 @@
         [ "catan", 1 ],
         [ "dnd", 1 ],
         [ "g_warhammer", 1 ],
+		[ "ranger", 1 ],
         [ "fairy_tales", 1 ],
         [ "monopoly", 1 ],
         [ "money_strap_hundred", 1 ],
@@ -296,27 +299,27 @@
   {
     "id": "spell_components_circle_of_blood",
     "type": "requirement",
-    "components": [ [ [ "animal_blood", 25 ], [ "blood", 5 ], [ "crystallized_ink", 1 ], [ "money_strap_hundred", 1 ] ] ]
+    "components": [ [ [ "animal_blood", 25 ], [ "blood", 5 ], [ "brimstone_chunk", 1 ], [ "crystallized_ink", 1 ], [ "money_strap_hundred", 1 ] ] ]
   },
   {
     "id": "spell_components_bind_via_blood",
     "type": "requirement",
-    "components": [ [ [ "blood", 1 ], [ "money_strap_hundred", 1 ] ] ]
+    "components": [ [ [ "blood", 1 ], [ "brimstone_chunk", 1 ], [ "money_strap_hundred", 1 ] ] ]
   },
   {
     "id": "spell_components_bind_via_smoke",
     "type": "requirement",
-    "components": [ [ [ "cig", 3 ], [ "cigar", 1 ], [ "joint", 1 ], [ "money_strap_hundred", 1 ] ] ]
+    "components": [ [ [ "cig", 10 ], [ "cigar", 5 ], [ "joint", 5 ], [ "brimstone_chunk", 1 ], [ "money_strap_hundred", 1 ] ] ]
   },
   {
     "id": "spell_components_bind_via_bile",
     "type": "requirement",
-    "components": [ [ [ "human_cooked", 1 ], [ "hstomach", 1 ], [ "human_flesh", 3 ], [ "human_fat", 5 ], [ "money_strap_hundred", 1 ] ] ]
+    "components": [ [ [ "human_cooked", 1 ], [ "hstomach", 1 ], [ "brimstone_chunk", 1 ], [ "money_strap_hundred", 1 ] ] ]
   },
   {
     "id": "spell_components_bind_via_fire",
     "type": "requirement",
-    "components": [ [ [ "diesel", 5 ], [ "gasoline", 10 ], [ "money_strap_hundred", 1 ] ] ]
+    "components": [ [ [ "diesel", 5 ], [ "gasoline", 10 ], [ "brimstone_chunk", 1 ], [ "money_strap_hundred", 1 ] ] ]
   },
   {
     "id": "spell_components_circle_of_flame",
@@ -326,7 +329,7 @@
   {
     "id": "spell_components_circle_of_smoke",
     "type": "requirement",
-    "components": [ [ [ "tear_of_child", 7 ], [ "crystallized_ink", 1 ], [ "money_strap_hundred", 1 ] ] ]
+    "components": [ [ [ "tear_of_child", 7 ], [ "brimstone_chunk", 1 ], [ "crystallized_ink", 1 ], [ "money_strap_hundred", 1 ] ] ]
   },
   {
     "id": "spell_components_catalyst",
@@ -459,7 +462,7 @@
   {
     "id": "spell_components_summon_slime",
     "type": "requirement",
-    "components": [ [ [ "feces_roach", 10 ], [ "money_strap_hundred", 1 ], [ "money_hundred", 333 ] ] ]
+    "components": [ [ [ "feces_roach", 10 ], [ "brimstone_chunk", 1 ], [ "money_strap_hundred", 1 ], [ "money_hundred", 333 ] ] ]
   },
   {
     "id": "spell_components_pact_heal_blood",
@@ -484,12 +487,12 @@
   {
     "id": "spell_components_summon_zombie_scorched",
     "type": "requirement",
-    "components": [ [ [ "diesel", 20 ], [ "money_strap_hundred", 3 ] ] ]
+    "components": [ [ [ "diesel", 20 ], [ "brimstone_chunk", 1 ], [ "money_strap_hundred", 3 ] ] ]
   },
   {
     "id": "spell_components_summon_zombie_fat",
     "type": "requirement",
-    "components": [ [ [ "human_flesh", 1 ], [ "animal_blood", 9 ], [ "human_fat", 5 ], [ "money_strap_hundred", 3 ] ] ]
+    "components": [ [ [ "human_flesh", 1 ], [ "brimstone_chunk", 1 ], [ "animal_blood", 9 ], [ "human_fat", 5 ], [ "money_strap_hundred", 3 ] ] ]
   },
   {
     "id": "spell_components_pocket_sniper",
@@ -512,6 +515,6 @@
   {
     "id": "spell_components_circle_of_bile",
     "type": "requirement",
-    "components": [ [ [ "human_flesh", 15 ], [ "crystallized_ink", 1 ], [ "money_strap_hundred", 3 ] ] ]
+    "components": [ [ [ "human_flesh", 15 ], [ "brimstone_chunk", 1 ], [ "crystallized_ink", 1 ], [ "money_strap_hundred", 3 ] ] ]
   }
 ]

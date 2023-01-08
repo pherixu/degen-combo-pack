@@ -326,10 +326,10 @@
     "min_duration": 8640000,
     "max_duration": 8640000,
     "base_energy_cost": 0,
-    "flags": [ "SOMATIC", "NO_LEGS", "PERMANENT", "NO_PROJECTILE", "RANDOM_TARGET" ],
+    "flags": [ "SOMATIC", "NO_LEGS", "PERMANENT", "NO_PROJECTILE", "RANDOM_TARGET", "SPAWN_GROUP" ],
     "shape": "blast",
     "effect": "summon",
-    "effect_str": "mon_magic_circle_crystal_fat"
+    "effect_str": "GROUP_CIRCLES"
   },
   {
     "id": "emit_dazzle",
@@ -515,7 +515,7 @@
       { "emit_id": "emit_safe_shoppers", "delay": "1 s" },
       { "emit_id": "emit_glimmer", "delay": "1 s" },
 	  { "emit_id": "emit_clairvoyant", "delay": "1 s" },
-      { "emit_id": "emit_fatigue1", "delay": "1 m" }
+      { "emit_id": "emit_fatigue1", "delay": "10 m" }
     ],
     "harvest": "exempt",
     "death_function": {
