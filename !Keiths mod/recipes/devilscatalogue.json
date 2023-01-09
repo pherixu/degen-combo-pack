@@ -566,7 +566,7 @@
     "time": "1 m",
     "autolearn": true,
     "book_learn": [  [ "wayward_memory_NLS", 1 ], [ "vergists_manual", 1 ], [ "devils_catalogue", 1 ] ],
-    "components": [ [ [ "money_bundle_hundred", 3 ] ] ]
+    "components": [ [ [ "money_bundle_hundred", 1 ] ] ]
   },
   {
     "type": "recipe",

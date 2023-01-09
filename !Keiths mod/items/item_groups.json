@@ -1042,14 +1042,14 @@
     "type": "item_group",
     "id": "magazines",
     "copy-from": "magazines",
-    "extend": { "items": [ { "item": "heli_book", "prob": 5 }, { "item": "devils_catalogue", "prob": 5 } ] }
+    "extend": { "items": [ { "item": "heli_book", "prob": 5 }, { "item": "devils_catalogue", "prob": 5 }, , { "item": "spell_scroll_transgate_place", "prob": 5 } ] }
   },
   {
     "type": "item_group",
     "id": "SUS_office_desk",
     "copy-from": "SUS_office_desk",
     "subtype": "collection",
-    "extend": { "items": [ { "group": "enchanted_small_items", "prob": 10 } ] }
+    "extend": { "items": [ { "group": "enchanted_small_items", "prob": 10 }, { "item": "ring_signet", "prob": 10 } ] }
   },
   {
     "type": "item_group",
