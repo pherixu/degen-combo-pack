@@ -138,7 +138,7 @@
     "martial_art": "style_dragon",
     "use_action": {
       "type": "learn_spell",
-      "spells": [ "recover_mana_stamina", "center_of_gravity", "stance_spawn", "soul_bind", "soft_step", "yank", "shove_down", "Jump", "charge_attack" ]
+      "spells": [ "recover_mana_stamina", "center_of_gravity", "stance_spawn", "soul_bind", "soft_step", "shove_down", "shoulder_charge", "Jump", "charge_attack" ]
     }
   },
   {
@@ -350,7 +350,7 @@
     "type": "BOOK",
     "category": "manuals",
     "name": { "str": "Haramein's Theory", "str_pl": "copies of Haramein's Theory" },
-    "description": "The magnum opus of spellcraft theory, massive and unwieldy. Only understood by those who have practiced spellcraft their entire lives, and only useful to them as well.",
+    "description": "The magnum opus of spellcraft theory, massive and unwieldy. Only understood by those who have practiced their entire lives, and only useful to them as well.",
     "weight": "7000 g",
     "volume": "12000 ml",
     "longest_side": "30 cm",

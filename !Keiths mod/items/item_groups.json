@@ -533,14 +533,14 @@
     "id": "demondrops",
     "subtype": "collection",
     "entries": [
-      { "item": "tear_of_child", "prob": 20 },
+      { "item": "tear_of_child", "prob": 10 },
       { "item": "brimstone_sliver", "prob": 10 },
       { "item": "brimstone_chunk", "prob": 1 },
       { "item": "chunk_sulfur", "count": [ 0, 3 ], "prob": 20 },
       { "item": "decaying_soul", "prob": 5 },
 	  { "group": "enchanted_misc", "prob": 1 },
       { "item": "twisted_soul", "prob": 5 },
-      { "item": "antoninianus", "prob": 100, "count": [ 1, 2 ] }
+      { "item": "antoninianus" }
     ]
   },
   {

@@ -4,11 +4,11 @@
     "type": "harvest",
     "entries": [
       { "drop": "meat_tainted", "type": "flesh", "mass_ratio": 0.1 },
-      { "drop": "meat", "type": "flesh", "mass_ratio": 0.05 },
       { "drop": "demon_chitin_piece", "type": "bone", "mass_ratio": 0.04 },
       { "drop": "demon_chitin_plate", "type": "skin", "mass_ratio": 0.01 },
       { "drop": "decaying_soul", "base_num": [ 0, 0 ], "scale_num": [ 0.1, 0.6 ], "max": 2, "type": "flesh" },
 	  { "drop": "denarius", "base_num": [ 0, 0 ], "scale_num": [ 0.1, 0.6 ], "max": 4, "type": "flesh" },
+	  { "drop": "antoninianus", "base_num": [ 0, 0 ], "scale_num": [ 0.1, 0.6 ], "max": 2, "type": "flesh" },
       { "drop": "brimstone_chunk", "base_num": [ 0, 0 ], "scale_num": [ 0.1, 0.6 ], "max": 1, "type": "flesh" },
       { "drop": "brimstone_sliver", "base_num": [ 0, 0 ], "scale_num": [ 0.1, 1.2 ], "max": 5, "type": "flesh" }
     ]

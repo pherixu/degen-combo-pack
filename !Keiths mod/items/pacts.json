@@ -11,6 +11,32 @@
     "intermittent_activation": { "effects": [ { "frequency": "10 d", "spell_effects": [ { "id": "spawn_spell_scroll_devil" } ] } ] }
   },
   {
+    "type": "SPELL",
+    "id": "summon_cold_blood",
+    "name": "Freeze Breeze",
+    "description": "",
+    "valid_targets": [ "hostile", "ground", "ally", "self" ],
+    "max_level": 3,
+    "flags": [ "SOMATIC", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
+    "base_casting_time": 0,
+    "base_energy_cost": 0,
+    "difficulty": 0,
+    "effect": "attack",
+    "shape": "blast",
+    "energy_source": "MANA",
+    "field_id": "fd_cold_air4",
+    "field_chance": 1,
+    "min_duration": 1000,
+    "max_duration": 1000,
+    "min_field_intensity": 2,
+    "max_field_intensity": 2
+  },
+  {
+    "type": "enchantment",
+    "id": "pact_of_blood_enchantment_2",
+    "intermittent_activation": { "effects": [ { "frequency": "5 s", "spell_effects": [ { "id": "summon_cold_blood" } ] } ] }
+  },
+  {
     "type": "enchantment",
     "id": "pact_of_smoke_enchantment",
     "condition": "ALWAYS",
@@ -91,6 +117,7 @@
     "relic_data": {
       "passive_effects": [
         { "id": "pact_of_blood_enchantment" },
+		{ "id": "pact_of_blood_enchantment_2" },
         {
           "has": "WORN",
           "condition": "ALWAYS",

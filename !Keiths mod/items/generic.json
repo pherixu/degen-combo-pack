@@ -288,6 +288,23 @@
     "workbench": { "multiplier": 2.5, "mass": 900000, "volume": "100L" }
   },
   {
+    "type": "recipe_category",
+    "id": "CC_ENCHANTED",
+    "recipe_subcategories": [
+      "CSC_ALL",
+      "CSC_ENCHANTED_MATERIALS",
+      "CSC_ENCHANTED_TOOLS",
+      "CSC_ENCHANTED_WEAPONS",
+      "CSC_ENCHANTED_AMMO",
+      "CSC_ENCHANTED_ARMOR",
+      "CSC_ENCHANTED_POTIONS",
+      "CSC_ENCHANTED_RUNES",
+      "CSC_ENCHANTED_MODS",
+      "CSC_ENCHANTED_OTHER",
+	  "CSC_ENCHANTED_CATALOGUE"
+    ]
+  },
+  {
     "type": "GENERIC",
     "id": "money_strap_hundred",
     "name": { "str": "hundred-dollar currency strap" },
@@ -322,7 +339,7 @@
         "watertight": true,
         "rigid": true,
         "max_contains_volume": "250 ml",
-        "max_contains_weight": "500 g"
+        "max_contains_weight": "262 g"
       }
     ],
     "symbol": ",",

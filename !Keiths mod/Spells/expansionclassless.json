@@ -2189,7 +2189,7 @@
   {
     "id": "artillery_flame_bangles",
     "type": "SPELL",
-    "name": "Artillery",
+    "name": "Kelkemmemmnon's Heavenly Flames",
     "description": "You locate and destroy a target area.",
     "effect": "attack",
     "shape": "blast",
@@ -2200,8 +2200,8 @@
     "max_damage": 20,
     "min_aoe": 5,
     "max_aoe": 5,
-    "min_range": 1,
-    "max_range": 1,
+    "min_range": 5,
+    "max_range": 5,
     "base_casting_time": 250,
     "base_energy_cost": 0,
     "energy_source": "MANA",
@@ -5916,7 +5916,7 @@
     "effect_str": "GROUP_BOSSES",
     "shape": "blast",
     "energy_source": "HP",
-    "flags": [ "RANDOM_TARGET", "PERMANENT", "SPAWN_GROUP", "HOSTILE_SUMMON" ]
+    "flags": [ "RANDOM_TARGET", "PERMANENT", "SPAWN_GROUP", "SPAWN_WITH_DEATH_DROPS", "HOSTILE_SUMMON" ]
   },
   {
     "id": "distance_self",
@@ -6739,14 +6739,37 @@
 	"energy_source": "MANA"
   },
   {
+    "type": "effect_on_condition",
+    "id": "eoc_estrange",
+    "effect": [
+      { "u_add_effect": "nausea", "intensity": 1, "duration": "5 minutes" }
+    ],
+    "condition": { "not": { "or": [ { "u_has_effect": "blind" }, { "u_is_wearing": "ring_signet" }, { "u_has_wielded_with_flag": "MAGIC_FOCUS" } ] } }
+  },
+  {
+    "id": "estrange_eoc",
+    "type": "SPELL",
+    "name": "Sever Connection",
+    "description": "You use a tremendous burst of mana like a hot knife, severing your connection to reality and instantly cauterizing the wound, coming out the other end feeling only slightly different from before. During this brief instant, the caster may witness literally anything. The risks involved should be obvious.",
+    "effect": "effect_on_condition",
+    "effect_str": "eoc_estrange",
+    "shape": "blast",
+    "valid_targets": [ "self" ],
+    "max_level": 0,
+    "difficulty": 7,
+    "base_casting_time": 0,
+    "energy_source": "MANA",
+    "base_energy_cost": 0
+  },
+  {
     "id": "estrangement",
     "type": "SPELL",
     "name": "Estrangement",
-    "description": "You use mana to cut your tie to the physical realm and once you're there you cut someone else's tie, effectively swaping places with a random creature nearby.",
+    "description": "You use mana to cut your tie to the physical realm and enter the one below. Once you're there you cut someone else's tie, effectively swaping places with a random creature nearby. Horrible things flood your mind at the sight of them.",
     "valid_targets": [ "hostile", "ally" ],
     "flags": [ "NO_LEGS", "SOMATIC", "VERBAL", "SWAP_POS", "RANDOM_TARGET", "TARGET_TELEPORT", "NO_PROJECTILE" ],
     "effect": "attack",
-	"extra_effects": [ {"id": "sever_eoc", "hit_self": true } ],
+	"extra_effects": [ {"id": "estrange_eoc", "hit_self": true } ],
     "shape": "blast",
     "energy_source": "MANA",
     "difficulty": 3,

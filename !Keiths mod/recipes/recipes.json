@@ -640,6 +640,7 @@
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "scroll_token",
+	"id_suffix": "made via printer",
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_OTHER",
     "skill_used": "spellcraft",
@@ -658,12 +659,12 @@
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "money_strap_hundred",
+	"id_suffix": "made via printer",
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_OTHER",
     "skill_used": "spellcraft",
     "difficulty": 10,
 	"autolearn": false,
-	"flags": [ "UNCRAFT_LIQUIDS_CONTAINED" ],
     "qualities": [ { "id": "POWER_ALTAR", "level": 4 } ],
     "time": "1 h",
     "book_learn": [ [ "sunandmoon", 1 ] ],
@@ -828,7 +829,7 @@
       [ "big_book_of_metaknowledge", 1 ],
       [ "holybook_kojiki", 1 ]
     ],
-    "autolearn": true,
+    "autolearn": false,
     "components": [ [ [ "twisted_soul_engorged", 3 ] ], [ [ "crystallized_ink", 3 ] ], [ [ "icon", 3 ] ], [ [ "tear_of_child", 3 ] ] ]
   },
   {
