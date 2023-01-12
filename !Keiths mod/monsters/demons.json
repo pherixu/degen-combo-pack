@@ -51,12 +51,7 @@
     ],
     "harvest": "demon_humanoid",
     "special_attacks": [
-      {
-        "type": "spell",
-        "spell_data": { "id": "hemorheal", "min_level": 1 },
-        "cooldown": 3,
-        "monster_message": "The victim suddenly and violently turns into a hemor, their original body burning away in a psychosomatic crucible. The original hemor's plates extend outwards like a ladybug's wings, and it's antenna stroke it's back in obvious ecstasy."
-      },
+      [ "RANGED_PULL", 10 ],
       {
         "type": "spell",
         "spell_data": { "id": "hemorhurt", "min_level": 1 },
@@ -75,6 +70,7 @@
       "FIREY",
       "FIREPROOF",
       "NO_BREATHE",
+	  "HIT_AND_RUN",
       "POISON",
       "PATH_AVOID_DANGER_1",
       "NO_BREATHE",
@@ -121,12 +117,7 @@
     ],
     "harvest": "demon_humanoid",
     "special_attacks": [
-      {
-        "type": "spell",
-        "spell_data": { "id": "hemorheal", "min_level": 1 },
-        "cooldown": 3,
-        "monster_message": "The victim suddenly and violently turns into a hemor, their original body burning away in a psychosomatic crucible. The original hemor's plates extend outwards like a ladybug's wings, and it's antenna stroke it's back in obvious ecstasy."
-      },
+      [ "RANGED_PULL", 10 ],
       {
         "type": "spell",
         "spell_data": { "id": "hemorhurt", "min_level": 1 },
@@ -196,7 +187,7 @@
     "volume": "20250 ml",
     "weight": "20250 g",
     "hp": 50,
-    "speed": 120,
+    "speed": 150,
     "material": [ "iflesh" ],
     "symbol": "O",
     "color": "black",
@@ -223,15 +214,15 @@
     "anger_triggers": [ "PLAYER_WEAK" ],
     "fear_triggers": [ "PLAYER_CLOSE", "HURT" ],
     "special_attacks": [
-      [ "ABSORB_ITEMS", 10 ],
+      [ "ABSORB_ITEMS", 50 ],
       {
         "type": "gun",
         "cooldown": 15,
         "move_cost": 150,
         "gun_type": "acid_sniper",
         "fake_skills": [ [ "gun", 6 ], [ "rifle", 6 ] ],
-        "fake_dex": 8,
-        "fake_per": 8,
+        "fake_dex": 5,
+        "fake_per": 5,
         "require_targeting_player": false,
         "description": "The moment it think that it's safe, the goblimp swallows sulfur and fires it's corrosive residue from it's nose.",
         "ranges": [ [ 2, 15, "DEFAULT" ] ]
@@ -262,7 +253,7 @@
     "volume": "20250 ml",
     "weight": "20250 g",
     "hp": 50,
-    "speed": 150,
+    "speed": 170,
     "material": [ "iflesh" ],
     "symbol": "O",
     "color": "black",
@@ -288,7 +279,7 @@
     "anger_triggers": [ "PLAYER_WEAK" ],
     "fear_triggers": [ "PLAYER_CLOSE", "HURT" ],
     "special_attacks": [
-      [ "ABSORB_ITEMS", 0 ],
+      [ "ABSORB_ITEMS", 10 ],
       {
         "type": "gun",
         "cooldown": 15,
@@ -309,7 +300,7 @@
       "WARM",
 	  "SWIMS",
       "KEEP_DISTANCE",
-      "ACID_BLOOD",
+      "ARTHROPOD_BLOOD",
 	  "NIGHT_INVISIBILITY",
       "WATER_CAMOUFLAGE",
       "PRIORITIZE_TARGETS",
@@ -666,17 +657,18 @@
     "armor_elec": 10,
     "bleed_rate": 20,
 	"upgrades": { "half_life": 90, "into": "mon_dunebroodnephilim_upgrade" },
-    "melee_damage": [ { "damage_type": "cut", "amount": 1 } ],
-    "dodge": 2,
+    "melee_damage": [ { "damage_type": "cut", "amount": 4 } ],
+    "dodge": 4,
     "harvest": "demon_humanoid",
     "death_drops": "demondrops",
 	"death_function": { "effect": { "id": "death_boomer", "hit_self": true }, "corpse_type": "NO_CORPSE", "message": "The % melts away." },
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "PLAYER_CLOSE", "PLAYER_WEAK" ],
     "special_attacks": [
+	  [ "GRAB", 5 ],
       {
         "type": "spell",
         "spell_data": { "id": "dune", "min_level": 1 },
-        "cooldown": 50,
+        "cooldown": 75,
         "monster_message": "The nephilims stomach sack engorges and it rears open it's mouth for more to be added to the brood, already lashing out for something to eat. They slither and claw out of it's throat fully grown and hunting for more."
       }
     ],
@@ -719,17 +711,18 @@
 	"armor_fire": 20,
     "armor_elec": 10,
     "bleed_rate": 20,
-    "melee_damage": [ { "damage_type": "cut", "amount": 1 } ],
-    "dodge": 2,
+    "melee_damage": [ { "damage_type": "cut", "amount": 5 } ],
+    "dodge": 5,
     "harvest": "demon_humanoid",
     "death_drops": "demondrops",
 	"death_function": { "effect": { "id": "death_boomer", "hit_self": true }, "corpse_type": "NO_CORPSE", "message": "The % melts away." },
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "PLAYER_CLOSE", "PLAYER_WEAK" ],
     "special_attacks": [
+	[ "GRAB", 15 ],
       {
         "type": "spell",
         "spell_data": { "id": "dune", "min_level": 1 },
-        "cooldown": 75,
+        "cooldown": 50,
         "monster_message": "The nephilims stomach sack engorges and it rears open it's mouth for more to be added to the brood, already lashing out for something to eat. They slither and claw out of it's throat fully grown and hunting for more, fading into dust when the hunger goes unsated."
       }
     ],
@@ -773,8 +766,8 @@
     "shape": "blast",
     "min_range": 1,
     "max_range": 1,
-	"min_duration": 10000, 
-	"max_duration": 10000,
+	"min_duration": 8640000, 
+	"max_duration": 8640000,
     "flags": [ "LOUD", "RANDOM_TARGET", "HOSTILE_SUMMON" ],
     "difficulty": 0
   }

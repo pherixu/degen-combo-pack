@@ -591,7 +591,6 @@
     "components": [
       [ [ "crystallized_mana", 500 ], [ "decaying_soul", 5 ], [ "money_strap_hundred", 5 ] ],
       [ [ "crystallized_alcohol", 15 ], [ "potion_starter", 1 ] ],
-	  [ [ "flask_glass", 1 ] ],
       [ [ "spell_scroll_transgate_place", 1 ], [ "spell_scroll_translocate_self_no_hands", 1 ], [ "ring_signet", 1 ] ]
     ]
   },
@@ -611,7 +610,6 @@
     "components": [
       [ [ "crystallized_mana", 150 ], [ "decaying_soul", 5 ], [ "money_strap_hundred", 5 ] ],
       [ [ "crystallized_alcohol", 15 ], [ "decaying_soul", 5 ], [ "potion_starter", 1 ] ],
-	  [ [ "flask_glass", 1 ] ],
       [ [ "spell_scroll_rabbits_foot", 1 ], [ "spell_scroll_auto_tazer", 1 ], [ "spell_scroll_sorcery", 1 ], [ "spell_scroll_extract_memory", 1 ], [ "cards_magic", 3 ] ]
     ]
   },
@@ -632,7 +630,6 @@
       [ [ "decaying_soul", 7 ] ],
 	  [ [ "tear_of_child", 13 ], [ "brimstone_chunk", 1 ] ],
       [ [ "twisted_soul", 1 ] ],
-	  [ [ "flask_glass", 1 ] ],
       [ [ "spell_scroll_charge_energy", 1 ], [ "spell_scroll_abolish_spirit", 1 ], [ "spell_scroll_sorcery", 1 ], [ "spell_scroll_extract_memory", 1 ], [ "cards_magic", 5 ] ]
     ]
   },
@@ -2895,12 +2892,11 @@
 	"autolearn": false,
     "difficulty": 7,
     "qualities": [ { "id": "MANA_FOCUS", "level": 1 }, { "id": "MANA_INFUSE", "level": 1 }, { "id": "MANA_WEAVE", "level": 1 }, { "id": "POWER_ALTAR", "level": 2 } ],
-    "time": "24 h", 
+    "time": "7 h", 
     "book_learn": [ [ "transient_crystal_ball", 1 ], [ "wayward_memory_OLAF", 1 ] ],
     "components": [
       [ [ "transient_crystal_ball", 1 ] ],
-	  [ [ "twisted_soul", 1 ], [ "cleansed_soul", 1 ] ],
-      [ [ "crystallized_mana", 333 ] ]
+	  [ [ "twisted_soul", 1 ], [ "cleansed_soul", 1 ], [ "crystallized_mana", 333 ] ]
     ]
   },
   {

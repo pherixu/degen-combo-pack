@@ -24,12 +24,53 @@
     "name": "Build Stone Altar of Power"
   },
   {
+    "type": "construction_group",
+    "id": "build_knowing_post",
+    "name": "Set Down a Knowing Post"
+  },
+  {
+    "type": "construction",
+    "id": "constr_knowing_post",
+    "group": "build_knowing_post",
+    "category": "FURN",
+    "required_skills": [ [ "spellcraft", 5 ], [ "fabrication", 3 ] ],
+    "time": "10 m",
+	"activity_level": "LIGHT_EXERCISE",
+    "components": [ [ [ "stick", 1 ], [ "pipe", 1 ] ], [ [ "superglue", 1 ] ], [ [ "crystal_ball", 1 ] ] ],
+    "pre_special": "check_empty",
+    "post_terrain": "f_knowing_post"
+  },
+  {
+    "id": "emit_clairvoyant_post",
+    "type": "emit",
+    "//": "Intermittent clairvoyance",
+    "field": "fd_clairvoyant",
+    "intensity": 1,
+	"qty": 9,
+    "chance": 100
+  },
+  {
+    "type": "furniture",
+    "id": "f_knowing_post",
+    "name": "knowing post",
+    "description": "A crystal ball stuck onto a post so as to elevate it, giving it a clear view of the surroundings.",
+    "looks_like": "f_floor_lamp",
+    "symbol": "^",
+    "color": "light_gray",
+    "move_cost_mod": 2,
+    "coverage": 0,
+    "required_str": -1,
+    "flags": [ "TRANSPARENT" ],
+    "emissions": [ "emit_clairvoyant_post" ]
+  },
+  {
     "type": "construction",
     "id": "constr_stone_altar",
     "group": "build_stone_altar",
     "category": "FURN",
     "required_skills": [ [ "spellcraft", 5 ], [ "fabrication", 3 ] ],
     "time": "6 h",
+	"activity_level": "LIGHT_EXERCISE",
     "components": [ [ [ "skull_human", 3 ] ], [ [ "rock_large", 3 ] ], [ [ "blood", 3 ] ] ],
     "pre_terrain": "t_pit",
     "post_terrain": "f_altar"
@@ -41,7 +82,8 @@
     "category": "FURN",
     "required_skills": [ [ "spellcraft", 7 ], [ "fabrication", 5 ] ],
     "time": "12 h",
-    "components": [ [ [ "glow_dust", 3 ] ], [ [ "dragon_blood", 10 ] ], [ [ "crystallized_mana", 333 ] ], [ [ "enchanted_wood", 25 ] ] ],
+	"activity_level": "LIGHT_EXERCISE",
+    "components": [ [ [ "glow_dust", 3 ] ], [ [ "dragon_blood", 10 ], [ "money_bundle_hundred", 10 ] ], [ [ "crystallized_mana", 500 ] ], [ [ "enchanted_wood", 25 ] ] ],
     "pre_terrain": "f_glow_boulder",
     "post_terrain": "f_altar_of_power"
   },
@@ -340,7 +382,10 @@
         "watertight": true,
         "rigid": true,
         "max_contains_volume": "250 ml",
-        "max_contains_weight": "262 g"
+        "max_contains_weight": "262 g",
+		"item_restriction": [
+          "blood"
+        ]
       }
     ],
     "symbol": ",",
@@ -2208,7 +2253,7 @@
     "volume": "300 ml",
     "weight": "150 g",
     "price": 10000,
-    "flags": [ "SUPER_FANCY" ],
+    "flags": [ "SUPER_FANCY", "MAGIC_FOCUS" ],
     "material": [ "black_dragon_hide" ],
     "symbol": "*",
     "color": "black",

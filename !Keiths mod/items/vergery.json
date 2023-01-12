@@ -212,7 +212,7 @@
     "name": { "str": "crystal verge", "str_pl": "crystal verges" },
     "copy-from": "verge",
     "description": "A slender wooden verge that resonates with dark magic. While it's in your hand you can feel it draining your inner will to go on. It can cast 'Conjure Crystal' at will.",
-    "use_action": { "type": "cast_spell", "spell_id": "crystal_place", "no_fail": true, "level": 15, "need_wielding": true }
+    "use_action": { "type": "cast_spell", "spell_id": "crystal_place_no_comp", "no_fail": true, "level": 15, "need_wielding": true }
   },
   {
     "type": "TOOL",
@@ -244,7 +244,7 @@
     "name": { "str": "spinning verge", "str_pl": "spinning verges" },
     "copy-from": "verge",
     "description": "A slender wooden verge that resonates with dark magic. While it's in your hand you can feel it draining your inner will to go on. It can cast 'Airlift' at will.",
-    "use_action": { "type": "cast_spell", "spell_id": "summon_helicopter", "no_fail": true, "level": 15, "need_wielding": true }
+    "use_action": { "type": "cast_spell", "spell_id": "summon_helicopter_no_comp", "no_fail": true, "level": 15, "need_wielding": true }
   },
   {
     "type": "TOOL",
@@ -260,7 +260,7 @@
     "name": { "str": "levitating verge", "str_pl": "levitating verges" },
     "copy-from": "verge",
     "description": "A slender wooden verge that resonates with dark magic. While it's in your hand you can feel it draining your inner will to go on. It can cast 'Levitate' at will.",
-    "use_action": { "type": "cast_spell", "spell_id": "flight", "no_fail": true, "level": 15, "need_wielding": true }
+    "use_action": { "type": "cast_spell", "spell_id": "flight_no_comp", "no_fail": true, "level": 15, "need_wielding": true }
   },
   {
     "type": "TOOL",
@@ -284,7 +284,7 @@
     "name": { "str": "gated verge", "str_pl": "gated verges" },
     "copy-from": "verge",
     "description": "A slender wooden verge that resonates with dark magic. While it's in your hand you can feel it draining your inner will to go on. It can cast 'Conjure Gate' at will.",
-    "use_action": { "type": "cast_spell", "spell_id": "transgate_place", "no_fail": true, "level": 15, "need_wielding": true }
+    "use_action": { "type": "cast_spell", "spell_id": "transgate_place_favor", "no_fail": true, "level": 15, "need_wielding": true }
   },
   {
     "type": "TOOL",

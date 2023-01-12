@@ -1346,6 +1346,9 @@
 	{ "type": "cast_spell", "spell_id": "scrying_2", "no_fail": true, "level": 1, "need_worn": true }, 
 	{ "type": "holster", "holster_prompt": "Sheath sword", "holster_msg": "The orb settles unto your blade, magically attaching it to your back." }
 	],
+	"relic_data": {
+      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "mutations": [ "NIGHTVISION3" ] } ]
+    },
     "pocket_data": [
       {
         "magazine_well": "17500 ml",
@@ -2748,7 +2751,7 @@
     "type": "enchantment",
     "id": "cigarette_enchantment",
     "condition": "ALWAYS",
-    "intermittent_activation": { "effects": [ { "frequency": "30 s", "spell_effects": [ { "id": "smoking_mana", "hit_self": true } ] } ] }
+    "intermittent_activation": { "effects": [ { "frequency": "1 m", "spell_effects": [ { "id": "smoking_mana", "hit_self": true } ] } ] }
   },
   {
     "id": "cig_lit",
@@ -2762,7 +2765,7 @@
     "type": "enchantment",
     "id": "cigar_enchantment",
     "condition": "ALWAYS",
-    "intermittent_activation": { "effects": [ { "frequency": "20 s", "spell_effects": [ { "id": "smoking_mana", "hit_self": true } ] } ] }
+    "intermittent_activation": { "effects": [ { "frequency": "30 s", "spell_effects": [ { "id": "smoking_mana", "hit_self": true } ] } ] }
   },
   {
     "id": "cigar_lit",
@@ -2777,7 +2780,7 @@
     "type": "enchantment",
     "id": "blunt_enchantment",
     "condition": "ALWAYS",
-    "intermittent_activation": { "effects": [ { "frequency": "20 s", "spell_effects": [ { "id": "smoking_mana", "hit_self": true } ] } ] }
+    "intermittent_activation": { "effects": [ { "frequency": "45 s", "spell_effects": [ { "id": "smoking_mana", "hit_self": true } ] } ] }
   },
   {
     "id": "joint_lit",
@@ -2846,7 +2849,7 @@
       "armor": [
         {
           "material": [ { "type": "paper", "covered_by_mat": 100, "thickness": 0.1 } ],
-          "encumbrance": 50,
+          "encumbrance": 30,
           "coverage": 25,
           "covers": [ "mouth" ]
         }

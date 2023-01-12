@@ -346,6 +346,7 @@
     "bodytype": "human",
     "default_faction": "nether",
     "species": [ "HORROR" ],
+	"looks_like": "mon_blank",
     "volume": "48000 ml",
     "weight": "800 kg",
     "hp": 120,
