@@ -6,7 +6,7 @@
     "name": "medium hammer drone",
     "looks_like": "mon_copbot",
     "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a medium clamp and a jackhammer. The tires are constantly screeching as the bot actively scans the area for threats.",
-    "revert_to_itype": "bot_mediumhammerbot",
+    "revert_to_itype": "bot_mediumhammerdrone",
     "relative": { "speed": 150 }
   },
   {
@@ -16,7 +16,7 @@
     "name": "medium wrecking drone",
     "looks_like": "mon_copbot",
     "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a motor, a set of chains, and a menacing bludgeon. The tires are constantly screeching as the bot actively scans the area for threats.",
-    "revert_to_itype": "bot_mediumwreckingbot",
+    "revert_to_itype": "bot_mediumwreckingdrone",
     "relative": { "speed": 150 }
   },
   {
@@ -26,7 +26,7 @@
     "name": "medium saw drone",
     "looks_like": "mon_copbot",
     "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with several motors and nasty saws. The tires are constantly screeching as the bot actively scans the area for threats.",
-    "revert_to_itype": "bot_mediumsawbot",
+    "revert_to_itype": "bot_mediumsawdrone",
     "relative": { "speed": 150 }
   },
   {
@@ -36,7 +36,7 @@
     "name": "medium drill drone",
     "looks_like": "mon_copbot",
     "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a medium clamp, meant to hold prey into several powerful drills. The tires are constantly screeching as the bot actively scans the area for threats.",
-    "revert_to_itype": "bot_mediumdrillbot",
+    "revert_to_itype": "bot_mediumdrilldrone",
     "relative": { "speed": 150 }
   },
   {
@@ -46,7 +46,7 @@
     "name": "medium blade drone",
     "looks_like": "mon_copbot",
     "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a medium, sharp blade attached to heavy duty flexible material, pulled taut by a powerful motor and held by heavy-duty pins..",
-    "revert_to_itype": "bot_mediumbladebot",
+    "revert_to_itype": "bot_mediumbladedrone",
     "relative": { "speed": 150 }
   },
   {
@@ -56,7 +56,7 @@
     "name": "medium jaw drone",
     "looks_like": "mon_copbot",
     "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a massive hydraulic jaw. The tires are constantly screeching as the bot actively scans the area for threats.",
-    "revert_to_itype": "bot_mediumjawbot",
+    "revert_to_itype": "bot_mediumjawdrone",
     "relative": { "speed": 150 }
   },
   {
@@ -66,7 +66,7 @@
     "name": "medium exterminator drone",
     "looks_like": "mon_copbot",
     "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with tanks of insecticidal gas and powerful pincers. The tires are constantly screeching as the bot actively scans the area for threats.",
-    "revert_to_itype": "bot_mediumbugbot",
+    "revert_to_itype": "bot_mediumbugdrone",
     "relative": { "speed": 150 }
   },
   {
@@ -76,7 +76,7 @@
     "name": "medium flame drone",
     "looks_like": "mon_copbot",
     "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with tanks of insecticidal gas and powerful pincers. The tires are constantly screeching as the bot actively scans the area for threats.",
-    "revert_to_itype": "bot_mediumflamebot",
+    "revert_to_itype": "bot_mediumflamedrone",
     "relative": { "speed": 150 }
   },
   {
@@ -86,7 +86,7 @@
     "name": "medium flash drone",
     "looks_like": "mon_copbot",
     "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with several hoses attached to a medium tank of flash and powerful pincers. The tires are constantly screeching as the bot actively scans the area for threats.",
-    "revert_to_itype": "bot_mediumflashbot",
+    "revert_to_itype": "bot_mediumflashdrone",
     "relative": { "speed": 150 }
   }
 ]
