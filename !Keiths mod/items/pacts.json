@@ -1,10 +1,64 @@
 [
+{
+    "type": "mutation",
+    "id": "PSYCHOPATH",
+    "name": { "str": "Psychopath" },
+    "points": 2,
+    "description": "You don't experience guilt like others do.  Even when you know your actions are wrong, you just don't care.",
+    "starting_trait": true,
+    "valid": false,
+    "social_modifiers": { "lie": 5, "persuade": -50, "intimidate": 5 },
+	"bodytemp_modifiers": [ 50, 50 ],
+    "types": [ "HUMAN_EMPATHY" ],
+    "flags": [ "CANNIBAL" ]
+  },
+  {
+    "type": "mutation",
+    "id": "BLOODPACTHEAT",
+    "name": { "str": "Blood Pact Heat" },
+    "points": 0,
+    "description": "Your pact makes you feel just a little warmer under the collar, like someone's watching you.",
+    "starting_trait": false,
+    "valid": false,
+	"bodytemp_modifiers": [ 100, 100 ]
+  },
+  {
+    "type": "mutation",
+    "id": "SMOKEPACTHEAT",
+    "name": { "str": "Smoke Pact Heat" },
+    "points": 0,
+    "description": "Your pact makes you feel unpleasantly hot, like someone's watching you.",
+    "starting_trait": false,
+    "valid": false,
+	"bodytemp_modifiers": [ 150, 150 ]
+  },
+  {
+    "type": "mutation",
+    "id": "BILEPACTHEAT",
+    "name": { "str": "Bile Pact Heat" },
+    "points": 0,
+    "description": "Your pact makes you feel unpleasantly hot, like someone's watching you.",
+    "starting_trait": false,
+    "valid": false,
+	"bodytemp_modifiers": [ 150, 150 ]
+  },
+  {
+    "type": "mutation",
+    "id": "FLAMEPACTHEAT",
+    "name": { "str": "Blood Pact Heat" },
+    "points": 0,
+    "description": "Your pact makes you feel constantly befumed, like someone's watching you.",
+    "starting_trait": false,
+    "valid": false,
+	"bodytemp_modifiers": [ 200, 200 ]
+  },
   {
     "type": "enchantment",
     "id": "pact_of_blood_enchantment",
     "condition": "ALWAYS",
     "values": [
-      { "value": "MAX_MANA", "add": 750 },
+      { "value": "MAX_MANA", "add": 1000 },
+	  { "value": "INTELLIGENCE", "add": 1 },
       { "value": "ATTACK_COST", "add": -25 },
       { "value": "REGEN_MANA", "multiply": 0.2 }
     ],
@@ -43,15 +97,17 @@
     "intermittent_activation": { "effects": [ { "frequency": "10 d", "spell_effects": [ { "id": "spawn_spell_scroll_devil" } ] } ] },
     "values": [
       { "value": "CARRY_WEIGHT", "add": -25 },
+	  { "value": "INTELLIGENCE", "add": 1 },
       { "value": "REGEN_MANA", "multiply": 0.2 },
-      { "value": "MAX_MANA", "add": 750 }
+	  { "value": "BONUS_DODGE", "add": 1 },
+      { "value": "MAX_MANA", "add": 1000 }
     ]
   },
   {
     "type": "enchantment",
     "id": "pact_of_smoke_enchantment2",
     "condition": "ALWAYS",
-    "intermittent_activation": { "effects": [ { "frequency": "12 h", "spell_effects": [ { "id": "phase_door" } ] } ] }
+    "intermittent_activation": { "effects": [ { "frequency": "24 h", "spell_effects": [ { "id": "phase_door" } ] } ] }
   },
   {
     "type": "enchantment",
@@ -60,8 +116,9 @@
     "intermittent_activation": { "effects": [ { "frequency": "7 d", "spell_effects": [ { "id": "spawn_spell_scroll_devil" } ] } ] },
     "values": [
       { "value": "FOOTSTEP_NOISE", "add": 7 },
+	  { "value": "INTELLIGENCE", "add": 2 },
       { "value": "REGEN_MANA", "multiply": 0.5 },
-      { "value": "MAX_MANA", "add": 1500 }
+      { "value": "MAX_MANA", "add": 2000 }
     ]
   },
   {
@@ -69,7 +126,7 @@
     "id": "pact_of_flame_enchantment",
     "condition": "ALWAYS",
     "intermittent_activation": { "effects": [ { "frequency": "7 d", "spell_effects": [ { "id": "spawn_spell_scroll_devil" } ] } ] },
-    "values": [ { "value": "MAX_MANA", "add": 1500 }, { "value": "REGEN_MANA", "multiply": 0.5 } ]
+    "values": [ { "value": "MAX_MANA", "add": 2000 }, { "value": "REGEN_MANA", "multiply": 0.5 } ]
   },
   {
     "type": "enchantment",
@@ -126,7 +183,7 @@
         {
           "has": "WORN",
           "condition": "ALWAYS",
-          "mutations": [ "BADTEMPER", "JEKYLL", "CURELIGHTWOUNDS_SPELL", "SCHIZOPHRENIC", "PSYCHOPATH" ]
+          "mutations": [ "BADTEMPER", "JEKYLL", "CURELIGHTWOUNDS_SPELL", "SCHIZOPHRENIC", "PSYCHOPATH", "BLOODPACTHEAT" ]
         }
       ]
     }
@@ -156,7 +213,7 @@
         {
           "has": "WORN",
           "condition": "ALWAYS",
-          "mutations": [ "WAKEFUL", "XS", "spiritwalk_SPELL", "summonwisps_SPELL", "PSYCHOPATH", "FLIMSY", "GLASSJAW" ]
+          "mutations": [ "WAKEFUL", "XS", "spiritwalk_SPELL", "summonwisps_SPELL", "PSYCHOPATH", "FLIMSY", "GLASSJAW", "SMOKEPACTHEAT" ]
         }
       ]
     }
@@ -193,6 +250,7 @@
             "BADKNEES",
             "ACIDPROOF",
             "ACIDBLOOD",
+			"BILEPACTHEAT",
             "ENLARGE_SPELL",
             "PSYCHOPATH",
             "BADCARDIO",
@@ -233,6 +291,7 @@
             "JITTERY",
             "PYROMANIA",
             "PSYCHOPATH",
+			"FLAMEPACTHEAT",
             "THERMALIGNORANCE",
             "SLOWHEALER",
             "HATES_WATER",

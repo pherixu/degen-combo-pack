@@ -1,0 +1,5768 @@
+[
+{
+  "result": "brimstone_shot_00",
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_AMMO",
+  "subcategory": "CSC_AMMO_SHOT",
+  "skill_used": "fabrication",
+  "difficulty": 2,
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "time": "2 m",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "book_learn": [
+    [
+      "recipe_bullets",
+      2
+    ],
+    [
+      "manual_shotgun",
+      2
+    ]
+  ],
+  "charges": 1,
+  "reversible": true,
+  "//": "Assumes standard 9 pellet 00 load. 1166 mg gunpowder rounded to 12 100 mg 'pieces'",
+  "qualities": [
+	{
+      "id": "RED_CIRCLE",
+      "level": 1
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "tools": [
+    [
+      [
+        "press",
+        -1
+      ]
+    ]
+  ],
+  "components": [
+    [
+      [
+        "gunpowder",
+        12
+      ],
+      [
+        "gunpowder_pistol",
+        12
+      ],
+      [
+        "gunpowder_shotgun",
+        12
+      ]
+    ],
+	[
+      [
+        "brimstone_chunk",
+        1
+      ]
+    ]
+  ]
+},
+  {
+    "id": "brimstone_shot_00",
+    "copy-from": "shotshell_abstract",
+    "type": "AMMO",
+    "name": { "str_sp": "hot brimstone 00 shot" },
+    "description": "A shell filled with metal pellets and spiked with brimstone.  Extremely damaging, plus the spread makes it very accurate at short range.  Favored by SWAT forces.",
+    "price": 500,
+    "price_postapoc": 1000,
+    "range": 18,
+    "damage": { "damage_type": "bullet", "amount": 60 },
+    "shot_damage": { "damage_type": "heat", "amount": 15 },
+    "projectile_count": 9,
+    "shot_spread": 300,
+    "recoil": 2500,
+    "loudness": 160,
+    "effects": [ "COOKOFF", "SHOT", "INCENDIARY", "STREAM", "NOGIB", "BLACKPOWDER" ]
+  },
+  {
+  "result": "blue_brimstone_shot_00",
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_AMMO",
+  "subcategory": "CSC_AMMO_SHOT",
+  "skill_used": "fabrication",
+  "difficulty": 2,
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "time": "2 m",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "book_learn": [
+    [
+      "recipe_bullets",
+      2
+    ],
+    [
+      "manual_shotgun",
+      2
+    ]
+  ],
+  "charges": 1,
+  "reversible": true,
+  "//": "Assumes standard 9 pellet 00 load. 1166 mg gunpowder rounded to 12 100 mg 'pieces'",
+  "qualities": [
+	{
+      "id": "BLUE_CIRCLE",
+      "level": 1
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "tools": [
+    [
+      [
+        "press",
+        -1
+      ]
+    ]
+  ],
+  "components": [
+    [
+      [
+        "gunpowder",
+        12
+      ],
+      [
+        "gunpowder_pistol",
+        12
+      ],
+      [
+        "gunpowder_shotgun",
+        12
+      ]
+    ],
+	[
+      [
+        "brimstone_chunk",
+        1
+      ]
+    ]
+  ]
+},
+  {
+    "id": "blue_brimstone_shot_00",
+    "copy-from": "shotshell_abstract",
+    "type": "AMMO",
+    "name": { "str_sp": "cold brimstone 00 shot" },
+    "description": "A shell filled with metal pellets and spiked with brimstone.  Extremely damaging, plus the spread makes it very accurate at short range.  Favored by SWAT forces.",
+    "price": 500,
+    "price_postapoc": 1000,
+    "range": 18,
+    "damage": { "damage_type": "bullet", "amount": 60 },
+    "shot_damage": { "damage_type": "cold", "amount": 15 },
+    "projectile_count": 9,
+    "shot_spread": 300,
+    "recoil": 2500,
+    "loudness": 160,
+    "effects": [ "COOKOFF", "SHOT", "SMOKE", "TRAIL", "NOGIB", "BLACKPOWDER" ]
+  },
+  {
+  "result": "green_brimstone_shot_00",
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_AMMO",
+  "subcategory": "CSC_AMMO_SHOT",
+  "skill_used": "fabrication",
+  "difficulty": 2,
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "time": "2 m",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "book_learn": [
+    [
+      "recipe_bullets",
+      2
+    ],
+    [
+      "manual_shotgun",
+      2
+    ]
+  ],
+  "charges": 1,
+  "reversible": true,
+  "//": "Assumes standard 9 pellet 00 load. 1166 mg gunpowder rounded to 12 100 mg 'pieces'",
+  "qualities": [
+	{
+      "id": "GREEN_CIRCLE",
+      "level": 1
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "tools": [
+    [
+      [
+        "press",
+        -1
+      ]
+    ]
+  ],
+  "components": [
+    [
+      [
+        "gunpowder",
+        12
+      ],
+      [
+        "gunpowder_pistol",
+        12
+      ],
+      [
+        "gunpowder_shotgun",
+        12
+      ]
+    ],
+	[
+      [
+        "brimstone_chunk",
+        1
+      ]
+    ]
+  ]
+},
+  {
+    "id": "green_brimstone_shot_00",
+    "copy-from": "shotshell_abstract",
+    "type": "AMMO",
+    "name": { "str_sp": "acidic brimstone 00 shot" },
+    "description": "A shell filled with metal pellets and spiked with brimstone.  Extremely damaging, plus the spread makes it very accurate at short range.  Favored by SWAT forces.",
+    "price": 500,
+    "price_postapoc": 1000,
+    "range": 18,
+    "damage": { "damage_type": "bullet", "amount": 60 },
+    "shot_damage": { "damage_type": "acid", "amount": 15 },
+    "projectile_count": 9,
+    "shot_spread": 300,
+    "recoil": 2500,
+    "loudness": 160,
+    "effects": [ "COOKOFF", "SHOT", "ACIDBOMB", "STREAM_GAS_INSCENTICIDAL", "NOGIB", "BLACKPOWDER" ]
+  },
+  {
+  "result": "white_brimstone_shot_00",
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_AMMO",
+  "subcategory": "CSC_AMMO_SHOT",
+  "skill_used": "fabrication",
+  "difficulty": 2,
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "time": "2 m",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "book_learn": [
+    [
+      "recipe_bullets",
+      2
+    ],
+    [
+      "manual_shotgun",
+      2
+    ]
+  ],
+  "charges": 1,
+  "reversible": true,
+  "//": "Assumes standard 9 pellet 00 load. 1166 mg gunpowder rounded to 12 100 mg 'pieces'",
+  "qualities": [
+	{
+      "id": "WHITE_CIRCLE",
+      "level": 1
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "tools": [
+    [
+      [
+        "press",
+        -1
+      ]
+    ]
+  ],
+  "components": [
+    [
+      [
+        "gunpowder",
+        12
+      ],
+      [
+        "gunpowder_pistol",
+        12
+      ],
+      [
+        "gunpowder_shotgun",
+        12
+      ]
+    ],
+	[
+      [
+        "brimstone_chunk",
+        1
+      ]
+    ]
+  ]
+},
+  {
+    "id": "white_brimstone_shot_00",
+    "copy-from": "shotshell_abstract",
+    "type": "AMMO",
+    "name": { "str_sp": "electric brimstone 00 shot" },
+    "description": "A shell filled with metal pellets and spiked with brimstone.  Extremely damaging, plus the spread makes it very accurate at short range.  Favored by SWAT forces.",
+    "price": 500,
+    "price_postapoc": 1000,
+    "range": 18,
+    "damage": { "damage_type": "bullet", "amount": 60 },
+    "shot_damage": { "damage_type": "electric", "amount": 15 },
+    "projectile_count": 9,
+    "shot_spread": 300,
+    "recoil": 2500,
+    "loudness": 160,
+    "effects": [ "COOKOFF", "SHOT", "EMP", "LIGHTNING", "NOGIB", "BLACKPOWDER" ]
+  },
+  {
+  "result": "black_brimstone_shot_00",
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_AMMO",
+  "subcategory": "CSC_AMMO_SHOT",
+  "skill_used": "fabrication",
+  "difficulty": 2,
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "time": "2 m",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "book_learn": [
+    [
+      "recipe_bullets",
+      2
+    ],
+    [
+      "manual_shotgun",
+      2
+    ]
+  ],
+  "charges": 1,
+  "reversible": true,
+  "//": "Assumes standard 9 pellet 00 load. 1166 mg gunpowder rounded to 12 100 mg 'pieces'",
+  "qualities": [
+	{
+      "id": "BLACK_CIRCLE",
+      "level": 1
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "tools": [
+    [
+      [
+        "press",
+        -1
+      ]
+    ]
+  ],
+  "components": [
+    [
+      [
+        "gunpowder",
+        12
+      ],
+      [
+        "gunpowder_pistol",
+        12
+      ],
+      [
+        "gunpowder_shotgun",
+        12
+      ]
+    ],
+	[
+      [
+        "brimstone_chunk",
+        1
+      ]
+    ]
+  ]
+},
+  {
+    "id": "black_brimstone_shot_00",
+    "copy-from": "shotshell_abstract",
+    "type": "AMMO",
+    "name": { "str_sp": "biological brimstone 00 shot" },
+    "description": "A shell filled with metal pellets and spiked with brimstone.  Extremely damaging, plus the spread makes it very accurate at short range.  Favored by SWAT forces.",
+    "price": 500,
+    "price_postapoc": 1000,
+    "range": 18,
+    "damage": { "damage_type": "bullet", "amount": 60 },
+    "shot_damage": { "damage_type": "biological", "amount": 15 },
+    "projectile_count": 9,
+    "shot_spread": 300,
+    "recoil": 2500,
+    "loudness": 160,
+    "effects": [ "COOKOFF", "SHOT", "NO_DAMAGE_SCALING", "TOXICGAS", "NOGIB", "BLACKPOWDER" ]
+  },
+  {
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "brimstone_arrow_metal_sharpened_fletched",
+  "category": "CC_AMMO",
+  "subcategory": "CSC_AMMO_ARROWS",
+  "skill_used": "fabrication",
+  "skills_required": [
+    [
+      "archery",
+      3
+    ],
+    [
+      "survival",
+      1
+    ]
+  ],
+  "difficulty": 4,
+  "time": "20 m",
+  "autolearn": true,
+  "book_learn": [
+    [
+      "recipe_arrows",
+      3
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_fletching"
+    },
+    {
+      "proficiency": "prof_metalworking"
+    }
+  ],
+  "qualities": [
+    {
+      "id": "HAMMER",
+      "level": 1
+    },
+    {
+      "id": "CUT",
+      "level": 2
+    },
+    {
+      "id": "SAW_M",
+      "level": 1
+    },
+	{
+      "id": "RED_CIRCLE",
+      "level": 1
+    }
+  ],
+  "components": [
+    [
+      [
+        "adhesive",
+        1,
+        "LIST"
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        10
+      ]
+    ],
+    [
+      [
+        "wire",
+        5
+      ],
+      [
+        "pipe",
+        1
+      ]
+    ],
+    [
+      [
+        "fletching",
+        1,
+        "LIST"
+      ]
+    ]
+  ]
+},
+  {
+  "type": "AMMO",
+  "id": "brimstone_arrow_metal_sharpened_fletched",
+  "price": 500,
+  "name": {
+    "str": "hot brimstone arrow"
+  },
+  "symbol": "=",
+  "color": "green",
+  "looks_like": "arrow_fire_hardened_fletched",
+  "description": "A simple fletched steel arrow shaft with a flattened and sharpened tip that has been tinged with brimstone.",
+  "material": [
+    "steel", "brimstone"
+  ],
+  "volume": "250 ml",
+  "price_postapoc": 2500,
+  "weight": "30 g",
+  "longest_side": "76 cm",
+  "bashing": 2,
+  "ammo_type": "arrow",
+  "damage": {
+    "damage_type": "heat",
+    "armor_penetration": 2
+  },
+  "dispersion": 100,
+  "loudness": 0,
+  "count": 10,
+  "show_stats": true,
+  "critical_multiplier": 10,
+  "effects": [
+    "RECOVER_20"
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "blue_brimstone_arrow_metal_sharpened_fletched",
+  "category": "CC_AMMO",
+  "subcategory": "CSC_AMMO_ARROWS",
+  "skill_used": "fabrication",
+  "skills_required": [
+    [
+      "archery",
+      3
+    ],
+    [
+      "survival",
+      1
+    ]
+  ],
+  "difficulty": 4,
+  "time": "20 m",
+  "autolearn": true,
+  "book_learn": [
+    [
+      "recipe_arrows",
+      3
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_fletching"
+    },
+    {
+      "proficiency": "prof_metalworking"
+    }
+  ],
+  "qualities": [
+    {
+      "id": "HAMMER",
+      "level": 1
+    },
+    {
+      "id": "CUT",
+      "level": 2
+    },
+    {
+      "id": "SAW_M",
+      "level": 1
+    },
+	{
+      "id": "BLUE_CIRCLE",
+      "level": 1
+    }
+  ],
+  "components": [
+    [
+      [
+        "adhesive",
+        1,
+        "LIST"
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        10
+      ]
+    ],
+    [
+      [
+        "wire",
+        5
+      ],
+      [
+        "pipe",
+        1
+      ]
+    ],
+    [
+      [
+        "fletching",
+        1,
+        "LIST"
+      ]
+    ]
+  ]
+},
+{
+  "type": "AMMO",
+  "id": "blue_brimstone_arrow_metal_sharpened_fletched",
+  "price": 500,
+  "name": {
+    "str": "cold brimstone arrow"
+  },
+  "symbol": "=",
+  "color": "green",
+  "looks_like": "arrow_fire_hardened_fletched",
+  "description": "A simple fletched steel arrow shaft with a flattened and sharpened tip that has been tinged with brimstone.",
+  "material": [
+    "steel", "brimstone"
+  ],
+  "volume": "250 ml",
+  "price_postapoc": 2500,
+  "weight": "30 g",
+  "longest_side": "76 cm",
+  "bashing": 2,
+  "ammo_type": "arrow",
+  "damage": {
+    "damage_type": "cold",
+    "armor_penetration": 2
+  },
+  "dispersion": 100,
+  "loudness": 0,
+  "count": 10,
+  "show_stats": true,
+  "critical_multiplier": 10,
+  "effects": [
+    "RECOVER_20"
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "green_brimstone_arrow_metal_sharpened_fletched",
+  "category": "CC_AMMO",
+  "subcategory": "CSC_AMMO_ARROWS",
+  "skill_used": "fabrication",
+  "skills_required": [
+    [
+      "archery",
+      3
+    ],
+    [
+      "survival",
+      1
+    ]
+  ],
+  "difficulty": 4,
+  "time": "20 m",
+  "autolearn": true,
+  "book_learn": [
+    [
+      "recipe_arrows",
+      3
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_fletching"
+    },
+    {
+      "proficiency": "prof_metalworking"
+    }
+  ],
+  "qualities": [
+    {
+      "id": "HAMMER",
+      "level": 1
+    },
+    {
+      "id": "CUT",
+      "level": 2
+    },
+    {
+      "id": "SAW_M",
+      "level": 1
+    },
+	{
+      "id": "GREEN_CIRCLE",
+      "level": 1
+    }
+  ],
+  "components": [
+    [
+      [
+        "adhesive",
+        1,
+        "LIST"
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        10
+      ]
+    ],
+    [
+      [
+        "wire",
+        5
+      ],
+      [
+        "pipe",
+        1
+      ]
+    ],
+    [
+      [
+        "fletching",
+        1,
+        "LIST"
+      ]
+    ]
+  ]
+},
+{
+  "type": "AMMO",
+  "id": "green_brimstone_arrow_metal_sharpened_fletched",
+  "price": 500,
+  "name": {
+    "str": "acidic brimstone arrow"
+  },
+  "symbol": "=",
+  "color": "green",
+  "looks_like": "arrow_fire_hardened_fletched",
+  "description": "A simple fletched steel arrow shaft with a flattened and sharpened tip that has been tinged with brimstone.",
+  "material": [
+    "steel", "brimstone"
+  ],
+  "volume": "250 ml",
+  "price_postapoc": 2500,
+  "weight": "30 g",
+  "longest_side": "76 cm",
+  "bashing": 2,
+  "ammo_type": "arrow",
+  "damage": {
+    "damage_type": "acid",
+    "armor_penetration": 2
+  },
+  "dispersion": 100,
+  "loudness": 0,
+  "count": 10,
+  "show_stats": true,
+  "critical_multiplier": 10,
+  "effects": [
+    "RECOVER_20"
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "black_brimstone_arrow_metal_sharpened_fletched",
+  "category": "CC_AMMO",
+  "subcategory": "CSC_AMMO_ARROWS",
+  "skill_used": "fabrication",
+  "skills_required": [
+    [
+      "archery",
+      3
+    ],
+    [
+      "survival",
+      1
+    ]
+  ],
+  "difficulty": 4,
+  "time": "20 m",
+  "autolearn": true,
+  "book_learn": [
+    [
+      "recipe_arrows",
+      3
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_fletching"
+    },
+    {
+      "proficiency": "prof_metalworking"
+    }
+  ],
+  "qualities": [
+    {
+      "id": "HAMMER",
+      "level": 1
+    },
+    {
+      "id": "CUT",
+      "level": 2
+    },
+    {
+      "id": "SAW_M",
+      "level": 1
+    },
+	{
+      "id": "BLACK_CIRCLE",
+      "level": 1
+    }
+  ],
+  "components": [
+    [
+      [
+        "adhesive",
+        1,
+        "LIST"
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        10
+      ]
+    ],
+    [
+      [
+        "wire",
+        5
+      ],
+      [
+        "pipe",
+        1
+      ]
+    ],
+    [
+      [
+        "fletching",
+        1,
+        "LIST"
+      ]
+    ]
+  ]
+},
+{
+  "type": "AMMO",
+  "id": "black_brimstone_arrow_metal_sharpened_fletched",
+  "price": 500,
+  "name": {
+    "str": "biological brimstone arrow"
+  },
+  "symbol": "=",
+  "color": "green",
+  "looks_like": "arrow_fire_hardened_fletched",
+  "description": "A simple fletched steel arrow shaft with a flattened and sharpened tip that has been tinged with brimstone.",
+  "material": [
+    "steel", "brimstone"
+  ],
+  "volume": "250 ml",
+  "price_postapoc": 2500,
+  "weight": "30 g",
+  "longest_side": "76 cm",
+  "bashing": 2,
+  "ammo_type": "arrow",
+  "damage": {
+    "damage_type": "biological",
+    "armor_penetration": 2
+  },
+  "dispersion": 100,
+  "loudness": 0,
+  "count": 10,
+  "show_stats": true,
+  "critical_multiplier": 10,
+  "effects": [
+    "RECOVER_20"
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "white_brimstone_arrow_metal_sharpened_fletched",
+  "category": "CC_AMMO",
+  "subcategory": "CSC_AMMO_ARROWS",
+  "skill_used": "fabrication",
+  "skills_required": [
+    [
+      "archery",
+      3
+    ],
+    [
+      "survival",
+      1
+    ]
+  ],
+  "difficulty": 4,
+  "time": "20 m",
+  "autolearn": true,
+  "book_learn": [
+    [
+      "recipe_arrows",
+      3
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_fletching"
+    },
+    {
+      "proficiency": "prof_metalworking"
+    }
+  ],
+  "qualities": [
+    {
+      "id": "HAMMER",
+      "level": 1
+    },
+    {
+      "id": "CUT",
+      "level": 2
+    },
+    {
+      "id": "SAW_M",
+      "level": 1
+    },
+	{
+      "id": "WHITE_CIRCLE",
+      "level": 1
+    }
+  ],
+  "components": [
+    [
+      [
+        "adhesive",
+        1,
+        "LIST"
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        10
+      ]
+    ],
+    [
+      [
+        "wire",
+        5
+      ],
+      [
+        "pipe",
+        1
+      ]
+    ],
+    [
+      [
+        "fletching",
+        1,
+        "LIST"
+      ]
+    ]
+  ]
+},
+{
+  "type": "AMMO",
+  "id": "white_brimstone_arrow_metal_sharpened_fletched",
+  "price": 500,
+  "name": {
+    "str": "electric brimstone arrow"
+  },
+  "symbol": "=",
+  "color": "green",
+  "looks_like": "arrow_fire_hardened_fletched",
+  "description": "A simple fletched steel arrow shaft with a flattened and sharpened tip that has been tinged with brimstone.",
+  "material": [
+    "steel", "brimstone"
+  ],
+  "volume": "250 ml",
+  "price_postapoc": 2500,
+  "weight": "30 g",
+  "longest_side": "76 cm",
+  "bashing": 2,
+  "ammo_type": "arrow",
+  "damage": {
+    "damage_type": "electric",
+    "armor_penetration": 2
+  },
+  "dispersion": 100,
+  "loudness": 0,
+  "count": 10,
+  "show_stats": true,
+  "critical_multiplier": 10,
+  "effects": [
+    "RECOVER_20"
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "brimstone_bolt_metal",
+  "category": "CC_AMMO",
+  "subcategory": "CSC_AMMO_ARROWS",
+  "skill_used": "fabrication",
+  "skills_required": [
+    [
+      "survival",
+      1
+    ]
+  ],
+  "difficulty": 4,
+  "time": "20 m",
+  "autolearn": true,
+  "book_learn": [
+    [
+      "recipe_arrows",
+      3
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_fletching"
+    },
+    {
+      "proficiency": "prof_metalworking"
+    }
+  ],
+  "qualities": [
+    {
+      "id": "HAMMER",
+      "level": 1
+    },
+    {
+      "id": "CUT",
+      "level": 2
+    },
+    {
+      "id": "SAW_M",
+      "level": 1
+    },
+	{
+      "id": "RED_CIRCLE",
+      "level": 1
+    }
+  ],
+  "components": [
+    [
+      [
+        "adhesive",
+        1,
+        "LIST"
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        10
+      ]
+    ],
+    [
+      [
+        "wire",
+        4
+      ],
+      [
+        "pipe",
+        1
+      ]
+    ],
+    [
+      [
+        "fletching",
+        1,
+        "LIST"
+      ]
+    ]
+  ]
+},
+{
+  "type": "AMMO",
+  "id": "brimstone_bolt_metal",
+  "price": 500,
+  "name": {
+    "str": "hot brimstone bolt"
+  },
+  "symbol": "=",
+  "color": "green",
+  "description": "A simple fletched steel crossbow bolt with a flattened and sharpened tip that has been tinged with brimstone.",
+  "material": [
+    "steel", "brimstone"
+  ],
+  "volume": "250 ml",
+  "longest_side": "400 mm",
+  "price_postapoc": 5000,
+  "weight": "55 g",
+  "bashing": 1,
+  "ammo_type": "bolt",
+  "damage": {
+    "damage_type": "heat",
+    "constant_damage_multiplier": 1.25,
+    "armor_penetration": 2
+  },
+  "dispersion": 100,
+  "loudness": 0,
+  "count": 10,
+  "show_stats": true,
+  "critical_multiplier": 10,
+  "effects": [
+    "RECOVER_20"
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "blue_brimstone_bolt_metal",
+  "category": "CC_AMMO",
+  "subcategory": "CSC_AMMO_ARROWS",
+  "skill_used": "fabrication",
+  "skills_required": [
+    [
+      "survival",
+      1
+    ]
+  ],
+  "difficulty": 4,
+  "time": "20 m",
+  "autolearn": true,
+  "book_learn": [
+    [
+      "recipe_arrows",
+      3
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_fletching"
+    },
+    {
+      "proficiency": "prof_metalworking"
+    }
+  ],
+  "qualities": [
+    {
+      "id": "HAMMER",
+      "level": 1
+    },
+    {
+      "id": "CUT",
+      "level": 2
+    },
+    {
+      "id": "SAW_M",
+      "level": 1
+    },
+	{
+      "id": "BLUE_CIRCLE",
+      "level": 1
+    }
+  ],
+  "components": [
+    [
+      [
+        "adhesive",
+        1,
+        "LIST"
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        10
+      ]
+    ],
+    [
+      [
+        "wire",
+        4
+      ],
+      [
+        "pipe",
+        1
+      ]
+    ],
+    [
+      [
+        "fletching",
+        1,
+        "LIST"
+      ]
+    ]
+  ]
+},
+{
+  "type": "AMMO",
+  "id": "blue_brimstone_bolt_metal",
+  "price": 500,
+  "name": {
+    "str": "cold brimstone bolt"
+  },
+  "symbol": "=",
+  "color": "green",
+  "description": "A simple fletched steel crossbow bolt with a flattened and sharpened tip that has been tinged with brimstone.",
+  "material": [
+    "steel", "brimstone"
+  ],
+  "volume": "250 ml",
+  "longest_side": "400 mm",
+  "price_postapoc": 5000,
+  "weight": "55 g",
+  "bashing": 1,
+  "ammo_type": "bolt",
+  "damage": {
+    "damage_type": "cold",
+    "constant_damage_multiplier": 1.25,
+    "armor_penetration": 2
+  },
+  "dispersion": 100,
+  "loudness": 0,
+  "count": 10,
+  "show_stats": true,
+  "critical_multiplier": 10,
+  "effects": [
+    "RECOVER_20"
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "green_brimstone_bolt_metal",
+  "category": "CC_AMMO",
+  "subcategory": "CSC_AMMO_ARROWS",
+  "skill_used": "fabrication",
+  "skills_required": [
+    [
+      "survival",
+      1
+    ]
+  ],
+  "difficulty": 4,
+  "time": "20 m",
+  "autolearn": true,
+  "book_learn": [
+    [
+      "recipe_arrows",
+      3
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_fletching"
+    },
+    {
+      "proficiency": "prof_metalworking"
+    }
+  ],
+  "qualities": [
+    {
+      "id": "HAMMER",
+      "level": 1
+    },
+    {
+      "id": "CUT",
+      "level": 2
+    },
+    {
+      "id": "SAW_M",
+      "level": 1
+    },
+	{
+      "id": "GREEN_CIRCLE",
+      "level": 1
+    }
+  ],
+  "components": [
+    [
+      [
+        "adhesive",
+        1,
+        "LIST"
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        10
+      ]
+    ],
+    [
+      [
+        "wire",
+        4
+      ],
+      [
+        "pipe",
+        1
+      ]
+    ],
+    [
+      [
+        "fletching",
+        1,
+        "LIST"
+      ]
+    ]
+  ]
+},
+{
+  "type": "AMMO",
+  "id": "green_brimstone_bolt_metal",
+  "price": 500,
+  "name": {
+    "str": "acidic brimstone bolt"
+  },
+  "symbol": "=",
+  "color": "green",
+  "description": "A simple fletched steel crossbow bolt with a flattened and sharpened tip that has been tinged with brimstone.",
+  "material": [
+    "steel", "brimstone"
+  ],
+  "volume": "250 ml",
+  "longest_side": "400 mm",
+  "price_postapoc": 5000,
+  "weight": "55 g",
+  "bashing": 1,
+  "ammo_type": "bolt",
+  "damage": {
+    "damage_type": "acid",
+    "constant_damage_multiplier": 1.25,
+    "armor_penetration": 2
+  },
+  "dispersion": 100,
+  "loudness": 0,
+  "count": 10,
+  "show_stats": true,
+  "critical_multiplier": 10,
+  "effects": [
+    "RECOVER_20"
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "black_brimstone_bolt_metal",
+  "category": "CC_AMMO",
+  "subcategory": "CSC_AMMO_ARROWS",
+  "skill_used": "fabrication",
+  "skills_required": [
+    [
+      "survival",
+      1
+    ]
+  ],
+  "difficulty": 4,
+  "time": "20 m",
+  "autolearn": true,
+  "book_learn": [
+    [
+      "recipe_arrows",
+      3
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_fletching"
+    },
+    {
+      "proficiency": "prof_metalworking"
+    }
+  ],
+  "qualities": [
+    {
+      "id": "HAMMER",
+      "level": 1
+    },
+    {
+      "id": "CUT",
+      "level": 2
+    },
+    {
+      "id": "SAW_M",
+      "level": 1
+    },
+	{
+      "id": "BLACK_CIRCLE",
+      "level": 1
+    }
+  ],
+  "components": [
+    [
+      [
+        "adhesive",
+        1,
+        "LIST"
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        10
+      ]
+    ],
+    [
+      [
+        "wire",
+        4
+      ],
+      [
+        "pipe",
+        1
+      ]
+    ],
+    [
+      [
+        "fletching",
+        1,
+        "LIST"
+      ]
+    ]
+  ]
+},
+{
+  "type": "AMMO",
+  "id": "black_brimstone_bolt_metal",
+  "price": 500,
+  "name": {
+    "str": "biological brimstone bolt"
+  },
+  "symbol": "=",
+  "color": "green",
+  "description": "A simple fletched steel crossbow bolt with a flattened and sharpened tip that has been tinged with brimstone.",
+  "material": [
+    "steel", "brimstone"
+  ],
+  "volume": "250 ml",
+  "longest_side": "400 mm",
+  "price_postapoc": 5000,
+  "weight": "55 g",
+  "bashing": 1,
+  "ammo_type": "bolt",
+  "damage": {
+    "damage_type": "biological",
+    "constant_damage_multiplier": 1.25,
+    "armor_penetration": 2
+  },
+  "dispersion": 100,
+  "loudness": 0,
+  "count": 10,
+  "show_stats": true,
+  "critical_multiplier": 10,
+  "effects": [
+    "RECOVER_20"
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "white_brimstone_bolt_metal",
+  "category": "CC_AMMO",
+  "subcategory": "CSC_AMMO_ARROWS",
+  "skill_used": "fabrication",
+  "skills_required": [
+    [
+      "survival",
+      1
+    ]
+  ],
+  "difficulty": 4,
+  "time": "20 m",
+  "autolearn": true,
+  "book_learn": [
+    [
+      "recipe_arrows",
+      3
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_fletching"
+    },
+    {
+      "proficiency": "prof_metalworking"
+    }
+  ],
+  "qualities": [
+    {
+      "id": "HAMMER",
+      "level": 1
+    },
+    {
+      "id": "CUT",
+      "level": 2
+    },
+    {
+      "id": "SAW_M",
+      "level": 1
+    },
+	{
+      "id": "WHITE_CIRCLE",
+      "level": 1
+    }
+  ],
+  "components": [
+    [
+      [
+        "adhesive",
+        1,
+        "LIST"
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        10
+      ]
+    ],
+    [
+      [
+        "wire",
+        4
+      ],
+      [
+        "pipe",
+        1
+      ]
+    ],
+    [
+      [
+        "fletching",
+        1,
+        "LIST"
+      ]
+    ]
+  ]
+},
+{
+  "type": "AMMO",
+  "id": "white_brimstone_bolt_metal",
+  "price": 500,
+  "name": {
+    "str": "biological brimstone bolt"
+  },
+  "symbol": "=",
+  "color": "green",
+  "description": "A simple fletched steel crossbow bolt with a flattened and sharpened tip that has been tinged with brimstone.",
+  "material": [
+    "steel", "brimstone"
+  ],
+  "volume": "250 ml",
+  "longest_side": "400 mm",
+  "price_postapoc": 5000,
+  "weight": "55 g",
+  "bashing": 1,
+  "ammo_type": "bolt",
+  "damage": {
+    "damage_type": "electric",
+    "constant_damage_multiplier": 1.25,
+    "armor_penetration": 2
+  },
+  "dispersion": 100,
+  "loudness": 0,
+  "count": 10,
+  "show_stats": true,
+  "critical_multiplier": 10,
+  "effects": [
+    "RECOVER_20"
+  ]
+},
+{
+  "result": "brimstone_9mm",
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_AMMO",
+  "subcategory": "CSC_AMMO_PISTOL",
+  "skill_used": "fabrication",
+  "difficulty": 4,
+  "skills_required": [
+    "gun",
+    4
+  ],
+  "time": "2 m",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "book_learn": [
+    [
+      "manual_pistol",
+      1
+    ],
+    [
+      "manual_smg",
+      1
+    ],
+    [
+      "recipe_bullets",
+      2
+    ]
+  ],
+  "qualities": [
+	{
+      "id": "RED_CIRCLE",
+      "level": 1
+    }
+  ],
+  "charges": 1,
+  "reversible": true,
+  "using": [
+    [
+      "bullet_forming",
+      2
+    ],
+    [
+      "ammo_bullet",
+      2
+    ],
+    [
+      "ammo_9mm",
+      1
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_sliver",
+        3
+      ]
+    ],
+    [
+      [
+        "copper",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "id": "brimstone_9mm",
+  "type": "AMMO",
+  "name": {
+    "str_sp": "hot brimstone 9x19mm JHP"
+  },
+  "description": "9x19mm ammunition with a brimstone jacketed hollow point bullet.  JHP rounds have inferior penetration to FMJ rounds, but their expansion slightly increases stopping power against unarmored targets and reduces overpenetration.",
+  "weight": "7 g",
+  "volume": "115 ml",
+  "price": 150,
+  "price_postapoc": 10000,
+  "flags": [
+    "IRREPLACEABLE_CONSUMABLE"
+  ],
+  "material": [
+    "brass",
+    "powder",
+	"brimstone"
+  ],
+  "symbol": "=",
+  "color": "yellow",
+  "count": 50,
+  "stack_size": 50,
+  "ammo_type": "9mm",
+  "casing": "9mm_casing",
+  "range": 14,
+  "damage": {
+    "damage_type": "heat",
+    "amount": 26
+  },
+  "dispersion": 60,
+  "recoil": 500,
+  "effects": [
+    "COOKOFF", "BLACKPOWDER"
+  ]
+},
+{
+  "result": "blue_brimstone_9mm",
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_AMMO",
+  "subcategory": "CSC_AMMO_PISTOL",
+  "skill_used": "fabrication",
+  "difficulty": 4,
+  "skills_required": [
+    "gun",
+    4
+  ],
+  "time": "2 m",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "book_learn": [
+    [
+      "manual_pistol",
+      1
+    ],
+    [
+      "manual_smg",
+      1
+    ],
+    [
+      "recipe_bullets",
+      2
+    ]
+  ],
+  "qualities": [
+	{
+      "id": "BLUE_CIRCLE",
+      "level": 1
+    }
+  ],
+  "charges": 1,
+  "reversible": true,
+  "using": [
+    [
+      "bullet_forming",
+      2
+    ],
+    [
+      "ammo_bullet",
+      2
+    ],
+    [
+      "ammo_9mm",
+      1
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_sliver",
+        3
+      ]
+    ],
+    [
+      [
+        "copper",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "id": "blue_brimstone_9mm",
+  "type": "AMMO",
+  "name": {
+    "str_sp": "cold brimstone 9x19mm JHP"
+  },
+  "description": "9x19mm ammunition with a brimstone jacketed hollow point bullet.  JHP rounds have inferior penetration to FMJ rounds, but their expansion slightly increases stopping power against unarmored targets and reduces overpenetration.",
+  "weight": "7 g",
+  "volume": "115 ml",
+  "price": 150,
+  "price_postapoc": 10000,
+  "flags": [
+    "IRREPLACEABLE_CONSUMABLE"
+  ],
+  "material": [
+    "brass",
+    "powder",
+	"brimstone"
+  ],
+  "symbol": "=",
+  "color": "yellow",
+  "count": 50,
+  "stack_size": 50,
+  "ammo_type": "9mm",
+  "casing": "9mm_casing",
+  "range": 14,
+  "damage": {
+    "damage_type": "cold",
+    "amount": 26
+  },
+  "dispersion": 60,
+  "recoil": 500,
+  "effects": [
+    "COOKOFF", "BLACKPOWDER"
+  ]
+},
+{
+  "result": "green_brimstone_9mm",
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_AMMO",
+  "subcategory": "CSC_AMMO_PISTOL",
+  "skill_used": "fabrication",
+  "difficulty": 4,
+  "skills_required": [
+    "gun",
+    4
+  ],
+  "time": "2 m",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "book_learn": [
+    [
+      "manual_pistol",
+      1
+    ],
+    [
+      "manual_smg",
+      1
+    ],
+    [
+      "recipe_bullets",
+      2
+    ]
+  ],
+  "qualities": [
+	{
+      "id": "GREEN_CIRCLE",
+      "level": 1
+    }
+  ],
+  "charges": 1,
+  "reversible": true,
+  "using": [
+    [
+      "bullet_forming",
+      2
+    ],
+    [
+      "ammo_bullet",
+      2
+    ],
+    [
+      "ammo_9mm",
+      1
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_sliver",
+        3
+      ]
+    ],
+    [
+      [
+        "copper",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "id": "green_brimstone_9mm",
+  "type": "AMMO",
+  "name": {
+    "str_sp": "acidic brimstone 9x19mm JHP"
+  },
+  "description": "9x19mm ammunition with a brimstone jacketed hollow point bullet.  JHP rounds have inferior penetration to FMJ rounds, but their expansion slightly increases stopping power against unarmored targets and reduces overpenetration.",
+  "weight": "7 g",
+  "volume": "115 ml",
+  "price": 150,
+  "price_postapoc": 10000,
+  "flags": [
+    "IRREPLACEABLE_CONSUMABLE"
+  ],
+  "material": [
+    "brass",
+    "powder",
+	"brimstone"
+  ],
+  "symbol": "=",
+  "color": "yellow",
+  "count": 50,
+  "stack_size": 50,
+  "ammo_type": "9mm",
+  "casing": "9mm_casing",
+  "range": 14,
+  "damage": {
+    "damage_type": "acid",
+    "amount": 26
+  },
+  "dispersion": 60,
+  "recoil": 500,
+  "effects": [
+    "COOKOFF", "BLACKPOWDER"
+  ]
+},
+{
+  "result": "black_brimstone_9mm",
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_AMMO",
+  "subcategory": "CSC_AMMO_PISTOL",
+  "skill_used": "fabrication",
+  "difficulty": 4,
+  "skills_required": [
+    "gun",
+    4
+  ],
+  "time": "2 m",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "book_learn": [
+    [
+      "manual_pistol",
+      1
+    ],
+    [
+      "manual_smg",
+      1
+    ],
+    [
+      "recipe_bullets",
+      2
+    ]
+  ],
+  "qualities": [
+	{
+      "id": "BLACK_CIRCLE",
+      "level": 1
+    }
+  ],
+  "charges": 1,
+  "reversible": true,
+  "using": [
+    [
+      "bullet_forming",
+      2
+    ],
+    [
+      "ammo_bullet",
+      2
+    ],
+    [
+      "ammo_9mm",
+      1
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_sliver",
+        3
+      ]
+    ],
+    [
+      [
+        "copper",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "id": "black_brimstone_9mm",
+  "type": "AMMO",
+  "name": {
+    "str_sp": "biological brimstone 9x19mm JHP"
+  },
+  "description": "9x19mm ammunition with a brimstone jacketed hollow point bullet.  JHP rounds have inferior penetration to FMJ rounds, but their expansion slightly increases stopping power against unarmored targets and reduces overpenetration.",
+  "weight": "7 g",
+  "volume": "115 ml",
+  "price": 150,
+  "price_postapoc": 10000,
+  "flags": [
+    "IRREPLACEABLE_CONSUMABLE"
+  ],
+  "material": [
+    "brass",
+    "powder",
+	"brimstone"
+  ],
+  "symbol": "=",
+  "color": "yellow",
+  "count": 50,
+  "stack_size": 50,
+  "ammo_type": "9mm",
+  "casing": "9mm_casing",
+  "range": 14,
+  "damage": {
+    "damage_type": "biological",
+    "amount": 26
+  },
+  "dispersion": 60,
+  "recoil": 500,
+  "effects": [
+    "COOKOFF", "BLACKPOWDER"
+  ]
+},
+{
+  "result": "white_brimstone_9mm",
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_AMMO",
+  "subcategory": "CSC_AMMO_PISTOL",
+  "skill_used": "fabrication",
+  "difficulty": 4,
+  "skills_required": [
+    "gun",
+    4
+  ],
+  "time": "2 m",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "book_learn": [
+    [
+      "manual_pistol",
+      1
+    ],
+    [
+      "manual_smg",
+      1
+    ],
+    [
+      "recipe_bullets",
+      2
+    ]
+  ],
+  "qualities": [
+	{
+      "id": "WHITE_CIRCLE",
+      "level": 1
+    }
+  ],
+  "charges": 1,
+  "reversible": true,
+  "using": [
+    [
+      "bullet_forming",
+      2
+    ],
+    [
+      "ammo_bullet",
+      2
+    ],
+    [
+      "ammo_9mm",
+      1
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_sliver",
+        3
+      ]
+    ],
+    [
+      [
+        "copper",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "id": "white_brimstone_9mm",
+  "type": "AMMO",
+  "name": {
+    "str_sp": "electric brimstone 9x19mm JHP"
+  },
+  "description": "9x19mm ammunition with a brimstone jacketed hollow point bullet.  JHP rounds have inferior penetration to FMJ rounds, but their expansion slightly increases stopping power against unarmored targets and reduces overpenetration.",
+  "weight": "7 g",
+  "volume": "115 ml",
+  "price": 150,
+  "price_postapoc": 10000,
+  "flags": [
+    "IRREPLACEABLE_CONSUMABLE"
+  ],
+  "material": [
+    "brass",
+    "powder",
+	"brimstone"
+  ],
+  "symbol": "=",
+  "color": "yellow",
+  "count": 50,
+  "stack_size": 50,
+  "ammo_type": "9mm",
+  "casing": "9mm_casing",
+  "range": 14,
+  "damage": {
+    "damage_type": "electric",
+    "amount": 26
+  },
+  "dispersion": 60,
+  "recoil": 500,
+  "effects": [
+    "COOKOFF", "BLACKPOWDER"
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "result": "brimstone_blun_flechette",
+  "category": "CC_AMMO",
+  "subcategory": "CSC_AMMO_SHOT",
+  "skill_used": "fabrication",
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "difficulty": 3,
+  "time": "30 s",
+  "autolearn": true,
+  "book_learn": [
+    [
+      "recipe_bullets",
+      2
+    ],
+    [
+      "manual_shotgun",
+      2
+    ]
+  ],
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    },
+	{
+      "id": "RED_CIRCLE",
+      "level": 1
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "gunpowder",
+        20
+      ],
+      [
+        "chem_black_powder",
+        20
+      ]
+    ],
+    [
+      [
+        "brimstone_sliver",
+        7
+      ]
+    ],
+    [
+      [
+        "paper",
+        1
+      ],
+      [
+        "aluminum_foil",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "type": "AMMO",
+  "id": "brimstone_blun_flechette",
+  "price": 4500,
+  "price_postapoc": 500,
+  "name": {
+    "str": "hot brimstone blunderbuss flechette"
+  },
+  "symbol": "=",
+  "color": "red",
+  "description": "A prepared blunderbuss shot comprised of flechettes of brimstone.",
+  "material": [
+    "plastic",
+    "powder",
+	"brimstone"
+  ],
+  "volume": "100 ml",
+  "weight": "18 g",
+  "bashing": 1,
+  "ammo_type": "blunderbuss",
+  "damage": {
+    "damage_type": "bullet",
+    "amount": 35,
+    "armor_penetration": 10
+  },
+  "shot_damage": {
+    "damage_type": "heat",
+    "amount": 8,
+    "armor_penetration": 4
+  },
+  "projectile_count": 9,
+  "shot_spread": 20,
+  "range": 10,
+  "recoil": 840,
+  "effects": [
+    "COOKOFF",
+    "SHOT",
+	"BLACKPOWDER",
+    "RECYCLED"
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "result": "blue_brimstone_blun_flechette",
+  "category": "CC_AMMO",
+  "subcategory": "CSC_AMMO_SHOT",
+  "skill_used": "fabrication",
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "difficulty": 3,
+  "time": "30 s",
+  "autolearn": true,
+  "book_learn": [
+    [
+      "recipe_bullets",
+      2
+    ],
+    [
+      "manual_shotgun",
+      2
+    ]
+  ],
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    },
+	{
+      "id": "BLUE_CIRCLE",
+      "level": 1
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "gunpowder",
+        20
+      ],
+      [
+        "chem_black_powder",
+        20
+      ]
+    ],
+    [
+      [
+        "brimstone_sliver",
+        7
+      ]
+    ],
+    [
+      [
+        "paper",
+        1
+      ],
+      [
+        "aluminum_foil",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "type": "AMMO",
+  "id": "blue_brimstone_blun_flechette",
+  "price": 4500,
+  "price_postapoc": 500,
+  "name": {
+    "str": "cold brimstone blunderbuss flechette"
+  },
+  "symbol": "=",
+  "color": "red",
+  "description": "A prepared blunderbuss shot comprised of flechettes of brimstone.",
+  "material": [
+    "plastic",
+    "powder",
+	"brimstone"
+  ],
+  "volume": "100 ml",
+  "weight": "18 g",
+  "bashing": 1,
+  "ammo_type": "blunderbuss",
+  "damage": {
+    "damage_type": "bullet",
+    "amount": 35,
+    "armor_penetration": 10
+  },
+  "shot_damage": {
+    "damage_type": "cold",
+    "amount": 8,
+    "armor_penetration": 4
+  },
+  "projectile_count": 9,
+  "shot_spread": 20,
+  "range": 10,
+  "recoil": 840,
+  "effects": [
+    "COOKOFF",
+    "SHOT",
+	"BLACKPOWDER",
+    "RECYCLED"
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "result": "green_brimstone_blun_flechette",
+  "category": "CC_AMMO",
+  "subcategory": "CSC_AMMO_SHOT",
+  "skill_used": "fabrication",
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "difficulty": 3,
+  "time": "30 s",
+  "autolearn": true,
+  "book_learn": [
+    [
+      "recipe_bullets",
+      2
+    ],
+    [
+      "manual_shotgun",
+      2
+    ]
+  ],
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    },
+	{
+      "id": "GREEN_CIRCLE",
+      "level": 1
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "gunpowder",
+        20
+      ],
+      [
+        "chem_black_powder",
+        20
+      ]
+    ],
+    [
+      [
+        "brimstone_sliver",
+        7
+      ]
+    ],
+    [
+      [
+        "paper",
+        1
+      ],
+      [
+        "aluminum_foil",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "type": "AMMO",
+  "id": "green_brimstone_blun_flechette",
+  "price": 4500,
+  "price_postapoc": 500,
+  "name": {
+    "str": "acidic brimstone blunderbuss flechette"
+  },
+  "symbol": "=",
+  "color": "red",
+  "description": "A prepared blunderbuss shot comprised of flechettes of brimstone.",
+  "material": [
+    "plastic",
+    "powder",
+	"brimstone"
+  ],
+  "volume": "100 ml",
+  "weight": "18 g",
+  "bashing": 1,
+  "ammo_type": "blunderbuss",
+  "damage": {
+    "damage_type": "bullet",
+    "amount": 35,
+    "armor_penetration": 10
+  },
+  "shot_damage": {
+    "damage_type": "acid",
+    "amount": 8,
+    "armor_penetration": 4
+  },
+  "projectile_count": 9,
+  "shot_spread": 20,
+  "range": 10,
+  "recoil": 840,
+  "effects": [
+    "COOKOFF",
+    "SHOT",
+	"BLACKPOWDER",
+    "RECYCLED"
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "result": "black_brimstone_blun_flechette",
+  "category": "CC_AMMO",
+  "subcategory": "CSC_AMMO_SHOT",
+  "skill_used": "fabrication",
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "difficulty": 3,
+  "time": "30 s",
+  "autolearn": true,
+  "book_learn": [
+    [
+      "recipe_bullets",
+      2
+    ],
+    [
+      "manual_shotgun",
+      2
+    ]
+  ],
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    },
+	{
+      "id": "BLACK_CIRCLE",
+      "level": 1
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "gunpowder",
+        20
+      ],
+      [
+        "chem_black_powder",
+        20
+      ]
+    ],
+    [
+      [
+        "brimstone_sliver",
+        7
+      ]
+    ],
+    [
+      [
+        "paper",
+        1
+      ],
+      [
+        "aluminum_foil",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "type": "AMMO",
+  "id": "black_brimstone_blun_flechette",
+  "price": 4500,
+  "price_postapoc": 500,
+  "name": {
+    "str": "biological brimstone blunderbuss flechette"
+  },
+  "symbol": "=",
+  "color": "red",
+  "description": "A prepared blunderbuss shot comprised of flechettes of brimstone.",
+  "material": [
+    "plastic",
+    "powder",
+	"brimstone"
+  ],
+  "volume": "100 ml",
+  "weight": "18 g",
+  "bashing": 1,
+  "ammo_type": "blunderbuss",
+  "damage": {
+    "damage_type": "bullet",
+    "amount": 35,
+    "armor_penetration": 10
+  },
+  "shot_damage": {
+    "damage_type": "biological",
+    "amount": 8,
+    "armor_penetration": 4
+  },
+  "projectile_count": 9,
+  "shot_spread": 20,
+  "range": 10,
+  "recoil": 840,
+  "effects": [
+    "COOKOFF",
+    "SHOT",
+	"BLACKPOWDER",
+    "RECYCLED"
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "result": "white_brimstone_blun_flechette",
+  "category": "CC_AMMO",
+  "subcategory": "CSC_AMMO_SHOT",
+  "skill_used": "fabrication",
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "difficulty": 3,
+  "time": "30 s",
+  "autolearn": true,
+  "book_learn": [
+    [
+      "recipe_bullets",
+      2
+    ],
+    [
+      "manual_shotgun",
+      2
+    ]
+  ],
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    },
+	{
+      "id": "WHITE_CIRCLE",
+      "level": 1
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "gunpowder",
+        20
+      ],
+      [
+        "chem_black_powder",
+        20
+      ]
+    ],
+    [
+      [
+        "brimstone_sliver",
+        7
+      ]
+    ],
+    [
+      [
+        "paper",
+        1
+      ],
+      [
+        "aluminum_foil",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "type": "AMMO",
+  "id": "white_brimstone_blun_flechette",
+  "price": 4500,
+  "price_postapoc": 500,
+  "name": {
+    "str": "electric brimstone blunderbuss flechette"
+  },
+  "symbol": "=",
+  "color": "red",
+  "description": "A prepared blunderbuss shot comprised of flechettes of brimstone.",
+  "material": [
+    "plastic",
+    "powder",
+	"brimstone"
+  ],
+  "volume": "100 ml",
+  "weight": "18 g",
+  "bashing": 1,
+  "ammo_type": "blunderbuss",
+  "damage": {
+    "damage_type": "bullet",
+    "amount": 35,
+    "armor_penetration": 10
+  },
+  "shot_damage": {
+    "damage_type": "electric",
+    "amount": 8,
+    "armor_penetration": 4
+  },
+  "projectile_count": 9,
+  "shot_spread": 20,
+  "range": 10,
+  "recoil": 840,
+  "effects": [
+    "COOKOFF",
+    "SHOT",
+	"BLACKPOWDER",
+    "RECYCLED"
+  ]
+},
+{
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "brimstone_throwing_knife",
+	"id_suffix": "via brimstone",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 7 ],
+    "difficulty": 7,
+    "qualities": [ { "id": "RED_CIRCLE", "level": 1 }, { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "10 s",
+    "autolearn": true,
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "wayward_memory_TFOP" ] ],
+    "components": [ [ [ "brimstone_chunk", 1 ] ] ]
+  },
+{
+    "type": "GENERIC",
+    "id": "brimstone_throwing_knife",
+    "copy-from": "throwing_knife",
+    "price": 0,
+    "price_postapoc": 0,
+    "name": { "str": "hot brimstone throwing knife", "str_pl": "hot brimstone throwing knives" },
+    "description": "A thin and flat knife made of brimstone for throwing.  Its ineffective cutting edge and odd shape makes it unsuitable for use as a tool.",
+    "material": [ "concentrated_mana" ],
+    "extend": { "flags": [ "UNBREAKABLE_MELEE", "NONCONDUCTIVE", "NO_REPAIR", "NO_SALVAGE", "TRADER_AVOID", "MAGIC_FOCUS" ] },
+    "thrown_damage": [ { "damage_type": "heat", "amount": 25, "armor_penetration": 5 } ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "blue_brimstone_throwing_knife",
+	"id_suffix": "via brimstone",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 7 ],
+    "difficulty": 7,
+    "qualities": [ { "id": "BLUE_CIRCLE", "level": 1 }, { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "10 s",
+    "autolearn": true,
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "wayward_memory_BYA" ] ],
+    "components": [ [ [ "brimstone_chunk", 1 ] ] ]
+  },
+  {
+    "type": "GENERIC",
+    "id": "blue_brimstone_throwing_knife",
+    "copy-from": "throwing_knife",
+    "price": 0,
+    "price_postapoc": 0,
+    "name": { "str": "cold brimstone throwing knife", "str_pl": "cold brimstone throwing knives" },
+    "description": "A thin and flat knife made of brimstone for throwing.  Its ineffective cutting edge and odd shape makes it unsuitable for use as a tool.",
+    "material": [ "concentrated_mana" ],
+    "extend": { "flags": [ "UNBREAKABLE_MELEE", "NONCONDUCTIVE", "NO_REPAIR", "NO_SALVAGE", "TRADER_AVOID", "MAGIC_FOCUS" ] },
+    "thrown_damage": [ { "damage_type": "cold", "amount": 25, "armor_penetration": 5 } ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "green_brimstone_throwing_knife",
+	"id_suffix": "via brimstone",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 7 ],
+    "difficulty": 7,
+    "qualities": [ { "id": "GREEN_CIRCLE", "level": 1 }, { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "10 s",
+    "autolearn": true,
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "wayward_memory_IGT" ] ],
+    "components": [ [ [ "brimstone_chunk", 1 ] ] ]
+  },
+  {
+    "type": "GENERIC",
+    "id": "green_brimstone_throwing_knife",
+    "copy-from": "throwing_knife",
+    "price": 0,
+    "price_postapoc": 0,
+    "name": { "str": "acidic brimstone throwing knife", "str_pl": "acidic brimstone throwing knives" },
+    "description": "A thin and flat knife made of brimstone for throwing.  Its ineffective cutting edge and odd shape makes it unsuitable for use as a tool.",
+    "material": [ "concentrated_mana" ],
+    "extend": { "flags": [ "UNBREAKABLE_MELEE", "NONCONDUCTIVE", "NO_REPAIR", "NO_SALVAGE", "TRADER_AVOID", "MAGIC_FOCUS" ] },
+    "thrown_damage": [ { "damage_type": "acid", "amount": 25, "armor_penetration": 5 } ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "black_brimstone_throwing_knife",
+	"id_suffix": "via brimstone",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 7 ],
+    "difficulty": 7,
+    "qualities": [ { "id": "BLACK_CIRCLE", "level": 1 }, { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "10 s",
+    "autolearn": true,
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "wayward_memory_TOHE" ] ],
+    "components": [ [ [ "brimstone_chunk", 1 ] ] ]
+  },
+  {
+    "type": "GENERIC",
+    "id": "black_brimstone_throwing_knife",
+    "copy-from": "throwing_knife",
+    "price": 0,
+    "price_postapoc": 0,
+    "name": { "str": "biological brimstone throwing knife", "str_pl": "biological brimstone throwing knives" },
+    "description": "A thin and flat knife made of brimstone for throwing.  Its ineffective cutting edge and odd shape makes it unsuitable for use as a tool.",
+    "material": [ "concentrated_mana" ],
+    "extend": { "flags": [ "UNBREAKABLE_MELEE", "NONCONDUCTIVE", "NO_REPAIR", "NO_SALVAGE", "TRADER_AVOID", "MAGIC_FOCUS" ] },
+    "thrown_damage": [ { "damage_type": "biological", "amount": 25, "armor_penetration": 5 } ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "white_brimstone_throwing_knife",
+	"id_suffix": "via brimstone",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 7 ],
+    "difficulty": 7,
+    "qualities": [ { "id": "WHITE_CIRCLE", "level": 1 }, { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "10 s",
+    "autolearn": true,
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "wayward_memory_FOT" ] ],
+    "components": [ [ [ "brimstone_chunk", 1 ] ] ]
+  },
+  {
+    "type": "GENERIC",
+    "id": "white_brimstone_throwing_knife",
+    "copy-from": "throwing_knife",
+    "price": 0,
+    "price_postapoc": 0,
+    "name": { "str": "electrical brimstone throwing knife", "str_pl": "electrical brimstone throwing knives" },
+    "description": "A thin and flat knife made of brimstone for throwing.  Its ineffective cutting edge and odd shape makes it unsuitable for use as a tool.",
+    "material": [ "concentrated_mana" ],
+    "extend": { "flags": [ "UNBREAKABLE_MELEE", "NONCONDUCTIVE", "NO_REPAIR", "NO_SALVAGE", "TRADER_AVOID", "MAGIC_FOCUS" ] },
+    "thrown_damage": [ { "damage_type": "electric", "amount": 25, "armor_penetration": 5 } ]
+  },
+  {
+  "type": "recipe",
+  "activity_level": "BRISK_EXERCISE",
+  "result": "brimstone_knuckle_brass",
+  "category": "CC_WEAPON",
+  "subcategory": "CSC_WEAPON_BASHING",
+  "skill_used": "fabrication",
+  "skills_required": [
+    "bashing",
+    1
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_metalworking"
+    },
+    {
+      "proficiency": "prof_redsmithing"
+    },
+    {
+      "proficiency": "prof_toolsmithing"
+    }
+  ],
+  "difficulty": 3,
+  "time": "1 h",
+  "autolearn": false,
+  "book_learn": [
+    [
+      "recipe_melee",
+      2
+    ]
+  ],
+  "using": [
+    [
+      "blacksmithing_standard",
+      4
+    ],
+    [
+      "ppe_gas",
+      1
+    ]
+  ],
+  "tools": [
+    [
+      [
+        "drift",
+        -1
+      ]
+    ]
+  ],
+  "components": [
+    [
+      [
+        "brimstone_chunk",
+        3
+      ]
+    ],
+    [
+      [
+        "chem_zinc_powder",
+        500
+      ]
+    ]
+  ]
+},
+  {
+  "type": "ARMOR",
+  "id": "brimstone_knuckle_brass",
+  "symbol": "3",
+  "color": "yellow",
+  "name": {
+    "str": "cold pair of brass knuckles",
+    "str_pl": "cold pairs of brass knuckles"
+  },
+  "description": "A metal weapon made of brimstone, designed to be gripped in the palm to cause punches to do extra damage.  A good, quick weapon - but you have to get within punching range to use it.",
+  "material": [
+    "brass",
+	"brimstone"
+  ],
+  "weight": "320 g",
+  "volume": "250 ml",
+  "bashing": 4,
+  "price_postapoc": 2500,
+  "flags": [
+    "DURABLE_MELEE"
+  ],
+  "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "hit_you_effect": [ { "id": "cone_cold" } ]
+        }
+      ]
+    },
+  "material_thickness": 2,
+  "armor": [
+    {
+      "encumbrance": 5,
+      "coverage": 20,
+      "covers": [
+        "hand_l",
+        "hand_r"
+      ],
+      "specifically_covers": [
+        "hand_fingers_l",
+        "hand_fingers_r"
+      ]
+    }
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "BRISK_EXERCISE",
+  "result": "brimstone_katana",
+  "category": "CC_ENCHANTED",
+  "subcategory": "CSC_ENCHANTED_OTHER",
+  "skill_used": "spellcraft",
+  "difficulty": 9,
+  "time": "8 h",
+  "book_learn": [
+    [
+      "textbook_weapeast",
+      8
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_metalworking"
+    },
+    {
+      "proficiency": "prof_blacksmithing"
+    },
+    {
+      "proficiency": "prof_bladesmith"
+    },
+    {
+      "proficiency": "prof_carving",
+      "time_multiplier": 1.2,
+      "learning_time_multiplier": 0.2,
+      "skill_penalty": 0
+    }
+  ],
+  "using": [
+    [
+      "blacksmithing_standard",
+      8
+    ],
+    [
+      "steel_standard",
+      2
+    ]
+  ],
+  "qualities": [
+    {
+      "id": "GRIND",
+      "level": 2
+    },
+	{
+      "id": "WHITE_CIRCLE",
+      "level": 1
+    },
+	{
+      "id": "POWER_ALTAR",
+      "level": 2
+    }
+  ],
+  "tools": [
+    [
+      [
+        "hotcut",
+        -1
+      ]
+    ]
+  ],
+  "components": [
+    [
+      [
+        "brimstone_chunk",
+        6
+      ],
+      [
+        "stick",
+        4
+      ]
+    ],
+    [
+      [
+        "fur",
+        2
+      ],
+      [
+        "leather",
+        2
+      ]
+    ]
+  ]
+},
+{
+  "id": "brimstone_katana",
+  "type": "TOOL",
+  "name": {
+    "str_sp": "electrical brimstone katana"
+  },
+  "description": "A rare sword forged from brimstone.  Deadly against unarmored targets, and still very effective against armor.",
+  "weight": "1133 g",
+  "volume": "2 L",
+  "longest_side": "90 cm",
+  "price": 98000,
+  "price_postapoc": 45000,
+  "bashing": 5,
+  "cutting": 31,
+  "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "hit_you_effect": [ { "id": "demi_elec" } ]
+        }
+      ]
+    },
+  "to_hit": {
+    "grip": "weapon",
+    "length": "long",
+    "surface": "line",
+    "balance": "good"
+  },
+  "material": [
+    "steel",
+	"brimstone"
+  ],
+  "ascii_picture": "katana",
+  "symbol": "/",
+  "color": "light_gray",
+  "techniques": [
+    "RAPID",
+    "WBLOCK_2"
+  ],
+  "qualities": [
+    [
+      "CUT",
+      1
+    ],
+    [
+      "BUTCHER",
+      9
+    ]
+  ],
+  "flags": [
+    "DURABLE_MELEE",
+    "SHEATH_SWORD"
+  ],
+  "weapon_category": [
+    "JAPANESE_SWORDS",
+    "MEDIUM_SWORDS"
+  ],
+  "category": "weapons"
+},
+{
+    "id": "cone_bio",
+    "type": "SPELL",
+    "name": "Biological Cone",
+    "description": "",
+    "effect": "attack",
+    "shape": "cone",
+    "flags": [ "NO_LEGS" ],
+    "valid_targets": [ "hostile" ],
+    "max_level": 10,
+    "min_damage": 15,
+    "max_damage": 15,
+    "base_casting_time": 0,
+    "min_range": 3,
+    "max_range": 3,
+    "energy_source": "STAMINA",
+    "difficulty": 2,
+	"damage_type": "biological",
+    "sound_description": "a whoosh"
+  },
+  {
+  "type": "recipe",
+  "activity_level": "BRISK_EXERCISE",
+  "result": "brimstone_hammer_sledge",
+  "category": "CC_ENCHANTED",
+  "subcategory": "CSC_ENCHANTED_OTHER",
+  "skill_used": "spellcraft",
+  "difficulty": 6,
+  "time": "7 h 40 m",
+  "byproducts": [
+    [
+      "splinter",
+      13
+    ]
+  ],
+  "book_learn": [
+    [
+      "manual_fabrication",
+      3
+    ],
+    [
+      "textbook_fabrication",
+      4
+    ]
+  ],
+  "using": [
+    [
+      "blacksmithing_standard",
+      32
+    ],
+    [
+      "steel_standard",
+      8
+    ]
+  ],
+  "qualities": [
+	{
+      "id": "BLACK_CIRCLE",
+      "level": 1
+    }, 
+	{
+      "id": "POWER_ALTAR",
+      "level": 2
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_metalworking"
+    },
+    {
+      "proficiency": "prof_blacksmithing"
+    },
+    {
+      "proficiency": "prof_toolsmithing"
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_chunk",
+        3
+      ]
+    ]
+  ]
+},
+{
+  "type": "GENERIC",
+  "id": "brimstone_hammer_sledge",
+  "name": {
+    "str": "biological brimstone sledge hammer"
+  },
+  "description": "A large, heavy hammer with a brimstone head.  A very hard-hitting melee weapon, but it's slow to swing and will probably exhaust you quickly.",
+  "weight": "4250 g",
+  "color": "brown",
+  "symbol": "/",
+  "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "hit_you_effect": [ { "id": "cone_bio" } ]
+        }
+      ]
+    },
+  "material": [
+    "wood",
+    "steel",
+	"brimstone"
+  ],
+  "flags": [
+    "NONCONDUCTIVE",
+    "ALWAYS_TWOHAND"
+  ],
+  "weapon_category": [
+    "HOOKING_WEAPONRY",
+    "GREAT_HAMMERS"
+  ],
+  "techniques": [
+    "WBLOCK_1",
+    "BRUTAL",
+    "WIDE",
+    "SWEEP"
+  ],
+  "volume": "1250 ml",
+  "longest_side": "80 cm",
+  "bashing": 50,
+  "to_hit": {
+    "grip": "weapon",
+    "length": "long",
+    "surface": "any",
+    "balance": "uneven"
+  },
+  "price": 12000,
+  "price_postapoc": 5000,
+  "qualities": [
+    [
+      "HAMMER",
+      1
+    ]
+  ]
+},
+{
+  "result": "brimstone_spear_pipe",
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "category": "CC_ENCHANTED",
+  "subcategory": "CSC_ENCHANTED_OTHER",
+  "skill_used": "spellcraft",
+  "difficulty": 3,
+  "skills_required": [
+    "melee",
+    1
+  ],
+  "time": "60 m",
+  "autolearn": true,
+  "using": [
+    [
+      "welding_standard",
+      2
+    ],
+    [
+      "steel_tiny",
+      1
+    ],
+    [
+      "cordage_superior",
+      2
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_metalworking"
+    },
+    {
+      "proficiency": "prof_welding_basic"
+    }
+  ],
+  "qualities": [
+    {
+      "id": "HAMMER",
+      "level": 3
+    },
+    {
+      "id": "SAW_M",
+      "level": 1
+    },
+	{
+      "id": "GREEN_CIRCLE",
+      "level": 1
+    }, 
+	{
+      "id": "POWER_ALTAR",
+      "level": 2
+    }
+  ],
+  "components": [
+    [
+      [
+        "simple_spear_pipe",
+        1
+      ],
+	  [
+        "brimstone_chunk",
+        3
+      ]
+    ]
+  ]
+},
+{
+  "type": "GENERIC",
+  "id": "brimstone_spear_pipe",
+  "name": {
+    "str": "acidic brimstone pipe spear"
+  },
+  "description": "Three brimstone pipes tightly fit together with some wrappings for a handle around one end and a sharp tip on the other.",
+  "weight": "3890 g",
+  "price_postapoc": 2500,
+  "color": "light_gray",
+  "symbol": "/",
+  "material": [
+    "steel",
+	"brimstone"
+  ],
+  "techniques": [
+    "WBLOCK_1",
+    "IMPALE"
+  ],
+  "volume": "1135 ml",
+  "longest_side": "184 cm",
+  "bashing": 8,
+  "cutting": 29,
+  "to_hit": {
+    "grip": "solid",
+    "length": "long",
+    "surface": "point",
+    "balance": "neutral"
+  },
+  "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "hit_you_effect": [ { "id": "cone_acid" } ]
+        }
+      ]
+    },
+  "flags": [
+    "SPEAR",
+    "REACH_ATTACK",
+    "SHEATH_SPEAR"
+  ],
+  "weapon_category": [
+    "POLEARMS",
+    "SPEARS"
+  ],
+  "price": 8000,
+  "qualities": [
+    [
+      "COOK",
+      1
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "BRISK_EXERCISE",
+  "result": "brimstone_fire_ax",
+  "category": "CC_ENCHANTED",
+  "subcategory": "CSC_ENCHANTED_OTHER",
+  "skill_used": "spellcraft",
+  "difficulty": 9,
+  "time": "7 h",
+  "autolearn": true,
+  "book_learn": [
+    [
+      "textbook_fireman",
+      8
+    ],
+    [
+      "textbook_fabrication",
+      9
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_blacksmithing",
+      "required": false,
+      "time_multiplier": 3
+    },
+    {
+      "proficiency": "prof_bladesmith"
+    }
+  ],
+  "using": [
+    [
+      "blacksmithing_standard",
+      16
+    ],
+    [
+      "steel_standard",
+      4
+    ]
+  ],
+  "qualities": [
+    {
+      "id": "GRIND",
+      "level": 2
+    },
+	{
+      "id": "RED_CIRCLE",
+      "level": 1
+    },
+	{
+	  "id": "POWER_ALTAR", 
+	  "level": 2
+	}
+  ],
+  "components": [
+    [
+      [
+        "brimstone_chunk",
+        6
+      ],
+      [
+        "stick",
+        4
+      ]
+    ]
+  ]
+},
+{
+  "id": "brimstone_fire_ax",
+  "type": "TOOL",
+  "name": {
+    "str": "hot brimstone fire axe"
+  },
+  "description": "A large, two-handed brimstone axe normally used by fire-fighters.  It makes a powerful melee weapon, but is a bit slow to recover between swings.",
+  "weight": "2520 g",
+  "volume": "2 L",
+  "price": 20000,
+  "longest_side": "90 cm",
+  "price_postapoc": 15000,
+  "bashing": 17,
+  "cutting": 34,
+  "material": [
+    "steel",
+    "wood",
+	"brimstone"
+  ],
+  "symbol": "/",
+  "color": "light_gray",
+  "techniques": [
+    "WBLOCK_1",
+    "BRUTAL",
+    "SWEEP"
+  ],
+  "qualities": [
+    [
+      "AXE",
+      3
+    ],
+    [
+      "PRY",
+      3
+    ],
+    [
+      "BUTCHER",
+      -30
+    ]
+  ],
+  "flags": [
+    "DURABLE_MELEE",
+    "NONCONDUCTIVE",
+    "BELT_CLIP",
+    "SHEATH_AXE"
+  ],
+  "weapon_category": [
+    "HOOKING_WEAPONRY",
+    "GREAT_AXES"
+  ],
+  "use_action": [
+    "CROWBAR"
+  ],
+  "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "hit_you_effect": [ { "id": "demi_fire" } ]
+        }
+      ]
+    },
+  "pocket_data": [
+    {
+      "max_contains_volume": "550 ml",
+      "max_contains_weight": "5500 g",
+      "max_item_length": "76 cm",
+      "moves": 150,
+      "item_restriction": [
+        "halligan"
+      ],
+      "description": "Marrying strap for a Halligan bar.",
+      "holster": true
+    }
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "result": "heat_sight",
+  "category": "CC_WEAPON",
+  "subcategory": "CSC_WEAPON_MODS",
+  "skill_used": "fabrication",
+  "difficulty": 5,
+  "skills_required": [
+    [
+      "gun",
+      4
+    ],
+	[
+      "spellcraft",
+      3
+    ]
+  ],
+  "time": "15 m",
+  "decomp_learn": 3,
+  "book_learn": [
+    [
+      "manual_rifle",
+      2
+    ],
+    [
+      "manual_fabrication",
+      3
+    ],
+    [
+      "textbook_fabrication",
+      3
+    ]
+  ],
+  "using": [
+    [
+      "soldering_standard",
+      10
+    ],
+    [
+      "surface_heat",
+      10
+    ],
+    [
+      "plastic_molding",
+      2
+    ]
+  ],
+  "qualities": [
+    {
+      "id": "SCREW_FINE",
+      "level": 1
+    },
+	{
+      "id": "POWER_ALTAR",
+      "level": 2
+    },
+	{
+      "id": "RED_CIRCLE",
+      "level": 1
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_plasticworking"
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_chunk",
+        3
+      ]
+    ],
+    [
+      [
+        "lens",
+        2
+      ]
+    ],
+    [
+      [
+        "lens",
+        1
+      ],
+      [
+        "lens_small",
+        1
+      ]
+    ]
+  ]
+},
+{
+    "id": "heat_sight",
+    "type": "GUNMOD",
+    "name": { "str": "heat inclusion system" },
+    "description": "An advanced optic that envelops the entire gun with an adjustable circular hologram reticle superimposed on the field of view.  Used extensively by military forces, it increases accuracy and weight while also heating up bullets as they exit the barrel.",
+    "weight": "255 g",
+    "volume": "290 ml",
+    "price": 100000,
+    "install_time": "5 m",
+    "material": [ "plastic", "steel" ],
+    "symbol": ":",
+    "color": "dark_gray",
+    "location": "sights",
+    "mod_targets": [ "smg", "rifle", "shotgun", "pistol", "crossbow", "launcher" ],
+    "sight_dispersion": 23,
+    "aim_speed_modifier": 10,
+    "field_of_view": 720,
+	"gun_data": {
+      "skill": "gun",
+      "ranged_damage": { "damage_type": "heat", "amount": 2 }
+    },
+    "min_skills": [ [ "weapon", 2 ], [ "gun", 5 ], [ "spellcraft", 3 ] ],
+    "flags": [ "DISABLE_SIGHTS", "IRREMOVABLE" ],
+    "add_mod": [ [ "magnifier", 1 ] ]
+  },
+  {
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "result": "cold_sight",
+  "category": "CC_WEAPON",
+  "subcategory": "CSC_WEAPON_MODS",
+  "skill_used": "fabrication",
+  "difficulty": 5,
+  "skills_required": [
+    [
+      "gun",
+      4
+    ],
+	[
+      "spellcraft",
+      3
+    ]
+  ],
+  "time": "15 m",
+  "decomp_learn": 3,
+  "book_learn": [
+    [
+      "manual_rifle",
+      2
+    ],
+    [
+      "manual_fabrication",
+      3
+    ],
+    [
+      "textbook_fabrication",
+      3
+    ]
+  ],
+  "using": [
+    [
+      "soldering_standard",
+      10
+    ],
+    [
+      "surface_heat",
+      10
+    ],
+    [
+      "plastic_molding",
+      2
+    ]
+  ],
+  "qualities": [
+    {
+      "id": "SCREW_FINE",
+      "level": 1
+    },
+	{
+      "id": "POWER_ALTAR",
+      "level": 2
+    },
+	{
+      "id": "BLUE_CIRCLE",
+      "level": 1
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_plasticworking"
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_chunk",
+        3
+      ]
+    ],
+    [
+      [
+        "lens",
+        2
+      ]
+    ],
+    [
+      [
+        "lens",
+        1
+      ],
+      [
+        "lens_small",
+        1
+      ]
+    ]
+  ]
+},
+  {
+    "id": "cold_sight",
+    "type": "GUNMOD",
+    "name": { "str": "cold inclusion system" },
+    "description": "An advanced optic that envelops the entire gun with an adjustable circular hologram reticle superimposed on the field of view.  Used extensively by military forces, it increases accuracy and weight while also cooling down bullets as they exit the barrel.",
+    "weight": "255 g",
+    "volume": "290 ml",
+    "price": 100000,
+    "install_time": "5 m",
+    "material": [ "plastic", "steel" ],
+    "symbol": ":",
+    "color": "dark_gray",
+    "location": "sights",
+    "mod_targets": [ "smg", "rifle", "shotgun", "pistol", "crossbow", "launcher" ],
+    "sight_dispersion": 23,
+    "aim_speed_modifier": 10,
+    "field_of_view": 720,
+	"gun_data": {
+      "skill": "gun",
+      "ranged_damage": { "damage_type": "cold", "amount": 2 }
+    },
+    "min_skills": [ [ "weapon", 2 ], [ "gun", 5 ], [ "spellcraft", 3 ] ],
+    "flags": [ "DISABLE_SIGHTS", "IRREMOVABLE" ],
+    "add_mod": [ [ "magnifier", 1 ] ]
+  },
+  {
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "result": "acid_sight",
+  "category": "CC_WEAPON",
+  "subcategory": "CSC_WEAPON_MODS",
+  "skill_used": "fabrication",
+  "difficulty": 5,
+  "skills_required": [
+    [
+      "gun",
+      4
+    ],
+	[
+      "spellcraft",
+      3
+    ]
+  ],
+  "time": "15 m",
+  "decomp_learn": 3,
+  "book_learn": [
+    [
+      "manual_rifle",
+      2
+    ],
+    [
+      "manual_fabrication",
+      3
+    ],
+    [
+      "textbook_fabrication",
+      3
+    ]
+  ],
+  "using": [
+    [
+      "soldering_standard",
+      10
+    ],
+    [
+      "surface_heat",
+      10
+    ],
+    [
+      "plastic_molding",
+      2
+    ]
+  ],
+  "qualities": [
+    {
+      "id": "SCREW_FINE",
+      "level": 1
+    },
+	{
+      "id": "POWER_ALTAR",
+      "level": 2
+    },
+	{
+      "id": "GREEN_CIRCLE",
+      "level": 1
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_plasticworking"
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_chunk",
+        3
+      ]
+    ],
+    [
+      [
+        "lens",
+        2
+      ]
+    ],
+    [
+      [
+        "lens",
+        1
+      ],
+      [
+        "lens_small",
+        1
+      ]
+    ]
+  ]
+},
+  {
+    "id": "acid_sight",
+    "type": "GUNMOD",
+    "name": { "str": "acid inclusion system" },
+    "description": "An advanced optic that envelops the entire gun with an adjustable circular hologram reticle superimposed on the field of view.  Used extensively by military forces, it increases accuracy and weight while also tinging bullets with acid as they exit the barrel.",
+    "weight": "255 g",
+    "volume": "290 ml",
+    "price": 100000,
+    "install_time": "5 m",
+    "material": [ "plastic", "steel" ],
+    "symbol": ":",
+    "color": "dark_gray",
+    "location": "sights",
+    "mod_targets": [ "smg", "rifle", "shotgun", "pistol", "crossbow", "launcher" ],
+    "sight_dispersion": 23,
+    "aim_speed_modifier": 10,
+    "field_of_view": 720,
+	"gun_data": {
+      "skill": "gun",
+      "ranged_damage": { "damage_type": "acid", "amount": 2 }
+    },
+    "min_skills": [ [ "weapon", 2 ], [ "gun", 5 ], [ "spellcraft", 3 ] ],
+    "flags": [ "DISABLE_SIGHTS", "IRREMOVABLE" ],
+    "add_mod": [ [ "magnifier", 1 ] ]
+  },
+  {
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "result": "biological_sight",
+  "category": "CC_WEAPON",
+  "subcategory": "CSC_WEAPON_MODS",
+  "skill_used": "fabrication",
+  "difficulty": 5,
+  "skills_required": [
+    [
+      "gun",
+      4
+    ],
+	[
+      "spellcraft",
+      3
+    ]
+  ],
+  "time": "15 m",
+  "decomp_learn": 3,
+  "book_learn": [
+    [
+      "manual_rifle",
+      2
+    ],
+    [
+      "manual_fabrication",
+      3
+    ],
+    [
+      "textbook_fabrication",
+      3
+    ]
+  ],
+  "using": [
+    [
+      "soldering_standard",
+      10
+    ],
+    [
+      "surface_heat",
+      10
+    ],
+    [
+      "plastic_molding",
+      2
+    ]
+  ],
+  "qualities": [
+    {
+      "id": "SCREW_FINE",
+      "level": 1
+    },
+	{
+      "id": "POWER_ALTAR",
+      "level": 2
+    },
+	{
+      "id": "BLACK_CIRCLE",
+      "level": 1
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_plasticworking"
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_chunk",
+        3
+      ]
+    ],
+    [
+      [
+        "lens",
+        2
+      ]
+    ],
+    [
+      [
+        "lens",
+        1
+      ],
+      [
+        "lens_small",
+        1
+      ]
+    ]
+  ]
+},
+  {
+    "id": "biological_sight",
+    "type": "GUNMOD",
+    "name": { "str": "biological inclusion system" },
+    "description": "An advanced optic that envelops the entire gun with an adjustable circular hologram reticle superimposed on the field of view.  Used extensively by military forces, it increases accuracy and weight while also animating bullets as they exit the barrel.",
+    "weight": "255 g",
+    "volume": "290 ml",
+    "price": 100000,
+    "install_time": "5 m",
+    "material": [ "plastic", "steel" ],
+    "symbol": ":",
+    "color": "dark_gray",
+    "location": "sights",
+    "mod_targets": [ "smg", "rifle", "shotgun", "pistol", "crossbow", "launcher" ],
+    "sight_dispersion": 23,
+    "aim_speed_modifier": 10,
+    "field_of_view": 720,
+	"gun_data": {
+      "skill": "gun",
+      "ranged_damage": { "damage_type": "biological", "amount": 2 }
+    },
+    "min_skills": [ [ "weapon", 2 ], [ "gun", 5 ], [ "spellcraft", 3 ] ],
+    "flags": [ "DISABLE_SIGHTS", "IRREMOVABLE" ],
+    "add_mod": [ [ "magnifier", 1 ] ]
+  },
+  {
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "result": "electric_sight",
+  "category": "CC_WEAPON",
+  "subcategory": "CSC_WEAPON_MODS",
+  "skill_used": "fabrication",
+  "difficulty": 5,
+  "skills_required": [
+    [
+      "gun",
+      4
+    ],
+	[
+      "spellcraft",
+      3
+    ]
+  ],
+  "time": "15 m",
+  "decomp_learn": 3,
+  "book_learn": [
+    [
+      "manual_rifle",
+      2
+    ],
+    [
+      "manual_fabrication",
+      3
+    ],
+    [
+      "textbook_fabrication",
+      3
+    ]
+  ],
+  "using": [
+    [
+      "soldering_standard",
+      10
+    ],
+    [
+      "surface_heat",
+      10
+    ],
+    [
+      "plastic_molding",
+      2
+    ]
+  ],
+  "qualities": [
+    {
+      "id": "SCREW_FINE",
+      "level": 1
+    },
+	{
+      "id": "POWER_ALTAR",
+      "level": 2
+    },
+	{
+      "id": "WHITE_CIRCLE",
+      "level": 1
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_plasticworking"
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_chunk",
+        3
+      ]
+    ],
+    [
+      [
+        "lens",
+        2
+      ]
+    ],
+    [
+      [
+        "lens",
+        1
+      ],
+      [
+        "lens_small",
+        1
+      ]
+    ]
+  ]
+},
+  {
+    "id": "electric_sight",
+    "type": "GUNMOD",
+    "name": { "str": "electrical inclusion system" },
+    "description": "An advanced optic that envelops the entire gun with an adjustable circular hologram reticle superimposed on the field of view.  Used extensively by military forces, it increases accuracy and weight while also electrifying bullets as they exit the barrel.",
+    "weight": "255 g",
+    "volume": "290 ml",
+    "price": 100000,
+    "install_time": "5 m",
+    "material": [ "plastic", "steel" ],
+    "symbol": ":",
+    "color": "dark_gray",
+    "location": "sights",
+    "mod_targets": [ "smg", "rifle", "shotgun", "pistol", "crossbow", "launcher" ],
+    "sight_dispersion": 23,
+    "aim_speed_modifier": 10,
+    "field_of_view": 720,
+	"gun_data": {
+      "skill": "gun",
+      "ranged_damage": { "damage_type": "electric", "amount": 2 }
+    },
+    "min_skills": [ [ "weapon", 2 ], [ "gun", 5 ], [ "spellcraft", 3 ] ],
+    "flags": [ "DISABLE_SIGHTS", "IRREMOVABLE" ],
+    "add_mod": [ [ "magnifier", 1 ] ]
+  },
+  {
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "result": "pure_sight",
+  "category": "CC_WEAPON",
+  "subcategory": "CSC_WEAPON_MODS",
+  "skill_used": "fabrication",
+  "difficulty": 5,
+  "skills_required": [
+    [
+      "gun",
+      4
+    ],
+	[
+      "spellcraft",
+      9
+    ]
+  ],
+  "time": "15 m",
+  "decomp_learn": 3,
+  "book_learn": [
+    [
+      "manual_rifle",
+      2
+    ],
+    [
+      "manual_fabrication",
+      3
+    ],
+    [
+      "textbook_fabrication",
+      3
+    ]
+  ],
+  "using": [
+    [
+      "soldering_standard",
+      10
+    ],
+    [
+      "surface_heat",
+      10
+    ],
+    [
+      "plastic_molding",
+      2
+    ]
+  ],
+  "qualities": [
+    {
+      "id": "SCREW_FINE",
+      "level": 1
+    },
+	{
+      "id": "POWER_ALTAR",
+      "level": 3
+    },
+	{
+      "id": "WHITE_CIRCLE",
+      "level": 1
+    },
+	{
+      "id": "RED_CIRCLE",
+      "level": 1
+    },
+	{
+      "id": "BLUE_CIRCLE",
+      "level": 1
+    },
+	{
+      "id": "GREEN_CIRCLE",
+      "level": 1
+    },
+	{
+      "id": "BLACK_CIRCLE",
+      "level": 1
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_plasticworking"
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_chunk",
+        13
+      ]
+    ],
+    [
+      [
+        "lens",
+        3
+      ]
+    ],
+    [
+      [
+        "lens",
+        4
+      ],
+      [
+        "lens_small",
+        4
+      ]
+    ]
+  ]
+},
+  {
+    "id": "pure_sight",
+    "type": "GUNMOD",
+    "name": { "str": "pure inclusion system" },
+    "description": "An advanced optic that envelops the entire gun with an adjustable circular hologram reticle superimposed on the field of view.  Used extensively by military forces, it increases accuracy and weight while also purifying bullets as they exit the barrel.",
+    "weight": "255 g",
+    "volume": "290 ml",
+    "price": 100000,
+    "install_time": "5 m",
+    "material": [ "plastic", "steel" ],
+    "symbol": ":",
+    "color": "dark_gray",
+    "location": "sights",
+    "mod_targets": [ "smg", "rifle", "shotgun", "pistol", "crossbow", "launcher" ],
+    "sight_dispersion": 23,
+    "aim_speed_modifier": 10,
+    "field_of_view": 720,
+	"gun_data": {
+      "skill": "gun",
+      "ranged_damage": { "damage_type": "pure", "amount": 2 }
+    },
+    "min_skills": [ [ "weapon", 2 ], [ "gun", 5 ], [ "spellcraft", 3 ] ],
+    "flags": [ "DISABLE_SIGHTS", "IRREMOVABLE" ],
+    "add_mod": [ [ "magnifier", 1 ] ]
+  },
+  {
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "brimstone_nail",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_MATERIALS",
+  "skill_used": "fabrication",
+  "difficulty": 1,
+  "time": "3 h",
+  "autolearn": true,
+  "using": [
+    [
+      "blacksmithing_standard",
+      1
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_metalworking"
+    },
+    {
+      "proficiency": "prof_blacksmithing"
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_sliver",
+        1
+      ]
+    ]
+  ],
+  "qualities": [
+	{
+      "id": "RED_CIRCLE",
+      "level": 1
+    }
+  ],
+  "tools": [
+    [
+      [
+        "hotcut",
+        -1
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "blue_brimstone_nail",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_MATERIALS",
+  "skill_used": "fabrication",
+  "difficulty": 1,
+  "time": "3 h",
+  "autolearn": true,
+  "using": [
+    [
+      "blacksmithing_standard",
+      1
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_metalworking"
+    },
+    {
+      "proficiency": "prof_blacksmithing"
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_sliver",
+        1
+      ]
+    ]
+  ],
+  "qualities": [
+	{
+      "id": "BLUE_CIRCLE",
+      "level": 1
+    }
+  ],
+  "tools": [
+    [
+      [
+        "hotcut",
+        -1
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "green_brimstone_nail",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_MATERIALS",
+  "skill_used": "fabrication",
+  "difficulty": 1,
+  "time": "3 h",
+  "autolearn": true,
+  "using": [
+    [
+      "blacksmithing_standard",
+      1
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_metalworking"
+    },
+    {
+      "proficiency": "prof_blacksmithing"
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_sliver",
+        1
+      ]
+    ]
+  ],
+  "qualities": [
+	{
+      "id": "GREEN_CIRCLE",
+      "level": 1
+    }
+  ],
+  "tools": [
+    [
+      [
+        "hotcut",
+        -1
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "black_brimstone_nail",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_MATERIALS",
+  "skill_used": "fabrication",
+  "difficulty": 1,
+  "time": "3 h",
+  "autolearn": true,
+  "using": [
+    [
+      "blacksmithing_standard",
+      1
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_metalworking"
+    },
+    {
+      "proficiency": "prof_blacksmithing"
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_sliver",
+        1
+      ]
+    ]
+  ],
+  "qualities": [
+	{
+      "id": "BLACK_CIRCLE",
+      "level": 1
+    }
+  ],
+  "tools": [
+    [
+      [
+        "hotcut",
+        -1
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "white_brimstone_nail",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_MATERIALS",
+  "skill_used": "fabrication",
+  "difficulty": 1,
+  "time": "3 h",
+  "autolearn": true,
+  "using": [
+    [
+      "blacksmithing_standard",
+      1
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_metalworking"
+    },
+    {
+      "proficiency": "prof_blacksmithing"
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_sliver",
+        1
+      ]
+    ]
+  ],
+  "qualities": [
+	{
+      "id": "WHITE_CIRCLE",
+      "level": 1
+    }
+  ],
+  "tools": [
+    [
+      [
+        "hotcut",
+        -1
+      ]
+    ]
+  ]
+},
+  {
+    "id": "brimstone_nail",
+    "type": "AMMO",
+    "category": "spare_parts",
+    "name": { "str": "hot brimstone nail" },
+    "description": "A pin-shaped piece of brimstone.",
+    "weight": "4 g",
+    "volume": "250 ml",
+    "price": 1000,
+    "price_postapoc": 2500,
+    "material": [ "steel", "brimstone" ],
+    "symbol": "=",
+    "color": "cyan",
+    "count": 100,
+    "stack_size": 100,
+    "ammo_type": "nail",
+    "loudness": 0,
+    "range": 3,
+    "damage": { "damage_type": "heat", "amount": 3, "armor_penetration": 1 },
+    "dispersion": 180,
+    "effects": [ "NON_FOULING", "HURT_WHEN_WIELDED" ]
+  },
+  {
+    "id": "green_brimstone_nail",
+    "type": "AMMO",
+    "category": "spare_parts",
+    "name": { "str": "acidic brimstone nail" },
+    "description": "A pin-shaped piece of brimstone.",
+    "weight": "4 g",
+    "volume": "250 ml",
+    "price": 1000,
+    "price_postapoc": 2500,
+    "material": [ "steel", "brimstone" ],
+    "symbol": "=",
+    "color": "cyan",
+    "count": 100,
+    "stack_size": 100,
+    "ammo_type": "nail",
+    "loudness": 0,
+    "range": 3,
+    "damage": { "damage_type": "acid", "amount": 3, "armor_penetration": 1 },
+    "dispersion": 180,
+    "effects": [ "NON_FOULING", "HURT_WHEN_WIELDED" ]
+  },
+  {
+    "id": "blue_brimstone_nail",
+    "type": "AMMO",
+    "category": "spare_parts",
+    "name": { "str": "cold brimstone nail" },
+    "description": "A pin-shaped piece of brimstone.",
+    "weight": "4 g",
+    "volume": "250 ml",
+    "price": 1000,
+    "price_postapoc": 2500,
+    "material": [ "steel", "brimstone" ],
+    "symbol": "=",
+    "color": "cyan",
+    "count": 100,
+    "stack_size": 100,
+    "ammo_type": "nail",
+    "loudness": 0,
+    "range": 3,
+    "damage": { "damage_type": "cold", "amount": 3, "armor_penetration": 1 },
+    "dispersion": 180,
+    "effects": [ "NON_FOULING", "HURT_WHEN_WIELDED" ]
+  },
+  {
+    "id": "black_brimstone_nail",
+    "type": "AMMO",
+    "category": "spare_parts",
+    "name": { "str": "biological brimstone nail" },
+    "description": "A pin-shaped piece of brimstone.",
+    "weight": "4 g",
+    "volume": "250 ml",
+    "price": 1000,
+    "price_postapoc": 2500,
+    "material": [ "steel", "brimstone" ],
+    "symbol": "=",
+    "color": "cyan",
+    "count": 100,
+    "stack_size": 100,
+    "ammo_type": "nail",
+    "loudness": 0,
+    "range": 3,
+    "damage": { "damage_type": "biological", "amount": 3, "armor_penetration": 1 },
+    "dispersion": 180,
+    "effects": [ "NON_FOULING", "HURT_WHEN_WIELDED" ]
+  },
+  {
+    "id": "white_brimstone_nail",
+    "type": "AMMO",
+    "category": "spare_parts",
+    "name": { "str": "electric brimstone nail" },
+    "description": "A pin-shaped piece of brimstone.",
+    "weight": "4 g",
+    "volume": "250 ml",
+    "price": 1000,
+    "price_postapoc": 2500,
+    "material": [ "steel", "brimstone" ],
+    "symbol": "=",
+    "color": "cyan",
+    "count": 100,
+    "stack_size": 100,
+    "ammo_type": "nail",
+    "loudness": 0,
+    "range": 3,
+    "damage": { "damage_type": "electric", "amount": 3, "armor_penetration": 1 },
+    "dispersion": 180,
+    "effects": [ "NON_FOULING", "HURT_WHEN_WIELDED" ]
+  },
+  {
+  "result": "brimstone_cannon_shot",
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "category": "CC_AMMO",
+  "subcategory": "CSC_AMMO_OTHER",
+  "skill_used": "fabrication",
+  "difficulty": 3,
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "time": "10 m",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "autolearn": true,
+  "charges": 1,
+  "reversible": true,
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    },
+	{
+      "id": "RED_CIRCLE",
+      "level": 1
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_chunk",
+        1
+      ]
+    ],
+    [
+      [
+        "cotton_patchwork",
+        1
+      ]
+    ],
+    [
+      [
+        "chem_black_powder",
+        3000
+      ]
+    ],
+    [
+      [
+        "fuse",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "blue_brimstone_cannon_shot",
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "category": "CC_AMMO",
+  "subcategory": "CSC_AMMO_OTHER",
+  "skill_used": "fabrication",
+  "difficulty": 3,
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "time": "10 m",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "autolearn": true,
+  "charges": 1,
+  "reversible": true,
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    },
+	{
+      "id": "BLUE_CIRCLE",
+      "level": 1
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_chunk",
+        1
+      ]
+    ],
+    [
+      [
+        "cotton_patchwork",
+        1
+      ]
+    ],
+    [
+      [
+        "chem_black_powder",
+        3000
+      ]
+    ],
+    [
+      [
+        "fuse",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "green_brimstone_cannon_shot",
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "category": "CC_AMMO",
+  "subcategory": "CSC_AMMO_OTHER",
+  "skill_used": "fabrication",
+  "difficulty": 3,
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "time": "10 m",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "autolearn": true,
+  "charges": 1,
+  "reversible": true,
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    },
+	{
+      "id": "GREEN_CIRCLE",
+      "level": 1
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_chunk",
+        1
+      ]
+    ],
+    [
+      [
+        "cotton_patchwork",
+        1
+      ]
+    ],
+    [
+      [
+        "chem_black_powder",
+        3000
+      ]
+    ],
+    [
+      [
+        "fuse",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "black_brimstone_cannon_shot",
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "category": "CC_AMMO",
+  "subcategory": "CSC_AMMO_OTHER",
+  "skill_used": "fabrication",
+  "difficulty": 3,
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "time": "10 m",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "autolearn": true,
+  "charges": 1,
+  "reversible": true,
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    },
+	{
+      "id": "BLACK_CIRCLE",
+      "level": 1
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_chunk",
+        1
+      ]
+    ],
+    [
+      [
+        "cotton_patchwork",
+        1
+      ]
+    ],
+    [
+      [
+        "chem_black_powder",
+        3000
+      ]
+    ],
+    [
+      [
+        "fuse",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "white_brimstone_cannon_shot",
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "category": "CC_AMMO",
+  "subcategory": "CSC_AMMO_OTHER",
+  "skill_used": "fabrication",
+  "difficulty": 3,
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "time": "10 m",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "autolearn": true,
+  "charges": 1,
+  "reversible": true,
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    },
+	{
+      "id": "WHITE_CIRCLE",
+      "level": 1
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_chunk",
+        1
+      ]
+    ],
+    [
+      [
+        "cotton_patchwork",
+        1
+      ]
+    ],
+    [
+      [
+        "chem_black_powder",
+        3000
+      ]
+    ],
+    [
+      [
+        "fuse",
+        1
+      ]
+    ]
+  ]
+},
+  {
+    "id": "brimstone_cannon_shot",
+    "type": "AMMO",
+    "name": { "str_sp": "hot brimstone cannon round shot" },
+    "description": "A bundle of wadding, black gunpowder, and a chunk of brimstone, ready to be loaded into a cannon.",
+    "weight": "2350 g",
+    "volume": "1000 ml",
+    "price": 1100,
+    "price_postapoc": 12000,
+    "material": [ "steel", "powder", "brimstone" ],
+    "symbol": "=",
+    "color": "white",
+    "count": 1,
+    "stack_size": 1,
+    "ammo_type": "cannon",
+    "range": 50,
+    "damage": { "damage_type": "heat", "amount": 352 },
+    "//": "4 pound cannonball weighs 28000 grains,shot at 1215 ft/s by a 3in ordnance rifle, equals 124459 joules of muzzle energy according to Shooters Calculator, round down from square root 352.78",
+    "dispersion": 620,
+    "recoil": 26250,
+    "//2": "Recoil currently copied from 50 bmg ball as game_balance.md does not state a method for calculating recoil",
+    "loudness": 900,
+    "effects": [ "COOKOFF", "MUZZLE_SMOKE", "BLACKPOWDER", "RECYCLED" ]
+  },
+  {
+    "id": "blue_brimstone_cannon_shot",
+    "type": "AMMO",
+    "name": { "str_sp": "cold brimstone cannon round shot" },
+    "description": "A bundle of wadding, black gunpowder, and a chunk of brimstone, ready to be loaded into a cannon.",
+    "weight": "2350 g",
+    "volume": "1000 ml",
+    "price": 1100,
+    "price_postapoc": 12000,
+    "material": [ "steel", "powder", "brimstone" ],
+    "symbol": "=",
+    "color": "white",
+    "count": 1,
+    "stack_size": 1,
+    "ammo_type": "cannon",
+    "range": 50,
+    "damage": { "damage_type": "cold", "amount": 352 },
+    "//": "4 pound cannonball weighs 28000 grains,shot at 1215 ft/s by a 3in ordnance rifle, equals 124459 joules of muzzle energy according to Shooters Calculator, round down from square root 352.78",
+    "dispersion": 620,
+    "recoil": 26250,
+    "//2": "Recoil currently copied from 50 bmg ball as game_balance.md does not state a method for calculating recoil",
+    "loudness": 900,
+    "effects": [ "COOKOFF", "MUZZLE_SMOKE", "BLACKPOWDER", "RECYCLED" ]
+  },
+  {
+    "id": "green_brimstone_cannon_shot",
+    "type": "AMMO",
+    "name": { "str_sp": "acidic brimstone cannon round shot" },
+    "description": "A bundle of wadding, black gunpowder, and a chunk of brimstone, ready to be loaded into a cannon.",
+    "weight": "2350 g",
+    "volume": "1000 ml",
+    "price": 1100,
+    "price_postapoc": 12000,
+    "material": [ "steel", "powder", "brimstone" ],
+    "symbol": "=",
+    "color": "white",
+    "count": 1,
+    "stack_size": 1,
+    "ammo_type": "cannon",
+    "range": 50,
+    "damage": { "damage_type": "acid", "amount": 352 },
+    "//": "4 pound cannonball weighs 28000 grains,shot at 1215 ft/s by a 3in ordnance rifle, equals 124459 joules of muzzle energy according to Shooters Calculator, round down from square root 352.78",
+    "dispersion": 620,
+    "recoil": 26250,
+    "//2": "Recoil currently copied from 50 bmg ball as game_balance.md does not state a method for calculating recoil",
+    "loudness": 900,
+    "effects": [ "COOKOFF", "MUZZLE_SMOKE", "BLACKPOWDER", "RECYCLED" ]
+  },
+  {
+    "id": "black_brimstone_cannon_shot",
+    "type": "AMMO",
+    "name": { "str_sp": "biological brimstone cannon round shot" },
+    "description": "A bundle of wadding, black gunpowder, and a chunk of brimstone, ready to be loaded into a cannon.",
+    "weight": "2350 g",
+    "volume": "1000 ml",
+    "price": 1100,
+    "price_postapoc": 12000,
+    "material": [ "steel", "powder", "brimstone" ],
+    "symbol": "=",
+    "color": "white",
+    "count": 1,
+    "stack_size": 1,
+    "ammo_type": "cannon",
+    "range": 50,
+    "damage": { "damage_type": "biological", "amount": 352 },
+    "//": "4 pound cannonball weighs 28000 grains,shot at 1215 ft/s by a 3in ordnance rifle, equals 124459 joules of muzzle energy according to Shooters Calculator, round down from square root 352.78",
+    "dispersion": 620,
+    "recoil": 26250,
+    "//2": "Recoil currently copied from 50 bmg ball as game_balance.md does not state a method for calculating recoil",
+    "loudness": 900,
+    "effects": [ "COOKOFF", "MUZZLE_SMOKE", "BLACKPOWDER", "RECYCLED" ]
+  },
+  {
+    "id": "white_brimstone_cannon_shot",
+    "type": "AMMO",
+    "name": { "str_sp": "electrical brimstone cannon round shot" },
+    "description": "A bundle of wadding, black gunpowder, and a chunk of brimstone, ready to be loaded into a cannon.",
+    "weight": "2350 g",
+    "volume": "1000 ml",
+    "price": 1100,
+    "price_postapoc": 12000,
+    "material": [ "steel", "powder", "brimstone" ],
+    "symbol": "=",
+    "color": "white",
+    "count": 1,
+    "stack_size": 1,
+    "ammo_type": "cannon",
+    "range": 50,
+    "damage": { "damage_type": "electric", "amount": 352 },
+    "//": "4 pound cannonball weighs 28000 grains,shot at 1215 ft/s by a 3in ordnance rifle, equals 124459 joules of muzzle energy according to Shooters Calculator, round down from square root 352.78",
+    "dispersion": 620,
+    "recoil": 26250,
+    "//2": "Recoil currently copied from 50 bmg ball as game_balance.md does not state a method for calculating recoil",
+    "loudness": 900,
+    "effects": [ "COOKOFF", "MUZZLE_SMOKE", "BLACKPOWDER", "RECYCLED" ]
+  },
+  {
+  "result": "brimstone_flintlock_ammo",
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_AMMO",
+  "subcategory": "CSC_AMMO_RIFLE",
+  "skill_used": "fabrication",
+  "difficulty": 3,
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "time": "1 m",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "autolearn": true,
+  "charges": 1,
+  "reversible": true,
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    },
+	{
+      "id": "RED_CIRCLE",
+      "level": 1
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "chem_black_powder",
+        30
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        3
+      ]
+    ],
+    [
+      [
+        "paper",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "blue_brimstone_flintlock_ammo",
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_AMMO",
+  "subcategory": "CSC_AMMO_RIFLE",
+  "skill_used": "fabrication",
+  "difficulty": 3,
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "time": "1 m",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "autolearn": true,
+  "charges": 1,
+  "reversible": true,
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    },
+	{
+      "id": "BLUE_CIRCLE",
+      "level": 1
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "chem_black_powder",
+        30
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        3
+      ]
+    ],
+    [
+      [
+        "paper",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "green_brimstone_flintlock_ammo",
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_AMMO",
+  "subcategory": "CSC_AMMO_RIFLE",
+  "skill_used": "fabrication",
+  "difficulty": 3,
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "time": "1 m",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "autolearn": true,
+  "charges": 1,
+  "reversible": true,
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    },
+	{
+      "id": "GREEN_CIRCLE",
+      "level": 1
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "chem_black_powder",
+        30
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        3
+      ]
+    ],
+    [
+      [
+        "paper",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "white_brimstone_flintlock_ammo",
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_AMMO",
+  "subcategory": "CSC_AMMO_RIFLE",
+  "skill_used": "fabrication",
+  "difficulty": 3,
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "time": "1 m",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "autolearn": true,
+  "charges": 1,
+  "reversible": true,
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    },
+	{
+      "id": "WHITE_CIRCLE",
+      "level": 1
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "chem_black_powder",
+        30
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        3
+      ]
+    ],
+    [
+      [
+        "paper",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "black_brimstone_flintlock_ammo",
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_AMMO",
+  "subcategory": "CSC_AMMO_RIFLE",
+  "skill_used": "fabrication",
+  "difficulty": 3,
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "time": "1 m",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "autolearn": true,
+  "charges": 1,
+  "reversible": true,
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    },
+	{
+      "id": "BLACK_CIRCLE",
+      "level": 1
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "chem_black_powder",
+        30
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        3
+      ]
+    ],
+    [
+      [
+        "paper",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "brimstone_flintlock_shot",
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_AMMO",
+  "subcategory": "CSC_AMMO_RIFLE",
+  "skill_used": "fabrication",
+  "difficulty": 3,
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "time": "1 m",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "autolearn": true,
+  "charges": 1,
+  "reversible": true,
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    },
+	{
+      "id": "RED_CIRCLE",
+      "level": 1
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "chem_black_powder",
+        30
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        7
+      ]
+    ],
+    [
+      [
+        "paper",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "blue_brimstone_flintlock_shot",
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_AMMO",
+  "subcategory": "CSC_AMMO_RIFLE",
+  "skill_used": "fabrication",
+  "difficulty": 3,
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "time": "1 m",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "autolearn": true,
+  "charges": 1,
+  "reversible": true,
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    },
+	{
+      "id": "BLUE_CIRCLE",
+      "level": 1
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "chem_black_powder",
+        30
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        7
+      ]
+    ],
+    [
+      [
+        "paper",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "green_brimstone_flintlock_shot",
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_AMMO",
+  "subcategory": "CSC_AMMO_RIFLE",
+  "skill_used": "fabrication",
+  "difficulty": 3,
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "time": "1 m",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "autolearn": true,
+  "charges": 1,
+  "reversible": true,
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    },
+	{
+      "id": "GREEN_CIRCLE",
+      "level": 1
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "chem_black_powder",
+        30
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        7
+      ]
+    ],
+    [
+      [
+        "paper",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "black_brimstone_flintlock_shot",
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_AMMO",
+  "subcategory": "CSC_AMMO_RIFLE",
+  "skill_used": "fabrication",
+  "difficulty": 3,
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "time": "1 m",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "autolearn": true,
+  "charges": 1,
+  "reversible": true,
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    },
+	{
+      "id": "BLACK_CIRCLE",
+      "level": 1
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "chem_black_powder",
+        30
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        7
+      ]
+    ],
+    [
+      [
+        "paper",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "white_brimstone_flintlock_shot",
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_AMMO",
+  "subcategory": "CSC_AMMO_RIFLE",
+  "skill_used": "fabrication",
+  "difficulty": 3,
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "time": "1 m",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "autolearn": true,
+  "charges": 1,
+  "reversible": true,
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    },
+	{
+      "id": "WHITE_CIRCLE",
+      "level": 1
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "chem_black_powder",
+        30
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        7
+      ]
+    ],
+    [
+      [
+        "paper",
+        1
+      ]
+    ]
+  ]
+},
+  {
+    "id": "brimstone_flintlock_ammo",
+    "type": "AMMO",
+    "name": { "str": "hot brimstone paper cartridge" },
+    "description": "A paper cartridge containing black powder and a piece of brimstone.  Historically used to reload muzzleloaders in a more reasonable time.",
+    "weight": "40 g",
+    "volume": "10 ml",
+    "price": 1100,
+    "price_postapoc": 1200,
+    "material": [ "lead", "powder", "brimstone" ],
+    "symbol": "=",
+    "color": "white",
+    "count": 30,
+    "stack_size": 10,
+    "ammo_type": "flintlock",
+    "range": 6,
+    "damage": { "damage_type": "heat", "amount": 30 },
+    "dispersion": 90,
+    "recoil": 1500,
+    "loudness": 70,
+    "effects": [ "COOKOFF", "MUZZLE_SMOKE", "BLACKPOWDER", "RECYCLED" ]
+  },
+  {
+    "id": "brimstone_flintlock_shot",
+    "type": "AMMO",
+    "name": { "str": "hot brimstone paper shot cartridge" },
+    "description": "A paper cartridge containing black powder and pieces of brimstone.  Historically used to reload muzzleloaders in a more reasonable time.",
+    "weight": "40 g",
+    "volume": "10 ml",
+    "price": 1100,
+    "price_postapoc": 1200,
+    "material": [ "lead", "powder", "brimstone" ],
+    "symbol": "=",
+    "color": "white",
+    "count": 30,
+    "stack_size": 10,
+    "ammo_type": "flintlock",
+    "range": 4,
+    "damage": { "damage_type": "heat", "amount": 25 },
+    "shot_damage": { "damage_type": "heat", "amount": 8 },
+    "projectile_count": 9,
+    "shot_spread": 20,
+    "dispersion": 20,
+    "recoil": 1500,
+    "loudness": 90,
+    "effects": [ "COOKOFF", "MUZZLE_SMOKE", "SHOT", "BLACKPOWDER", "RECYCLED" ]
+  },
+  {
+    "id": "blue_brimstone_flintlock_ammo",
+    "type": "AMMO",
+    "name": { "str": "cold brimstone paper cartridge" },
+    "description": "A paper cartridge containing black powder and a piece of brimstone.  Historically used to reload muzzleloaders in a more reasonable time.",
+    "weight": "40 g",
+    "volume": "10 ml",
+    "price": 1100,
+    "price_postapoc": 1200,
+    "material": [ "lead", "powder", "brimstone" ],
+    "symbol": "=",
+    "color": "white",
+    "count": 30,
+    "stack_size": 10,
+    "ammo_type": "flintlock",
+    "range": 6,
+    "damage": { "damage_type": "cold", "amount": 30 },
+    "dispersion": 90,
+    "recoil": 1500,
+    "loudness": 70,
+    "effects": [ "COOKOFF", "MUZZLE_SMOKE", "BLACKPOWDER", "RECYCLED" ]
+  },
+  {
+    "id": "blue_brimstone_flintlock_shot",
+    "type": "AMMO",
+    "name": { "str": "cold brimstone paper shot cartridge" },
+    "description": "A paper cartridge containing black powder and pieces of brimstone.  Historically used to reload muzzleloaders in a more reasonable time.",
+    "weight": "40 g",
+    "volume": "10 ml",
+    "price": 1100,
+    "price_postapoc": 1200,
+    "material": [ "lead", "powder", "brimstone" ],
+    "symbol": "=",
+    "color": "white",
+    "count": 30,
+    "stack_size": 10,
+    "ammo_type": "flintlock",
+    "range": 4,
+    "damage": { "damage_type": "cold", "amount": 25 },
+    "shot_damage": { "damage_type": "cold", "amount": 8 },
+    "projectile_count": 9,
+    "shot_spread": 20,
+    "dispersion": 20,
+    "recoil": 1500,
+    "loudness": 90,
+    "effects": [ "COOKOFF", "MUZZLE_SMOKE", "SHOT", "BLACKPOWDER", "RECYCLED" ]
+  },
+  {
+    "id": "green_brimstone_flintlock_ammo",
+    "type": "AMMO",
+    "name": { "str": "acidic brimstone paper cartridge" },
+    "description": "A paper cartridge containing black powder and a piece of brimstone.  Historically used to reload muzzleloaders in a more reasonable time.",
+    "weight": "40 g",
+    "volume": "10 ml",
+    "price": 1100,
+    "price_postapoc": 1200,
+    "material": [ "lead", "powder", "brimstone" ],
+    "symbol": "=",
+    "color": "white",
+    "count": 30,
+    "stack_size": 10,
+    "ammo_type": "flintlock",
+    "range": 6,
+    "damage": { "damage_type": "acid", "amount": 30 },
+    "dispersion": 90,
+    "recoil": 1500,
+    "loudness": 70,
+    "effects": [ "COOKOFF", "MUZZLE_SMOKE", "BLACKPOWDER", "RECYCLED" ]
+  },
+  {
+    "id": "green_brimstone_flintlock_shot",
+    "type": "AMMO",
+    "name": { "str": "acidic brimstone paper shot cartridge" },
+    "description": "A paper cartridge containing black powder and pieces of brimstone.  Historically used to reload muzzleloaders in a more reasonable time.",
+    "weight": "40 g",
+    "volume": "10 ml",
+    "price": 1100,
+    "price_postapoc": 1200,
+    "material": [ "lead", "powder", "brimstone" ],
+    "symbol": "=",
+    "color": "white",
+    "count": 30,
+    "stack_size": 10,
+    "ammo_type": "flintlock",
+    "range": 4,
+    "damage": { "damage_type": "acid", "amount": 25 },
+    "shot_damage": { "damage_type": "acid", "amount": 8 },
+    "projectile_count": 9,
+    "shot_spread": 20,
+    "dispersion": 20,
+    "recoil": 1500,
+    "loudness": 90,
+    "effects": [ "COOKOFF", "MUZZLE_SMOKE", "SHOT", "BLACKPOWDER", "RECYCLED" ]
+  },
+  {
+    "id": "black_brimstone_flintlock_ammo",
+    "type": "AMMO",
+    "name": { "str": "biological brimstone paper cartridge" },
+    "description": "A paper cartridge containing black powder and a piece of brimstone.  Historically used to reload muzzleloaders in a more reasonable time.",
+    "weight": "40 g",
+    "volume": "10 ml",
+    "price": 1100,
+    "price_postapoc": 1200,
+    "material": [ "lead", "powder", "brimstone" ],
+    "symbol": "=",
+    "color": "white",
+    "count": 30,
+    "stack_size": 10,
+    "ammo_type": "flintlock",
+    "range": 6,
+    "damage": { "damage_type": "biological", "amount": 30 },
+    "dispersion": 90,
+    "recoil": 1500,
+    "loudness": 70,
+    "effects": [ "COOKOFF", "MUZZLE_SMOKE", "BLACKPOWDER", "RECYCLED" ]
+  },
+  {
+    "id": "black_brimstone_flintlock_shot",
+    "type": "AMMO",
+    "name": { "str": "biological brimstone paper shot cartridge" },
+    "description": "A paper cartridge containing black powder and pieces of brimstone.  Historically used to reload muzzleloaders in a more reasonable time.",
+    "weight": "40 g",
+    "volume": "10 ml",
+    "price": 1100,
+    "price_postapoc": 1200,
+    "material": [ "lead", "powder", "brimstone" ],
+    "symbol": "=",
+    "color": "white",
+    "count": 30,
+    "stack_size": 10,
+    "ammo_type": "flintlock",
+    "range": 4,
+    "damage": { "damage_type": "biological", "amount": 25 },
+    "shot_damage": { "damage_type": "biological", "amount": 8 },
+    "projectile_count": 9,
+    "shot_spread": 20,
+    "dispersion": 20,
+    "recoil": 1500,
+    "loudness": 90,
+    "effects": [ "COOKOFF", "MUZZLE_SMOKE", "SHOT", "BLACKPOWDER", "RECYCLED" ]
+  },
+  {
+    "id": "white_brimstone_flintlock_ammo",
+    "type": "AMMO",
+    "name": { "str": "electrical brimstone paper cartridge" },
+    "description": "A paper cartridge containing black powder and a piece of brimstone.  Historically used to reload muzzleloaders in a more reasonable time.",
+    "weight": "40 g",
+    "volume": "10 ml",
+    "price": 1100,
+    "price_postapoc": 1200,
+    "material": [ "lead", "powder", "brimstone" ],
+    "symbol": "=",
+    "color": "white",
+    "count": 30,
+    "stack_size": 10,
+    "ammo_type": "flintlock",
+    "range": 6,
+    "damage": { "damage_type": "electric", "amount": 30 },
+    "dispersion": 90,
+    "recoil": 1500,
+    "loudness": 70,
+    "effects": [ "COOKOFF", "MUZZLE_SMOKE", "BLACKPOWDER", "RECYCLED" ]
+  },
+  {
+    "id": "white_brimstone_flintlock_shot",
+    "type": "AMMO",
+    "name": { "str": "electrical brimstone paper shot cartridge" },
+    "description": "A paper cartridge containing black powder and pieces of brimstone.  Historically used to reload muzzleloaders in a more reasonable time.",
+    "weight": "40 g",
+    "volume": "10 ml",
+    "price": 1100,
+    "price_postapoc": 1200,
+    "material": [ "lead", "powder", "brimstone" ],
+    "symbol": "=",
+    "color": "white",
+    "count": 30,
+    "stack_size": 10,
+    "ammo_type": "flintlock",
+    "range": 4,
+    "damage": { "damage_type": "electric", "amount": 25 },
+    "shot_damage": { "damage_type": "electric", "amount": 8 },
+    "projectile_count": 9,
+    "shot_spread": 20,
+    "dispersion": 20,
+    "recoil": 1500,
+    "loudness": 90,
+    "effects": [ "COOKOFF", "MUZZLE_SMOKE", "SHOT", "BLACKPOWDER", "RECYCLED" ]
+  }
+]

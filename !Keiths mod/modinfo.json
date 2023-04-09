@@ -7,6 +7,6 @@
     "maintainers": [ "KeefTeefa" ],
     "description": "In this world, Magic was being used more and more frivolously in the days leading up to the Cataclysm. Companies sprouted up like weeds, all looking to sell you their latest spell or magical doo-dad. When they started selling their services to the military, one can only guess where all the demons came from. Highly recommend large cities with reduced item spawns and increased monster spawns, as well as the Magiclysm No-Class Limit mod.",
     "category": "content",
-    "dependencies": [ "dda", "magiclysm" ]
+    "dependencies": [ "dda", "magiclysm", "new stuff" ]
   }
 ]

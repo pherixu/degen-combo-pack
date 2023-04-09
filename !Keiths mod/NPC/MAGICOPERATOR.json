@@ -89,10 +89,8 @@
     "spells": [
       { "id": "bullet_immune", "level": 10 },
       { "id": "directed_prone", "level": 10 },
-      { "id": "dislocate", "level": 10 },
+      { "id": "spiritual_invisibility", "level": 10 },
       { "id": "magus_escape", "level": 10 },
-      { "id": "animated_blade", "level": 10 },
-      { "id": "dimension_door", "level": 10 },
       { "id": "focused_bolt", "level": 5 },
       { "id": "smite", "level": 3 },
       { "id": "bio_grotesque", "level": 10 },
@@ -459,11 +457,11 @@
     "subtype": "collection",
     "id": "NC_MAGIC_OPERATOR_STORE",
     "items": [
-      { "group": "enchanted_combat_items", "count": [ 1, 3 ], "prob": 30 },
+      { "group": "enchanted_combat_items", "prob": 75 },
       { "group": "enchanted_rings_unusual", "count": [ 1, 2 ], "prob": 10 },
       { "group": "enchanted_wands_greater", "count": [ 1, 2 ], "prob": 5 },
       { "group": "enchanted_wands_lesser", "count": [ 1, 2 ], "prob": 10 },
-      { "group": "alchemy_items", "count": [ 1, 7 ], "prob": 33 },
+      { "group": "alchemy_items", "count": [ 1, 3 ], "prob": 33 },
       { "group": "enchanted_melee_weapons_plus2", "prob": 10 },
       { "item": "crystallized_mana", "count": [ 1, 3 ] },
       { "group": "spellbook_loot_1", "prob": 15, "count": [ 1, 2 ] }

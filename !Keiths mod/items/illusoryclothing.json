@@ -724,7 +724,7 @@
   {
     "id": "pants_ski_aura",
     "type": "ARMOR",
-    "name": { "str": "illusory pants_ski" },
+    "name": { "str": "illusory ski pants" },
     "description": "A pair of ski pants that you can see (and fits you perfectly) but cannot feel in any way.",
     "weight": "1 g",
     "volume": "1 ml",
@@ -1824,14 +1824,14 @@
     "color": "black"
   },
   {
-    "id": "cloak_leather_aura",
+    "id": "cloak_wool_aura",
     "type": "ARMOR",
-    "name": { "str": "illusory leather cloak" },
-    "description": "A leather cloak that you can see (and fits you perfectly) but cannot feel in any way.",
+    "name": { "str": "illusory wool cloak" },
+    "description": "A wool cloak that you can see (and fits you perfectly) but cannot feel in any way.",
     "weight": "1 g",
     "volume": "1 ml",
     "longest_side": "1 cm",
-    "looks_like": "cloak_leather",
+    "looks_like": "cloak_wool",
     "price": 2000,
     "price_postapoc": 250,
     "to_hit": 3,

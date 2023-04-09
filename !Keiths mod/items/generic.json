@@ -3,12 +3,12 @@
     "id": "brimstone_chunk",
     "type": "GENERIC",
     "category": "other",
-    "name": { "str": "chunk of brimstone" },
+    "name": { "str": "chunk of brimstone", "str_pl": "chunks of brimstone" },
     "description": "A chunk of brimstone, the foundation of hell and all it's spawn. It radiates with magical energy, none of it pure.",
     "weight": "150 g",
     "volume": "150 ml",
     "longest_side": "12 cm",
-    "price": 120000,
+    "price": 50000,
     "material": [ "brimstone" ],
     "symbol": "B",
     "color": "red"
@@ -35,6 +35,7 @@
     "category": "FURN",
     "required_skills": [ [ "spellcraft", 5 ], [ "fabrication", 3 ] ],
     "time": "10 m",
+	"qualities": [ [ { "id": "PRY", "level": 1 } ], [ { "id": "SCREW", "level": 1 } ] ],
 	"activity_level": "LIGHT_EXERCISE",
     "components": [ [ [ "stick", 1 ], [ "pipe", 1 ] ], [ [ "superglue", 1 ] ], [ [ "crystal_ball", 1 ] ] ],
     "pre_special": "check_empty",
@@ -64,6 +65,44 @@
     "emissions": [ "emit_clairvoyant_post" ]
   },
   {
+    "id": "emit_vault_safe",
+    "type": "emit",
+    "//": "Intermittent vault atmosphere",
+    "field": "fd_vault_atmosphere",
+    "intensity": 1,
+	"qty": 9,
+    "chance": 100
+  },
+  {
+    "type": "furniture",
+    "id": "f_safe_l",
+    "name": "safe",
+	"copy-from": "f_safe_1",
+    "looks_like": "f_safe_c",
+    "symbol": "X",
+    "description": "A small, heavy, and near-unbreachable metal box with a rotary combination lock.  With something to listen really closely and a hell of a lot of time, you might be able to crack it.",
+    "color": "light_gray",
+    "move_cost_mod": -1,
+    "coverage": 30,
+    "required_str": 14,
+    "max_volume": "250 L",
+	"emissions": [ "emit_vault_atmosphere" ],
+    "flags": [ "TRANSPARENT", "CONTAINER", "SEALED", "PLACE_ITEM", "MOUNTABLE" ],
+    "oxytorch": { "result": "f_safe_o", "duration": "14 seconds" },
+    "examine_action": "safe",
+    "bash": {
+      "str_min": 40,
+      "str_max": 200,
+      "sound": "screeching metal!",
+      "sound_fail": "whump!",
+      "items": [
+        { "item": "steel_chunk", "count": [ 1, 5 ] },
+        { "item": "scrap", "count": [ 1, 5 ] },
+        { "item": "rock", "count": [ 1, 2 ] }
+      ]
+    }
+  },
+  {
     "type": "construction",
     "id": "constr_stone_altar",
     "group": "build_stone_altar",
@@ -83,7 +122,7 @@
     "required_skills": [ [ "spellcraft", 7 ], [ "fabrication", 5 ] ],
     "time": "12 h",
 	"activity_level": "LIGHT_EXERCISE",
-    "components": [ [ [ "glow_dust", 3 ] ], [ [ "dragon_blood", 10 ], [ "money_bundle_hundred", 10 ] ], [ [ "crystallized_mana", 500 ] ], [ [ "enchanted_wood", 25 ] ] ],
+    "components": [ [ [ "glow_dust", 3 ] ], [ [ "dragon_blood", 10 ], [ "money_bundle_hundred", 5 ], [ "crystallized_mana", 500 ] ], [ [ "enchanted_wood", 25 ] ] ],
     "pre_terrain": "f_glow_boulder",
     "post_terrain": "f_altar_of_power"
   },
@@ -105,14 +144,14 @@
     "name": "stone altar",
     "copy-from": "f_altar",
     "move_cost_mod": 10,
-    "looks_like": "f_grave_monument",
+	"looks_like": "f_altar",
     "symbol": "A",
     "color": "light_gray",
     "crafting_pseudo_item": "fake_altar",
     "coverage": 40,
     "required_str": 30,
 	"flags": [ "TRANSPARENT", "PLACE_ITEM", "MOUNTABLE", "FLAT_SURF", "USABLE_FIRE" ],
-    "description": "This is a big stone altar.  Most commonly used in morally questionable rituals. That's made more obvious by the three human skulls crying blood. If created by cash, the altar instead shows three cartoonish wizards winking.",
+    "description": "This is a big stone altar laid into a magic circle.  Most commonly used in morally questionable rituals. That's made more obvious by the three human skulls crying blood.",
     "bash": {
       "str_min": 30,
       "str_max": 160,
@@ -139,8 +178,8 @@
     "name": "altar of power",
     "description": "An altar imprinted with a magic circle that makes almost all things much easier. It's laced with magic in it's entire construction, making it a necessary component in some high tier magical recipes.",
     "symbol": "0",
-    "bgcolor": "white",
     "move_cost_mod": 2,
+	"color": "red",
     "coverage": 60,
     "required_str": -1,
     "crafting_pseudo_item": "fake_altar_power",
@@ -184,8 +223,8 @@
     "group": "build_stone_altar",
     "category": "FURN",
     "required_skills": [ [ "spellcraft", 7 ], [ "fabrication", 7 ], [ "chemistry", 7 ] ],
-    "time": "12 h",
-  "components": [ [ [ "skull_human", 33 ],  [ "dragon_essence", 33 ] ], [ [ "crystallized_mana", 1000 ], [ "money_hundred", 1000 ] ] ],
+    "time": "48 h",
+  "components": [ [ [ "skull_human", 33 ],  [ "dragon_essence", 33 ] ], [ [ "crystallized_mana", 1000 ], [ "money_hundred", 1000 ] ], [ [ "manatouched_aura3", 1 ] ] ],
     "pre_terrain": "f_altar_of_power",
     "post_terrain": "f_altar_of_essence"
   },
@@ -251,11 +290,11 @@
     "id": "constr_stone_altar4",
     "group": "build_stone_altar",
     "category": "FURN",
-    "required_skills": [ [ "spellcraft", 10 ], [ "fabrication", 10 ] ],
+    "required_skills": [ [ "spellcraft", 10 ], [ "speech", 7 ] ],
     "time": "12 h",
   "components": [ [ [ "impression_cylinder", 1 ] ], [ [ "crystallized_mana", 1000 ], [ "money_hundred", 1000 ] ] ],
     "pre_terrain": "f_altar_of_essence",
-    "post_terrain": "f_altar_of_essence"
+    "post_terrain": "f_scroll_printer"
   },
   {
     "id": "fake_scroll_printer",
@@ -343,8 +382,10 @@
       "CSC_ENCHANTED_RUNES",
       "CSC_ENCHANTED_MODS",
       "CSC_ENCHANTED_OTHER",
-	  "CSC_ENCHANTED_ETHEREALTAILOR",
-	  "CSC_ENCHANTED_CATALOGUE"
+	  "CSC_ENCHANTED_CORPO",
+	  "CSC_ENCHANTED_SPIRIT_FORGERY",
+	  "CSC_ENCHANTED_CATALOGUE", 
+	  "CSC_ENCHANTED_ETHEREALTAILOR"
     ]
   },
   {
@@ -410,6 +451,173 @@
     "flags": [ "FANCY", "SKINTIGHT", "SINGLE_USE", "ONE_PER_LAYER", "ALLOWS_NATURAL_ATTACKS" ]
   },
   {
+    "type": "AMMO",
+    "id": "crystallized_mana",
+    "category": "spare_parts",
+    "price": 50000,
+    "copy-from": "crystallized_mana",
+    "name": { "str_sp": "crystallized mana" },
+    "symbol": "=",
+    "color": "yellow",
+    "description": "Some crystallized mana.  This can be reloaded into rechargeable mana crystals, but can never be unloaded.",
+    "flags": [ "TRADER_AVOID", "ZERO_WEIGHT" ],
+    "volume": "100 ml",
+    "ammo_type": "crystallized_mana",
+    "material": [ "crystallized_mana" ],
+    "count": 100,
+    "looks_like": "battery"
+  },
+  {
+    "id": "classified_intelligence",
+    "type": "BOOK",
+    "category": "manuals",
+    "name": { "str": "classified intelligence", "str_pl": "intelligences" },
+    "description": "Only one piece of the puzzle. A neatly paperclipped document sits face down on top of the file labeled 'Top Secret.' You can surmise from what's in the file itself that the Government before the cataclysm was trying to enslave demons and use them as a source of infinite power. You can also surmise that it did not go as planned. You'll need to remove the paperclip if you want to know more.",
+    "weight": "1200 g",
+    "volume": "1200 ml",
+    "price": 2000000,
+    "material": [ "paper" ],
+    "symbol": "?",
+    "color": "light_red",
+    "use_action": [
+      {
+        "type": "transform",
+        "menu_text": "Remove Paperclip",
+        "target": "classified_intelligence_scroll",
+        "active": false,
+        "moves": 500,
+        "msg": "You remove a paperclip from the intelligence, triggering some form of magical alarm and forcing most of the intelligence to self-destruct. You're left holding a paperclipped document."
+      },
+      {
+        "type": "reveal_map",
+        "radius": 150,
+        "terrain": [
+          "hiway",
+          "road",
+          "bridge",
+          "fema_entrance",
+          "station_radio",
+          "control_tower_0",
+          "pwr_large_entrance",
+          "loffice_tower_1",
+          "office_tower_2_a1",
+          "lab_subway_vent_shaft_surface",
+          "hospital_1",
+          "haz_sar_1_1",
+          "cathedral_b_NW",
+          "exodii_base_x0y0z0",
+          "aircraft_carrier_1a",
+          "outpost",
+          "bunker",
+          "lmoe",
+          "standing_stones",
+          "toxic_dump",
+          "police_dept_u000",
+          "lab_subway",
+          "microlab_sub_connector",
+          "microlab_sub_station",
+          "central_lab_train_depot",
+          "lab_train_depot",
+          { "om_terrain": "magic_academy_ground", "om_terrain_match_type": "TYPE" },
+          { "om_terrain": "corpse_head", "om_terrain_match_type": "TYPE" },
+          { "om_terrain": "magic_shop", "om_terrain_match_type": "TYPE" },
+          { "om_terrain": "wizardtower1_ground", "om_terrain_match_type": "TYPE" },
+          { "om_terrain": "wizardtower2_ground", "om_terrain_match_type": "TYPE" },
+          { "om_terrain": "silo", "om_terrain_match_type": "TYPE" },
+          { "om_terrain": "shelter", "om_terrain_match_type": "TYPE" },
+          "police",
+          "mil_base_road_entrance"
+        ],
+        "message": "You add roads and facilities to your map."
+      }
+    ]
+  },
+  {
+    "id": "fp_loyalty_card",
+    "type": "AMMO",
+    "name": "Foodplace Loyalty Card",
+    "ammo_type": "fp_loyalty_card_ammo",
+    "copy-from": "fp_loyalty_card"
+  },
+  {
+    "type": "ammunition_type",
+    "id": "fp_loyalty_card_ammo",
+    "name": "Foodplace Loyalty Card",
+    "default": "fp_loyalty_card"
+  },
+  {
+    "type": "ammunition_type",
+    "id": "brimstone_ammo",
+    "name": "brimstone",
+    "default": "brimstone_sliver"
+  },
+  {
+    "type": "ammunition_type",
+    "id": "decaying_soul_ammo",
+    "name": "decaying soul",
+    "default": "decaying_soul"
+  },
+  {
+    "id": "brimstone_sliver",
+    "type": "AMMO",
+    "ammo_type": "brimstone_ammo",
+    "name": { "str": "sliver of brimstone", "str_pl": "slivers of brimstone" },
+    "description": "A sliver of brimstone, the foundation of hell and all it's spawn. The stuff that demons eat, shit and bleed. It radiates with magical energy, none of it pure.",
+    "weight": "10 g",
+    "volume": "10 ml",
+    "longest_side": "2 cm",
+    "price": 25000,
+    "count": 1,
+    "material": [ "brimstone" ],
+    "symbol": "b",
+    "color": "red"
+  },
+  {
+    "type": "GENERIC",
+    "id": "money_hundred",
+    "name": { "str": "hundred-dollar bill" },
+    "copy-from": "money_hundred",
+    "description": "A hundred-dollar bill, featuring a portrait of Benjamin Franklin.",
+    "looks_like": "money_one",
+    "color": "green",
+    "symbol": "$",
+    "price": 1000,
+    "flags": [ "OLD_CURRENCY" ]
+  },
+  {
+    "id": "prac_piloting",
+    "type": "practice",
+    "activity_level": "NO_EXERCISE",
+    "category": "CC_PRACTICE",
+    "subcategory": "CSC_PRACTICE_SOCIAL",
+    "name": "piloting (beginner)",
+    "description": "You practice winging it.",
+    "skill_used": "spellcraft",
+    "time": "1 h",
+    "practice_data": { "min_difficulty": 0, "max_difficulty": 1 },
+	"tools": [ [ [ "laptop", 50 ] ] ],
+	 "proficiencies": [ { "proficiency": "prof_helicopter_pilot", "fail_multiplier": 1, "time_multiplier": 1 } ],
+    "autolearn": false,
+    "book_learn": [ [ "heli_book", 1 ] ]
+  },
+  {
+    "id": "heli_book",
+    "type": "BOOK",
+    "category": "manuals",
+    "name": { "str": "Piloting for Dummies", "str_pl": "Piloting for Dummies'" },
+    "description": "An extremely pandering book that quickly describes how to fly a helicoptor. The book recommends a lot of practice.",
+    "weight": "75 g",
+    "volume": "250 ml",
+    "price": 400000,
+    "material": [ "paper" ],
+    "symbol": "?",
+    "looks_like": "mag_glam",
+    "color": "pink",
+    "intelligence": 13,
+    "time": "30 m",
+    "fun": 2
+  },
+  {
     "id": "crystallized_ink",
     "type": "COMESTIBLE",
     "category": "other",
@@ -417,7 +625,7 @@
     "name": { "str": "crystallized ink" },
     "description": "A transluscent handful of a water-like substance that always twinkles with a rainbow of colors. It can be used to draw a crystal circle, one of the many wonders of magic. This unpigmented base is used all throughout the process of spellwriting.",
     "weight": "1 g",
-    "volume": "1 ml",
+    "volume": "250 ml",
     "longest_side": "1 cm",
     "price": 100000,
     "flags": [ "SEMITANGIBLE" ],
@@ -436,7 +644,7 @@
     "name": { "str": "crimson crystallized ink" },
     "description": "A transluscent handful of a water-like substance that always twinkles with a rainbow of colors. It can be used to draw a circle of flame, one of the many wonders of magic.",
     "weight": "1 g",
-    "volume": "1 ml",
+    "volume": "250 ml",
     "longest_side": "1 cm",
     "price": 100000,
     "flags": [ "SEMITANGIBLE" ],
@@ -455,7 +663,7 @@
     "name": { "str": "jet crystallized ink" },
     "description": "A transluscent handful of a water-like substance that always twinkles with a rainbow of colors. It can be used to draw a circle of blood, one of the many wonders of magic.",
     "weight": "1 g",
-    "volume": "1 ml",
+    "volume": "250 ml",
     "longest_side": "1 cm",
     "price": 100000,
     "flags": [ "SEMITANGIBLE" ],
@@ -474,7 +682,7 @@
     "name": { "str": "cerulean crystallized ink" },
     "description": "A transluscent handful of a water-like substance that always twinkles with a rainbow of colors. It can be used to draw a circle of smoke, one of the many wonders of magic.",
     "weight": "1 g",
-    "volume": "1 ml",
+    "volume": "250 ml",
     "longest_side": "1 cm",
     "price": 100000,
     "flags": [ "SEMITANGIBLE" ],
@@ -493,7 +701,7 @@
     "name": { "str": "viridescent crystallized ink" },
     "description": "A transluscent handful of a water-like substance that always twinkles with a rainbow of colors. It can be used to draw a circle of bile, one of the many wonders of magic.",
     "weight": "1 g",
-    "volume": "1 ml",
+    "volume": "250 ml",
     "longest_side": "1 cm",
     "price": 100000,
     "flags": [ "SEMITANGIBLE" ],
@@ -626,7 +834,7 @@
     "name": { "str_sp": "white pen ink" },
     "symbol": "~",
     "description": "Bleached mercury mixed thoroughly with crystallized mana. Anything written with it comes out invisible, but it has multiple magical applications.",
-    "volume": "1 ml",
+    "volume": "100 ml",
     "price": 50000,
     "weight": "1 mg",
     "color": "white",
@@ -636,10 +844,23 @@
     "ammo_type": "white_pen_ink"
   },
   {
+    "type": "mutation",
+    "id": "DRAWINGWOLFSPELL",
+    "name": { "str": "Learn Drawing Spell" },
+    "points": 0,
+    "description": "",
+    "starting_trait": false,
+    "valid": false,
+    "player_display": false,
+    "spells_learned": [ [ "destroy_circle_wolf", 1 ] ],
+    "category": [ "HUMAN" ]
+  },
+  {
     "id": "drawing_wolf",
     "name": "drawing of a wolf",
     "type": "TOOL",
     "category": "tools",
+	"price": 50000,
     "charges_per_use": 3,
     "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "white_pen_ink": 3 }, "watertight": true, "rigid": true } ],
     "color": "brown",
@@ -648,15 +869,18 @@
     "description": "A drawing of crystallized ink on parchment of a wolf, black as the night.",
     "weight": "10 g",
     "volume": "1 L",
-    "flags": [ "TRADER_AVOID" ],
+    "flags": [ "TRADER_AVOID", "MAGIC_FOCUS" ],
+	"relic_data": {
+      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "mutations": [ "DRAWINGWOLFSPELL" ] } ]
+    },
     "use_action": { "type": "cast_spell", "spell_id": "destroy_circle_wolf", "no_fail": true, "level": 10, "need_wielding": true }
   },
   {
     "id": "destroy_circle_wolf",
     "type": "SPELL",
-    "name": "Painting of a Wolf",
-    "description": "",
-    "effect": "attack",
+    "name": "Mana-Painted Wolf",
+    "description": "You use mana instead of white pen ink to draw.",
+    "effect": "banishment",
     "targeted_monster_ids": [
       "mon_magic_circle_bile",
       "mon_magic_circle_flame",
@@ -677,7 +901,7 @@
     "damage_type": "pure",
     "base_casting_time": 500,
     "energy_source": "MANA",
-    "base_energy_cost": 0
+    "base_energy_cost": 3000
   },
   {
     "id": "summon_wolf",
@@ -700,26 +924,42 @@
     "base_energy_cost": 0
   },
   {
+    "type": "mutation",
+    "id": "DRAWINGBALROGSPELL",
+    "name": { "str": "Learn Drawing Spell" },
+    "points": 0,
+    "description": "",
+    "starting_trait": false,
+    "valid": false,
+    "player_display": false,
+    "spells_learned": [ [ "destroy_circle_balrog", 1 ] ],
+    "category": [ "HUMAN" ]
+  },
+  {
     "id": "drawing_balrog",
     "name": "drawing of a balrog",
     "type": "TOOL",
     "category": "tools",
-    "charges_per_use": 10,
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "white_pen_ink": 10 }, "watertight": true, "rigid": true } ],
+    "charges_per_use": 7,
+	"price": 100000,
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "white_pen_ink": 7 }, "watertight": true, "rigid": true } ],
     "color": "brown",
     "symbol": "d",
     "looks_like": "mag_glam",
     "description": "A drawing of crystallized ink on parchment of a fiery nightmare consisting entirely of shadow.",
     "weight": "10 g",
-    "flags": [ "TRADER_AVOID" ],
+    "flags": [ "TRADER_AVOID", "MAGIC_FOCUS" ],
     "volume": "1 L",
+	"relic_data": {
+      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "mutations": [ "DRAWINGBALROGSPELL" ] } ]
+    },
     "use_action": { "type": "cast_spell", "spell_id": "destroy_circle_balrog", "no_fail": true, "level": 10, "need_wielding": true }
   },
   {
     "id": "destroy_circle_balrog",
     "type": "SPELL",
-    "name": "Painting of a Balrog",
-    "description": "",
+    "name": "Mana-Painted Balrog",
+    "description": "You use mana instead of white pen ink to draw.",
     "effect": "banishment",
     "targeted_monster_ids": [
       "mon_magic_circle_bile",
@@ -740,14 +980,14 @@
     "difficulty": 7,
     "base_casting_time": 1000,
     "energy_source": "MANA",
-    "base_energy_cost": 0
+    "base_energy_cost": 7000
   },
   {
     "id": "summon_balrog",
     "type": "SPELL",
     "name": "Painting of a Balrog",
     "description": "",
-    "effect": "attack",
+    "effect": "banishment",
     "effect_str": "mon_balrog",
     "shape": "blast",
     "valid_targets": [ "ground" ],
@@ -764,26 +1004,42 @@
     "base_energy_cost": 0
   },
   {
+    "type": "mutation",
+    "id": "DRAWINGTROLLSPELL",
+    "name": { "str": "Learn Drawing Spell" },
+    "points": 0,
+    "description": "",
+    "starting_trait": false,
+    "valid": false,
+    "player_display": false,
+    "spells_learned": [ [ "destroy_circle_troll", 1 ] ],
+    "category": [ "HUMAN" ]
+  },
+  {
     "id": "drawing_troll",
     "name": "drawing of a troll",
     "type": "TOOL",
     "category": "tools",
     "charges_per_use": 3,
+	"price": 100000,
     "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "white_pen_ink": 3 }, "watertight": true, "rigid": true } ],
     "color": "brown",
     "symbol": "d",
     "looks_like": "mag_glam",
     "description": "A drawing of crystallized ink on parchment of a troll, dumbly guarding a bridge.",
     "weight": "10 g",
-    "flags": [ "TRADER_AVOID" ],
+    "flags": [ "TRADER_AVOID", "MAGIC_FOCUS" ],
     "volume": "1 L",
+	"relic_data": {
+      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "mutations": [ "DRAWINGTROLLSPELL" ] } ]
+    },
     "use_action": { "type": "cast_spell", "spell_id": "destroy_circle_troll", "no_fail": true, "level": 10, "need_wielding": true }
   },
   {
     "id": "destroy_circle_troll",
     "type": "SPELL",
-    "name": "Painting of a Troll",
-    "description": "",
+    "name": "Mana-Painted Troll",
+    "description": "You use mana instead of white pen ink to draw.",
     "effect": "banishment",
     "targeted_monster_ids": [
       "mon_magic_circle_bile",
@@ -804,7 +1060,7 @@
     "difficulty": 7,
     "base_casting_time": 500,
     "energy_source": "MANA",
-    "base_energy_cost": 0
+    "base_energy_cost": 3000
   },
   {
     "id": "summon_troll_painting",
@@ -827,26 +1083,42 @@
     "base_energy_cost": 0
   },
   {
+    "type": "mutation",
+    "id": "DRAWINGGELATINSPELL",
+    "name": { "str": "Learn Drawing Spell" },
+    "points": 0,
+    "description": "",
+    "starting_trait": false,
+    "valid": false,
+    "player_display": false,
+    "spells_learned": [ [ "destroy_circle_gelatin", 1 ] ],
+    "category": [ "HUMAN" ]
+  },
+  {
     "id": "drawing_gelatin",
     "name": "drawing of gelatin",
     "type": "TOOL",
     "category": "tools",
     "charges_per_use": 3,
+	"price": 100000,
     "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "white_pen_ink": 3 }, "watertight": true, "rigid": true } ],
     "color": "brown",
     "symbol": "d",
     "looks_like": "mag_glam",
     "description": "A drawing of crystallized ink on parchment of a formless and ever growing gelatin.",
     "weight": "10 g",
-    "flags": [ "TRADER_AVOID" ],
+    "flags": [ "TRADER_AVOID", "MAGIC_FOCUS" ],
     "volume": "1 L",
+	"relic_data": {
+      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "mutations": [ "DRAWINGGELATINSPELL" ] } ]
+    },
     "use_action": { "type": "cast_spell", "spell_id": "destroy_circle_gelatin", "no_fail": true, "level": 10, "need_wielding": true }
   },
   {
     "id": "destroy_circle_gelatin",
     "type": "SPELL",
-    "name": "Painting of an gelatin",
-    "description": "",
+    "name": "Mana-Painted Gelatin",
+    "description": "You use mana instead of white pen ink to draw.",
     "effect": "banishment",
     "targeted_monster_ids": [
       "mon_magic_circle_bile",
@@ -867,7 +1139,7 @@
     "difficulty": 7,
     "base_casting_time": 500,
     "energy_source": "MANA",
-    "base_energy_cost": 0
+    "base_energy_cost": 3000
   },
   {
     "id": "summon_gelatin",
@@ -890,27 +1162,43 @@
     "base_energy_cost": 0
   },
   {
+    "type": "mutation",
+    "id": "DRAWINGDRAGONSPELL",
+    "name": { "str": "Learn Drawing Spell" },
+    "points": 0,
+    "description": "",
+    "starting_trait": false,
+    "valid": false,
+    "player_display": false,
+    "spells_learned": [ [ "destroy_circle_dragon", 1 ] ],
+    "category": [ "HUMAN" ]
+  },
+  {
     "id": "drawing_dragon",
     "name": "drawing of a dragon",
     "type": "TOOL",
     "category": "tools",
     "charges_per_use": 10,
+	"price": 250000,
     "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "white_pen_ink": 10 }, "watertight": true, "rigid": true } ],
     "color": "brown",
     "symbol": "d",
     "looks_like": "mag_glam",
-    "flags": [ "TRADER_AVOID" ],
+    "flags": [ "TRADER_AVOID", "MAGIC_FOCUS" ],
     "description": "A drawing of crystallized ink on parchment of a dragon, hungrily smiling at the artist.",
     "weight": "10 g",
     "volume": "1 L",
+	"relic_data": {
+      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "mutations": [ "DRAWINGDRAGONSPELL" ] } ]
+    },
     "use_action": { "type": "cast_spell", "spell_id": "destroy_circle_dragon", "no_fail": true, "level": 10, "need_wielding": true }
   },
   {
     "id": "destroy_circle_dragon",
     "type": "SPELL",
-    "name": "Painting of an Dragon",
-    "description": "",
-    "effect": "attack",
+    "name": "Mana-Painted Dragon",
+    "description": "You use mana instead of white pen ink to draw.",
+    "effect": "banishment",
     "targeted_monster_ids": [
       "mon_magic_circle_bile",
       "mon_magic_circle_flame",
@@ -931,12 +1219,12 @@
     "damage_type": "heat",
     "base_casting_time": 1000,
     "energy_source": "MANA",
-    "base_energy_cost": 0
+    "base_energy_cost": 10000
   },
   {
     "id": "summon_dragon_painting",
     "type": "SPELL",
-    "name": "Painting of a Dragon",
+    "name": "Mana-Painted Dragon",
     "description": "",
     "effect": "summon",
     "effect_str": "mon_dragon_black_adult",
@@ -954,26 +1242,42 @@
     "base_energy_cost": 0
   },
   {
+    "type": "mutation",
+    "id": "DRAWINGARTISTSPELL",
+    "name": { "str": "Learn Drawing Spell" },
+    "points": 0,
+    "description": "",
+    "starting_trait": false,
+    "valid": false,
+    "player_display": false,
+    "spells_learned": [ [ "destroy_circle_artist", 1 ] ],
+    "category": [ "HUMAN" ]
+  },
+  {
     "id": "drawing_artist",
     "name": "drawing of a great artist",
     "type": "TOOL",
     "category": "tools",
     "charges_per_use": 10,
+	"price": 250000,
     "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "white_pen_ink": 10 }, "watertight": true, "rigid": true } ],
     "color": "brown",
     "symbol": "d",
     "looks_like": "mag_glam",
     "description": "A drawing of crystallized ink on parchment of a renowned artist, gleefully painting away. A skilled mage can cast it into an animate magic circle in order to summon it.",
     "weight": "10 g",
-    "flags": [ "TRADER_AVOID" ],
+    "flags": [ "TRADER_AVOID", "MAGIC_FOCUS" ],
     "volume": "1 L",
+	"relic_data": {
+      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "mutations": [ "DRAWINGARTISTSPELL" ] } ]
+    },
     "use_action": { "type": "cast_spell", "spell_id": "destroy_circle_artist", "no_fail": true, "level": 10, "need_wielding": true }
   },
   {
     "id": "destroy_circle_artist",
     "type": "SPELL",
-    "name": "Painting of an Artist",
-    "description": "",
+    "name": "Mana-Painted Artist",
+    "description": "You use mana instead of white pen ink to draw.",
     "effect": "banishment",
     "targeted_monster_ids": [
       "mon_magic_circle_bile",
@@ -994,7 +1298,7 @@
     "difficulty": 7,
     "base_casting_time": 1000,
     "energy_source": "MANA",
-    "base_energy_cost": 0
+    "base_energy_cost": 10000
   },
   {
     "id": "summon_artist",
@@ -1017,6 +1321,18 @@
     "base_energy_cost": 0
   },
   {
+    "type": "mutation",
+    "id": "DRAWINGSCRYINGSPELL",
+    "name": { "str": "Learn Drawing Spell" },
+    "points": 0,
+    "description": "",
+    "starting_trait": false,
+    "valid": false,
+    "player_display": false,
+    "spells_learned": [ [ "scrying_drawing", 1 ] ],
+    "category": [ "HUMAN" ]
+  },
+  {
     "id": "drawing_scrying",
     "type": "TOOL",
     "category": "tools",
@@ -1029,10 +1345,25 @@
     "longest_side": "1 cm",
     "price": 50000,
     "material": [ "alien_liquid" ],
-    "flags": [ "TRADER_AVOID" ],
+    "flags": [ "TRADER_AVOID", "MAGIC_FOCUS" ],
     "symbol": "c",
     "color": "white",
+	"relic_data": {
+      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "mutations": [ "DRAWINGSCRYINGSPELL" ] } ]
+    },
     "use_action": { "type": "cast_spell", "spell_id": "scrying_drawing", "no_fail": true, "level": 10, "need_wielding": true }
+  },
+  {
+    "type": "mutation",
+    "id": "DRAWINGPUSHSPELL",
+    "name": { "str": "Learn Drawing Spell" },
+    "points": 0,
+    "description": "",
+    "starting_trait": false,
+    "valid": false,
+    "player_display": false,
+    "spells_learned": [ [ "push_drawing", 1 ] ],
+    "category": [ "HUMAN" ]
   },
   {
     "id": "drawing_push",
@@ -1047,15 +1378,18 @@
     "longest_side": "1 cm",
     "price": 50000,
     "material": [ "alien_liquid" ],
-    "flags": [ "TRADER_AVOID" ],
+    "flags": [ "TRADER_AVOID", "MAGIC_FOCUS" ],
     "symbol": "c",
     "color": "white",
+	"relic_data": {
+      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "mutations": [ "DRAWINGPUSHSPELL" ] } ]
+    },
     "use_action": { "type": "cast_spell", "spell_id": "push_drawing", "no_fail": true, "level": 10, "need_wielding": true }
   },
   {
     "id": "push_drawing",
     "type": "SPELL",
-    "name": "Directed Mana",
+    "name": "Mana-Painted Outward Spiral",
     "description": "You let a small amount of raw mana flow outwards.",
     "effect": "directed_push",
     "shape": "blast",
@@ -1067,12 +1401,24 @@
     "min_aoe": 10,
     "max_aoe": 10,
     "base_casting_time": 100,
-    "base_energy_cost": 0,
+    "base_energy_cost": 5000,
     "min_range": 50,
     "max_range": 50,
     "energy_source": "MANA",
     "difficulty": 2,
     "sound_description": "a whoosh"
+  },
+  {
+    "type": "mutation",
+    "id": "DRAWINGPULLSPELL",
+    "name": { "str": "Learn Drawing Spell" },
+    "points": 0,
+    "description": "",
+    "starting_trait": false,
+    "valid": false,
+    "player_display": false,
+    "spells_learned": [ [ "pull_drawing", 1 ] ],
+    "category": [ "HUMAN" ]
   },
   {
     "id": "drawing_pull",
@@ -1087,15 +1433,18 @@
     "longest_side": "1 cm",
     "price": 50000,
     "material": [ "alien_liquid" ],
-    "flags": [ "TRADER_AVOID" ],
+    "flags": [ "TRADER_AVOID", "MAGIC_FOCUS" ],
     "symbol": "c",
     "color": "white",
+	"relic_data": {
+      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "mutations": [ "DRAWINGPULLSPELL" ] } ]
+    },
     "use_action": { "type": "cast_spell", "spell_id": "pull_drawing", "no_fail": true, "level": 10, "need_wielding": true }
   },
   {
     "id": "pull_drawing",
     "type": "SPELL",
-    "name": "Directed Mana",
+    "name": "Mana-Painted Inward Spiral",
     "description": "You let a small amount of raw mana flow outwards.",
     "effect": "area_pull",
     "shape": "blast",
@@ -1107,12 +1456,24 @@
     "min_aoe": 10,
     "max_aoe": 10,
     "base_casting_time": 100,
-    "base_energy_cost": 0,
+    "base_energy_cost": 1000,
     "min_range": 50,
     "max_range": 50,
     "energy_source": "MANA",
     "difficulty": 2,
     "sound_description": "a whoosh"
+  },
+  {
+    "type": "mutation",
+    "id": "DRAWINGSTOPSPELL",
+    "name": { "str": "Learn Drawing Spell" },
+    "points": 0,
+    "description": "",
+    "starting_trait": false,
+    "valid": false,
+    "player_display": false,
+    "spells_learned": [ [ "stop_drawing", 1 ] ],
+    "category": [ "HUMAN" ]
   },
   {
     "id": "drawing_stop",
@@ -1127,15 +1488,18 @@
     "longest_side": "1 cm",
     "price": 50000,
     "material": [ "alien_liquid" ],
-    "flags": [ "TRADER_AVOID" ],
+    "flags": [ "TRADER_AVOID", "MAGIC_FOCUS" ],
     "symbol": "c",
     "color": "white",
+	"relic_data": {
+      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "mutations": [ "DRAWINGSTOPSPELL" ] } ]
+    },
     "use_action": { "type": "cast_spell", "spell_id": "stop_drawing", "no_fail": true, "level": 10, "need_wielding": true }
   },
   {
     "id": "stop_drawing",
     "type": "SPELL",
-    "name": "Anti-Vibrational Field",
+    "name": "Mana-Painted Clock",
     "description": "You create a localized anti-vibrational field, locking those inside when the spell is cast in place for a brief period of time.",
     "valid_targets": [ "hostile", "ally", "self", "ground" ],
     "flags": [ "NO_LEGS", "VERBAL", "SOMATIC", "NO_PROJECTILE" ],
@@ -1145,13 +1509,25 @@
     "difficulty": 1,
     "max_level": 10,
     "base_casting_time": 100,
-    "base_energy_cost": 0,
+    "base_energy_cost": 3000,
     "min_aoe": 5,
     "max_aoe": 5,
     "min_damage": 1000,
     "max_damage": 1000,
     "min_range": 50,
     "max_range": 50
+  },
+  {
+    "type": "mutation",
+    "id": "DRAWINGACIDSPELL",
+    "name": { "str": "Learn Drawing Spell" },
+    "points": 0,
+    "description": "",
+    "starting_trait": false,
+    "valid": false,
+    "player_display": false,
+    "spells_learned": [ [ "drawing_raze_spell_acid", 1 ] ],
+    "category": [ "HUMAN" ]
   },
   {
     "id": "drawing_destruction_acid",
@@ -1166,18 +1542,21 @@
     "longest_side": "1 cm",
     "price": 50000,
     "material": [ "alien_liquid" ],
-    "flags": [ "TRADER_AVOID" ],
+    "flags": [ "TRADER_AVOID", "MAGIC_FOCUS" ],
     "symbol": "c",
     "color": "white",
+	"relic_data": {
+      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "mutations": [ "DRAWINGACIDSPELL" ] } ]
+    },
     "use_action": { "type": "cast_spell", "spell_id": "drawing_raze_spell_acid", "no_fail": true, "level": 10, "need_wielding": true }
   },
   {
     "id": "drawing_raze_spell_acid",
     "type": "SPELL",
-    "name": "Mana Overflow",
-    "description": "",
+    "name": "Mana-Painted Bile",
+    "description": "You use mana instead of white pen ink to draw.",
     "valid_targets": [ "hostile", "ally", "self" ],
-    "effect": "attack",
+    "effect": "banishment",
     "shape": "blast",
     "flags": [ "SOMATIC", "LOUD", "PERMANENT", "CONCENTRATE", "NO_PROJECTILE", "RANDOM_DAMAGE" ],
     "energy_source": "MANA",
@@ -1195,6 +1574,18 @@
     "max_range": 25
   },
   {
+    "type": "mutation",
+    "id": "DRAWINGELECSPELL",
+    "name": { "str": "Learn Drawing Spell" },
+    "points": 0,
+    "description": "",
+    "starting_trait": false,
+    "valid": false,
+    "player_display": false,
+    "spells_learned": [ [ "drawing_raze_spell_elec", 1 ] ],
+    "category": [ "HUMAN" ]
+  },
+  {
     "id": "drawing_destruction_elec",
     "type": "TOOL",
     "category": "tools",
@@ -1207,18 +1598,21 @@
     "longest_side": "1 cm",
     "price": 50000,
     "material": [ "alien_liquid" ],
-    "flags": [ "TRADER_AVOID" ],
+    "flags": [ "TRADER_AVOID", "MAGIC_FOCUS" ],
     "symbol": "c",
     "color": "white",
+	"relic_data": {
+      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "mutations": [ "DRAWINGELECSPELL" ] } ]
+    },
     "use_action": { "type": "cast_spell", "spell_id": "drawing_raze_spell_elec", "no_fail": true, "level": 10, "need_wielding": true }
   },
   {
     "id": "drawing_raze_spell_elec",
     "type": "SPELL",
-    "name": "Mana Overflow",
-    "description": "",
+    "name": "Mana-Painted Smoke",
+    "description": "You use mana instead of white pen ink to draw.",
     "valid_targets": [ "hostile", "ally", "self" ],
-    "effect": "attack",
+    "effect": "banishment",
     "shape": "blast",
     "flags": [ "SOMATIC", "LOUD", "PERMANENT", "CONCENTRATE", "NO_PROJECTILE", "RANDOM_DAMAGE" ],
     "energy_source": "MANA",
@@ -1229,11 +1623,23 @@
     "max_damage": 100,
     "base_casting_time": 100,
     "final_casting_time": 100,
-    "base_energy_cost": 0,
+    "base_energy_cost": 1000,
     "max_level": 10,
     "damage_type": "electric",
     "min_range": 25,
     "max_range": 25
+  },
+  {
+    "type": "mutation",
+    "id": "DRAWINGCOLDSPELL",
+    "name": { "str": "Learn Drawing Spell" },
+    "points": 0,
+    "description": "",
+    "starting_trait": false,
+    "valid": false,
+    "player_display": false,
+    "spells_learned": [ [ "drawing_raze_spell_cold", 1 ] ],
+    "category": [ "HUMAN" ]
   },
   {
     "id": "drawing_destruction_cold",
@@ -1248,18 +1654,21 @@
     "longest_side": "1 cm",
     "price": 50000,
     "material": [ "alien_liquid" ],
-    "flags": [ "TRADER_AVOID" ],
+    "flags": [ "TRADER_AVOID", "MAGIC_FOCUS" ],
     "symbol": "c",
     "color": "white",
+	"relic_data": {
+      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "mutations": [ "DRAWINGCOLDSPELL" ] } ]
+    },
     "use_action": { "type": "cast_spell", "spell_id": "drawing_raze_spell_cold", "no_fail": true, "level": 10, "need_wielding": true }
   },
   {
     "id": "drawing_raze_spell_cold",
     "type": "SPELL",
-    "name": "Mana Overflow",
-    "description": "",
+    "name": "Mana-Painted Blood",
+    "description": "You use mana instead of white pen ink to draw.",
     "valid_targets": [ "hostile", "ally", "self" ],
-    "effect": "attack",
+    "effect": "banishment",
     "shape": "blast",
     "flags": [ "SOMATIC", "LOUD", "PERMANENT", "CONCENTRATE", "NO_PROJECTILE", "RANDOM_DAMAGE" ],
     "energy_source": "MANA",
@@ -1270,11 +1679,23 @@
     "max_damage": 100,
     "base_casting_time": 100,
     "final_casting_time": 100,
-    "base_energy_cost": 0,
+    "base_energy_cost": 1000,
     "max_level": 10,
     "damage_type": "cold",
     "min_range": 25,
     "max_range": 25
+  },
+  {
+    "type": "mutation",
+    "id": "DRAWINGHEATSPELL",
+    "name": { "str": "Learn Drawing Spell" },
+    "points": 0,
+    "description": "",
+    "starting_trait": false,
+    "valid": false,
+    "player_display": false,
+    "spells_learned": [ [ "drawing_raze_spell_heat", 1 ] ],
+    "category": [ "HUMAN" ]
   },
   {
     "id": "drawing_destruction_heat",
@@ -1289,18 +1710,21 @@
     "longest_side": "1 cm",
     "price": 50000,
     "material": [ "alien_liquid" ],
-    "flags": [ "TRADER_AVOID" ],
+    "flags": [ "TRADER_AVOID", "MAGIC_FOCUS" ],
     "symbol": "c",
     "color": "white",
+	"relic_data": {
+      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "mutations": [ "DRAWINGHEATSPELL" ] } ]
+    },
     "use_action": { "type": "cast_spell", "spell_id": "drawing_raze_spell_heat", "no_fail": true, "level": 10, "need_wielding": true }
   },
   {
     "id": "drawing_raze_spell_heat",
     "type": "SPELL",
-    "name": "Mana Overflow",
-    "description": "",
+    "name": "Mana-Painted Flame",
+    "description": "You use mana instead of white pen ink to draw.",
     "valid_targets": [ "hostile", "ally", "self" ],
-    "effect": "attack",
+    "effect": "banishment",
     "shape": "blast",
     "flags": [ "SOMATIC", "LOUD", "PERMANENT", "CONCENTRATE", "NO_PROJECTILE", "RANDOM_DAMAGE" ],
     "energy_source": "MANA",
@@ -1311,11 +1735,23 @@
     "max_damage": 100,
     "base_casting_time": 100,
     "final_casting_time": 100,
-    "base_energy_cost": 0,
+    "base_energy_cost": 1000,
     "max_level": 10,
     "damage_type": "heat",
     "min_range": 25,
     "max_range": 25
+  },
+  {
+    "type": "mutation",
+    "id": "DRAWINGRAZESPELL",
+    "name": { "str": "Learn Drawing Spell" },
+    "points": 0,
+    "description": "",
+    "starting_trait": false,
+    "valid": false,
+    "player_display": false,
+    "spells_learned": [ [ "drawing_raze_spell_raze", 1 ] ],
+    "category": [ "HUMAN" ]
   },
   {
     "id": "drawing_destruction",
@@ -1330,18 +1766,21 @@
     "longest_side": "1 cm",
     "price": 50000,
     "material": [ "alien_liquid" ],
-    "flags": [ "TRADER_AVOID" ],
+    "flags": [ "TRADER_AVOID", "MAGIC_FOCUS" ],
     "symbol": "c",
     "color": "white",
+	"relic_data": {
+      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "mutations": [ "DRAWINGRAZESPELL" ] } ]
+    },
     "use_action": { "type": "cast_spell", "spell_id": "drawing_raze_spell", "no_fail": true, "level": 10, "need_wielding": true }
   },
   {
     "id": "drawing_raze_spell",
     "type": "SPELL",
-    "name": "Mana Overflow",
-    "description": "",
+    "name": "Mana-Painted Razing",
+    "description": "You use mana instead of white pen ink to draw.",
     "valid_targets": [ "hostile", "ally", "self" ],
-    "effect": "attack",
+    "effect": "banishment",
     "shape": "blast",
     "flags": [ "SOMATIC", "LOUD", "PERMANENT", "CONCENTRATE", "NO_PROJECTILE", "RANDOM_DAMAGE" ],
     "energy_source": "MANA",
@@ -1352,11 +1791,23 @@
     "max_damage": 75,
     "base_casting_time": 100,
     "final_casting_time": 100,
-    "base_energy_cost": 0,
+    "base_energy_cost": 1000,
     "max_level": 10,
     "damage_type": "pure",
     "min_range": 25,
     "max_range": 25
+  },
+  {
+    "type": "mutation",
+    "id": "DRAWINGTRANSSPELL",
+    "name": { "str": "Learn Drawing Spell" },
+    "points": 0,
+    "description": "",
+    "starting_trait": false,
+    "valid": false,
+    "player_display": false,
+    "spells_learned": [ [ "drawing_gate_spell", 1 ] ],
+    "category": [ "HUMAN" ]
   },
   {
     "id": "drawing_translocate",
@@ -1371,15 +1822,18 @@
     "longest_side": "1 cm",
     "price": 50000,
     "material": [ "alien_liquid" ],
-    "flags": [ "TRADER_AVOID" ],
+    "flags": [ "TRADER_AVOID", "MAGIC_FOCUS" ],
     "symbol": "c",
     "color": "white",
+	"relic_data": {
+      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "mutations": [ "DRAWINGTRANSSPELL" ] } ]
+    },
     "use_action": { "type": "cast_spell", "spell_id": "drawing_gate_spell", "no_fail": true, "level": 10, "need_wielding": true }
   },
   {
     "id": "drawing_gate_spell",
     "type": "SPELL",
-    "name": "Conjure Gate",
+    "name": "Mana-Painted Gate",
     "description": "Utilitzing a massive burst of mana you conjure a translocation gate into existence. Doing so leaves you feeling drained for the day.",
     "valid_targets": [ "hostile", "ally", "self" ],
     "effect": "ter_transform",
@@ -1398,10 +1852,22 @@
     "difficulty": 5,
     "base_casting_time": 0,
     "final_casting_time": 0,
-    "base_energy_cost": 0,
+    "base_energy_cost": 3000,
     "max_level": 10,
     "min_range": 10,
     "max_range": 10
+  },
+  {
+    "type": "mutation",
+    "id": "DRAWINGSTEPSPELL",
+    "name": { "str": "Learn Drawing Spell" },
+    "points": 0,
+    "description": "",
+    "starting_trait": false,
+    "valid": false,
+    "player_display": false,
+    "spells_learned": [ [ "drawing_step_spell", 1 ] ],
+    "category": [ "HUMAN" ]
   },
   {
     "id": "drawing_step",
@@ -1416,27 +1882,30 @@
     "longest_side": "1 cm",
     "price": 50000,
     "material": [ "alien_liquid" ],
-    "flags": [ "TRADER_AVOID" ],
+    "flags": [ "TRADER_AVOID", "MAGIC_FOCUS" ],
     "symbol": "c",
     "color": "white",
+	"relic_data": {
+      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "mutations": [ "DRAWINGSTEPSPELL" ] } ]
+    },
     "use_action": { "type": "cast_spell", "spell_id": "drawing_step_spell", "no_fail": true, "level": 10, "need_wielding": true }
   },
   {
     "id": "drawing_step_spell",
     "type": "SPELL",
-    "name": "Dimensional Step",
+    "name": "Mana-Painted Step",
     "description": "Teleports you to a target location.",
-    "effect": "attack",
+    "effect": "banishment",
     "shape": "blast",
     "valid_targets": [ "hostile", "ally", "self" ],
     "flags": [ "SOMATIC", "SILENT", "NO_LEGS", "TARGET_TELEPORT", "SWAP_POS", "NO_PROJECTILE" ],
-    "min_range": 250,
-    "max_range": 250,
+    "min_range": 100,
+    "max_range": 100,
     "max_level": 20,
     "difficulty": 7,
     "base_casting_time": 100,
     "energy_source": "MANA",
-    "base_energy_cost": 0
+    "base_energy_cost": 1000
   },
   {
     "id": "drawing_dislocate",
@@ -1451,7 +1920,7 @@
     "longest_side": "1 cm",
     "price": 50000,
     "material": [ "alien_liquid" ],
-    "flags": [ "TRADER_AVOID" ],
+    "flags": [ "TRADER_AVOID", "MAGIC_FOCUS" ],
     "symbol": "c",
     "color": "white",
     "use_action": { "type": "cast_spell", "spell_id": "drawing_protection_self", "no_fail": true, "level": 10, "need_wielding": true }
@@ -1464,7 +1933,7 @@
     "valid_targets": [ "self" ],
     "min_damage": 1,
     "max_damage": 1,
-    "effect": "attack",
+    "effect": "banishment",
     "effect_str": "incorporeal",
     "shape": "blast",
     "energy_source": "MANA",
@@ -1480,10 +1949,25 @@
     "max_duration": 3000
   },
   {
+    "type": "mutation",
+    "id": "DRAWINGCHILDSPELL",
+    "name": { "str": "Learn Drawing Spell" },
+    "points": 0,
+    "description": "",
+    "starting_trait": false,
+    "valid": false,
+    "player_display": false,
+    "spells_learned": [ [ "childs_drawing_summon", 1 ] ],
+    "category": [ "HUMAN" ]
+  },
+  {
     "id": "note_mutant_alpha_boss",
     "name": "child's drawing",
     "type": "GENERIC",
     "copy-from": "note_mutant_alpha_boss",
+	"relic_data": {
+      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "mutations": [ "DRAWINGCHILDSPELL" ] } ]
+    },
     "use_action": { "type": "cast_spell", "spell_id": "childs_drawing_summon", "no_fail": true, "level": 10, "need_wielding": true }
   },
   {
@@ -1491,7 +1975,7 @@
     "type": "SPELL",
     "name": "Eerie Painting",
     "description": "",
-    "effect": "attack",
+    "effect": "banishment",
     "targeted_monster_ids": [
       "mon_magic_circle_bile",
       "mon_magic_circle_flame",
@@ -1511,9 +1995,9 @@
     "damage_type": "heat",
     "max_level": 20,
     "difficulty": 7,
-    "base_casting_time": 0,
+    "base_casting_time": 100,
     "energy_source": "MANA",
-    "base_energy_cost": 0
+    "base_energy_cost": 1000
   },
   {
     "id": "summon_man",
@@ -1536,171 +2020,27 @@
     "base_energy_cost": 0
   },
   {
-    "type": "AMMO",
-    "id": "crystallized_mana",
-    "category": "spare_parts",
-    "price": 50000,
-    "copy-from": "crystallized_mana",
-    "name": { "str_sp": "crystallized mana" },
-    "symbol": "=",
-    "color": "yellow",
-    "description": "Some crystallized mana.  This can be reloaded into rechargeable mana crystals, but can never be unloaded.",
-    "flags": [ "TRADER_AVOID", "ZERO_WEIGHT" ],
-    "volume": "100 ml",
-    "ammo_type": "crystallized_mana",
-    "material": [ "crystallized_mana" ],
-    "count": 100,
-    "looks_like": "battery"
+    "type": "effect_on_condition",
+    "id": "eoc_cleanse_soul",
+    "effect": { "u_cast_spell": { "id": "recover_fatigue_cleanse" } },
+    "false_effect": { "u_cast_spell": { "id": "induce_vomit", "hit_self": true } },
+    "condition": { "not": { "u_has_trait": "PSYCHOPATH" } }
   },
   {
-    "id": "classified_intelligence",
-    "type": "BOOK",
-    "category": "manuals",
-    "name": { "str": "classified intelligence", "str_pl": "intelligences" },
-    "description": "Only one piece of the puzzle. A neatly paperclipped document sits face down on top of the file labeled 'Top Secret.' You can surmise from what's in the file itself that the Government before the cataclysm was trying to enslave demons and use them as a source of infinite power. You can also surmise that it did not go as planned. You'll need to remove the paperclip if you want to know more.",
-    "weight": "1200 g",
-    "volume": "1200 ml",
-    "price": 2000000,
-    "material": [ "paper" ],
-    "symbol": "?",
-    "color": "light_red",
-    "use_action": [
-      {
-        "type": "transform",
-        "menu_text": "Remove Paperclip",
-        "target": "classified_intelligence_scroll",
-        "active": false,
-        "moves": 500,
-        "msg": "You remove a paperclip from the intelligence, triggering some form of magical alarm and forcing most of the intelligence to self-destruct. You're left holding a paperclipped document."
-      },
-      {
-        "type": "reveal_map",
-        "radius": 150,
-        "terrain": [
-          "hiway",
-          "road",
-          "bridge",
-          "fema_entrance",
-          "station_radio",
-          "control_tower_0",
-          "pwr_large_entrance",
-          "loffice_tower_1",
-          "office_tower_2_a1",
-          "lab_subway_vent_shaft_surface",
-          "hospital_1",
-          "haz_sar_1_1",
-          "cathedral_b_NW",
-          "exodii_base_x0y0z0",
-          "aircraft_carrier_1a",
-          "outpost",
-          "bunker",
-          "lmoe",
-          "standing_stones",
-          "toxic_dump",
-          "police_dept_u000",
-          "lab_subway",
-          "microlab_sub_connector",
-          "microlab_sub_station",
-          "central_lab_train_depot",
-          "lab_train_depot",
-          { "om_terrain": "magic_academy_ground", "om_terrain_match_type": "TYPE" },
-          { "om_terrain": "corpse_head", "om_terrain_match_type": "TYPE" },
-          { "om_terrain": "magic_shop", "om_terrain_match_type": "TYPE" },
-          { "om_terrain": "wizardtower1_ground", "om_terrain_match_type": "TYPE" },
-          { "om_terrain": "wizardtower2_ground", "om_terrain_match_type": "TYPE" },
-          { "om_terrain": "silo", "om_terrain_match_type": "TYPE" },
-          { "om_terrain": "shelter", "om_terrain_match_type": "TYPE" },
-          "police",
-          "mil_base_road_entrance"
-        ],
-        "message": "You add roads and facilities to your map."
-      }
-    ]
-  },
-  {
-    "id": "fp_loyalty_card",
-    "type": "AMMO",
-    "name": "Foodplace Loyalty Card",
-    "ammo_type": "fp_loyalty_card_ammo",
-    "copy-from": "fp_loyalty_card"
-  },
-  {
-    "type": "ammunition_type",
-    "id": "fp_loyalty_card_ammo",
-    "name": "Foodplace Loyalty Card",
-    "default": "fp_loyalty_card"
-  },
-  {
-    "type": "ammunition_type",
-    "id": "brimstone_ammo",
-    "name": "brimstone",
-    "default": "brimstone_sliver"
-  },
-  {
-    "type": "ammunition_type",
-    "id": "decaying_soul_ammo",
-    "name": "decaying soul",
-    "default": "decaying_soul"
-  },
-  {
-    "id": "brimstone_sliver",
-    "type": "AMMO",
-    "ammo_type": "brimstone_ammo",
-    "name": { "str": "sliver of brimstone" },
-    "description": "A sliver of brimstone, the foundation of hell and all it's spawn. The stuff that demons eat, shit and bleed. It radiates with magical energy, none of it pure.",
-    "weight": "10 g",
-    "volume": "10 ml",
-    "longest_side": "2 cm",
-    "price": 25000,
-    "count": 1,
-    "material": [ "brimstone" ],
-    "symbol": "b",
-    "color": "red"
-  },
-  {
-    "type": "GENERIC",
-    "id": "money_hundred",
-    "name": { "str": "hundred-dollar bill" },
-    "copy-from": "money_hundred",
-    "description": "A hundred-dollar bill, featuring a portrait of Benjamin Franklin.",
-    "looks_like": "money_one",
-    "color": "green",
-    "symbol": "$",
-    "price": 1000,
-    "flags": [ "OLD_CURRENCY" ]
-  },
-  {
-    "id": "prac_piloting",
-    "type": "practice",
-    "activity_level": "NO_EXERCISE",
-    "category": "CC_PRACTICE",
-    "subcategory": "CSC_PRACTICE_SOCIAL",
-    "name": "piloting (beginner)",
-    "description": "You practice winging it.",
-    "skill_used": "spellcraft",
-    "time": "1 h",
-    "practice_data": { "min_difficulty": 0, "max_difficulty": 1 },
-	"tools": [ [ [ "laptop", 50 ] ] ],
-	 "proficiencies": [ { "proficiency": "prof_helicopter_pilot", "fail_multiplier": 1, "time_multiplier": 1 } ],
-    "autolearn": false,
-    "book_learn": [ [ "heli_book", 1 ] ]
-  },
-  {
-    "id": "heli_book",
-    "type": "BOOK",
-    "category": "manuals",
-    "name": { "str": "Piloting for Dummies", "str_pl": "Piloting for Dummies'" },
-    "description": "An extremely pandering book that quickly describes how to fly a helicoptor. The book recommends a lot of practice.",
-    "weight": "75 g",
-    "volume": "250 ml",
-    "price": 400000,
-    "material": [ "paper" ],
-    "symbol": "?",
-    "looks_like": "mag_glam",
-    "color": "pink",
-    "intelligence": 13,
-    "time": "30 m",
-    "fun": 2
+    "id": "run_eoc_cleanse_soul",
+    "type": "SPELL",
+    "name": "Devil's Tax",
+    "description": "Got ya.",
+    "valid_targets": [ "self" ],
+    "flags": [ "VERBAL", "SOMATIC", "NO_PROJECTILE", "NO_HANDS" ],
+    "effect": "effect_on_condition",
+    "effect_str": "eoc_cleanse_soul",
+    "shape": "blast",
+    "energy_source": "MANA",
+    "difficulty": 4,
+    "base_casting_time": 0,
+    "base_energy_cost": 0,
+    "max_level": 20
   },
   {
     "id": "cleanse_soul",
@@ -1710,7 +2050,7 @@
     "valid_targets": [ "self" ],
     "effect": "attack",
     "effect_str": "bless",
-    "extra_effects": [ { "id": "recover_fatigue_cleanse" } ],
+    "extra_effects": [ { "id": "run_eoc_cleanse_soul" } ],
     "shape": "blast",
     "affected_body_parts": [ "torso" ],
     "base_casting_time": 0,
@@ -1768,8 +2108,8 @@
     "category": "other",
     "ammo_type": "decaying_soul_ammo",
     "name": { "str": "decaying soul" },
-    "description": "A fragment of a soul, barely luminescent and slowly turning to nothing. While it's in your hand you feel less tired, and using it will restore some energy.",
-    "weight": "10 g",
+    "description": "A fragment of a soul, barely luminescent and slowly turning to nothing. While it's in your hand you feel less tired, and using it will drain your willpower for the day to keep you going now.",
+    "weight": "100 g",
     "volume": "10 ml",
     "longest_side": "1 cm",
     "price": 50000,
@@ -1780,7 +2120,7 @@
     "relic_data": {
       "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "values": [ { "value": "REGEN_STAMINA", "multiply": 1.0 } ] } ]
     },
-    "use_action": { "type": "cast_spell", "spell_id": "use_decaying_soul", "no_fail": true, "level": 1, "need_wielding": false }
+    "use_action": { "type": "cast_spell", "spell_id": "use_decaying_soul", "no_fail": true, "level": 1, "need_wielding": true }
   },
   {
     "id": "use_decaying_soul",
@@ -1795,8 +2135,8 @@
     "effect_str": "STAMINA",
     "shape": "blast",
     "base_casting_time": 0,
-    "min_damage": 5000,
-    "max_damage": 5000,
+    "min_damage": 4000,
+    "max_damage": 4000,
 	"components": "spell_components_decaying_soul",
     "max_level": 1,
     "base_energy_cost": 0,
@@ -1814,8 +2154,8 @@
     "effect_str": "FATIGUE",
     "shape": "blast",
     "base_casting_time": 0,
-    "min_damage": 20,
-    "max_damage": 20,
+    "min_damage": 10,
+    "max_damage": 10,
     "max_level": 1,
     "base_energy_cost": 0,
     "difficulty": 4
@@ -1890,8 +2230,7 @@
           "values": [
             { "value": "STRENGTH", "add": 4 },
             { "value": "ATTACK_COST", "multiply": -0.2 },
-            { "value": "ATTACK_SPEED", "multiply": -0.3 },
-            { "value": "DEXTERITY", "add": 4 }
+            { "value": "ATTACK_SPEED", "multiply": -0.3 }
           ]
         }
       ]
@@ -1919,7 +2258,7 @@
         {
           "has": "WORN",
           "condition": "ALWAYS",
-          "values": [ { "value": "MAX_MANA", "add": 2000 }, { "value": "REGEN_MANA", "multiply": 0.1 } ]
+          "values": [ { "value": "MAX_MANA", "add": 2000 }, { "value": "REGEN_MANA", "multiply": 0.25 }, { "value": "PERCEPTION", "add": 4 } ]
         }
       ]
     }
@@ -1946,7 +2285,7 @@
         {
           "has": "WORN",
           "condition": "ALWAYS",
-          "values": [ { "value": "MAX_STAMINA", "add": 4000 }, { "value": "REGEN_STAMINA", "multiply": 1.0 } ]
+          "values": [ { "value": "MAX_STAMINA", "add": 4000 }, { "value": "REGEN_STAMINA", "multiply": 1.0 }, { "value": "DEXTERITY", "add": 4 } ]
         }
       ]
     }
@@ -1976,8 +2315,7 @@
           "values": [
             { "value": "MAX_HP", "multiply": 0.3 },
             { "value": "REGEN_HP", "multiply": 0.3 },
-            { "value": "INTELLIGENCE", "add": 4 },
-            { "value": "PERCEPTION", "add": 4 }
+            { "value": "INTELLIGENCE", "add": 4 }
           ]
         }
       ]
@@ -1988,8 +2326,8 @@
     "type": "COMESTIBLE",
     "category": "other",
     "comestible_type": "MED",
-    "name": { "str": "steeped soul of a lost mage" },
-    "description": "A dimly glowing soul, slowly turning over and over in itself. This soul is heavy with a life of pain. A skilled mage could siphon more mana from it. Using it will increase your maximum mana and your Intelligence.",
+    "name": { "str": "minor twisted soul" },
+    "description": "A dimly glowing soul, slowly turning over and over in itself. This soul is heavy with a life of pain. A skilled mage could siphon more mana from it. Using it will permanently increase your maximum mana.",
     "weight": "100 g",
     "volume": "10 ml",
     "longest_side": "1 cm",
@@ -2023,7 +2361,7 @@
   {
     "id": "twisted_aura",
     "type": "ARMOR",
-    "name": { "str": "steeped essence" },
+    "name": { "str": "minor essence" },
     "description": "You have absorbed the essence of a mage, making yourself more powerful in the process.",
     "weight": "1 g",
     "volume": "1 ml",
@@ -2037,15 +2375,15 @@
     "material": [ "steel" ],
     "symbol": "/",
     "color": "brown",
-    "relic_data": { "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "MAX_MANA", "add": 100 }, { "value": "INTELLIGENCE", "add": 1 } ] } ] }
+    "relic_data": { "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "MAX_MANA", "add": 500 } ] } ] }
   },
   {
     "id": "twisted_soul_massive",
     "type": "COMESTIBLE",
     "category": "other",
     "comestible_type": "MED",
-    "name": { "str": "soaked soul of a lost mage" },
-    "description": "A dimly glowing soul, slowly turning over and over in itself. This soul is leaking magic, but perhaps a more skilled wizard could wrench even more mana from it... Using it will increase your maximum mana and your Intelligence",
+    "name": { "str": "middling twisted soul" },
+    "description": "A dimly glowing soul, slowly turning over and over in itself. This soul is leaking magic, but perhaps a more skilled wizard could wrench even more mana from it... Using it will increase your maximum mana.",
     "weight": "500 g",
     "volume": "10 ml",
     "longest_side": "1 cm",
@@ -2079,7 +2417,7 @@
   {
     "id": "massive_aura",
     "type": "ARMOR",
-    "name": { "str": "soaked essence" },
+    "name": { "str": "middling essence" },
     "description": "You have absorbed the essence of a mage, making yourself more powerful in the process.",
     "weight": "1 g",
     "volume": "1 ml",
@@ -2093,15 +2431,15 @@
     "material": [ "steel" ],
     "symbol": "/",
     "color": "brown",
-    "relic_data": { "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "MAX_MANA", "add": 300 }, { "value": "INTELLIGENCE", "add": 2 } ] } ] }
+    "relic_data": { "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "MAX_MANA", "add": 1000 } ] } ] }
   },
   {
     "id": "twisted_soul_engorged",
     "type": "COMESTIBLE",
     "category": "other",
     "comestible_type": "MED",
-    "name": { "str": "drenched soul of a lost mage" },
-    "description": "A dimly glowing soul, slowly turning over and over in itself. It is absolutely drenched in magic. No mage could tear more magic from it. Using it will increase your maximum mana and your Intelligence",
+    "name": { "str": "immense twisted soul" },
+    "description": "A dimly glowing soul, slowly turning over and over in itself. It is absolutely drenched in magic. No mage could tear more magic from it. Using it will increase your maximum mana.",
     "weight": "1000 g",
     "volume": "10 ml",
     "longest_side": "1 cm",
@@ -2135,7 +2473,7 @@
   {
     "id": "engorged_aura",
     "type": "ARMOR",
-    "name": { "str": "drenched essence" },
+    "name": { "str": "immense essence" },
     "description": "You have absorbed the essence of a mage, making yourself more powerful in the process.",
     "weight": "1 g",
     "volume": "1 ml",
@@ -2149,12 +2487,12 @@
     "material": [ "steel" ],
     "symbol": "/",
     "color": "brown",
-    "relic_data": { "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "MAX_MANA", "add": 600 }, { "value": "INTELLIGENCE", "add": 3 } ] } ] }
+    "relic_data": { "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "MAX_MANA", "add": 1500 } ] } ] }
   },
   {
     "id": "drowning_aura",
     "type": "ARMOR",
-    "name": { "str": "drowning twisted essence" },
+    "name": { "str": "engorged essence" },
     "description": "You have absorbed so much of the essential essence of what it means to be a mage that you are drowning in mana.",
     "weight": "1 g",
     "volume": "1 ml",
@@ -2168,7 +2506,7 @@
     "material": [ "steel" ],
     "symbol": "/",
     "color": "brown",
-    "relic_data": { "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "MAX_MANA", "add": 1200 }, { "value": "INTELLIGENCE", "add": 4 } ] } ] }
+    "relic_data": { "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "MAX_MANA", "add": 3000 } ] } ] }
   },
   {
     "id": "leather_journal",
@@ -2257,7 +2595,18 @@
     "material": [ "black_dragon_hide" ],
     "symbol": "*",
     "color": "black",
+	"use_action": [
+      "EINKTABLETPC",
+      "EBOOKSAVE",
+      "EBOOKREAD" ],
     "pocket_data": [
+      {
+        "pocket_type": "EBOOK",
+        "rigid": true,
+        "max_contains_volume": "1 ml",
+        "max_contains_weight": "1 g",
+        "weight_multiplier": 0.0
+      },
       {
         "//": "Binding",
         "pocket_type": "CONTAINER",
@@ -2265,9 +2614,9 @@
         "max_contains_weight": "2 kg",
         "max_contains_volume": "2500 ml",
         "max_item_length": "300 mm",
-        "weight_multiplier": 0.1,
-        "volume_multiplier": 0.1,
-        "moves": 150,
+        "weight_multiplier": 0.3,
+        "volume_multiplier": 0.3,
+        "moves": 50,
         "item_restriction": [
           "paper",
           "militarymap",
@@ -2361,11 +2710,223 @@
     "volume": "1 ml"
   },
   {
+    "type": "GENERIC",
+    "id": "survivors_memory_1",
+    "category": "books",
+    "symbol": ",",
+    "color": "white",
+    "name": { "str": "survivor's memory" },
+    "description": "A scrap of paper with a memory imprinted on it. Pa's barn burns but as the sun rises you lose that hellspawn behind the flames.",
+    "price": 0,
+    "price_postapoc": 0,
+    "material": [ "paper" ],
+    "weight": "3 g",
+    "volume": "1 ml"
+  },
+  {
+    "type": "GENERIC",
+    "id": "survivors_memory_2",
+    "category": "books",
+    "symbol": ",",
+    "color": "white",
+    "name": { "str": "survivor's memory" },
+    "description": "A scrap of paper with a memory imprinted on it. The knife falls out of the burning man's chest as his boiling arm pierces your chest.",
+    "price": 0,
+    "price_postapoc": 0,
+    "material": [ "paper" ],
+    "weight": "3 g",
+    "volume": "1 ml"
+  },
+  {
+    "type": "GENERIC",
+    "id": "survivors_memory_3",
+    "category": "books",
+    "symbol": ",",
+    "color": "white",
+    "name": { "str": "survivor's memory" },
+    "description": "A scrap of paper with a memory imprinted on it. The hunger pushed you to try and eat one of these things. Then it pushed you to make arrows out of their stone skin.",
+    "price": 0,
+    "price_postapoc": 0,
+    "material": [ "paper" ],
+    "weight": "3 g",
+    "volume": "1 ml"
+  },
+  {
+    "type": "GENERIC",
+    "id": "survivors_memory_4",
+    "category": "books",
+    "symbol": ",",
+    "color": "white",
+    "name": { "str": "survivor's memory" },
+    "description": "A scrap of paper with a memory imprinted on it. The Robinson's always had good mail.",
+    "price": 0,
+    "price_postapoc": 0,
+    "material": [ "paper" ],
+    "weight": "3 g",
+    "volume": "1 ml"
+  },
+  {
+    "type": "GENERIC",
+    "id": "survivors_memory_5",
+    "category": "books",
+    "symbol": ",",
+    "color": "white",
+    "name": { "str": "survivor's memory" },
+    "description": "A scrap of paper with a memory imprinted on it. We gotta get the people together man, me and you... I used to work for my Dad's firm, and they had these passes that could teach you how to translocate... Could bring those cave dwarves back here...",
+    "price": 0,
+    "price_postapoc": 0,
+    "material": [ "paper" ],
+    "weight": "3 g",
+    "volume": "1 ml"
+  },
+  {
+    "type": "GENERIC",
+    "id": "survivors_memory_6",
+    "category": "books",
+    "symbol": ",",
+    "color": "white",
+    "name": { "str": "survivor's memory" },
+    "description": "A scrap of paper with a memory imprinted on it. I was a sailor... The ship was pretty calm when the shit hit the fan but as the days went on... Well, I'm still alive at least. Wouldn't be if that guy hadn't shown up and turned the place into his personal beachfront property, heh.",
+    "price": 0,
+    "price_postapoc": 0,
+    "material": [ "paper" ],
+    "weight": "3 g",
+    "volume": "1 ml"
+  },
+  {
+    "type": "GENERIC",
+    "id": "survivors_memory_7",
+    "category": "books",
+    "symbol": ",",
+    "color": "white",
+    "name": { "str": "survivor's memory" },
+    "description": "A scrap of paper with a memory imprinted on it.  The sand is reborn in the wake of the stick, just as I am reborn in the wake of my own enslavement.",
+    "price": 0,
+    "price_postapoc": 0,
+    "material": [ "paper" ],
+    "weight": "3 g",
+    "volume": "1 ml"
+  },
+  {
+    "id": "omnaths_contract",
+    "type": "BOOK",
+    "category": "manuals",
+    "symbol": ",",
+    "color": "white",
+    "name": { "str": "Omnath's contract" },
+    "description": "A brief contract binding an entity to a higher, or perhaps lower, power.",
+    "price": 0,
+    "price_postapoc": 0,
+	"looks_like": "paper",
+    "material": [ "paper" ],
+    "weight": "3 g",
+    "volume": "1 ml"
+  },
+  {
+    "id": "ortiels_contract",
+    "type": "BOOK",
+    "category": "manuals",
+    "symbol": ",",
+    "color": "white",
+    "name": { "str": "Ortiel's contract" },
+    "description": "A brief contract binding an entity to a higher, or perhaps lower, power.",
+    "price": 0,
+    "price_postapoc": 0,
+	"looks_like": "paper",
+    "material": [ "paper" ],
+    "weight": "3 g",
+    "volume": "1 ml"
+  },
+  {
+    "id": "yidris_contract",
+    "type": "BOOK",
+    "category": "manuals",
+    "symbol": ",",
+    "color": "white",
+	"looks_like": "paper",
+    "name": { "str": "Yidris' contract" },
+    "description": "A brief contract binding an entity to a higher, or perhaps lower, power.",
+    "price": 0,
+    "price_postapoc": 0,
+    "material": [ "paper" ],
+    "weight": "3 g",
+    "volume": "1 ml"
+  },
+  {
+    "id": "atraxas_contract",
+    "type": "BOOK",
+    "category": "manuals",
+    "symbol": ",",
+    "color": "white",
+	"looks_like": "paper",
+    "name": { "str": "Atraxa's contract" },
+    "description": "A brief contract binding an entity to a higher, or perhaps lower, power.",
+    "price": 0,
+    "price_postapoc": 0,
+    "material": [ "paper" ],
+    "weight": "3 g",
+    "volume": "1 ml"
+  },
+  {
+    "id": "broken_contract",
+    "type": "BOOK",
+    "category": "manuals",
+    "name": { "str": "broken contract", "str_pl": "broken contracts" },
+    "description": "A contract of which the seal has been painstakingly broken. Activating and reading it aloud might draw the ire of whatever resides on the other side of magic...",
+    "weight": "1 g",
+    "volume": "10 ml",
+	"looks_like": "paper",
+    "longest_side": "1 cm",
+    "price": 10000,
+    "material": [ "aether" ],
+    "symbol": "c",
+	"use_action": { "type": "cast_spell", "spell_id": "summon_devil", "no_fail": true, "level": 1, "need_wielding": true },
+    "color": "black"
+  },
+  {
+    "id": "chunk_of_devil_spell",
+    "type": "SPELL",
+    "name": "Flesh and Blood",
+    "description": "Meditation leaves you weary for the day.",
+    "valid_targets": [ "self" ],
+    "flags": [ "CONCENTRATE", "SILENT", "NO_HANDS" ],
+    "energy_source": "MANA",
+    "effect": "spawn_item",
+    "effect_str": "money_bundle_hundred",
+    "shape": "blast",
+    "base_casting_time": 0,
+    "min_damage": 1,
+    "max_damage": 1,
+    "max_level": 25,
+    "base_energy_cost": 0,
+    "difficulty": 4
+  },
+  {
+    "id": "chunk_of_devil",
+    "type": "BOOK",
+	"category": "manuals",
+    "name": { "str": "chunk of devil", "str_pl": "chunk of devil" },
+    "description": "A piece ripped off of the devil themself. It oozes cash and souls constantly, and would sell for a very pretty penny to the right buyer.",
+    "weight": "1 g",
+    "volume": "10 ml",
+    "longest_side": "1 cm",
+	"looks_like": "rock",
+    "price": 1000000,
+    "material": [ "brimstone" ], 
+    "symbol": "c",
+	"use_action": { "type": "cast_spell", "spell_id": "chunk_of_devil_spell", "no_fail": true, "level": 1, "need_wielding": true },
+	"relic_data": {
+      "charge_info": { "recharge_type": "periodic", "time": "1 d", "regenerate_ammo": true }
+    },
+	"pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "decaying_soul_ammo": 3 } } ],
+    "color": "white"
+  },
+  {
     "id": "tear_of_child",
     "type": "AMMO",
     "ammo_type": "brimstone_ammo",
-    "name": { "str": "tear of a child" },
-    "description": "A lone tear, glistening so brightly that it could only drop from the innocent eye of a child. Essentially sadness. Crush in in the palm of your hand to stave off the encroaching tide of apathy.",
+    "name": { "str": "innocent tear", "str_pl": "innocent tears" },
+    "description": "A lone tear, glistening so brightly that it could only drop from an innocent eye. Essentially sadness. Crush in the palm of your hand to stave off the encroaching tide of apathy.",
     "weight": "1 g",
     "volume": "10 ml",
     "count": 1,

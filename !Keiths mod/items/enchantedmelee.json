@@ -3,7 +3,7 @@
     "id": "bluesteel_longsword",
     "type": "TOOL",
     "symbol": "/",
-    "color": "light_gray",
+    "color": "light_blue",
     "name": { "str": "bluesteel longsword" },
     "description": "A long, thin sword made of blue metal with a mana pearl stuck in it's hilt. The blade is made of bluesteel, a substance that's nearly impossible to find or create. It adores mana above all else, draining it from anyone it touches.",
     "price": 80000,
@@ -49,37 +49,146 @@
     "difficulty": 4
   },
   {
+    "id": "demi_smite",
+    "type": "SPELL",
+    "name": "Smite",
+    "description": "",
+    "effect": "attack",
+    "shape": "blast",
+    "flags": [ "NO_LEGS" ],
+    "valid_targets": [ "hostile" ],
+    "max_level": 10,
+    "min_damage": 15,
+    "max_damage": 15,
+    "base_casting_time": 0,
+    "energy_source": "STAMINA",
+    "difficulty": 2,
+    "sound_description": "a whoosh"
+  },
+  {
+    "id": "demi_smite_gloves",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+    "name": { "str": "demigod gauntlets", "str_pl": "demigod gauntlets" },
+    "description": "White leather is stretched over phantasmal hands made of soft light, and as you put them on you feel pure energy shooting through your body. They call down bolts of pure energy when you attack while wearing them.",
+    "weight": "2006 g",
+    "volume": "500 ml",
+    "price": 60000,
+    "to_hit": 2,
+    "material": [ "leather" ],
+    "symbol": "[",
+    "color": "white",
+    "material_thickness": 2,
+    "flags": [ "VARSIZE", "STURDY", "OUTER" ],
+    "use_action": {
+        "target": "demi_smite_gloves_on",
+        "msg": "You will the gloves to radiate light.",
+        "menu_text": "Glow",
+        "type": "transform"
+      },
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "hit_you_effect": [ { "id": "demi_smite" } ]
+        }
+      ]
+    },
+    "armor": [
+      {
+        "material": [ { "type": "lc_steel_chain", "covered_by_mat": 100, "thickness": 1.2 } ],
+        "covers": [ "hand_l", "hand_r" ],
+        "coverage": 100,
+        "encumbrance": 20
+      }
+    ]
+  },
+  {
+    "id": "demi_smite_gloves_on",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+    "name": { "str": "demigod gauntlets", "str_pl": "demigod gauntlets" },
+    "description": "White leather is stretched over phantasmal hands made of soft light, and as you put them on you feel pure energy shooting through your body. They call down bolts of pure energy when you attack while wearing them.",
+    "weight": "2006 g",
+    "volume": "500 ml",
+    "price": 60000,
+    "to_hit": 2,
+    "material": [ "leather" ],
+    "symbol": "[",
+    "color": "white",
+	"sided": true,
+    "material_thickness": 2,
+    "flags": [ "VARSIZE", "STURDY", "OUTER", "LIGHT_20" ],
+    "use_action": {
+        "target": "demi_smite_gloves",
+        "msg": "You will the gloves to stop radiating light.",
+        "menu_text": "Stop Glow",
+        "type": "transform"
+      },
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "hit_you_effect": [ { "id": "demi_smite" } ]
+        }
+      ]
+    },
+    "armor": [
+      {
+        "material": [ { "type": "lc_steel_chain", "covered_by_mat": 100, "thickness": 1.2 } ],
+        "covers": [ "hand_l", "hand_r" ],
+        "coverage": 100,
+        "encumbrance": 20
+      }
+    ]
+  },
+  {
+    "id": "cone_smite",
+    "type": "SPELL",
+    "name": "Smite Cone",
+    "description": "",
+    "effect": "attack",
+    "shape": "cone",
+    "flags": [ "NO_LEGS" ],
+    "valid_targets": [ "hostile" ],
+    "max_level": 10,
+    "min_damage": 15,
+    "max_damage": 15,
+    "base_casting_time": 0,
+    "min_range": 3,
+    "max_range": 3,
+    "energy_source": "STAMINA",
+    "difficulty": 2,
+    "sound_description": "a whoosh"
+  },
+  {
     "id": "smite_gloves",
     "type": "TOOL_ARMOR",
     "category": "armor",
-    "name": { "str": "cumulonimbus gauntlets", "str_pl": "cumulonimbus gauntlets" },
-    "description": "Grey leather is stretched over phantasmal hands made of roiling black storm clouds, and as you put them on you feel electricity shoot through your body.",
+    "name": { "str": "heavenly gauntlets", "str_pl": "heavenly gauntlets" },
+    "description": "White leather is stretched over phantasmal hands made of soft light, and as you put them on you feel pure energy shooting through your body. They project a cone of pure energy when you attack while wearing them.",
     "weight": "2006 g",
     "volume": "500 ml",
     "price": 100000,
     "to_hit": 2,
     "material": [ "leather" ],
     "symbol": "[",
-    "color": "light_red",
+    "color": "white",
     "material_thickness": 2,
-    "flags": [ "VARSIZE", "STURDY", "OUTER", "ELECTRIC_IMMUNE" ],
+    "flags": [ "VARSIZE", "STURDY", "OUTER" ],
     "use_action": {
-      "type": "manualnoise",
-      "moves": 10,
-      "noise": 50,
-      "noise_message": "BOOOOM!",
-      "noise_id": "misc",
-      "noise_variant": "shockwave",
-      "no_charges_message": "The gloves don't miss.",
-      "use_message": "You clap your hands and thunder booms!.",
-      "//": "Use of %s not currently supported."
-    },
+        "target": "smite_gloves_on",
+        "msg": "You will the gloves to radiate light.",
+        "menu_text": "Glow",
+        "type": "transform"
+      },
     "relic_data": {
       "passive_effects": [
         {
           "has": "WORN",
           "condition": "ALWAYS",
-          "values": [ { "value": "ARMOR_ELEC", "add": -10 } ],
           "hit_you_effect": [ { "id": "cone_smite" } ]
         }
       ]
@@ -90,6 +199,1042 @@
         "covers": [ "hand_l", "hand_r" ],
         "coverage": 100,
         "encumbrance": 20
+      }
+    ]
+  },
+  {
+    "id": "smite_gloves_on",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+    "name": { "str": "heavenly gauntlets", "str_pl": "heavenly gauntlets" },
+    "description": "White leather is stretched over phantasmal hands made of soft light, and as you put them on you feel pure energy shooting through your body. They project a cone of pure energy when you attack while wearing them.",
+    "weight": "2006 g",
+    "volume": "500 ml",
+    "price": 150000,
+    "to_hit": 2,
+    "material": [ "leather" ],
+    "symbol": "[",
+    "color": "white",
+    "material_thickness": 2,
+    "flags": [ "VARSIZE", "STURDY", "OUTER", "LIGHT_20" ],
+    "use_action": {
+        "target": "smite_gloves",
+        "msg": "You will the gloves to stop radiating light.",
+        "menu_text": "Stop Glow",
+        "type": "transform"
+      },
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "hit_you_effect": [ { "id": "cone_smite" } ]
+        }
+      ]
+    },
+    "armor": [
+      {
+        "material": [ { "type": "lc_steel_chain", "covered_by_mat": 100, "thickness": 1.2 } ],
+        "covers": [ "hand_l", "hand_r" ],
+        "coverage": 100,
+        "encumbrance": 20
+      }
+    ]
+  },
+  {
+    "id": "cone_elec",
+    "type": "SPELL",
+    "name": "Elec Cone",
+    "description": "",
+    "effect": "attack",
+    "shape": "cone",
+    "flags": [ "NO_LEGS" ],
+    "valid_targets": [ "hostile" ],
+    "max_level": 10,
+    "min_damage": 10,
+    "max_damage": 10,
+    "base_casting_time": 0,
+    "min_range": 3,
+    "max_range": 3,
+    "energy_source": "STAMINA",
+    "difficulty": 2,
+	"damage_type": "electric",
+    "sound_description": "a zap"
+  },
+  {
+    "id": "elec_gloves",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+    "name": { "str": "cumulonimbus gauntlets", "str_pl": "cumulonimbus gauntlets" },
+    "description": "White leather is stretched over phantasmal hands made of soft light, and as you put them on you feel electricity shooting through your body. They project a cone of electricity when you attack while wearing them.",
+    "weight": "2006 g",
+    "volume": "500 ml",
+    "price": 100000,
+    "to_hit": 2,
+    "material": [ "leather" ],
+    "symbol": "[",
+    "color": "white",
+    "material_thickness": 2,
+    "flags": [ "VARSIZE", "STURDY", "OUTER" ],
+	"use_action": [
+      "HAND_CRANK" 
+	  ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [ { "value": "ARMOR_ELEC", "add": -10 } ],
+          "hit_you_effect": [ { "id": "cone_elec" } ]
+        }
+      ]
+    },
+    "armor": [
+      {
+        "material": [ { "type": "lc_steel_chain", "covered_by_mat": 100, "thickness": 1.2 } ],
+        "covers": [ "hand_l", "hand_r" ],
+        "coverage": 100,
+        "encumbrance": 20
+      }
+    ]
+  },
+  {
+    "id": "demi_elec",
+    "type": "SPELL",
+    "name": "Elec",
+    "description": "",
+    "effect": "attack",
+    "shape": "blast",
+    "flags": [ "NO_LEGS" ],
+    "valid_targets": [ "hostile" ],
+    "max_level": 10,
+    "min_damage": 5,
+    "max_damage": 5,
+    "base_casting_time": 0,
+    "energy_source": "STAMINA",
+    "difficulty": 2,
+	"damage_type": "electric",
+    "sound_description": "a zap"
+  },
+  {
+    "id": "demi_elec_gloves",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+    "name": { "str": "altostratus gauntlets", "str_pl": "altostratus gauntlets" },
+    "description": "White leather is stretched over phantasmal hands made of soft light, and as you put them on you feel electricity shooting through your body. They call down bolts of electricity when you attack while wearing them.",
+    "weight": "2006 g",
+    "volume": "500 ml",
+    "price": 60000,
+    "to_hit": 2,
+    "material": [ "leather" ],
+    "symbol": "[",
+	"sided": true,
+    "color": "white",
+    "material_thickness": 2,
+    "flags": [ "VARSIZE", "STURDY", "OUTER" ],
+	"use_action": [
+      "HAND_CRANK" 
+	  ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [ { "value": "ARMOR_ELEC", "add": -5 } ],
+          "hit_you_effect": [ { "id": "demi_elec" } ]
+        }
+      ]
+    },
+    "armor": [
+      {
+        "material": [ { "type": "lc_steel_chain", "covered_by_mat": 100, "thickness": 1.2 } ],
+        "covers": [ "hand_l", "hand_r" ],
+        "coverage": 100,
+        "encumbrance": 20
+      }
+    ]
+  },
+  {
+    "id": "cone_fire",
+    "type": "SPELL",
+    "name": "Fire Cone",
+    "description": "",
+    "effect": "attack",
+    "shape": "cone",
+    "flags": [ "NO_LEGS", "IGNITE_FLAMMABLE" ],
+    "valid_targets": [ "hostile" ],
+    "max_level": 10,
+    "min_damage": 10,
+    "max_damage": 10,
+    "base_casting_time": 0,
+    "min_range": 3,
+    "max_range": 3,
+    "energy_source": "STAMINA",
+    "difficulty": 2,
+	"damage_type": "heat",
+    "sound_description": "a whoosh"
+  },
+  {
+    "id": "fire_gloves",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+    "name": { "str": "blazing gauntlets", "str_pl": "blazing gauntlets" },
+    "description": "Red leather is stretched over phantasmal hands made of ash, and as you put them on you feel heat shooting through your body. They project a cone of fire when you attack while wearing them.",
+    "weight": "2006 g",
+    "volume": "500 ml",
+    "price": 100000,
+    "to_hit": 2,
+    "material": [ "leather" ],
+    "symbol": "[",
+    "color": "red",
+    "material_thickness": 2,
+    "flags": [ "VARSIZE", "STURDY", "OUTER", "FIRESTARTER" ],
+	"use_action": {
+    "type": "firestarter",
+    "moves": 50
+  },
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [ { "value": "ARMOR_HEAT", "add": -10 } ],
+          "hit_you_effect": [ { "id": "cone_fire" } ]
+        }
+      ]
+    },
+    "armor": [
+      {
+        "material": [ { "type": "lc_steel_chain", "covered_by_mat": 100, "thickness": 1.2 } ],
+        "covers": [ "hand_l", "hand_r" ],
+        "coverage": 100,
+        "encumbrance": 20
+      }
+    ]
+  },
+  {
+    "id": "demi_fire",
+    "type": "SPELL",
+    "name": "Fire",
+    "description": "",
+    "effect": "attack",
+    "shape": "blast",
+    "flags": [ "NO_LEGS", "IGNITE_FLAMMABLE" ],
+    "valid_targets": [ "hostile" ],
+    "max_level": 10,
+    "min_damage": 5,
+    "max_damage": 5,
+    "base_casting_time": 0,
+    "energy_source": "STAMINA",
+    "difficulty": 2,
+	"damage_type": "heat",
+    "sound_description": "a zap"
+  },
+  {
+    "id": "demi_fire_gloves",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+    "name": { "str": "sparking gauntlets", "str_pl": "sparking gauntlets" },
+    "description": "Red leather is stretched over phantasmal hands made of ash, and as you put them on you feel heat shooting through your body. They call down bolts of fire when you attack while wearing them.",
+    "weight": "2006 g",
+    "volume": "500 ml",
+    "price": 60000,
+    "to_hit": 2,
+	"sided": true,
+    "material": [ "leather" ],
+    "symbol": "[",
+    "color": "red",
+    "material_thickness": 2,
+    "flags": [ "VARSIZE", "STURDY", "OUTER", "FIRESTARTER" ],
+	"use_action": {
+    "type": "firestarter",
+    "moves": 50
+  },
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [ { "value": "ARMOR_HEAT", "add": -5 } ],
+          "hit_you_effect": [ { "id": "demi_fire" } ]
+        }
+      ]
+    },
+    "armor": [
+      {
+        "material": [ { "type": "lc_steel_chain", "covered_by_mat": 100, "thickness": 1.2 } ],
+        "covers": [ "hand_l", "hand_r" ],
+        "coverage": 100,
+        "encumbrance": 20
+      }
+    ]
+  },
+  {
+    "id": "cone_cold_gloves",
+    "type": "SPELL",
+    "name": "Ice Cone",
+    "description": "",
+    "effect": "attack",
+    "shape": "cone",
+    "flags": [ "NO_LEGS" ],
+    "valid_targets": [ "hostile" ],
+    "max_level": 10,
+    "min_damage": 10,
+    "max_damage": 10,
+    "base_casting_time": 0,
+    "min_range": 3,
+    "max_range": 3,
+    "energy_source": "STAMINA",
+    "difficulty": 2,
+	"damage_type": "cold",
+    "sound_description": "a whoosh"
+  },
+  {
+    "id": "cold_gloves",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+    "name": { "str": "glacial gauntlets", "str_pl": "glacial gauntlets" },
+    "description": "Blue leather is stretched over phantasmal hands made of frozen time, and as you put them on you feel cold shooting through your body. They project a cone of freezing wind when you attack while wearing them.",
+    "weight": "2006 g",
+    "volume": "500 ml",
+    "price": 100000,
+    "to_hit": 2,
+    "material": [ "leather" ],
+    "symbol": "[",
+    "color": "blue",
+    "material_thickness": 2,
+    "flags": [ "VARSIZE", "STURDY", "OUTER" ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [ { "value": "ARMOR_COLD", "add": -10 } ],
+          "hit_you_effect": [ { "id": "cone_cold_gloves" } ]
+        },
+		{ "has": "WORN", "condition": "ALWAYS", "mutations": [ "RESISTCHILL" ] }
+      ]
+    },
+    "armor": [
+      {
+        "material": [ { "type": "lc_steel_chain", "covered_by_mat": 100, "thickness": 1.2 } ],
+        "covers": [ "hand_l", "hand_r" ],
+        "coverage": 100,
+        "encumbrance": 20
+      }
+    ]
+  },
+  {
+    "id": "demi_cold",
+    "type": "SPELL",
+    "name": "Ice",
+    "description": "",
+    "effect": "attack",
+    "shape": "blast",
+    "flags": [ "NO_LEGS" ],
+    "valid_targets": [ "hostile" ],
+    "max_level": 10,
+    "min_damage": 5,
+    "max_damage": 5,
+    "base_casting_time": 0,
+    "energy_source": "STAMINA",
+    "difficulty": 2,
+	"damage_type": "cold",
+    "sound_description": "a splash"
+  },
+  {
+    "id": "demi_cold_gloves",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+    "name": { "str": "freezing gauntlets", "str_pl": "freezing gauntlets" },
+    "description": "Blue leather is stretched over phantasmal hands made of cracking ice, and as you put them on you feel cold shooting through your body. They call down freezing rains when you attack while wearing them.",
+    "weight": "2006 g",
+    "volume": "500 ml",
+    "price": 60000,
+    "to_hit": 2,
+	"sided": true,
+    "material": [ "leather" ],
+    "symbol": "[",
+    "color": "blue",
+    "material_thickness": 2,
+    "flags": [ "VARSIZE", "STURDY", "OUTER" ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [ { "value": "ARMOR_COLD", "add": -5 } ],
+          "hit_you_effect": [ { "id": "demi_cold" } ]
+        },
+		{ "has": "WORN", "condition": "ALWAYS", "mutations": [ "RESISTCHILL" ] }
+      ]
+    },
+    "armor": [
+      {
+        "material": [ { "type": "lc_steel_chain", "covered_by_mat": 100, "thickness": 1.2 } ],
+        "covers": [ "hand_l", "hand_r" ],
+        "coverage": 100,
+        "encumbrance": 20
+      }
+    ]
+  },
+  {
+    "id": "cone_acid",
+    "type": "SPELL",
+    "name": "Acid Cone",
+    "description": "",
+    "effect": "attack",
+    "shape": "cone",
+    "flags": [ "NO_LEGS" ],
+    "valid_targets": [ "hostile" ],
+    "max_level": 10,
+    "min_damage": 10,
+    "max_damage": 10,
+    "base_casting_time": 0,
+    "min_range": 3,
+    "max_range": 3,
+    "energy_source": "STAMINA",
+    "difficulty": 2,
+	"damage_type": "acid",
+    "sound_description": "a whoosh"
+  },
+  {
+    "id": "bile_gloves",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+    "name": { "str": "putrid gauntlets", "str_pl": "putrid gauntlets" },
+    "description": "Green leather is stretched over phantasmal hands made of liquid death, and as you put them on you feel acidic parasites shooting through your body. They project a cone of acid when you attack while wearing them.",
+    "weight": "2006 g",
+    "volume": "500 ml",
+    "price": 60000,
+    "to_hit": 2,
+    "material": [ "leather" ],
+    "symbol": "[",
+    "color": "green",
+    "material_thickness": 2,
+    "flags": [ "VARSIZE", "STURDY", "OUTER" ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [ { "value": "ARMOR_BIO", "add": -10 }, { "value": "ARMOR_ACID", "add": -10 } ],
+          "hit_you_effect": [ { "id": "cone_acid" } ]
+        }
+      ]
+    },
+    "armor": [
+      {
+        "material": [ { "type": "lc_steel_chain", "covered_by_mat": 100, "thickness": 1.2 } ],
+        "covers": [ "hand_l", "hand_r" ],
+        "coverage": 100,
+        "encumbrance": 20
+      }
+    ]
+  },
+  {
+    "id": "demi_acid",
+    "type": "SPELL",
+    "name": "Acid",
+    "description": "",
+    "effect": "attack",
+    "shape": "blast",
+    "flags": [ "NO_LEGS" ],
+    "valid_targets": [ "hostile" ],
+    "max_level": 10,
+    "min_damage": 5,
+    "max_damage": 5,
+    "base_casting_time": 0,
+    "energy_source": "STAMINA",
+    "difficulty": 2,
+	"damage_type": "acid",
+    "sound_description": "a splash"
+  },
+  {
+    "id": "demi_bile_gloves",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+    "name": { "str": "grotesque gauntlets", "str_pl": "grotesque gauntlets" },
+    "description": "Green leather is stretched over phantasmal hands made of ooze, and as you put them on you feel acidic parasites shooting through your body. They call down acid showers when you attack while wearing them.",
+    "weight": "2006 g",
+    "volume": "500 ml",
+    "price": 60000,
+    "to_hit": 2,
+    "material": [ "leather" ],
+    "symbol": "[",
+	"sided": true,
+    "color": "blue",
+    "material_thickness": 2,
+    "flags": [ "VARSIZE", "STURDY", "OUTER" ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [ { "value": "ARMOR_BIO", "add": -5 }, { "value": "ARMOR_ACID", "add": -5 } ],
+          "hit_you_effect": [ { "id": "demi_acid" } ]
+        }
+      ]
+    },
+    "armor": [
+      {
+        "material": [ { "type": "lc_steel_chain", "covered_by_mat": 100, "thickness": 1.2 } ],
+        "covers": [ "hand_l", "hand_r" ],
+        "coverage": 100,
+        "encumbrance": 20
+      }
+    ]
+  },
+  {
+    "id": "cone_ballistic",
+    "type": "SPELL",
+    "name": "Bullet Cone",
+    "description": "",
+    "effect": "attack",
+    "shape": "cone",
+    "flags": [ "NO_LEGS" ],
+    "valid_targets": [ "hostile" ],
+    "max_level": 10,
+    "min_damage": 10,
+    "max_damage": 10,
+    "base_casting_time": 0,
+    "min_range": 3,
+    "max_range": 3,
+    "energy_source": "STAMINA",
+    "difficulty": 2,
+	"damage_type": "bullet",
+    "sound_description": "a bang"
+  },
+  {
+    "id": "bullet_gloves",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+    "name": { "str": "gunslinger's gauntlets", "str_pl": "gunslinger's gauntlets" },
+    "description": "Brown leather is stretched over supple hands, and as you put them on you feel pride shooting through your body. They project a cone of bullets when you attack while wearing them.",
+    "weight": "2006 g",
+    "volume": "500 ml",
+    "price": 60000,
+    "to_hit": 2,
+    "material": [ "leather" ],
+    "symbol": "[",
+    "color": "green",
+    "material_thickness": 2,
+    "flags": [ "VARSIZE", "STURDY", "OUTER", "ZOOM" ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [ { "value": "ARMOR_BULLET", "add": -10 } ],
+          "hit_you_effect": [ { "id": "cone_ballistic" } ]
+        }
+      ]
+    },
+    "armor": [
+      {
+        "material": [ { "type": "lc_steel_chain", "covered_by_mat": 100, "thickness": 1.2 } ],
+        "covers": [ "hand_l", "hand_r" ],
+        "coverage": 100,
+        "encumbrance": 20
+      }
+    ]
+  },
+  {
+    "id": "demi_bash",
+    "type": "SPELL",
+    "name": "Bash",
+    "description": "",
+    "effect": "attack",
+    "shape": "blast",
+    "flags": [ "NO_LEGS" ],
+    "valid_targets": [ "hostile" ],
+    "max_level": 10,
+    "min_damage": 5,
+    "max_damage": 5,
+    "base_casting_time": 0,
+    "energy_source": "STAMINA",
+    "difficulty": 2,
+	"damage_type": "bash",
+    "sound_description": "a bonk"
+  },
+  {
+    "id": "bash_gloves",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+    "name": { "str": "everyman's gauntlets", "str_pl": "everyman's gauntlets" },
+    "description": "Brown leather is stretched over worn hands, and as you put them on you feel humanity's many memories shooting through your body. They make you have extra umph when you attack while wearing them.",
+    "weight": "2006 g",
+    "volume": "500 ml",
+    "price": 100000,
+    "to_hit": 2,
+	"sided": true,
+    "material": [ "leather" ],
+    "symbol": "[",
+    "color": "brown",
+    "material_thickness": 2,
+    "flags": [ "VARSIZE", "STURDY", "OUTER" ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [ { "value": "ARMOR_BASH", "add": -5 } ],
+          "hit_you_effect": [ { "id": "demi_bash" } ]
+        }
+      ]
+    },
+    "armor": [
+      {
+        "material": [ { "type": "lc_steel_chain", "covered_by_mat": 100, "thickness": 1.2 } ],
+        "covers": [ "hand_l", "hand_r" ],
+        "coverage": 100,
+        "encumbrance": 20
+      }
+    ]
+  },
+  {
+    "id": "demi_stab",
+    "type": "SPELL",
+    "name": "Stab",
+    "description": "",
+    "effect": "attack",
+    "shape": "blast",
+    "flags": [ "NO_LEGS" ],
+    "valid_targets": [ "hostile" ],
+    "max_level": 10,
+    "min_damage": 5,
+    "max_damage": 5,
+    "base_casting_time": 0,
+    "energy_source": "STAMINA",
+    "difficulty": 2,
+	"damage_type": "stab",
+    "sound_description": "a shunk"
+  },
+  {
+    "id": "stab_gloves",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+    "name": { "str": "backstabber's gauntlets", "str_pl": "backstabber's gauntlets" },
+    "description": "Black leather is stretched over worn hands, and as you put them on you feel humanity's many memories shooting through your body. They make your blades push deeper when you attack while wearing them.",
+    "weight": "2006 g",
+    "volume": "500 ml",
+    "price": 100000,
+    "to_hit": 2,
+	"sided": true,
+    "material": [ "leather" ],
+    "symbol": "[",
+    "color": "black",
+    "material_thickness": 2,
+    "flags": [ "VARSIZE", "STURDY", "OUTER" ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [ { "value": "ARMOR_STAB", "add": -5 } ],
+          "hit_you_effect": [ { "id": "demi_stab" } ]
+        }
+      ]
+    },
+    "armor": [
+      {
+        "material": [ { "type": "lc_steel_chain", "covered_by_mat": 100, "thickness": 1.2 } ],
+        "covers": [ "hand_l", "hand_r" ],
+        "coverage": 100,
+        "encumbrance": 20
+      }
+    ]
+  },
+  {
+    "id": "demi_cut",
+    "type": "SPELL",
+    "name": "Cut",
+    "description": "",
+    "effect": "attack",
+    "shape": "blast",
+    "flags": [ "NO_LEGS" ],
+    "valid_targets": [ "hostile" ],
+    "max_level": 10,
+    "min_damage": 5,
+    "max_damage": 5,
+    "base_casting_time": 0,
+    "energy_source": "STAMINA",
+    "difficulty": 2,
+	"damage_type": "cut",
+    "sound_description": "a slash"
+  },
+  {
+    "id": "cut_gloves",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+    "name": { "str": "cutthroat's gauntlets", "str_pl": "cutthroat's gauntlets" },
+    "description": "Gray leather is stretched over worn hands, and as you put them on you feel humanity's many memories shooting through your body. They make your blades push deeper when you attack while wearing them.",
+    "weight": "2006 g",
+    "volume": "500 ml",
+    "price": 100000,
+    "to_hit": 2,
+    "material": [ "leather" ],
+    "symbol": "[",
+	"sided": true,
+    "color": "black",
+    "material_thickness": 2,
+    "flags": [ "VARSIZE", "STURDY", "OUTER" ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [ { "value": "ARMOR_CUT", "add": -5 } ],
+          "hit_you_effect": [ { "id": "demi_cut" } ]
+        }
+      ]
+    },
+    "armor": [
+      {
+        "material": [ { "type": "lc_steel_chain", "covered_by_mat": 100, "thickness": 1.2 } ],
+        "covers": [ "hand_l", "hand_r" ],
+        "coverage": 100,
+        "encumbrance": 20
+      }
+    ]
+  },
+  {
+    "id": "str_gloves",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+    "name": { "str": "strongman's gauntlet", "str_pl": "strongman's gauntlet" },
+    "description": "A steel gauntlet that makes you feel stronger when you put it on.",
+    "weight": "2006 g",
+    "volume": "500 ml",
+    "price": 100000,
+    "to_hit": 2,
+    "material": [ "leather" ],
+    "symbol": "[",
+	"sided": true,
+    "color": "black",
+    "material_thickness": 2,
+    "flags": [ "VARSIZE", "STURDY", "OUTER" ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [ { "value": "STRENGTH", "add": 2 } ]
+        }
+      ]
+    },
+    "armor": [
+      {
+        "material": [ { "type": "lc_steel_chain", "covered_by_mat": 100, "thickness": 1.2 } ],
+        "covers": [ "hand_l", "hand_r" ],
+        "coverage": 100,
+        "encumbrance": 10
+      }
+    ]
+  },
+  {
+    "id": "int_gloves",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+    "name": { "str": "gentleman's gauntlet", "str_pl": "gentleman's gauntlet" },
+    "description": "A steel gauntlet that makes you feel smarter when you put it on.",
+    "weight": "2006 g",
+    "volume": "500 ml",
+    "price": 100000,
+    "to_hit": 2,
+    "material": [ "leather" ],
+    "symbol": "[",
+	"sided": true,
+    "color": "black",
+    "material_thickness": 2,
+    "flags": [ "VARSIZE", "STURDY", "OUTER" ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [ { "value": "INTELLIGENCE", "add": 2 } ]
+        }
+      ]
+    },
+    "armor": [
+      {
+        "material": [ { "type": "lc_steel_chain", "covered_by_mat": 100, "thickness": 1.2 } ],
+        "covers": [ "hand_l", "hand_r" ],
+        "coverage": 100,
+        "encumbrance": 10
+      }
+    ]
+  },
+  {
+    "id": "dex_gloves",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+    "name": { "str": "thieves' gauntlet", "str_pl": "thieves's gauntlet" },
+    "description": "A steel gauntlet that makes you feel more dextrous when you put it on.",
+    "weight": "2006 g",
+    "volume": "500 ml",
+    "price": 100000,
+    "to_hit": 2,
+    "material": [ "leather" ],
+    "symbol": "[",
+	"sided": true,
+    "color": "black",
+    "material_thickness": 2,
+    "flags": [ "VARSIZE", "STURDY", "OUTER" ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [ { "value": "DEXTERITY", "add": 2 } ]
+        }
+      ]
+    },
+    "armor": [
+      {
+        "material": [ { "type": "lc_steel_chain", "covered_by_mat": 100, "thickness": 1.2 } ],
+        "covers": [ "hand_l", "hand_r" ],
+        "coverage": 100,
+        "encumbrance": 10
+      }
+    ]
+  },
+  {
+    "id": "perc_gloves",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+    "name": { "str": "lookouts' gauntlet", "str_pl": "lookouts's gauntlet" },
+    "description": "A steel gauntlet that makes you feel more perceptive when you put it on.",
+    "weight": "2006 g",
+    "volume": "500 ml",
+    "price": 100000,
+    "to_hit": 2,
+    "material": [ "leather" ],
+    "symbol": "[",
+	"sided": true,
+    "color": "black",
+    "material_thickness": 2,
+    "flags": [ "VARSIZE", "STURDY", "OUTER" ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [ { "value": "PERCEPTION", "add": 2 } ]
+        }
+      ]
+    },
+    "armor": [
+      {
+        "material": [ { "type": "lc_steel_chain", "covered_by_mat": 100, "thickness": 1.2 } ],
+        "covers": [ "hand_l", "hand_r" ],
+        "coverage": 100,
+        "encumbrance": 10
+      }
+    ]
+  },
+  {
+    "id": "mana_gloves",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+    "name": { "str": "brilliant gauntlet", "str_pl": "brilliant gauntlets" },
+    "description": "A steel gauntlet that increases your maximum mana.",
+    "weight": "2006 g",
+    "volume": "500 ml",
+    "price": 100000,
+    "to_hit": 2,
+    "material": [ "leather" ],
+    "symbol": "[",
+	"sided": true,
+    "color": "black",
+    "material_thickness": 2,
+    "flags": [ "VARSIZE", "STURDY", "OUTER" ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [ { "value": "MAX_MANA", "add": 1500 } ]
+        }
+      ]
+    },
+    "armor": [
+      {
+        "material": [ { "type": "lc_steel_chain", "covered_by_mat": 100, "thickness": 1.2 } ],
+        "covers": [ "hand_l", "hand_r" ],
+        "coverage": 100,
+        "encumbrance": 10
+      }
+    ]
+  },
+  {
+    "id": "regen_mana_gloves",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+    "name": { "str": "lively brilliant gauntlet", "str_pl": "lively brilliant gauntlets" },
+    "description": "A steel gauntlet that increases your mana regeneration.",
+    "weight": "2006 g",
+    "volume": "500 ml",
+    "price": 100000,
+    "to_hit": 2,
+    "material": [ "leather" ],
+    "symbol": "[",
+	"sided": true,
+    "color": "black",
+    "material_thickness": 2,
+    "flags": [ "VARSIZE", "STURDY", "OUTER" ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [ { "value": "REGEN_MANA", "multiply": 0.1 } ]
+        }
+      ]
+    },
+    "armor": [
+      {
+        "material": [ { "type": "lc_steel_chain", "covered_by_mat": 100, "thickness": 1.2 } ],
+        "covers": [ "hand_l", "hand_r" ],
+        "coverage": 100,
+        "encumbrance": 15
+      }
+    ]
+  },
+  {
+    "id": "stamina_gloves",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+    "name": { "str": "long-lasting gauntlet", "str_pl": "long-lasting gauntlets" },
+    "description": "A steel gauntlet that increases your maximum stamina.",
+    "weight": "2006 g",
+    "volume": "500 ml",
+    "price": 100000,
+    "to_hit": 2,
+    "material": [ "leather" ],
+    "symbol": "[",
+	"sided": true,
+    "color": "black",
+    "material_thickness": 2,
+    "flags": [ "VARSIZE", "STURDY", "OUTER" ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [ { "value": "MAX_STAMINA", "add": 3000 } ]
+        }
+      ]
+    },
+    "armor": [
+      {
+        "material": [ { "type": "lc_steel_chain", "covered_by_mat": 100, "thickness": 1.2 } ],
+        "covers": [ "hand_l", "hand_r" ],
+        "coverage": 100,
+        "encumbrance": 10
+      }
+    ]
+  },
+  {
+    "id": "regen_stamina_gloves",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+    "name": { "str": "lively long-lasting gauntlet", "str_pl": "lively long-lasting gauntlets" },
+    "description": "A steel gauntlet that increases your stamina regeneration.",
+    "weight": "2006 g",
+    "volume": "500 ml",
+    "price": 100000,
+    "to_hit": 2,
+    "material": [ "leather" ],
+    "symbol": "[",
+	"sided": true,
+    "color": "black",
+    "material_thickness": 2,
+    "flags": [ "VARSIZE", "STURDY", "OUTER" ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [ { "value": "REGEN_STAMINA", "multiply": 0.1 } ]
+        }
+      ]
+    },
+    "armor": [
+      {
+        "material": [ { "type": "lc_steel_chain", "covered_by_mat": 100, "thickness": 1.2 } ],
+        "covers": [ "hand_l", "hand_r" ],
+        "coverage": 100,
+        "encumbrance": 15
+      }
+    ]
+  },
+  {
+    "id": "hp_gloves",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+    "name": { "str": "vigorous gauntlet", "str_pl": "vigorous gauntlets" },
+    "description": "A steel gauntlet that increases your maximum hp.",
+    "weight": "2006 g",
+    "volume": "500 ml",
+    "price": 100000,
+    "to_hit": 2,
+    "material": [ "leather" ],
+    "symbol": "[",
+	"sided": true,
+    "color": "black",
+    "material_thickness": 2,
+    "flags": [ "VARSIZE", "STURDY", "OUTER" ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [ { "value": "MAX_HP", "multiply": 0.1 } ]
+        }
+      ]
+    },
+    "armor": [
+      {
+        "material": [ { "type": "lc_steel_chain", "covered_by_mat": 100, "thickness": 1.2 } ],
+        "covers": [ "hand_l", "hand_r" ],
+        "coverage": 100,
+        "encumbrance": 10
+      }
+    ]
+  },
+  {
+    "id": "regen_hp_gloves",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+    "name": { "str": "lively vigorous gauntlet", "str_pl": "lively vigorous gauntlets" },
+    "description": "A steel gauntlet that increases your HP regeneration.",
+    "weight": "2006 g",
+    "volume": "500 ml",
+    "price": 100000,
+    "to_hit": 2,
+    "material": [ "leather" ],
+    "symbol": "[",
+	"sided": true,
+    "color": "black",
+    "material_thickness": 2,
+    "flags": [ "VARSIZE", "STURDY", "OUTER" ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [ { "value": "REGEN_HP", "multiply": 0.1 } ]
+        }
+      ]
+    },
+    "armor": [
+      {
+        "material": [ { "type": "lc_steel_chain", "covered_by_mat": 100, "thickness": 1.2 } ],
+        "covers": [ "hand_l", "hand_r" ],
+        "coverage": 100,
+        "encumbrance": 15
       }
     ]
   },

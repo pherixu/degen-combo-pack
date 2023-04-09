@@ -314,6 +314,8 @@
       "PERSONAL",
       "SEMITANGIBLE",
       "WATERPROOF",
+	  "WATER_FRIENDLY", 
+	  "REBREATHER",
       "OVERSIZE",
       "ONLY_ONE",
       "TRADER_AVOID",
@@ -398,8 +400,7 @@
     "starting_trait": false,
     "valid": false,
     "social_modifiers": { "intimidate": -20, "lie": 15, "persuade": 10 },
-    "types": [ "ATTRACTIVENESS" ],
-    "prereqs": [ "BEAUTIFUL" ]
+    "types": [ "ATTRACTIVENESS" ]
   },
   {
     "id": "enlargement_aura",
@@ -420,7 +421,8 @@
     "color": "brown",
     "relic_data": {
       "passive_effects": [
-        { "has": "WORN", "condition": "ALWAYS", "mutations": [ "HUGE", "STR_UP_3", "PONDEROUS3", "MUT_TOUGH2", "TERRIFYING" ] }
+        { "has": "WORN", "condition": "ALWAYS", "mutations": [ "HUGE", "PONDEROUS3", "MUT_TOUGH2", "TERRIFYING" ] }, 
+		{ "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "INTELLIGENCE", "add": 1 } ] }
       ]
     }
   },
@@ -479,6 +481,7 @@
     "material": [ "concentrated_mana" ],
     "symbol": ".",
     "color": "brown",
+	"use_action": { "type": "cast_spell", "spell_id": "recover_mana_fatigue", "no_fail": true, "level": 1 },
     "relic_data": {
       "passive_effects": [
         {
@@ -486,16 +489,15 @@
           "condition": "ALWAYS",
           "mutations": [
             "THRESH_MANA",
-            "MANA_SUBTLE_SPELL",
-            "MANA_CRYST_MANA",
-            "WEAK",
-            "INT_UP",
+            "MANA_CRYST_MANA",        
             "PALE",
+			"BIOLUM0",
             "MANA_ADD_MANATOUCHED",
-            "ROT1",
-            "MANA_SIPHON_1"
+            "ROT1"
           ]
-        }
+		},
+		{ "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "INTELLIGENCE", "add": 1 } ] },
+		{ "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "STRENGTH", "add": -2 } ] }
       ]
     }
   },
@@ -516,6 +518,7 @@
     "material": [ "concentrated_mana" ],
     "symbol": ".",
     "color": "brown",
+	"use_action": { "type": "cast_spell", "spell_id": "recover_mana_fatigue", "no_fail": true, "level": 1 },
     "relic_data": {
       "passive_effects": [
         {
@@ -526,15 +529,14 @@
             "THRESH_MANA",
             "ALBINO",
             "MANA_CRYST_MANA",
-            "BIOLUM0",
-            "INT_UP_2",
+            "BIOLUM1",
             "MANA_REGEN_MANATOUCHED",
             "RADIOGENIC",
             "LIGHTWEIGHT",
-            "ROT2",
-            "MANA_SIPHON_2"
+            "ROT2"
           ]
-        }
+		},
+		{ "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "INTELLIGENCE", "add": 2 } ] }
       ]
     }
   },
@@ -551,10 +553,11 @@
     "to_hit": 3,
     "bashing": 14,
     "cutting": 3,
-    "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "ONLY_ONE", "NO_TAKEOFF", "TRADER_AVOID", "AURA", "NONCONDUCTIVE" ],
+    "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "NO_TAKEOFF", "TRADER_AVOID", "AURA", "NONCONDUCTIVE" ],
     "material": [ "concentrated_mana" ],
     "symbol": ".",
     "color": "brown",
+	"use_action": { "type": "cast_spell", "spell_id": "recover_mana_fatigue", "no_fail": true, "level": 1 },
     "relic_data": {
       "passive_effects": [
         {
@@ -566,16 +569,16 @@
             "THRESH_MANA",
             "MANA_CRYST_MANA",
             "SAVANT",
+			"BIOLUM2",
             "THINSKIN",
             "MANA_LUM",
             "GOODMEMORY",
             "LIGHT_BONES",
-            "INT_UP_4",
             "LOVES_BOOKS",
-            "MANA_SIPHON_3",
             "ROT3"
           ]
-        }
+		},
+        { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "INTELLIGENCE", "add": 3 } ] }
       ]
     }
   },
@@ -682,7 +685,7 @@
     "category": "other",
     "comestible_type": "MED",
     "name": { "str": "knowledgeable dust" },
-    "description": "Dust that, when sprinkled over the head, greatly increases reading comprehension.",
+    "description": "Dust that, when sprinkled over the head, greatly increases comprehension.",
     "weight": "500 g",
     "volume": "10 ml",
     "longest_side": "1 cm",
@@ -730,7 +733,7 @@
   {
     "id": "spawn_fast_reader_aura",
     "type": "SPELL",
-    "name": "spawn fast reader aura",
+    "name": "yourself into yourself",
     "description": "Fast reader aura",
     "valid_targets": [ "self" ],
     "flags": [ "SILENT" ],
@@ -750,7 +753,7 @@
   {
     "id": "spawn_fast_reader_aura2",
     "type": "SPELL",
-    "name": "spawn fast reader aura",
+    "name": "yourself into yourself",
     "description": "Fast reader aura",
     "valid_targets": [ "self" ],
     "flags": [ "SILENT" ],
@@ -770,7 +773,7 @@
   {
     "id": "spawn_fast_reader_aura3",
     "type": "SPELL",
-    "name": "spawn fast reader aura",
+    "name": "yourself into yourself",
     "description": "Fast reader aura",
     "valid_targets": [ "self" ],
     "flags": [ "SILENT" ],
@@ -1197,13 +1200,13 @@
     "id": "handgun_retrofitting",
     "type": "GUNMOD",
     "name": { "str": "Handgun Retrofitting" },
-    "description": "A ridiculously light and useful modification for use with any pistol. Will improve nearly every aspect of the gun's performance. Similar to a carbine chassis, forged of either silver or gold roughly into the form of a black wolf.",
+    "description": "A ridiculously light and useful modification for use with any pistol. Will improve nearly every aspect of the gun's performance. Similar to a carbine chassis, forged of either silver or gold roughly into the form of a wolf.",
     "weight": "0 g",
     "volume": "5 ml",
     "integral_volume": "0 ml",
     "price": 1000000,
     "install_time": "1 s",
-    "material": [ "gold" ],
+    "material": [ "gold", "silver" ],
     "symbol": ":",
     "color": "dark_gray",
     "location": "sights",
@@ -1217,7 +1220,7 @@
     "range_modifier": 20,
     "loudness_modifier": -20,
     "damage_modifier": { "damage_type": "bullet", "amount": 10 },
-    "flags": [ "ZOOM", "DISABLE_SIGHTS", "ZERO_WEIGHT" ],
+    "flags": [ "ZOOM", "DISABLE_SIGHTS", "ZERO_WEIGHT", "IRREMOVABLE" ],
     "min_skills": [ [ "spellcraft", 3 ], [ "pistol", 2 ] ]
   },
   {
@@ -1348,6 +1351,23 @@
     "weight": "1 g",
     "volume": "10 ml",
     "longest_side": "1 cm",
+    "price": 10000,
+    "intelligence": 13,
+    "time": "30 m",
+    "fun": 1,
+    "material": [ "aether" ],
+    "symbol": "c",
+    "color": "white"
+  },
+  {
+    "id": "wayward_memory_CASH_map",
+    "type": "BOOK",
+    "category": "other",
+    "name": { "str": "solidified memory of fiscal responsibility" },
+    "description": "Pure white and warm as the sunrise, this dancing ball of energy contains what used to make someone, someone. Use it to learn the location of nearby banks.",
+    "weight": "1 g",
+    "volume": "10 ml",
+    "longest_side": "1 cm",
     "price": 1000000,
     "flags": [ "TRADER_AVOID" ],
     "intelligence": 13,
@@ -1356,9 +1376,9 @@
     "use_action": [
       {
         "type": "reveal_map",
-        "radius": 33,
+        "radius": 5000,
         "message": "You suddenly remember where the nearest banks are.",
-        "terrain": [ "bank" ]
+        "terrain": [ "bank", "bank_raiders" ]
       }
     ],
     "material": [ "aether" ],

@@ -1,37 +1,178 @@
 [
-  {
+{
     "type": "npc_class",
-    "id": "NC_NONE",
-    "name": { "str": "No class" },
-    "job_description": "I'm just wandering.",
-    "traits": [ { "group": "BG_survival_story_EVACUEE" }, { "group": "NPC_starting_traits" }, { "group": "Appearance_demographics" } ],
+    "id": "NC_ELVES",
+    "name": { "str": "Elf" },
+    "job_description": "...",
+	"common": true,
+    "traits": [
+      { "group": "trait_mutant_npc_common" },
+      { "group": "BG_survival_story_UNIVERSAL" },
+      { "group": "trait_group_SPELLS", "prob": 50 },
+      { "group": "trait_group_SPELLS", "prob": 50 },
+      { "group": "trait_group_SPELLS", "prob": 50 },
+      { "group": "trait_group_elfa" },
+      { "distribution": [ { "group": "trait_group_elfa_nonthres" }, { "group": "trait_group_elfa_postthres" } ] }
+    ],
+    "bonus_str": { "rng": [ 1, 2 ] },
+    "bonus_dex": { "rng": [ 2, 4 ] },
+    "bonus_int": { "rng": [ 2, 4 ] },
+    "bonus_per": { "rng": [ 2, 4 ] },
     "skills": [
-      { "skill": "ALL", "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 4, 2 ] }, { "rng": [ -4, -1 ] } ] } ] } }
+      { "skill": "ALL", "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "rng": [ 1, 2 ] } ] } ] } },
+      { "skill": "melee", "bonus": { "rng": [ 1, 4 ] } },
+	  { "skill": "dodge", "bonus": { "rng": [ 3, 6 ] } },
+	  { "skill": "spellcraft", "bonus": { "rng": [ 1, 4 ] } },
+	  { "skill": "gun", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "archery", "bonus": { "rng": [ 3, 6 ] } }
     ]
   },
   {
-    "type": "npc_class",
-    "id": "NC_TEST_CLASS",
-    "name": { "str": "Debug Dude" },
-    "job_description": "I'm helping you test the game.",
-    "common": false,
-    "bonus_str": 100,
-    "bonus_dex": { "dice": [ 10, 10 ] },
-    "bonus_int": { "one_in": 2 },
-    "bonus_per": { "sum": [ { "constant": 100 }, { "dice": [ 10, 10 ] } ] },
-    "worn_override": "NC_DEBUG_worn",
-    "carry_override": "NC_DEBUG_carried",
-    "weapon_override": "NC_DEBUG_weapon",
-    "traits": [ [ "DEBUG_NODMG", 100 ] ]
+    "type": "npc",
+    "id": "NC_ELVES",
+    "name_suffix": "Elf",
+    "class": "NC_ELVES",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_ELF",
+    "faction": "lapin"
   },
   {
-    "type": "npc_class",
-    "id": "NC_SHOPKEEP",
-    "name": { "str": "Shopkeep" },
-    "job_description": "I'm a local shopkeeper.",
-    "traits": [ { "group": "NPC_starting_traits" }, { "group": "Appearance_demographics" } ],
-    "//": "This is a unique NPC who doesn't get randomly selected background traits",
-    "common": false
+    "type": "talk_topic",
+    "id": "TALK_ELF",
+    "dynamic_line": {
+      "u_has_var": "talked_to_elf",
+      "type": "dialogue",
+      "context": "NC_ELVES",
+      "value": "yes",
+      "no": "...",
+      "yes": "..."
+    },
+    "responses": [
+      {
+        "text": "Hello.",
+        "topic": "TALK_ELF_INTRO",
+        "effect": { "u_add_var": "talked_to_elf", "type": "dialogue", "context": "NC_ELVES", "value": "yes" }
+      },
+      {
+        "switch": true,
+        "default": true,
+        "text": "Do you want to come with me?",
+        "trial": { "type": "PERSUADE", "difficulty": 30 },
+        "success": { "topic": "TALK_OPERATOR_FRIENDLY", "opinion": { "trust": 0, "value": 1 } },
+        "failure": { "topic": "TALK__ELF_FEARFUL", "opinion": { "anger": 0, "fear": 0 } }
+      },
+	  {
+        "switch": true,
+        "default": true,
+        "text": "Saw some rabbits that way, wanna go see?",
+        "trial": { "type": "LIE", "difficulty": 30 },
+        "success": { "topic": "TALK_ELF_FRIENDLY", "opinion": { "trust": 0, "value": 1 } },
+        "failure": { "topic": "TALK_ELF_ANGRY", "opinion": { "anger": 0, "fear": 0 } }
+      },
+      {
+        "switch": true,
+        "default": true,
+        "text": "You should come with me for your own sake.",
+        "trial": { "type": "INTIMIDATE", "difficulty": 40, "mod": [ [ "AGGRESSION", -2 ], [ "BRAVERY", -2 ] ] },
+        "success": { "topic": "TALK_ELF_FEARFUL", "opinion": { "trust": -4, "fear": 3, "value": -1, "anger": 4 } },
+        "failure": { "topic": "TALK_ELF_ANGRY", "opinion": { "trust": -4, "value": -5, "anger": 10 } }
+      },
+      { "text": "Goodbye.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "TALK_ELF_FRIENDLY",
+    "type": "talk_topic",
+    "dynamic_line": "...",
+    "responses": [
+      {
+        "text": "We can help each other out.",
+        "trial": { "type": "PERSUADE", "difficulty": 30, "mod": [ [ "value", 2 ] ] },
+        "success": { "topic": "TALK_AGREE_FOLLOW", "effect": "follow", "opinion": { "trust": 1, "value": 1 } },
+        "failure": { "topic": "TALK_DENY_FOLLOW", "effect": "deny_follow", "opinion": { "trust": -1, "fear": 1 } }
+      },
+      { "text": "We both go our separate ways. No trouble here.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "TALK_ELF_WARY",
+    "type": "talk_topic",
+    "dynamic_line": "..?",
+    "responses": [
+      {
+        "text": "...",
+        "trial": { "type": "PERSUADE", "difficulty": 30, "mod": [ [ "TRUST", 2 ], [ "VALUE", 2 ] ] },
+        "success": { "topic": "TALK_ELF_FRIENDLY", "opinion": { "trust": 1, "value": 1 } },
+        "failure": { "topic": "TALK_ELF_LEAVE" }
+      },
+      {
+        "text": "You look strong. Let's go.",
+        "trial": { "type": "INTIMIDATE", "difficulty": 30, "mod": [ [ "AGGRESSION", -2 ], [ "BRAVERY", -2 ] ] },
+        "success": { "topic": "TALK_ELF_FEARFUL", "opinion": { "trust": -4, "fear": 3, "value": -1, "anger": 4 } },
+        "failure": { "topic": "TALK_ELF_ANGRY", "opinion": { "trust": -4, "value": -5, "anger": 10 } }
+      },
+      { "text": "Forget it. No use to anybody.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "TALK_ELF_FEARFUL",
+    "type": "talk_topic",
+    "dynamic_line": "..!",
+    "responses": [
+      {
+        "text": "Last warning.",
+        "trial": { "type": "INTIMIDATE", "difficulty": 30, "mod": [ [ "VALUE", 2 ], [ "TRUST", 2 ], [ "BRAVERY", -2 ] ] },
+        "success": { "topic": "TALK_AGREE_FOLLOW", "effect": "follow", "opinion": { "trust": -4, "fear": 3, "value": -1, "anger": 4 } },
+        "failure": { "topic": "TALK_OPERATOR_ANGRY", "opinion": { "trust": 4, "value": -5, "anger": 10 } }
+      },
+      {
+        "text": "Get out of my sight.",
+        "topic": "TALK_DONE",
+        "effect": "flee",
+        "opinion": { "trust": -1, "fear": -2, "anger": -2 }
+      },
+      {
+        "text": "...",
+        "trial": { "type": "PERSUADE", "difficulty": 30 },
+        "success": { "topic": "TALK_DONE", "opinion": { "trust": 1, "value": 1, "anger": -1 } },
+        "failure": { "topic": "TALK_ELF_ANGRY", "opinion": { "trust": 4, "value": -5, "anger": 10 } }
+      }
+    ]
+  },
+  {
+    "id": "TALK_ELF_ANGRY",
+    "type": "talk_topic",
+    "dynamic_line": "...",
+    "responses": [
+      {
+        "text": "Alright, you asked for this.",
+        "trial": { "type": "INTIMIDATE", "difficulty": 20, "mod": [ [ "VALUE", 2 ], [ "TRUST", 2 ], [ "BRAVERY", -2 ] ] },
+        "success": { "topic": "TALK_DONE", "effect": "flee" },
+        "failure": { "topic": "TALK_DONE", "effect": "hostile" }
+      },
+      { "text": "Why shouldn't you?", "topic": "TALK_DONE", "effect": "hostile" },
+	  {
+        "text": "?!?!",
+        "trial": { "type": "LIE", "difficulty": 30 },
+        "success": { "topic": "TALK_AGREE_FOLLOW", "opinion": { "trust": 1, "value": 1, "anger": -1 } },
+        "failure": { "topic": "TALK_DONE", "effect": "hostile" }
+      },
+      {
+        "text": "....",
+        "trial": { "type": "PERSUADE", "difficulty": 30 },
+        "success": { "topic": "TALK_DONE", "opinion": { "trust": 1, "value": 1, "anger": -1 } },
+        "failure": { "topic": "TALK_DONE", "effect": "hostile" }
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_ELF_INTRO",
+    "dynamic_line": "...",
+    "responses": [
+      { "text": ".", "topic": "TALK_DONE" }
+    ]
   },
   {
     "type": "npc_class",
@@ -57,6 +198,16 @@
     ]
   },
   {
+    "type": "npc",
+    "id": "HACKER_SPELLS",
+    "name_suffix": "Survivor",
+    "class": "NC_HACKER_SPELLS",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_DONE",
+    "faction": "hells_raiders"
+  },
+  {
     "type": "npc_class",
     "id": "NC_DOCTOR_SPELLS",
     "name": { "str": "Doctor" },
@@ -78,6 +229,16 @@
     ]
   },
   {
+    "type": "npc",
+    "id": "DOCTOR_SPELLS",
+    "name_suffix": "Survivor",
+    "class": "NC_DOCTOR_SPELLS",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_DONE",
+    "faction": "hells_raiders"
+  },
+  {
     "type": "npc_class",
     "id": "NC_TRADER_SPELLS",
     "name": { "str": "Trader" },
@@ -92,6 +253,16 @@
     ],
     "bonus_int": { "one_in": 4 },
     "bonus_per": { "one_in": 4 }
+  },
+  {
+    "type": "npc",
+    "id": "TRADER_SPELLS",
+    "name_suffix": "Survivor",
+    "class": "NC_TRADER_SPELLS",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_DONE",
+    "faction": "hells_raiders"
   },
   {
     "type": "npc_class",
@@ -118,6 +289,16 @@
     ]
   },
   {
+    "type": "npc",
+    "id": "NINJA_SPELLS",
+    "name_suffix": "Survivor",
+    "class": "NC_NINJA_SPELLS",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_DONE",
+    "faction": "hells_raiders"
+  },
+  {
     "type": "npc_class",
     "id": "NC_COWBOY_SPELLS",
     "name": { "str": "Cowboy" },
@@ -142,75 +323,14 @@
     ]
   },
   {
-    "type": "npc_class",
-    "id": "NC_FARMER_SPELLS",
-    "name": { "str": "Farmer" },
-    "job_description": "I made things grow before, I bet I can do it again once things calm down.",
-    "traits": [
-      { "group": "BG_survival_story_RURAL" },
-      { "group": "trait_group_SPELLS", "prob": 50 },
-      { "group": "trait_group_SPELLS", "prob": 50 },
-      { "group": "trait_group_SPELLS", "prob": 50 },
-      { "group": "NPC_starting_traits" },
-      { "group": "Appearance_demographics" }
-    ],
-    "bonus_str": { "rng": [ 0, 1 ] },
-    "skills": [
-      { "skill": "ALL", "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "rng": [ 0, -4 ] } ] } ] } },
-      { "skill": "survival", "bonus": { "rng": [ 0, 2 ] } },
-      { "skill": "rifle", "bonus": { "rng": [ 0, 2 ] } }
-    ]
-  },
-  {
-    "type": "npc_class",
-    "id": "NC_MARLOSS_VOICE",
-    "name": { "str": "Marloss Voice" },
-    "job_description": "I spread the Hymns so that peace and unity return to our world.",
-    "traits": [
-      { "group": "BG_survival_story_RURAL" },
-      { "group": "NPC_starting_traits" },
-      { "group": "Appearance_demographics" },
-      [ "MARLOSS", 100 ],
-      [ "MARLOSS_BLUE", 40 ],
-      [ "MYCUS_FRIEND", 100 ],
-      [ "FLIMSY2", 100 ]
-    ],
-    "common": false,
-    "worn_override": "NC_VOICE_worn",
-    "carry_override": "NC_VOICE_carry",
-    "weapon_override": "NC_VOICE_weapon",
-    "bonus_str": { "rng": [ 0, 1 ] },
-    "bonus_int": { "rng": [ -2, 0 ] },
-    "bonus_per": { "rng": [ 0, 2 ] },
-    "skills": [
-      { "skill": "ALL", "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "rng": [ 0, -4 ] } ] } ] } },
-      { "skill": "dodge", "bonus": { "rng": [ 1, 3 ] } },
-      { "skill": "melee", "bonus": { "rng": [ 2, 4 ] } },
-      { "skill": "unarmed", "bonus": { "rng": [ 1, 3 ] } }
-    ]
-  },
-  {
-    "type": "npc_class",
-    "id": "NC_SCIENTIST_SPELLS",
-    "name": { "str": "Scientist" },
-    "job_description": "I'm looking for clues concerning these monsters' origins…",
-    "traits": [
-      { "group": "BG_survival_story_LAB" },
-      { "group": "trait_group_SPELLS", "prob": 50 },
-      { "group": "trait_group_SPELLS", "prob": 50 },
-      { "group": "trait_group_SPELLS", "prob": 50 },
-      { "group": "NPC_starting_traits" },
-      { "group": "Appearance_demographics" }
-    ],
-    "bonus_str": { "rng": [ -1, -3 ] },
-    "bonus_dex": { "rng": [ -1, 0 ] },
-    "bonus_int": { "rng": [ 2, 5 ] },
-    "skills": [
-      { "skill": "ALL", "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "constant": -4 } ] } ] } },
-      { "skill": "computer", "bonus": { "rng": [ 1, 5 ] } },
-      { "skill": "electronics", "bonus": { "rng": [ 1, 5 ] } },
-      { "skill": "firstaid", "bonus": { "rng": [ 1, 4 ] } }
-    ]
+    "type": "npc",
+    "id": "COWBOY_SPELLS",
+    "name_suffix": "Survivor",
+    "class": "NC_COWBOY_SPELLS",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_DONE",
+    "faction": "hells_raiders"
   },
   {
     "type": "npc_class",
@@ -230,6 +350,41 @@
       { "skill": "gun", "bonus": { "rng": [ 2, 4 ] } },
       { "skill": "pistol", "bonus": { "rng": [ 2, 4 ] } },
       { "skill": "rifle", "bonus": { "rng": [ 2, 4 ] } }
+    ]
+  },
+  {
+    "type": "npc",
+    "id": "BOUNTY_SPELLS",
+    "name_suffix": "Survivor",
+    "class": "NC_BOUNTY_HUNTER_SPELLS",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_DONE",
+    "faction": "hells_raiders"
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_THUG_SPELLS",
+    "name": { "str": "Thug" },
+    "job_description": "I'm just here for the paycheck.",
+    "traits": [
+      { "group": "BG_survival_story_CRIMINAL" },
+      { "group": "NPC_starting_traits" },
+      { "group": "trait_group_SPELLS", "prob": 50 },
+      { "group": "trait_group_SPELLS", "prob": 50 },
+      { "group": "trait_group_SPELLS", "prob": 50 },
+      { "group": "Appearance_demographics" }
+    ],
+    "bonus_str": { "rng": [ 2, 4 ] },
+    "bonus_dex": { "rng": [ 0, 2 ] },
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -4 } ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 2, 4 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "bashing", "bonus": { "rng": [ 1, 5 ] } },
+      { "skill": "stabbing", "bonus": { "rng": [ 1, 5 ] } },
+      { "skill": "cutting", "bonus": { "rng": [ 1, 5 ] } }
     ]
   },
   {
@@ -259,6 +414,139 @@
   },
   {
     "type": "npc_class",
+    "id": "NC_THUG_SPELLS3",
+    "name": { "str": "Thug" },
+    "job_description": "I'm just here for the paycheck.",
+    "traits": [
+      { "group": "BG_survival_story_CRIMINAL" },
+      { "group": "NPC_starting_traits" },
+      { "group": "trait_group_SPELLS", "prob": 50 },
+      { "group": "trait_group_SPELLS", "prob": 50 },
+      { "group": "trait_group_SPELLS", "prob": 50 },
+      { "group": "Appearance_demographics" }
+    ],
+    "bonus_str": { "rng": [ 2, 4 ] },
+    "bonus_dex": { "rng": [ 0, 2 ] },
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -4 } ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 2, 4 ] } },
+	  { "skill": "gun", "bonus": { "rng": [ 2, 4 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "bashing", "bonus": { "rng": [ 1, 5 ] } },
+      { "skill": "stabbing", "bonus": { "rng": [ 1, 5 ] } },
+      { "skill": "cutting", "bonus": { "rng": [ 1, 5 ] } }
+    ]
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_THUG_SPELLS4",
+    "name": { "str": "Thug" },
+    "job_description": "I'm just here for the paycheck.",
+    "traits": [
+      { "group": "BG_survival_story_CRIMINAL" },
+      { "group": "NPC_starting_traits" },
+      { "group": "trait_group_SPELLS", "prob": 50 },
+      { "group": "trait_group_SPELLS", "prob": 50 },
+      { "group": "trait_group_SPELLS", "prob": 50 },
+      { "group": "Appearance_demographics" }
+    ],
+    "bonus_str": { "rng": [ 2, 4 ] },
+    "bonus_dex": { "rng": [ 0, 2 ] },
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -4 } ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 2, 4 ] } },
+	  { "skill": "gun", "bonus": { "rng": [ 2, 4 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "bashing", "bonus": { "rng": [ 1, 5 ] } },
+      { "skill": "stabbing", "bonus": { "rng": [ 1, 5 ] } },
+      { "skill": "cutting", "bonus": { "rng": [ 1, 5 ] } }
+    ]
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_THUG_SPELLS5",
+    "name": { "str": "Thug" },
+    "job_description": "I'm just here for the paycheck.",
+    "traits": [
+      { "group": "BG_survival_story_CRIMINAL" },
+      { "group": "NPC_starting_traits" },
+      { "group": "trait_group_SPELLS", "prob": 50 },
+      { "group": "trait_group_SPELLS", "prob": 50 },
+      { "group": "trait_group_SPELLS", "prob": 50 },
+      { "group": "Appearance_demographics" }
+    ],
+    "bonus_str": { "rng": [ 2, 4 ] },
+    "bonus_dex": { "rng": [ 0, 2 ] },
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -4 } ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 2, 4 ] } },
+	  { "skill": "gun", "bonus": { "rng": [ 2, 4 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "bashing", "bonus": { "rng": [ 1, 5 ] } },
+      { "skill": "stabbing", "bonus": { "rng": [ 1, 5 ] } },
+      { "skill": "cutting", "bonus": { "rng": [ 1, 5 ] } }
+    ]
+  },
+  {
+    "type": "npc",
+    "id": "thug_spells1",
+    "//": "Generic melee focused guard for the Hell's Raiders faction.",
+    "name_suffix": "Thug",
+    "class": "NC_THUG_SPELLS",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_DONE",
+    "faction": "hells_raiders"
+  },
+  {
+    "type": "npc",
+    "id": "thug_spells2",
+    "//": "Generic melee focused guard for the Hell's Raiders faction.",
+    "name_suffix": "Thug",
+    "class": "NC_THUG_SPELLS2",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_DONE",
+    "faction": "hells_raiders"
+  },
+  {
+    "type": "npc",
+    "id": "thug_spells3",
+    "//": "Generic melee focused guard for the Hell's Raiders faction.",
+    "name_suffix": "Thug",
+    "class": "NC_THUG_SPELLS3",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_DONE",
+    "faction": "hells_raiders"
+  },
+  {
+    "type": "npc",
+    "id": "thug_spells4",
+    "//": "Generic melee focused guard for the Hell's Raiders faction.",
+    "name_suffix": "Thug",
+    "class": "NC_THUG_SPELLS4",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_DONE",
+    "faction": "hells_raiders"
+  },
+  {
+    "type": "npc",
+    "id": "thug_spells5",
+    "//": "Generic melee focused guard for the Hell's Raiders faction.",
+    "name_suffix": "Thug",
+    "class": "NC_THUG_SPELLS5",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_DONE",
+    "faction": "hells_raiders"
+  },
+  {
+    "type": "npc_class",
     "id": "NC_SCAVENGER_SPELLS2",
     "name": { "str": "Scavenger" },
     "job_description": "I'm just trying to survive.",
@@ -277,6 +565,16 @@
       { "skill": "rifle", "bonus": { "rng": [ 0, 3 ] } },
       { "skill": "archery", "bonus": { "rng": [ 0, 3 ] } }
     ]
+  },
+  {
+    "type": "npc",
+    "id": "SCAVENGER_SPELLS2",
+    "name_suffix": "Survivor",
+    "class": "NC_SCAVENGER_SPELLS2",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_DONE",
+    "faction": "hells_raiders"
   },
   {
     "type": "npc_class",
@@ -302,6 +600,17 @@
       { "skill": "archery", "bonus": { "rng": [ 2, 4 ] } },
       { "skill": "speech", "bonus": { "rng": [ 2, 5 ] } }
     ]
+  },
+  {
+    "type": "npc",
+    "id": "HUNTER_SPELLS",
+    "//": "Generic melee focused guard for the Hell's Raiders faction.",
+    "name_suffix": "Thug",
+    "class": "NC_HUNTER_SPELLS",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_DONE",
+    "faction": "hells_raiders"
   },
   {
     "type": "npc_class",
@@ -330,98 +639,37 @@
     ]
   },
   {
-    "type": "npc_class",
-    "id": "NC_BARTENDER_SPELLS",
-    "name": { "str": "Bartender" },
-    "job_description": "I'm looking for new drink recipes.",
-    "traits": [
-      { "group": "NPC_starting_traits" },
-      { "group": "trait_group_SPELLS", "prob": 50 },
-      { "group": "trait_group_SPELLS", "prob": 50 },
-      { "group": "trait_group_SPELLS", "prob": 50 },
-      { "group": "Appearance_demographics" }
-    ],
-    "common": false,
-    "bonus_per": { "one_in": 4 },
-    "shopkeeper_item_group": "NC_BARTENDER_misc",
-    "skills": [
-      {
-        "skill": "ALL",
-        "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "constant": -2 }, { "one_in": 4 } ] } ] }
-      },
-      { "skill": "speech", "bonus": { "rng": [ 2, 5 ] } }
-    ]
+    "type": "npc",
+    "id": "SOLDIER_SPELLS",
+    "//": "Generic melee focused guard for the Hell's Raiders faction.",
+    "name_suffix": "Thug",
+    "class": "NC_SOLDIER_SPELLS",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_DONE",
+    "faction": "hells_raiders"
   },
   {
-    "type": "npc_class",
-    "id": "NC_JUNK_SHOPKEEP_SPELLS",
-    "name": { "str": "Shopkeep" },
-    "job_description": "I'm a local shopkeeper.",
-    "traits": [
-      { "group": "NPC_starting_traits" },
-      { "group": "trait_group_SPELLS", "prob": 50 },
-      { "group": "trait_group_SPELLS", "prob": 50 },
-      { "group": "trait_group_SPELLS", "prob": 50 },
-      { "group": "Appearance_demographics" }
-    ],
-    "//": "This is a unique NPC who doesn't get randomly selected background traits",
-    "common": false,
-    "bonus_per": { "one_in": 4 },
-    "shopkeeper_item_group": "NC_JUNK_SHOPKEEP_misc",
-    "skills": [
-      {
-        "skill": "ALL",
-        "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "constant": -2 }, { "one_in": 4 } ] } ] }
-      },
-      { "skill": "speech", "bonus": { "rng": [ 2, 5 ] } }
-    ]
+    "type": "npc",
+    "id": "SOLDIER_SPELLS2",
+    "//": "Generic melee focused guard for the Hell's Raiders faction.",
+    "name_suffix": "Thug",
+    "class": "NC_SOLDIER_SPELLS",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_DONE",
+    "faction": "hells_raiders"
   },
   {
-    "type": "npc_class",
-    "id": "NC_APIS_SPELLS",
-    "name": { "str": "Apis" },
-    "job_description": "I'm bugged - I shouldn't talk to you.",
-    "common": false,
-    "bonus_dex": { "rng": [ 5, 10 ] },
-    "bonus_int": { "rng": [ -4, -8 ] },
-    "bonus_per": { "rng": [ 4, 8 ] },
-    "skills": [
-      { "skill": "dodge", "level": { "dice": [ 2, 2 ] } },
-      { "skill": "melee", "level": { "dice": [ 2, 2 ] } },
-      { "skill": "unarmed", "level": { "dice": [ 2, 2 ] } }
-    ],
-    "worn_override": "EMPTY_GROUP",
-    "carry_override": "EMPTY_GROUP",
-    "weapon_override": "EMPTY_GROUP",
-    "//": "NPCs can't run yet and we want this one to be fast, so road runner.",
-    "//2": "This is a unique NPC who doesn't get randomly selected background traits",
-    "traits": [
-      { "group": "trait_group_SPELLS", "prob": 50 },
-      { "group": "trait_group_SPELLS", "prob": 50 },
-      { "group": "trait_group_SPELLS", "prob": 50 },
-      [ "THRESH_INSECT", 100 ],
-      [ "BEE", 100 ],
-      [ "MANDIBLES", 100 ],
-      [ "TAIL_STING", 100 ],
-      [ "INSECT_ARMS_OK", 100 ],
-      [ "CHITIN3", 100 ],
-      [ "POISONOUS2", 100 ],
-      [ "PAINRESIST", 100 ],
-      [ "ADRENALINE", 100 ],
-      [ "FLEET2", 100 ],
-      [ "ANTENNAE", 100 ]
-    ]
-  },
-  {
-    "type": "npc_class",
-    "id": "NC_HALLU",
-    "name": { "str": "Real Person" },
-    "job_description": "I'm just wandering, like a totally real and normal NP… person!",
-    "traits": [ { "group": "BG_survival_story_UNIVERSAL" }, { "group": "NPC_starting_traits" }, [ "HALLUCINATION", 100 ] ],
-    "common": false,
-    "skills": [
-      { "skill": "ALL", "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 4, 2 ] }, { "rng": [ -4, -1 ] } ] } ] } }
-    ]
+    "type": "npc",
+    "id": "SOLDIER_SPELLS3",
+    "//": "Generic melee focused guard for the Hell's Raiders faction.",
+    "name_suffix": "Thug",
+    "class": "NC_SOLDIER_SPELLS",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_DONE",
+    "faction": "hells_raiders"
   },
   {
     "type": "npc_class",
@@ -447,6 +695,17 @@
     ]
   },
   {
+    "type": "npc",
+    "id": "CHEF_SPELLS",
+    "//": "Generic melee focused guard for the Hell's Raiders faction.",
+    "name_suffix": "Thug",
+    "class": "NC_SURVIVOR_CHEF_SPELLS",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_DONE",
+    "faction": "hells_raiders"
+  },
+  {
     "type": "npc_class",
     "id": "NC_TRUE_FOODPERSON_SPELLS",
     "name": { "str": "Foodperson" },
@@ -469,6 +728,17 @@
       { "skill": "speech", "bonus": { "rng": [ 1, 3 ] } },
       { "skill": "dodge", "bonus": { "rng": [ 3, 6 ] } }
     ]
+  },
+  {
+    "type": "npc",
+    "id": "NC_TRUE_FOODPERSON_SPELLS",
+    "//": "Generic melee focused guard for the Hell's Raiders faction.",
+    "name_suffix": "Thug",
+    "class": "NC_TRUE_FOODPERSON_SPELLS",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_DONE",
+    "faction": "hells_raiders"
   },
   {
     "type": "npc_class",
@@ -521,6 +791,17 @@
     ]
   },
   {
+    "type": "npc",
+    "id": "NC_CYBORG_SPELLS",
+    "//": "Generic melee focused guard for the Hell's Raiders faction.",
+    "name_suffix": "Thug",
+    "class": "NC_CYBORG_SPELLS",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_DONE",
+    "faction": "hells_raiders"
+  },
+  {
     "type": "npc_class",
     "id": "NC_CITY_COP_SPELLS",
     "name": { "str": "Former Cop" },
@@ -548,30 +829,15 @@
     ]
   },
   {
-    "type": "npc_class",
-    "//": "These are here to workaround the bug of NPCs spawning without weapons due to either marksmanship or melee being their highest skill, and thus not knowing what weapon to give them.",
-    "id": "NC_THUG_SPELLS",
-    "name": "Thug",
-    "job_description": "I'm just here for the paycheck.",
-    "traits": [
-      { "group": "BG_survival_story_CRIMINAL" },
-      { "group": "NPC_starting_traits" },
-      { "group": "trait_group_SPELLS", "prob": 50 },
-      { "group": "trait_group_SPELLS", "prob": 50 },
-      { "group": "trait_group_SPELLS", "prob": 50 },
-      { "group": "Appearance_demographics" }
-    ],
-    "bonus_str": { "rng": [ 2, 4 ] },
-    "bonus_dex": { "rng": [ 0, 2 ] },
-    "skills": [
-      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -4 } ] } },
-      { "skill": "melee", "bonus": 2 },
-      { "skill": "dodge", "bonus": { "rng": [ 1, 3 ] } },
-      { "skill": "unarmed", "bonus": { "rng": [ 1, 3 ] } },
-      { "skill": "bashing", "bonus": { "rng": [ 2, 5 ] } },
-      { "skill": "stabbing", "bonus": { "rng": [ 2, 5 ] } },
-      { "skill": "cutting", "bonus": { "rng": [ 2, 5 ] } }
-    ]
+    "type": "npc",
+    "id": "NC_CITY_COP_SPELLS",
+    "//": "Generic melee focused guard for the Hell's Raiders faction.",
+    "name_suffix": "Thug",
+    "class": "NC_CITY_COP_SPELLS",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_DONE",
+    "faction": "hells_raiders"
   },
   {
     "type": "npc_class",
@@ -596,29 +862,15 @@
     ]
   },
   {
-    "type": "npc_class",
-    "id": "NC_SOLDIER_SPELLS2",
-    "name": "Soldier",
-    "job_description": "I'm just here for the paycheck.",
-    "traits": [
-      { "group": "BG_survival_story_SOLDIER" },
-      { "group": "trait_group_SPELLS", "prob": 50 },
-      { "group": "trait_group_SPELLS", "prob": 50 },
-      { "group": "trait_group_SPELLS", "prob": 50 },
-      { "group": "NPC_starting_traits" },
-      { "group": "Appearance_demographics" }
-    ],
-    "bonus_str": { "rng": [ 0, 2 ] },
-    "bonus_dex": { "one_in": 2 },
-    "bonus_int": { "rng": [ 0, -2 ] },
-    "skills": [
-      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -3 } ] } },
-      { "skill": "gun", "bonus": 3 },
-      { "skill": "dodge", "bonus": { "rng": [ 1, 2 ] } },
-      { "skill": "melee", "bonus": { "rng": [ 1, 2 ] } },
-      { "skill": "unarmed", "bonus": { "rng": [ 1, 2 ] } },
-      { "skill": "rifle", "bonus": { "rng": [ 4, 6 ] } }
-    ]
+    "type": "npc",
+    "id": "NC_SCAVENGER_SPELLS",
+    "//": "Generic melee focused guard for the Hell's Raiders faction.",
+    "name_suffix": "Thug",
+    "class": "NC_SCAVENGER_SPELLS",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_DONE",
+    "faction": "hells_raiders"
   },
   {
     "type": "npc_class",
@@ -643,6 +895,17 @@
     ]
   },
   {
+    "type": "npc",
+    "id": "NC_NPC_MUTANT_LIZARD_SPELLS",
+    "//": "Generic melee focused guard for the Hell's Raiders faction.",
+    "name_suffix": "Thug",
+    "class": "NC_NPC_MUTANT_LIZARD_SPELLS",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_DONE",
+    "faction": "hells_raiders"
+  },
+  {
     "type": "npc_class",
     "id": "NC_NPC_MUTANT_RABBIT_SPELLS",
     "name": "Rabbit Mutant",
@@ -663,6 +926,17 @@
       { "group": "trait_group_rabbit" },
       { "distribution": [ { "group": "trait_group_rabbit_nonthres" }, { "group": "trait_group_rabbit_postthres" } ] }
     ]
+  },
+  {
+    "type": "npc",
+    "id": "NC_NPC_MUTANT_RABBIT_SPELLS",
+    "//": "Generic melee focused guard for the Hell's Raiders faction.",
+    "name_suffix": "Thug",
+    "class": "NC_NPC_MUTANT_RABBIT_SPELLS",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_DONE",
+    "faction": "hells_raiders"
   },
   {
     "type": "npc_class",
@@ -689,6 +963,17 @@
     ]
   },
   {
+    "type": "npc",
+    "id": "NC_NPC_MUTANT_SNAIL_SPELLS",
+    "//": "Generic melee focused guard for the Hell's Raiders faction.",
+    "name_suffix": "Thug",
+    "class": "NC_NPC_MUTANT_SNAIL_SPELLS",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_DONE",
+    "faction": "hells_raiders"
+  },
+  {
     "type": "npc_class",
     "id": "NC_NPC_MUTANT_FROG_SPELLS",
     "name": "Frog Mutant",
@@ -709,6 +994,17 @@
       { "group": "trait_group_frog" },
       { "distribution": [ { "group": "trait_group_frog_nonthres" }, { "group": "trait_group_frog_postthres" } ] }
     ]
+  },
+  {
+    "type": "npc",
+    "id": "NC_NPC_MUTANT_FROG_SPELLS",
+    "//": "Generic melee focused guard for the Hell's Raiders faction.",
+    "name_suffix": "Thug",
+    "class": "NC_NPC_MUTANT_FROG_SPELLS",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_DONE",
+    "faction": "hells_raiders"
   },
   {
     "type": "npc_class",
@@ -733,6 +1029,17 @@
     ]
   },
   {
+    "type": "npc",
+    "id": "NC_NPC_MUTANT_MEDICAL_SPELLS",
+    "//": "Generic melee focused guard for the Hell's Raiders faction.",
+    "name_suffix": "Thug",
+    "class": "NC_NPC_MUTANT_MEDICAL_SPELLS",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_DONE",
+    "faction": "hells_raiders"
+  },
+  {
     "type": "npc_class",
     "id": "NC_NPC_MUTANT_BIRD_SPELLS",
     "name": "Bird Mutant",
@@ -753,6 +1060,17 @@
       { "group": "trait_group_bird" },
       { "distribution": [ { "group": "trait_group_bird_nonthres" }, { "group": "trait_group_bird_postthres" } ] }
     ]
+  },
+  {
+    "type": "npc",
+    "id": "NC_NPC_MUTANT_BIRD_SPELLS",
+    "//": "Generic melee focused guard for the Hell's Raiders faction.",
+    "name_suffix": "Thug",
+    "class": "NC_NPC_MUTANT_BIRD_SPELLS",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_DONE",
+    "faction": "hells_raiders"
   },
   {
     "type": "npc_class",
@@ -777,6 +1095,17 @@
     ]
   },
   {
+    "type": "npc",
+    "id": "NC_NPC_MUTANT_FISH_SPELLS",
+    "//": "Generic melee focused guard for the Hell's Raiders faction.",
+    "name_suffix": "Thug",
+    "class": "NC_NPC_MUTANT_FISH_SPELLS",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_DONE",
+    "faction": "hells_raiders"
+  },
+  {
     "type": "npc_class",
     "id": "NC_NPC_MUTANT_BEAST_SPELLS",
     "name": "Beast Mutant",
@@ -796,6 +1125,17 @@
       { "group": "trait_group_beast" },
       { "distribution": [ { "group": "trait_group_beast_nonthres" }, { "group": "trait_group_beast_postthres" } ] }
     ]
+  },
+  {
+    "type": "npc",
+    "id": "NC_NPC_MUTANT_BEAST_SPELLS",
+    "//": "Generic melee focused guard for the Hell's Raiders faction.",
+    "name_suffix": "Thug",
+    "class": "NC_NPC_MUTANT_BEAST_SPELLS",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_DONE",
+    "faction": "hells_raiders"
   },
   {
     "type": "npc_class",
@@ -819,6 +1159,17 @@
     ]
   },
   {
+    "type": "npc",
+    "id": "NC_NPC_MUTANT_URSINE_SPELLS",
+    "//": "Generic melee focused guard for the Hell's Raiders faction.",
+    "name_suffix": "Thug",
+    "class": "NC_NPC_MUTANT_URSINE_SPELLS",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_DONE",
+    "faction": "hells_raiders"
+  },
+  {
     "type": "npc_class",
     "id": "NC_NPC_MUTANT_FELINE_SPELLS",
     "name": "Feline Mutant",
@@ -838,6 +1189,17 @@
       { "group": "trait_group_feline" },
       { "distribution": [ { "group": "trait_group_feline_nonthres" }, { "group": "trait_group_feline_postthres" } ] }
     ]
+  },
+  {
+    "type": "npc",
+    "id": "NC_NPC_MUTANT_FELINE_SPELLS",
+    "//": "Generic melee focused guard for the Hell's Raiders faction.",
+    "name_suffix": "Thug",
+    "class": "NC_NPC_MUTANT_FELINE_SPELLS",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_DONE",
+    "faction": "hells_raiders"
   },
   {
     "type": "npc_class",
@@ -861,6 +1223,17 @@
     ]
   },
   {
+    "type": "npc",
+    "id": "NC_NPC_MUTANT_LUPINE_SPELLS",
+    "//": "Generic melee focused guard for the Hell's Raiders faction.",
+    "name_suffix": "Thug",
+    "class": "NC_NPC_MUTANT_LUPINE_SPELLS",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_DONE",
+    "faction": "hells_raiders"
+  },
+  {
     "type": "npc_class",
     "id": "NC_NPC_MUTANT_CATTLE_SPELLS",
     "name": "Cattle Mutant",
@@ -880,6 +1253,17 @@
       { "group": "trait_group_cattle" },
       { "distribution": [ { "group": "trait_group_cattle_nonthres" }, { "group": "trait_group_cattle_postthres" } ] }
     ]
+  },
+  {
+    "type": "npc",
+    "id": "NC_NPC_MUTANT_CATTLE_SPELLS",
+    "//": "Generic melee focused guard for the Hell's Raiders faction.",
+    "name_suffix": "Thug",
+    "class": "NC_NPC_MUTANT_CATTLE_SPELLS",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_DONE",
+    "faction": "hells_raiders"
   },
   {
     "type": "npc_class",
@@ -904,6 +1288,17 @@
     ]
   },
   {
+    "type": "npc",
+    "id": "NC_NPC_MUTANT_INSECT_SPELLS",
+    "//": "Generic melee focused guard for the Hell's Raiders faction.",
+    "name_suffix": "Thug",
+    "class": "NC_NPC_MUTANT_INSECT_SPELLS",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_DONE",
+    "faction": "hells_raiders"
+  },
+  {
     "type": "npc_class",
     "id": "NC_NPC_MUTANT_PLANT_SPELLS",
     "name": "Plant Mutant",
@@ -923,6 +1318,17 @@
       { "group": "trait_group_plant" },
       { "distribution": [ { "group": "trait_group_plant_nonthres" }, { "group": "trait_group_plant_postthres" } ] }
     ]
+  },
+  {
+    "type": "npc",
+    "id": "NC_NPC_MUTANT_PLANT_SPELLS",
+    "//": "Generic melee focused guard for the Hell's Raiders faction.",
+    "name_suffix": "Thug",
+    "class": "NC_NPC_MUTANT_PLANT_SPELLS",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_DONE",
+    "faction": "hells_raiders"
   },
   {
     "type": "npc_class",
@@ -949,6 +1355,17 @@
     ]
   },
   {
+    "type": "npc",
+    "id": "NC_NPC_MUTANT_SLIME_SPELLS",
+    "//": "Generic melee focused guard for the Hell's Raiders faction.",
+    "name_suffix": "Thug",
+    "class": "NC_NPC_MUTANT_SLIME_SPELLS",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_DONE",
+    "faction": "hells_raiders"
+  },
+  {
     "type": "npc_class",
     "id": "NC_NPC_MUTANT_TROGLOBITE_SPELLS",
     "name": "Troglobite Mutant",
@@ -971,6 +1388,17 @@
         "distribution": [ { "group": "trait_group_troglobite_nonthres" }, { "group": "trait_group_troglobite_postthres" } ]
       }
     ]
+  },
+  {
+    "type": "npc",
+    "id": "NC_NPC_MUTANT_TROGLOBITE_SPELLS",
+    "//": "Generic melee focused guard for the Hell's Raiders faction.",
+    "name_suffix": "Thug",
+    "class": "NC_NPC_MUTANT_TROGLOBITE_SPELLS",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_DONE",
+    "faction": "hells_raiders"
   },
   {
     "type": "npc_class",
@@ -998,6 +1426,17 @@
     ]
   },
   {
+    "type": "npc",
+    "id": "NC_NPC_MUTANT_CEPHALOPOD_SPELLS",
+    "//": "Generic melee focused guard for the Hell's Raiders faction.",
+    "name_suffix": "Thug",
+    "class": "NC_NPC_MUTANT_CEPHALOPOD_SPELLS",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_DONE",
+    "faction": "hells_raiders"
+  },
+  {
     "type": "npc_class",
     "id": "NC_NPC_MUTANT_SPIDER_SPELLS",
     "name": "Spider Mutant",
@@ -1017,6 +1456,17 @@
       { "group": "trait_group_spider" },
       { "distribution": [ { "group": "trait_group_spider_nonthres" }, { "group": "trait_group_spider_postthres" } ] }
     ]
+  },
+  {
+    "type": "npc",
+    "id": "NC_NPC_MUTANT_SPIDER_SPELLS",
+    "//": "Generic melee focused guard for the Hell's Raiders faction.",
+    "name_suffix": "Thug",
+    "class": "NC_NPC_MUTANT_SPIDER_SPELLS",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_DONE",
+    "faction": "hells_raiders"
   },
   {
     "type": "npc_class",
@@ -1039,6 +1489,17 @@
     ]
   },
   {
+    "type": "npc",
+    "id": "NC_NPC_MUTANT_RAT_SPELLS",
+    "//": "Generic melee focused guard for the Hell's Raiders faction.",
+    "name_suffix": "Thug",
+    "class": "NC_NPC_MUTANT_RAT_SPELLS",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_DONE",
+    "faction": "hells_raiders"
+  },
+  {
     "type": "npc_class",
     "id": "NC_NPC_MUTANT_MOUSE_SPELLS",
     "name": "Mouse Mutant",
@@ -1058,6 +1519,17 @@
       { "group": "trait_group_mouse" },
       { "distribution": [ { "group": "trait_group_mouse_nonthres" }, { "group": "trait_group_mouse_postthres" } ] }
     ]
+  },
+  {
+    "type": "npc",
+    "id": "NC_NPC_MUTANT_MOUSE_SPELLS",
+    "//": "Generic melee focused guard for the Hell's Raiders faction.",
+    "name_suffix": "Thug",
+    "class": "NC_NPC_MUTANT_MOUSE_SPELLS",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_DONE",
+    "faction": "hells_raiders"
   },
   {
     "type": "npc_class",
@@ -1084,6 +1556,17 @@
     ]
   },
   {
+    "type": "npc",
+    "id": "NC_NPC_MUTANT_ALPHA_SPELLS",
+    "//": "Generic melee focused guard for the Hell's Raiders faction.",
+    "name_suffix": "Thug",
+    "class": "NC_NPC_MUTANT_ALPHA_SPELLS",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_DONE",
+    "faction": "hells_raiders"
+  },
+  {
     "type": "npc_class",
     "id": "NC_NPC_MUTANT_ELFA_SPELLS",
     "name": "Elf-A Mutant",
@@ -1106,6 +1589,17 @@
       { "group": "trait_group_elfa" },
       { "distribution": [ { "group": "trait_group_elfa_nonthres" }, { "group": "trait_group_elfa_postthres" } ] }
     ]
+  },
+  {
+    "type": "npc",
+    "id": "NC_NPC_MUTANT_ELFA_SPELLS",
+    "//": "Generic melee focused guard for the Hell's Raiders faction.",
+    "name_suffix": "Thug",
+    "class": "NC_NPC_MUTANT_ELFA_SPELLS",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_DONE",
+    "faction": "hells_raiders"
   },
   {
     "type": "npc_class",
@@ -1133,6 +1627,17 @@
     ]
   },
   {
+    "type": "npc",
+    "id": "NC_NPC_MUTANT_CHIMERA_SPELLS",
+    "//": "Generic melee focused guard for the Hell's Raiders faction.",
+    "name_suffix": "Thug",
+    "class": "NC_NPC_MUTANT_CHIMERA_SPELLS",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_DONE",
+    "faction": "hells_raiders"
+  },
+  {
     "type": "npc_class",
     "id": "NC_NPC_MUTANT_RAPTOR_SPELLS",
     "name": "Raptor Mutant",
@@ -1156,5 +1661,16 @@
       { "group": "trait_group_raptor" },
       { "distribution": [ { "group": "trait_group_raptor_nonthres" }, { "group": "trait_group_raptor_postthres" } ] }
     ]
+  },
+  {
+    "type": "npc",
+    "id": "NC_NPC_MUTANT_RAPTOR_SPELLS",
+    "//": "Generic melee focused guard for the Hell's Raiders faction.",
+    "name_suffix": "Thug",
+    "class": "NC_NPC_MUTANT_RAPTOR_SPELLS",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_DONE",
+    "faction": "hells_raiders"
   }
 ]

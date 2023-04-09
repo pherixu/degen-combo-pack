@@ -1,0 +1,2454 @@
+[
+  {
+    "id": "spirit_1",
+    "type": "TOOL_ARMOR",
+    "name": { "str": "spirit chain - first order" },
+    "description": "A layer of chains magically laid over your spirit that adept mages manipulate to make themselves stronger. It is of the first and lowest order.",
+    "weight": "1 g",
+    "volume": "1 ml",
+    "price": 50000,
+    "bashing": 1,
+    "cutting": 1,
+    "material": [ "aether" ],
+    "symbol": "O",
+    "color": "white",
+    "pocket_data": [
+      {
+        "rigid": true,
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "1000 L",
+        "max_contains_weight": "1000 kg",
+        "moves": 100000,
+        "max_item_length": "2 km",
+		"item_restriction": [
+          "spirit_int",
+		  "spirit_str", 
+		  "spirit_dex", 
+		  "spirit_per", 
+		  "spirit_speed", 
+		  "spirit_carry",
+		  "spirit_atk_speed", 
+		  "spirit_stamina", 
+		  "spirit_max_mana", 
+		  "spirit_regen_mana", 
+		  "spirit_fatigue", 
+		  "spirit_hp", 		  
+		  "spirit_fall", 
+		  "spirit_fire_armor", 
+		  "spirit_cold_armor", 
+		  "spirit_acid_armor", 
+		  "spirit_bio_armor", 
+		  "spirit_elec_armor",
+		  "spirit_bullet_armor",
+		  "spirit_bash_armor", 
+		  "spirit_cut_armor", 
+		  "spirit_stab_armor", 
+		  "spirit_elec_armor",  
+		  "spirit_reading", 
+		  "spirit_focus", 
+		  "spirit_footstep_noise", 
+		  "spirit_bionic", 
+		  "spirit_block", 
+		  "spirit_dodge", 
+		  "spirit_climate", 
+		  "spirit_climate_chill", 
+		  "spirit_climate_heat", 
+		  "spirit_dispersion", 
+		  "spirit_recoil", 
+		  "spirit_rust_resist", 
+		  "spirit_intimidate", 
+		  "spirit_persuade", 
+		  "spirit_lying", 
+		  "spirit_pain", 
+		  "spirit_regen_hp", 
+		  "spirit_regen_stamina", 
+		  "spirit_hunger", 
+		  "spirit_thirst", 
+		  "spirit_attack_noise",
+		  "spirit_heat", 
+		  "spirit_cold", 
+		  "spirit_acid", 
+		  "spirit_elec", 
+		  "spirit_cut", 
+		  "spirit_stab", 
+		  "spirit_bash"
+        ],
+        "weight_multiplier": 0.0
+      }
+    ],
+	"armor": [
+    {
+      "encumbrance": 3,
+      "covers": [
+        "foot_l", "foot_r"
+		]
+    }
+	],
+    "flags": [ "TRADER_AVOID", "TARDIS", "SEMITANGIBLE", "NO_TAKEOFF", "AURA", "ONLY_ONE", "ZERO_WEIGHT" ]
+  },
+  {
+    "id": "cursed_spirit_1",
+    "type": "TOOL_ARMOR",
+    "name": { "str": "cursed spirit chain" },
+    "description": "A layer of chains magically laid over your spirit that adept mages manipulate to make themselves stronger. It is of the first and lowest order. Wearing this one would be like searing your inner eye.",
+    "weight": "1 g",
+    "volume": "1 ml",
+    "price": 50000,
+    "bashing": 1,
+    "cutting": 1,
+    "material": [ "aether" ],
+    "symbol": "O",
+    "color": "white",
+	"relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "mutations": [ "PSYCHOPATH" ]
+        }
+      ]
+    },
+    "pocket_data": [
+      {
+        "rigid": true,
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "1000 L",
+        "max_contains_weight": "1000 kg",
+        "moves": 100000,
+        "max_item_length": "2 km",
+		"item_restriction": [
+          "spirit_int",
+		  "spirit_str", 
+		  "spirit_dex", 
+		  "spirit_per", 
+		  "spirit_speed", 
+		  "spirit_carry",
+		  "spirit_atk_speed", 
+		  "spirit_stamina", 
+		  "spirit_max_mana", 
+		  "spirit_regen_mana", 
+		  "spirit_fatigue", 
+		  "spirit_hp", 		  
+		  "spirit_fall", 
+		  "spirit_fire_armor", 
+		  "spirit_cold_armor", 
+		  "spirit_acid_armor", 
+		  "spirit_bio_armor", 
+		  "spirit_elec_armor",
+		  "spirit_bullet_armor",
+		  "spirit_bash_armor", 
+		  "spirit_cut_armor", 
+		  "spirit_stab_armor", 
+		  "spirit_elec_armor",  
+		  "spirit_reading", 
+		  "spirit_focus", 
+		  "spirit_footstep_noise", 
+		  "spirit_bionic", 
+		  "spirit_block", 
+		  "spirit_dodge", 
+		  "spirit_climate", 
+		  "spirit_climate_chill", 
+		  "spirit_climate_heat", 
+		  "spirit_dispersion", 
+		  "spirit_recoil", 
+		  "spirit_rust_resist", 
+		  "spirit_intimidate", 
+		  "spirit_persuade", 
+		  "spirit_lying", 
+		  "spirit_pain", 
+		  "spirit_regen_hp", 
+		  "spirit_regen_stamina", 
+		  "spirit_hunger", 
+		  "spirit_thirst", 
+		  "spirit_attack_noise",
+		  "spirit_heat", 
+		  "spirit_cold", 
+		  "spirit_acid", 
+		  "spirit_elec", 
+		  "spirit_cut", 
+		  "spirit_stab", 
+		  "spirit_bash",
+		  "spirit_biological",
+		  "spirit_bullet",
+		  "cursed_spirit_heat",
+		  "cursed_spirit_cold", 
+		  "cursed_spirit_acid", 
+		  "cursed_spirit_biological", 
+		  "cursed_spirit_electrical", 
+		  "cursed_spirit_bash", 
+		  "cursed_spirit_cut", 
+		  "cursed_spirit_stab", 
+		  "cursed_spirit_bullet"
+        ],
+        "weight_multiplier": 0.0
+      }
+    ],
+	"armor": [
+    {
+      "encumbrance": 3,
+      "covers": [
+        "foot_l", "foot_r"
+      ]
+    }
+	],
+    "flags": [ "TRADER_AVOID", "TARDIS", "SEMITANGIBLE", "NO_TAKEOFF", "AURA", "ONLY_ONE", "ZERO_WEIGHT" ]
+  },
+  {
+    "id": "cursed_spirit_2",
+    "type": "TOOL_ARMOR",
+    "name": { "str": "unquenchable spirit chain" },
+    "description": "A layer of chains magically laid over your spirit that adept mages manipulate to make themselves stronger. It is of the first and lowest order. Wearing this one would be like dropping a great stone into a small pool.",
+    "weight": "1 g",
+    "volume": "1 ml",
+    "price": 50000,
+    "bashing": 1,
+    "cutting": 1,
+    "material": [ "aether" ],
+    "symbol": "O",
+    "color": "white",
+	"relic_data": {
+      "passive_effects": [ 
+	  { "has": "HELD", "condition": "ALWAYS", "values": [ { "value": "REGEN_MANA", "multiply": -10.00  } ] } ]
+    },
+    "pocket_data": [
+      {
+        "rigid": true,
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "1000 L",
+        "max_contains_weight": "1000 kg",
+        "moves": 100000,
+        "max_item_length": "2 km",
+		"item_restriction": [
+          "spirit_int",
+		  "spirit_str", 
+		  "spirit_dex", 
+		  "spirit_per", 
+		  "spirit_speed", 
+		  "spirit_carry",
+		  "spirit_atk_speed", 
+		  "spirit_stamina", 
+		  "spirit_max_mana", 
+		  "spirit_regen_mana", 
+		  "spirit_fatigue", 
+		  "spirit_hp", 		  
+		  "spirit_fall",  
+		  "spirit_fire_armor", 
+		  "spirit_cold_armor", 
+		  "spirit_acid_armor", 
+		  "spirit_bio_armor", 
+		  "spirit_elec_armor",
+		  "spirit_bullet_armor",
+		  "spirit_bash_armor", 
+		  "spirit_cut_armor", 
+		  "spirit_stab_armor", 
+		  "spirit_elec_armor",  
+		  "spirit_reading", 
+		  "spirit_focus", 
+		  "spirit_footstep_noise", 
+		  "spirit_bionic", 
+		  "spirit_block", 
+		  "spirit_dodge", 
+		  "spirit_climate", 
+		  "spirit_climate_chill", 
+		  "spirit_climate_heat", 
+		  "spirit_dispersion", 
+		  "spirit_recoil", 
+		  "spirit_rust_resist", 
+		  "spirit_intimidate", 
+		  "spirit_persuade", 
+		  "spirit_lying", 
+		  "spirit_pain", 
+		  "spirit_regen_hp", 
+		  "spirit_regen_stamina", 
+		  "spirit_hunger", 
+		  "spirit_thirst", 
+		  "spirit_attack_noise",
+		  "spirit_heat", 
+		  "spirit_cold", 
+		  "spirit_acid", 
+		  "spirit_elec", 
+		  "spirit_cut", 
+		  "spirit_stab", 
+		  "spirit_bash",
+		  "spirit_biological", 
+		  "spirit_bullet",
+		  "cursed_spirit_heat",
+		  "cursed_spirit_cold", 
+		  "cursed_spirit_acid", 
+		  "cursed_spirit_biological", 
+		  "cursed_spirit_electrical", 
+		  "cursed_spirit_bash", 
+		  "cursed_spirit_cut", 
+		  "cursed_spirit_stab", 
+		  "cursed_spirit_bullet"
+        ],
+        "weight_multiplier": 0.0
+      },
+	  {
+        "rigid": true,
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "1000 L",
+        "max_contains_weight": "1000 kg",
+        "moves": 100000,
+        "max_item_length": "2 km",
+		"item_restriction": [
+          "spirit_int",
+		  "spirit_str", 
+		  "spirit_dex", 
+		  "spirit_per", 
+		  "spirit_speed", 
+		  "spirit_carry",
+		  "spirit_atk_speed", 
+		  "spirit_stamina", 
+		  "spirit_max_mana", 
+		  "spirit_regen_mana", 
+		  "spirit_fatigue", 
+		  "spirit_hp", 		  
+		  "spirit_fall", 
+		  "spirit_fire_armor", 
+		  "spirit_cold_armor", 
+		  "spirit_acid_armor", 
+		  "spirit_bio_armor", 
+		  "spirit_elec_armor",
+		  "spirit_bullet_armor",
+		  "spirit_bash_armor", 
+		  "spirit_cut_armor", 
+		  "spirit_stab_armor", 
+		  "spirit_elec_armor",  
+		  "spirit_reading", 
+		  "spirit_focus", 
+		  "spirit_footstep_noise", 
+		  "spirit_bionic", 
+		  "spirit_block", 
+		  "spirit_dodge", 
+		  "spirit_climate", 
+		  "spirit_climate_chill", 
+		  "spirit_climate_heat", 
+		  "spirit_dispersion", 
+		  "spirit_recoil", 
+		  "spirit_rust_resist", 
+		  "spirit_intimidate", 
+		  "spirit_persuade", 
+		  "spirit_lying", 
+		  "spirit_pain", 
+		  "spirit_regen_hp", 
+		  "spirit_regen_stamina", 
+		  "spirit_hunger", 
+		  "spirit_thirst", 
+		  "spirit_attack_noise",
+		  "spirit_heat", 
+		  "spirit_cold", 
+		  "spirit_acid", 
+		  "spirit_elec", 
+		  "spirit_cut", 
+		  "spirit_stab", 
+		  "spirit_bash",
+		  "spirit_biological", 
+		  "spirit_bullet",
+		  "cursed_spirit_heat",
+		  "cursed_spirit_cold", 
+		  "cursed_spirit_acid", 
+		  "cursed_spirit_biological", 
+		  "cursed_spirit_electrical", 
+		  "cursed_spirit_bash", 
+		  "cursed_spirit_cut", 
+		  "cursed_spirit_stab", 
+		  "cursed_spirit_bullet"
+        ],
+        "weight_multiplier": 0.0
+      }
+    ],
+	"armor": [
+    {
+      "encumbrance": 7,
+      "covers": [
+        "torso"
+      ]
+    }
+	],
+    "flags": [ "TRADER_AVOID", "TARDIS", "SEMITANGIBLE", "NO_TAKEOFF", "AURA", "ONLY_ONE", "ZERO_WEIGHT" ]
+  },
+  {
+    "id": "cursed_spirit_3",
+    "type": "TOOL_ARMOR",
+    "name": { "str": "tyrannical spirit chain" },
+    "description": "A layer of chains magically laid over your spirit that adept mages manipulate to make themselves stronger. It is of the first and lowest order. Wearing this one be like giving up on your self.",
+    "weight": "1 g",
+    "volume": "1 ml",
+    "price": 50000,
+    "bashing": 1,
+    "cutting": 1,
+    "material": [ "aether" ],
+    "symbol": "O",
+    "color": "white",
+	"relic_data": {
+      "passive_effects": [ 
+	  { "has": "HELD", "condition": "ALWAYS", "values": [ { "value": "REGEN_STAMINA", "multiply": -0.3  }, { "value": "FATIGUE", "multiply": 0.5  }, { "value": "REGEN_HP", "multiply": -1.0  } ] } ]
+    },
+    "pocket_data": [
+      {
+        "rigid": true,
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "1000 L",
+        "max_contains_weight": "1000 kg",
+        "moves": 100000,
+        "max_item_length": "2 km",
+		"item_restriction": [
+          "spirit_int",
+		  "spirit_str", 
+		  "spirit_dex", 
+		  "spirit_per", 
+		  "spirit_speed", 
+		  "spirit_carry",
+		  "spirit_atk_speed", 
+		  "spirit_stamina", 
+		  "spirit_max_mana", 
+		  "spirit_regen_mana", 
+		  "spirit_fatigue", 
+		  "spirit_hp", 		  
+		  "spirit_fall", 
+		  "spirit_fire_armor", 
+		  "spirit_cold_armor", 
+		  "spirit_acid_armor", 
+		  "spirit_bio_armor", 
+		  "spirit_elec_armor",
+		  "spirit_bullet_armor",
+		  "spirit_bash_armor", 
+		  "spirit_cut_armor", 
+		  "spirit_stab_armor", 
+		  "spirit_elec_armor",  
+		  "spirit_reading", 
+		  "spirit_focus", 
+		  "spirit_footstep_noise", 
+		  "spirit_bionic", 
+		  "spirit_block", 
+		  "spirit_dodge", 
+		  "spirit_climate", 
+		  "spirit_climate_chill", 
+		  "spirit_climate_heat", 
+		  "spirit_dispersion", 
+		  "spirit_recoil", 
+		  "spirit_rust_resist", 
+		  "spirit_intimidate", 
+		  "spirit_persuade", 
+		  "spirit_lying", 
+		  "spirit_pain", 
+		  "spirit_regen_hp", 
+		  "spirit_regen_stamina", 
+		  "spirit_hunger", 
+		  "spirit_thirst", 
+		  "spirit_attack_noise",
+		  "spirit_heat", 
+		  "spirit_cold", 
+		  "spirit_acid", 
+		  "spirit_elec", 
+		  "spirit_cut", 
+		  "spirit_stab", 
+		  "spirit_bash",
+		  "spirit_biological", 
+		  "spirit_bullet",
+		  "cursed_spirit_heat",
+		  "cursed_spirit_cold", 
+		  "cursed_spirit_acid", 
+		  "cursed_spirit_biological", 
+		  "cursed_spirit_electrical", 
+		  "cursed_spirit_bash", 
+		  "cursed_spirit_cut", 
+		  "cursed_spirit_stab", 
+		  "cursed_spirit_bullet"
+        ],
+        "weight_multiplier": 0.0
+      },
+	  {
+        "rigid": true,
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "1000 L",
+        "max_contains_weight": "1000 kg",
+        "moves": 100000,
+        "max_item_length": "2 km",
+		"item_restriction": [
+          "spirit_int",
+		  "spirit_str", 
+		  "spirit_dex", 
+		  "spirit_per", 
+		  "spirit_speed", 
+		  "spirit_carry",
+		  "spirit_atk_speed", 
+		  "spirit_stamina", 
+		  "spirit_max_mana", 
+		  "spirit_regen_mana", 
+		  "spirit_fatigue", 
+		  "spirit_hp", 		  
+		  "spirit_fall", 
+		  "spirit_fire_armor", 
+		  "spirit_cold_armor", 
+		  "spirit_acid_armor", 
+		  "spirit_bio_armor", 
+		  "spirit_elec_armor",
+		  "spirit_bullet_armor",
+		  "spirit_bash_armor", 
+		  "spirit_cut_armor", 
+		  "spirit_stab_armor", 
+		  "spirit_elec_armor",  
+		  "spirit_reading", 
+		  "spirit_focus", 
+		  "spirit_footstep_noise", 
+		  "spirit_bionic", 
+		  "spirit_block", 
+		  "spirit_dodge", 
+		  "spirit_climate", 
+		  "spirit_climate_chill", 
+		  "spirit_climate_heat", 
+		  "spirit_dispersion", 
+		  "spirit_recoil", 
+		  "spirit_rust_resist", 
+		  "spirit_intimidate", 
+		  "spirit_persuade", 
+		  "spirit_lying", 
+		  "spirit_pain", 
+		  "spirit_regen_hp", 
+		  "spirit_regen_stamina", 
+		  "spirit_hunger", 
+		  "spirit_thirst", 
+		  "spirit_attack_noise",
+		  "spirit_heat", 
+		  "spirit_cold", 
+		  "spirit_acid", 
+		  "spirit_elec", 
+		  "spirit_cut", 
+		  "spirit_stab", 
+		  "spirit_bash",
+		  "spirit_biological", 
+		  "spirit_bullet",
+		  "cursed_spirit_heat",
+		  "cursed_spirit_cold", 
+		  "cursed_spirit_acid", 
+		  "cursed_spirit_biological", 
+		  "cursed_spirit_electrical", 
+		  "cursed_spirit_bash", 
+		  "cursed_spirit_cut", 
+		  "cursed_spirit_stab", 
+		  "cursed_spirit_bullet"
+        ],
+        "weight_multiplier": 0.0
+      },
+	  {
+        "rigid": true,
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "1000 L",
+        "max_contains_weight": "1000 kg",
+        "moves": 100000,
+        "max_item_length": "2 km",
+		"item_restriction": [
+          "spirit_int",
+		  "spirit_str", 
+		  "spirit_dex", 
+		  "spirit_per", 
+		  "spirit_speed", 
+		  "spirit_carry",
+		  "spirit_atk_speed", 
+		  "spirit_stamina", 
+		  "spirit_max_mana", 
+		  "spirit_regen_mana", 
+		  "spirit_fatigue", 
+		  "spirit_hp", 		  
+		  "spirit_fall", 
+		  "spirit_fire_armor", 
+		  "spirit_cold_armor", 
+		  "spirit_acid_armor", 
+		  "spirit_bio_armor", 
+		  "spirit_elec_armor",
+		  "spirit_bullet_armor",
+		  "spirit_bash_armor", 
+		  "spirit_cut_armor", 
+		  "spirit_stab_armor", 
+		  "spirit_elec_armor",  
+		  "spirit_reading", 
+		  "spirit_focus", 
+		  "spirit_footstep_noise", 
+		  "spirit_bionic", 
+		  "spirit_block", 
+		  "spirit_dodge", 
+		  "spirit_climate", 
+		  "spirit_climate_chill", 
+		  "spirit_climate_heat", 
+		  "spirit_dispersion", 
+		  "spirit_recoil", 
+		  "spirit_rust_resist", 
+		  "spirit_intimidate", 
+		  "spirit_persuade", 
+		  "spirit_lying", 
+		  "spirit_pain", 
+		  "spirit_regen_hp", 
+		  "spirit_regen_stamina", 
+		  "spirit_hunger", 
+		  "spirit_thirst", 
+		  "spirit_attack_noise",
+		  "spirit_heat", 
+		  "spirit_cold", 
+		  "spirit_acid", 
+		  "spirit_elec", 
+		  "spirit_cut", 
+		  "spirit_stab", 
+		  "spirit_bash",
+		  "spirit_biological", 
+		  "spirit_bullet",
+		  "cursed_spirit_heat",
+		  "cursed_spirit_cold", 
+		  "cursed_spirit_acid", 
+		  "cursed_spirit_biological", 
+		  "cursed_spirit_electrical", 
+		  "cursed_spirit_bash", 
+		  "cursed_spirit_cut", 
+		  "cursed_spirit_stab", 
+		  "cursed_spirit_bullet"
+        ],
+        "weight_multiplier": 0.0
+      }
+    ],
+	"armor": [
+    {
+      "encumbrance": 13,
+      "covers": [
+        "eyes"
+      ]
+    }
+	],
+    "flags": [ "TRADER_AVOID", "TARDIS", "SEMITANGIBLE", "NO_TAKEOFF", "AURA", "ONLY_ONE", "ZERO_WEIGHT" ]
+  },
+  {
+    "id": "spirit_2",
+    "type": "TOOL_ARMOR",
+    "name": { "str": "spirit chain - second order" },
+    "description": "A layer of chains magically laid over your spirit that adept mages manipulate to make themselves stronger. It is of the second, middle order.",
+    "weight": "1 g",
+    "volume": "1 ml",
+    "price": 50000,
+    "bashing": 1,
+    "cutting": 1,
+    "material": [ "aether" ],
+    "symbol": "O",
+    "color": "white",
+    "pocket_data": [
+      {
+        "rigid": true,
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "1000 L",
+        "max_contains_weight": "1000 kg",
+        "moves": 10000,
+        "max_item_length": "2 km",
+		"item_restriction": [
+          "spirit_int",
+		  "spirit_str", 
+		  "spirit_dex", 
+		  "spirit_per", 
+		  "spirit_speed", 
+		  "spirit_carry",
+		  "spirit_atk_speed", 
+		  "spirit_stamina", 
+		  "spirit_max_mana", 
+		  "spirit_regen_mana", 
+		  "spirit_fatigue", 
+		  "spirit_hp", 
+		  "spirit_fall", 
+		  "spirit_fire_armor", 
+		  "spirit_cold_armor", 
+		  "spirit_acid_armor", 
+		  "spirit_bio_armor", 
+		  "spirit_elec_armor",
+		  "spirit_bullet_armor",
+		  "spirit_bash_armor", 
+		  "spirit_cut_armor", 
+		  "spirit_stab_armor", 
+		  "spirit_elec_armor",  
+		  "spirit_reading", 
+		  "spirit_focus", 
+		  "spirit_footstep_noise", 
+		  "spirit_bionic", 
+		  "spirit_block", 
+		  "spirit_dodge", 
+		  "spirit_climate", 
+		  "spirit_climate_chill", 
+		  "spirit_climate_heat", 
+		  "spirit_dispersion", 
+		  "spirit_recoil", 
+		  "spirit_rust_resist", 
+		  "spirit_intimidate", 
+		  "spirit_persuade", 
+		  "spirit_lying", 
+		  "spirit_pain", 
+		  "spirit_regen_hp", 
+		  "spirit_regen_stamina", 
+		  "spirit_hunger", 
+		  "spirit_thirst", 
+		  "spirit_attack_noise",
+		  "spirit_heat", 
+		  "spirit_cold", 
+		  "spirit_acid", 
+		  "spirit_elec", 
+		  "spirit_cut", 
+		  "spirit_stab", 
+		  "spirit_bash",
+		  "spirit_biological", 
+		  "spirit_bullet"
+        ],
+        "weight_multiplier": 0.0
+      },
+	  {
+        "rigid": true,
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "1000 L",
+        "max_contains_weight": "1000 kg",
+        "moves": 10000,
+        "max_item_length": "2 km",
+		"item_restriction": [
+          "spirit_int",
+		  "spirit_str", 
+		  "spirit_dex", 
+		  "spirit_per", 
+		  "spirit_speed", 
+		  "spirit_carry",
+		  "spirit_atk_speed", 
+		  "spirit_stamina", 
+		  "spirit_max_mana", 
+		  "spirit_regen_mana", 
+		  "spirit_fatigue", 
+		  "spirit_hp", 
+		  "spirit_fall", 
+		  "spirit_fire_armor", 
+		  "spirit_cold_armor", 
+		  "spirit_acid_armor", 
+		  "spirit_bio_armor", 
+		  "spirit_elec_armor",
+		  "spirit_bullet_armor",
+		  "spirit_bash_armor", 
+		  "spirit_cut_armor", 
+		  "spirit_stab_armor", 
+		  "spirit_elec_armor",  
+		  "spirit_reading", 
+		  "spirit_focus", 
+		  "spirit_footstep_noise", 
+		  "spirit_bionic", 
+		  "spirit_block", 
+		  "spirit_dodge", 
+		  "spirit_climate", 
+		  "spirit_climate_chill", 
+		  "spirit_climate_heat", 
+		  "spirit_dispersion", 
+		  "spirit_recoil", 
+		  "spirit_rust_resist", 
+		  "spirit_intimidate", 
+		  "spirit_persuade", 
+		  "spirit_lying", 
+		  "spirit_pain", 
+		  "spirit_regen_hp", 
+		  "spirit_regen_stamina", 
+		  "spirit_hunger", 
+		  "spirit_thirst", 
+		  "spirit_attack_noise",
+		  "spirit_heat", 
+		  "spirit_cold", 
+		  "spirit_acid", 
+		  "spirit_elec", 
+		  "spirit_cut", 
+		  "spirit_stab", 
+		  "spirit_bash",
+		  "spirit_biological", 
+		  "spirit_bullet"
+        ],
+        "weight_multiplier": 0.0
+      }
+    ],
+	"armor": [
+    {
+      "encumbrance": 7,
+      "covers": [
+        "torso"
+      ]
+    }
+	],
+    "flags": [ "TRADER_AVOID", "TARDIS", "SEMITANGIBLE", "NO_TAKEOFF", "AURA", "ONLY_ONE", "ZERO_WEIGHT" ]
+  },
+  {
+    "id": "spirit_3",
+    "type": "TOOL_ARMOR",
+    "name": { "str": "spirit chain - third order" },
+    "description": "A layer of chains magically laid over your spirit that adept mages manipulate to make themselves stronger. It is of the third and highest order.",
+    "weight": "1 g",
+    "volume": "1 ml",
+    "price": 50000,
+    "bashing": 1,
+    "cutting": 1,
+    "material": [ "aether" ],
+    "symbol": "O",
+    "color": "white",
+    "pocket_data": [
+      {
+        "rigid": true,
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "1000 L",
+        "max_contains_weight": "1000 kg",
+        "moves": 1000,
+        "max_item_length": "2 km",
+		"item_restriction": [
+          "spirit_int",
+		  "spirit_str", 
+		  "spirit_dex", 
+		  "spirit_per", 
+		  "spirit_speed", 
+		  "spirit_carry",
+		  "spirit_atk_speed", 
+		  "spirit_stamina", 
+		  "spirit_max_mana", 
+		  "spirit_regen_mana", 
+		  "spirit_fatigue", 
+		  "spirit_hp",  
+		  "spirit_fall", 
+		  "spirit_fire_armor", 
+		  "spirit_cold_armor", 
+		  "spirit_acid_armor", 
+		  "spirit_bio_armor", 
+		  "spirit_elec_armor",
+		  "spirit_bullet_armor",
+		  "spirit_bash_armor", 
+		  "spirit_cut_armor", 
+		  "spirit_stab_armor", 
+		  "spirit_elec_armor",  
+		  "spirit_reading", 
+		  "spirit_focus", 
+		  "spirit_footstep_noise", 
+		  "spirit_bionic", 
+		  "spirit_block", 
+		  "spirit_dodge", 
+		  "spirit_climate", 
+		  "spirit_climate_chill", 
+		  "spirit_climate_heat", 
+		  "spirit_dispersion", 
+		  "spirit_recoil", 
+		  "spirit_rust_resist", 
+		  "spirit_intimidate", 
+		  "spirit_persuade", 
+		  "spirit_lying", 
+		  "spirit_pain", 
+		  "spirit_regen_hp", 
+		  "spirit_regen_stamina", 
+		  "spirit_hunger", 
+		  "spirit_thirst", 
+		  "spirit_attack_noise",
+		  "spirit_heat", 
+		  "spirit_cold", 
+		  "spirit_acid", 
+		  "spirit_elec", 
+		  "spirit_cut", 
+		  "spirit_stab", 
+		  "spirit_bash",
+		  "spirit_biological", 
+		  "spirit_bullet"
+        ],
+        "weight_multiplier": 0.0
+      },
+	  {
+        "rigid": true,
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "1000 L",
+        "max_contains_weight": "1000 kg",
+        "moves": 1000,
+        "max_item_length": "2 km",
+		"item_restriction": [
+          "spirit_int",
+		  "spirit_str", 
+		  "spirit_dex", 
+		  "spirit_per", 
+		  "spirit_speed", 
+		  "spirit_carry",
+		  "spirit_atk_speed", 
+		  "spirit_stamina", 
+		  "spirit_max_mana", 
+		  "spirit_regen_mana", 
+		  "spirit_fatigue", 
+		  "spirit_hp", 
+		  "spirit_fall", 
+		  "spirit_fire_armor", 
+		  "spirit_cold_armor", 
+		  "spirit_acid_armor", 
+		  "spirit_bio_armor", 
+		  "spirit_elec_armor",
+		  "spirit_bullet_armor",
+		  "spirit_bash_armor", 
+		  "spirit_cut_armor", 
+		  "spirit_stab_armor", 
+		  "spirit_elec_armor", 
+		  "spirit_reading", 
+		  "spirit_focus", 
+		  "spirit_footstep_noise", 
+		  "spirit_bionic", 
+		  "spirit_block", 
+		  "spirit_dodge", 
+		  "spirit_climate", 
+		  "spirit_climate_chill", 
+		  "spirit_climate_heat", 
+		  "spirit_dispersion", 
+		  "spirit_recoil", 
+		  "spirit_rust_resist", 
+		  "spirit_intimidate", 
+		  "spirit_persuade", 
+		  "spirit_lying", 
+		  "spirit_pain", 
+		  "spirit_regen_hp", 
+		  "spirit_regen_stamina", 
+		  "spirit_hunger", 
+		  "spirit_thirst", 
+		  "spirit_attack_noise",
+		  "spirit_heat", 
+		  "spirit_cold", 
+		  "spirit_acid", 
+		  "spirit_elec", 
+		  "spirit_cut", 
+		  "spirit_stab", 
+		  "spirit_bash",
+		  "spirit_biological", 
+		  "spirit_bullet"
+        ],
+        "weight_multiplier": 0.0
+      },
+	  {
+        "rigid": true,
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "1000 L",
+        "max_contains_weight": "1000 kg",
+        "moves": 1000,
+        "max_item_length": "2 km",
+		"item_restriction": [
+          "spirit_int",
+		  "spirit_str", 
+		  "spirit_dex", 
+		  "spirit_per", 
+		  "spirit_speed", 
+		  "spirit_carry",
+		  "spirit_atk_speed", 
+		  "spirit_stamina", 
+		  "spirit_max_mana", 
+		  "spirit_regen_mana", 
+		  "spirit_fatigue", 
+		  "spirit_hp", 
+		  "spirit_fall", 
+		  "spirit_fire_armor", 
+		  "spirit_cold_armor", 
+		  "spirit_acid_armor", 
+		  "spirit_bio_armor", 
+		  "spirit_elec_armor",
+		  "spirit_bullet_armor",
+		  "spirit_bash_armor", 
+		  "spirit_cut_armor", 
+		  "spirit_stab_armor", 
+		  "spirit_elec_armor",  
+		  "spirit_reading", 
+		  "spirit_focus", 
+		  "spirit_footstep_noise", 
+		  "spirit_bionic", 
+		  "spirit_block", 
+		  "spirit_dodge", 
+		  "spirit_climate", 
+		  "spirit_climate_chill", 
+		  "spirit_climate_heat", 
+		  "spirit_dispersion", 
+		  "spirit_recoil", 
+		  "spirit_rust_resist", 
+		  "spirit_intimidate", 
+		  "spirit_persuade", 
+		  "spirit_lying", 
+		  "spirit_pain", 
+		  "spirit_regen_hp", 
+		  "spirit_regen_stamina", 
+		  "spirit_hunger", 
+		  "spirit_thirst", 
+		  "spirit_attack_noise",
+		  "spirit_heat", 
+		  "spirit_cold", 
+		  "spirit_acid", 
+		  "spirit_elec", 
+		  "spirit_cut", 
+		  "spirit_stab", 
+		  "spirit_bash",
+		  "spirit_biological", 
+		  "spirit_bullet"
+        ],
+        "weight_multiplier": 0.0
+      }
+    ],
+	"armor": [
+    {
+      "encumbrance": 13,
+      "covers": [
+        "eyes"
+      ]
+    }
+	],
+    "flags": [ "TRADER_AVOID", "TARDIS", "SEMITANGIBLE", "AURA", "NO_TAKEOFF", "ONLY_ONE", "ZERO_WEIGHT" ]
+  },
+  {
+    "id": "spirit_int",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "spirit link - intelligence +2" },
+    "description": "A 'spirit link' to be placed in a spirit chain. This one will increase the wearer's Intelligence by 2.",
+    "weight": "1000 kg",
+    "volume": "1000 L",
+    "longest_side": "2 km",
+    "price": 0,
+	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
+    "material": [ "aether" ],
+	"relic_data": {
+      "passive_effects": [ 
+	  { "has": "HELD", "condition": "ALWAYS", "values": [ { "value": "INTELLIGENCE", "add": 2 } ] } ]
+    },
+    "symbol": "c",
+    "color": "red"
+  },
+  {
+    "id": "spirit_dex",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "spirit link - dexterity +2" },
+    "description": "A 'spirit link' to be placed in a spirit chain. This one will increase the wearer's Dexterity by 2.",
+    "weight": "1000 kg",
+    "volume": "1000 L",
+    "longest_side": "2 km",
+    "price": 0,
+	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
+    "material": [ "aether" ],
+	"relic_data": {
+      "passive_effects": [ 
+	  { "has": "HELD", "condition": "ALWAYS", "values": [ { "value": "DEXTERITY", "add": 2 } ] } ]
+    },
+    "symbol": "c",
+    "color": "red"
+  },
+  {
+    "id": "spirit_str",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "spirit link - strength +2" },
+    "description": "A 'spirit link' to be placed in a spirit chain. This one will increase the wearer's Strength by 2.",
+    "weight": "1000 kg",
+    "volume": "1000 L",
+    "longest_side": "2 km",
+    "price": 0,
+	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
+    "material": [ "aether" ],
+	"relic_data": {
+      "passive_effects": [ 
+	  { "has": "HELD", "condition": "ALWAYS", "values": [ { "value": "STRENGTH", "add": 2 } ] } ]
+    },
+    "symbol": "c",
+    "color": "red"
+  },
+  {
+    "id": "spirit_per",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "spirit link - perception +2" },
+    "description": "A 'spirit link' to be placed in a spirit chain. This one will increase the wearer's Perception by 2.",
+    "weight": "1000 kg",
+    "volume": "1000 L",
+    "longest_side": "2 km",
+    "price": 0,
+	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
+    "material": [ "aether" ],
+	"relic_data": {
+      "passive_effects": [ 
+	  { "has": "HELD", "condition": "ALWAYS", "values": [ { "value": "PERCEPTION", "add": 2 } ] } ]
+    },
+    "symbol": "c",
+    "color": "red"
+  },
+  {
+    "id": "spirit_speed",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "spirit link - speed +15" },
+    "description": "A 'spirit link' to be placed in a spirit chain. This one will increase the wearer's Speed by 15.",
+    "weight": "1000 kg",
+    "volume": "1000 L",
+    "longest_side": "2 km",
+    "price": 0,
+	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
+    "material": [ "aether" ],
+	"relic_data": {
+      "passive_effects": [ 
+	  { "has": "HELD", "condition": "ALWAYS", "values": [ { "value": "SPEED", "add": 15 } ] } ]
+    },
+    "symbol": "c",
+    "color": "red"
+  },
+  {
+    "id": "spirit_atk_speed",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "spirit link - attack speed +%10" },
+    "description": "A 'spirit link' to be placed in a spirit chain. This one will increase the wearer's attack speed by %10.",
+    "weight": "1000 kg",
+    "volume": "1000 L",
+    "longest_side": "2 km",
+    "price": 0,
+	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
+    "material": [ "aether" ],
+	"relic_data": {
+      "passive_effects": [ 
+	  { "has": "HELD", "condition": "ALWAYS", "values": [ { "value": "ATTACK_SPEED", "multiply": -0.9 } ] } ]
+    },
+    "symbol": "c",
+    "color": "red"
+  },
+  {
+    "id": "spirit_stamina",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "spirit link - stamina +%10" },
+    "description": "A 'spirit link' to be placed in a spirit chain. This one will increase the wearer's stamina by %10.",
+    "weight": "1000 kg",
+    "volume": "1000 L",
+    "longest_side": "2 km",
+    "price": 0,
+	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
+    "material": [ "aether" ],
+	"relic_data": {
+      "passive_effects": [ 
+	  { "has": "HELD", "condition": "ALWAYS", "values": [ { "value": "MAX_STAMINA", "multiply": 0.1 } ] } ]
+    },
+    "symbol": "c",
+    "color": "red"
+  },
+  {
+    "id": "spirit_regen_stamina",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "spirit link - stamina regeneration +%10" },
+    "description": "A 'spirit link' to be placed in a spirit chain. This one will increase the wearer's stamina regeneration by %10.",
+    "weight": "1000 kg",
+    "volume": "1000 L",
+    "longest_side": "2 km",
+    "price": 0,
+	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
+    "material": [ "aether" ],
+	"relic_data": {
+      "passive_effects": [ 
+	  { "has": "HELD", "condition": "ALWAYS", "values": [ { "value": "REGEN_STAMINA", "multiply": 0.1 } ] } ]
+    },
+    "symbol": "c",
+    "color": "red"
+  },
+  {
+    "id": "spirit_max_mana",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "spirit link - max mana +1000" },
+    "description": "A 'spirit link' to be placed in a spirit chain. This one will increase the wearer's maximum mana by 1000.",
+    "weight": "1000 kg",
+    "volume": "1000 L",
+    "longest_side": "2 km",
+    "price": 0,
+	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
+    "material": [ "aether" ],
+	"relic_data": {
+      "passive_effects": [ 
+	  { "has": "HELD", "condition": "ALWAYS", "values": [ { "value": "MAX_MANA", "add": 1000  } ] } ]
+    },
+    "symbol": "c",
+    "color": "red"
+  },
+  {
+    "id": "spirit_regen_mana",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "spirit link - mana regen +%10" },
+    "description": "A 'spirit link' to be placed in a spirit chain. This one will increase the wearer's mana regeneration by %10.", 
+    "weight": "1000 kg",
+    "volume": "1000 L",
+    "longest_side": "2 km",
+    "price": 0,
+	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
+    "material": [ "aether" ],
+	"relic_data": {
+      "passive_effects": [ 
+	  { "has": "HELD", "condition": "ALWAYS", "values": [ { "value": "REGEN_MANA", "multiply": 0.1  } ] } ]
+    },
+    "symbol": "c",
+    "color": "red"
+  },
+  {
+    "id": "spirit_fatigue",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "spirit link - fatigue +%10" },
+    "description": "A 'spirit link' to be placed in a spirit chain. This one will increase the wearer's fatigue by %10.", 
+    "weight": "1000 kg",
+    "volume": "1000 L",
+    "longest_side": "2 km",
+    "price": 0,
+	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
+    "material": [ "aether" ],
+	"relic_data": {
+      "passive_effects": [ 
+	  { "has": "HELD", "condition": "ALWAYS", "values": [ { "value": "FATIGUE", "multiply": 0.1  } ] } ]
+    },
+    "symbol": "c",
+    "color": "red"
+  },
+  {
+    "id": "spirit_regen_hp",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "spirit link - hp regen +%10" },
+    "description": "A 'spirit link' to be placed in a spirit chain. This one will increase the wearer's maximum health points by %10.", 
+    "weight": "1000 kg",
+    "volume": "1000 L",
+    "longest_side": "2 km",
+    "price": 0,
+	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
+    "material": [ "aether" ],
+	"relic_data": {
+      "passive_effects": [ 
+	  { "has": "HELD", "condition": "ALWAYS", "values": [ { "value": "REGEN_HP", "multiply": 0.1  } ] } ]
+    },
+    "symbol": "c",
+    "color": "red"
+  },
+  {
+    "id": "spirit_hp",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "spirit link - maximum hp +%5" },
+    "description": "A 'spirit link' to be placed in a spirit chain. This one will increase the wearer's maximum health points by %5.", 
+    "weight": "1000 kg",
+    "volume": "1000 L",
+    "longest_side": "2 km",
+    "price": 0,
+	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
+    "material": [ "aether" ],
+	"relic_data": {
+      "passive_effects": [ 
+	  { "has": "HELD", "condition": "ALWAYS", "values": [ { "value": "MAX_HP", "multiply": 0.05  } ] } ]
+    },
+    "symbol": "c",
+    "color": "red"
+  },
+  {
+    "id": "spirit_carry",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "spirit link - carry weight +30kg" },
+    "description": "A 'spirit link' to be placed in a spirit chain. This one will increase the wearer's maximum carry weight by 30 kg.", 
+    "weight": "1000 kg",
+    "volume": "1000 L",
+    "longest_side": "2 km",
+    "price": 0,
+	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
+    "material": [ "aether" ],
+	"relic_data": {
+      "passive_effects": [ 
+	  { "has": "HELD", "condition": "ALWAYS", "values": [ { "value": "CARRY_WEIGHT", "add": 30000  } ] } ]
+    },
+    "symbol": "c",
+    "color": "red"
+  },
+  {
+    "id": "spirit_block",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "spirit link - block chances +1" },
+    "description": "A 'spirit link' to be placed in a spirit chain. This one will increase the wearer's chances to block by 1.", 
+    "weight": "1000 kg",
+    "volume": "1000 L",
+    "longest_side": "2 km",
+    "price": 0,
+	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
+    "material": [ "aether" ],
+	"relic_data": {
+      "passive_effects": [ 
+	  { "has": "HELD", "condition": "ALWAYS", "values": [ { "value": "BONUS_BLOCK", "add": 1  } ] } ]
+    },
+    "symbol": "c",
+    "color": "red"
+  },
+  {
+    "id": "spirit_dodge",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "spirit link - dodge chances +1" },
+    "description": "A 'spirit link' to be placed in a spirit chain. This one will increase the wearer's chances to dodge by 1.", 
+    "weight": "1000 kg",
+    "volume": "1000 L",
+    "longest_side": "2 km",
+    "price": 0,
+	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
+    "material": [ "aether" ],
+	"relic_data": {
+      "passive_effects": [ 
+	  { "has": "HELD", "condition": "ALWAYS", "values": [ { "value": "BONUS_DODGE", "add": 1  } ] } ]
+    },
+    "symbol": "c",
+    "color": "red"
+  },
+  {
+    "id": "spirit_intimidate",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "spirit link - intimidate +%25" },
+    "description": "A 'spirit link' to be placed in a spirit chain. This one will increase the wearer's intimidation by %25.", 
+    "weight": "1000 kg",
+    "volume": "1000 L",
+    "longest_side": "2 km",
+    "price": 0,
+	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
+    "material": [ "aether" ],
+	"relic_data": {
+      "passive_effects": [ 
+	  { "has": "HELD", "condition": "ALWAYS", "values": [ { "value": "SOCIAL_INTIMIDATE", "multiply": 0.25  } ] } ]
+    },
+    "symbol": "c",
+    "color": "red"
+  },
+  {
+    "id": "spirit_persuade",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "spirit link - persuasion +%25" },
+    "description": "A 'spirit link' to be placed in a spirit chain. This one will increase the wearer's persuasion by %25.", 
+    "weight": "1000 kg",
+    "volume": "1000 L",
+    "longest_side": "2 km",
+    "price": 0,
+	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
+    "material": [ "aether" ],
+	"relic_data": {
+      "passive_effects": [ 
+	  { "has": "HELD", "condition": "ALWAYS", "values": [ { "value": "SOCIAL_PERSUADE", "multiply": 0.25  } ] } ]
+    },
+    "symbol": "c",
+    "color": "red"
+  },
+  {
+    "id": "spirit_lying",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "spirit link - lying +%25" },
+    "description": "A 'spirit link' to be placed in a spirit chain. This one will increase the wearer's lying by %25.", 
+    "weight": "1000 kg",
+    "volume": "1000 L",
+    "longest_side": "2 km",
+    "price": 0,
+	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
+    "material": [ "aether" ],
+	"relic_data": {
+      "passive_effects": [ 
+	  { "has": "HELD", "condition": "ALWAYS", "values": [ { "value": "SOCIAL_LIE", "multiply": 0.25  } ] } ]
+    },
+    "symbol": "c",
+    "color": "red"
+  },
+  {
+    "id": "spirit_rust_resist",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "spirit link - skill rust -%50" },
+    "description": "A 'spirit link' to be placed in a spirit chain. This one will decrease the wearer's skill rust by %50.", 
+    "weight": "1000 kg",
+    "volume": "1000 L",
+    "longest_side": "2 km",
+    "price": 0,
+	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
+    "material": [ "aether" ],
+	"relic_data": {
+      "passive_effects": [ 
+	  { "has": "HELD", "condition": "ALWAYS", "values": [ { "value": "SKILL_RUST_RESIST", "add": 50  } ] } ]
+    },
+    "symbol": "c",
+    "color": "red"
+  },
+  {
+    "id": "spirit_recoil",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "spirit link - recoil -%10" },
+    "description": "A 'spirit link' to be placed in a spirit chain. This one will decrease the wearer's weapon recoil by %10.", 
+    "weight": "1000 kg",
+    "volume": "1000 L",
+    "longest_side": "2 km",
+    "price": 0,
+	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
+    "material": [ "aether" ],
+	"relic_data": {
+      "passive_effects": [ 
+	  { "has": "HELD", "condition": "ALWAYS", "values": [ { "value": "RECOIL_MODIFIER", "add": -10  } ] } ]
+    },
+    "symbol": "c",
+    "color": "red"
+  },
+  {
+    "id": "spirit_dispersion",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "spirit link - dispersion -%10" },
+    "description": "A 'spirit link' to be placed in a spirit chain. This one will decrease the wearer's weapon dispersion by %10.", 
+    "weight": "1000 kg",
+    "volume": "1000 L",
+    "longest_side": "2 km",
+    "price": 0,
+	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
+    "material": [ "aether" ],
+	"relic_data": {
+      "passive_effects": [ 
+	  { "has": "HELD", "condition": "ALWAYS", "values": [ { "value": "WEAPON_DISPERSION", "add": -10  } ] } ]
+    },
+    "symbol": "c",
+    "color": "red"
+  },
+  {
+    "id": "spirit_thirst",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "spirit link - thirst -%10" },
+    "description": "A 'spirit link' to be placed in a spirit chain. This one will decrease the wearer's thirst by %10.", 
+    "weight": "1000 kg",
+    "volume": "1000 L",
+    "longest_side": "2 km",
+    "price": 0,
+	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
+    "material": [ "aether" ],
+	"relic_data": {
+      "passive_effects": [ 
+	  { "has": "HELD", "condition": "ALWAYS", "values": [ { "value": "THIRST", "multiply": -0.9  } ] } ]
+    },
+    "symbol": "c",
+    "color": "red"
+  },
+  {
+    "id": "spirit_hunger",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "spirit link - hunger -%10" },
+    "description": "A 'spirit link' to be placed in a spirit chain. This one will decrease the wearer's hunger by %10.", 
+    "weight": "1000 kg",
+    "volume": "1000 L",
+    "longest_side": "2 km",
+    "price": 0,
+	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
+    "material": [ "aether" ],
+	"relic_data": {
+      "passive_effects": [ 
+	  { "has": "HELD", "condition": "ALWAYS", "values": [ { "value": "HUNGER", "multiply": -0.9  } ] } ]
+    },
+    "symbol": "c",
+    "color": "red"
+  },
+  {
+    "id": "spirit_focus",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "spirit link - learning focus +%15" },
+    "description": "A 'spirit link' to be placed in a spirit chain. This one will decrease the wearer's learning focus by %15.", 
+    "weight": "1000 kg",
+    "volume": "1000 L",
+    "longest_side": "2 km",
+    "price": 0,
+	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
+    "material": [ "aether" ],
+	"relic_data": {
+      "passive_effects": [ 
+	  { "has": "HELD", "condition": "ALWAYS", "values": [ { "value": "LEARNING_FOCUS", "multiply": 0.15  } ] } ]
+    },
+    "symbol": "c",
+    "color": "red"
+  },
+  {
+    "id": "spirit_fall",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "spirit link - step and attack noise +%100" },
+    "description": "A 'spirit link' to be placed in a spirit chain. This one will increase the sound your footsteps and attacks make.", 
+    "weight": "1000 kg",
+    "volume": "1000 L",
+    "longest_side": "2 km",
+    "price": 0,
+	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
+    "material": [ "aether" ],
+	"relic_data": {
+      "passive_effects": [ 
+	  { "has": "HELD", "condition": "ALWAYS", "values": [ { "value": "ATTACK_NOISE", "multiply": 1.00  }, { "value": "FOOTSTEP_NOISE", "multiply": 1.00  } ] } ]
+    },
+    "symbol": "c",
+    "color": "red"
+  },
+  {
+    "id": "spirit_footstep_noise",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "spirit link - footstep noise -%35" },
+    "description": "A 'spirit link' to be placed in a spirit chain. This one will decrease the noise of footsteps by %35.", 
+    "weight": "1000 kg",
+    "volume": "1000 L",
+    "longest_side": "2 km",
+    "price": 0,
+	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
+    "material": [ "aether" ],
+	"relic_data": {
+      "passive_effects": [ 
+	  { "has": "HELD", "condition": "ALWAYS", "values": [ { "value": "FOOTSTEP_NOISE", "multiply": -0.65  } ] } ]
+    },
+    "symbol": "c",
+    "color": "red"
+  },
+  {
+    "id": "spirit_climate",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "spirit link - climate control" },
+    "description": "A 'spirit link' to be placed in a spirit chain. This one will always sway one towards comfortable temperature.", 
+    "weight": "1000 kg",
+    "volume": "1000 L",
+    "longest_side": "2 km",
+    "price": 0,
+	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
+    "material": [ "aether" ],
+	"relic_data": {
+      "passive_effects": [ 
+	  { "has": "HELD", "condition": "ALWAYS", "values": [ { "value": "CLIMATE_CONTROL_HEAT", "add": 15  }, { "value": "CLIMATE_CONTROL_CHILL", "add": 15  } ] } ]
+    },
+    "symbol": "c",
+    "color": "red"
+  },
+  {
+    "id": "spirit_climate_chill",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "spirit link - heat control" },
+    "description": "A 'spirit link' to be placed in a spirit chain. This one will lower one's temperature greatly if it gets too high.", 
+    "weight": "1000 kg",
+    "volume": "1000 L",
+    "longest_side": "2 km",
+    "price": 0,
+	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
+    "material": [ "aether" ],
+	"relic_data": {
+      "passive_effects": [ 
+	  { "has": "HELD", "condition": "ALWAYS", "values": [ { "value": "CLIMATE_CONTROL_CHILL", "add": 50 } ] } ]
+    },
+    "symbol": "c",
+    "color": "red"
+  },
+  {
+    "id": "spirit_climate_heat",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "spirit link - cold control" },
+    "description": "A 'spirit link' to be placed in a spirit chain. This one will increase one's temperature greatly if it gets too low.", 
+    "weight": "1000 kg",
+    "volume": "1000 L",
+    "longest_side": "2 km",
+    "price": 0,
+	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
+    "material": [ "aether" ],
+	"relic_data": {
+      "passive_effects": [ 
+	  { "has": "HELD", "condition": "ALWAYS", "values": [ { "value": "CLIMATE_CONTROL_HEAT", "add": 50 } ] } ]
+    },
+    "symbol": "c",
+    "color": "red"
+  },
+  {
+    "id": "spirit_pain",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "spirit link - pain -%10" },
+    "description": "A 'spirit link' to be placed in a spirit chain. This one will decrease pain felt by %10.", 
+    "weight": "1000 kg",
+    "volume": "1000 L",
+    "longest_side": "2 km",
+    "price": 0,
+	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
+    "material": [ "aether" ],
+	"relic_data": {
+      "passive_effects": [ 
+	  { "has": "HELD", "condition": "ALWAYS", "values": [ { "value": "PAIN", "multiply": -0.9 } ] } ]
+    },
+    "symbol": "c",
+    "color": "red"
+  },
+  {
+    "id": "spirit_fire_armor",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "spirit link - heat damage -10" },
+    "description": "A 'spirit link' to be placed in a spirit chain. This one will decrease heat damage taken by 10.", 
+    "weight": "1000 kg",
+    "volume": "1000 L",
+    "longest_side": "2 km",
+    "price": 0,
+	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
+    "material": [ "aether" ],
+	"relic_data": {
+      "passive_effects": [ 
+	  { "has": "HELD", "condition": "ALWAYS", "values": [ { "value": "ARMOR_HEAT", "add": -10 } ] } ]
+    },
+    "symbol": "c",
+    "color": "red"
+  },
+  {
+    "id": "spirit_cold_armor",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "spirit link - cold damage -10" },
+    "description": "A 'spirit link' to be placed in a spirit chain. This one will decrease cold damage taken by 10.", 
+    "weight": "1000 kg",
+    "volume": "1000 L",
+    "longest_side": "2 km",
+    "price": 0,
+	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
+    "material": [ "aether" ],
+	"relic_data": {
+      "passive_effects": [ 
+	  { "has": "HELD", "condition": "ALWAYS", "values": [ { "value": "ARMOR_COLD", "add": -10 } ] } ]
+    },
+    "symbol": "c",
+    "color": "red"
+  },
+  {
+    "id": "spirit_elec_armor",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "spirit link - electric damage -10" },
+    "description": "A 'spirit link' to be placed in a spirit chain. This one will decrease electric damage taken by 10.", 
+    "weight": "1000 kg",
+    "volume": "1000 L",
+    "longest_side": "2 km",
+    "price": 0,
+	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
+    "material": [ "aether" ],
+	"relic_data": {
+      "passive_effects": [ 
+	  { "has": "HELD", "condition": "ALWAYS", "values": [ { "value": "ARMOR_ELEC", "add": -10 } ] } ]
+    },
+    "symbol": "c",
+    "color": "red"
+  },
+  {
+    "id": "spirit_acid_armor",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "spirit link - acid damage -10" },
+    "description": "A 'spirit link' to be placed in a spirit chain. This one will decrease acid damage taken by 10.", 
+    "weight": "1000 kg",
+    "volume": "1000 L",
+    "longest_side": "2 km",
+    "price": 0,
+	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
+    "material": [ "aether" ],
+	"relic_data": {
+      "passive_effects": [ 
+	  { "has": "HELD", "condition": "ALWAYS", "values": [ { "value": "ARMOR_ACID", "add": -10 } ] } ]
+    },
+    "symbol": "c",
+    "color": "red"
+  },
+  {
+    "id": "spirit_bio_armor",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "spirit link - biological damage -10" },
+    "description": "A 'spirit link' to be placed in a spirit chain. This one will decrease biological damage taken by 10.", 
+    "weight": "1000 kg",
+    "volume": "1000 L",
+    "longest_side": "2 km",
+    "price": 0,
+	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
+    "material": [ "aether" ],
+	"relic_data": {
+      "passive_effects": [ 
+	  { "has": "HELD", "condition": "ALWAYS", "values": [ { "value": "ARMOR_BIO", "add": -10 } ] } ]
+    },
+    "symbol": "c",
+    "color": "red"
+  },
+  {
+    "id": "spirit_bullet_armor",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "spirit link - bullet damage -10" },
+    "description": "A 'spirit link' to be placed in a spirit chain. This one will decrease bullet damage taken by 10.", 
+    "weight": "1000 kg",
+    "volume": "1000 L",
+    "longest_side": "2 km",
+    "price": 0,
+	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
+    "material": [ "aether" ],
+	"relic_data": {
+      "passive_effects": [ 
+	  { "has": "HELD", "condition": "ALWAYS", "values": [ { "value": "ARMOR_BULLET", "add": -10 } ] } ]
+    },
+    "symbol": "c",
+    "color": "red"
+  },
+  {
+    "id": "spirit_cut_armor",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "spirit link - cut damage -10" },
+    "description": "A 'spirit link' to be placed in a spirit chain. This one will decrease cut damage taken by 10.", 
+    "weight": "1000 kg",
+    "volume": "1000 L",
+    "longest_side": "2 km",
+    "price": 0,
+	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
+    "material": [ "aether" ],
+	"relic_data": {
+      "passive_effects": [ 
+	  { "has": "HELD", "condition": "ALWAYS", "values": [ { "value": "ARMOR_CUT", "add": -10 } ] } ]
+    },
+    "symbol": "c",
+    "color": "red"
+  },
+  {
+    "id": "spirit_stab_armor",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "spirit link - stab damage -10" },
+    "description": "A 'spirit link' to be placed in a spirit chain. This one will decrease stab damage taken by 10.", 
+    "weight": "1000 kg",
+    "volume": "1000 L",
+    "longest_side": "2 km",
+    "price": 0,
+	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
+    "material": [ "aether" ],
+	"relic_data": {
+      "passive_effects": [ 
+	  { "has": "HELD", "condition": "ALWAYS", "values": [ { "value": "ARMOR_STAB", "add": -10 } ] } ]
+    },
+    "symbol": "c",
+    "color": "red"
+  },
+  {
+    "id": "spirit_bash_armor",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "spirit link - bash damage -10" },
+    "description": "A 'spirit link' to be placed in a spirit chain. This one will decrease bash damage taken by 10.", 
+    "weight": "1000 kg",
+    "volume": "1000 L",
+    "longest_side": "2 km",
+    "price": 0,
+	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
+    "material": [ "aether" ],
+	"relic_data": {
+      "passive_effects": [ 
+	  { "has": "HELD", "condition": "ALWAYS", "values": [ { "value": "ARMOR_BASH", "add": -10 } ] } ]
+    },
+    "symbol": "c",
+    "color": "red"
+  },
+  {
+    "id": "spirit_bionic",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "spirit link - bionic power +%10" },
+    "description": "A 'spirit link' to be placed in a spirit chain. This one will increase bionic power by %10.", 
+    "weight": "1000 kg",
+    "volume": "1000 L",
+    "longest_side": "2 km",
+    "price": 0,
+	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
+    "material": [ "aether" ],
+	"relic_data": {
+      "passive_effects": [ 
+	  { "has": "HELD", "condition": "ALWAYS", "values": [ { "value": "BIONIC_POWER", "multiply": 0.1 } ] } ]
+    },
+    "symbol": "c",
+    "color": "red"
+  },
+  {
+    "id": "spirit_reading",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "spirit link - reading experience +%10" },
+    "description": "A 'spirit link' to be placed in a spirit chain. This one will increase reading experience gained by %10.", 
+    "weight": "1000 kg",
+    "volume": "1000 L",
+    "longest_side": "2 km",
+    "price": 0,
+	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
+    "material": [ "aether" ],
+	"relic_data": {
+      "passive_effects": [ 
+	  { "has": "HELD", "condition": "ALWAYS", "values": [ { "value": "READING_EXP", "multiply": 0.1 } ] } ]
+    },
+    "symbol": "c",
+    "color": "red"
+  },
+  {
+    "id": "spirit_attack_noise",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "spirit link - attack noise -%50" },
+    "description": "A 'spirit link' to be placed in a spirit chain. This one will decrease the amount of noise made in melee by %50.", 
+    "weight": "1000 kg",
+    "volume": "1000 L",
+    "longest_side": "2 km",
+    "price": 0,
+	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
+    "material": [ "aether" ],
+	"relic_data": {
+      "passive_effects": [ 
+	  { "has": "HELD", "condition": "ALWAYS", "values": [ { "value": "ATTACK_NOISE", "multiply": -0.5 } ] } ]
+    },
+    "symbol": "c",
+    "color": "red"
+  },
+  {
+    "id": "spirit_heat",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "spirit link - heat damage +5" },
+    "description": "A 'spirit link' to be placed in a spirit chain. This one will add 5 heat damage to the wearer's attacks.",
+    "weight": "1000 kg",
+    "volume": "1000 L",
+    "longest_side": "2 km",
+    "price": 0,
+	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
+    "material": [ "aether" ],
+	"relic_data": {
+      "passive_effects": [
+        {
+          "has": "HELD",
+          "condition": "ALWAYS",
+          "hit_you_effect": [ { "id": "demi_fire" } ]
+        }
+      ]
+    },
+    "symbol": "c",
+    "color": "red"
+  },
+  {
+    "id": "spirit_cold",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "spirit link - cold damage +5" },
+    "description": "A 'spirit link' to be placed in a spirit chain. This one will add 5 cold damage to the wearer's attacks.",
+    "weight": "1000 kg",
+    "volume": "1000 L",
+    "longest_side": "2 km",
+    "price": 0,
+	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
+    "material": [ "aether" ],
+	"relic_data": {
+      "passive_effects": [
+        {
+          "has": "HELD",
+          "condition": "ALWAYS",
+          "hit_you_effect": [ { "id": "demi_cold" } ]
+        }
+      ]
+    },
+    "symbol": "c",
+    "color": "red"
+  },
+  {
+    "id": "spirit_acid",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "spirit link - acid damage +5" },
+    "description": "A 'spirit link' to be placed in a spirit chain. This one will add 5 acid damage to the wearer's attacks.",
+    "weight": "1000 kg",
+    "volume": "1000 L",
+    "longest_side": "2 km",
+    "price": 0,
+	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
+    "material": [ "aether" ],
+	"relic_data": {
+      "passive_effects": [
+        {
+          "has": "HELD",
+          "condition": "ALWAYS",
+          "hit_you_effect": [ { "id": "demi_bile" } ]
+        }
+      ]
+    },
+    "symbol": "c",
+    "color": "red"
+  },
+  {
+    "id": "spirit_elec",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "spirit link - electric damage +5" },
+    "description": "A 'spirit link' to be placed in a spirit chain. This one will add 5 electrical damage to the wearer's attacks.",
+    "weight": "1000 kg",
+    "volume": "1000 L",
+    "longest_side": "2 km",
+    "price": 0,
+	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
+    "material": [ "aether" ],
+	"relic_data": {
+      "passive_effects": [
+        {
+          "has": "HELD",
+          "condition": "ALWAYS",
+          "hit_you_effect": [ { "id": "demi_elec" } ]
+        }
+      ]
+    },
+    "symbol": "c",
+    "color": "red"
+  },
+  {
+    "id": "spirit_cut",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "spirit link - cut damage +5" },
+    "description": "A 'spirit link' to be placed in a spirit chain. This one will add 5 cut damage to the wearer's attacks.",
+    "weight": "1000 kg",
+    "volume": "1000 L",
+    "longest_side": "2 km",
+    "price": 0,
+	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
+    "material": [ "aether" ],
+	"relic_data": {
+      "passive_effects": [
+        {
+          "has": "HELD",
+          "condition": "ALWAYS",
+          "hit_you_effect": [ { "id": "demi_cut" } ]
+        }
+      ]
+    },
+    "symbol": "c",
+    "color": "red"
+  },
+  {
+    "id": "spirit_stab",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "spirit link - stab damage +5" },
+    "description": "A 'spirit link' to be placed in a spirit chain. This one will add 5 stab damage to the wearer's attacks.",
+    "weight": "1000 kg",
+    "volume": "1000 L",
+    "longest_side": "2 km",
+    "price": 0,
+	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
+    "material": [ "aether" ],
+	"relic_data": {
+      "passive_effects": [
+        {
+          "has": "HELD",
+          "condition": "ALWAYS",
+          "hit_you_effect": [ { "id": "demi_stab" } ]
+        }
+      ]
+    },
+    "symbol": "c",
+    "color": "red"
+  },
+  {
+    "id": "spirit_bash",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "spirit link - bash damage +5" },
+    "description": "A 'spirit link' to be placed in a spirit chain. This one will add 5 bash damage to the wearer's attacks.",
+    "weight": "1000 kg",
+    "volume": "1000 L",
+    "longest_side": "2 km",
+    "price": 0,
+	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
+    "material": [ "aether" ],
+	"relic_data": {
+      "passive_effects": [
+        {
+          "has": "HELD",
+          "condition": "ALWAYS",
+          "hit_you_effect": [ { "id": "demi_bash" } ]
+        }
+      ]
+    },
+    "symbol": "c",
+    "color": "red"
+  },
+  {
+    "id": "demi_bio",
+    "type": "SPELL",
+    "name": "Fire",
+    "description": "",
+    "effect": "attack",
+    "shape": "blast",
+    "flags": [ "NO_LEGS", "IGNITE_FLAMMABLE" ],
+    "valid_targets": [ "hostile" ],
+    "max_level": 10,
+    "min_damage": 5,
+    "max_damage": 5,
+    "base_casting_time": 0,
+    "energy_source": "STAMINA",
+    "difficulty": 2,
+	"damage_type": "biological",
+    "sound_description": "a zap"
+  },
+  {
+    "id": "spirit_biological",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "spirit link - biological damage +5" },
+    "description": "A 'spirit link' to be placed in a spirit chain. This one will add 5 biological damage to the wearer's attacks.",
+    "weight": "1000 kg",
+    "volume": "1000 L",
+    "longest_side": "2 km",
+    "price": 0,
+	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
+    "material": [ "aether" ],
+	"relic_data": {
+      "passive_effects": [
+        {
+          "has": "HELD",
+          "condition": "ALWAYS",
+          "hit_you_effect": [ { "id": "demi_bio" } ]
+        }
+      ]
+    },
+    "symbol": "c",
+    "color": "red"
+  },
+  {
+    "id": "demi_bullet",
+    "type": "SPELL",
+    "name": "Fire",
+    "description": "",
+    "effect": "attack",
+    "shape": "blast",
+    "flags": [ "NO_LEGS", "IGNITE_FLAMMABLE" ],
+    "valid_targets": [ "hostile" ],
+    "max_level": 10,
+    "min_damage": 5,
+    "max_damage": 5,
+    "base_casting_time": 0,
+    "energy_source": "STAMINA",
+    "difficulty": 2,
+	"damage_type": "bullet",
+    "sound_description": "a zap"
+  },
+  {
+    "id": "spirit_bullet",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "spirit link - ballistic damage +5" },
+    "description": "A 'spirit link' to be placed in a spirit chain. This one will add 5 ballistic damage to the wearer's attacks.",
+    "weight": "1000 kg",
+    "volume": "1000 L",
+    "longest_side": "2 km",
+    "price": 0,
+	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
+    "material": [ "aether" ],
+	"relic_data": {
+      "passive_effects": [
+        {
+          "has": "HELD",
+          "condition": "ALWAYS",
+          "hit_you_effect": [ { "id": "demi_bullet" } ]
+        }
+      ]
+    },
+    "symbol": "c",
+    "color": "red"
+  },
+  {
+    "id": "cursed_heat",
+    "type": "SPELL",
+    "name": "Cursed",
+    "description": "",
+    "effect": "attack",
+    "shape": "blast",
+    "flags": [ "NO_LEGS" ],
+    "valid_targets": [ "hostile" ],
+    "max_level": 10,
+    "min_damage": 5,
+    "max_damage": 5,
+    "base_casting_time": 0,
+    "min_aoe": 1,
+    "max_aoe": 1,
+    "energy_source": "STAMINA",
+    "difficulty": 2,
+	"damage_type": "heat",
+    "sound_description": "a whoosh"
+  },
+  {
+    "id": "cursed_spirit_heat",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "cursed spirit link - heat" },
+    "description": "A cursed 'spirit link' to be placed in a cursed spirit chain. This one will deal 5 heat damage all around the wearer when they get hit.",
+    "weight": "1000 kg",
+    "volume": "1000 L",
+    "longest_side": "2 km",
+    "price": 0,
+	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
+    "material": [ "aether" ],
+	"relic_data": {
+      "passive_effects": [
+        {
+          "has": "HELD",
+          "condition": "ALWAYS",
+          "hit_me_effect": [ { "id": "cursed_heat", "hit_self": true } ]
+        }
+      ]
+    },
+    "symbol": "c",
+    "color": "red"
+  },
+  {
+    "id": "cursed_cold",
+    "type": "SPELL",
+    "name": "Cursed",
+    "description": "",
+    "effect": "attack",
+    "shape": "blast",
+    "flags": [ "NO_LEGS" ],
+    "valid_targets": [ "hostile" ],
+    "max_level": 10,
+    "min_damage": 5,
+    "max_damage": 5,
+    "base_casting_time": 0,
+    "min_aoe": 1,
+    "max_aoe": 1,
+    "energy_source": "STAMINA",
+    "difficulty": 2,
+	"damage_type": "cold",
+    "sound_description": "a whoosh"
+  },
+  {
+    "id": "cursed_spirit_cold",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "cursed spirit link - cold" },
+    "description": "A cursed 'spirit link' to be placed in a cursed spirit chain. This one will deal 5 cold damage all around the wearer when they get hit.",
+    "weight": "1000 kg",
+    "volume": "1000 L",
+    "longest_side": "2 km",
+    "price": 0,
+	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
+    "material": [ "aether" ],
+	"relic_data": {
+      "passive_effects": [
+        {
+          "has": "HELD",
+          "condition": "ALWAYS",
+          "hit_me_effect": [ { "id": "cursed_cold", "hit_self": true } ]
+        }
+      ]
+    },
+    "symbol": "c",
+    "color": "red"
+  },
+  {
+    "id": "cursed_acid",
+    "type": "SPELL",
+    "name": "Cursed",
+    "description": "",
+    "effect": "attack",
+    "shape": "blast",
+    "flags": [ "NO_LEGS" ],
+    "valid_targets": [ "hostile" ],
+    "max_level": 10,
+    "min_damage": 5,
+    "max_damage": 5,
+    "base_casting_time": 0,
+    "min_aoe": 1,
+    "max_aoe": 1,
+    "energy_source": "STAMINA",
+    "difficulty": 2,
+	"damage_type": "acid",
+    "sound_description": "a whoosh"
+  },
+  {
+    "id": "cursed_spirit_acid",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "cursed spirit link - acid" },
+    "description": "A cursed 'spirit link' to be placed in a cursed spirit chain. This one will deal 5 acid damage all around the wearer when they get hit.",
+    "weight": "1000 kg",
+    "volume": "1000 L",
+    "longest_side": "2 km",
+    "price": 0,
+	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
+    "material": [ "aether" ],
+	"relic_data": {
+      "passive_effects": [
+        {
+          "has": "HELD",
+          "condition": "ALWAYS",
+          "hit_me_effect": [ { "id": "cursed_acid", "hit_self": true } ]
+        }
+      ]
+    },
+    "symbol": "c",
+    "color": "red"
+  },
+  {
+    "id": "cursed_elec",
+    "type": "SPELL",
+    "name": "Cursed",
+    "description": "",
+    "effect": "attack",
+    "shape": "blast",
+    "flags": [ "NO_LEGS" ],
+    "valid_targets": [ "hostile" ],
+    "max_level": 10,
+    "min_damage": 5,
+    "max_damage": 5,
+    "base_casting_time": 0,
+    "min_aoe": 1,
+    "max_aoe": 1,
+    "energy_source": "STAMINA",
+    "difficulty": 2,
+	"damage_type": "electric",
+    "sound_description": "a whoosh"
+  },
+  {
+    "id": "cursed_spirit_electrical",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "cursed spirit link - electric" },
+    "description": "A cursed 'spirit link' to be placed in a cursed spirit chain. This one will deal 5 electrical damage all around the wearer when they get hit.",
+    "weight": "1000 kg",
+    "volume": "1000 L",
+    "longest_side": "2 km",
+    "price": 0,
+	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
+    "material": [ "aether" ],
+	"relic_data": {
+      "passive_effects": [
+        {
+          "has": "HELD",
+          "condition": "ALWAYS",
+          "hit_me_effect": [ { "id": "cursed_elec", "hit_self": true } ]
+        }
+      ]
+    },
+    "symbol": "c",
+    "color": "red"
+  },
+  {
+    "id": "cursed_biological",
+    "type": "SPELL",
+    "name": "Cursed",
+    "description": "",
+    "effect": "attack",
+    "shape": "blast",
+    "flags": [ "NO_LEGS" ],
+    "valid_targets": [ "hostile" ],
+    "max_level": 10,
+    "min_damage": 5,
+    "max_damage": 5,
+    "base_casting_time": 0,
+    "min_aoe": 1,
+    "max_aoe": 1,
+    "energy_source": "STAMINA",
+    "difficulty": 2,
+	"damage_type": "biological",
+    "sound_description": "a whoosh"
+  },
+  {
+    "id": "cursed_spirit_biological",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "cursed spirit link - biological" },
+    "description": "A cursed 'spirit link' to be placed in a cursed spirit chain. This one will deal 5 biological damage all around the wearer when they get hit.",
+    "weight": "1000 kg",
+    "volume": "1000 L",
+    "longest_side": "2 km",
+    "price": 0,
+	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
+    "material": [ "aether" ],
+	"relic_data": {
+      "passive_effects": [
+        {
+          "has": "HELD",
+          "condition": "ALWAYS",
+          "hit_me_effect": [ { "id": "cursed_biological", "hit_self": true } ]
+        }
+      ]
+    },
+    "symbol": "c",
+    "color": "red"
+  },
+  {
+    "id": "cursed_cut",
+    "type": "SPELL",
+    "name": "Cursed",
+    "description": "",
+    "effect": "attack",
+    "shape": "blast",
+    "flags": [ "NO_LEGS" ],
+    "valid_targets": [ "hostile" ],
+    "max_level": 10,
+    "min_damage": 5,
+    "max_damage": 5,
+    "base_casting_time": 0,
+    "min_aoe": 1,
+    "max_aoe": 1,
+    "energy_source": "STAMINA",
+    "difficulty": 2,
+	"damage_type": "cut",
+    "sound_description": "a whoosh"
+  },
+  {
+    "id": "cursed_spirit_cut",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "cursed spirit link - cut" },
+    "description": "A cursed 'spirit link' to be placed in a cursed spirit chain. This one will deal 5 cut damage all around the wearer when they get hit.",
+    "weight": "1000 kg",
+    "volume": "1000 L",
+    "longest_side": "2 km",
+    "price": 0,
+	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
+    "material": [ "aether" ],
+	"relic_data": {
+      "passive_effects": [
+        {
+          "has": "HELD",
+          "condition": "ALWAYS",
+          "hit_me_effect": [ { "id": "cursed_cut", "hit_self": true } ]
+        }
+      ]
+    },
+    "symbol": "c",
+    "color": "red"
+  },
+  {
+    "id": "cursed_bash",
+    "type": "SPELL",
+    "name": "Cursed",
+    "description": "",
+    "effect": "attack",
+    "shape": "blast",
+    "flags": [ "NO_LEGS" ],
+    "valid_targets": [ "hostile" ],
+    "max_level": 10,
+    "min_damage": 5,
+    "max_damage": 5,
+    "base_casting_time": 0,
+    "min_aoe": 1,
+    "max_aoe": 1,
+    "energy_source": "STAMINA",
+    "difficulty": 2,
+	"damage_type": "bash",
+    "sound_description": "a whoosh"
+  },
+  {
+    "id": "cursed_spirit_bash",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "cursed spirit link - bash" },
+    "description": "A cursed 'spirit link' to be placed in a cursed spirit chain. This one will deal 5 bash damage all around the wearer when they get hit.",
+    "weight": "1000 kg",
+    "volume": "1000 L",
+    "longest_side": "2 km",
+    "price": 0,
+	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
+    "material": [ "aether" ],
+	"relic_data": {
+      "passive_effects": [
+        {
+          "has": "HELD",
+          "condition": "ALWAYS",
+          "hit_me_effect": [ { "id": "cursed_bash", "hit_self": true } ]
+        }
+      ]
+    },
+    "symbol": "c",
+    "color": "red"
+  },
+  {
+    "id": "cursed_stab",
+    "type": "SPELL",
+    "name": "Cursed",
+    "description": "",
+    "effect": "attack",
+    "shape": "blast",
+    "flags": [ "NO_LEGS" ],
+    "valid_targets": [ "hostile" ],
+    "max_level": 10,
+    "min_damage": 5,
+    "max_damage": 5,
+    "base_casting_time": 0,
+    "min_aoe": 1,
+    "max_aoe": 1,
+    "energy_source": "STAMINA",
+    "difficulty": 2,
+	"damage_type": "acid",
+    "sound_description": "a whoosh"
+  },
+  {
+    "id": "cursed_spirit_stab",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "cursed spirit link - stab" },
+    "description": "A cursed 'spirit link' to be placed in a cursed spirit chain. This one will deal 5 stab damage all around the wearer when they get hit.",
+    "weight": "1000 kg",
+    "volume": "1000 L",
+    "longest_side": "2 km",
+    "price": 0,
+	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
+    "material": [ "aether" ],
+	"relic_data": {
+      "passive_effects": [
+        {
+          "has": "HELD",
+          "condition": "ALWAYS",
+          "hit_me_effect": [ { "id": "cursed_stab", "hit_self": true } ]
+        }
+      ]
+    },
+    "symbol": "c",
+    "color": "red"
+  },
+  {
+    "id": "cursed_bullet",
+    "type": "SPELL",
+    "name": "Cursed",
+    "description": "",
+    "effect": "attack",
+    "shape": "blast",
+    "flags": [ "NO_LEGS" ],
+    "valid_targets": [ "hostile" ],
+    "max_level": 10,
+    "min_damage": 5,
+    "max_damage": 5,
+    "base_casting_time": 0,
+    "min_aoe": 1,
+    "max_aoe": 1,
+    "energy_source": "STAMINA",
+    "difficulty": 2,
+	"damage_type": "acid",
+    "sound_description": "a whoosh"
+  },
+  {
+    "id": "cursed_spirit_bullet",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "cursed spirit link - bullet" },
+    "description": "A cursed 'spirit link' to be placed in a cursed spirit chain. This one will deal 5 ballistic damage all around the wearer when they get hit.",
+    "weight": "1000 kg",
+    "volume": "1000 L",
+    "longest_side": "2 km",
+    "price": 0,
+	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
+    "material": [ "aether" ],
+	"relic_data": {
+      "passive_effects": [
+        {
+          "has": "HELD",
+          "condition": "ALWAYS",
+          "hit_me_effect": [ { "id": "cursed_bullet", "hit_self": true } ]
+        }
+      ]
+    },
+    "symbol": "c",
+    "color": "red"
+  }
+]

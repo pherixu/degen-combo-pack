@@ -63,13 +63,20 @@
     }
   },
   {
+	  "id": "onyx_silver_ring", 
+	  "type": "ARMOR",
+	  "copy-from": "onyx_silver_ring",
+  "name": { "str": "onyx and silver ring" },
+  "description": "A silver ring with an onyx mounted on top of it. There's a sinister sense to it."
+  },
+  {
     "type": "SPELL",
     "id": "summon_cold_auto_fan",
     "name": "Cooling Breeze",
     "description": "Projects a light puff of cold air.",
     "valid_targets": [ "hostile", "ground", "ally", "self" ],
     "max_level": 3,
-    "flags": [ "SOMATIC", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
+    "flags": [ "NO_PROJECTILE", "NO_EXPLOSION_SFX", "RANDOM_TARGET" ],
     "base_casting_time": 0,
     "base_energy_cost": 0,
     "difficulty": 0,
@@ -90,7 +97,7 @@
     "description": "Projects a light puff of cold air.",
     "valid_targets": [ "hostile", "ground", "ally", "self" ],
     "max_level": 3,
-    "flags": [ "SOMATIC", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
+    "flags": [ "NO_PROJECTILE", "NO_EXPLOSION_SFX", "RANDOM_TARGET" ],
     "base_casting_time": 0,
     "base_energy_cost": 0,
     "difficulty": 0,
@@ -203,7 +210,78 @@
     "material": [ "iron" ],
     "symbol": "S",
     "looks_like": "copper_locket",
+	"charges_per_use": 1,
+	"flags": [ "TARDIS", "SEMITANGIBLE" ],
+	"use_action": [ 
+	{ "type": "cast_spell", "spell_id": "draw_crystal_circle", "no_fail": true, "level": 1, "need_worn": true }
+	],
+	"pocket_data": [
+      {
+        "rigid": true,
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "1000 L",
+        "max_contains_weight": "1000 kg",
+        "moves": 100000,
+        "max_item_length": "2 km",
+		"item_restriction": [
+          "spirit_int",
+		  "spirit_str", 
+		  "spirit_dex", 
+		  "spirit_per", 
+		  "spirit_speed", 
+		  "spirit_carry",
+		  "spirit_atk_speed", 
+		  "spirit_stamina", 
+		  "spirit_max_mana", 
+		  "spirit_regen_mana", 
+		  "spirit_fatigue", 
+		  "spirit_hp",  
+		  "spirit_fall", 
+		  "spirit_fire_armor", 
+		  "spirit_cold_armor", 
+		  "spirit_acid_armor", 
+		  "spirit_bio_armor", 
+		  "spirit_elec_armor",
+		  "spirit_bullet_armor",
+		  "spirit_bash_armor", 
+		  "spirit_cut_armor", 
+		  "spirit_stab_armor", 
+		  "spirit_elec_armor",  
+		  "spirit_reading", 
+		  "spirit_focus", 
+		  "spirit_footstep_noise", 
+		  "spirit_bionic", 
+		  "spirit_block", 
+		  "spirit_dodge", 
+		  "spirit_climate", 
+		  "spirit_climate_chill", 
+		  "spirit_climate_heat", 
+		  "spirit_dispersion", 
+		  "spirit_recoil", 
+		  "spirit_rust_resist", 
+		  "spirit_intimidate", 
+		  "spirit_persuade", 
+		  "spirit_lying", 
+		  "spirit_pain", 
+		  "spirit_regen_hp", 
+		  "spirit_regen_stamina", 
+		  "spirit_hunger", 
+		  "spirit_thirst", 
+		  "spirit_attack_noise",
+		  "spirit_heat", 
+		  "spirit_cold", 
+		  "spirit_acid", 
+		  "spirit_elec", 
+		  "spirit_cut", 
+		  "spirit_stab", 
+		  "spirit_bash"
+        ],
+        "weight_multiplier": 0.0
+      },
+      { "pocket_type": "MAGAZINE", "ammo_restriction": { "white_pen_ink": 1 }, "watertight": true }
+    ],
     "relic_data": {
+	 "charge_info": { "recharge_type": "periodic", "time": "60 s", "regenerate_ammo": true },
       "passive_effects": [
         { "id": "philostone_enchantment" },
         {
@@ -211,13 +289,13 @@
           "condition": "ALWAYS",
           "values": [
             { "value": "MAX_MANA", "add": 10000 },
-            { "value": "REGEN_MANA", "multiply": 5 },
+            { "value": "REGEN_MANA", "multiply": 2 },
             { "value": "EFFECTIVE_HEALTH_MOD", "add": 2 },
             { "value": "STRENGTH", "add": 4 },
             { "value": "DEXTERITY", "add": 4 },
             { "value": "PERCEPTION", "add": 4 },
             { "value": "INTELLIGENCE", "add": 4 },
-            { "value": "MAX_STAMINA", "multiply": 5 },
+            { "value": "MAX_STAMINA", "multiply": 3 },
             { "value": "SKILL_RUST_RESIST", "add": 100 },
             { "value": "METABOLISM", "multiply": -4 },
             { "value": "FATIGUE", "multiply": -5 },
@@ -232,7 +310,7 @@
     "id": "alchemists_tool_belt",
     "type": "ARMOR",
     "name": { "str": "homebrewer's utility belt" },
-    "description": "A common belt with pockets, loops and sheaths to store up to six tools or blades. It also comes equipped with several useful tools, such as a chemistry set, a distillery, and a state of the art magical altar.",
+    "description": "A common belt with pockets, loops and sheaths to store up to six tools or blades. It also comes equipped with several useful tools, such as a chemistry set, a distillery, and a state of the art magical altar. It may also aid in the creation of homemade explosives, if one is so inclined.",
     "weight": "3850 g",
     "volume": "3500 ml",
     "price": 2000000,
@@ -508,7 +586,8 @@
 	  "id": "unending_tape",
 	  "description": "A small cardboard box with a small muscular arm sticking out of it's lid. The arm holds a roll of duct tape which never seems to run out.",
 	  "name": "REAL Man's Toolbox",
-	  "price": 400000,
+	  "price": 100000,
+	  "price_postapoc": 100000,
 	  "type": "TOOL",
 	  "copy-from": "box_small",
 	  "use_action": [ {"type": "cast_spell", "spell_id": "spawn_tape", "no_fail": true, "level": 1 } ]
@@ -918,7 +997,7 @@
   {
     "id": "gate_token",
     "name": { "str": "favor of the gate" },
-    "description": "A small glass flask filled with blue and white liquid. When ingested, the drinker will 'burp up' a translocation gate over the course of the next minute.",
+    "description": "A small glass flask filled with blue and white liquid. When ingested, the drinker will 'burp up' a translocation gate.",
     "use_action": { "type": "cast_spell", "spell_id": "transgate_place_favor", "no_fail": true, "level": 1 },
     "type": "COMESTIBLE",
     "weight": "265 g",
@@ -934,7 +1013,7 @@
     "comestible_type": "DRINK",
     "flags": [ "EATEN_COLD", "NUTRIENT_OVERRIDE", "NO_AUTO_CONSUME" ],
     "phase": "liquid",
-    "price": 500000,
+    "price": 100000,
     "freezing_point": 4
   },
   {
@@ -956,7 +1035,7 @@
     "comestible_type": "DRINK",
     "flags": [ "EATEN_COLD", "NUTRIENT_OVERRIDE", "NO_AUTO_CONSUME" ],
     "phase": "liquid",
-    "price": 500000,
+    "price": 50000,
     "freezing_point": 4
   },
   {
@@ -978,7 +1057,29 @@
     "comestible_type": "DRINK",
     "flags": [ "EATEN_COLD", "NUTRIENT_OVERRIDE", "NO_AUTO_CONSUME" ],
     "phase": "liquid",
-    "price": 500000,
+    "price": 200000,
+    "freezing_point": 4
+  },
+  {
+    "id": "catalyzer",
+    "name": { "str": "catalyzer" },
+    "description": "A small glass flask filled with a swirling green liquid. You've heard of this stuff, and what it does to you. Mutations abound when it's around.",
+    "use_action": { "type": "cast_spell", "spell_id": "catalyst_no_comp", "no_fail": true, "level": 1 },
+    "type": "COMESTIBLE",
+    "weight": "265 g",
+    "quench": 10,
+    "calories": 33,
+    "volume": "250ml",
+    "charges": 1,
+    "fun": -3,
+    "healthy": 1,
+    "symbol": "~",
+    "container": "flask_glass",
+    "color": "white",
+    "comestible_type": "DRINK",
+    "flags": [ "EATEN_COLD", "NUTRIENT_OVERRIDE", "NO_AUTO_CONSUME" ],
+    "phase": "liquid",
+    "price": 100000,
     "freezing_point": 4
   },
   {
@@ -1064,6 +1165,8 @@
     "qualities": [ [ "LOCKPICK", 1 ] ],
     "flags": [
       "WATCH",
+	  "STURDY", 
+	  "OUTER",
       "ALARMCLOCK",
       "BAROMETER",
       "TARDIS",
@@ -1170,7 +1273,7 @@
         "max_contains_weight": "500 g"
       }
     ],
-    "armor": [ { "coverage": 100, "covers": [ "hand_l", "hand_r" ], "specifically_covers": [ "hand_wrist_l", "hand_wrist_r" ] } ]
+    "armor": [ { "coverage": 100, "covers": [ "hand_l", "hand_r" ], "encumbrance": 5 } ]
   },
   {
     "type": "TOOL_ARMOR",
@@ -1189,6 +1292,8 @@
     "qualities": [ [ "LOCKPICK", 1 ] ],
     "flags": [
       "WATCH",
+	  "STURDY", 
+	  "OUTER",
       "ALARMCLOCK",
       "HYGROMETER",
       "TARDIS",
@@ -1295,7 +1400,7 @@
         "max_contains_weight": "500 g"
       }
     ],
-    "armor": [ { "coverage": 100, "covers": [ "hand_l", "hand_r" ], "specifically_covers": [ "hand_wrist_l", "hand_wrist_r" ] } ]
+    "armor": [ { "coverage": 100, "covers": [ "hand_l", "hand_r" ], "encumbrance": 5 } ]
   },
   {
     "id": "bangles_of_kelk",
@@ -1356,12 +1461,86 @@
         "max_contains_weight": "50 kg",
         "max_item_length": "1800 cm",
         "holster": true,
-        "moves": 50,
+        "moves": 0,
         "flag_restriction": [ "SHEATH_SWORD" ]
       }
     ],
     "flags": [ "BELTED", "OVERSIZE", "WATER_FRIENDLY", "LIGHT_10", "UNBREAKABLE_MELEE", "TARDIS", "ZERO_WEIGHT" ],
     "armor": [ { "encumbrance": 0, "coverage": 1, "covers": [ "torso" ], "specifically_covers": [ "torso_hanging_back" ] } ]
+  },
+  {
+    "id": "psychic_pebble_back",
+    "type": "ARMOR",
+    "name": { "str": "psychic pebble (back)" },
+    "description": "A smooth metallic disc that objects are almost magnetically attracted to. Can be switched to be carried on the hip instead.",
+    "weight": "1 g",
+    "volume": "1 ml",
+    "price": 100000,
+    "bashing": 4,
+    "material": [ "gold" ],
+    "symbol": "[",
+    "looks_like": "baldric",
+    "color": "brown",
+    "material_thickness": 1,
+	"use_action": [
+	{ "type": "holster", "holster_prompt": "Sheath sword", "holster_msg": "The orb settles unto your blade, magically attaching it to your back." },
+	{
+        "target": "psychic_pebble",
+        "msg": "You move the pebble to your waist.",
+        "menu_text": "Put on Waist",
+        "type": "transform"
+      }
+	],
+    "pocket_data": [
+      {
+        "magazine_well": "17500 ml",
+        "max_contains_volume": "37500 ml",
+        "max_contains_weight": "50 kg",
+        "max_item_length": "1800 cm",
+        "holster": true,
+        "moves": 10,
+        "flag_restriction": [ "SHEATH_SWORD" ]
+      }
+    ],
+    "flags": [ "BELTED", "OVERSIZE", "WATER_FRIENDLY", "PSYSHIELD_PARTIAL", "TARDIS", "ZERO_WEIGHT", "SHEATH_BOW", "SHEATH_KNIFE", "SHEATH_SWORD" ],
+    "armor": [ { "encumbrance": 0, "coverage": 1, "covers": [ "torso" ], "specifically_covers": [ "torso_hanging_back" ] } ]
+  },
+  {
+    "id": "psychic_pebble",
+    "type": "ARMOR",
+    "name": { "str": "psychic pebble (waist)" },
+    "description": "A smooth metallic disc that objects are almost magnetically attracted to. Can be switched to be carried on the back instead.",
+    "weight": "1 g",
+    "volume": "1 ml",
+    "price": 100000,
+    "bashing": 4,
+    "material": [ "gold" ],
+    "symbol": "[",
+    "looks_like": "baldric",
+    "color": "brown",
+	"sided": true,
+    "material_thickness": 1,
+	"use_action": [
+	{ "type": "holster", "holster_prompt": "Sheath sword", "holster_msg": "The orb settles unto your blade, magically attaching it to your waist." },
+	{
+        "target": "psychic_pebble_back",
+        "msg": "You move the pebble to your back.",
+        "menu_text": "Put on Back",
+        "type": "transform"
+      }
+	],
+    "pocket_data": [
+      {
+        "magazine_well": "17500 ml",
+        "max_contains_volume": "37500 ml",
+        "max_contains_weight": "50 kg",
+        "max_item_length": "1800 cm",
+        "holster": true,
+        "moves": 10
+      }
+    ],
+    "flags": [ "BELTED", "OVERSIZE", "WATER_FRIENDLY", "PSYSHIELD_PARTIAL", "TARDIS", "ZERO_WEIGHT", "SHEATH_BOW", "SHEATH_KNIFE", "SHEATH_SWORD" ],
+    "armor": [ { "encumbrance": 0, "coverage": 1, "covers": [ "torso" ], "specifically_covers": [ "torso_waist" ] } ]
   },
   {
     "id": "teddy",
@@ -1395,9 +1574,10 @@
       {
         "rigid": true,
         "max_contains_volume": "10000 ml",
-        "max_contains_weight": "10000 g",
+        "max_contains_weight": "1000 g",
+		"weight_multiplier": 0.1,
         "moves": 1,
-        "item_restriction": [ "money_one", "money_two", "money_five", "money_ten", "money_twenty", "money_fifty", "money_hundred" ]
+        "item_restriction": [ "money_one", "money_two", "money_five", "money_ten", "money_twenty", "money_fifty", "money_hundred", "money_strap_hundred", "money_bundle_hundred" ]
       }
     ],
     "relic_data": { "charge_info": { "recharge_type": "periodic", "time": "24 h", "regenerate_ammo": true } },
@@ -1420,8 +1600,7 @@
       {
         "coverage": 100,
         "encumbrance": 2,
-        "covers": [ "hand_l", "hand_r" ],
-        "specifically_covers": [ "hand_wrist_l", "hand_wrist_r" ]
+        "covers": [ "hand_l", "hand_r" ]
       }
     ]
   },
@@ -1443,7 +1622,7 @@
     "flags": [ "BELT_CLIP", "NONCONDUCTIVE", "MAGIC_FOCUS", "RADIO_INVOKE_PROC", "RADIO_MODABLE" ],
     "charges_per_use": 50,
     "ammo": [ "crystallized_mana" ],
-    "use_action": { "type": "cast_spell", "spell_id": "artillery", "no_fail": true, "level": 10, "need_wielding": true },
+    "use_action": { "type": "cast_spell", "spell_id": "artillery_no_comp", "no_fail": true, "level": 10, "need_wielding": true },
     "pocket_data": [
       {
         "pocket_type": "MAGAZINE_WELL",
@@ -1464,7 +1643,7 @@
     "volume": "200 ml",
     "longest_side": "24 cm",
     "price": 10000,
-	"flags": [ "SEMITANGIBLE" ],
+	"flags": [ "SEMITANGIBLE", "ZERO_WEIGHT", "LIGHT_10" ],
     "material": [ "glass" ],
     "symbol": "o",
     "color": "white"
@@ -1611,7 +1790,34 @@
       { "type": "cast_spell", "spell_id": "translocate_self", "no_fail": true, "level": 1, "need_worn": true }
     ],
     "relic_data": { "charge_info": { "recharge_type": "periodic", "time": "16 h", "regenerate_ammo": true } },
-    "flags": [ "NO_UNLOAD", "WATER_FRIENDLY", "SKINTIGHT", "RADIO_INVOKE_PROC", "RADIO_MODABLE" ]
+    "flags": [ "WATER_FRIENDLY", "SKINTIGHT", "RADIO_INVOKE_PROC", "RADIO_MODABLE" ]
+  },
+  {
+    "id": "transtemporal_pass",
+    "repairs_like": "silver_necklace",
+    "type": "TOOL_ARMOR",
+    "name": { "str": "transtemporal pass", "str_pl": "transtemporal passes" },
+    "description": "A temporary ID that was used by professionals so that guests could keep up pace. Simply put it on, and you're able to teleport. Some customers report a side effect of temporarily swapping bodies, but these accusations are buggy at best.",
+    "weight": "18 g",
+    "volume": "30 ml",
+    "price": 100000,
+    "to_hit": -2,
+    "material": [ "alien_liquid" ],
+    "symbol": "[",
+    "looks_like": "silver_necklace",
+    "color": "cyan",
+    "material_thickness": 1,
+    "environmental_protection": 1,
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "mutations": [ "TRANSLOCATESELF_SPELL" ]
+        }
+      ]
+    },
+    "flags": [ "WATER_FRIENDLY", "SKINTIGHT" ]
   },
   {
     "id": "magi_staff_minor",
@@ -1653,7 +1859,7 @@
     "valid_targets": [ "self" ],
     "effect": "spawn_item",
     "effect_str": "foodplace_food",
-    "extra_effects": [ { "id": "spawn_component_subscription" } ],
+    "extra_effects": [ { "id": "spawn_component_subscription" }, { "id": "spawn_heatpack" } ],
     "shape": "blast",
     "min_duration": 600000,
     "max_duration": 600000,
@@ -1691,6 +1897,29 @@
     "base_energy_cost": 0,
     "energy_source": "MANA",
     "flags": [ "PERMANENT", "WONDER" ],
+    "difficulty": 5,
+    "max_level": 1,
+    "min_damage": 1,
+    "max_damage": 1,
+    "min_range": 1,
+    "max_range": 1,
+    "sound_description": "a munch"
+  },
+  {
+    "id": "spawn_heatpack",
+    "type": "SPELL",
+    "name": "Delivery!",
+    "description": "Suddenly, your life has meaning again.",
+    "valid_targets": [ "self" ],
+    "effect": "spawn_item",
+    "effect_str": "heatpack",
+    "shape": "blast",
+    "min_duration": 600000,
+    "max_duration": 600000,
+    "base_casting_time": 0,
+    "base_energy_cost": 0,
+    "energy_source": "MANA",
+    "flags": [ "PERMANENT" ],
     "difficulty": 5,
     "max_level": 1,
     "min_damage": 1,
@@ -1784,14 +2013,14 @@
     "type": "TOOL",
     "category": "tools",
     "name": { "str": "colorless fountain pen" },
-    "description": "This is a fountain pen that writes solely in the language of magic, meaning anything you try to write with it is invisible. It's useful for artisticly weaving magic into things, but not much else.",
+    "description": "This is a fountain pen that writes solely in the language of magic, meaning anything you try to write with it is invisible. It's useful for artisticly weaving magic into things, or if you had some white ink you could construct a magic circle.",
     "weight": "20 g",
     "volume": "10 ml",
     "price": 25000,
     "material": [ "steel" ],
     "symbol": ";",
     "color": "light_gray",
-    "qualities": [ [ "MANA_WEAVE", 1 ], [ "MANA_FOCUS", 1 ] ],
+    "qualities": [ [ "MANA_WEAVE", 1 ] ],
     "pocket_data": [
       {
         "rigid": false,
@@ -1809,7 +2038,7 @@
         ]
       }
     ],
-    "flags": [ "STAB", "FRAGILE_MELEE" ]
+    "flags": [ "STAB", "FRAGILE_MELEE", "MAGIC_FOCUS" ]
   },
   {
     "id": "unending_pen",
@@ -1831,7 +2060,7 @@
       { "type": "inscribe", "verb": "Write", "gerund": "Written", "on_terrain": false, "material_restricted": false },
       { "target": "unending_pen_green", "msg": "You click the pen.", "menu_text": "Green Ink", "type": "transform" }
     ],
-    "flags": [ "STAB", "FRAGILE_MELEE", "WRITE_MESSAGE" ]
+    "flags": [ "STAB", "FRAGILE_MELEE", "WRITE_MESSAGE", "MAGIC_FOCUS" ]
   },
   {
     "id": "unending_pen_green",
@@ -1853,7 +2082,7 @@
       { "type": "inscribe", "verb": "Write", "gerund": "Written", "on_terrain": false, "material_restricted": false },
       { "target": "unending_pen_blue", "msg": "You click the pen.", "menu_text": "Blue Ink", "type": "transform" }
     ],
-    "flags": [ "STAB", "FRAGILE_MELEE", "WRITE_MESSAGE" ]
+    "flags": [ "STAB", "FRAGILE_MELEE", "WRITE_MESSAGE", "MAGIC_FOCUS" ]
   },
   {
     "id": "unending_pen_red",
@@ -1875,7 +2104,7 @@
       { "type": "inscribe", "verb": "Write", "gerund": "Written", "on_terrain": false, "material_restricted": false },
       { "target": "unending_pen", "msg": "You click the pen.", "menu_text": "Black Ink", "type": "transform" }
     ],
-    "flags": [ "STAB", "FRAGILE_MELEE", "WRITE_MESSAGE" ]
+    "flags": [ "STAB", "FRAGILE_MELEE", "WRITE_MESSAGE", "MAGIC_FOCUS" ]
   },
   {
     "id": "unending_pen_blue",
@@ -1897,7 +2126,7 @@
       { "type": "inscribe", "verb": "Write", "gerund": "Written", "on_terrain": false, "material_restricted": false },
       { "target": "unending_pen_red", "msg": "You click the pen.", "menu_text": "Red Ink", "type": "transform" }
     ],
-    "flags": [ "STAB", "FRAGILE_MELEE", "WRITE_MESSAGE" ]
+    "flags": [ "STAB", "FRAGILE_MELEE", "WRITE_MESSAGE", "MAGIC_FOCUS" ]
   },
   {
     "id": "walking_key",
@@ -1969,7 +2198,7 @@
         {
           "has": "WORN",
           "condition": "ALWAYS",
-          "values": [ { "value": "MAX_MANA", "multiply": 0.2, "add": 1000 }, { "value": "REGEN_MANA", "multiply": 0.1 } ]
+          "values": [ { "value": "MAX_MANA", "multiply": 0.2, "add": 500 }, { "value": "REGEN_MANA", "multiply": 0.1 } ]
         }
       ]
     }
@@ -2035,7 +2264,7 @@
             },
             "effect": [
               { "u_message": "Your hands start shaking… you need it bad!", "type": "bad" },
-              { "u_add_effect": "shakes", "duration": "2 minutes" }
+              { "u_add_effect": "shakes", "duration": "5 minutes" }
             ]
           }
         ]
@@ -2054,7 +2283,7 @@
     "type_name": "crystallized_mana",
     "description": "Strength - 1;   Slight sluggishness;   Occasional cravings",
     "craving_morale": "morale_craving_crystallized",
-    "effect_on_condition": "EOC_CRYSTALLIZED_ADDICTION_ADDICTION"
+    "effect_on_condition": "EOC_CRYSTALLIZED_ADDICTION"
   },
   {
     "type": "COMESTIBLE",
@@ -2096,7 +2325,7 @@
         "max_contains_volume": "70 L",
         "max_contains_weight": "100 kg",
         "rigid": true,
-        "max_item_length": "100 cm",
+        "max_item_length": "1000 cm",
         "weight_multiplier": 0.7,
         "moves": 300
       }
@@ -2107,7 +2336,7 @@
     "type": "TOOL",
     "id": "mirrored_page",
     "name": { "str": "mirrored page" },
-    "weight": "3 g",
+    "weight": "7 g",
     "color": "white",
     "symbol": "`",
     "looks_like": "mirror",
@@ -2116,16 +2345,16 @@
     "use_action": [ "CAPTURE_MONSTER_ACT" ],
     "price": 50000,
     "material": [ "paper" ],
-    "volume": "8 ml",
+    "volume": "7 ml",
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
-        "max_contains_volume": "7 ml",
-        "max_contains_weight": "7 g",
-        "max_item_length": "100 cm",
+        "max_contains_volume": "280 ml",
+        "max_contains_weight": "3175 g",
+        "max_item_length": "280 mm",
         "rigid": true,
-        "weight_multiplier": 0.1,
-        "moves": 300
+        "weight_multiplier": 0.0,
+        "moves": 50
       }
     ],
     "flags": [ "TARDIS", "ZERO_WEIGHT" ],
@@ -2339,7 +2568,7 @@
       "type": "transform"
     },
     "relic_data": {
-      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "ARMOR_BASH", "multiply": 0.1 } ] } ]
+      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "ARMOR_BASH", "multiply": 0.1, "add": 2  } ] } ]
     }
   },
   {
@@ -2358,7 +2587,7 @@
       "type": "transform"
     },
     "relic_data": {
-      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "ARMOR_STAB", "multiply": 0.1 } ] } ]
+      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "ARMOR_STAB", "multiply": 0.1, "add": 2  } ] } ]
     }
   },
   {
@@ -2377,7 +2606,7 @@
       "type": "transform"
     },
     "relic_data": {
-      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "ARMOR_CUT", "multiply": 0.1 } ] } ]
+      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "ARMOR_CUT", "multiply": 0.1, "add": 2  } ] } ]
     }
   },
   {
@@ -2396,7 +2625,7 @@
       "type": "transform"
     },
     "relic_data": {
-      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "ARMOR_BULLET", "multiply": 0.1 } ] } ]
+      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "ARMOR_BULLET", "multiply": 0.1, "add": 2  } ] } ]
     }
   },
   {
@@ -2415,7 +2644,7 @@
       "type": "transform"
     },
     "relic_data": {
-      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "ARMOR_HEAT", "multiply": 0.1 } ] } ]
+      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "ARMOR_HEAT", "multiply": 0.1, "add": 2  } ] } ]
     }
   },
   {
@@ -2434,7 +2663,7 @@
       "type": "transform"
     },
     "relic_data": {
-      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "ARMOR_COLD", "multiply": 0.1 } ] } ]
+      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "ARMOR_COLD", "multiply": 0.1, "add": 2  } ] } ]
     }
   },
   {
@@ -2453,7 +2682,7 @@
       "type": "transform"
     },
     "relic_data": {
-      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "ARMOR_ELEC", "multiply": 0.1 } ] } ]
+      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "ARMOR_ELEC", "multiply": 0.1, "add": 2 } ] } ]
     }
   },
   {
@@ -2472,7 +2701,7 @@
       "type": "transform"
     },
     "relic_data": {
-      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "ARMOR_ACID", "multiply": 0.1 } ] } ]
+      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "ARMOR_ACID", "multiply": 0.1, "add": 2  } ] } ]
     }
   },
   {
@@ -2491,7 +2720,7 @@
       "type": "transform"
     },
     "relic_data": {
-      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "ARMOR_BIO", "multiply": 0.1 } ] } ]
+      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "ARMOR_BIO", "multiply": 0.1, "add": 2  } ] } ]
     }
   },
   {
@@ -2683,7 +2912,7 @@
   {
     "id": "spawn_fast_reader_aura_heroin",
     "type": "SPELL",
-    "name": "spawn fast reader aura",
+    "name": "yourself into yourself and sink into a state of comprehending bliss",
     "description": "Fast reader aura",
     "valid_targets": [ "self" ],
     "flags": [ "SILENT" ],
@@ -2703,13 +2932,12 @@
   {
     "id": "fast_reader_aura_heroin",
     "type": "ARMOR",
-    "name": { "str": "conscious" },
-    "description": "You feel much smarter in general.",
+    "name": { "str": "drifting consciousness" },
+    "description": "You feel as though symbols have more meaning, and time seems to dilate as you look at them.",
     "weight": "1 g",
     "volume": "1 ml",
     "longest_side": "1 cm",
-    "price": 2000,
-    "price_postapoc": 250,
+    "price": 100000,
     "to_hit": 3,
     "bashing": 14,
     "cutting": 3,
@@ -2751,7 +2979,7 @@
     "type": "enchantment",
     "id": "cigarette_enchantment",
     "condition": "ALWAYS",
-    "intermittent_activation": { "effects": [ { "frequency": "1 m", "spell_effects": [ { "id": "smoking_mana", "hit_self": true } ] } ] }
+    "intermittent_activation": { "effects": [ { "frequency": "3 m", "spell_effects": [ { "id": "smoking_mana", "hit_self": true } ] } ] }
   },
   {
     "id": "cig_lit",
@@ -2765,7 +2993,7 @@
     "type": "enchantment",
     "id": "cigar_enchantment",
     "condition": "ALWAYS",
-    "intermittent_activation": { "effects": [ { "frequency": "30 s", "spell_effects": [ { "id": "smoking_mana", "hit_self": true } ] } ] }
+    "intermittent_activation": { "effects": [ { "frequency": "90 s", "spell_effects": [ { "id": "smoking_mana", "hit_self": true } ] } ] }
   },
   {
     "id": "cigar_lit",
@@ -2780,7 +3008,7 @@
     "type": "enchantment",
     "id": "blunt_enchantment",
     "condition": "ALWAYS",
-    "intermittent_activation": { "effects": [ { "frequency": "45 s", "spell_effects": [ { "id": "smoking_mana", "hit_self": true } ] } ] }
+    "intermittent_activation": { "effects": [ { "frequency": "2 m", "spell_effects": [ { "id": "smoking_mana", "hit_self": true } ] } ] }
   },
   {
     "id": "joint_lit",
@@ -2907,7 +3135,7 @@
     "id": "coffee_aura",
     "type": "ARMOR",
     "name": { "str": "coffee manamization" },
-    "description": "You feel more magically attuned now that you've had your morning joe. You can activate this to gain a burst of mana.",
+    "description": "You feel more magically attuned now that you've had your morning joe.",
     "weight": "1 g",
     "volume": "1 ml",
     "longest_side": "1 cm",

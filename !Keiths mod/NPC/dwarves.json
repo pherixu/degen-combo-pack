@@ -1,0 +1,297 @@
+[
+{
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "cave" ],
+    "weight": 750,
+    "object": {
+      "rotation": [ 0, 3 ],
+      "predecessor_mapgen": "forest_thick",
+      "rows": [
+        "                        ",
+        "         %%%%%%%        ",
+        "        %|||||||%       ",
+        "       %|||||||||%      ",
+        "      %|||||,,W,||%     ",
+        "     %||||||,||,,||%    ",
+        "    %||,,W,,,|||,,||%   ",
+        "   %||,,||||,,|||,W||%  ",
+        "  %|||,||||||,,|||,,||% ",
+        " %||||,,W,,|||,,|||<||% ",
+        " %|||||||||||||,,|||||% ",
+        " %||||,,,,,W,,,,,,,,,,; ",
+        " %|||,,|||,||,,,,f,,,,; ",
+        " %||,,||||,|||,,,,,|||% ",
+        " %||W|||||,||||,B,||||% ",
+        "  %|||,|||,|||||B|||||% ",
+        "   %||,,||,W,||||||||%  ",
+        "    %||,,|||,,||||||%   ",
+        "     %||,,|||,,||||%    ",
+        "      %||,,|||,,||%     ",
+        "       %||,,W,,||%      ",
+        "        %|||||||%       ",
+        "         %%%%%%%        ",
+        "                        "
+      ],
+      "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ],
+      "terrain": {
+        "|": "t_rock",
+        "%": [ "t_rock", "t_region_groundcover_forest" ],
+        ";": "t_region_soil",
+        ",": "t_rock_floor",
+        "B": "t_rock_floor",
+        "W": "t_rock_floor",
+        "<": "t_slope_down"
+      },
+      "furniture": { "f": "f_forge_rock" },
+      "fields": { "W": { "field": "fd_web", "intensity": 1, "age": 10 } },
+      "place_npcs": [
+        { "class": "cave_dwarf", "x": [ 15 ], "y": [ 11 ] },
+        { "class": "cave_dwarf", "x": [ 16 ], "y": [ 12 ] },
+        { "class": "cave_dwarf", "x": [ 19 ], "y": [ 13 ] }
+      ]
+    }
+  },
+{
+  "type": "GENERIC",
+  "id": "shiny_gems",
+  "symbol": ",",
+  "color": "yellow",
+  "name": {
+    "str": "shiny gems",
+    "str_pl": "shiny gems"
+  },
+  "category": "spare_parts",
+  "description": "A pile of shiny things, like gold and jewelry in a pretty lunchbox.",
+  "material": [
+    "gold"
+  ],
+  "flags": [
+    "TRADER_AVOID"
+  ],
+  "weight": "282 g",
+  "volume": "2050 ml",
+  "longest_side": "21 cm",
+  "to_hit": -2
+},
+{
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "shiny_gems",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "speech",
+    "difficulty": 5,
+    "time": "10 s",
+    "autolearn": false,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "wayward_memory_CASH" ] ],
+    "components": [ [ [ "gold_small", 200 ], [ "silver_small", 400 ], [ "platinum_small", 100 ], [ "coin_quarter", 1000 ] ], [ [ "diamond", 1 ], [ "copper_locket", 1 ], [ "cufflinks_intricate", 1 ] ], [ [ "pearl_collar", 1 ], [ "small_relic", 3 ], [ "silver_ear", 7 ] ] ]
+  },
+{
+    "type": "snippet",
+    "category": "<gems>",
+    "//": "Dwarves' responses.",
+    "text": [
+      "Gems.",
+	  "Jewery, 'oo.",
+	  "Anyfing shiny, really.",
+	  "Bring 'em 'ere, den we're square.",
+	  "Gems..."
+    ]
+  },
+  {
+    "id": "MISSION_GET_GEMS",
+    "type": "mission_definition",
+    "name": "Retrieve Gems",
+    "goal": "MGOAL_FIND_ITEM",
+    "difficulty": 4,
+    "value": 500000,
+    "item": "shiny_gems",
+    "end": {
+      "effect": [ { "u_remove_item_with": "shiny_gems" }, "follow" ]
+    },
+    "origins": [ "ORIGIN_ANY_NPC" ],
+    "dialogue": {
+      "describe": "Gems. Jewels. Shiny stuff really.",
+      "offer": "Gems.",
+      "accepted": "Bring 'em.",
+      "rejected": "Jewelry.",
+      "advice": "Dark places an such.",
+      "inquire": "Shiny fings.",
+      "success": "Gems!",
+      "success_lie": "Shiny!",
+      "failure": "Jewels..."
+    }
+  },
+  {
+    "type": "npc",
+    "id": "cave_dwarf",
+    "//": "Miner.",
+    "name_suffix": "dwarf",
+    "class": "NC_DWARF",
+    "attitude": 0,
+    "mission": 7,
+    "chat": "TALK_DWARF_FIRST_MEETING",
+	"mission_offered": "MISSION_GET_GEMS",
+    "faction": "no_faction"
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_DWARF",
+    "name": { "str": "Dwarf" },
+    "job_description": "Gems.",
+	"common": true,
+    "traits": [ { "group": "NPC_starting_traits" }, { "group": "trait_group_SPELLS" }, { "group": "trait_group_SPELLS" }, { "group": "trait_group_SPELLS" }, { "group": "Appearance_demographics" }, { "trait": "FACIAL_HAIR_BEARD" } ],
+    "bonus_str": { "rng": [ 2, 4 ] },
+    "bonus_int": { "rng": [ 2, 8 ] },
+	"skills": [
+      { "skill": "ALL", "level": { "mul": [ { "one_in": 2 }, { "sum": [ { "dice": [ 2, 2 ] }, { "rng": [ 0, 4 ] } ] } ] } },
+      { "skill": "spellcraft", "bonus": 2 },
+      { "skill": "fabrication", "bonus": 2 },
+	  { "skill": "mechanics", "bonus": 2 },
+      { "skill": "computer", "bonus": { "rng": [ 1, 7 ] } },
+      { "skill": "electronics", "bonus": { "rng": [ 1, 10 ] } },
+      { "skill": "tailor", "bonus": { "rng": [ 1, 8 ] } },
+      { "skill": "speech", "bonus": { "rng": [ 1, 2 ] } }
+    ],
+    "worn_override": "NC_DWARF_worn",
+    "weapon_override": "NC_DWARF_wield"
+  },
+  {
+    "type": "item_group",
+    "id": "NC_DWARF_worn",
+    "subtype": "collection",
+    "entries": [
+      { "group": "clothing_work_boots", "damage": [ 0, 2 ] },
+      { "group": "clothing_work_glasses", "prob": 60, "damage": [ 0, 2 ] },
+      { "group": "clothing_work_gloves", "prob": 75, "damage": [ 0, 2 ] },
+      { "group": "clothing_work_mask", "prob": 40, "damage": [ 0, 2 ] },
+      { "item": "ear_plugs", "prob": 15, "damage": [ 0, 2 ] },
+      { "item": "tool_belt", "prob": 25, "damage": [ 0, 2 ] },
+      {
+        "distribution": [
+          {
+            "collection": [ { "group": "clothing_work_pants", "damage": [ 0, 2 ] }, { "group": "clothing_work_torso", "damage": [ 0, 2 ] } ],
+            "prob": 75
+          },
+          { "item": "jumpsuit", "prob": 25, "damage": [ 0, 2 ] }
+        ]
+      },
+      { "group": "underwear", "damage": [ 0, 1 ] },
+      { "item": "miner_hat", "prob": 90, "damage": [ 0, 2 ] }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_DWARF_wield",
+    "items": [
+      [ "pickaxe", 50 ],
+      [ "shovel", 50 ],
+      [ "bucket", 20 ],
+      [ "gasoline_lantern", 10 ],
+      [ "electric_lantern", 10 ],
+      [ "oil_lamp", 10 ],
+	  [ "magic_laptop", 10 ],
+	  [ "wrench_large", 10 ],
+	  [ "mtailors_kit", 5 ],
+	  [ "white_pen", 5 ],
+      [ "jackhammer", 5 ],
+      [ "elec_jackhammer", 5 ]
+    ]
+  },
+  {
+    "id": "TALK_DWARF_FIRST_MEETING",
+    "type": "talk_topic",
+    "dynamic_line": "Gems?",
+    "speaker_effect": { "effect": { "u_add_var": "first_meeting", "type": "dialogue", "context": "first_meeting", "value": "yes" } },
+    "responses": [
+      {
+        "text": "Hello there!",
+        "topic": "TALK_DWARF_GENERIC",
+        "condition": { "not": { "u_has_var": "first_meeting", "type": "dialogue", "context": "first_meeting", "value": "yes" } }
+      },
+      {
+        "text": "I'm outta here.  Bye.",
+        "topic": "TALK_DONE",
+        "condition": { "not": { "u_has_var": "first_meeting", "type": "dialogue", "context": "first_meeting", "value": "yes" } }
+      }
+    ]
+  },
+  {
+    "id": "TALK_DWARF_GENERIC",
+    "type": "talk_topic",
+    "dynamic_line": "<gems>",
+    "responses": [
+      { "text": "What are you doing here?", "topic": "TALK_DWARF_GEMS" },
+      { "text": "Sorry, what?", "topic": "TALK_DWARF_GEMS" },
+	  {
+        "text": "Need anything done?",
+        "topic": "TALK_MISSION_LIST",
+        "condition": {
+          "and": [
+            { "not": "has_assigned_mission" },
+            {
+              "not": { "npc_has_var": "dwarf_done", "type": "dialogue", "context": "cave_dwarf", "value": "yes" }
+            }
+          ]
+        }
+      },
+      { "text": "About the mission…", "topic": "TALK_MISSION_INQUIRE", "condition": "has_assigned_mission" },
+      {
+        "text": "About one of those missions…",
+        "topic": "TALK_MISSION_LIST_ASSIGNED",
+        "condition": "has_many_assigned_missions"
+      },
+      { "text": "I'm outta here.  Bye.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "TALK_DWARF_GEMS",
+    "type": "talk_topic",
+    "dynamic_line": "<gems>",
+    "responses": [
+      { "text": "Why are you repeating 'gems' over and over again?", "topic": "TALK_DWARF_R_U_NUTS" },
+      { "text": "Sorry, what?", "topic": "TALK_DWARF_R_U_NUTS" },
+      { "text": "I'm outta here.  Bye.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "TALK_DWARF_R_U_NUTS",
+    "type": "talk_topic",
+    "dynamic_line": "<gems>",
+    "responses": [
+      { "text": "Are you nuts?", "topic": "TALK_DWARF_THIS_IS_MADNESS" },
+      { "text": "Sorry, what?", "topic": "TALK_DWARF_THIS_IS_MADNESS" },
+      { "text": "I'm outta here.  Bye.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "TALK_DWARF_THIS_IS_MADNESS",
+    "type": "talk_topic",
+    "dynamic_line": "<gems>",
+    "responses": [
+      {
+        "text": "Poor fellow - looks like you're out of your mind.  Can't help you, sorry.  I'm outta here.  Bye.",
+        "topic": "TALK_DONE"
+      },
+	  {
+        "text": "Need anything done?",
+        "topic": "TALK_MISSION_LIST",
+        "condition": {
+          "and": [
+            { "not": "has_assigned_mission" },
+            {
+              "not": { "npc_has_var": "dwarf_done", "type": "dialogue", "context": "cave_dwarf", "value": "yes" }
+            }
+          ]
+        }
+      },
+      { "text": "About the mission…", "topic": "TALK_MISSION_INQUIRE", "condition": "has_assigned_mission" },
+      {
+        "text": "About one of those missions…",
+        "topic": "TALK_MISSION_LIST_ASSIGNED",
+        "condition": "has_many_assigned_missions"
+      }
+    ]
+  }
+]

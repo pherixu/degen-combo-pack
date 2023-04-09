@@ -30,6 +30,11 @@
     "components": [ [ [ "money_strap_hundred", 1 ] ] ]
   },
   {
+    "id": "spell_components_summon_devil",
+    "type": "requirement",
+    "components": [ [ [ "broken_contract", 1 ] ] ]
+  },
+  {
     "id": "spell_components_coldlight_flashbang",
     "type": "requirement",
     "components": [ [ [ "money_hundred", 50 ], [ "armor_frost", 1 ], [ "shield_ice", 1 ], [ "ice_gliders", 1 ], [ "spell_scroll_brain_freeze", 1 ], [ "ring_signet", 1 ] ] ]
@@ -47,7 +52,7 @@
   {
     "id": "spell_components_flight",
     "type": "requirement",
-    "components": [ [ [ "feather", 15 ], [ "down_feather", 15 ], [ "money_strap_hundred", 1 ], [ "ring_signet", 1 ] ] ]
+    "components": [ [ [ "feather", 15 ], [ "down_feather", 45 ], [ "money_strap_hundred", 1 ], [ "ring_signet", 1 ] ] ]
   },
   {
     "id": "spell_components_bullet_immune",
@@ -120,14 +125,6 @@
       [
         [ "denarius", 1 ],
         [ "antoninianus", 1 ],
-        [ "RobofacCoin", 1 ],
-        [ "FlatCoin", 1 ],
-        [ "coin_penny", 100 ],
-        [ "coin_nickel", 20 ],
-        [ "coin_dime", 10 ],
-        [ "coin_quarter", 4 ],
-        [ "coin_half_dollar", 2 ],
-        [ "coin_dollar", 1 ],
         [ "coin_silver", 1 ],
         [ "coin_gold", 1 ],
         [ "ring_signet", 1 ]
@@ -162,7 +159,7 @@
   {
     "id": "spell_components_GM_fiat",
     "type": "requirement",
-    "components": [ [ [ "RPG_die", 1 ], [ "metal_RPG_die", 1 ], [ "money_strap_hundred", 1 ] ] ]
+    "components": [ [ [ "RPG_die", 7 ], [ "metal_RPG_die", 7 ], [ "money_strap_hundred", 1 ] ] ]
   },
   {
     "id": "spell_components_miscipula",
@@ -202,7 +199,7 @@
   {
     "id": "spell_components_conjure_gate",
     "type": "requirement",
-    "components": [ [ [ "ring_signet", 1 ], [ "gold_ring", 1 ], [ "silver_ring", 1 ], [ "money_strap_hundred", 5 ] ] ]
+    "components": [ [ [ "ring_signet", 1 ], [ "silver_ring", 7 ], [ "gold_ring", 3 ], [ "platinum_ring", 1 ], [ "money_strap_hundred", 5 ] ] ]
   },
   {
     "id": "spell_components_prayer",
@@ -228,7 +225,7 @@
   {
     "id": "spell_components_plastic_golem",
     "type": "requirement",
-    "components": [ [ [ "broken_plasticgolem", 1 ] ], [ [ "brimstone_chunk", 1 ] ], [ [ "decaying_soul", 1 ] ] ]
+    "components": [ [ [ "broken_plasticgolem", 1 ] ], [ [ "brimstone_chunk", 7 ] ], [ [ "decaying_soul", 1 ] ] ]
   },
   {
     "id": "spell_components_remove_suit",
@@ -264,7 +261,7 @@
   {
     "id": "spell_components_summon_helicopter",
     "type": "requirement",
-    "components": [ [ [ "money_bundle_hundred", 1 ], [ "gasdiscount_platinum", 1 ], [ "spell_scroll_airlift", 1 ] ] ]
+    "components": [ [ [ "money_bundle_hundred", 1 ], [ "gasdiscount_platinum", 3 ], [ "spell_scroll_airlift", 1 ] ] ]
   },
   {
     "id": "spell_components_bionic_battery_gun",
@@ -299,37 +296,37 @@
   {
     "id": "spell_components_circle_of_blood",
     "type": "requirement",
-    "components": [ [ [ "animal_blood", 25 ], [ "blood", 5 ], [ "brimstone_chunk", 1 ], [ "crystallized_ink", 1 ], [ "money_strap_hundred", 1 ] ] ]
+    "components": [ [ [ "animal_blood", 25 ], [ "blood", 5 ], [ "brimstone_chunk", 3 ], [ "crystallized_ink", 1 ], [ "money_strap_hundred", 1 ] ] ]
   },
   {
     "id": "spell_components_bind_via_blood",
     "type": "requirement",
-    "components": [ [ [ "blood", 1 ], [ "brimstone_chunk", 1 ], [ "money_strap_hundred", 1 ] ] ]
+    "components": [ [ [ "blood", 1 ], [ "brimstone_chunk", 3 ], [ "money_strap_hundred", 1 ] ] ]
   },
   {
     "id": "spell_components_bind_via_smoke",
     "type": "requirement",
-    "components": [ [ [ "cig", 10 ], [ "cigar", 5 ], [ "joint", 5 ], [ "brimstone_chunk", 1 ], [ "money_strap_hundred", 1 ] ] ]
+    "components": [ [ [ "cig", 10 ], [ "cigar", 5 ], [ "joint", 5 ], [ "brimstone_chunk", 3 ], [ "money_strap_hundred", 1 ] ] ]
   },
   {
     "id": "spell_components_bind_via_bile",
     "type": "requirement",
-    "components": [ [ [ "human_cooked", 1 ], [ "hstomach", 1 ], [ "brimstone_chunk", 1 ], [ "money_strap_hundred", 1 ] ] ]
+    "components": [ [ [ "human_cooked", 1 ], [ "hstomach", 1 ], [ "brimstone_chunk", 3 ], [ "money_strap_hundred", 1 ] ] ]
   },
   {
     "id": "spell_components_bind_via_fire",
     "type": "requirement",
-    "components": [ [ [ "diesel", 5 ], [ "gasoline", 10 ], [ "brimstone_chunk", 1 ], [ "money_strap_hundred", 1 ] ] ]
+    "components": [ [ [ "diesel", 5 ], [ "gasoline", 10 ], [ "brimstone_chunk", 3 ], [ "money_strap_hundred", 1 ] ] ]
   },
   {
     "id": "spell_components_circle_of_flame",
     "type": "requirement",
-    "components": [ [ [ "brimstone_sliver", 7 ], [ "brimstone_chunk", 1 ], [ "crystallized_ink", 1 ], [ "money_strap_hundred", 3 ] ] ]
+    "components": [ [ [ "brimstone_sliver", 7 ], [ "brimstone_chunk", 5 ], [ "crystallized_ink", 1 ], [ "money_strap_hundred", 3 ] ] ]
   },
   {
     "id": "spell_components_circle_of_smoke",
     "type": "requirement",
-    "components": [ [ [ "tear_of_child", 7 ], [ "brimstone_chunk", 1 ], [ "crystallized_ink", 1 ], [ "money_strap_hundred", 1 ] ] ]
+    "components": [ [ [ "tear_of_child", 7 ], [ "brimstone_chunk", 3 ], [ "crystallized_ink", 1 ], [ "money_strap_hundred", 1 ] ] ]
   },
   {
     "id": "spell_components_catalyst",
@@ -339,12 +336,12 @@
   {
     "id": "spell_components_old_life",
     "type": "requirement",
-    "components": [ [ [ "brimstone_chunk", 1 ], [ "money_strap_hundred", 5 ] ] ]
+    "components": [ [ [ "brimstone_chunk", 3 ], [ "money_strap_hundred", 5 ] ] ]
   },
   {
     "id": "spell_components_summon_dune_brood",
     "type": "requirement",
-    "components": [ [ [ "brimstone_sliver", 3 ], [ "bone_human", 9 ], [ "money_strap_hundred", 1 ] ] ]
+    "components": [ [ [ "brimstone_chunk", 3 ], [ "bone_human", 9 ], [ "money_strap_hundred", 1 ] ] ]
   },
   {
     "id": "spell_components_extract_memory",
@@ -371,27 +368,31 @@
     ]
   },
   {
+    "id": "spell_components_experiential_distortion",
+    "type": "requirement",
+    "components": [
+      [
+	    [ "twisted_soul", 1 ],
+        [ "ring_signet", 3 ],
+        [ "cards_magic", 7 ]
+      ]
+    ]
+  },
+  {
     "id": "spell_components_bend_will",
     "type": "requirement",
     "components": [
       [
-        [ "money_bundle_hundred", 10 ],
+        [ "money_bundle_hundred", 1 ],
         [ "family_photo", 1 ],
-        [ "saxophone", 1 ],
-        [ "trade_writ", 1 ],
+        [ "trade_writ", 2 ],
         [ "wizard_photo", 1 ],
         [ "bracelet_friendship", 2 ],
-        [ "diamond_platinum_cufflinks", 1 ],
-        [ "gold_bracelet", 2 ],
-        [ "platinum_locket", 2 ],
-        [ "ring_engagement", 1 ],
+        [ "platinum_locket", 1 ],
+        [ "ring_engagement", 2 ],
         [ "ring_purity", 1 ],
-        [ "ring_signet", 2 ],
-        [ "ring_wedding", 1 ],
-        [ "silver_necklace", 2 ],
-        [ "amethyst_gold_earring", 1 ],
-        [ "garnet_gold_ring", 1 ],
-        [ "ruby_platinum_tiara", 1 ]
+        [ "ring_signet", 1 ],
+        [ "ring_wedding", 2 ]
       ]
     ]
   },
@@ -462,7 +463,7 @@
   {
     "id": "spell_components_summon_slime",
     "type": "requirement",
-    "components": [ [ [ "feces_roach", 10 ], [ "brimstone_chunk", 1 ], [ "money_strap_hundred", 1 ], [ "money_hundred", 333 ] ] ]
+    "components": [ [ [ "feces_roach", 10 ], [ "brimstone_chunk", 5 ], [ "money_strap_hundred", 1 ], [ "money_hundred", 333 ] ] ]
   },
   {
     "id": "spell_components_pact_heal_blood",
@@ -487,25 +488,24 @@
   {
     "id": "spell_components_summon_zombie_scorched",
     "type": "requirement",
-    "components": [ [ [ "diesel", 20 ], [ "brimstone_chunk", 1 ], [ "money_strap_hundred", 3 ] ] ]
+    "components": [ [ [ "diesel", 20 ], [ "brimstone_chunk", 3 ], [ "money_strap_hundred", 3 ] ] ]
   },
   {
     "id": "spell_components_summon_zombie_fat",
     "type": "requirement",
-    "components": [ [ [ "human_flesh", 1 ], [ "brimstone_chunk", 1 ], [ "animal_blood", 9 ], [ "human_fat", 5 ], [ "money_strap_hundred", 3 ] ] ]
+    "components": [ [ [ "human_flesh", 1 ], [ "brimstone_chunk", 3 ], [ "animal_blood", 9 ], [ "human_fat", 5 ], [ "money_strap_hundred", 3 ] ] ]
   },
   {
     "id": "spell_components_pocket_sniper",
     "type": "requirement",
-    "components": [ [ [ "silver_small", 500 ], [ "gold_small", 500 ], [ "money_strap_hundred", 5 ], [ "ring_signet", 1 ] ] ]
+    "components": [ [ [ "silver_small", 2000 ], [ "gold_small", 1000 ], [ "money_bundle_hundred", 5 ], [ "ring_signet", 2 ] ] ]
   },
   {
     "id": "spell_components_summon_ortiel",
     "type": "requirement",
     "components": [
       [
-        [ "brimstone_chunk", 5 ],
-        [ "brimstone_sliver", 35 ],
+        [ "brimstone_chunk", 15 ],
         [ "money_hundred", 5000 ],
         [ "money_strap_hundred", 50 ],
         [ "money_bundle_hundred", 5 ]
@@ -515,6 +515,6 @@
   {
     "id": "spell_components_circle_of_bile",
     "type": "requirement",
-    "components": [ [ [ "human_flesh", 15 ], [ "brimstone_chunk", 1 ], [ "crystallized_ink", 1 ], [ "money_strap_hundred", 3 ] ] ]
+    "components": [ [ [ "human_flesh", 15 ], [ "brimstone_chunk", 3 ], [ "crystallized_ink", 1 ], [ "money_strap_hundred", 3 ] ] ]
   }
 ]

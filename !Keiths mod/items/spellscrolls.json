@@ -116,6 +116,18 @@
   {
     "type": "BOOK",
     "copy-from": "spell_scroll",
+    "id": "spell_scroll_transtemporal_passage",
+    "//": "Classless spell",
+    "looks_like": "bottle_glass",
+    "name": { "str": "bottled odyssey", "str_pl": "bottled odysseys" },
+    "fun": 8,
+    "price": 400000,
+    "description": "A ship in a bottle, except this one's on a great journey. Occassionally the bottle fills with storm clouds, or the crew will step foot on new shores. Either way you're learning something about friendship.",
+    "use_action": { "type": "learn_spell", "spells": [ "transtemporal_passage" ] }
+  },
+  {
+    "type": "BOOK",
+    "copy-from": "spell_scroll",
     "id": "spell_scroll_recover_mana_fatigue",
     "//": "Classless spell",
     "looks_like": "alarmclock",
@@ -928,6 +940,16 @@
   {
     "type": "BOOK",
     "copy-from": "spell_scroll",
+    "id": "spell_scroll_mage_jump",
+    "//": "Classless spell",
+    "looks_like": "thermos",
+    "name": { "str": "patriarchal brew", "str_pl": "patriarchal brews" },
+    "description": "The kind of large coffee cup your Dad takes on long road trips. Sipping it makes you feel driven.",
+    "use_action": { "type": "learn_spell", "spells": [ "mage_jump" ] }
+  },
+  {
+    "type": "BOOK",
+    "copy-from": "spell_scroll",
     "id": "spell_scroll_spur_steed",
     "//": "Classless spell",
     "name": { "str": "alabaster spur", "str_pl": "alabaster spurs" },
@@ -1065,7 +1087,7 @@
     "//": "Classless spell",
     "looks_like": "mag_news",
     "name": { "str": "traveler's brochure", "str_pl": "traveler's brochures" },
-    "description": "A well made brochure with information on nearly every place in the world, absolutely none of it useful. At the end is an advertisement for 'Conjure Gate,' which you painstakingly surmise the casting from.",
+    "description": "A well made brochure with information on nearly every place in the world, absolutely none of it useful. At the end is an advertisement for 'Precipitate Gate,' which you use to painstakingly surmise the casting.",
     "use_action": { "type": "learn_spell", "spells": [ "transgate_place" ] }
   },
   {
@@ -1087,8 +1109,7 @@
     "description": "A set of cards meant to play the game \"Sorcery.\"  Each card has a fun picture of a different monster.",
     "weight": "210 g",
     "volume": "250 ml",
-    "price": 2300,
-    "price_postapoc": 100,
+    "price": 23000,
     "material": [ "paper" ],
     "symbol": "?",
     "color": "blue",

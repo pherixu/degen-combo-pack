@@ -92,13 +92,26 @@
     ]
   },
   {
+    "type": "furniture",
+    "id": "f__translocator_circle",
+    "name": "Translocation Circle",
+    "move_cost_mod": 0,
+	"looks_like": "f_magic_circle",
+    "symbol": "X",
+    "description": "A circle for translocation.  Cast the translocation spell or use a translocator to choose this circle as a destination.",
+    "color": "blue",
+    "required_str": 12,
+    "flags": [ "TRANSLOCATOR", "MOUNTABLE", "ALLOW_FIELD_EFFECT" ],
+    "examine_action": "translocator"
+  },
+  {
     "type": "ter_furn_transform",
     "id": "trans_gate_place",
     "furniture": [
       {
-        "result": "f_magiclysm_translocator_gate",
+        "result": "f__translocator_circle",
         "valid_furniture": [ "f_null" ],
-        "message": "There's a rippling in the air and a blast of magical energy, then the gate forms."
+        "message": "The circle slowly fades into reality before you."
       }
     ]
   }

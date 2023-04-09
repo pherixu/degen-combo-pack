@@ -284,14 +284,13 @@
           "chaps_leather",
           "gloves_leather",
 		  "money_strap_hundred",
-		  "horse_tack",
           "boots_western",
           "duster",
           "novel_western"
         ],
         "entries": [
           { "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] },
-          { "item": "whiskey", "container-item": "bottle_glass" },
+		  { "item": "horse_tack", "custom-flags": [ "auto_wield" ] },
           {
             "item": "colt_saa",
             "ammo-item": "45colt_jhp",

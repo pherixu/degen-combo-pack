@@ -15,7 +15,7 @@
     "fun": -6,
     "use_action": {
       "type": "learn_spell",
-      "spells": [ "first_things_first", "summon_bike", "summon_lab_rat", "summon_cold", "bio_for_stamina", "magic_drive", "summon_extinguisher", "beautification" ]
+      "spells": [ "first_things_first", "summon_bike", "summon_cold", "magic_drive", "summon_extinguisher" ]
     }
   },
   {
@@ -23,7 +23,7 @@
     "type": "BOOK",
     "category": "manuals",
     "name": { "str": "The Big Book of Metaknowledge", "str_pl": "copies of The Big Book of Metaknowledge" },
-    "description": "A legendary book amongst the tabletop community, written by an author who later died of 'unnatural causes.' The prolific book is written like most game manuals except the information contained with isn't describing a game, it's describing the reality the author truly perceives. Sections like 'How to Avoid Miscommunication With the Devil,' and 'Walking In Their Shoes' have a tendency to diatribe, not so subtely ranting about how black and psychic operations being performed by the government are negatively effecting the vibrational field of our reality, attracting paradimensional alien life forms that to us may as well be actual bonified demons. He describes how these creatures want to enslave humanity by trapping them under the weight of financial burden, something they invented. Some of this is disguised behind magical-mumbo-jumbo and the like, but most of it's written like a history book for a world that doesn't exist. The author takes this opportunity to explain how there are secret labs all over the world being used by wizards 'of a Gold and Silver Order' to conduct dark rituals in exchange for power from these 'demons'. He explains that the recent ghost-sitings are more like afterimages, things 'burnt into the photo of our reality' by people's passing-on. He says their spirits have been traded to a lower field of energy in exchange for material gain, in most cases without their knowledge. He urges the 'Hero' (as he calls the reader) to investigate and 'Play the Game.'",
+    "description": "A legendary book amongst the gaming community, written by an author who later died of 'unnatural causes.' The prolific book is written like most game manuals except the information contained with isn't describing a game, it's describing the reality the author truly perceives. Sections like 'How to Avoid Miscommunication With the Devil,' and 'Walking In Their Shoes' have a tendency to diatribe, not so subtely ranting about how black and psychic operations being performed by the government are negatively effecting the vibrational field of our reality, attracting paradimensional alien life forms that to us may as well be actual bonified demons. He describes how these creatures want to enslave humanity by trapping them under the weight of financial burden, something they invented. Some of this is disguised behind magical-mumbo-jumbo and the like, but most of it's written like a history book for a world that doesn't exist. The author takes this opportunity to explain how there are secret labs all over the world being used by wizards 'of a Gold and Silver Order' to conduct dark rituals in exchange for power from these 'demons'. He explains that the recent ghost-sitings are more like afterimages, things 'burnt into the photo of our reality' by people's passing-on. He says their spirits have been traded to a lower field of energy in exchange for material gain, in most cases without their knowledge. He tells of a cataclysmic day of reckoning where these demons, along with an army of goblins, ghosts and infinite other horrors will try to take this world for their own. He urges the 'Hero' (as he calls the reader) to investigate and 'Play the Game.'",
     "weight": "1200 g",
     "volume": "1200 ml",
     "price": 1000000,
@@ -39,8 +39,8 @@
     "category": "manuals",
     "name": { "str": "Cartoonish Wizard's Catalogue", "str_pl": "copies of Cartoonish Wizard's Catalogue" },
     "description": "An incredibly heavy paper book with a cartoonish wizard on the front. The wizard smiles widely, gesturing for the reader to open the book and see what's inside. The rest of the booklet is filled with flamboyant advertisements for magical trinkets and so-such for which this wizard would accept cash as payment. At the end, it describes a brief ritual for constructing one of his 'shops', or you can just order directly through the catalogue.",
-    "weight": "20000 g",
-    "volume": "600 ml",
+    "weight": "1000 g",
+    "volume": "2000 ml",
     "price": 25000,
     "material": [ "paper" ],
     "symbol": "?",
@@ -52,7 +52,7 @@
     "type": "BOOK",
     "category": "manuals",
     "name": { "str": "Notes from the Sun and Moon", "str_pl": "copies of Notes from the Sun and Moon" },
-    "description": "A leather journal that recants the tale of two brothers, one dark and one light. Over it's course the two prove their inner strength and realign the dark with the light, bringing harmony to the world. At the end the two take jobs in the R&D department of a major corporation.",
+    "description": "A leather journal that recants the tale of two brothers, one dark and one light. Over it's course the two prove their inner strength and realign the dark with the light, bringing harmony to the world.",
     "weight": "2000 g",
     "volume": "600 ml",
     "price": 25000,
@@ -164,7 +164,7 @@
     "description": "What appears at first to be an average book of sleight of hand tricks and illusions is actually a cleverly disguised treatise on illusion itself. The book delves into the nature of the mind and reality, opening the reader's mind to the psychic realms of possibility and the power of their Self.",
     "weight": "1200 g",
     "volume": "1200 ml",
-    "price": 400000,
+    "price": 600000,
     "material": [ "paper" ],
     "symbol": "?",
     "intelligence": 15,
@@ -177,11 +177,11 @@
         "golden_aura",
 		"conjure_flask", 
 		"conjure_string", 
+		"subtle_self",
 		"conjure_mirror",
 		"conjure_mask",
         "yank",
-        "distraction",
-        "flight"
+        "distraction"
       ]
     }
   },
@@ -215,7 +215,7 @@
     "color": "light_red",
     "use_action": {
       "type": "learn_spell",
-      "spells": [ "52_card_shuffle", "recover_health_denarius", "spawn_camp", "wicked_ritual", "rpg_die_poly", "gambit1", "scrying" ]
+      "spells": [ "52_card_shuffle", "spawn_camp", "rpg_die_poly", "gambit1", "scrying" ]
     }
   },
   {

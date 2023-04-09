@@ -359,7 +359,7 @@
         "ππππππ5F;;;t5;;;5πππππππ",
         "ππππππ5F;;;;+;;;5πππππππ",
         "ππππππ5F;;;M5;;;5πππππππ",
-        "ππππππ555ς555;;;5πππππππ",
+        "ππππππ555-555;;;5πππππππ",
         "ππππππ5{{;;F5;;M5πππππππ",
         "ππππππ5Ch;;F5;;;5πππππππ",
         "ππππππ5{;;;;5;;;5πππππππ",
@@ -380,6 +380,9 @@
       ],
       "palettes": [ "aircraft_carrier_palette" ],
       "place_npcs": [ { "class": "magic_operator", "x": 8, "y": 34 } ],
+	  "terrain": {
+        "-": "t_door_metal_c"
+      },
       "place_loot": [ { "item": "television", "x": 7, "y": 34, "chance": 100 }, { "item": "magic_lamp", "x": 9, "y": 35, "chance": 100 } ],
       "place_monster": [
         { "monster": "mon_turret_rifle", "x": 5, "y": 34 },

@@ -7,12 +7,12 @@
     "subcategory": "CSC_ENCHANTED_OTHER",
     "skill_used": "speech",
     "difficulty": 1,
-	"skills_required": [ "spellcraft", 1 ],
+	"skills_required": [ "speech", 1 ],
     "time": "1 m",
 	"flags": [ "UNCRAFT_LIQUIDS_CONTAINED" ],
     "autolearn": true,
     "book_learn": [ [ "wayward_memory_STW", 1 ] ],
-    "components": [ [ [ "money_hundred", 1 ] ], [ [ "cards_magic", 1 ] ], [ [ "flask_glass", 1 ] ] ]
+    "components": [ [ [ "money_hundred", 1 ] ], [ [ "cards_magic", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -21,13 +21,13 @@
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_OTHER",
     "skill_used": "speech",
-	"skills_required": [ "spellcraft", 5 ],
+	"skills_required": [ "speech", 5 ],
 	"flags": [ "UNCRAFT_LIQUIDS_CONTAINED" ],
     "difficulty": 5,
     "time": "1 m",
     "autolearn": true,
     "book_learn": [ [ "wayward_memory_THC", 1 ] ],
-    "components": [ [ [ "money_strap_hundred", 1 ] ], [ [ "white_pen_ink", 1 ] ], [ [ "flask_glass", 1 ] ] ]
+    "components": [ [ [ "money_strap_hundred", 1 ] ], [ [ "white_pen_ink", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -36,18 +36,18 @@
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_OTHER",
     "skill_used": "speech",
-	"skills_required": [ "spellcraft", 10 ],
+	"skills_required": [ "speech", 10 ],
 	"flags": [ "UNCRAFT_LIQUIDS_CONTAINED" ],
     "difficulty": 10,
     "time": "1 m",
     "autolearn": true,
     "book_learn": [ [ "wayward_memory_FT", 1 ] ],
-    "components": [ [ [ "money_bundle_hundred", 1 ] ], [ [ "crystallized_ink", 1 ] ], [ [ "flask_glass", 1 ] ] ]
+    "components": [ [ [ "money_bundle_hundred", 1 ] ], [ [ "crystallized_ink", 1 ] ] ]
   },
   {
     "id": "linguistics_lesson_one",
-    "name": { "str": "linguistics for beginners" },
-    "description": "A small flask filled with a dark, multicolor ooze said to contain... something or other. You can hear whispering drifting from inside, ready to teach you the language of magic. Drinking it would teach you something about yourself.",
+    "name": { "str": "linguistics for novices" },
+    "description": "A small flask filled with a dark, multicolor ooze. You can hear whispers drifting from the other side, ready to teach you the language of magic. They warn you of the cost of cheap power.",
     "use_action": { "type": "cast_spell", "spell_id": "linguistics_one", "no_fail": true, "level": 1 },
     "type": "COMESTIBLE",
     "weight": "265 g",
@@ -63,13 +63,13 @@
     "comestible_type": "DRINK",
     "flags": [ "EATEN_COLD", "NUTRIENT_OVERRIDE", "NO_AUTO_CONSUME", "TRADER_AVOID"	],
     "phase": "liquid",
-    "price": 250000,
+    "price": 25000,
     "freezing_point": 4
   },
   {
     "id": "linguistics_lesson_two",
-    "name": { "str": "linguistics for novices" },
-    "description": "A small flask filled with a dark, multicolor ooze said to contain... something or other. You can hear whispering drifting from inside, ready to teach you the language of magic. Drinking it would teach you something about yourself.",
+    "name": { "str": "linguistics for adepts" },
+    "description": "A small flask filled with a dark, multicolor ooze. You can hear whispers drifting from inside, ready to teach you the language of magic. They tell you to to focus on who you are, and say that no matter what everything will be alright.",
     "use_action": { "type": "cast_spell", "spell_id": "linguistics_two", "no_fail": true, "level": 1 },
     "type": "COMESTIBLE",
     "weight": "265 g",
@@ -85,13 +85,13 @@
     "comestible_type": "DRINK",
     "flags": [ "EATEN_COLD", "NUTRIENT_OVERRIDE", "NO_AUTO_CONSUME", "TRADER_AVOID"	],
     "phase": "liquid",
-    "price": 250000,
+    "price": 25000,
     "freezing_point": 4
   },
   {
     "id": "linguistics_lesson_three",
     "name": { "str": "linguistics for masters" },
-    "description": "A small flask filled with a dark, multicolor ooze, said to contain... something or other. You can hear whispering drifting from inside, ready to teach you the language of magic. Drinking it would teach you something about yourself.",
+    "description": "A small flask filled with a dark, multicolor ooze. You can hear whispers drifting from inside, ready to teach you the language of magic. They soothe you with promises that true purity will be rewarded.",
     "use_action": { "type": "cast_spell", "spell_id": "linguistics_three", "no_fail": true, "level": 1 },
     "type": "COMESTIBLE",
     "weight": "265 g",
@@ -107,7 +107,7 @@
     "comestible_type": "DRINK",
     "flags": [ "EATEN_COLD", "NUTRIENT_OVERRIDE", "NO_AUTO_CONSUME", "TRADER_AVOID"	],
     "phase": "liquid",
-    "price": 250000,
+    "price": 25000,
     "freezing_point": 4
   },
   {
@@ -116,32 +116,15 @@
     "effect": { "u_cast_spell": { "id": "linguistics_one_devil" } },
     "false_effect": { "u_cast_spell": { "id": "linguistics_one_magic" } },
     "condition": {
-      "and": [
-        {
-          "not": {
             "or": [
-              { "u_is_wearing": "holy_symbol" },
-              { "u_is_wearing": "holy_symbol_wood" },
-              { "u_is_wearing": "bead_bracelet" },
-              { "u_is_wearing": "bead_necklace" },
-			  { "u_is_wearing": "ring_signet" },
-			  { "u_has_wielded_with_flag": "MAGIC_FOCUS" },
-			  { "u_has_trait": "THRESH_MANA" },
-              { "u_is_wearing": "relic_small" }
+              { "u_is_wearing": "pact_of_bile" },
+              { "u_is_wearing": "pact_of_blood" },
+              { "u_is_wearing": "pact_of_smoke" },
+              { "u_is_wearing": "pact_of_flame" },
+			  { "u_is_wearing": "onyx_silver_ring" },
+			  { "u_is_wearing": "pointed_hat" },
+              { "u_has_trait": "PSYCHOPATH" }
             ]
-          }
-        },
-        {
-          "or": [
-            { "u_is_wearing": "pointed_hat" },
-			{ "u_is_wearing": "onyx_gold_ring" },
-            { "u_has_effect": "eff_frightful_presence" },
-            { "u_has_effect": "fearparalyze" },
-            { "u_has_trait": "PSYCHOPATH" },
-            { "u_has_effect": "hypovolemia" }
-          ]
-        }
-      ]
     }
   },
   {
@@ -150,32 +133,15 @@
     "effect": { "u_cast_spell": { "id": "linguistics_two_devil" } },
     "false_effect": { "u_cast_spell": { "id": "linguistics_two_magic" } },
     "condition": {
-      "and": [
-        {
-          "not": {
             "or": [
-              { "u_is_wearing": "holy_symbol" },
-              { "u_is_wearing": "holy_symbol_wood" },
-              { "u_is_wearing": "bead_bracelet" },
-              { "u_is_wearing": "bead_necklace" },
-			  { "u_is_wearing": "ring_signet" },
-			  { "u_has_wielded_with_flag": "MAGIC_FOCUS" },
-			  { "u_has_trait": "THRESH_MANA" },
-              { "u_is_wearing": "relic_small" }
+              { "u_is_wearing": "pact_of_bile" },
+              { "u_is_wearing": "pact_of_blood" },
+              { "u_is_wearing": "pact_of_smoke" },
+              { "u_is_wearing": "pact_of_flame" },
+			  { "u_is_wearing": "onyx_silver_ring" },
+			  { "u_is_wearing": "pointed_hat" },
+              { "u_has_trait": "PSYCHOPATH" }
             ]
-          }
-        },
-        {
-          "or": [
-            { "u_is_wearing": "pointed_hat" },
-			{ "u_is_wearing": "onyx_gold_ring" },
-            { "u_has_effect": "eff_frightful_presence" },
-            { "u_has_effect": "fearparalyze" },
-            { "u_has_trait": "PSYCHOPATH" },
-            { "u_has_effect": "hypovolemia" }
-          ]
-        }
-      ]
     }
   },
   {
@@ -184,29 +150,37 @@
     "effect": { "u_cast_spell": { "id": "linguistics_three_devil" } },
     "false_effect": { "u_cast_spell": { "id": "linguistics_three_magic" } },
     "condition": {
+            "or": [
+              { "u_is_wearing": "pact_of_bile" },
+              { "u_is_wearing": "pact_of_blood" },
+              { "u_is_wearing": "pact_of_smoke" },
+              { "u_is_wearing": "pact_of_flame" },
+			  { "u_is_wearing": "onyx_silver_ring" },
+			  { "u_is_wearing": "pointed_hat" },
+              { "u_has_trait": "PSYCHOPATH" }
+            ]
+    }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_linguistics_three_crystal",
+    "effect": { "u_cast_spell": { "id": "linguistics_three_crystal_spawn" } },
+    "condition": {
       "and": [
         {
           "not": {
             "or": [
-              { "u_is_wearing": "holy_symbol" },
-              { "u_is_wearing": "holy_symbol_wood" },
-              { "u_is_wearing": "bead_bracelet" },
-              { "u_is_wearing": "bead_necklace" },
-			  { "u_is_wearing": "ring_signet" },
-			  { "u_has_wielded_with_flag": "MAGIC_FOCUS" },
-			  { "u_has_trait": "THRESH_MANA" },
-              { "u_is_wearing": "relic_small" }
+			  { "u_is_wearing": "onyx_silver_ring" },
+			  { "u_is_wearing": "pointed_hat" },
+			  { "u_has_trait": "PSYCHOPATH" }
             ]
           }
         },
         {
-          "or": [
-            { "u_is_wearing": "pointed_hat" },
-			{ "u_is_wearing": "onyx_silver_ring" },
-            { "u_has_effect": "eff_frightful_presence" },
-            { "u_has_effect": "fearparalyze" },
-            { "u_has_trait": "PSYCHOPATH" },
-            { "u_has_effect": "hypovolemia" }
+          "and": [
+		    { "u_is_wearing": "manatouched_aura1" },
+            { "u_is_wearing": "manatouched_aura2" },
+			{ "u_is_wearing": "manatouched_aura3" }
           ]
         }
       ]
@@ -314,6 +288,7 @@
     "valid_targets": [ "self" ],
     "effect": "effect_on_condition",
     "effect_str": "eoc_linguistics_three",
+	"extra_effects": [ {"id": "eoc_linguistics_three_crystal" } ],
     "shape": "blast",
     "energy_source": "MANA",
     "difficulty": 4,
@@ -329,6 +304,37 @@
     "valid_targets": [ "self" ],
     "effect": "spawn_item",
     "effect_str": "spell_scroll_magic_three",
+    "shape": "blast",
+    "min_damage": 1,
+    "max_damage": 1,
+    "difficulty": 1,
+    "max_level": 0,
+    "base_casting_time": 0,
+    "base_energy_cost": 0
+  },
+  {
+    "id": "eoc_linguistics_three_crystal",
+    "type": "SPELL",
+    "name": "Logos",
+    "description": "",
+    "valid_targets": [ "self" ],
+    "effect": "effect_on_condition",
+    "effect_str": "eoc_linguistics_three_crystal",
+    "shape": "blast",
+    "energy_source": "MANA",
+    "difficulty": 4,
+    "base_casting_time": 0,
+    "base_energy_cost": 0,
+    "max_level": 20
+  },
+  {
+    "id": "linguistics_three_crystal_spawn",
+    "type": "SPELL",
+    "name": "Logos",
+    "description": "",
+    "valid_targets": [ "self" ],
+    "effect": "spawn_item",
+    "effect_str": "spell_scroll_magic_three_crystal",
     "shape": "blast",
     "min_damage": 1,
     "max_damage": 1,
@@ -468,6 +474,25 @@
     "relic_data": { "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "mutations": [ "MAGICTHREE_SPELL" ] } ] }
   },
   {
+    "id": "spell_scroll_magic_three_crystal",
+    "type": "TOOL_ARMOR",
+    "name": { "str": "seeped thread" },
+    "description": "You are covered head to toe in light blue threads. They fall off easily at the first touch.",
+    "weight": "1 g",
+    "volume": "1 ml",
+    "longest_side": "1 cm",
+    "looks_like": "tieclip",
+    "price": 2000,
+    "price_postapoc": 250,
+    "to_hit": 3,
+    "bashing": 14,
+    "cutting": 3,
+    "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "ONLY_ONE", "TRADER_AVOID", "AURA", "NONCONDUCTIVE" ],
+    "material": [ "concentrated_mana" ],
+    "symbol": ".",
+    "relic_data": { "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "mutations": [ "linguist_draw_circle" ] } ] }
+  },
+  {
     "type": "mutation",
     "id": "DEVILONE_SPELL",
     "name": { "str": "Spell: " },
@@ -568,7 +593,7 @@
     "id": "magic_one_spawns",
     "type": "SPELL",
     "name": "Precipitation",
-    "description": "You have remembered how to allow mana to condensate. It tires you out, but if you sit and focus for some time, eventually you'll create a small object that quickly fades away.",
+    "description": "You have remembered how to allow mana to condensate. It tires you out, but if you focus for a few moments you'll create a miscellaneous small object.",
     "valid_targets": [ "self" ],
     "effect": "spawn_item",
     "effect_str": "crystallized_mana",
@@ -602,6 +627,7 @@
 	{ "id": "spawn_labmap_precip" },
 	{ "id": "spawn_joint_precip" },
 	{ "id": "spawn_many_years_old_newspaper_precip" },
+	{ "id": "spawn_spell_scroll_mage_jump" },
 	{ "id": "spawn_silver_small_precip" }
 	],
     "flags": [ "WONDER" ],
@@ -622,7 +648,25 @@
     "energy_source": "MANA",
     "effect": "spawn_item",
     "effect_str": "mirror",
-    "shape": "blast",
+    "shape": "blast", "flags": [ "PERMANENT" ],
+    "base_casting_time": 0,
+	"min_duration": 30000,
+    "min_damage": 1,
+    "max_damage": 1,
+    "max_level": 0,
+    "base_energy_cost": 0,
+    "difficulty": 0
+  },
+  {
+    "id": "spawn_spell_scroll_mage_jump",
+    "type": "SPELL",
+    "name": "Flesh and Blood",
+    "description": "Meditation leaves you weary for the day.",
+    "valid_targets": [ "self" ],
+    "energy_source": "MANA",
+    "effect": "spawn_item",
+    "effect_str": "spell_scroll_mage_jump",
+    "shape": "blast", "flags": [ "PERMANENT" ],
     "base_casting_time": 0,
 	"min_duration": 30000,
     "min_damage": 1,
@@ -640,7 +684,7 @@
     "energy_source": "MANA",
     "effect": "spawn_item",
     "effect_str": "wash_kit_magic",
-    "shape": "blast",
+    "shape": "blast", "flags": [ "PERMANENT" ],
     "base_casting_time": 0,
 	"min_duration": 30000,
     "min_damage": 1,
@@ -658,7 +702,7 @@
     "energy_source": "MANA",
     "effect": "spawn_item",
     "effect_str": "petrified_eye",
-    "shape": "blast",
+    "shape": "blast", "flags": [ "PERMANENT" ],
     "base_casting_time": 0,
 	"min_duration": 30000,
     "min_damage": 1,
@@ -676,7 +720,7 @@
     "energy_source": "MANA",
     "effect": "spawn_item",
     "effect_str": "bandana",
-    "shape": "blast",
+    "shape": "blast", "flags": [ "PERMANENT" ],
     "base_casting_time": 0,
 	"min_duration": 30000,
     "min_damage": 1,
@@ -694,7 +738,7 @@
     "energy_source": "MANA",
     "effect": "spawn_item",
     "effect_str": "phone",
-    "shape": "blast",
+    "shape": "blast", "flags": [ "PERMANENT" ],
     "base_casting_time": 0,
 	"min_duration": 30000,
     "min_damage": 1,
@@ -712,7 +756,7 @@
     "energy_source": "MANA",
     "effect": "spawn_item",
     "effect_str": "panacea",
-    "shape": "blast",
+    "shape": "blast", "flags": [ "PERMANENT" ],
     "base_casting_time": 0,
 	"min_duration": 30000,
     "min_damage": 1,
@@ -730,7 +774,7 @@
     "energy_source": "MANA",
     "effect": "spawn_item",
     "effect_str": "many_years_old_newspaper",
-    "shape": "blast",
+    "shape": "blast", "flags": [ "PERMANENT" ],
     "base_casting_time": 0,
 	"min_duration": 30000,
     "min_damage": 1,
@@ -748,7 +792,7 @@
     "energy_source": "MANA",
     "effect": "spawn_item",
     "effect_str": "labmap",
-    "shape": "blast",
+    "shape": "blast", "flags": [ "PERMANENT" ],
     "base_casting_time": 0,
 	"min_duration": 30000,
     "min_damage": 1,
@@ -766,7 +810,7 @@
     "energy_source": "MANA",
     "effect": "spawn_item",
     "effect_str": "joint",
-    "shape": "blast",
+    "shape": "blast", "flags": [ "PERMANENT" ],
     "base_casting_time": 0,
 	"min_duration": 30000,
     "min_damage": 1,
@@ -784,7 +828,7 @@
     "energy_source": "MANA",
     "effect": "spawn_item",
     "effect_str": "cigar",
-    "shape": "blast",
+    "shape": "blast", "flags": [ "PERMANENT" ],
     "base_casting_time": 0,
 	"min_duration": 30000,
     "min_damage": 1,
@@ -803,7 +847,7 @@
     "energy_source": "MANA",
     "effect": "spawn_item",
     "effect_str": "string_36",
-    "shape": "blast",
+    "shape": "blast", "flags": [ "PERMANENT" ],
     "base_casting_time": 0,
     "min_damage": 1,
     "max_damage": 1,
@@ -821,7 +865,7 @@
     "energy_source": "MANA",
     "effect": "spawn_item",
     "effect_str": "cards_magic",
-    "shape": "blast",
+    "shape": "blast", "flags": [ "PERMANENT" ],
     "base_casting_time": 0,
     "min_damage": 1,
     "max_damage": 1,
@@ -839,7 +883,7 @@
     "energy_source": "MANA",
     "effect": "spawn_item",
     "effect_str": "tear_of_child",
-    "shape": "blast",
+    "shape": "blast", "flags": [ "PERMANENT" ],
     "base_casting_time": 0,
     "min_damage": 1,
     "max_damage": 1,
@@ -857,7 +901,7 @@
     "energy_source": "MANA",
     "effect": "spawn_item",
     "effect_str": "bandages",
-    "shape": "blast",
+    "shape": "blast", "flags": [ "PERMANENT" ],
     "base_casting_time": 0,
     "min_damage": 1,
     "max_damage": 1,
@@ -875,7 +919,7 @@
     "energy_source": "MANA",
     "effect": "spawn_item",
     "effect_str": "file",
-    "shape": "blast",
+    "shape": "blast", "flags": [ "PERMANENT" ],
     "base_casting_time": 0,
     "min_damage": 1,
     "max_damage": 1,
@@ -893,7 +937,7 @@
     "energy_source": "MANA",
     "effect": "spawn_item",
     "effect_str": "vitamins",
-    "shape": "blast",
+    "shape": "blast", "flags": [ "PERMANENT" ],
     "base_casting_time": 0,
     "min_damage": 1,
     "max_damage": 1,
@@ -911,7 +955,7 @@
     "energy_source": "MANA",
     "effect": "spawn_item",
     "effect_str": "lsd",
-    "shape": "blast",
+    "shape": "blast", "flags": [ "PERMANENT" ],
     "base_casting_time": 0,
     "min_damage": 1,
     "max_damage": 1,
@@ -929,7 +973,7 @@
     "energy_source": "MANA",
     "effect": "spawn_item",
     "effect_str": "heroin",
-    "shape": "blast",
+    "shape": "blast", "flags": [ "PERMANENT" ],
     "base_casting_time": 0,
     "min_damage": 1,
     "max_damage": 1,
@@ -947,7 +991,7 @@
     "energy_source": "MANA",
     "effect": "spawn_item",
     "effect_str": "meth",
-    "shape": "blast",
+    "shape": "blast", "flags": [ "PERMANENT" ],
     "base_casting_time": 0,
     "min_damage": 1,
     "max_damage": 1,
@@ -965,7 +1009,7 @@
     "energy_source": "MANA",
     "effect": "spawn_item",
     "effect_str": "caffeine",
-    "shape": "blast",
+    "shape": "blast", "flags": [ "PERMANENT" ],
     "base_casting_time": 0,
     "min_damage": 1,
     "max_damage": 1,
@@ -983,7 +1027,7 @@
     "energy_source": "MANA",
     "effect": "spawn_item",
     "effect_str": "book_binder",
-    "shape": "blast",
+    "shape": "blast", "flags": [ "PERMANENT" ],
     "base_casting_time": 0,
     "min_damage": 1,
     "max_damage": 1,
@@ -1001,7 +1045,7 @@
     "energy_source": "MANA",
     "effect": "spawn_item",
     "effect_str": "flask_glass",
-    "shape": "blast",
+    "shape": "blast", "flags": [ "PERMANENT" ],
     "base_casting_time": 0,
     "min_damage": 1,
     "max_damage": 1,
@@ -1019,7 +1063,7 @@
     "energy_source": "MANA",
     "effect": "spawn_item",
     "effect_str": "melatonin_tablet",
-    "shape": "blast",
+    "shape": "blast", "flags": [ "PERMANENT" ],
     "base_casting_time": 0,
     "min_damage": 1,
     "max_damage": 1,
@@ -1037,7 +1081,7 @@
     "energy_source": "MANA",
     "effect": "spawn_item",
     "effect_str": "icon",
-    "shape": "blast",
+    "shape": "blast", "flags": [ "PERMANENT" ],
     "base_casting_time": 0,
     "min_damage": 1,
     "max_damage": 1,
@@ -1055,7 +1099,7 @@
     "energy_source": "MANA",
     "effect": "spawn_item",
     "effect_str": "crystallized_mana",
-    "shape": "blast",
+    "shape": "blast", "flags": [ "PERMANENT" ],
     "base_casting_time": 0,
     "min_damage": 7,
     "max_damage": 7,
@@ -1073,7 +1117,7 @@
     "energy_source": "MANA",
     "effect": "spawn_item",
     "effect_str": "deck_of_cards",
-    "shape": "blast",
+    "shape": "blast", "flags": [ "PERMANENT" ],
     "base_casting_time": 0,
     "min_damage": 1,
     "max_damage": 1,
@@ -1091,7 +1135,7 @@
     "energy_source": "MANA",
     "effect": "spawn_item",
     "effect_str": "coffee",
-    "shape": "blast",
+    "shape": "blast", "flags": [ "PERMANENT" ],
     "base_casting_time": 0,
     "min_damage": 1,
     "max_damage": 1,
@@ -1109,7 +1153,7 @@
     "energy_source": "MANA",
     "effect": "spawn_item",
     "effect_str": "cig",
-    "shape": "blast",
+    "shape": "blast", "flags": [ "PERMANENT" ],
     "base_casting_time": 0,
     "min_damage": 1,
     "max_damage": 1,
@@ -1127,7 +1171,7 @@
     "energy_source": "MANA",
     "effect": "spawn_item",
     "effect_str": "scrap_dreamdross",
-    "shape": "blast",
+    "shape": "blast", "flags": [ "PERMANENT" ],
     "base_casting_time": 0,
     "min_damage": 1,
     "max_damage": 1,
@@ -1145,7 +1189,7 @@
     "energy_source": "MANA",
     "effect": "spawn_item",
     "effect_str": "gold_small",
-    "shape": "blast",
+    "shape": "blast", "flags": [ "PERMANENT" ],
     "base_casting_time": 0,
     "min_damage": 1,
     "max_damage": 1,
@@ -1163,7 +1207,7 @@
     "energy_source": "MANA",
     "effect": "spawn_item",
     "effect_str": "silver_small",
-    "shape": "blast",
+    "shape": "blast", "flags": [ "PERMANENT" ],
     "base_casting_time": 0,
     "min_damage": 1,
     "max_damage": 1,
@@ -1181,7 +1225,7 @@
     "energy_source": "MANA",
     "effect": "spawn_item",
     "effect_str": "ceramic_mug",
-    "shape": "blast",
+    "shape": "blast", "flags": [ "PERMANENT" ],
     "base_casting_time": 0,
     "min_damage": 1,
     "max_damage": 1,
@@ -1197,15 +1241,15 @@
     "effect": "short_range_teleport",
     "shape": "blast",
     "valid_targets": [ "ground" ],
-    "flags": [ "SOMATIC", "VERBAL", "SILENT", "NO_LEGS", "TARGET_TELEPORT" ],
+    "flags": [ "SOMATIC", "VERBAL", "SILENT", "NO_HANDS", "TARGET_TELEPORT" ],
     "extra_effects": [ { "id": "sever_eoc", "hit_self": true } ],
-    "min_range": 15,
-    "max_range": 15,
+    "min_range": 24,
+    "max_range": 24,
     "max_level": 5,
     "difficulty": 7,
-    "base_casting_time": 0,
+    "base_casting_time": 300,
     "energy_source": "MANA",
-    "base_energy_cost": 1500
+    "base_energy_cost": 3333
   },
   {
     "id": "magic_three",
@@ -1213,16 +1257,18 @@
     "name": "Experiential Distortion",
     "description": "You reach through the barrier and manifest something from outside of our reality, or even imagination. The space between two spaces opens and creates a rift capable of storing almost anything.",
     "valid_targets": [ "self" ],
-    "flags": [ "PERMANENT" ],
+    "flags": [ "PERMANENT", "NO_LEGS", "CONCENTRATE" ],
     "effect": "spawn_item",
     "effect_str": "pocket_dimension",
+	"components": "spell_components_experiential_distortion", 
+	"extra_effects": [ { "id": "drain_fatigue_self_gate", "hit_self": true } ],
     "shape": "blast",
-    "base_casting_time": 0,
+    "base_casting_time": 100000,
     "min_damage": 1,
     "max_damage": 1,
     "max_level": 0,
 	"energy_source": "MANA",
-    "base_energy_cost": 7000,
+    "base_energy_cost": 30000,
     "difficulty": 0
   },
   {
@@ -1238,18 +1284,18 @@
     "material": [ "alien_liquid" ],
     "symbol": "O",
     "color": "white",
-    "properties": [ [ "creature_size_capacity", "HUGE" ] ],
+	"properties": [ [ "creature_size_capacity", "MEDIUM" ] ],
     "use_action": [ "CAPTURE_MONSTER_ACT" ],
     "pocket_data": [
       {
         "rigid": true,
         "pocket_type": "CONTAINER",
-        "max_contains_volume": "100000 L",
-        "max_contains_weight": "100000 kg",
-        "moves": 1,
-        "max_item_length": "1 km",
-        "weight_multiplier": 0.01,
-        "volume_multiplier": 0.01
+        "max_contains_volume": "1000 L",
+        "max_contains_weight": "1000 kg",
+        "moves": 1000,
+        "max_item_length": "2 km",
+		"volume_multiplier": 0.0,
+        "weight_multiplier": 0.0
       }
     ],
 	"armor": [
@@ -1277,19 +1323,19 @@
     "difficulty": 1,
     "max_level": 5,
 	"energy_source": "MANA",
-    "base_casting_time": 0,
+    "base_casting_time": 30000,
     "base_energy_cost": 0
   },
   {
     "id": "spell_components_devil_two",
     "type": "requirement",
     "components": [ [ 
-	    [ "money_one", 100 ],
-        [ "money_two", 50 ],
-        [ "money_five", 20 ],
-        [ "money_ten", 10 ],
-        [ "money_twenty", 5 ],
-        [ "money_fifty", 2 ] ] ]
+	    [ "money_one", 50 ],
+        [ "money_two", 25 ],
+        [ "money_five", 10 ],
+        [ "money_ten", 5 ],
+        [ "money_twenty", 3 ],
+        [ "money_fifty", 1 ] ] ]
   },
   {
     "id": "devil_two",
@@ -1298,43 +1344,146 @@
     "description": "You tear what little life is left from a creature and send it's remains down as far as down goes, and you get a little something for your trouble.",
     "valid_targets": [ "hostile", "ally" ],
     "effect": "banishment",
-	"extra_effects": [ { "id": "spawn_decaying_soul" } ],
-	"flags": [ "PERMANENT", "SOMATIC", "VERBAL", "NO_LEGS" ],
+	"extra_effects": [ { "id": "spawn_decaying_soul_mercy" } ],
+	"flags": [ "SOMATIC", "VERBAL", "NO_LEGS", "CONCENTRATE" ],
 	"min_damage": 33,
 	"max_damage": 33,
     "shape": "blast",
     "energy_source": "MANA",
+	"min_duration": 13000, 
+	"max_duration": 13000,
     "difficulty": 1,
 	"min_range": 1,
-    "base_casting_time": 100,
-    "base_energy_cost": 0,
+    "base_casting_time": 150,
+    "base_energy_cost": 777,
     "max_level": 5
+  },
+  {
+    "id": "spawn_decaying_soul_mercy",
+    "type": "SPELL",
+    "name": "Spawn decaying soul",
+    "description": "You tear the soul from a creature's body.",
+    "valid_targets": [ "hostile", "ally", "self" ],
+    "flags": [ "NO_LEGS" ],
+    "effect": "spawn_item",
+    "effect_str": "decaying_soul",
+    "shape": "blast",
+    "energy_source": "MANA",
+    "difficulty": 1,
+    "max_level": 1,
+	"min_duration": 100000,
+	"max_duration": 100000,
+    "base_energy_cost": 0,
+    "min_range": 20,
+    "max_range": 20
+  },
+  {
+  "id": "devils_ring",
+  "type": "ARMOR",
+  "name": {
+    "str": "self-absorbed ring"
+  },
+  "description": "A silver ring with an onyx mounted on top of it. It seems to call to itself, or maybe your self...",
+  "weight": "10 mg",
+  "volume": "1 ml",
+  "symbol": "O", 
+  "color": "black",
+  "price": 7500,
+  "price_postapoc": 100,
+  "to_hit": 2,
+  "bashing": 2,
+  "material": [
+    {
+      "type": "silver",
+      "portion": 9
+    },
+    {
+      "type": "gemstone"
+    }
+  ],
+  "properties": [ [ "creature_size_capacity", "HUGE" ] ],
+  "use_action": [ "CAPTURE_MONSTER_ACT" ],
+  "pocket_data": [
+    {
+      "pocket_type": "CONTAINER",
+      "max_contains_volume": "5 ml",
+      "max_contains_weight": "11 g",
+      "max_item_length": "30 cm",
+	  "item_restriction": [ "devils_ring" ],
+	  "weight_multiplier": 0.1,
+	  "volume_multiplier": 0.3,
+      "moves": 1000
+    }
+  ],
+  "material_thickness": 1,
+  "flags": [
+    "SUPER_FANCY",
+	"TRADER_AVOID", 
+	"TARDIS", 
+    "WATER_FRIENDLY"
+  ],
+  "armor": [
+    {
+      "coverage": 0,
+      "covers": [
+        "hand_l",
+        "hand_r"
+      ],
+      "specifically_covers": [
+        "hand_fingers_l",
+        "hand_fingers_r"
+      ]
+    }
+  ]
+},
+{
+    "type": "effect_on_condition",
+    "id": "ring_of_fire_eoc",
+    "effect": [ { "u_spawn_item": "devils_ring", "count": 1 } ],
+    "condition": { "or": [ { "u_is_wearing": "onyx_silver_ring" }, { "u_has_trait": "PSYCHOPATH" } ] }
+  },
+  {
+    "id": "ring_of_fire_eoc",
+    "type": "SPELL",
+    "name": "Ring of Fire",
+    "description": "Trip",
+    "effect": "effect_on_condition",
+    "effect_str": "ring_of_fire_eoc",
+    "shape": "blast",
+    "valid_targets": [ "self" ],
+    "max_level": 0,
+    "difficulty": 7,
+    "base_casting_time": 0,
+    "energy_source": "MANA",
+    "base_energy_cost": 0
   },
   {
     "id": "devil_three",
     "type": "SPELL",
-    "name": "Lake of Fire",
+    "name": "Ring of Fire",
     "description": "You turn the world upside down, bringing what lurks underneath to the surface.",
     "valid_targets": [ "hostile", "ground" ],
     "effect": "attack",
-	"extra_effects": [ { "id": "summon_hemors_devil_three" }, { "id": "summon_dune_devil_three" }, { "id": "linguistics_summon_goblins" } ],
-    "flags": [ "IGNORE_WALLS", "NO_PROJECTILE", "IGNITE_FLAMMABLE" ],
+	"extra_effects": [ { "id": "summon_hemors_devil_three" }, { "id": "summon_dune_devil_three" }, { "id": "ring_of_fire_eoc" }, { "id": "linguistics_summon_goblins" } ],
+    "flags": [ "IGNORE_WALLS", "NO_PROJECTILE", "IGNITE_FLAMMABLE", "RANDOM_DAMAGE", "SOMATIC", "LOUD", "VERBAL", "NO_LEGS" ],
     "shape": "blast",
-	"min_aoe": 25,
-	"max_aoe": 25,
-    "min_damage": 100,
-    "max_damage": 100,
+	"min_aoe": 15,
+	"max_aoe": 15,
+    "min_damage": 25,
+    "max_damage": 25,
     "difficulty": 1,
     "max_level": 5,
 	"min_range": 1,
+	"min_duration": 8640000, 
+	"max_duration": 8640000,
 	"energy_source": "MANA",
 	"field_id": "fd_fire",
-    "field_chance": 100,
+    "field_chance": 2,
     "min_field_intensity": 2,
     "max_field_intensity": 2,
     "base_casting_time": 300,
 	"damage_type": "heat",
-    "base_energy_cost": 13000
+    "base_energy_cost": 15000
   },
   {
     "id": "summon_hemors_devil_three",
@@ -1344,10 +1493,12 @@
     "valid_targets": [ "ground" ],
     "effect": "summon",
     "effect_str": "mon_hemor",
-    "flags": [ "PERMANENT", "RANDOM_DAMAGE", "RANDOM_TARGET" ],
+    "flags": [ "RANDOM_DAMAGE", "RANDOM_TARGET" ],
     "shape": "blast",
-    "min_damage": 3,
-    "max_damage": 7,
+	"min_duration": 150000,
+    "max_duration": 150000,
+    "min_damage": 1,
+    "max_damage": 3,
     "difficulty": 1,
 	"min_aoe": 10,
     "max_level": 5,
@@ -1363,8 +1514,10 @@
     "valid_targets": [ "ground" ],
     "effect": "summon",
     "effect_str": "mon_dunebroodnephilim",
-    "flags": [ "PERMANENT", "RANDOM_DAMAGE", "RANDOM_TARGET" ],
+    "flags": [ "RANDOM_DAMAGE", "RANDOM_TARGET" ],
     "shape": "blast",
+	"min_duration": 150000,
+    "max_duration": 150000,
     "min_damage": 3,
     "max_damage": 7,
     "difficulty": 1,
