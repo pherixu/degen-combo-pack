@@ -107,7 +107,7 @@
     "type": "enchantment",
     "id": "pact_of_smoke_enchantment2",
     "condition": "ALWAYS",
-    "intermittent_activation": { "effects": [ { "frequency": "24 h", "spell_effects": [ { "id": "phase_door" } ] } ] }
+    "intermittent_activation": { "effects": [ { "frequency": "48 h", "spell_effects": [ { "id": "phase_door" } ] } ] }
   },
   {
     "type": "enchantment",
@@ -116,7 +116,7 @@
     "intermittent_activation": { "effects": [ { "frequency": "7 d", "spell_effects": [ { "id": "spawn_spell_scroll_devil" } ] } ] },
     "values": [
       { "value": "FOOTSTEP_NOISE", "add": 7 },
-	  { "value": "INTELLIGENCE", "add": 2 },
+	  { "value": "INTELLIGENCE", "add": 4 },
       { "value": "REGEN_MANA", "multiply": 0.5 },
       { "value": "MAX_MANA", "add": 2000 }
     ]
@@ -132,8 +132,8 @@
     "type": "enchantment",
     "id": "pact_of_flame_enchantment2",
     "condition": "ALWAYS",
-    "intermittent_activation": { "effects": [ { "frequency": "6 h", "spell_effects": [ { "id": "summon_flame" } ] } ] },
-    "values": [ { "value": "INTELLIGENCE", "add": 2 } ]
+    "intermittent_activation": { "effects": [ { "frequency": "24 h", "spell_effects": [ { "id": "summon_flame" } ] } ] },
+    "values": [ { "value": "INTELLIGENCE", "add": 4 } ]
   },
   {
     "id": "recover_stamina_blood_pact",
@@ -282,7 +282,7 @@
       "passive_effects": [
         { "id": "pact_of_flame_enchantment" },
         { "id": "pact_of_flame_enchantment2" },
-        { "has": "WORN", "condition": "ALWAYS", "hit_me_effect": [ { "id": "summon_flame", "hit_self": true } ] },
+        { "has": "WORN", "condition": "ALWAYS", "hit_me_effect": [ { "id": "summon_flame", "hit_self": true, "once_in": 3 } ] },
         {
           "has": "WORN",
           "condition": "ALWAYS",
@@ -291,12 +291,12 @@
             "JITTERY",
             "PYROMANIA",
             "PSYCHOPATH",
+			"NOMAD",
 			"FLAMEPACTHEAT",
             "THERMALIGNORANCE",
             "SLOWHEALER",
             "HATES_WATER",
-            "FIREBALL_SPELL",
-            "NYCTOPHOBIA"
+            "FIREBALL_SPELL"
           ]
         }
       ]

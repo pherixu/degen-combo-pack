@@ -79,7 +79,7 @@
     "symbol": "[",
     "color": "white",
     "material_thickness": 2,
-    "flags": [ "VARSIZE", "STURDY", "OUTER" ],
+    "flags": [ "VARSIZE", "STURDY", "OUTER", "ALLOWS_NATURAL_ATTACKS" ],
     "use_action": {
         "target": "demi_smite_gloves_on",
         "msg": "You will the gloves to radiate light.",
@@ -119,7 +119,7 @@
     "color": "white",
 	"sided": true,
     "material_thickness": 2,
-    "flags": [ "VARSIZE", "STURDY", "OUTER", "LIGHT_20" ],
+    "flags": [ "VARSIZE", "STURDY", "OUTER", "ALLOWS_NATURAL_ATTACKS", "LIGHT_20", "ALLOWS_NATURAL_ATTACKS" ],
     "use_action": {
         "target": "demi_smite_gloves",
         "msg": "You will the gloves to stop radiating light.",
@@ -177,7 +177,7 @@
     "symbol": "[",
     "color": "white",
     "material_thickness": 2,
-    "flags": [ "VARSIZE", "STURDY", "OUTER" ],
+    "flags": [ "VARSIZE", "STURDY", "OUTER", "ALLOWS_NATURAL_ATTACKS" ],
     "use_action": {
         "target": "smite_gloves_on",
         "msg": "You will the gloves to radiate light.",
@@ -216,7 +216,7 @@
     "symbol": "[",
     "color": "white",
     "material_thickness": 2,
-    "flags": [ "VARSIZE", "STURDY", "OUTER", "LIGHT_20" ],
+    "flags": [ "VARSIZE", "STURDY", "OUTER", "ALLOWS_NATURAL_ATTACKS", "LIGHT_20" ],
     "use_action": {
         "target": "smite_gloves",
         "msg": "You will the gloves to stop radiating light.",
@@ -388,7 +388,7 @@
     "symbol": "[",
     "color": "red",
     "material_thickness": 2,
-    "flags": [ "VARSIZE", "STURDY", "OUTER", "FIRESTARTER" ],
+    "flags": [ "VARSIZE", "STURDY", "OUTER", "ALLOWS_NATURAL_ATTACKS", "FIRESTARTER" ],
 	"use_action": {
     "type": "firestarter",
     "moves": 50
@@ -445,7 +445,7 @@
     "symbol": "[",
     "color": "red",
     "material_thickness": 2,
-    "flags": [ "VARSIZE", "STURDY", "OUTER", "FIRESTARTER" ],
+    "flags": [ "VARSIZE", "STURDY", "OUTER", "ALLOWS_NATURAL_ATTACKS", "FIRESTARTER" ],
 	"use_action": {
     "type": "firestarter",
     "moves": 50
@@ -665,7 +665,7 @@
 	"sided": true,
     "color": "blue",
     "material_thickness": 2,
-    "flags": [ "VARSIZE", "STURDY", "OUTER" ],
+    "flags": [ "VARSIZE", "STURDY", "OUTER", "ALLOWS_NATURAL_ATTACKS" ],
     "relic_data": {
       "passive_effects": [
         {
@@ -719,7 +719,7 @@
     "symbol": "[",
     "color": "green",
     "material_thickness": 2,
-    "flags": [ "VARSIZE", "STURDY", "OUTER", "ZOOM" ],
+    "flags": [ "VARSIZE", "STURDY", "OUTER", "ALLOWS_NATURAL_ATTACKS", "ZOOM" ],
     "relic_data": {
       "passive_effects": [
         {
@@ -825,7 +825,7 @@
     "symbol": "[",
     "color": "black",
     "material_thickness": 2,
-    "flags": [ "VARSIZE", "STURDY", "OUTER" ],
+    "flags": [ "VARSIZE", "STURDY", "OUTER", "ALLOWS_NATURAL_ATTACKS" ],
     "relic_data": {
       "passive_effects": [
         {
@@ -878,7 +878,7 @@
 	"sided": true,
     "color": "black",
     "material_thickness": 2,
-    "flags": [ "VARSIZE", "STURDY", "OUTER" ],
+    "flags": [ "VARSIZE", "STURDY", "OUTER", "ALLOWS_NATURAL_ATTACKS" ],
     "relic_data": {
       "passive_effects": [
         {
@@ -947,7 +947,7 @@
 	"sided": true,
     "color": "black",
     "material_thickness": 2,
-    "flags": [ "VARSIZE", "STURDY", "OUTER" ],
+    "flags": [ "VARSIZE", "STURDY", "OUTER", "ALLOWS_NATURAL_ATTACKS" ],
     "relic_data": {
       "passive_effects": [
         {
@@ -981,7 +981,7 @@
 	"sided": true,
     "color": "black",
     "material_thickness": 2,
-    "flags": [ "VARSIZE", "STURDY", "OUTER" ],
+    "flags": [ "VARSIZE", "STURDY", "OUTER", "ALLOWS_NATURAL_ATTACKS" ],
     "relic_data": {
       "passive_effects": [
         {
@@ -1015,7 +1015,7 @@
 	"sided": true,
     "color": "black",
     "material_thickness": 2,
-    "flags": [ "VARSIZE", "STURDY", "OUTER" ],
+    "flags": [ "VARSIZE", "STURDY", "OUTER", "ALLOWS_NATURAL_ATTACKS" ],
     "relic_data": {
       "passive_effects": [
         {
@@ -1049,7 +1049,7 @@
 	"sided": true,
     "color": "black",
     "material_thickness": 2,
-    "flags": [ "VARSIZE", "STURDY", "OUTER" ],
+    "flags": [ "VARSIZE", "STURDY", "OUTER", "ALLOWS_NATURAL_ATTACKS" ],
     "relic_data": {
       "passive_effects": [
         {
@@ -1083,7 +1083,7 @@
 	"sided": true,
     "color": "black",
     "material_thickness": 2,
-    "flags": [ "VARSIZE", "STURDY", "OUTER" ],
+    "flags": [ "VARSIZE", "STURDY", "OUTER", "ALLOWS_NATURAL_ATTACKS" ],
     "relic_data": {
       "passive_effects": [
         {
@@ -1117,7 +1117,7 @@
 	"sided": true,
     "color": "black",
     "material_thickness": 2,
-    "flags": [ "VARSIZE", "STURDY", "OUTER" ],
+    "flags": [ "VARSIZE", "STURDY", "OUTER", "ALLOWS_NATURAL_ATTACKS" ],
     "relic_data": {
       "passive_effects": [
         {
@@ -1151,7 +1151,7 @@
 	"sided": true,
     "color": "black",
     "material_thickness": 2,
-    "flags": [ "VARSIZE", "STURDY", "OUTER" ],
+    "flags": [ "VARSIZE", "STURDY", "OUTER", "ALLOWS_NATURAL_ATTACKS" ],
     "relic_data": {
       "passive_effects": [
         {
@@ -1219,7 +1219,7 @@
 	"sided": true,
     "color": "black",
     "material_thickness": 2,
-    "flags": [ "VARSIZE", "STURDY", "OUTER" ],
+    "flags": [ "VARSIZE", "STURDY", "OUTER", "ALLOWS_NATURAL_ATTACKS" ],
     "relic_data": {
       "passive_effects": [
         {
@@ -1258,6 +1258,51 @@
       "POLEARM",
       "MAGIC_FOCUS",
       "NO_RELOAD",
+      "NO_UNLOAD",
+      "REACH_ATTACK"
+    ],
+    "charges_per_use": 1,
+    "relic_data": {
+      "charge_info": { "recharge_type": "periodic", "time": "30 m", "regenerate_ammo": true },
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "values": [ { "value": "REGEN_MANA", "multiply": 2 }, { "value": "DEXTERITY", "add": 2 } ]
+        }
+      ]
+    },
+    "weight": "1400 g",
+    "volume": "3 L",
+    "longest_side": "170 cm",
+    "bashing": 8,
+    "cutting": 40,
+    "category": "weapons",
+    "to_hit": 5,
+    "use_action": { "type": "cast_spell", "spell_id": "summon_winter_wolf", "no_fail": true, "level": 5, "need_wielding": true },
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "crystallized_mana": 1 } } ]
+  },
+  {
+    "id": "white_wolfs_staff_2",
+    "type": "TOOL",
+    "symbol": "W",
+    "looks_like": "naginata",
+    "color": "white",
+    "name": "Spear of the White Wolf",
+    "description": "A white wooden staff topped with a silver blade, cold to the touch. A flourish will bring the wolf's spirit forth, casting biting winds at your opponents.",
+    "price": 100000,
+    "material": [ "wood", "mithril_metal" ],
+    "techniques": [ "WBLOCK_2", "RAPID", "SWEEP" ],
+    "weapon_category": [ "POLEARM" ],
+    "flags": [
+      "SHEATH_SPEAR",
+      "ALWAYS_TWOHAND",
+      "STURDY",
+      "DURABLE_MELEE",
+      "POLEARM",
+      "MAGIC_FOCUS",
+      "NO_RELOAD",
+	  "TRADER_AVOID",
       "NO_UNLOAD",
       "REACH_ATTACK"
     ],

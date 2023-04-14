@@ -42,6 +42,19 @@
   },
   {
     "type": "mutation",
+    "id": "PSYCHICANCHOR_SPELL",
+    "name": { "str": "Spell: Psychic Anchor" },
+    "points": 0,
+    "description": "You learn the associated spell. IF YOU SELECT THE MUTATION YOU WILL HAVE THE SPELL FOREVER. IF YOU DE-SELECT THE TRAIT YOU WILL STILL HAVE THE SPELL.",
+    "starting_trait": true,
+    "purifiable": false,
+    "player_display": false,
+    "valid": false,
+    "category": [ "HUMAN" ],
+    "spells_learned": [ [ "psychic_anchor", 5 ] ]
+  },
+  {
+    "type": "mutation",
     "id": "TRANSTEMPORALPASSAGE_SPELL",
     "name": { "str": "Spell: Transtemporal Passage" },
     "points": 1,
@@ -116,7 +129,7 @@
     "player_display": false,
     "valid": false,
     "category": [ "HUMAN" ],
-    "spells_learned": [ [ "precipitate_stick", 5 ] ]
+    "spells_learned": [ [ "conjure_stick", 5 ] ]
   },
   {
     "type": "mutation",
@@ -2431,7 +2444,7 @@
     "player_display": false,
     "valid": false,
     "category": [ "HUMAN" ],
-    "spells_learned": [ [ "translocate_self", 7 ] ]
+    "spells_learned": [ [ "translocate_self", 10 ] ]
   },
   {
     "type": "mutation",
@@ -2475,7 +2488,7 @@
   {
     "type": "mutation",
     "id": "TRANSGATEPLACE_SPELL",
-    "name": { "str": "Spell: Conjure Gate" },
+    "name": { "str": "Spell: Precipitate Gate" },
     "points": 2,
     "description": "You learn the associated spell. IF YOU SELECT THE MUTATION YOU WILL HAVE THE SPELL FOREVER. IF YOU DE-SELECT THE TRAIT YOU WILL STILL HAVE THE SPELL.",
     "starting_trait": true,

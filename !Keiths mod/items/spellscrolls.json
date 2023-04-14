@@ -139,6 +139,17 @@
   {
     "type": "BOOK",
     "copy-from": "spell_scroll",
+    "id": "spell_scroll_psychic_anchor",
+    "//": "Classless spell",
+    "looks_like": "rock_large",
+    "name": { "str": "heavy stone", "str_pl": "heavy stone" },
+    "weight": "15768 g",
+    "description": "A large rock which you seem to recognize in some way. All that's left to do is wait.",
+    "use_action": { "type": "learn_spell", "spells": [ "psychic_anchor" ] }
+  },
+  {
+    "type": "BOOK",
+    "copy-from": "spell_scroll",
     "id": "spell_scroll_summon_bike",
     "//": "Classless spell",
     "name": { "str": "tandem tome", "str_pl": "tandem tome" },
@@ -696,7 +707,7 @@
     "looks_like": "envelope",
     "name": { "str": "enthralling droplet", "str_pl": "enthralling droplets" },
     "description": "A single raindrop that runs as if under the direction of a foreign gravity that takes it in all directions. Watching it run, one might make out symbols in the pattern it draws...",
-    "use_action": { "type": "learn_spell", "spells": [ "precipitate_manipulation" ] }
+    "use_action": { "type": "learn_spell", "spells": [ "conjure_manipulation" ] }
   },
   {
     "type": "BOOK",

@@ -134,12 +134,12 @@
   {
     "id": "spell_components_summon_hemor",
     "type": "requirement",
-    "components": [ [ [ "brimstone_chunk", 3 ], [ "money_strap_hundred", 15 ] ] ]
+    "components": [ [ [ "brimstone_chunk", 1 ], [ "bone_human", 7 ], [ "money_bundle_hundred", 1 ] ] ]
   },
   {
     "id": "spell_components_white_wolf_staff",
     "type": "requirement",
-    "components": [ [ [ "ring_signet", 1 ], [ "money_bundle_hundred", 1 ] ] ]
+    "components": [ [ [ "ring_signet", 1 ], [ "onyx_silver_ring", 1 ], [ "money_bundle_hundred", 1 ] ] ]
   },
   {
     "id": "spell_components_spawn_car",
@@ -149,7 +149,7 @@
   {
     "id": "spell_components_sunny_disposition",
     "type": "requirement",
-    "components": [ [ [ "beautification_aura", 1 ] ] ]
+    "components": [ [ [ "beautification_aura", 1 ], [ "onyx_silver_ring", 2 ] ] ]
   },
   {
     "id": "spell_components_bend_will_item_spell_short",
@@ -169,7 +169,7 @@
   {
     "id": "spell_components_wicked_ritual",
     "type": "requirement",
-    "components": [ [ [ "spell_scroll_wicked_ritual", 1 ], [ "money_bundle_hundred", 33 ] ] ]
+    "components": [ [ [ "spell_scroll_wicked_ritual", 1 ], [ "money_bundle_hundred", 33 ], [ "onyx_silver_ring", 3 ] ] ]
   },
   {
     "id": "spell_components_wicked_ritual_place",
@@ -179,12 +179,12 @@
   {
     "id": "spell_components_enlarge",
     "type": "requirement",
-    "components": [ [ [ "icon", 1 ], [ "protein_powder", 1 ], [ "inj_iron", 1 ], [ "money_strap_hundred", 1 ], [ "ring_signet", 1 ] ] ]
+    "components": [ [ [ "icon", 1 ], [ "protein_powder", 3 ], [ "inj_iron", 1 ], [ "money_strap_hundred", 1 ], [ "ring_signet", 1 ] ] ]
   },
   {
     "id": "spell_components_rabbits_foot",
     "type": "requirement",
-    "components": [ [ [ "mercury", 1 ], [ "money_strap_hundred", 1 ], [ "ring_signet", 1 ] ] ]
+    "components": [ [ [ "mercury", 3 ], [ "money_strap_hundred", 1 ], [ "ring_signet", 1 ] ] ]
   },
   {
     "id": "spell_components_conjure_crystal",
@@ -243,7 +243,7 @@
   {
     "id": "spell_components_artillery",
     "type": "requirement",
-    "components": [ [ [ "money_strap_hundred", 5 ], [ "ring_signet", 1 ] ] ]
+    "components": [ [ [ "money_strap_hundred", 5 ], [ "ring_signet", 1 ], [ "onyx_silver_ring", 1 ] ] ]
   },
   {
     "id": "spell_components_spawn_gas",
@@ -296,42 +296,42 @@
   {
     "id": "spell_components_circle_of_blood",
     "type": "requirement",
-    "components": [ [ [ "animal_blood", 25 ], [ "blood", 5 ], [ "brimstone_chunk", 3 ], [ "crystallized_ink", 1 ], [ "money_strap_hundred", 1 ] ] ]
+    "components": [ [ [ "animal_blood", 25 ], [ "blood", 5 ], [ "brimstone_chunk", 1 ], [ "crystallized_ink", 1 ], [ "money_strap_hundred", 1 ] ] ]
   },
   {
     "id": "spell_components_bind_via_blood",
     "type": "requirement",
-    "components": [ [ [ "blood", 1 ], [ "brimstone_chunk", 3 ], [ "money_strap_hundred", 1 ] ] ]
+    "components": [ [ [ "blood", 1 ], [ "brimstone_chunk", 1 ], [ "money_strap_hundred", 1 ] ] ]
   },
   {
     "id": "spell_components_bind_via_smoke",
     "type": "requirement",
-    "components": [ [ [ "cig", 10 ], [ "cigar", 5 ], [ "joint", 5 ], [ "brimstone_chunk", 3 ], [ "money_strap_hundred", 1 ] ] ]
+    "components": [ [ [ "cig", 10 ], [ "cigar", 5 ], [ "joint", 5 ], [ "brimstone_chunk", 1 ], [ "money_strap_hundred", 1 ] ] ]
   },
   {
     "id": "spell_components_bind_via_bile",
     "type": "requirement",
-    "components": [ [ [ "human_cooked", 1 ], [ "hstomach", 1 ], [ "brimstone_chunk", 3 ], [ "money_strap_hundred", 1 ] ] ]
+    "components": [ [ [ "human_cooked", 7 ], [ "hstomach", 1 ], [ "brimstone_chunk", 1 ], [ "money_strap_hundred", 1 ] ] ]
   },
   {
     "id": "spell_components_bind_via_fire",
     "type": "requirement",
-    "components": [ [ [ "diesel", 5 ], [ "gasoline", 10 ], [ "brimstone_chunk", 3 ], [ "money_strap_hundred", 1 ] ] ]
+    "components": [ [ [ "diesel", 5 ], [ "gasoline", 10 ], [ "brimstone_chunk", 1 ], [ "money_strap_hundred", 1 ] ] ]
   },
   {
     "id": "spell_components_circle_of_flame",
     "type": "requirement",
-    "components": [ [ [ "brimstone_sliver", 7 ], [ "brimstone_chunk", 5 ], [ "crystallized_ink", 1 ], [ "money_strap_hundred", 3 ] ] ]
+    "components": [ [ [ "onyx_silver_ring", 1 ], [ "brimstone_chunk", 1 ], [ "crystallized_ink", 1 ], [ "money_strap_hundred", 3 ] ] ]
   },
   {
     "id": "spell_components_circle_of_smoke",
     "type": "requirement",
-    "components": [ [ [ "tear_of_child", 7 ], [ "brimstone_chunk", 3 ], [ "crystallized_ink", 1 ], [ "money_strap_hundred", 1 ] ] ]
+    "components": [ [ [ "tear_of_child", 3 ], [ "brimstone_chunk", 1 ], [ "crystallized_ink", 1 ], [ "money_strap_hundred", 1 ] ] ]
   },
   {
     "id": "spell_components_catalyst",
     "type": "requirement",
-    "components": [ [ [ "iv_mutagen", 1 ] ] ]
+    "components": [ [ [ "iv_mutagen", 1 ], [ "ring_signet", 1 ], [ "money_bundle_hundred", 1 ] ] ]
   },
   {
     "id": "spell_components_old_life",
@@ -341,12 +341,12 @@
   {
     "id": "spell_components_summon_dune_brood",
     "type": "requirement",
-    "components": [ [ [ "brimstone_chunk", 3 ], [ "bone_human", 9 ], [ "money_strap_hundred", 1 ] ] ]
+    "components": [ [ [ "brimstone_chunk", 1 ], [ "material_sand", 33 ], [ "money_strap_hundred", 1 ] ] ]
   },
   {
     "id": "spell_components_extract_memory",
     "type": "requirement",
-    "components": [ [ [ "skull_human", 1 ], [ "money_bundle_hundred", 3 ], [ "etched_skull", 1 ] ] ]
+    "components": [ [ [ "skull_human", 1 ], [ "money_bundle_hundred", 3 ], [ "etched_skull", 1 ], [ "onyx_silver_ring", 1 ] ] ]
   },
   {
     "id": "spell_components_childs_drawing",
@@ -392,6 +392,7 @@
         [ "ring_engagement", 2 ],
         [ "ring_purity", 1 ],
         [ "ring_signet", 1 ],
+		[ "onyx_silver_ring", 1 ],
         [ "ring_wedding", 2 ]
       ]
     ]
@@ -463,7 +464,7 @@
   {
     "id": "spell_components_summon_slime",
     "type": "requirement",
-    "components": [ [ [ "feces_roach", 10 ], [ "brimstone_chunk", 5 ], [ "money_strap_hundred", 1 ], [ "money_hundred", 333 ] ] ]
+    "components": [ [ [ "feces_roach", 10 ], [ "brimstone_chunk", 3 ], [ "money_strap_hundred", 3 ] ] ]
   },
   {
     "id": "spell_components_pact_heal_blood",
@@ -505,7 +506,8 @@
     "type": "requirement",
     "components": [
       [
-        [ "brimstone_chunk", 15 ],
+        [ "brimstone_chunk", 13 ],
+		[ "onyx_silver_ring", 2 ],
         [ "money_hundred", 5000 ],
         [ "money_strap_hundred", 50 ],
         [ "money_bundle_hundred", 5 ]
@@ -515,6 +517,6 @@
   {
     "id": "spell_components_circle_of_bile",
     "type": "requirement",
-    "components": [ [ [ "human_flesh", 15 ], [ "brimstone_chunk", 3 ], [ "crystallized_ink", 1 ], [ "money_strap_hundred", 3 ] ] ]
+    "components": [ [ [ "human_flesh", 15 ], [ "brimstone_chunk", 1 ], [ "crystallized_ink", 1 ], [ "money_strap_hundred", 3 ] ] ]
   }
 ]

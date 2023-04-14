@@ -6,7 +6,7 @@
     "description": "A layer of chains magically laid over your spirit that adept mages manipulate to make themselves stronger. It is of the first and lowest order.",
     "weight": "1 g",
     "volume": "1 ml",
-    "price": 50000,
+    "price": 100000,
     "bashing": 1,
     "cutting": 1,
     "material": [ "aether" ],
@@ -84,7 +84,7 @@
 		]
     }
 	],
-    "flags": [ "TRADER_AVOID", "TARDIS", "SEMITANGIBLE", "NO_TAKEOFF", "AURA", "ONLY_ONE", "ZERO_WEIGHT" ]
+    "flags": [ "TARDIS", "SEMITANGIBLE", "NO_TAKEOFF", "AURA", "ONLY_ONE", "ZERO_WEIGHT" ]
   },
   {
     "id": "cursed_spirit_1",
@@ -623,7 +623,7 @@
     "description": "A layer of chains magically laid over your spirit that adept mages manipulate to make themselves stronger. It is of the second, middle order.",
     "weight": "1 g",
     "volume": "1 ml",
-    "price": 50000,
+    "price": 150000,
     "bashing": 1,
     "cutting": 1,
     "material": [ "aether" ],
@@ -767,7 +767,7 @@
       ]
     }
 	],
-    "flags": [ "TRADER_AVOID", "TARDIS", "SEMITANGIBLE", "NO_TAKEOFF", "AURA", "ONLY_ONE", "ZERO_WEIGHT" ]
+    "flags": [ "TARDIS", "SEMITANGIBLE", "NO_TAKEOFF", "AURA", "ONLY_ONE", "ZERO_WEIGHT" ]
   },
   {
     "id": "spirit_3",
@@ -776,7 +776,7 @@
     "description": "A layer of chains magically laid over your spirit that adept mages manipulate to make themselves stronger. It is of the third and highest order.",
     "weight": "1 g",
     "volume": "1 ml",
-    "price": 50000,
+    "price": 300000,
     "bashing": 1,
     "cutting": 1,
     "material": [ "aether" ],
@@ -984,7 +984,7 @@
       ]
     }
 	],
-    "flags": [ "TRADER_AVOID", "TARDIS", "SEMITANGIBLE", "AURA", "NO_TAKEOFF", "ONLY_ONE", "ZERO_WEIGHT" ]
+    "flags": [ "TARDIS", "SEMITANGIBLE", "AURA", "NO_TAKEOFF", "ONLY_ONE", "ZERO_WEIGHT" ]
   },
   {
     "id": "spirit_int",
@@ -995,7 +995,7 @@
     "weight": "1000 kg",
     "volume": "1000 L",
     "longest_side": "2 km",
-    "price": 0,
+    "price": 100000,
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
     "material": [ "aether" ],
 	"relic_data": {
@@ -1014,7 +1014,7 @@
     "weight": "1000 kg",
     "volume": "1000 L",
     "longest_side": "2 km",
-    "price": 0,
+    "price": 100000,
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
     "material": [ "aether" ],
 	"relic_data": {
@@ -1033,7 +1033,7 @@
     "weight": "1000 kg",
     "volume": "1000 L",
     "longest_side": "2 km",
-    "price": 0,
+    "price": 100000,
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
     "material": [ "aether" ],
 	"relic_data": {
@@ -1052,7 +1052,7 @@
     "weight": "1000 kg",
     "volume": "1000 L",
     "longest_side": "2 km",
-    "price": 0,
+    "price": 100000,
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
     "material": [ "aether" ],
 	"relic_data": {
@@ -1071,7 +1071,7 @@
     "weight": "1000 kg",
     "volume": "1000 L",
     "longest_side": "2 km",
-    "price": 0,
+    "price": 100000,
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
     "material": [ "aether" ],
 	"relic_data": {
@@ -1090,7 +1090,7 @@
     "weight": "1000 kg",
     "volume": "1000 L",
     "longest_side": "2 km",
-    "price": 0,
+    "price": 100000,
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
     "material": [ "aether" ],
 	"relic_data": {
@@ -1109,7 +1109,7 @@
     "weight": "1000 kg",
     "volume": "1000 L",
     "longest_side": "2 km",
-    "price": 0,
+    "price": 100000,
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
     "material": [ "aether" ],
 	"relic_data": {
@@ -1128,7 +1128,7 @@
     "weight": "1000 kg",
     "volume": "1000 L",
     "longest_side": "2 km",
-    "price": 0,
+    "price": 100000,
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
     "material": [ "aether" ],
 	"relic_data": {
@@ -1147,7 +1147,7 @@
     "weight": "1000 kg",
     "volume": "1000 L",
     "longest_side": "2 km",
-    "price": 0,
+    "price": 100000,
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
     "material": [ "aether" ],
 	"relic_data": {
@@ -1166,7 +1166,7 @@
     "weight": "1000 kg",
     "volume": "1000 L",
     "longest_side": "2 km",
-    "price": 0,
+    "price": 100000,
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
     "material": [ "aether" ],
 	"relic_data": {
@@ -1185,7 +1185,7 @@
     "weight": "1000 kg",
     "volume": "1000 L",
     "longest_side": "2 km",
-    "price": 0,
+    "price": 100000,
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
     "material": [ "aether" ],
 	"relic_data": {
@@ -1204,7 +1204,7 @@
     "weight": "1000 kg",
     "volume": "1000 L",
     "longest_side": "2 km",
-    "price": 0,
+    "price": 100000,
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
     "material": [ "aether" ],
 	"relic_data": {
@@ -1223,7 +1223,7 @@
     "weight": "1000 kg",
     "volume": "1000 L",
     "longest_side": "2 km",
-    "price": 0,
+    "price": 100000,
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
     "material": [ "aether" ],
 	"relic_data": {
@@ -1242,7 +1242,7 @@
     "weight": "1000 kg",
     "volume": "1000 L",
     "longest_side": "2 km",
-    "price": 0,
+    "price": 100000,
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
     "material": [ "aether" ],
 	"relic_data": {
@@ -1261,7 +1261,7 @@
     "weight": "1000 kg",
     "volume": "1000 L",
     "longest_side": "2 km",
-    "price": 0,
+    "price": 100000,
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
     "material": [ "aether" ],
 	"relic_data": {
@@ -1280,7 +1280,7 @@
     "weight": "1000 kg",
     "volume": "1000 L",
     "longest_side": "2 km",
-    "price": 0,
+    "price": 100000,
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
     "material": [ "aether" ],
 	"relic_data": {
@@ -1299,7 +1299,7 @@
     "weight": "1000 kg",
     "volume": "1000 L",
     "longest_side": "2 km",
-    "price": 0,
+    "price": 100000,
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
     "material": [ "aether" ],
 	"relic_data": {
@@ -1318,7 +1318,7 @@
     "weight": "1000 kg",
     "volume": "1000 L",
     "longest_side": "2 km",
-    "price": 0,
+    "price": 100000,
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
     "material": [ "aether" ],
 	"relic_data": {
@@ -1337,7 +1337,7 @@
     "weight": "1000 kg",
     "volume": "1000 L",
     "longest_side": "2 km",
-    "price": 0,
+    "price": 100000,
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
     "material": [ "aether" ],
 	"relic_data": {
@@ -1356,7 +1356,7 @@
     "weight": "1000 kg",
     "volume": "1000 L",
     "longest_side": "2 km",
-    "price": 0,
+    "price": 100000,
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
     "material": [ "aether" ],
 	"relic_data": {
@@ -1375,7 +1375,7 @@
     "weight": "1000 kg",
     "volume": "1000 L",
     "longest_side": "2 km",
-    "price": 0,
+    "price": 100000,
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
     "material": [ "aether" ],
 	"relic_data": {
@@ -1394,7 +1394,7 @@
     "weight": "1000 kg",
     "volume": "1000 L",
     "longest_side": "2 km",
-    "price": 0,
+    "price": 100000,
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
     "material": [ "aether" ],
 	"relic_data": {
@@ -1413,7 +1413,7 @@
     "weight": "1000 kg",
     "volume": "1000 L",
     "longest_side": "2 km",
-    "price": 0,
+    "price": 100000,
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
     "material": [ "aether" ],
 	"relic_data": {
@@ -1432,7 +1432,7 @@
     "weight": "1000 kg",
     "volume": "1000 L",
     "longest_side": "2 km",
-    "price": 0,
+    "price": 100000,
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
     "material": [ "aether" ],
 	"relic_data": {
@@ -1451,7 +1451,7 @@
     "weight": "1000 kg",
     "volume": "1000 L",
     "longest_side": "2 km",
-    "price": 0,
+    "price": 100000,
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
     "material": [ "aether" ],
 	"relic_data": {
@@ -1470,7 +1470,7 @@
     "weight": "1000 kg",
     "volume": "1000 L",
     "longest_side": "2 km",
-    "price": 0,
+    "price": 100000,
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
     "material": [ "aether" ],
 	"relic_data": {
@@ -1489,7 +1489,7 @@
     "weight": "1000 kg",
     "volume": "1000 L",
     "longest_side": "2 km",
-    "price": 0,
+    "price": 100000,
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
     "material": [ "aether" ],
 	"relic_data": {
@@ -1508,7 +1508,7 @@
     "weight": "1000 kg",
     "volume": "1000 L",
     "longest_side": "2 km",
-    "price": 0,
+    "price": 100000,
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
     "material": [ "aether" ],
 	"relic_data": {
@@ -1527,7 +1527,7 @@
     "weight": "1000 kg",
     "volume": "1000 L",
     "longest_side": "2 km",
-    "price": 0,
+    "price": 100000,
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
     "material": [ "aether" ],
 	"relic_data": {
@@ -1546,7 +1546,7 @@
     "weight": "1000 kg",
     "volume": "1000 L",
     "longest_side": "2 km",
-    "price": 0,
+    "price": 100000,
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
     "material": [ "aether" ],
 	"relic_data": {
@@ -1565,7 +1565,7 @@
     "weight": "1000 kg",
     "volume": "1000 L",
     "longest_side": "2 km",
-    "price": 0,
+    "price": 100000,
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
     "material": [ "aether" ],
 	"relic_data": {
@@ -1584,7 +1584,7 @@
     "weight": "1000 kg",
     "volume": "1000 L",
     "longest_side": "2 km",
-    "price": 0,
+    "price": 100000,
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
     "material": [ "aether" ],
 	"relic_data": {
@@ -1603,7 +1603,7 @@
     "weight": "1000 kg",
     "volume": "1000 L",
     "longest_side": "2 km",
-    "price": 0,
+    "price": 100000,
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
     "material": [ "aether" ],
 	"relic_data": {
@@ -1622,7 +1622,7 @@
     "weight": "1000 kg",
     "volume": "1000 L",
     "longest_side": "2 km",
-    "price": 0,
+    "price": 100000,
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
     "material": [ "aether" ],
 	"relic_data": {
@@ -1641,7 +1641,7 @@
     "weight": "1000 kg",
     "volume": "1000 L",
     "longest_side": "2 km",
-    "price": 0,
+    "price": 100000,
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
     "material": [ "aether" ],
 	"relic_data": {
@@ -1660,7 +1660,7 @@
     "weight": "1000 kg",
     "volume": "1000 L",
     "longest_side": "2 km",
-    "price": 0,
+    "price": 100000,
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
     "material": [ "aether" ],
 	"relic_data": {
@@ -1679,7 +1679,7 @@
     "weight": "1000 kg",
     "volume": "1000 L",
     "longest_side": "2 km",
-    "price": 0,
+    "price": 100000,
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
     "material": [ "aether" ],
 	"relic_data": {
@@ -1698,7 +1698,7 @@
     "weight": "1000 kg",
     "volume": "1000 L",
     "longest_side": "2 km",
-    "price": 0,
+    "price": 100000,
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
     "material": [ "aether" ],
 	"relic_data": {
@@ -1717,7 +1717,7 @@
     "weight": "1000 kg",
     "volume": "1000 L",
     "longest_side": "2 km",
-    "price": 0,
+    "price": 100000,
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
     "material": [ "aether" ],
 	"relic_data": {
@@ -1736,7 +1736,7 @@
     "weight": "1000 kg",
     "volume": "1000 L",
     "longest_side": "2 km",
-    "price": 0,
+    "price": 100000,
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
     "material": [ "aether" ],
 	"relic_data": {
@@ -1755,7 +1755,7 @@
     "weight": "1000 kg",
     "volume": "1000 L",
     "longest_side": "2 km",
-    "price": 0,
+    "price": 100000,
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
     "material": [ "aether" ],
 	"relic_data": {
@@ -1774,7 +1774,7 @@
     "weight": "1000 kg",
     "volume": "1000 L",
     "longest_side": "2 km",
-    "price": 0,
+    "price": 100000,
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
     "material": [ "aether" ],
 	"relic_data": {
@@ -1793,7 +1793,7 @@
     "weight": "1000 kg",
     "volume": "1000 L",
     "longest_side": "2 km",
-    "price": 0,
+    "price": 100000,
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
     "material": [ "aether" ],
 	"relic_data": {
@@ -1812,7 +1812,7 @@
     "weight": "1000 kg",
     "volume": "1000 L",
     "longest_side": "2 km",
-    "price": 0,
+    "price": 100000,
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
     "material": [ "aether" ],
 	"relic_data": {
@@ -1836,7 +1836,7 @@
     "weight": "1000 kg",
     "volume": "1000 L",
     "longest_side": "2 km",
-    "price": 0,
+    "price": 100000,
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
     "material": [ "aether" ],
 	"relic_data": {
@@ -1860,7 +1860,7 @@
     "weight": "1000 kg",
     "volume": "1000 L",
     "longest_side": "2 km",
-    "price": 0,
+    "price": 100000,
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
     "material": [ "aether" ],
 	"relic_data": {
@@ -1884,7 +1884,7 @@
     "weight": "1000 kg",
     "volume": "1000 L",
     "longest_side": "2 km",
-    "price": 0,
+    "price": 100000,
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
     "material": [ "aether" ],
 	"relic_data": {
@@ -1908,7 +1908,7 @@
     "weight": "1000 kg",
     "volume": "1000 L",
     "longest_side": "2 km",
-    "price": 0,
+    "price": 100000,
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
     "material": [ "aether" ],
 	"relic_data": {
@@ -1932,7 +1932,7 @@
     "weight": "1000 kg",
     "volume": "1000 L",
     "longest_side": "2 km",
-    "price": 0,
+    "price": 100000,
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
     "material": [ "aether" ],
 	"relic_data": {
@@ -1956,7 +1956,7 @@
     "weight": "1000 kg",
     "volume": "1000 L",
     "longest_side": "2 km",
-    "price": 0,
+    "price": 100000,
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
     "material": [ "aether" ],
 	"relic_data": {
@@ -1998,7 +1998,7 @@
     "weight": "1000 kg",
     "volume": "1000 L",
     "longest_side": "2 km",
-    "price": 0,
+    "price": 100000,
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
     "material": [ "aether" ],
 	"relic_data": {
@@ -2040,7 +2040,7 @@
     "weight": "1000 kg",
     "volume": "1000 L",
     "longest_side": "2 km",
-    "price": 0,
+    "price": 100000,
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
     "material": [ "aether" ],
 	"relic_data": {
@@ -2084,7 +2084,7 @@
     "weight": "1000 kg",
     "volume": "1000 L",
     "longest_side": "2 km",
-    "price": 0,
+    "price": 100000,
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
     "material": [ "aether" ],
 	"relic_data": {
@@ -2128,7 +2128,7 @@
     "weight": "1000 kg",
     "volume": "1000 L",
     "longest_side": "2 km",
-    "price": 0,
+    "price": 100000,
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
     "material": [ "aether" ],
 	"relic_data": {
@@ -2172,7 +2172,7 @@
     "weight": "1000 kg",
     "volume": "1000 L",
     "longest_side": "2 km",
-    "price": 0,
+    "price": 100000,
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
     "material": [ "aether" ],
 	"relic_data": {
@@ -2216,7 +2216,7 @@
     "weight": "1000 kg",
     "volume": "1000 L",
     "longest_side": "2 km",
-    "price": 0,
+    "price": 100000,
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
     "material": [ "aether" ],
 	"relic_data": {
@@ -2260,7 +2260,7 @@
     "weight": "1000 kg",
     "volume": "1000 L",
     "longest_side": "2 km",
-    "price": 0,
+    "price": 100000,
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
     "material": [ "aether" ],
 	"relic_data": {
@@ -2304,7 +2304,7 @@
     "weight": "1000 kg",
     "volume": "1000 L",
     "longest_side": "2 km",
-    "price": 0,
+    "price": 100000,
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
     "material": [ "aether" ],
 	"relic_data": {
@@ -2348,7 +2348,7 @@
     "weight": "1000 kg",
     "volume": "1000 L",
     "longest_side": "2 km",
-    "price": 0,
+    "price": 100000,
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
     "material": [ "aether" ],
 	"relic_data": {
@@ -2392,7 +2392,7 @@
     "weight": "1000 kg",
     "volume": "1000 L",
     "longest_side": "2 km",
-    "price": 0,
+    "price": 100000,
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
     "material": [ "aether" ],
 	"relic_data": {
@@ -2436,7 +2436,7 @@
     "weight": "1000 kg",
     "volume": "1000 L",
     "longest_side": "2 km",
-    "price": 0,
+    "price": 100000,
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE" ], 
     "material": [ "aether" ],
 	"relic_data": {

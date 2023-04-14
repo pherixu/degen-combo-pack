@@ -329,7 +329,7 @@
   {
     "id": "mon_mad_artist",
     "type": "MONSTER",
-    "name": { "str": "maddened artist" },
+    "name": "maddened artist",
     "description": "A person who seems out of time, though you're not quite sure how. They dress too early and talk too late. Whatever the case, they scribble circles on the floor around them...",
     "bodytype": "human",
     "default_faction": "nether",
@@ -417,9 +417,9 @@
   {
     "id": "mon_magic_circle_crystal",
     "type": "MONSTER",
-    "name": "Crystal Circle",
+    "name": "Animate Crystal Circle",
     "description": "A painting of beautiful multicolored ink that spiral inwards. It's very nature is intertwined with magic, and the mage who summoned it, breathing their mana in and out. A skilled wizard can manipulate this creation in various ways including breaking it's corporeal binding, stopping time briefly around it's departure.",
-    "default_faction": "magical_beast",
+    "default_faction": "demon",
     "bodytype": "blob",
     "species": [ "HORROR" ],
     "looks_like": "f_magic_circle",
@@ -468,9 +468,9 @@
   {
     "id": "mon_magic_circle_crystal_fat",
     "type": "MONSTER",
-    "name": "Crystal Circle",
+    "name": "Animate Crystal Circle",
     "description": "A painting of beautiful multicolored ink that spiral inwards. It's very nature is intertwined with magic, and the mage who summoned it, breathing their mana in and out. A skilled wizard can manipulate this creation in various ways including breaking it's corporeal binding, stopping time briefly around it's departure.",
-    "default_faction": "magical_beast",
+    "default_faction": "demon",
     "bodytype": "blob",
     "species": [ "HORROR" ],
     "looks_like": "f_magic_circle",
@@ -519,7 +519,7 @@
   {
     "id": "mon_magic_circle_blood",
     "type": "MONSTER",
-    "name": "Circle of Blood",
+    "name": "Animate Circle of Blood",
     "description": "A foul sigil of blood that's been etched into the floor. The blood congeals and reaches for the edge of the sigil, gnawing to be released into the world.",
     "default_faction": "demon",
     "bodytype": "blob",
@@ -558,7 +558,7 @@
   {
     "id": "mon_magic_circle_smoke",
     "type": "MONSTER",
-    "name": "Circle of Smoke",
+    "name": "Animate Circle of Smoke",
     "description": "A dark sigil of dark black smoke that's been woven into the floor, still flowing behind some invisible line drawn by the magic which has brought it forth into our world. ",
     "default_faction": "demon",
     "bodytype": "blob",
@@ -597,7 +597,7 @@
   {
     "id": "mon_magic_circle_flame",
     "type": "MONSTER",
-    "name": "Circle of Flame",
+    "name": "Animate Circle of Flame",
     "description": "A demonic sigil of fire that's been branded into the floor, still licking at the area around it, desperate to engulf.",
     "default_faction": "demon",
     "bodytype": "blob",
@@ -640,7 +640,7 @@
   {
     "id": "mon_magic_circle_bile",
     "type": "MONSTER",
-    "name": "Circle of Bile",
+    "name": "Animate Circle of Bile",
     "description": "An oozing abomination, with a horrid stench fills the cracks of some kind of black sigil, leaking vile magic into the world.",
     "default_faction": "demon",
     "bodytype": "blob",

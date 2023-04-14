@@ -5,7 +5,7 @@
     "category": "weapons",
     "name": { "str": "coldlight flashbang" },
     "comestible_type": "MED",
-    "description": "This sleek black cylinder can be rotated clockwise to release the cold magic trapped within, soon detonating, blinding and freezing those around it.",
+    "description": "This sleek black cylinder can be rotated clockwise to release the cold magic trapped within, soon detonating, blinding and freezing creatures in a small area.",
     "weight": "236 g",
     "volume": "270 ml",
     "looks_like": "flashbang",
@@ -34,7 +34,7 @@
       "monster_id": "mon_claygolem1",
       "friendly_msg": "The clay golem rears it's ugly head, and smiles warmly at you.",
       "hostile_msg": "The clay golem's eyes slowly open, and you briefly see fear taking over.",
-      "difficulty": 2,
+      "difficulty": 5,
       "moves": 60,
       "place_randomly": true,
       "skills": [ "spellcraft", "survival" ]
@@ -200,6 +200,11 @@
     "intermittent_activation": { "effects": [ { "frequency": "18 h", "spell_effects": [ { "id": "spawn_spell_scroll_devil" } ] } ] }
   },
   {
+    "type": "tool_quality",
+    "id": "PHILOSTONE",
+    "name": "philosophy"
+  },
+  {
     "id": "philosophers_stone",
     "type": "ARMOR",
     "name": { "str": "philosopher's stone" },
@@ -212,6 +217,7 @@
     "looks_like": "copper_locket",
 	"charges_per_use": 1,
 	"flags": [ "TARDIS", "SEMITANGIBLE" ],
+	"qualities": [ [ "PHILOSTONE", 1 ] ],
 	"use_action": [ 
 	{ "type": "cast_spell", "spell_id": "draw_crystal_circle", "no_fail": true, "level": 1, "need_worn": true }
 	],
@@ -972,7 +978,7 @@
     "type": "enchantment",
     "id": "soft_step_enchantment",
     "condition": "ALWAYS",
-    "values": [ { "value": "FOOTSTEP_NOISE", "add": -15 } ]
+    "values": [ { "value": "FOOTSTEP_NOISE", "multiply": -0.5 } ]
   },
   {
     "id": "soft_steppers_socks",
@@ -997,7 +1003,7 @@
   {
     "id": "gate_token",
     "name": { "str": "favor of the gate" },
-    "description": "A small glass flask filled with blue and white liquid. When ingested, the drinker will 'burp up' a translocation gate.",
+    "description": "A small glass flask filled with blue and white liquid. When ingested, the drinker will 'burp up' a translocation circle.",
     "use_action": { "type": "cast_spell", "spell_id": "transgate_place_favor", "no_fail": true, "level": 1 },
     "type": "COMESTIBLE",
     "weight": "265 g",
@@ -1342,7 +1348,7 @@
       { "type": "inscribe", "verb": "Write", "gerund": "Written", "on_terrain": true, "material_restricted": false },
       {
         "type": "reveal_map",
-        "radius": 90,
+        "radius": 500,
         "terrain": [
           "hiway",
           "road",
@@ -1483,7 +1489,7 @@
     "color": "brown",
     "material_thickness": 1,
 	"use_action": [
-	{ "type": "holster", "holster_prompt": "Sheath sword", "holster_msg": "The orb settles unto your blade, magically attaching it to your back." },
+	{ "type": "holster", "holster_prompt": "Sheath", "holster_msg": "The pebble settles unto the object, magically attaching it to your back." },
 	{
         "target": "psychic_pebble",
         "msg": "You move the pebble to your waist.",
@@ -1498,8 +1504,7 @@
         "max_contains_weight": "50 kg",
         "max_item_length": "1800 cm",
         "holster": true,
-        "moves": 10,
-        "flag_restriction": [ "SHEATH_SWORD" ]
+        "moves": 10
       }
     ],
     "flags": [ "BELTED", "OVERSIZE", "WATER_FRIENDLY", "PSYSHIELD_PARTIAL", "TARDIS", "ZERO_WEIGHT", "SHEATH_BOW", "SHEATH_KNIFE", "SHEATH_SWORD" ],
@@ -1509,7 +1514,7 @@
     "id": "psychic_pebble",
     "type": "ARMOR",
     "name": { "str": "psychic pebble (waist)" },
-    "description": "A smooth metallic disc that objects are almost magnetically attracted to. Can be switched to be carried on the back instead.",
+    "description": "A smooth metallic disc that things are almost magnetically attracted to. Can be switched to be carried on the back instead.",
     "weight": "1 g",
     "volume": "1 ml",
     "price": 100000,
@@ -1521,7 +1526,7 @@
 	"sided": true,
     "material_thickness": 1,
 	"use_action": [
-	{ "type": "holster", "holster_prompt": "Sheath sword", "holster_msg": "The orb settles unto your blade, magically attaching it to your waist." },
+	{ "type": "holster", "holster_prompt": "Sheath", "holster_msg": "The pebble settles unto the object, magically attaching it to your waist." },
 	{
         "target": "psychic_pebble_back",
         "msg": "You move the pebble to your back.",
@@ -1746,7 +1751,7 @@
     "id": "smart_rug",
     "type": "TOOL_ARMOR",
     "name": { "str": "smart rug" },
-    "description": "A wig of salt and pepper hair that when worn provides the user with a great deal of personal importance. It was marketed as the next big thing in fashion, but was quickly disregarded by the community as being pointless.",
+    "description": "A wig of salt and pepper hair that when worn provides the user with a great deal of personal importance. It was marketed as the next big thing in fashion, but was quickly disregarded by the community as being pointless. The more socially-resistant among the people were still known to rock one.",
     "weight": "160 g",
     "volume": "250 ml",
     "price": 700000,
@@ -1756,11 +1761,11 @@
     "charges_per_use": 25,
     "warmth": 6,
     "material_thickness": 0.3,
-    "flags": [ "VARSIZE", "WATERPROOF", "NO_UNLOAD" ],
+    "flags": [ "VARSIZE", "WATERPROOF", "NO_UNLOAD", "PSYSHIELD_PARTIAL" ],
     "use_action": [ { "type": "cast_spell", "spell_id": "synaptic_stimulation", "no_fail": true, "level": 15, "need_worn": true } ],
     "relic_data": {
       "charge_info": { "recharge_type": "periodic", "time": "2 h", "regenerate_ammo": true },
-      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "mutations": [ "hair_white_long", "INT_UP_2" ] } ]
+      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "mutations": [ "hair_white_long" ], "values": [ { "value": "INTELLIGENCE", "add": 2 } ] } ]
     },
     "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "crystallized_mana": 175 } } ],
     "armor": [ { "encumbrance_modifiers": [ "NONE" ], "coverage": 40, "covers": [ "head" ] } ]
@@ -1789,15 +1794,14 @@
       "EXTINGUISHER",
       { "type": "cast_spell", "spell_id": "translocate_self", "no_fail": true, "level": 1, "need_worn": true }
     ],
-    "relic_data": { "charge_info": { "recharge_type": "periodic", "time": "16 h", "regenerate_ammo": true } },
     "flags": [ "WATER_FRIENDLY", "SKINTIGHT", "RADIO_INVOKE_PROC", "RADIO_MODABLE" ]
   },
   {
     "id": "transtemporal_pass",
     "repairs_like": "silver_necklace",
     "type": "TOOL_ARMOR",
-    "name": { "str": "transtemporal pass", "str_pl": "transtemporal passes" },
-    "description": "A temporary ID that was used by professionals so that guests could keep up pace. Simply put it on, and you're able to teleport. Some customers report a side effect of temporarily swapping bodies, but these accusations are buggy at best.",
+    "name": { "str": "transpersonal pass", "str_pl": "transpersonal passes" },
+    "description": "A temporary ID that was used by professionals so that guests could keep up pace. Simply put it on, and you're able to teleport to translocators. Undo it's clasp to take it off, leaving you with a normal ID badge. Some customers report a side effect of temporarily swapping bodies as well as dislocating realities from those around them, but these accusations are buggy at best. Nothing a little sleep won't fix.",
     "weight": "18 g",
     "volume": "30 ml",
     "price": 100000,
@@ -1817,7 +1821,15 @@
         }
       ]
     },
-    "flags": [ "WATER_FRIENDLY", "SKINTIGHT" ]
+	"use_action": [
+      {
+        "target": "id_science_visitor_1",
+        "msg": "You feel the magic leave the pass as you undo it's clasp.",
+        "menu_text": "Undo Clasp",
+        "type": "transform"
+      }
+    ],
+    "flags": [ "WATER_FRIENDLY", "SKINTIGHT", "NO_TAKEOFF" ]
   },
   {
     "id": "magi_staff_minor",
@@ -3147,8 +3159,6 @@
       "PERSONAL",
       "SEMITANGIBLE",
       "OVERSIZE",
-      "NO_UNLOAD",
-      "NO_RELOAD",
       "TRADER_AVOID",
       "AURA",
       "NO_TAKEOFF",
@@ -3162,7 +3172,7 @@
         {
           "has": "WORN",
           "condition": "ALWAYS",
-          "values": [ { "value": "MAX_MANA", "add": 250 }, { "value": "REGEN_MANA", "multiply": 0.2 } ]
+          "values": [ { "value": "MAX_MANA", "add": 250 }, { "value": "REGEN_MANA", "multiply": 0.1 } ]
         }
       ]
     }

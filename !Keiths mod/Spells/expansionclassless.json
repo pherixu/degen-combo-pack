@@ -102,7 +102,7 @@
     "description": "You intertwine your spirit with a target's and bind them locally, pulling the target closer to you.",
     "effect": "directed_push",
     "shape": "blast",
-    "flags": [ "SOMATIC", "NO_LEGS", "IGNORE_WALLS", "NO_PROJECTILE" ],
+    "flags": [ "SOMATIC", "NO_LEGS", "RANDOM_DAMAGE", "NO_EXPLOSION_SFX" ],
     "valid_targets": [ "hostile" ],
     "max_level": 10,
     "min_damage": -1,
@@ -121,7 +121,7 @@
     "id": "eoc_indirected",
     "effect": { "u_cast_spell": { "id": "indirected_mana_focused" } },
     "false_effect": { "u_cast_spell": { "id": "indirected_mana" } },
-    "condition": { "or": [ { "u_is_wearing": "copper_circlet" }, { "u_is_wearing": "wizard_hat_costume" } ] }
+    "condition": { "or": [ { "u_is_wearing": "copper_circlet" }, { "u_is_wearing": "wizard_hat_costume" }, { "u_is_wearing": "ring_signet" } ] }
   },
   {
     "id": "run_eoc_indirected",
@@ -220,6 +220,7 @@
       "or": [
         { "u_is_wearing": "copper_infuser" },
         { "u_is_wearing": "silver_infuser" },
+		{ "u_is_wearing": "ring_signet" },
         { "u_has_wielded_with_flag": "MAGIC_FOCUS" }
       ]
     }
@@ -727,7 +728,6 @@
     "min_range": 0,
     "max_range": 20,
     "range_increment": 1.0,
-    "spell_class": "KELVINIST",
     "base_casting_time": 200,
     "base_energy_cost": 350,
     "energy_source": "MANA",
@@ -2578,7 +2578,7 @@
     "name": "Congealed Mass",
     "description": "Like a scab, you just have to pick.",
     "valid_targets": [ "hostile", "ally" ],
-    "targeted_monster_ids": [ "mon_magic_circle_blood", "mon_magic_circle_crystal" ],
+    "targeted_monster_ids": [ "mon_magic_circle_smoke", "mon_magic_circle_blood", "mon_magic_circle_bile", "mon_magic_circle_flame", "mon_magic_circle_crystal" ],
     "effect": "targeted_polymorph",
     "effect_str": "mon_hemor",
     "shape": "blast",
@@ -2604,7 +2604,7 @@
     "name": "Salt and Spirit",
     "description": "You call the ashes, and from them come the brood.",
     "valid_targets": [ "hostile", "ally" ],
-    "targeted_monster_ids": [ "mon_magic_circle_smoke", "mon_magic_circle_crystal" ],
+    "targeted_monster_ids": [ "mon_magic_circle_smoke", "mon_magic_circle_blood", "mon_magic_circle_bile", "mon_magic_circle_flame", "mon_magic_circle_crystal" ],
     "effect": "targeted_polymorph",
     "effect_str": "mon_dunebroodnephilim",
     "shape": "blast",
@@ -3056,7 +3056,7 @@
     "id": "summon_zombie_scorched",
     "type": "SPELL",
     "name": "What Remains",
-    "description": "What Remains",
+    "description": "You burn a magic circle and whatever's left from the other side comes drifting down into your world to serve you.",
     "valid_targets": [ "hostile", "ally" ],
     "targeted_monster_ids": [ "mon_magic_circle_flame", "mon_magic_circle_crystal" ],
     "effect": "targeted_polymorph",
@@ -3172,8 +3172,8 @@
     "difficulty": 8,
     "min_damage": 10,
     "max_damage": 10,
-    "min_duration": 250000,
-    "max_duration": 250000,
+    "min_duration": 25000,
+    "max_duration": 25000,
     "max_level": 5,
     "min_range": 25,
     "max_range": 50,
@@ -4107,7 +4107,7 @@
     "effect": [
       { "u_add_effect": "downed", "intensity": 1, "duration": "1 second" }
     ],
-    "condition": { "not": { "or": [ { "u_has_effect": "feather_fall" }, { "u_has_dexterity": 10 }, { "u_has_effect": "bless" }, { "u_has_wielded_with_flag": "MAGIC_FOCUS" } ] } }
+    "condition": { "not": { "or": [ { "u_has_effect": "feather_fall" }, { "u_has_dexterity": 10 }, { "u_has_effect": "bless" }, { "u_has_wielded_with_flag": "MAGIC_FOCUS" }, { "u_has_worn_with_flag": "PSYSHIELD_PARTIAL" } ] } }
   },
   {
     "id": "gait_eoc",
@@ -4732,7 +4732,7 @@
     "flags": [ "SOMATIC", "NO_LEGS" ],
     "shape": "blast",
     "effect": "spawn_item",
-    "effect_str": "white_wolfs_staff"
+    "effect_str": "white_wolfs_staff_2"
   },
   {
     "id": "spawn_crystallized_mana",
@@ -6131,8 +6131,8 @@
     "base_casting_time": 1200,
 	"final_casting_time": 300,
 	"casting_time_increment": -25,
-    "base_energy_cost": 100,
-	"final_energy_cost": 80,
+    "base_energy_cost": 101,
+	"final_energy_cost": 81,
 	"energy_increment": -0.5
   },
   {
@@ -6161,11 +6161,11 @@
     "description": "",
     "valid_targets": [ "ground" ],
     "effect": "summon",
-    "effect_str": "GROUP_NETHER",
+    "effect_str": "GROUP_NETHER_BLOOM",
     "flags": [ "PERMANENT", "RANDOM_DAMAGE", "RANDOM_TARGET", "SPAWN_GROUP" ],
     "shape": "blast",
-    "min_damage": 5,
-    "max_damage": 10,
+    "min_damage": 1,
+    "max_damage": 7,
     "difficulty": 1,
 	"min_aoe": 10,
     "max_level": 5,
@@ -6253,13 +6253,13 @@
     "final_casting_time": 0,
     "casting_time_increment": -20,
     "components": "spell_components_gambit",
-    "base_energy_cost": 400,
-    "final_energy_cost": 200,
+    "base_energy_cost": 850,
+    "final_energy_cost": 650,
 	"learn_spells": { "gambit_2": 10 },
     "energy_increment": -20,
     "range_increment": 1,
-    "min_range": 20,
-    "max_range": 30
+    "min_range": 10,
+    "max_range": 20
   },
   {
     "id": "gambit_2",
@@ -6275,8 +6275,8 @@
     "max_level": 10,
     "base_casting_time": 300,
     "base_energy_cost": 1300,
-    "min_range": 30,
-    "max_range": 30
+    "min_range": 10,
+    "max_range": 10
   },
   {
     "id": "spawn_component_gambit",
@@ -6650,6 +6650,7 @@
 		  { 
 		  "or": [
 		    { "u_has_effect": "blind" },
+			{ "u_has_worn_with_flag": "PSYSHIELD_PARTIAL" },
 			{ "u_has_worn_with_flag": "BLIND" } ] 
 		  },
 			{ "u_is_wearing": "ring_signet" },
@@ -6900,6 +6901,24 @@
     "base_energy_cost": 0
   },
   {
+    "id": "spawn_estrangement_aura",
+    "type": "SPELL",
+    "name": "Petrified Eye",
+    "description": "",
+    "valid_targets": [ "self" ],
+    "effect": "spawn_item",
+    "effect_str": "estrangement_aura",
+    "shape": "blast",
+	"min_duration": 1000, 
+	"max_duration": 1000,
+    "min_damage": 1,
+    "max_damage": 1,
+    "difficulty": 1,
+    "max_level": 0,
+    "base_casting_time": 0,
+    "base_energy_cost": 0
+  },
+  {
     "id": "let_loose",
     "type": "SPELL",
     "name": "Let Loose",
@@ -7040,6 +7059,51 @@
 	"energy_source": "MANA"
   },
   {
+    "id": "psychic_anchor",
+    "type": "SPELL",
+    "name": "Psychic Anchor",
+    "description": "You have loosely learned how to tether your consciousness to itself. Using mana to aid your meditation you set yourself into a state where you feel more resistant to psychic or portal-based attacks.",
+    "valid_targets": [ "self" ],
+    "flags": [ "NO_LEGS", "NO_HANDS", "CONCENTRATE", "VERBAL", "NO_EXPLOSION_SFX" ],
+    "effect": "spawn_item",
+	"effect_str": "psychic_anchor",
+    "shape": "blast",
+    "energy_source": "MANA",
+    "difficulty": 3,
+    "max_level": 10,
+    "base_casting_time": 300,
+    "final_casting_time": 200,
+    "casting_time_increment": -10,
+	"min_duration": 60000, 
+	"max_duration": 120000,
+	"duration_increment": 6000,
+    "base_energy_cost": 500,
+	"final_energy_cost": 250, 
+	"energy_increment": -25,
+	"learn_spells": { "loose_anchor": 10 }
+  },
+   {
+    "id": "loose_anchor",
+    "type": "SPELL",
+    "name": "Loose Anchor",
+    "description": "You have honed your ability to tether your consciousness, draining a small amount of your daily spirit in exchange for a psychic anchor that will not limit teleportation.",
+    "valid_targets": [ "self" ],
+    "flags": [ "NO_LEGS", "NO_HANDS", "CONCENTRATE", "VERBAL", "NO_EXPLOSION_SFX" ],
+    "effect": "spawn_item",
+	"effect_str": "psychic_anchor",
+	"extra_effects": [ {"id": "drain_fatigue_self_directed", "hit_self": true } ],
+    "shape": "blast",
+    "energy_source": "MANA",
+    "difficulty": 3,
+    "max_level": 10,
+    "base_casting_time": 300,
+    "final_casting_time": 200,
+	"min_duration": 60000, 
+	"max_duration": 60000,
+    "casting_time_increment": -10,
+    "base_energy_cost": 0
+  },
+  {
     "type": "effect_on_condition",
     "id": "eoc_estrange",
     "effect": [
@@ -7068,15 +7132,15 @@
     "name": "Estrangement",
     "description": "You use mana to cut your tie to the physical realm and enter the one below. Once you're there you cut someone else's tie, effectively swaping places with a random creature nearby. Horrible things flood your mind at the sight of them.",
     "valid_targets": [ "hostile", "ally" ],
-    "flags": [ "NO_LEGS", "SOMATIC", "VERBAL", "SWAP_POS", "RANDOM_TARGET", "TARGET_TELEPORT", "NO_PROJECTILE" ],
+    "flags": [ "NO_LEGS", "SOMATIC", "VERBAL", "SWAP_POS", "RANDOM_TARGET", "TARGET_TELEPORT", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
     "effect": "attack",
 	"extra_effects": [ {"id": "estrange_eoc", "hit_self": true } ],
     "shape": "blast",
     "energy_source": "MANA",
     "difficulty": 3,
     "max_level": 10,
-    "base_casting_time": 100,
-    "final_casting_time": 0,
+    "base_casting_time": 300,
+    "final_casting_time": 200,
     "casting_time_increment": -10,
     "base_energy_cost": 250,
     "range_increment": 1,
@@ -7088,20 +7152,18 @@
     "id": "estrangement_2",
     "type": "SPELL",
     "name": "Semi-Typhlotic Estrangement",
-    "description": "You use mana like a snorkel and cut your tie to the physical realm, 'swimming towards' a nearby area where you replace a creature's tether with your own. Effectively you swap places with a creature in a designated area.",
-    "valid_targets": [ "hostile", "ally" ],
-    "flags": [ "NO_LEGS", "SOMATIC", "VERBAL", "SWAP_POS", "RANDOM_TARGET", "TARGET_TELEPORT", "NO_PROJECTILE" ],
+    "description": "By closing your inner eye you've learned how to swap places with a nearby creature almost instantaneously and without risk of witnessing a horror.",
+    "valid_targets": [ "hostile", "ally", "ground" ],
+    "flags": [ "NO_LEGS", "SOMATIC", "SWAP_POS", "TARGET_TELEPORT", "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
     "effect": "attack",
     "shape": "blast",
     "energy_source": "MANA",
-	"min_aoe": 5,
-	"max_aoe": 5,
     "difficulty": 3,
     "max_level": 1,
-    "base_casting_time": 100,
-    "base_energy_cost": 500,
-    "min_range": 20,
-    "max_range": 20
+    "base_casting_time": 3,
+    "base_energy_cost": 1000,
+    "min_range": 3,
+    "max_range": 3
   },
   {
     "id": "anti_teleport",
@@ -7497,6 +7559,7 @@
             { "u_is_wearing": "holy_symbol" },
             { "u_is_wearing": "holy_symbol_wood" },
             { "u_is_wearing": "relic_small" },
+			{ "u_has_trait": "SPIRITUAL" },
             { "u_is_wearing": "bead_necklace" },
             { "u_is_wearing": "ring_engagement" },
             { "u_is_wearing": "ring_wedding" }
@@ -7584,7 +7647,7 @@
     "id": "eoc_metamagic",
     "effect": { "u_cast_spell": { "id": "drain_fatigue_self_ritual" } },
     "false_effect": { "u_cast_spell": { "id": "drain_fatigue_self_distraction" } },
-    "condition": { "or": [ { "u_has_trait": "PSYCHOPATH" }, { "compare_int": [ { "u_val": "fatigue" }, ">=", { "const": 300 } ] } ] }
+    "condition": { "or": [ { "u_has_trait": "PSYCHOPATH" }, { "compare_int": [ { "u_val": "fatigue" }, ">=", { "const": 100 } ] } ] }
   },
   {
     "id": "run_eoc_metamagic",
@@ -7912,6 +7975,7 @@
             { "u_is_wearing": "holy_symbol" },
             { "u_is_wearing": "holy_symbol_wood" },
             { "u_is_wearing": "spirit_armor" },
+			{ "u_has_trait": "SPIRITUAL" },
             { "u_is_wearing": "bead_bracelet" },
             { "u_is_wearing": "bead_necklace" },
             { "u_is_wearing": "relic_small" }
@@ -8110,6 +8174,7 @@
               { "u_is_wearing": "holy_symbol_wood" },
               { "u_is_wearing": "bead_bracelet" },
               { "u_is_wearing": "bead_necklace" },
+			  { "u_has_trait": "SPIRITUAL" },
               { "u_is_wearing": "relic_small" }
             ]
           }
@@ -8168,6 +8233,7 @@
                 },
                 { "u_has_effect": "sleep_deprived" },
                 { "u_has_effect": "badpoison" },
+				{ "compare_int": [ { "u_val": "pos_z" }, "<=", { "const": -1 } ] },
                 { "u_has_effect": "paralyzepoison" },
                 { "u_has_effect": "poison" }
               ]
@@ -8186,7 +8252,7 @@
                 { "or": [ { "is_weather": "thunder" }, { "is_weather": "lightning" } ] },
                 "u_is_outside",
                 { "compare_int": [ { "u_val": "pos_z" }, ">=", { "const": 5 } ] },
-                { "u_has_worn_with_flag": "ELECTRIC_IMMUNE" }
+                { "or": [ { "u_has_worn_with_flag": "ELECTRIC_IMMUNE" }, { "u_has_worn_with_flag": "PSYSHIELD_PARTIAL" } ] }
               ]
             },
             "effect": [ { "u_spawn_item": "sacred_chain", "count": 1 } ]
@@ -8325,7 +8391,7 @@
     "id": "transgate_place_favor",
     "type": "SPELL",
     "name": "Precipitate Gate",
-    "description": "Utilitzing a massive burst of mana you conjure a translocation gate into existence. Doing so leaves you feeling drained for the day.",
+    "description": "",
     "valid_targets": [ "ground" ],
     "effect": "ter_transform",
     "effect_str": "trans_gate_place",
@@ -8338,6 +8404,30 @@
     "max_level": 10,
     "min_range": 3,
     "max_range": 10,
+    "range_increment": 0.2
+  },
+  {
+    "id": "transgate_place_mage",
+    "type": "SPELL",
+    "name": "Risky Inscription",
+    "description": "You hastily use an extra dosage of mana to try and work around the arduous process of Precipitating a Gate. Doing so leaves you feeling drained for the day, and you have no way of knowing what might come through the other side...",
+    "valid_targets": [ "ground" ],
+    "effect": "ter_transform",
+    "effect_str": "trans_gate_place",
+    "extra_effects": [ { "id": "drain_fatigue_self_gate", "hit_self": true }, { "id": "summon_mages", "hit_self": true } ],
+    "shape": "blast",
+    "flags": [ "SOMATIC", "LOUD", "PERMANENT", "CONCENTRATE", "NO_PROJECTILE" ],
+    "energy_source": "MANA",
+    "difficulty": 5,
+    "base_casting_time": 40000,
+    "final_casting_time": 10000,
+    "casting_time_increment": -3000,
+    "base_energy_cost": 4500,
+	"final_energy_cost": 3300,
+	"energy_increment": -60,
+    "max_level": 20,
+    "min_range": 3,
+    "max_range": 10, 
     "range_increment": 0.2
   },
   {
@@ -8363,6 +8453,7 @@
     "max_level": 20,
     "min_range": 3,
     "max_range": 10,
+	"learn_spells": { "transgate_place_mage": 20 }, 
     "range_increment": 0.2
   }
 ]

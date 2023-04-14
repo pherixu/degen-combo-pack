@@ -78,6 +78,23 @@
     "flags": [ "SEES", "HEARS", "SMELLS", "ANIMAL", "CANPLAY", "FLIES", "PET_MOUNTABLE", "PET_HARNESSABLE", "PATH_AVOID_DANGER_1", "WARM" ]
   },
   {
+    "type": "GENERIC",
+    "id": "broken_claygolem1",
+    "symbol": "x",
+    "color": "brown",
+    "name": "broken clay golem",
+    "category": "other",
+    "description": "A broken clay golem, looking like a piece of post-modern art.  Could be smashed for clay.",
+    "price": 10000,
+    "material": [ "clay" ],
+    "weight": "122 kg",
+    "volume": "120 L",
+    "bashing": 4,
+    "cutting": 4,
+    "to_hit": -3,
+    "flags": [ "TRADER_AVOID", "NO_REPAIR" ]
+  },
+  {
     "id": "mon_claygolem1",
     "type": "MONSTER",
     "name": "clay golem",

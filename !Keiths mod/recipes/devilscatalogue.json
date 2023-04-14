@@ -281,20 +281,6 @@
   },
   {
     "type": "recipe",
-    "activity_level": "NO_EXERCISE",
-    "result": "money_strap_hundred",
-	"id_suffix": "made as usual",
-    "category": "CC_OTHER",
-    "subcategory": "CSC_OTHER_OTHER",
-    "skill_used": "fabrication",
-    "time": "60 s",
-    "autolearn": true,
-    "reversible": { "time": "4 s" },
-    "components": [ [ [ "money_hundred", 100 ] ], [ [ "paper", 1 ] ] ],
-    "flags": [ "BLIND_EASY" ]
-  },
-  {
-    "type": "recipe",
     "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
     "result": "spell_scroll_transgate_place",
 	"id_suffix": "made via money",
@@ -2460,12 +2446,13 @@
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_CATALOGUE",
     "skill_used": "speech", 
-	"tools": [ [ [ "surface_heat", 100, "LIST" ] ] ],
+	"tools": [ [ [ "surface_heat", 33, "LIST" ] ] ],
     "difficulty": 5,    
-    "time": "10 m",
+    "time": "4 h",
     "autolearn": true,
-    "book_learn": [  [ "wayward_memory_HECVW", 1 ] ],
-    "components": [ [ [ "money_bundle_hundred", 1 ] ], [ [ "blood", 3 ] ]  ]
+	"using": [ [ "drawing_tool", 333 ] ],
+    "book_learn": [  [ "wayward_memory_HECVW", 1 ], [ "occult_economicon", 1 ] ],
+    "components": [ [ [ "money_strap_hundred", 1 ] ], [ [ "blood", 3 ] ] ]
   },
   {
     "type": "recipe",
@@ -2536,7 +2523,7 @@
     "time": "0 s",
     "autolearn": true,
     "book_learn": [  [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
-    "components": [ [ [ "money_bundle_hundred", 5 ] ] ]
+    "components": [ [ [ "money_bundle_hundred", 7 ] ] ]
   },
   {
     "type": "recipe",
@@ -3170,7 +3157,7 @@
     "time": "0 s",
     "autolearn": true,
     "book_learn": [  [ "occult_economicon", 1 ], [ "devils_catalogue", 1 ] ],
-    "components": [ [ [ "money_bundle_hundred", 3 ] ] ]
+    "components": [ [ [ "money_bundle_hundred", 5 ] ] ]
   },
   {
     "type": "recipe",

@@ -7,32 +7,32 @@
 {
     "type": "tool_quality",
     "id": "WHITE_CIRCLE",
-    "name": "White Circle"
+    "name": "white circle"
   },
   {
     "type": "tool_quality",
     "id": "BLACK_CIRCLE",
-    "name": "Black Circle"
+    "name": "black circle"
   },
   {
     "type": "tool_quality",
     "id": "GREEN_CIRCLE",
-    "name": "Green Circle"
+    "name": "green circle"
   },
   {
     "type": "tool_quality",
     "id": "RED_CIRCLE",
-    "name": "Red Circle"
+    "name": "red circle"
   },
   {
     "type": "tool_quality",
     "id": "BLUE_CIRCLE",
-    "name": "Blue Circle"
+    "name": "blue circle"
   },
   {
     "type": "tool_quality",
     "id": "ZEN",
-    "name": "Zen"
+    "name": "zen"
   },
   {
     "type": "construction_group",
@@ -44,8 +44,8 @@
     "id": "constr_zen_garden",
     "group": "zen_garden",
     "category": "FURN",
-    "required_skills": [ [ "speech", 1 ] ],
-    "time": "10 m",
+    "required_skills": [ [ "speech", 0 ] ],
+    "time": "1 m",
 	"activity_level": "LIGHT_EXERCISE",
     "components": [ [ [ "material_sand", 100 ] ], [ [ "rock", 3 ] ], [ [ "stick", 1 ] ] ],
     "pre_special": "check_empty",
@@ -61,6 +61,55 @@
     "color": "white",
 	"crafting_pseudo_item": "fake_zen_garden",
     "required_str": -1,
+	"examine_action": {
+      "type": "effect_on_condition",
+      "effect_on_conditions": [
+        {
+          "id": "EOC_ZEN",
+          "condition": {
+      "and": [
+        {
+          "not": {
+            "or": [
+              { "u_is_wearing": "pact_of_bile" },
+              { "u_is_wearing": "pact_of_blood" },
+              { "u_is_wearing": "pact_of_smoke" },
+              { "u_is_wearing": "pact_of_flame" },
+			  { "u_is_wearing": "onyx_silver_ring" },
+			  { "u_is_wearing": "pointed_hat" },
+			  { "u_is_wearing": "ring_signet" },
+			  { "u_has_trait": "MANA_THRESH_MANATOUCHED" },
+              { "u_has_trait": "PSYCHOPATH" }
+            ]
+          }
+        },
+        {
+          "or": [
+            { "u_is_wearing": "holy_symbol" },
+            { "u_is_wearing": "holy_symbol_wood" },
+            { "u_is_wearing": "spirit_armor" },
+			{ "u_has_trait": "SPIRITUAL" },
+            { "u_is_wearing": "bead_bracelet" },
+            { "u_is_wearing": "bead_necklace" },
+            { "u_is_wearing": "relic_small" }
+          ]
+        }
+      ]
+    },
+     "effect": [
+    {
+      "u_add_morale": "morale_feeling_good",
+      "bonus": 10,
+      "max_bonus": 10,
+      "duration": "24 hours",
+      "decay_start": "24 hours"
+    }, 
+	{ "u_message": "Your time in meditation leaves you feeling enlightened.", "popup": true }
+	],
+     "false_effect": { "u_message": "Your racing mind is unable to glean anything from your time spent meditating.", "popup": true }
+    }
+	]
+	},
     "flags": [ "ALLOW_FIELD_EFFECT", "TRANSPARENT", "TINY" ],
     "description": "A place set aside for tranquility's sake."
   },
@@ -79,7 +128,7 @@
   {
     "type": "tool_quality",
     "id": "MIRROR_SELF",
-    "name": "altar power"
+    "name": "mirror self"
   },
   {
     "type": "construction_group",
@@ -92,7 +141,7 @@
     "group": "mirror_self",
     "category": "FURN",
     "required_skills": [ [ "speech", 3 ] ],
-    "time": "4 h",
+    "time": "48 h",
 	"activity_level": "LIGHT_EXERCISE",
     "components": [ [ [ "frame", 1 ] ], [ [ "glass_shard", 333 ] ], [ [ "bone_glue", 33 ], [ "superglue", 7 ] ] ],
     "pre_special": "check_empty",
@@ -148,7 +197,7 @@
   {
     "type": "tool_quality",
     "id": "SOUL_ENGINE",
-    "name": "altar power"
+    "name": "soul engine"
   },
   {
     "type": "construction_group",
@@ -161,9 +210,9 @@
     "group": "soul_engine",
     "category": "FURN",
     "required_skills": [ [ "speech", 7 ] ],
-    "time": "18 h",
+    "time": "72 h",
 	"activity_level": "LIGHT_EXERCISE",
-    "components": [ [ [ "money_bundle_hundred", 1 ] ], [ [ "laptop", 3 ] ], [ [ "mp3", 7 ] ], [ [ "smart_phone", 13 ] ] ],
+    "components": [ [ [ "money_bundle_hundred", 1 ] ], [ [ "laptop_screen_lit", 3 ] ], [ [ "mp3_on", 7 ] ], [ [ "smart_phone_flashlight", 13 ], [ "smartphone_music", 13 ] ] ],
     "pre_special": "check_empty",
     "post_terrain": "f_soul_engine"
   },
@@ -171,8 +220,8 @@
   "type": "furniture",
   "id": "f_soul_engine",
   "name": "soul engine",
-  "looks_like": "t_machinery_electronic",
-  "description": "Assorted electronic machinery that drives the soul. Needs a kickstart to get going.",
+  "looks_like": "f_compact_ASRG_containment",
+  "description": "Assorted electronic machinery that drives the soul. Needs a cash infusion to get going.",
   "symbol": "$",
   "color": "yellow",
   "move_cost_mod": 8,
@@ -182,6 +231,7 @@
     "TRANSPARENT",
     "CONTAINER",
     "SEALED",
+	"ACTIVE_GENERATOR",
     "FLAMMABLE",
     "PLACE_ITEM"
   ]
@@ -203,11 +253,11 @@
     "id": "constr_magic_circle",
     "group": "draw_magic_circle",
     "category": "FURN",
-    "required_skills": [ [ "spellcraft", 7 ] ],
-    "time": "30 m",
+    "required_skills": [ [ "spellcraft", 3 ] ],
+    "time": "8 h",
 	"qualities": [ [ { "id": "MANA_WEAVE", "level": 1 } ] ],
 	"activity_level": "LIGHT_EXERCISE",
-    "components": [ [ [ "crystallized_ink", 1 ] ] ],
+    "components": [ [ [ "crystallized_ink", 1 ], [ "ring_signet", 1 ] ] ],
     "pre_special": "check_empty",
     "post_terrain": "f_magic_circle"
   },
@@ -216,8 +266,8 @@
     "id": "constr_magic_circle_green",
     "group": "draw_magic_circle",
     "category": "FURN",
-    "required_skills": [ [ "spellcraft", 7 ] ],
-    "time": "30 m",
+    "required_skills": [ [ "spellcraft", 3 ] ],
+    "time": "8 h",
 	"qualities": [ [ { "id": "MANA_WEAVE", "level": 1 } ] ],
 	"activity_level": "LIGHT_EXERCISE",
     "components": [ [ [ "crystallized_ink_green", 1 ] ] ],
@@ -229,8 +279,8 @@
     "id": "constr_magic_circle_black",
     "group": "draw_magic_circle",
     "category": "FURN",
-    "required_skills": [ [ "spellcraft", 7 ] ],
-    "time": "30 m",
+    "required_skills": [ [ "spellcraft", 3 ] ],
+    "time": "8 h",
 	"qualities": [ [ { "id": "MANA_WEAVE", "level": 1 } ] ],
 	"activity_level": "LIGHT_EXERCISE",
     "components": [ [ [ "crystallized_ink_black", 1 ] ] ],
@@ -242,8 +292,8 @@
     "id": "constr_magic_circle_blue",
     "group": "draw_magic_circle",
     "category": "FURN",
-    "required_skills": [ [ "spellcraft", 7 ] ],
-    "time": "30 m",
+    "required_skills": [ [ "spellcraft", 3 ] ],
+    "time": "8 h",
 	"qualities": [ [ { "id": "MANA_WEAVE", "level": 1 } ] ],
 	"activity_level": "LIGHT_EXERCISE",
     "components": [ [ [ "crystallized_ink_blue", 1 ] ] ],
@@ -255,8 +305,8 @@
     "id": "constr_magic_circle_red",
     "group": "draw_magic_circle",
     "category": "FURN",
-    "required_skills": [ [ "spellcraft", 7 ] ],
-    "time": "30 m",
+    "required_skills": [ [ "spellcraft", 3 ] ],
+    "time": "8 h",
 	"qualities": [ [ { "id": "MANA_WEAVE", "level": 1 } ] ],
 	"activity_level": "LIGHT_EXERCISE",
     "components": [ [ [ "crystallized_ink_red", 1 ] ] ],
@@ -405,11 +455,10 @@
     "proficiencies": [ { "proficiency": "prof_toolsmithing" }, { "proficiency": "prof_carving", "time_multiplier": 3, "fail_multiplier": 1 } ],
     "qualities": [ { "id": "HAMMER", "level": 1 }, { "id": "SEW_CURVED", "level": 1 }, { "id": "CHISEL_WOOD", "level": 1 }, { "id": "MANA_WEAVE", "level": 1 }, { "id": "ZEN", "level": 1 } ],
 	"components": [
-      [ [ "stick", 13 ] ],
+      [ [ "stick", 3 ] ],
       [ [ "rock", 13 ] ],
 	  [ [ "blood", 1 ] ],
-      [ [ "water", 100 ], [ "water_clean", 100 ], [ "water_sewage", 100 ], [ "salt_water", 100 ], [ "saline", 500 ] ],
-      [ [ "material_sand", 33 ], [ "material_gravel", 33 ] ]
+      [ [ "water_clean", 100 ], [ "salt_water", 100 ], [ "saline", 500 ] ]
     ]
   },
   {
@@ -421,7 +470,7 @@
     "skill_used": "fabrication",
     "difficulty": 5,
 	"skills_required": [ "spellcraft", 5 ],
-    "time": "48 h",
+    "time": "24 h",
     "reversible": true,
     "autolearn": true,
     "using": [ [ "forging_standard", 8 ] ],
@@ -456,7 +505,7 @@
     "skill_used": "electronics",
     "difficulty": 7,
 	"skills_required": [ "spellcraft", 7 ],
-    "time": "72 h",
+    "time": "24 h",
     "reversible": true,
     "decomp_learn": 3,
 	"autolearn": true,
@@ -497,7 +546,7 @@
     "skills_required": [ "spellcraft", 0 ],
 	"tools": [ [ [ "surface_heat", 10, "LIST" ] ], [ [ "metalworking_tongs", -1 ] ] ],
     "difficulty": 0,
-    "time": "24 h",
+    "time": "8 h",
     "autolearn": true,
     "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
   },
@@ -511,7 +560,7 @@
     "skills_required": [ "spellcraft", 0 ],
 	"tools": [ [ [ "surface_heat", 10, "LIST" ] ], [ [ "metalworking_tongs", -1 ] ] ],
     "difficulty": 0,
-    "time": "24 h",
+    "time": "8 h",
     "autolearn": true,
     "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
   },
@@ -525,7 +574,7 @@
     "skills_required": [ "spellcraft", 0 ],
 	"tools": [ [ [ "surface_heat", 10, "LIST" ] ], [ [ "metalworking_tongs", -1 ] ] ],
     "difficulty": 0,
-    "time": "24 h",
+    "time": "8 h",
     "autolearn": true,
     "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
   },
@@ -539,7 +588,7 @@
     "skills_required": [ "spellcraft", 0 ],
 	"tools": [ [ [ "surface_heat", 10, "LIST" ] ], [ [ "metalworking_tongs", -1 ] ] ],
     "difficulty": 0,
-    "time": "24 h",
+    "time": "8 h",
     "autolearn": true,
     "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
   },
@@ -553,7 +602,7 @@
     "skills_required": [ "spellcraft", 0 ],
 	"tools": [ [ [ "surface_heat", 10, "LIST" ] ],[ [ "metalworking_tongs", -1 ] ] ],
     "difficulty": 0,
-    "time": "24 h",
+    "time": "8 h",
     "autolearn": true,
     "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
   },
@@ -567,7 +616,7 @@
     "skills_required": [ "spellcraft", 0 ],
 	"tools": [ [ [ "surface_heat", 10, "LIST" ] ], [ [ "metalworking_tongs", -1 ] ] ],
     "difficulty": 0,
-    "time": "24 h",
+    "time": "8 h",
     "autolearn": true,
     "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
   },
@@ -581,7 +630,7 @@
     "skills_required": [ "spellcraft", 0 ],
     "difficulty": 0,
 	"tools": [ [ [ "surface_heat", 10, "LIST" ] ], [ [ "metalworking_tongs", -1 ] ] ],
-    "time": "24 h",
+    "time": "8 h",
     "autolearn": true,
     "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
   },
@@ -596,7 +645,7 @@
     "difficulty": 0,
 	"qualities": [ { "id": "GREEN_CIRCLE", "level": 1 }	],
 	"tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ],
-    "time": "24 h",
+    "time": "8 h",
     "autolearn": true,
     "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
   },
@@ -611,7 +660,7 @@
     "difficulty": 0,
 	"qualities": [ { "id": "GREEN_CIRCLE", "level": 1 }	],
 	"tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ],
-    "time": "24 h",
+    "time": "8 h",
     "autolearn": true,
     "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
   },
@@ -626,7 +675,7 @@
     "difficulty": 0,
 	"qualities": [ { "id": "BLUE_CIRCLE", "level": 1 } ],
 	"tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ],
-    "time": "24 h",
+    "time": "8 h",
     "autolearn": true,
     "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
   },
@@ -641,7 +690,7 @@
     "difficulty": 0,
 	"qualities": [ { "id": "BLUE_CIRCLE", "level": 1 } ],
 	"tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ],
-    "time": "24 h",
+    "time": "8 h",
     "autolearn": true,
     "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
   },
@@ -656,7 +705,7 @@
     "difficulty": 0,
 	"qualities": [ { "id": "BLACK_CIRCLE", "level": 1 } ],
 	"tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ],
-    "time": "24 h",
+    "time": "8 h",
     "autolearn": true,
     "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
   },
@@ -671,7 +720,7 @@
     "difficulty": 0,
 	"qualities": [ { "id": "WHITE_CIRCLE", "level": 1 } ],
 	"tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ],
-    "time": "24 h",
+    "time": "8 h",
     "autolearn": true,
     "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
   },
@@ -686,7 +735,7 @@
     "difficulty": 0,
 	"qualities": [ { "id": "WHITE_CIRCLE", "level": 1 } ],
 	"tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ],
-    "time": "24 h",
+    "time": "8 h",
     "autolearn": true,
     "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
   },
@@ -701,7 +750,7 @@
     "difficulty": 0,
 	"qualities": [ { "id": "RED_CIRCLE", "level": 1 } ],
 	"tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ],
-    "time": "24 h",
+    "time": "8 h",
     "autolearn": true,
     "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
   },
@@ -716,7 +765,7 @@
     "difficulty": 0,
 	"qualities": [ { "id": "RED_CIRCLE", "level": 1 } ],
 	"tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ],
-    "time": "24 h",
+    "time": "8 h",
     "autolearn": true,
     "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
   },
@@ -731,7 +780,7 @@
     "difficulty": 0,
 	"qualities": [ { "id": "RED_CIRCLE", "level": 1 } ],
 	"tools": [ [ [ "surface_heat", 10, "LIST" ] ], [ [ "metalworking_tongs", -1 ] ] ],
-    "time": "24 h",
+    "time": "8 h",
     "autolearn": true,
     "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
   },
@@ -746,7 +795,7 @@
     "difficulty": 0,
 	"qualities": [ { "id": "BLACK_CIRCLE", "level": 1 } ],
 	"tools": [ [ [ "surface_heat", 10, "LIST" ] ], [ [ "metalworking_tongs", -1 ] ] ],
-    "time": "24 h",
+    "time": "8 h",
     "autolearn": true,
     "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
   },
@@ -761,7 +810,7 @@
     "difficulty": 0,
 	"qualities": [ { "id": "WHITE_CIRCLE", "level": 1 } ],
 	"tools": [ [ [ "surface_heat", 10, "LIST" ] ], [ [ "metalworking_tongs", -1 ] ] ],
-    "time": "24 h",
+    "time": "8 h",
     "autolearn": true,
     "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
   },
@@ -776,7 +825,7 @@
     "difficulty": 0,
 	"qualities": [ { "id": "BLUE_CIRCLE", "level": 1 }, { "id": "WHITE_CIRCLE", "level": 1 } ],
 	"tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ],
-    "time": "24 h",
+    "time": "8 h",
     "autolearn": true,
     "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
   },
@@ -791,7 +840,7 @@
     "difficulty": 0,
 	"qualities": [ { "id": "RED_CIRCLE", "level": 1 }, { "id": "GREEN_CIRCLE", "level": 1 }, { "id": "BLACK_CIRCLE", "level": 1 } ],
 	"tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ],
-    "time": "24 h",
+    "time": "8 h",
     "autolearn": true,
     "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
   },
@@ -806,7 +855,7 @@
     "difficulty": 0,
 	"qualities": [ { "id": "RED_CIRCLE", "level": 1 }, { "id": "BLUE_CIRCLE", "level": 1 }, { "id": "BLACK_CIRCLE", "level": 1 } ],
 	"tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ],
-    "time": "24 h",
+    "time": "8 h",
     "autolearn": true,
     "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
   },
@@ -821,7 +870,7 @@
     "difficulty": 0,
 	"qualities": [ { "id": "BLUE_CIRCLE", "level": 1 }, { "id": "WHITE_CIRCLE", "level": 1 } ],
 	"tools": [ [ [ "surface_heat", 10, "LIST" ] ], [ [ "metalworking_tongs", -1 ] ] ],
-    "time": "24 h",
+    "time": "8 h",
     "autolearn": true,
     "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
   },
@@ -836,7 +885,7 @@
     "difficulty": 0,
 	"qualities": [ { "id": "GREEN_CIRCLE", "level": 1 }, { "id": "WHITE_CIRCLE", "level": 1 } ],
 	"tools": [ [ [ "surface_heat", 10, "LIST" ] ], [ [ "metalworking_tongs", -1 ] ] ],
-    "time": "24 h",
+    "time": "8 h",
     "autolearn": true,
     "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
   },
@@ -851,7 +900,7 @@
     "difficulty": 0,
 	"qualities": [ { "id": "BLUE_CIRCLE", "level": 1 }, { "id": "BLACK_CIRCLE", "level": 1 } ],
 	"tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ],
-    "time": "24 h",
+    "time": "8 h",
     "autolearn": true,
     "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
   },
@@ -866,7 +915,7 @@
     "difficulty": 0,
 	"qualities": [ { "id": "RED_CIRCLE", "level": 1 }, { "id": "WHITE_CIRCLE", "level": 1 } ],
 	"tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ],
-    "time": "24 h",
+    "time": "8 h",
     "autolearn": true,
     "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
   },
@@ -881,7 +930,7 @@
     "difficulty": 0,
 	"qualities": [ { "id": "BLUE_CIRCLE", "level": 1 }, { "id": "BLACK_CIRCLE", "level": 1 } ],
 	"tools": [ [ [ "surface_heat", 10, "LIST" ] ], [ [ "metalworking_tongs", -1 ] ] ],
-    "time": "24 h",
+    "time": "8 h",
     "autolearn": true,
     "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
   },
@@ -896,7 +945,7 @@
     "difficulty": 0,
 	"qualities": [ { "id": "BLACK_CIRCLE", "level": 1 }, { "id": "GREEN_CIRCLE", "level": 1 }, { "id": "WHITE_CIRCLE", "level": 1 } ],
 	"tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ],
-    "time": "24 h",
+    "time": "8 h",
     "autolearn": true,
     "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
   },
@@ -911,7 +960,7 @@
     "difficulty": 0,
 	"qualities": [ { "id": "BLACK_CIRCLE", "level": 1 }, { "id": "RED_CIRCLE", "level": 1 }, { "id": "WHITE_CIRCLE", "level": 1 } ],
 	"tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ],
-    "time": "24 h",
+    "time": "8 h",
     "autolearn": true,
     "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
   },
@@ -926,7 +975,7 @@
     "difficulty": 0,
 	"qualities": [ { "id": "BLACK_CIRCLE", "level": 1 }, { "id": "BLUE_CIRCLE", "level": 1 }, { "id": "WHITE_CIRCLE", "level": 1 } ],
 	"tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ],
-    "time": "24 h",
+    "time": "8 h",
     "autolearn": true,
     "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
   },
@@ -941,7 +990,7 @@
     "difficulty": 0,
 	"qualities": [ { "id": "BLACK_CIRCLE", "level": 1 }, { "id": "GREEN_CIRCLE", "level": 1 }, { "id": "BLUE_CIRCLE", "level": 1 }, { "id": "RED_CIRCLE", "level": 1 }, { "id": "SOUL_ENGINE", "level": 1 } ],
 	"tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ],
-    "time": "24 h",
+    "time": "8 h",
     "autolearn": true,
     "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
   },
@@ -956,7 +1005,7 @@
     "difficulty": 0,
 	"qualities": [ { "id": "RED_CIRCLE", "level": 1 } ],
 	"tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ],
-    "time": "24 h",
+    "time": "8 h",
     "autolearn": true,
     "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
   },
@@ -971,7 +1020,7 @@
     "difficulty": 0,
 	"qualities": [ { "id": "BLUE_CIRCLE", "level": 1 } ],
 	"tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ],
-    "time": "24 h",
+    "time": "8 h",
     "autolearn": true,
     "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
   },
@@ -986,7 +1035,7 @@
     "difficulty": 0,
 	"qualities": [ { "id": "GREEN_CIRCLE", "level": 1 } ],
 	"tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ],
-    "time": "24 h",
+    "time": "8 h",
     "autolearn": true,
     "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
   },
@@ -1001,7 +1050,7 @@
     "difficulty": 0,
 	"qualities": [ { "id": "WHITE_CIRCLE", "level": 1 } ],
 	"tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ],
-    "time": "24 h",
+    "time": "8 h",
     "autolearn": true,
     "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
   },
@@ -1016,7 +1065,7 @@
     "difficulty": 0,
 	"qualities": [ { "id": "BLACK_CIRCLE", "level": 1 } ],
 	"tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ],
-    "time": "24 h",
+    "time": "8 h",
     "autolearn": true,
     "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
   },
@@ -1031,7 +1080,7 @@
     "difficulty": 0,
 	"qualities": [ { "id": "BLUE_CIRCLE", "level": 1 }, { "id": "WHITE_CIRCLE", "level": 1 }, { "id": "MIRROR_SELF", "level": 1 } ],
 	"tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ],
-    "time": "24 h",
+    "time": "8 h",
     "autolearn": true,
     "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
   },
@@ -1046,7 +1095,7 @@
     "difficulty": 0,
 	"qualities": [ { "id": "RED_CIRCLE", "level": 1 }, { "id": "WHITE_CIRCLE", "level": 1 }, { "id": "MIRROR_SELF", "level": 1 } ],
 	"tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ],
-    "time": "24 h",
+    "time": "8 h",
     "autolearn": true,
     "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
   },
@@ -1061,7 +1110,7 @@
     "difficulty": 0,
 	"qualities": [ { "id": "BLACK_CIRCLE", "level": 1 }, { "id": "WHITE_CIRCLE", "level": 1 }, { "id": "MIRROR_SELF", "level": 1 } ],
 	"tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ],
-    "time": "24 h",
+    "time": "8 h",
     "autolearn": true,
     "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
   },
@@ -1076,7 +1125,7 @@
     "difficulty": 0,
 	"qualities": [ { "id": "GREEN_CIRCLE", "level": 1 }, { "id": "WHITE_CIRCLE", "level": 1 }, { "id": "MIRROR_SELF", "level": 1 } ],
 	"tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ],
-    "time": "24 h",
+    "time": "8 h",
     "autolearn": true,
     "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
   },
@@ -1091,7 +1140,7 @@
     "difficulty": 0,
 	"qualities": [ { "id": "BLACK_CIRCLE", "level": 1 }, { "id": "WHITE_CIRCLE", "level": 1 }, { "id": "BLUE_CIRCLE", "level": 1 }, { "id": "RED_CIRCLE", "level": 1 }, { "id": "SOUL_ENGINE", "level": 1 } ],
 	"tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ],
-    "time": "24 h",
+    "time": "8 h",
     "autolearn": true,
     "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
   },
@@ -1106,7 +1155,7 @@
     "difficulty": 0,
 	"qualities": [ { "id": "BLACK_CIRCLE", "level": 1 }, { "id": "GREEN_CIRCLE", "level": 1 }, { "id": "BLUE_CIRCLE", "level": 1 }, { "id": "RED_CIRCLE", "level": 1 }, { "id": "WHITE_CIRCLE", "level": 1 } ],
 	"tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ],
-    "time": "24 h",
+    "time": "8 h",
     "autolearn": true,
     "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
   },
@@ -1121,7 +1170,7 @@
     "difficulty": 0,
 	"qualities": [ { "id": "BLACK_CIRCLE", "level": 1 }, { "id": "RED_CIRCLE", "level": 1 } ],
 	"tools": [ [ [ "surface_heat", 10, "LIST" ] ], [ [ "metalworking_tongs", -1 ] ] ],
-    "time": "24 h",
+    "time": "8 h",
     "autolearn": true,
     "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
   },
@@ -1136,7 +1185,7 @@
     "difficulty": 0,
 	"qualities": [ { "id": "WHITE_CIRCLE", "level": 1 }, { "id": "RED_CIRCLE", "level": 1 } ],
 	"tools": [ [ [ "surface_heat", 10, "LIST" ] ], [ [ "metalworking_tongs", -1 ] ] ],
-    "time": "24 h",
+    "time": "8 h",
     "autolearn": true,
     "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
   },
@@ -1151,7 +1200,7 @@
     "difficulty": 0,
 	"qualities": [ { "id": "WHITE_CIRCLE", "level": 1 }, { "id": "BLUE_CIRCLE", "level": 1 } ],
 	"tools": [ [ [ "surface_heat", 10, "LIST" ] ], [ [ "metalworking_tongs", -1 ] ] ],
-    "time": "24 h",
+    "time": "8 h",
     "autolearn": true,
     "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
   },
@@ -1166,7 +1215,7 @@
     "difficulty": 0,
 	"qualities": [ { "id": "WHITE_CIRCLE", "level": 1 }, { "id": "GREEN_CIRCLE", "level": 1 } ],
 	"tools": [ [ [ "surface_heat", 10, "LIST" ] ], [ [ "metalworking_tongs", -1 ] ] ],
-    "time": "24 h",
+    "time": "8 h",
     "autolearn": true,
     "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
   },
@@ -1181,7 +1230,7 @@
     "difficulty": 0,
 	"qualities": [ { "id": "BLACK_CIRCLE", "level": 1 }, { "id": "WHITE_CIRCLE", "level": 1 } ],
 	"tools": [ [ [ "surface_heat", 10, "LIST" ] ], [ [ "metalworking_tongs", -1 ] ] ],
-    "time": "24 h",
+    "time": "8 h",
     "autolearn": true,
     "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
   },
@@ -1196,7 +1245,7 @@
     "difficulty": 0,
 	"qualities": [ { "id": "BLACK_CIRCLE", "level": 1 }, { "id": "WHITE_CIRCLE", "level": 1 } ],
 	"tools": [ [ [ "surface_heat", 10, "LIST" ] ], [ [ "metalworking_tongs", -1 ] ] ],
-    "time": "24 h",
+    "time": "8 h",
     "autolearn": true,
     "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
   },
@@ -1211,7 +1260,7 @@
     "difficulty": 0,
 	"qualities": [ { "id": "RED_CIRCLE", "level": 1 } ],
 	"tools": [ [ [ "surface_heat", 10, "LIST" ] ], [ [ "metalworking_tongs", -1 ] ] ],
-    "time": "24 h",
+    "time": "8 h",
     "autolearn": true,
     "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
   },
@@ -1226,7 +1275,7 @@
     "difficulty": 0,
 	"qualities": [ { "id": "BLACK_CIRCLE", "level": 1 } ],
 	"tools": [ [ [ "surface_heat", 10, "LIST" ] ], [ [ "metalworking_tongs", -1 ] ] ],
-    "time": "24 h",
+    "time": "8 h",
     "autolearn": true,
     "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
   },
@@ -1241,7 +1290,7 @@
     "difficulty": 0,
 	"qualities": [ { "id": "GREEN_CIRCLE", "level": 1 } ],
 	"tools": [ [ [ "surface_heat", 10, "LIST" ] ], [ [ "metalworking_tongs", -1 ] ] ],
-    "time": "24 h",
+    "time": "8 h",
     "autolearn": true,
     "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
   },
@@ -1256,7 +1305,7 @@
     "difficulty": 0,
 	"qualities": [ { "id": "BLUE_CIRCLE", "level": 1 } ],
 	"tools": [ [ [ "surface_heat", 10, "LIST" ] ], [ [ "metalworking_tongs", -1 ] ] ],
-    "time": "24 h",
+    "time": "8 h",
     "autolearn": true,
     "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
   }

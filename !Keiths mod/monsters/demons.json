@@ -184,7 +184,7 @@
     "name": "frigiling",
     "description": "A low, stalking form like a dog save the two massive spires of ice that carry it through the sky.",
     "default_faction": "nether",
-	"looks_like": "mon_dragon_black_wyrmling",
+	"looks_like": "mon_bluejay",
     "bodytype": "dog",
     "species": [ "HORROR" ],
     "material": [ "iflesh", "demon_chitin" ],
@@ -193,8 +193,8 @@
     "weight": "40750 g",
     "hp": 100,
     "speed": 150,
-    "symbol": "h",
-    "color": "red",
+    "symbol": "f",
+    "color": "light_blue",
     "aggression": 100,
     "morale": 100,
     "melee_skill": 6,
@@ -217,8 +217,8 @@
     "special_attacks": [
       {
         "type": "spell",
-        "spell_data": { "id": "cone_cold_gloves", "min_level": 1 },
-        "cooldown": 10,
+        "spell_data": { "id": "cone_cold", "min_level": 1 },
+        "cooldown": 30,
         "monster_message": "The frigiling suddenly barks a wave of pure cold."
       }
     ],
@@ -230,6 +230,7 @@
       "CLIMBS",
 	  "FLIES",
       "NO_BREATHE",
+	  "RANGED_ATTACKER",
 	  "HIT_AND_RUN",
 	  "HARDTOSHOOT",
       "PATH_AVOID_DANGER_1",
@@ -242,7 +243,7 @@
     "name": "frigiling",
     "description": "A low, stalking form like a dog save the two disproportionally large spires of ice that carry it through the sky.",
     "default_faction": "nether",
-	"looks_like": "mon_dragon_black_wyrmling",
+	"looks_like": "mon_bluejay",
     "bodytype": "dog",
     "species": [ "HORROR" ],
     "material": [ "iflesh", "demon_chitin" ],
@@ -251,8 +252,8 @@
     "weight": "40750 g",
     "hp": 250,
     "speed": 150,
-    "symbol": "h",
-    "color": "red",
+    "symbol": "f",
+    "color": "light_blue",
     "aggression": 100,
     "morale": 100,
     "melee_skill": 6,
@@ -274,8 +275,8 @@
     "special_attacks": [
       {
         "type": "spell",
-        "spell_data": { "id": "cone_cold_gloves", "min_level": 1 },
-        "cooldown": 5,
+        "spell_data": { "id": "cone_cold", "min_level": 1 },
+        "cooldown": 30,
         "monster_message": "The frigiling suddenly barks a wave of pure cold."
       }
     ],
@@ -289,6 +290,7 @@
       "NO_BREATHE",
 	  "HIT_AND_RUN",
 	  "HARDTOSHOOT",
+	  "RANGED_ATTACKER",
       "PATH_AVOID_DANGER_1",
       "PUSH_MON"
     ]
@@ -308,8 +310,8 @@
     "weight": "40750 g",
     "hp": 250,
     "speed": 150,
-    "symbol": "h",
-    "color": "red",
+    "symbol": "s",
+    "color": "white",
     "aggression": 100,
     "morale": 100,
     "melee_skill": 6,
@@ -331,8 +333,8 @@
     "special_attacks": [
       {
         "type": "spell",
-        "spell_data": { "id": "cone_elec", "min_level": 1 },
-        "cooldown": 10,
+        "spell_data": { "id": "jolt", "min_level": 3 },
+        "cooldown": 15,
         "monster_message": "The sparklet flexes and sparks fly."
       }
     ],
@@ -347,6 +349,7 @@
       "NO_BREATHE",
 	  "HIT_AND_RUN",
 	  "HARDTOSHOOT",
+	  "RANGED_ATTACKER",
       "PATH_AVOID_DANGER_1",
       "PUSH_MON"
     ]
@@ -366,8 +369,8 @@
     "weight": "40750 g",
     "hp": 250,
     "speed": 150,
-    "symbol": "h",
-    "color": "red",
+    "symbol": "s",
+    "color": "white",
     "aggression": 100,
     "morale": 100,
     "melee_skill": 6,
@@ -388,8 +391,8 @@
     "special_attacks": [
       {
         "type": "spell",
-        "spell_data": { "id": "cone_elec", "min_level": 1 },
-        "cooldown": 5,
+        "spell_data": { "id": "jolt", "min_level": 5 },
+        "cooldown": 15,
         "monster_message": "The sparklet flexes and sparks fly."
       }
     ],
@@ -404,6 +407,7 @@
       "NO_BREATHE",
 	  "HIT_AND_RUN",
 	  "HARDTOSHOOT",
+	  "RANGED_ATTACKER",
       "PATH_AVOID_DANGER_1",
       "PUSH_MON"
     ]
@@ -418,7 +422,7 @@
   {
     "id": "mon_corrolug",
     "type": "MONSTER",
-    "name": { "str": "corrolug" },
+    "name": "corrolug",
     "description": "A slow, fat glob of pulsating acid. Occassionally something resembling a face will stir it's way to the top of the soup just to gurgle up more acid.",
     "default_faction": "nether",
     "bodytype": "dog",
@@ -430,7 +434,7 @@
     "speed": 100,
     "material": [ "iflesh" ],
     "symbol": "O",
-    "color": "black",
+    "color": "green",
     "aggression": 31,
     "morale": 30,
     "regen_morale": true,
@@ -460,7 +464,7 @@
         "fake_per": 5,
         "require_targeting_player": false,
         "description": "The corrolug pelts you with acid from afar.",
-        "ranges": [ [ 2, 15, "DEFAULT" ] ]
+        "ranges": [ [ 3, 15, "DEFAULT" ] ]
       }
     ],
     "flags": [
@@ -472,6 +476,7 @@
 	  "ACID_BLOOD",
       "ACIDPROOF",
 	  "HARDTOSHOOT",
+	  "RANGED_ATTACKER",
       "WATER_CAMOUFLAGE",
       "PRIORITIZE_TARGETS"
     ]
@@ -479,7 +484,7 @@
   {
     "id": "mon_corrolug_upgrade",
     "type": "MONSTER",
-    "name": { "str": "corrolug" },
+    "name": "corrolug",
     "description": "A slow, fat glob of pulsating acid. Occassionally something resembling a face will stir it's way to the top of the soup just to gurgle up more acid.",
     "default_faction": "nether",
 	"looks_like": "fd_acid", 
@@ -491,7 +496,7 @@
     "speed": 100,
     "material": [ "iflesh" ],
     "symbol": "O",
-    "color": "black",
+    "color": "green",
     "aggression": 31,
     "morale": 30,
     "regen_morale": true,
@@ -532,6 +537,7 @@
 	  "ACID_BLOOD",
       "ACIDPROOF",
 	  "HARDTOSHOOT",
+	  "RANGED_ATTACKER",
       "WATER_CAMOUFLAGE",
       "PRIORITIZE_TARGETS"
     ]
@@ -539,11 +545,11 @@
   {
     "id": "mon_blastlid",
     "type": "MONSTER",
-    "name": { "str": "blastlid" },
+    "name": "blastlid",
     "description": "Something like the goblins you've seen except this one seems to be shaking brimstone off of itself with each step. A wild look in their eye tells you they're nothing to trifle with.",
     "default_faction": "nether",
     "bodytype": "dog",
-	"looks_like": "mon_zombie_gasbag",
+	"looks_like": "mon_zombie_biter",
     "species": [ "HORROR" ],
     "volume": "20250 ml",
     "weight": "20250 g",
@@ -551,7 +557,7 @@
     "speed": 200,
     "material": [ "iflesh" ],
     "symbol": "O",
-    "color": "black",
+    "color": "red",
     "aggression": 31,
     "morale": 30,
     "regen_morale": true,
@@ -574,8 +580,8 @@
     "special_attacks": [
       {
         "type": "spell",
-        "spell_data": { "id": "cone_fire", "min_level": 1 },
-        "cooldown": 5,
+        "spell_data": { "id": "burning_hands", "min_level": 4 },
+        "cooldown": 15,
         "monster_message": "The blastlid throws a dash of brimstone powder and uses it's hot breath to ignite it mid-air."
       }
     ],
@@ -585,7 +591,7 @@
       "WARM", 
 	  "CLIMBS",
 	  "FIREY",
-	  "HIT_AND_RUN",
+	  "RANGED_ATTACKER",
 	  "HARDTOSHOOT",
 	  "BASHES"
     ]
@@ -593,19 +599,19 @@
   {
     "id": "mon_blastlid_upgrade",
     "type": "MONSTER",
-    "name": { "str": "blastlid" },
+    "name": "blastlid",
     "description": "Something like the goblins you've seen except this one seems to be shaking brimstone off of itself with each step. A wild look in their eye tells you they're nothing to trifle with.",
     "default_faction": "nether",
     "bodytype": "dog",
     "species": [ "HORROR" ],
     "volume": "20250 ml",
     "weight": "20250 g",
-	"looks_like": "mon_zombie_gasbag",
+	"looks_like": "mon_zombie_biter",
     "hp": 100,
     "speed": 200,
     "material": [ "iflesh" ],
     "symbol": "O",
-    "color": "black",
+    "color": "red",
     "aggression": 31,
     "morale": 30,
     "regen_morale": true,
@@ -628,8 +634,8 @@
     "special_attacks": [
       {
         "type": "spell",
-        "spell_data": { "id": "cone_fire", "min_level": 1 },
-        "cooldown": 5,
+        "spell_data": { "id": "burning_hands", "min_level": 4 },
+        "cooldown": 10,
         "monster_message": "The blastlid throws a dash of brimstone powder and uses it's hot breath to ignite it mid-air."
       }
     ],
@@ -639,7 +645,7 @@
       "WARM", 
 	  "CLIMBS",
 	  "FIREY",
-	  "HIT_AND_RUN",
+	  "RANGED_ATTACKER",
 	  "HARDTOSHOOT",
 	  "BASHES"
     ]
@@ -647,25 +653,25 @@
   {
     "id": "mon_hammerdemon",
     "type": "MONSTER",
-    "name": { "str": "devil's hammer" },
+    "name": "devil's blacksmith",
     "description": "A burning man with a dull look in his eye and a growth on his arm in the shape of an even duller hammer. Brimstone ash drifts off of his disintegrating clothing and flesh, slowly turning him into something entirely more demonic.",
     "default_faction": "nether",
-    "bodytype": "dog",
+    "bodytype": "human",
 	"looks_like": "mon_feral_prepper",
     "species": [ "HORROR" ],
     "volume": "20250 ml",
     "weight": "20250 g",
-    "hp": 100,
-    "speed": 200,
+    "hp": 300,
+    "speed": 150,
     "material": [ "iflesh" ],
     "symbol": "O",
-    "color": "black",
+    "color": "brown",
     "aggression": 31,
     "morale": 30,
     "regen_morale": true,
     "melee_dice": 2,
     "armor_bash": 99,
-	"armor_fire": 10,
+	"armor_fire": 20,
     "vision_day": 15,
     "vision_night": 50,
     "melee_dice_sides": 6,
@@ -679,6 +685,7 @@
       "SEES",
       "HEARS",
       "WARM", 
+	  "HUMAN",
 	  "CLIMBS",
 	  "HARDTOSHOOT",
 	  "BASHES"
@@ -687,25 +694,25 @@
   {
     "id": "mon_sworddemon",
     "type": "MONSTER",
-    "name": { "str": "devil's sword" },
-    "description": "A burning man with a sharp look in his eye and a growth on his arm in the shape of an even sharper sword. Brimstone ash drifts off of his disintegrating clothing and flesh, slowly turning him into something entirely more demonic.",
+    "name": "devil's lumberjack",
+    "description": "A burning man with a sharp look in his eye and a growth on his arm in the shape of an even sharper axe. Brimstone ash drifts off of his disintegrating clothing and flesh, slowly turning him into something entirely more demonic.",
     "default_faction": "nether",
-    "bodytype": "dog",
+    "bodytype": "human",
 	"looks_like": "mon_feral_prepper",
     "species": [ "HORROR" ],
     "volume": "20250 ml",
     "weight": "20250 g",
-    "hp": 100,
+    "hp": 300,
     "speed": 200,
     "material": [ "iflesh" ],
     "symbol": "O",
-    "color": "black",
+    "color": "brown",
     "aggression": 31,
     "morale": 30,
     "regen_morale": true,
     "melee_dice": 2,
     "armor_cut": 99,
-	"armor_fire": 10,
+	"armor_fire": 20,
     "vision_day": 15,
     "vision_night": 50,
     "melee_dice_sides": 6,
@@ -719,6 +726,7 @@
       "SEES",
       "HEARS",
       "WARM", 
+	  "HUMAN",
 	  "CLIMBS",
 	  "HARDTOSHOOT",
 	  "BASHES"
@@ -727,10 +735,10 @@
   {
     "id": "mon_knifedemon",
     "type": "MONSTER",
-    "name": { "str": "devil's knife" },
+    "name": "demonic assassin",
     "description": "A burning man with a cruel look in his eye and a growth on his arm in the shape of an even crueler knife. Brimstone ash drifts off of his disintegrating clothing and flesh, slowly turning him into something entirely more demonic.",
     "default_faction": "nether",
-    "bodytype": "dog",
+    "bodytype": "human",
 	"looks_like": "mon_feral_prepper",
     "species": [ "HORROR" ],
     "volume": "20250 ml",
@@ -739,13 +747,13 @@
     "speed": 250,
     "material": [ "iflesh" ],
     "symbol": "O",
-    "color": "black",
+    "color": "brown",
     "aggression": 31,
     "morale": 30,
     "regen_morale": true,
-    "melee_dice": 2,
+    "melee_dice": 1,
     "armor_cut": 99,
-	"armor_fire": 10,
+	"armor_fire": 20,
     "vision_day": 15,
     "vision_night": 50,
     "melee_dice_sides": 6,
@@ -760,6 +768,7 @@
       "HEARS",
       "WARM", 
 	  "CLIMBS",
+	  "HUMAN",
 	  "NIGHT_INVISIBILITY",
 	  "BASHES"
     ]
@@ -767,26 +776,26 @@
   {
     "id": "mon_gundemon",
     "type": "MONSTER",
-    "name": { "str": "devil's six shooter" },
+    "name": "demonic gunslinger",
     "description": "A burning man with a dangerous look in his eye and a growth on his arm in the shape of an even more dangerous revolver. Brimstone ash drifts off of his disintegrating clothing and flesh, slowly turning him into something entirely more demonic.",
     "default_faction": "nether",
-    "bodytype": "dog",
+    "bodytype": "human",
     "species": [ "HORROR" ],
     "volume": "20250 ml",
     "weight": "20250 g",
 	"looks_like": "mon_feral_prepper",
-    "hp": 100,
-    "speed": 150,
+    "hp": 200,
+    "speed": 200,
     "material": [ "iflesh" ],
     "symbol": "O",
-    "color": "black",
+    "color": "brown",
     "aggression": 31,
     "morale": 30,
     "regen_morale": true,
     "melee_dice": 2,
 	"armor_bullet": 99,
-	"armor_fire": 10,
-    "vision_day": 15,
+	"armor_fire": 20,
+    "vision_day": 20,
     "vision_night": 50,
     "melee_dice_sides": 6,
     "harvest": "demon_humanoid",
@@ -799,10 +808,10 @@
 	"special_attacks": [
       {
         "type": "gun",
-        "cooldown": 15,
+        "cooldown": 25,
         "move_cost": 150,
         "gun_type": "model_10_revolver",
-        "fake_skills": [ [ "gun", 6 ], [ "rifle", 6 ] ],
+        "fake_skills": [ [ "gun", 6 ], [ "pistol", 6 ] ],
         "fake_dex": 5,
         "fake_per": 5,
         "require_targeting_player": false,
@@ -815,6 +824,8 @@
       "HEARS",
       "WARM", 
 	  "CLIMBS",
+	  "HUMAN",
+	  "KEEP_DISTANCE",
 	  "RANGED_ATTACKER",
 	  "BASHES"
     ]
@@ -822,7 +833,7 @@
   {
     "id": "mon_lilimp",
     "type": "MONSTER",
-    "name": { "str": "goblimp" },
+    "name": "goblimp",
     "description": "A fat little creature with skin of rough black leather, a long snout like an ant-eater's and two tiny black arms sticking out of it's back, a garbage bag slung over it's spine. It hops around on crooked legs, gliding from perch to perch by stretching it's own skin thin like a cloak and blowing itself up with sticky, sulfuric air, which it slowly releases to gain buoyancy. It's eyes shine with mischief and greed, and it's behavior reflects that.",
     "default_faction": "nether",
     "bodytype": "dog",
@@ -833,7 +844,7 @@
     "speed": 220,
     "material": [ "iflesh" ],
     "symbol": "O",
-    "color": "black",
+    "color": "red",
     "aggression": 31,
     "morale": 30,
     "regen_morale": true,
@@ -888,7 +899,7 @@
   {
     "id": "mon_lilimp_upgrade",
     "type": "MONSTER",
-    "name": { "str": "goblimp" },
+    "name": "goblimp",
     "description": "A fat little creature with skin of rough black leather, a long snout like an ant-eater's and two tiny black arms sticking out of it's back, a garbage bag slung over it's spine. It hops around on crooked legs, gliding from perch to perch by stretching it's own skin thin like a cloak and blowing itself up with sticky, sulfuric air, which it slowly releases to gain buoyancy. It's eyes shine with mischief and greed, and it's behavior reflects that.",
     "default_faction": "nether",
     "bodytype": "dog",
@@ -899,7 +910,7 @@
     "speed": 220,
     "material": [ "iflesh" ],
     "symbol": "O",
-    "color": "black",
+    "color": "red",
     "aggression": 31,
     "morale": 30,
     "regen_morale": true,
@@ -971,7 +982,7 @@
     "speed": 200,
     "material": [ "stone" ],
     "symbol": "Y",
-    "color": "black",
+    "color": "red",
     "aggression": 100,
     "morale": 100,
     "vision_day": 50,
@@ -992,6 +1003,7 @@
     "death_function": { "corpse_type": "NO_CORPSE", "message": "Yidris solemnly leaves through a portal, unscathed." },
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "PLAYER_CLOSE" ],
     "special_attacks": [
+	[ "FEAR_PARALYZE", 10 ],
       {
         "type": "spell",
         "spell_data": { "id": "summon_mages", "min_level": 1 },
@@ -1059,6 +1071,7 @@
     "harvest": "exempt",
     "death_function": { "corpse_type": "NO_CORPSE", "message": "Where once there was, there simply isn't." },
     "special_attacks": [
+	[ "FEAR_PARALYZE", 10 ],
       {
         "type": "spell",
         "spell_data": { "id": "red_roll", "min_level": 1 },
@@ -1138,6 +1151,7 @@
     },
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "FIRE", "HURT" ],
     "special_attacks": [
+	[ "FEAR_PARALYZE", 10 ],
       {
         "type": "spell",
         "spell_data": { "id": "open_tindalos_rift", "min_level": 1 },
@@ -1212,6 +1226,7 @@
     },
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "FIRE", "HURT" ],
     "special_attacks": [
+	[ "FEAR_PARALYZE", 10 ],
       {
         "type": "spell",
         "spell_data": { "id": "open_tindalos_rift", "min_level": 1 },
@@ -1294,15 +1309,12 @@
     "color": "dark_gray",
     "aggression": 100,
     "morale": 100,
-    "armor_bash": 99,
-    "armor_cut": 99,
+    "armor_bash": 50,
+    "armor_cut": 50,
     "armor_bullet": 99,
 	"armor_stab": 99,
     "armor_elec": 50,
 	"armor_fire": 999,
-	"armor_cold": 50,
-	"armor_acid": 99,
-	"armor_bio": 50,
     "melee_skill": 7,
     "melee_dice": 2,
     "vision_day": 50,
@@ -1320,16 +1332,17 @@
     },
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "FIRE", "HURT" ],
     "special_attacks": [
+	  [ "FEAR_PARALYZE", 10 ],
       {
         "type": "spell",
         "spell_data": { "id": "open_tindalos_rift", "min_level": 1 },
-        "cooldown": 3,
+        "cooldown": 30,
         "monster_message": "The devil tells you that you cannot win, and calls to the void."
       },
 	  {
         "type": "spell",
         "spell_data": { "id": "heal_ally_atraxa", "min_level": 1 },
-        "cooldown": 3,
+        "cooldown": 50,
         "monster_message": "The devil asks if you understand true power."
       },
 	  {
@@ -1342,7 +1355,7 @@
         "type": "spell",
         "spell_data": { "id": "phase_skulker_teleport", "min_level": 1 },
         "cooldown": 3,
-        "monster_message": "The devil haughtily, lazily steps through a portal and yawns."
+        "monster_message": "The devil haughtily, lazily steps yawns through a portal."
       },
       { "id": "smash", "throw_strength": 54 },
       { "id": "stretch_attack" },
@@ -1357,7 +1370,6 @@
       "SWIMS",
       "FLIES",
       "NOHEAD",
-      "COLDPROOF",
       "NOGIB",
       "FIREY",
       "FIREPROOF",
@@ -1433,8 +1445,8 @@
     "vision_day": 50,
     "vision_night": 50,
 	"armor_pure": 999,
-	"armor_elec": 999,
-	"armor_acid": 999,
+	"armor_elec": 50,
+	"armor_fire": 50,
 	"armor_cold": 999,
     "melee_damage": [ { "damage_type": "pure", "amount": 0 } ],
     "dodge": 7,
@@ -1443,6 +1455,8 @@
     "death_function": { "corpse_type": "NO_CORPSE", "message": "Like the end of a tale told well, it came too early and went too soon." },
     "fear_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "PLAYER_CLOSE" ],
     "special_attacks": [
+	[ "FEAR_PARALYZE", 10 ],
+	[ "RESURRECT", 0 ],
       {
         "type": "spell",
         "spell_data": { "id": "heal_ally_atraxa", "min_level": 1 },
@@ -1453,7 +1467,7 @@
         "type": "spell",
         "spell_data": { "id": "polymorph_atraxa", "min_level": 1 },
         "cooldown": 10,
-        "monster_message": "Warmth like nothing you've felt before floods you, and you feel for the first time like you have been truly accepted fully as you are. It fades quickly and leaves you wanting more."
+        "monster_message": "Atraxa's holy light turns foe into friend..."
       }
     ],
     "flags": [
@@ -1466,7 +1480,6 @@
       "NOGIB",
       "PACIFIST",
       "CAMOUFLAGE",
-      "NIGHT_INVISIBILITY",
       "PATH_AVOID_DANGER_1",
       "NO_BREATHE",
       "STUN_IMMUNE",
@@ -1610,7 +1623,13 @@
 	"death_function": { "effect": { "id": "death_boomer", "hit_self": true }, "corpse_type": "NO_CORPSE", "message": "The % melts away." },
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "PLAYER_CLOSE", "PLAYER_WEAK" ],
     "special_attacks": [
-	  [ "GRAB", 5 ]
+	  [ "GRAB", 5 ],
+	  {
+        "type": "spell",
+        "spell_data": { "id": "dune", "min_level": 1 },
+        "cooldown": 50,
+        "monster_message": "The nephilims stomach sack engorges and it rears open it's mouth for more to be added to the brood, already lashing out for something to eat. They slither and claw out of it's throat fully grown and hunting for more, fading into dust when the hunger goes unsated."
+      }
     ],
     "flags": [
       "SEES",
@@ -1662,7 +1681,7 @@
       {
         "type": "spell",
         "spell_data": { "id": "dune", "min_level": 1 },
-        "cooldown": 50,
+        "cooldown": 30,
         "monster_message": "The nephilims stomach sack engorges and it rears open it's mouth for more to be added to the brood, already lashing out for something to eat. They slither and claw out of it's throat fully grown and hunting for more, fading into dust when the hunger goes unsated."
       }
     ],

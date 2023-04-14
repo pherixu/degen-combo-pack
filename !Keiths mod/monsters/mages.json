@@ -206,8 +206,8 @@
     "color": "white",
     "aggression": 100,
     "morale": 100,
-    "vision_day": 10,
-    "vision_night": 20,
+    "vision_day": 15,
+    "vision_night": 25,
     "melee_skill": 5,
     "melee_dice": 2,
     "melee_dice_sides": 6,
@@ -220,10 +220,9 @@
 	"upgrades": { "half_life": 180, "into": "mon_nethermage_upgrade" },
     "emit_fields": [
       { "emit_id": "emit_safe_shoppers", "delay": "1 s" },
-      { "emit_id": "emit_shock_cloud", "delay": "3 s" },
-      { "emit_id": "emit_vault_atmosphere_stream", "delay": "3 s" }
+      { "emit_id": "emit_shock_cloud", "delay": "3 s" }
     ],
-    "melee_damage": [ { "damage_type": "cut", "amount": 1 } ],
+    "melee_damage": [ { "damage_type": "cold", "amount": 1 } ],
     "dodge": 8,
     "weakpoint_sets": [ "wps_humanoid_body" ],
     "death_drops": "magedrops",
@@ -236,9 +235,9 @@
       [ "SHOCKSTORM", 15 ],
       {
         "type": "spell",
-        "spell_data": { "id": "directed_mana", "min_level": 1 },
-        "cooldown": 5,
-        "monster_message": "The mage pushes you back with raw mana!"
+        "spell_data": { "id": "spawn_estrangement_aura", "min_level": 1 },
+        "cooldown": 150,
+        "monster_message": "The mage sends you tumbling through space!"
       },
       {
         "type": "spell",
@@ -291,8 +290,8 @@
     "color": "white",
     "aggression": 100,
     "morale": 100,
-    "vision_day": 10,
-    "vision_night": 20,
+    "vision_day": 15,
+    "vision_night": 25,
     "melee_skill": 5,
     "melee_dice": 2,
     "melee_dice_sides": 6,
@@ -304,10 +303,9 @@
     "special_when_hit": [ "ZAPBACK", 25 ],
     "emit_fields": [
       { "emit_id": "emit_safe_shoppers", "delay": "1 s" },
-      { "emit_id": "emit_shock_cloud", "delay": "3 s" },
-      { "emit_id": "emit_vault_atmosphere_stream", "delay": "3 s" }
+      { "emit_id": "emit_shock_cloud", "delay": "3 s" }
     ],
-    "melee_damage": [ { "damage_type": "cut", "amount": 1 } ],
+    "melee_damage": [ { "damage_type": "cold", "amount": 1 } ],
     "dodge": 10,
     "weakpoint_sets": [ "wps_humanoid_body" ],
     "death_drops": "magedrops",
@@ -320,9 +318,9 @@
       [ "SHOCKSTORM", 10 ],
       {
         "type": "spell",
-        "spell_data": { "id": "directed_mana", "min_level": 1 },
-        "cooldown": 5,
-        "monster_message": "The mage pushes you back with raw mana!"
+        "spell_data": { "id": "spawn_estrangement_aura", "min_level": 1 },
+        "cooldown": 150,
+        "monster_message": "The mage sends you tumbling through space!"
       },
       {
         "type": "spell",
@@ -375,13 +373,13 @@
     "color": "red",
     "aggression": 100,
     "morale": 100,
-    "vision_day": 10,
-    "vision_night": 20,
+    "vision_day": 15,
+    "vision_night": 25,
     "melee_skill": 5,
     "melee_dice": 2,
     "melee_dice_sides": 6,
     "armor_cut": 20,
-    "armor_acid": 20,
+    "armor_elec": 20,
 	"armor_bash": 10,
     "armor_bullet": 20,
     "armor_fire": 100,
@@ -390,9 +388,9 @@
     "emit_fields": [
       { "emit_id": "emit_safe_shoppers", "delay": "1 s" },
       { "emit_id": "emit_hot_air4_blast", "delay": "3 s" },
-      { "emit_id": "emit_vault_atmosphere_stream", "delay": "3 s" }
+      { "emit_id": "emit_vault_atmosphere_stream", "delay": "10 s" }
     ],
-    "melee_damage": [ { "damage_type": "cut", "amount": 1 } ],
+    "melee_damage": [ { "damage_type": "heat", "amount": 1 } ],
     "dodge": 5,
     "weakpoint_sets": [ "wps_humanoid_body" ],
     "regenerates": 5,
@@ -467,13 +465,13 @@
     "color": "red",
     "aggression": 100,
     "morale": 100,
-    "vision_day": 10,
-    "vision_night": 20,
+    "vision_day": 15,
+    "vision_night": 25,
     "melee_skill": 5,
     "melee_dice": 2,
     "melee_dice_sides": 6,
     "armor_cut": 20,
-    "armor_acid": 20,
+    "armor_elec": 20,
 	"armor_bash": 10,
     "armor_bullet": 20,
     "armor_fire": 100,
@@ -483,9 +481,9 @@
       { "emit_id": "emit_safe_shoppers", "delay": "1 s" },
       { "emit_id": "emit_hot_air4_blast", "delay": "1 s" },
 	  { "emit_id": "emit_tiny_fire", "delay": "10 s" },
-      { "emit_id": "emit_vault_atmosphere_stream", "delay": "3 s" }
+      { "emit_id": "emit_vault_atmosphere_stream", "delay": "7 s" }
     ],
-    "melee_damage": [ { "damage_type": "cut", "amount": 1 } ],
+    "melee_damage": [ { "damage_type": "heat", "amount": 1 } ],
     "dodge": 5,
     "weakpoint_sets": [ "wps_humanoid_body" ],
     "regenerates": 5,
@@ -585,7 +583,7 @@
     "melee_skill": 5,
     "melee_dice": 2,
     "melee_dice_sides": 6,
-    "armor_elec": 20,
+    "armor_acid": 20,
     "armor_bullet": 20,
     "armor_stab": 20,
 	"armor_bash": 20,
@@ -597,7 +595,7 @@
       { "emit_id": "emit_safe_shoppers", "delay": "1 s" },
       { "emit_id": "emit_cold_energy_stream", "delay": "3 s" },
       { "emit_id": "emit_blood", "delay": "1 s" },
-      { "emit_id": "emit_vault_atmosphere_stream", "delay": "3 s" }
+      { "emit_id": "emit_vault_atmosphere_stream", "delay": "10 s" }
     ],
     "melee_damage": [ { "damage_type": "cold", "amount": 5 } ],
     "dodge": 9,
@@ -666,8 +664,7 @@
     "melee_skill": 5,
     "melee_dice": 2,
     "melee_dice_sides": 8,
-    "armor_elec": 20,
-	"armor_bio": 20,
+    "armor_acid": 20,
     "armor_bullet": 20,
     "armor_stab": 20,
 	"armor_bash": 20,
@@ -678,7 +675,7 @@
       { "emit_id": "emit_safe_shoppers", "delay": "1 s" },
       { "emit_id": "emit_cold_energy_stream", "delay": "3 s" },
       { "emit_id": "emit_blood", "delay": "1 s" },
-      { "emit_id": "emit_vault_atmosphere_stream", "delay": "3 s" }
+      { "emit_id": "emit_vault_atmosphere_stream", "delay": "7 s" }
     ],
     "melee_damage": [ { "damage_type": "cold", "amount": 5 } ],
     "dodge": 9,
@@ -774,8 +771,9 @@
 	"upgrades": { "half_life": 180, "into": "mon_nethermage_bile_upgrade" },
     "emit_fields": [
       { "emit_id": "emit_safe_shoppers", "delay": "1 s" },
-      { "emit_id": "emit_bile", "delay": "1 s" },
-      { "emit_id": "emit_vault_atmosphere_stream", "delay": "3 s" }
+	  { "emit_id": "emit_bile", "delay": "1 s" },
+      { "emit_id": "emit_acid_splash", "delay": "10 s" },
+      { "emit_id": "emit_vault_atmosphere_stream", "delay": "10 s" }
     ],
     "melee_damage": [ { "damage_type": "biological", "amount": 2 } ],
     "dodge": 3,
@@ -861,7 +859,7 @@
     "melee_dice_sides": 6,
     "armor_acid": 100,
 	"armor_bio": 100,
-	"armor_bullet": 100,
+	"armor_bullet": 50,
     "armor_cut": 10,
     "armor_cold": 20,
     "armor_fire": 20,
@@ -869,7 +867,8 @@
     "emit_fields": [
       { "emit_id": "emit_safe_shoppers", "delay": "1 s" },
       { "emit_id": "emit_bile", "delay": "1 s" },
-      { "emit_id": "emit_vault_atmosphere_stream", "delay": "3 s" }
+	  { "emit_id": "emit_acid_splash", "delay": "10 s" },
+      { "emit_id": "emit_vault_atmosphere_stream", "delay": "7 s" }
     ],
     "melee_damage": [ { "damage_type": "biological", "amount": 2 } ],
     "dodge": 3,
@@ -981,7 +980,7 @@
         { "item": "boots_scrap", "prob": 40 },
         { "item": "armguard_scrap", "prob": 40 },
         { "item": "cuirass_scrap", "prob": 40 },
-        { "group": "enchanted_misc", "prob": 5 },
+        { "group": "enchanted_misc", "prob": 3 },
         { "group": "enchanted_melee_weapons_plus1", "prob": 100 }
       ]
     }
@@ -1005,6 +1004,9 @@
     "tracking_distance": 12,
 	"upgrades": { "half_life": 180, "into": "mon_goblin_mage_upgrade" },
     "death_function": { "effect": { "id": "death_smokeburst", "hit_self": true } },
+	"emit_fields": [
+      { "emit_id": "emit_safe_shoppers", "delay": "1 s" }
+    ],
     "special_attacks": [
       {
         "type": "spell",
@@ -1042,7 +1044,7 @@
         { "item": "boots_scrap", "prob": 40 },
         { "item": "armguard_scrap", "prob": 40 },
         { "item": "cuirass_scrap", "prob": 40 },
-        { "group": "enchanted_misc", "prob": 10 },
+        { "group": "enchanted_misc", "prob": 7 },
         { "group": "enchanted_melee_weapons_plus1", "prob": 100 }
       ]
     }
@@ -1174,7 +1176,7 @@
     "volume": "48000 ml",
     "weight": "800 kg",
     "hp": 1500,
-    "speed": 250,
+    "speed": 300,
     "material": [ "flesh" ],
     "symbol": "M",
     "color": "red",
@@ -1284,7 +1286,7 @@
     "volume": "48000 ml",
     "weight": "800 kg",
     "hp": 500,
-    "speed": 160,
+    "speed": 300,
     "material": [ "flesh" ],
     "symbol": "M",
     "color": "blue",
@@ -1350,6 +1352,7 @@
       "PUSH_VEH",
 	  "ALL_SEEING",
 	  "KEEP_DISTANCE", 
+	  "RANGED_ATTACKER",
       "HARDTOSHOOT",
       "CAN_OPEN_DOORS",
       "REVIVES",

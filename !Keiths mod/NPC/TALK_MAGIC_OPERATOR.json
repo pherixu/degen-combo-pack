@@ -20,7 +20,7 @@
         "switch": true,
         "default": true,
         "text": "Alright, alright. I'm not here to hurt anybody.",
-        "trial": { "type": "PERSUADE", "difficulty": 30 },
+        "trial": { "type": "PERSUADE", "difficulty": 500 },
         "success": { "topic": "TALK_OPERATOR_FRIENDLY", "opinion": { "trust": 0, "value": 1 } },
         "failure": { "topic": "TALK_OPERATOR_WARY", "opinion": { "anger": 3, "fear": 0 } }
       },
@@ -28,7 +28,7 @@
         "switch": true,
         "default": true,
         "text": "You don't look so tough. Why should I?",
-        "trial": { "type": "INTIMIDATE", "difficulty": 40, "mod": [ [ "AGGRESSION", -2 ], [ "BRAVERY", -2 ] ] },
+        "trial": { "type": "INTIMIDATE", "difficulty": 500, "mod": [ [ "AGGRESSION", -2 ], [ "BRAVERY", -2 ] ] },
         "success": { "topic": "TALK_OPERATOR_FEARFUL", "opinion": { "trust": -4, "fear": 3, "value": -1, "anger": 4 } },
         "failure": { "topic": "TALK_OPERATOR_ANGRY", "opinion": { "trust": -4, "value": -5, "anger": 10 } }
       },
@@ -60,7 +60,7 @@
     "responses": [
       {
         "text": "Come with me.  We can help each other out.",
-        "trial": { "type": "PERSUADE", "difficulty": 70, "mod": [ [ "value", 2 ] ] },
+        "trial": { "type": "PERSUADE", "difficulty": 500, "mod": [ [ "value", 2 ] ] },
         "success": { "topic": "TALK_AGREE_FOLLOW", "effect": "follow", "opinion": { "trust": 1, "value": 1 } },
         "failure": { "topic": "TALK_DENY_FOLLOW", "effect": "deny_follow", "opinion": { "trust": -1, "fear": 1 } }
       },
@@ -74,13 +74,13 @@
     "responses": [
       {
         "text": "I'm not here to hurt anybody. Just getting by like the rest of us.",
-        "trial": { "type": "PERSUADE", "difficulty": 15, "mod": [ [ "TRUST", 2 ], [ "VALUE", 2 ] ] },
+        "trial": { "type": "PERSUADE", "difficulty": 500, "mod": [ [ "TRUST", 2 ], [ "VALUE", 2 ] ] },
         "success": { "topic": "TALK_OPERATOR_FRIENDLY", "opinion": { "trust": 1, "value": 1 } },
         "failure": { "topic": "TALK_OPERATOR_LEAVE" }
       },
       {
         "text": "Something's gonna be off about you pretty soon if you don't do what I say.",
-        "trial": { "type": "INTIMIDATE", "difficulty": 20, "mod": [ [ "AGGRESSION", -2 ], [ "BRAVERY", -2 ] ] },
+        "trial": { "type": "INTIMIDATE", "difficulty": 500, "mod": [ [ "AGGRESSION", -2 ], [ "BRAVERY", -2 ] ] },
         "success": { "topic": "TALK_OPERATOR_FEARFUL", "opinion": { "trust": -4, "fear": 3, "value": -1, "anger": 4 } },
         "failure": { "topic": "TALK_OPERATOR_ANGRY", "opinion": { "trust": -4, "value": -5, "anger": 10 } }
       },
@@ -94,13 +94,13 @@
     "responses": [
       {
         "text": "Join me or die.",
-        "trial": { "type": "INTIMIDATE", "difficulty": 70, "mod": [ [ "VALUE", 2 ], [ "TRUST", 2 ], [ "BRAVERY", -2 ] ] },
+        "trial": { "type": "INTIMIDATE", "difficulty": 500, "mod": [ [ "VALUE", 2 ], [ "TRUST", 2 ], [ "BRAVERY", -2 ] ] },
         "success": { "topic": "TALK_AGREE_FOLLOW", "effect": "follow", "opinion": { "trust": -4, "fear": 3, "value": -1, "anger": 4 } },
         "failure": { "topic": "TALK_OPERATOR_ANGRY", "opinion": { "trust": 4, "value": -5, "anger": 10 } }
       },
       {
         "text": "Get out of my sight.",
-		"trial": { "type": "INTIMIDATE", "difficulty": 50, "mod": [ [ "VALUE", 2 ], [ "TRUST", 2 ], [ "BRAVERY", -2 ] ] },
+		"trial": { "type": "INTIMIDATE", "difficulty": 500, "mod": [ [ "VALUE", 2 ], [ "TRUST", 2 ], [ "BRAVERY", -2 ] ] },
         "topic": "TALK_DONE",
         "success": { "effect": "flee" },
 		"failure": { "topic": "TALK_OPERATOR_ANGRY", "opinion": { "trust": 4, "value": -5, "anger": 10 } },
@@ -108,7 +108,7 @@
       },
       {
         "text": "I'm leaving.",
-        "trial": { "type": "PERSUADE", "difficulty": 30 },
+        "trial": { "type": "PERSUADE", "difficulty": 500 },
         "success": { "topic": "TALK_DONE", "opinion": { "trust": 1, "value": 1, "anger": -1 } },
         "failure": { "topic": "TALK_OPERATOR_ANGRY", "opinion": { "trust": 4, "value": -5, "anger": 10 } }
       }
@@ -121,14 +121,14 @@
     "responses": [
       {
         "text": "You wanna live, don't you?",
-        "trial": { "type": "INTIMIDATE", "difficulty": 40, "mod": [ [ "VALUE", 2 ], [ "TRUST", 2 ], [ "BRAVERY", -2 ] ] },
+        "trial": { "type": "INTIMIDATE", "difficulty": 500, "mod": [ [ "VALUE", 2 ], [ "TRUST", 2 ], [ "BRAVERY", -2 ] ] },
         "success": { "topic": "TALK_DONE", "effect": "flee" },
         "failure": { "topic": "TALK_DONE", "effect": "hostile" }
       },
       { "text": "Why shouldn't you?", "topic": "TALK_DONE", "effect": "hostile" },
       {
         "text": "I'm sorry! Please, I want to live.",
-        "trial": { "type": "PERSUADE", "difficulty": 50 },
+        "trial": { "type": "PERSUADE", "difficulty": 500 },
         "success": { "topic": "TALK_DONE", "opinion": { "trust": 1, "value": 1, "anger": -1 } },
         "failure": { "topic": "TALK_DONE", "effect": "hostile" }
       }
@@ -174,7 +174,7 @@
         "switch": true,
         "default": true,
         "text": "I, uh, yes?",
-        "trial": { "type": "PERSUADE", "difficulty": 7 },
+        "trial": { "type": "PERSUADE", "difficulty": 500 },
         "success": { "topic": "TALK_OPERATOR_FRIENDLY_WAITING", "opinion": { "trust": 0, "value": 1 } },
         "failure": { "topic": "TALK_OPERATOR_WARY_WAITING", "opinion": { "anger": 3, "fear": 0 } }
       },
@@ -182,7 +182,7 @@
         "switch": true,
         "default": true,
         "text": "No, I'm just here for loot.",
-        "trial": { "type": "INTIMIDATE", "difficulty": 20, "mod": [ [ "AGGRESSION", -2 ], [ "BRAVERY", -2 ] ] },
+        "trial": { "type": "INTIMIDATE", "difficulty": 500, "mod": [ [ "AGGRESSION", -2 ], [ "BRAVERY", -2 ] ] },
         "success": { "topic": "TALK_OPERATOR_FEARFUL_WAITING", "opinion": { "trust": -4, "fear": 3, "value": -1, "anger": 4 } },
         "failure": { "topic": "TALK_OPERATOR_ANGRY_WAITING", "opinion": { "trust": -4, "value": -5, "anger": 10 } }
       },
@@ -219,7 +219,7 @@
     "responses": [
       {
         "text": "You should probably just come with me.",
-        "trial": { "type": "PERSUADE", "difficulty": 60, "mod": [ [ "value", 2 ] ] },
+        "trial": { "type": "PERSUADE", "difficulty": 500, "mod": [ [ "value", 2 ] ] },
         "success": { "topic": "TALK_AGREE_FOLLOW", "effect": "follow", "opinion": { "trust": 1, "value": 1 } },
         "failure": { "topic": "TALK_DENY_FOLLOW", "effect": "deny_follow", "opinion": { "trust": -1, "fear": 1 } }
       },
@@ -233,13 +233,13 @@
     "responses": [
       {
         "text": "I could ask you the same thing. You're the one standing around doing nothing.",
-        "trial": { "type": "PERSUADE", "difficulty": 20, "mod": [ [ "TRUST", 2 ], [ "VALUE", 2 ] ] },
+        "trial": { "type": "PERSUADE", "difficulty": 500, "mod": [ [ "TRUST", 2 ], [ "VALUE", 2 ] ] },
         "success": { "topic": "TALK_OPERATOR_FRIENDLY_WAITING", "opinion": { "trust": 1, "value": 1 } },
         "failure": { "topic": "TALK_OPERATOR_LEAVE_WAITING" }
       },
       {
         "text": "You have one second to quiet down.",
-        "trial": { "type": "INTIMIDATE", "difficulty": 10, "mod": [ [ "AGGRESSION", -2 ], [ "BRAVERY", -2 ] ] },
+        "trial": { "type": "INTIMIDATE", "difficulty": 500, "mod": [ [ "AGGRESSION", -2 ], [ "BRAVERY", -2 ] ] },
         "success": { "topic": "TALK_OPERATOR_FEARFUL_WAITING", "opinion": { "trust": -4, "fear": 3, "value": -1, "anger": 4 } },
         "failure": { "topic": "TALK_OPERATOR_ANGRY_WAITING", "opinion": { "trust": -4, "value": -5, "anger": 10 } }
       },
@@ -253,7 +253,7 @@
     "responses": [
       {
         "text": "Come with me or die.",
-        "trial": { "type": "INTIMIDATE", "difficulty": 20, "mod": [ [ "VALUE", 2 ], [ "TRUST", 2 ], [ "BRAVERY", -2 ] ] },
+        "trial": { "type": "INTIMIDATE", "difficulty": 500, "mod": [ [ "VALUE", 2 ], [ "TRUST", 2 ], [ "BRAVERY", -2 ] ] },
         "success": { "topic": "TALK_AGREE_FOLLOW", "effect": "follow", "opinion": { "trust": -4, "fear": 3, "value": -1, "anger": 4 } },
         "failure": { "topic": "TALK_OPERATOR_ANGRY_WAITING", "opinion": { "trust": 4, "value": -5, "anger": 10 } }
       },
@@ -265,7 +265,7 @@
       },
       {
         "text": "I'm leaving. You should too.",
-        "trial": { "type": "PERSUADE", "difficulty": 10 },
+        "trial": { "type": "PERSUADE", "difficulty": 500 },
         "success": { "topic": "TALK_DONE", "opinion": { "trust": 1, "value": 1, "anger": -1 } },
         "failure": { "topic": "TALK_OPERATOR_ANGRY_WAITING", "opinion": { "trust": 4, "value": -5, "anger": 10 } }
       }
@@ -278,14 +278,14 @@
     "responses": [
       {
         "text": "You wanna live, you'll leave right now.",
-        "trial": { "type": "INTIMIDATE", "difficulty": 20, "mod": [ [ "VALUE", 2 ], [ "TRUST", 2 ], [ "BRAVERY", -2 ] ] },
+        "trial": { "type": "INTIMIDATE", "difficulty": 500, "mod": [ [ "VALUE", 2 ], [ "TRUST", 2 ], [ "BRAVERY", -2 ] ] },
         "success": { "topic": "TALK_DONE", "effect": "flee" },
         "failure": { "topic": "TALK_DONE", "effect": "hostile" }
       },
       { "text": "That's enough. I'm out of here.", "topic": "TALK_DONE", "effect": "hostile" },
       {
         "text": "I think I'm just gonna go...",
-        "trial": { "type": "PERSUADE", "difficulty": 20 },
+        "trial": { "type": "PERSUADE", "difficulty": 500 },
         "success": { "topic": "TALK_DONE", "opinion": { "trust": 1, "value": 1, "anger": -1 } },
         "failure": { "topic": "TALK_DONE", "effect": "hostile" }
       }

@@ -1,0 +1,1252 @@
+[
+{
+    "type": "scenario",
+    "id": "anotherday",
+    "name": "Another Day, Another Dollar",
+    "points": -1,
+    "description": "It was just supposed to be another day at the grind. At least you have a friend.",
+    "allowed_locs": [ 
+	  "sloc_mall_loading_area",
+      "sloc_mall_food_court",
+      "sloc_hospital",
+      "sloc_school",
+      "sloc_hotel_rooftop",
+	  "sloc_grocery_store",
+      "sloc_garage",
+      "sloc_furniture_store",
+      "sloc_library",
+	  "sloc_military_base_warehouse",
+      "sloc_bookstore",
+      "sloc_zoo_giftshop",
+      "sloc_golfcourse_mid_course",
+      "sloc_golfcourse_clubhouse",
+	  "sloc_fire_station",
+      "sloc_police",
+	  "sloc_private_resort",
+	  "sloc_retirement_community",
+	  "nuclear_plant",
+	  "aircraft_carrier_bridge",
+	  "sloc_pawn_shop",
+      "sloc_bank",
+      "sloc_military_surplus",
+	  "sloc_lab_concourse_area",
+	  "sloc_prison",
+	  "sloc_restaraunt_foodplace_break_room",
+      "sloc_town_hall",
+	  "sloc_restaraunt_coffee",
+	  "sloc_liquor",
+	  "sloc_strip_mall",
+	  "sloc_stripclub",
+	  "sloc_warehouse",
+	  "sloc_icecreamshop",
+	  "sloc_candyshop",
+	  "sloc_small_office",
+	  "sloc_office_cubical",
+	  "sloc_office_doctor",
+	  "sloc_movie_theater",
+	  "sloc_megastore",
+	  "sloc_laundromat",
+	  "sloc_dive_shop",
+	  "sloc_tire_shop",
+	  "sloc_car_dealership",
+	  "sloc_construction_site",
+	  "sloc_collapsed_tower",
+	  "sloc_sex_shop",
+	  "sloc_dispensary",
+	  "sloc_headshop",
+	  "sloc_gym",
+	  "sloc_gardening",
+	  "sloc_craft_shop",
+	  "sloc_butcher_shop",
+	  "sloc_bike_shop",
+	  "sloc_gambling_hall",
+	  "sloc_dollarstore",
+	  "sloc_dojo",
+	  "sloc_bakery",
+	  "sloc_arcade",
+	  "sloc_animal_shelter",
+	  "sloc_airliner",
+	  "sloc_antique",
+	  "sloc_bowling",
+	  "sloc_art_gallery",
+	  "sloc_home_improvement_store",
+	  "sloc_music",
+	  "sloc_internet_cafe",
+	  "sloc_dock",
+	  "sloc_teashop",
+	  "sloc_thrift",
+	  "sloc_vet",
+	  "sloc_sports",
+	  "sloc_station_radio",
+	  "sloc_smoke_lounge_roof",
+	  "sloc_electronics",
+	  "sloc_post_office_overrun",
+	  "sloc_post_office",
+	  "sloc_post_office1",
+      "sloc_office_tower_rooftop"
+	  ],
+    "start_name": "Another Day, Another Dollar",
+    "flags": [ "CITY_START" ]
+  },
+  {
+    "type": "start_location",
+    "id": "sloc_restaraunt_coffee",
+    "name": "Coffee Shop",
+    "terrain": [ "s_restaurant_coffee" ]
+  },
+  {
+    "type": "start_location",
+    "id": "sloc_liquor",
+    "name": "Liquor Store",
+    "terrain": [ "s_liquor" ]
+  },
+  {
+    "type": "start_location",
+    "id": "sloc_strip_mall",
+    "name": "Strip Mall",
+    "terrain": [ "strip_mall_1" ]
+  },
+  {
+    "type": "start_location",
+    "id": "sloc_stripclub",
+    "name": "Stripclub",
+    "terrain": [ "stripclub" ]
+  },
+  {
+    "type": "start_location",
+    "id": "sloc_warehouse",
+    "name": "Warehouse",
+    "terrain": [ "warehouse" ]
+  },
+  {
+    "type": "start_location",
+    "id": "sloc_icecreamshop",
+    "name": "Ice Cream Shop",
+    "terrain": [ "icecream_shop" ]
+  },
+  {
+    "type": "start_location",
+    "id": "sloc_candyshop",
+    "name": "Candy Shop",
+    "terrain": [ "candy_shop" ]
+  },
+  {
+    "type": "start_location",
+    "id": "sloc_small_office",
+    "name": "Small Office",
+    "terrain": [ "small_office" ]
+  },
+  {
+    "type": "start_location",
+    "id": "sloc_office_cubical",
+    "name": "Cubical Office",
+    "terrain": [ "office_cubical" ]
+  },
+  {
+    "type": "start_location",
+    "id": "sloc_office_doctor",
+    "name": "Doctor's Office",
+    "terrain": [ "office_doctor" ]
+  },
+  {
+    "type": "start_location",
+    "id": "sloc_movie_theater",
+    "name": "Movie Theater",
+    "terrain": [ "movietheater_0_0" ]
+  },
+  {
+    "type": "start_location",
+    "id": "sloc_megastore",
+    "name": "Megastore Parking Lot",
+    "terrain": [ "megastore_parking" ]
+  },
+  {
+    "type": "start_location",
+    "id": "sloc_laundromat",
+    "name": "Laundromat",
+    "terrain": [ "s_laundromat" ]
+  },
+  {
+    "type": "start_location",
+    "id": "sloc_dive_shop",
+    "name": "Dive Shop",
+    "terrain": [ "s_dive_shop" ]
+  },
+  {
+    "type": "start_location",
+    "id": "sloc_tire_shop",
+    "name": "Tire Shop",
+    "terrain": [ "cs_tire_shop" ]
+  },
+  {
+    "type": "start_location",
+    "id": "sloc_car_dealership",
+    "name": "Car Dealership",
+    "terrain": [ "cs_car_dealership" ]
+  },
+  {
+    "type": "start_location",
+    "id": "sloc_construction_site",
+    "name": "Construction Site",
+    "terrain": [ "construction_site" ]
+  },
+  {
+    "type": "start_location",
+    "id": "sloc_collapsed_tower",
+    "name": "Collapsed Tower",
+    "terrain": [ "office_tower_collapse_b1" ]
+  },
+  {
+    "type": "start_location",
+    "id": "sloc_sex_shop",
+    "name": "Sex Shop",
+    "terrain": [ "cs_sex_shop" ]
+  },
+  {
+    "type": "start_location",
+    "id": "sloc_dispensary",
+    "name": "Dispensary - Roof",
+    "terrain": [ "dispensary_roof" ]
+  },
+  {
+    "type": "start_location",
+    "id": "sloc_headshop",
+    "name": "Headshop",
+    "terrain": [ "headshop" ]
+  },
+  {
+    "type": "start_location",
+    "id": "sloc_gym",
+    "name": "Gym",
+    "terrain": [ "gym_fitness" ]
+  },
+  {
+    "type": "start_location",
+    "id": "sloc_gardening",
+    "name": "Gardening Store",
+    "terrain": [ "s_gardening" ]
+  },
+  {
+    "type": "start_location",
+    "id": "sloc_craft_shop",
+    "name": "Craft Shop",
+    "terrain": [ "craft_shop" ]
+  },
+  {
+    "type": "start_location",
+    "id": "sloc_butcher_shop",
+    "name": "Butcher Shop",
+    "terrain": [ "s_butcher" ]
+  },
+  {
+    "type": "start_location",
+    "id": "sloc_bike_shop",
+    "name": "Bike Shop",
+    "terrain": [ "s_bike_shop" ]
+  },
+  {
+    "type": "start_location",
+    "id": "sloc_gambling_hall",
+    "name": "Gambling Hall",
+    "terrain": [ "gambling_hall" ]
+  },
+  {
+    "type": "start_location",
+    "id": "sloc_dollarstore",
+    "name": "Dollar Store",
+    "terrain": [ "dollarstore" ]
+  },
+  {
+    "type": "start_location",
+    "id": "sloc_dojo",
+    "name": "Dojo",
+    "terrain": [ "dojo" ]
+  },
+  {
+    "type": "start_location",
+    "id": "sloc_bakery",
+    "name": "Bakery",
+    "terrain": [ "bakery" ]
+  },
+  {
+    "type": "start_location",
+    "id": "sloc_arcade",
+    "name": "Arcade",
+    "terrain": [ "s_arcade" ]
+  },
+  {
+    "type": "start_location",
+    "id": "sloc_animal_shelter",
+    "name": "Animal Shelter",
+    "terrain": [ "animalshelter" ]
+  },
+  {
+    "type": "start_location",
+    "id": "sloc_airliner",
+    "name": "Airliner",
+    "terrain": [ "airliner_2a_1" ]
+  },
+  {
+    "type": "start_location",
+    "id": "sloc_antique",
+    "name": "Antique Store",
+    "terrain": [ "s_antique" ]
+  },
+  {
+    "type": "start_location",
+    "id": "sloc_bowling",
+    "name": "Bowling Alley",
+    "terrain": [ "bowling_alley" ]
+  },
+  {
+    "type": "start_location",
+    "id": "sloc_art_gallery",
+    "name": "Art Gallery",
+    "terrain": [ "art_gallery" ]
+  },
+  {
+    "type": "start_location",
+    "id": "sloc_home_improvement_store",
+    "name": "Home Improvement Store",
+    "terrain": [ "home_improvement" ]
+  },
+  {
+    "type": "start_location",
+    "id": "sloc_music",
+    "name": "Music Store",
+    "terrain": [ "s_music" ]
+  },
+  {
+    "type": "start_location",
+    "id": "sloc_internet_cafe",
+    "name": "Internet Cafe",
+    "terrain": [ "cs_internet_cafe" ]
+  },
+  {
+    "type": "start_location",
+    "id": "sloc_dock",
+    "name": "Dock",
+    "terrain": [ "lake_dock_small" ]
+  },
+  {
+    "type": "start_location",
+    "id": "sloc_teashop",
+    "name": "Teashop",
+    "terrain": [ "s_teashop" ]
+  },
+  {
+    "type": "start_location",
+    "id": "sloc_thrift",
+    "name": "Thrift Store",
+    "terrain": [ "s_thrift" ]
+  },
+  {
+    "type": "start_location",
+    "id": "sloc_vet",
+    "name": "Veterinarian",
+    "terrain": [ "veterinarian" ]
+  },
+  {
+    "type": "start_location",
+    "id": "sloc_sports",
+    "name": "Sports Store",
+    "terrain": [ "s_sports" ]
+  },
+  {
+    "type": "start_location",
+    "id": "sloc_station_radio",
+    "name": "Radio Station",
+    "terrain": [ "station_radio" ]
+  },
+  {
+    "type": "start_location",
+    "id": "sloc_smoke_lounge_roof",
+    "name": "Smoke Lounge - Roof",
+    "terrain": [ "smoke_lounge_roof" ]
+  },
+  {
+    "type": "start_location",
+    "id": "sloc_electronics",
+    "name": "Electronics Store",
+    "terrain": [ "s_electronics" ]
+  },
+  {
+    "type": "start_location",
+    "id": "sloc_post_office_overrun",
+    "name": "Overrun Post Office - Roof",
+    "terrain": [ "post_office_overrun_roof" ]
+  },
+  {
+    "type": "start_location",
+    "id": "sloc_post_office",
+    "name": " Post Office - Roof",
+    "terrain": [ "post_office_roof" ]
+  },
+  {
+    "type": "start_location",
+    "id": "sloc_post_office1",
+    "name": " Post Office - Roof",
+    "terrain": [ "post_office_roof_1" ]
+  },
+{
+    "type": "scenario",
+    "id": "magic_basement",
+    "copy-from": "magic_basement",
+    "extend": { "professions": [ 
+	"ranchersoon", 
+	"psychic", 
+	"magictailor", 
+	"cheatingfencer", 
+	"magicgunslinger", 
+	"paralegal", 
+	"magicmechanic", 
+	"magic_bow_hunter", 
+	"magicmedic", 
+	"buddingtechie", 
+	"forceful_mage", 
+	"ailing_artist", 
+	"magicmartialartist",
+    "fishierman", 
+	"courier", 
+	"budding_soulmancer", 
+	"budding_magician", 
+	"foodplace_fanatic", 
+	"gaming_prodigy", 
+	"corporate_bodyguard", 
+	"bio_dog", 
+	"frost_wizard", 
+    "gateinstallationtech", 
+	"paranoidpriest", 
+	"proburglar", 
+	"famous_boxer", 
+	"drunkard",	
+	"blamelessdude", 
+	"paranormalinvestigator" ] }
+ },
+ {
+    "type": "scenario",
+    "id": "lake_retreat",
+    "copy-from": "lake_retreat",
+    "extend": { "professions": [ 
+	"ranchersoon", 
+	"psychic", 
+	"magictailor", 
+	"cheatingfencer", 
+	"magicgunslinger", 
+	"paralegal", 
+	"magicmechanic", 
+	"magic_bow_hunter", 
+	"magicmedic", 
+	"buddingtechie", 
+	"forceful_mage", 
+	"ailing_artist", 
+	"magicmartialartist",
+    "fishierman", 
+	"courier", 
+	"budding_soulmancer", 
+	"budding_magician", 
+	"foodplace_fanatic", 
+	"gaming_prodigy", 
+	"corporate_bodyguard", 
+	"bio_dog", 
+	"frost_wizard", 
+    "gateinstallationtech", 
+	"paranoidpriest", 
+	"proburglar", 
+	"famous_boxer", 
+	"drunkard",	
+	"blamelessdude", 
+	"paranormalinvestigator" ] }
+ },
+  {
+    "id": "MISSION_CLEANSE",
+    "type": "mission_definition",
+    "name": { "str": "Investigate Ghost Sightings" },
+    "difficulty": 7,
+    "value": 0,
+    "goal": "MGOAL_CONDITION",
+    "goal_condition": {
+      "or": [
+        { "u_has_item": "classified_intelligence" },
+        { "u_has_item": "cleansed_soul" },
+        { "u_has_item": "big_book_of_metaknowledge" },
+        { "u_has_item": "nondescript_briefcase" }
+      ]
+    },
+    "origins": [ "ORIGIN_GAME_START" ],
+    "end": {
+      "effect": [
+        {
+          "u_add_morale": "morale_feeling_good",
+          "bonus": 10,
+          "max_bonus": 50,
+          "duration": "72 hours",
+          "decay_start": "72 hours"
+        }
+      ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "paranormalinvestigator",
+    "name": "Curious Private Eye",
+    "description": "Before all the shit went down, you were nothing more than curious. Now you're deadset on figuring out exactly where in the hell all these ghosts are coming from. Heh, dead-set. You're gonna try your damndest to learn a little something about these 'ghosts,' and what you can do to pass them on.",
+    "points": 4,
+    "traits": [ "WAKEFUL" ],
+    "proficiencies": [ "prof_spotting" ],
+    "items": {
+      "both": {
+        "items": [ "suit", "tie_skinny", "duster_leather", "gloves_leather", "porkpie", "money_strap_hundred", "wristwatch", "socks", "dress_shoes", "cigar" ],
+        "entries": [
+          { "group": "charged_smart_phone" },
+          { "group": "charged_ref_lighter" },
+          { "group": "speedloaders_s&w619_magnum" },
+          { "item": "magic_camera_pro", "container-item": "camera_bag" },
+          { "item": "light_battery_cell", "ammo-item": "battery", "charges": 100, "container-item": "nre_recorder" },
+          { "item": "sw_619", "ammo-item": "357mag_fmj", "charges": 7, "container-item": "holster" }
+        ]
+      },
+      "male": [ "briefs" ],
+      "female": [ "bra", "panties" ]
+    },
+    "skills": [ { "level": 3, "name": "gun" }, { "level": 3, "name": "pistol" }, { "level": 2, "name": "spellcraft" } ],
+    "missions": [ "MISSION_CLEANSE" ],
+    "addictions": [ { "intensity": 10, "type": "nicotine" } ]
+  },
+  {
+    "type": "profession",
+    "id": "ranchersoon",
+    "name": "Soon-To-Be Rancher",
+    "description": "You were juuuust starting to get everything set up when all hell broke loose. Guess your dream of having a little place all to yourself will have to wait.",
+    "points": 3,
+    "items": {
+      "both": {
+        "items": [
+          "jeans",
+          "leather_belt",
+          "dress_shirt",
+          "socks",
+          "cowboy_hat",
+          "boots_western",
+		  "money_strap_hundred",
+          "wristwatch",
+          "mbag",
+          "pockknife",
+          "cig",
+          "essential_estate_enchantments"
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    },
+    "skills": [ { "level": 1, "name": "survival" }, { "level": 1, "name": "spellcraft" } ]
+  },
+  {
+    "type": "profession",
+    "id": "governmentemployee",
+    "name": "Asset Requisitions Department",
+    "description": "You carried water for the higher ups when times got tough. Nothing illegal, you'll testify to that. You're not sure where they are now, or where anyone is for that matter, but hey at least you're out of the office.",
+    "points": 3,
+    "traits": [ "FIRSTTHINGSFIRST_SPELL", "MAGICDRIVE_SPELL" ],
+    "items": {
+      "both": { "items": [ "fedora", "record_accounting", "decaying_soul", "boxer_shorts", "sf_watch", "nondescript_briefcase" ] }
+    },
+    "skills": [ { "level": 2, "name": "spellcraft" } ],
+    "addictions": [ { "intensity": 10, "type": "caffeine" } ]
+  },
+  {
+    "type": "profession",
+    "id": "psychic",
+    "name": "Intuitive Psychic",
+    "description": "Your intuitive connection to the world around you has always allowed you to manipulate it in ways that others can't.",
+    "points": 4,
+    "traits": [ "SUBTLE_SPELL", "SILENT_SPELL", "SCRYING_SPELL", "WILLTOPOWER_SPELL", "EXTRACTMEMORY_SPELL", "FLIGHT_SPELL", "LETLOOSE_SPELL", "DIRECTEDMANA_SPELL" ],
+    "items": {
+      "both": {
+        "items": [
+		  "boxer_shorts",
+		  "jeans",
+          "hat_ball",
+          "backpack",
+          "long_underpants",
+		  "money_hundred",
+          "boots",
+          "socks",
+          "hoodie",
+          "caff_gum"
+        ]
+      }
+    },
+    "skills": [ { "level": 2, "name": "spellcraft" } ]
+  },
+  {
+    "type": "profession",
+    "id": "magictailor",
+    "name": "Enchanting Tailor",
+    "description": "Tailoring may not seem like the most useful skill when the world has ended.  Most people wouldn't expect a simple tailor to live very long. You are not a simple tailor.",
+    "points": 5,
+    "skills": [ { "level": 4, "name": "tailor" }, { "level": 2, "name": "spellcraft" } ],
+	"traits": [ "MAGICIANSDUFFEL_SPELL", "CLOSETEAR_SPELL", "SUMMONBIKE_SPELL", "BEAUTIFICATION_SPELL", "DIMENSIONALSTEP_SPELL" ],
+    "proficiencies": [
+      "prof_fibers",
+      "prof_leatherworking_basic",
+      "prof_leatherworking",
+      "prof_closures",
+      "prof_cobbling"
+    ],
+	"CBMs": [ "bio_razors" ],
+    "items": {
+      "both": {
+        "items": [
+          "mbag",
+          "polo_shirt",
+          "peacoat",
+          "pants",
+          "socks",
+          "dress_shoes",
+          "knit_scarf",
+		  "money_strap_hundred",
+		  "money_strap_hundred",
+		  "antoninianus",
+		  "ring_signet",
+		  "cig",
+          "textbook_tailor",
+          "sf_watch",
+          "hairpin"
+        ],
+        "entries": [ { "group": "charged_smart_phone" }, { "item": "tailors_kit", "ammo-item": "thread", "charges": 100 } ]
+      },
+      "male": [ "briefs" ],
+      "female": [ "bra", "panties" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "cheatingfencer",
+    "name": "Cheating Fencer",
+    "description": "Years of training prepared you for the competitive fencing circuit, but your latest tournament was cut short when zombies invaded the piste.  The referee was eaten, so you're not sure if the rules are still in play.",
+    "points": 5,
+    "skills": [ { "level": 2, "name": "melee" }, { "level": 2, "name": "dodge" }, { "level": 2, "name": "spellcraft" } ],
+    "traits": [ "MARTIAL_FENCING", "HASTE_SPELL" ],
+    "items": {
+      "both": {
+        "items": [
+          "fencing_pants",
+          "fencing_jacket",
+          "gauntlet_fencing",
+          "plastron_cotton",
+		  "money_bundle_hundred",
+          "under_armor_shorts",
+          "socks",
+          "sneakers",
+          "fencing_epee",
+          "duffelbag"
+        ],
+        "entries": [ { "item": "fencing_mask", "custom-flags": [ "no_auto_equip" ] }, { "group": "charged_smart_phone" } ]
+      },
+      "female": [ "plastron_plastic" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "magicgunslinger",
+    "name": "Magical Gunslinger",
+    "description": "In the old world, you weren't never nothin' more than a gun for hire with a couple tricks up their sleeve. But that world has ended, so you took your trusty six-shooter and wandered into a world where it's always high noon.",
+    "points": 5,
+	"traits": [ "DISTRACTION_SPELL", "SUMMONSTEED_SPELL", "SUBTLE_SPELL", "POCKETSNIPER_SPELL" ],
+    "proficiencies": [ "prof_gunsmithing_basic" ],
+    "skills": [
+      { "level": 4, "name": "gun" },
+      { "level": 3, "name": "pistol" },
+      { "level": 2, "name": "shotgun" },
+      { "level": 1, "name": "spellcraft" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "under_armor",
+          "under_armor_shorts",
+          "hat_sombrero",
+		  "knit_scarf",
+          "socks",
+          "jeans",
+          "chaps_leather",
+          "gloves_leather",
+		  "money_strap_hundred",
+          "boots_western",
+          "duster",
+          "novel_western"
+        ],
+        "entries": [
+          { "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] },
+		  { "item": "horse_tack", "custom-flags": [ "auto_wield" ] },
+          {
+            "item": "colt_saa",
+            "ammo-item": "45colt_jhp",
+            "charges": 6,
+            "container-item": "western_holster",
+            "contents-group": "bandolier_ww_gunslinger"
+          },
+          { "item": "sheriffshirt", "variant": "sheriff" }
+        ]
+      }
+    }
+  },
+  {
+    "type": "profession",
+    "id": "paralegal",
+    "name": "Paralegal",
+    "description": "You were just getting your foot in the door at a firm dedicated to serving justice even to those cases deemed less-than normal. You picked up a thing or two along the way, but your training didn't involve armies of the dead...",
+    "points": 1,
+	"traits": [ "FIRSTTHINGSFIRST_SPELL", "ENTRAPMENT_SPELL" ],
+    "skills": [ { "level": 2, "name": "speech" } ],
+    "items": {
+      "both": {
+        "items": [
+          "suit",
+          "tie_necktie",
+          "tieclip",
+          "socks",
+		  "money_strap_hundred",
+		  "money_strap_hundred",
+		  "money_strap_hundred",
+          "dress_shoes",
+          "knit_scarf",
+          "briefcase", 
+		  "pen",
+		  "paper"
+        ],
+        "entries": [ { "group": "charged_smart_phone" } ]
+      },
+      "male": [ "briefs" ],
+      "female": [ "bra", "panties" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "magicmechanic",
+    "name": "Patch Mechanic",
+    "description": "You've always loved cars, and there's nothing like getting under the hood and fixing it yourself. When that fails, use duct tape.",
+    "proficiencies": [ "prof_metalworking", "prof_welding_basic", "prof_elec_soldering" ],
+    "points": 4,
+	"traits": [ "MANATRICITY_SPELL", "FUELERUP_SPELL" ],
+	"CBMs": [ "bio_tools", "bio_power_storage" ],
+    "skills": [ { "level": 2, "name": "mechanics" }, { "level": 1, "name": "driving" }, { "level": 1, "name": "spellcraft" } ],
+    "items": {
+      "both": {
+        "items": [ "slingpack", "tank_top", "jeans", "socks", "boots_steel", "money_hundred", "money_hundred", "money_hundred", "unending_tape", "wristwatch", "mag_cars" ],
+        "entries": [
+          { "item": "goggles_welding", "custom-flags": [ "no_auto_equip" ] },
+          { "group": "charged_smart_phone" },
+          { "item": "wrench", "container-item": "tool_belt" }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "boy_shorts" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "magic_bow_hunter",
+    "name": "Hunting Enthusiast",
+    "description": "Ever since you were a child you loved hunting, and quickly developed a talent for archery. When that wasn't enough, you learned what you needed to get by.",
+    "points": 3,
+    "proficiencies": [ "prof_bow_basic", "prof_bow_expert", "prof_bowyery" ],
+	"traits": [ "HATTRICK_SPELL", "INSTANTCAMP_SPELL" ],
+    "skills": [ { "level": 2, "name": "archery" }, { "level": 1, "name": "spellcraft" } ],
+    "items": {
+      "both": {
+        "items": [
+          "army_top",
+          "knit_scarf",
+          "socks",
+          "boots_steel",
+          "pants_cargo",
+		  "money_fifty",
+          "jacket_flannel",
+          "bow_sling",
+          "bow_sight_pin",
+          "hat_hunting",
+          "wristwatch"
+        ],
+        "entries": [
+          { "group": "charged_smart_phone" },
+          { "item": "compbow_low", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "quiver", "contents-group": "quiver_bow_hunter" },
+          { "item": "sheath", "contents-item": "knife_hunting" }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "sports_bra", "boxer_shorts" ]
+    },
+    "missions": [ "MISSION_HUNTER" ]
+  },
+  {
+    "type": "profession",
+    "id": "magicmedic",
+    "name": "Magical Medical Resident",
+    "description": "Fresh out of med school, you've got little in the way of practical experience and just a handful of first-aid supplies.  You just hope it will be enough if 'physician, heal thyself' turns out to be more literal than you expected.",
+    "points": 3,
+    "skills": [ { "level": 2, "name": "firstaid" }, { "level": 2, "name": "spellcraft" }  ],
+    "proficiencies": [ "prof_wound_care", "prof_wound_care_expert", "prof_intro_biology", "prof_physiology", "prof_burn_care" ],
+    "traits": [ "PROF_MED", "CURELIGHTWOUNDS_SPELL" ],
+    "items": {
+      "both": {
+        "items": [
+          "pants",
+          "dress_shirt",
+          "gloves_medical",
+          "socks",
+          "dress_shoes",
+          "coat_lab",
+		  "money_strap_hundred",
+          "badge_doctor",
+          "glasses_safety",
+          "wristwatch",
+          "water_clean",
+          "bandages",
+          { "item": "adhesive_bandages", "count": 10 },
+          "aspirin",
+          "stethoscope"
+        ],
+        "entries": [ { "group": "charged_smart_phone" } ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "buddingtechie",
+    "name": "Budding Techie",
+    "description": "You've always been smart: hopefully that's enough.",
+    "points": 3,
+	"CBMs": [ "bio_power_storage" ],
+    "skills": [
+      { "level": 2, "name": "computer" },
+      { "level": 2, "name": "chemistry" },
+      { "level": 2, "name": "electronics" },
+      { "level": 2, "name": "mechanics" }
+    ],
+    "proficiencies": [ "prof_intro_chemistry", "prof_intro_biology" ],
+    "items": {
+      "both": {
+        "items": [ "dress_shirt", "pants", "money_hundred", "socks", "boots", "all_purpose_watch" ],
+        "entries": [
+          { "item": "medium_battery_cell", "ammo-item": "battery", "charges": 500, "container-item": "chemistry_set" }
+        ]
+      },
+      "male": [ "briefs" ],
+      "female": [ "bra", "panties" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "forceful_mage",
+    "name": "Forceful Mage",
+    "description": "You've always found it easiest to use magic when it was applied directly.",
+    "points": 0,
+	"traits": [ "DIRECTEDMANA_SPELL", "YANK_SPELL", "JAROFFORCE_SPELL", "IMPACTSLING_SPELL" ],
+    "items": {
+      "both": {
+        "items": [ "jeans", "gloves_light", "hat_ball", "ring_signet", "boots", "socks", "hoodie" ],
+        "entries": [ { "item": "tshirt", "variant": "generic_tshirt" } ]
+      },
+      "male": [ "boxer_briefs" ],
+      "female": [ "bra", "panties" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "ailing_artist",
+    "name": "Ailing Artist",
+    "description": "Your art has nearly driven you to madness, as it did to poverty. Maybe this Cataclysm was a stroke of genius...",
+    "points": 0,
+	"traits": [ "JEKYLL", "DIVERGENCEFROMREALITY_SPELL" ],
+    "items": {
+      "both": {
+        "items": [ "jeans", "hat_ball", "boots", "socks", "knit_scarf", "money_one", "money_one", "coin_nickel", "coin_penny", "coin_penny", "hoodie", "leather_journal", "white_pen" ],
+        "entries": [ { "item": "tshirt", "variant": "generic_tshirt" }, { "item": "crystallized_ink", "container-item": "flask_glass" } ]
+      },
+      "male": [ "boxer_briefs" ],
+      "female": [ "bra", "panties" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "magicmartialartist",
+    "name": "Magical Martial Artist",
+    "description": "As the world ends, you alone stand against the coming darkness with your fists of steel.",
+    "points": 3,
+    "traits": [ "MAGICDRIVE_SPELL", "CHARGEENERGY_SPELL", "SHOVE_SPELL", "SHOULDERCHARGE_SPELL", "CHARGEATTACK_SPELL" ],
+    "skills": [
+      { "level": 5, "name": "melee" },
+      { "level": 5, "name": "unarmed" },
+      { "level": 5, "name": "dodge" }
+    ],
+    "items": {
+      "both": [ "karate_gi", "judo_belt_black", "mouthpiece", "geta" ],
+      "male": [ "boxer_shorts" ],
+      "female": [ "sports_bra", "boy_shorts" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "fishierman",
+    "name": "Fishierman",
+    "description": "You spent most of your days fishing in the swamp, getting by quietly on your catch. In fact, maybe you spent a little TOO much time there...",
+    "points": 2,
+    "skills": [ { "level": 2, "name": "swimming" }, { "level": 2, "name": "survival" } ],
+	"traits": [ "MARINATE_SPELL", "SMELLY", "SLEEK_SCALES", "TAIL_FIN" ],
+    "proficiencies": [ "prof_fibers" ],
+    "items": {
+      "both": {
+        "items": [
+          "jeans",
+          "tank_top",
+          "socks",
+          "fishing_waders",
+          "knit_scarf",
+          "vest",
+          "hat_boonie",
+		  "antoninianus", 
+          "wristwatch",
+          "backpack",
+          "jacket_flannel"
+        ],
+        "entries": [
+          { "group": "charged_smart_phone" },
+          { "item": "fish_trap", "ammo-item": "fish_bait", "charges": 5 },
+          { "item": "fish_bait", "charges": 15 },
+          { "item": "lighter", "charges": 100 },
+          { "item": "knife_hunting", "container-item": "sheath" },
+          { "item": "fishing_rod_professional", "custom-flags": [ "auto_wield" ] }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "courier",
+    "name": "Special Courier",
+    "description": "You were always good at getting from one place to the next. Nowadays that skill might be even more useful.",
+    "points": 3,
+	"traits": [ "RABBITSFOOT_SPELL", "HOMEWARD_SPELL", "SUMMONBIKE_SPELL" ],
+    "skills": [ { "level": 3, "name": "driving" }, { "level": 3, "name": "spellcraft" }, { "level": 1, "name": "speech" } ],
+    "items": {
+      "both": {
+        "items": [
+          "hat_newsboy",
+          "sweatshirt",
+          "pants",
+          "peacoat",
+          "socks",
+          "boots_winter",
+          "gloves_wool",
+		  "money_strap_hundred",
+          "knit_scarf",
+          "mbag",
+          "dog_whistle",
+          "wristwatch"
+        ],
+        "entries": [ { "group": "charged_smart_phone" } ]
+      },
+      "male": [ "briefs" ],
+      "female": [ "bra", "boy_shorts" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "budding_soulmancer",
+    "name": "Budding Soulmancer",
+    "description": "You always had to hide your magic, as it was generally not an acceptable type of magic in the wizarding world, but with the Cataclysm you need to pull every trick out of the book.",
+    "spells": [ { "id": "soul_bind", "level": 5 }, { "id": "abolish_spirit", "level": 5 }, { "id": "cause_pain", "level": 5 } ],
+    "points": 2,
+    "skills": [ { "level": 1, "name": "spellcraft" } ],
+    "items": {
+      "both": {
+        "items": [ "jeans", "gloves_light", "pointed_hat", "boots", "socks", "hoodie", "leather_belt" ],
+        "entries": [
+          { "item": "primitive_knife", "container-item": "sheath" },
+          { "item": "tshirt", "variant": "skeletor_tshirt" },
+          { "item": "onyx_silver_bracelet", "variant": "dark_bracelet" },
+          { "item": "onyx_silver_ring", "variant": "dark_ring" }
+        ]
+      },
+      "male": [ "boxer_briefs" ],
+      "female": [ "bra", "panties" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "budding_magician",
+    "name": "Budding Magician",
+    "description": "You've still got years of practice ahead of you, but you feel as though you're starting to catch on to this 'Magic' thing.",
+    "points": 0,
+    "items": {
+      "both": {
+        "items": [ "jeans", "long_glove_white", "tophat", "sneakers", "coin_quarter", "socks", "suit", "knit_scarf", "mind_over_magic" ],
+        "entries": [ { "item": "tshirt", "variant": "generic_tshirt" } ]
+      },
+      "male": [ "boxer_briefs" ],
+      "female": [ "bra", "panties" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "foodplace_fanatic",
+    "name": "Foodplace Fanatic",
+    "description": "You know your way around a hamburger, and it shows. Unfortunately, you just lost your Foodplace Loyalty Card, and you need another one if you want at those sweet, sweet hamburgers...",
+    "points": 0,
+	"traits": [ "XXXL", "CENTEROFGRAVITY_SPELL", "SUMMONSLUDGE_SPELL" ],
+    "items": {
+      "both": {
+        "items": [ "jeans", "sneakers", "socks", "tank_top", "money_hundred", "foodplace_subscription_box" ],
+        "entries": [ { "item": "tshirt", "variant": "generic_tshirt" } ]
+      },
+      "male": [ "boxer_briefs" ],
+      "female": [ "bra", "panties" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "gaming_prodigy",
+    "name": "Gaming Prodigy",
+	"traits": [ "CATALYST_SPELL", "SILENT_SPELL", "INDUCEGUILT_SPELL", "FOXSCUNNING_SPELL", "GAMBIT_SPELL" ],
+    "description": "Caffeine pills and all-nighters in front of a computer screen made you an expert at doing a wee bit o' trollin. Some might say you're something of a genius yourself.",
+    "points": 1,
+    "skills": [ { "level": 4, "name": "computer" }, { "level": 4, "name": "speech" }, { "level": 1, "name": "spellcraft" } ],
+    "items": {
+      "both": {
+        "items": [
+          "pants",
+          "tshirt_text",
+          "socks",
+          "sneakers",
+          "mbag",
+          "caffeine",
+          "portable_game_magic"
+        ],
+        "entries": [
+          { "group": "charged_smart_phone" }
+        ]
+      },
+      "male": [ "briefs" ],
+      "female": [ "sports_bra", "panties" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "corporate_bodyguard",
+    "name": "Coporate Bodyguard",
+    "description": "You had a boring job making sure VIPs got from one skyscraper to the next. The company car might come in handy, as long as you can afford to use it.",
+    "points": 1,
+	"traits": [ "SPAWNCAR_SPELL" ],
+    "items": {
+      "both": {
+        "items": [ "pants", "socks", "boots_combat", "longshirt", "knife_folding", "money_strap_hundred", "hat_ball", "wristwatch", "leather_belt" ],
+        "entries": [
+          { "group": "charged_smart_phone" },
+          { "group": "charged_flashlight" },
+          { "item": "soft_3a_vest", "variant": "security_armor_vest" },
+          { "item": "spell_scroll_spawn_car", "custom-flags": [ "auto_wield" ] },
+          { "item": "m9", "ammo-item": "9mm", "charges": 15, "container-item": "holster" },
+          { "item": "m9mag", "ammo-item": "9mm", "charges": 15 },
+          { "item": "m9mag", "ammo-item": "9mm", "charges": 15 }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "boy_shorts" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "bio_dog",
+    "name": "Bio Dog",
+    "description": "You were a Bio Dog: The kind of elite soldier who only fought for the highest bidder. You spent most of your time puppyguarding some corpo rat or another. Now that the plague hit? You're taking the chopper and running.",
+    "points": 8,
+	"traits": [ "AIRLIFT_SPELL", "ANTIPROJECTILE_SPELL", "CANINE_EARS", "DRAINNERVOUSSYSTEM_SPELL" ],
+    "proficiencies": [ "prof_gunsmithing_basic", "prof_helicopter_pilot", "prof_disarming", "prof_spotting" ],
+	"CBMs": [ "bio_targeting", "bio_power_storage_mkII", "bio_painkiller" ],
+    "skills": [
+      { "level": 6, "name": "gun" },
+      { "level": 6, "name": "smg" },
+      { "level": 6, "name": "rifle" },
+      { "level": 4, "name": "cutting" },
+      { "level": 4, "name": "melee" },
+      { "level": 3, "name": "dodge" },
+      { "level": 3, "name": "firstaid" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "pants_army",
+          "tac_helmet",
+          "wetsuit_gloves",
+          "gloves_tactical",
+          "socks",
+          "boots_combat",
+		  "money_bundle_hundred", 
+          "dive_bag",
+          "diving_watch"
+        ],
+        "entries": [
+          { "group": "charged_two_way_radio" },
+          { "item": "water_clean", "container-item": "canteen" },
+          { "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "glasses_bal", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "kukri", "container-item": "sheath" },
+          { "item": "chestrig", "contents-group": "army_mags_mp5" },
+          {
+            "item": "hk_mp5",
+            "ammo-item": "9mm",
+            "charges": 30,
+            "contents-item": [ "shoulder_strap", "suppressor", "holo_sight" ]
+          }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "sports_bra", "boxer_shorts" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "frost_wizard",
+    "name": "Chilling Wizard",
+	"traits": [ "FROSTARMOR_SPELL", "GLIDEONICE_SPELL", "CHILLINGTOUCH_SPELL", "SUMMONCOLD_SPELL" ],
+    "description": "You were juuust starting to get the hang of keeping things cool. Now, keeping your cool's about the only thing you CAN do.",
+    "points": 0,
+    "items": {
+      "both": {
+        "items": [ "jeans", "gloves_light", "hat_ball", "boots", "socks" ],
+        "entries": [ { "item": "tshirt", "variant": "generic_tshirt" } ]
+      },
+      "male": [ "boxer_briefs" ],
+      "female": [ "bra", "panties" ]
+    }
+  },
+  {
+    "id": "gateinstallationtech",
+    "type": "profession",
+    "name": "Translocation Technician",
+    "description": "Employed by the largest Translocation Gate operation in the world, your job was to install and maintain Gates all throughout the city. Driving back from your last call, you were suddenly swarmed by what you believed to be angry rioters.  You veered off onto an old, neglected side road to escape, only to find yourself lost and low on gas.",
+    "points": 4,
+	"traits": [ "TRANSGATEPLACE_SPELL", "TRANSLOCATESELF_SPELL" ],
+    "skills": [ { "level": 3, "name": "electronics" }, { "level": 2, "name": "driving" }, { "level": 1, "name": "spellcraft" } ],
+    "proficiencies": [ "prof_appliance_repair" ],
+    "vehicle": "cube_van_cheap",
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt",
+          "socks",
+          "boots",
+          "pants",
+          "multitool",
+          "wristwatch",
+          "mbag",
+          "water_clean",
+          "gloves_work",
+          "hammer",
+          "hat_ball"
+        ],
+        "entries": [ { "group": "charged_smart_phone" }, { "group": "charged_electrical_measuring" } ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "panties", "bra" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "paranoidpriest",
+    "name": "Paranoid Priest",
+    "description": "Armageddon has come, and you were ready! You did everything you could to protect your parish faithful, but it appears that prayers were not enough. Looks like you'll have to use some of those gifts from above...",
+    "points": 2,
+	"traits": [ "PRAYER_SPELL", "HOLYBLADE_SPELL", "BLESS_SPELL", "SPIRITUALARMOR_SPELL" ],
+    "skills": [ { "level": 1, "name": "speech" }, { "level": 1, "name": "spellcraft" } ],
+    "items": {
+      "both": {
+        "items": [ "pants", "longshirt", "socks", "cassock", "dress_shoes", "holy_symbol", "holybook_bible1" ],
+        "entries": [ { "group": "charged_smart_phone" } ]
+      },
+      "male": [ "briefs" ],
+      "female": [ "bra", "panties" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "proburglar",
+    "name": "Pro Burglar",
+    "description": "Plenty of loot to be pilfered, and no cops to be seen. For you? That's about the same as it was before.",
+    "points": 2,
+	"traits": [ "KNOCK_SPELL", "INVISIBILITY_SPELL" ],
+    "skills": [ { "level": 4, "name": "spellcraft" } ],
+    "items": {
+      "both": [
+        "socks",
+        "sneakers",
+        "pants",
+        "striped_shirt",
+        "hoodie",
+        "gloves_light",
+        "mask_ski",
+        "swag_bag",
+        "hacksaw",
+        "wristwatch",
+        "grapnel",
+        "stethoscope"
+      ],
+      "male": [ "briefs" ],
+      "female": [ "bra", "panties" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "famous_boxer",
+    "name": "Famous Boxer",
+    "description": "You were well known for being able to beat anyone in a fair fight. Little did they know...",
+    "points": 2,
+	"traits": [ "ENLARGE_SPELL", "OGRESSTRENGTH_SPELL" ],
+    "skills": [ { "level": 2, "name": "dodge" }, { "level": 1, "name": "spellcraft" }, { "level": 2, "name": "melee" }, { "level": 2, "name": "unarmed" } ],
+    "items": {
+      "both": {
+        "items": [ "tank_top", "shorts", "socks_ankle", "gloves_wraps_leather", "sneakers", "runner_bag" ],
+        "entries": [ { "group": "charged_smart_phone" } ]
+      },
+      "male": [ "briefs" ],
+      "female": [ "sports_bra", "boy_shorts" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "drunkard",
+    "name": "Useless Drunk",
+    "description": "Gotta fin' sometin ta drink...",
+    "points": 0,
+    "items": {
+      "both": { "items": [ "house_coat", "flask_hip", "slippers", "energy_in_combat" ] },
+      "male": [ "boxer_shorts" ],
+      "female": [ "panties" ]
+    },
+    "addictions": [ { "intensity": 10, "type": "alcohol" } ]
+  },
+  {
+    "type": "profession",
+    "id": "blamelessdude",
+    "name": { "male": "Blameless Dude", "female": "Blameless Dudette" },
+    "description": "You aren't even like, part of this thing! You just did what the voice, or man, or thing told you to do. And, uh, that money isn't yours...",
+    "traits": [ "DOUBLETROUBLE_SPELL" ],
+    "points": -1,
+    "items": {
+      "both": {
+        "items": [ "hoodie", "pact_of_flame", "socks", "sneakers", "wristwatch", "spell_scroll_wicked_ritual", "money_bundle_hundred" ],
+        "entries": [ { "item": "onyx_silver_earring", "variant": "dark_earring" }, { "item": "onyx_silver_ring", "variant": "dark_ring" } ]
+      },
+      "male": [ "jeans", "tank_top", "boxer_shorts" ],
+      "female": [ "skirt", "boxer_shorts", "bra" ]
+    },
+    "addictions": [ { "intensity": 10, "type": "crystallized_mana" } ]
+  }
+]
