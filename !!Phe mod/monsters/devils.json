@@ -227,7 +227,7 @@
     { "id": "SHOCKSTORM", "cooldown": 12, "range": 1 },
       {
         "type": "spell",
-        "spell_data": { "id": "phase_shrike_teleport", "min_level": 1 },
+        "spell_data": { "id": "phase_strike_teleport", "min_level": 1 },
         "cooldown": 4,
         "monster_message": "the simulacrum warps towards you with a magical spell."
       }
