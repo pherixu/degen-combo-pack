@@ -6,7 +6,7 @@
     "name": "small hammer drone",
     "looks_like": "mon_copbot",
     "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a small clamp and a jackhammer. Small tires are constantly screeching as the bot actively scans the area for threats.",
-    "revert_to_itype": "bot_smallhammerbot",
+    "revert_to_itype": "bot_smallhammerdrone",
     "relative": { "speed": 160 }
   },
   {
@@ -16,7 +16,7 @@
     "name": "small wrecking drone",
     "looks_like": "mon_copbot",
     "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a motor, a set of chains, and a menacing bludgeon. Small tires are constantly screeching as the bot actively scans the area for threats.",
-    "revert_to_itype": "bot_smallwreckingbot",
+    "revert_to_itype": "bot_smallwreckingdrone",
     "relative": { "speed": 160 }
   },
   {
@@ -26,7 +26,7 @@
     "name": "small saw drone",
     "looks_like": "mon_copbot",
     "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with several motors and nasty saws. Small tires are constantly screeching as the bot actively scans the area for threats.",
-    "revert_to_itype": "bot_smallsawbot",
+    "revert_to_itype": "bot_smallsawdrone",
     "relative": { "speed": 160 }
   },
   {
@@ -36,7 +36,7 @@
     "name": "small drill drone",
     "looks_like": "mon_copbot",
     "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a small clamp, meant to hold prey into several powerful drills. Small tires are constantly screeching as the bot actively scans the area for threats.",
-    "revert_to_itype": "bot_smalldrillbot",
+    "revert_to_itype": "bot_smalldrilldrone",
     "relative": { "speed": 160 }
   },
   {
@@ -46,7 +46,7 @@
     "name": "small blade drone",
     "looks_like": "mon_copbot",
     "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a small, sharp blade attached to heavy duty flexible material, pulled taut by a powerful motor and held by heavy-duty pins..",
-    "revert_to_itype": "bot_smallbladebot",
+    "revert_to_itype": "bot_smallbladedrone",
     "relative": { "speed": 160 }
   },
   {
@@ -56,7 +56,7 @@
     "name": "small jaw drone",
     "looks_like": "mon_copbot",
     "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a massive hydraulic jaw. Small tires are constantly screeching as the bot actively scans the area for threats.",
-    "revert_to_itype": "bot_smalljawbot",
+    "revert_to_itype": "bot_smalljawdrone",
     "relative": { "speed": 160 }
   },
   {
@@ -66,7 +66,7 @@
     "name": "small flame drone",
     "looks_like": "mon_copbot",
     "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a massive hydraulic flame. Small tires are constantly screeching as the bot actively scans the area for threats.",
-    "revert_to_itype": "bot_smallflamebot",
+    "revert_to_itype": "bot_smallflamedrone",
     "relative": { "speed": 160 }
   },
   {
@@ -76,7 +76,7 @@
     "name": "small exterminator drone",
     "looks_like": "mon_copbot",
     "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with tanks of insecticidal gas and powerful pincers. Small tires are constantly screeching as the bot actively scans the area for threats.",
-    "revert_to_itype": "bot_smallbugbot",
+    "revert_to_itype": "bot_smallbugdrone",
     "relative": { "speed": 160 }
   },
   {
@@ -86,7 +86,7 @@
     "name": "small flash drone",
     "looks_like": "mon_copbot",
     "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with several hoses attached to a small tank of flash and powerful pincers. Small tires are constantly screeching as the bot actively scans the area for threats.",
-    "revert_to_itype": "bot_smallflashbot",
+    "revert_to_itype": "bot_smallflashdrone",
     "relative": { "speed": 160 }
   }
 ]
