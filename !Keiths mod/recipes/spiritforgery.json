@@ -212,7 +212,7 @@
     "required_skills": [ [ "speech", 7 ] ],
     "time": "72 h",
 	"activity_level": "LIGHT_EXERCISE",
-    "components": [ [ [ "money_bundle_hundred", 1 ] ], [ [ "laptop_screen_lit", 3 ] ], [ [ "mp3_on", 7 ] ], [ [ "smart_phone_flashlight", 13 ], [ "smartphone_music", 13 ] ] ],
+    "components": [ [ [ "cleansed_soul", 1 ] ], [ [ "laptop_screen_lit", 3 ] ], [ [ "mp3_on", 7 ] ], [ [ "smart_phone_flashlight", 13 ], [ "smartphone_music", 13 ] ] ],
     "pre_special": "check_empty",
     "post_terrain": "f_soul_engine"
   },
@@ -221,7 +221,7 @@
   "id": "f_soul_engine",
   "name": "soul engine",
   "looks_like": "f_compact_ASRG_containment",
-  "description": "Assorted electronic machinery that drives the soul. Needs a cash infusion to get going.",
+  "description": "Assorted electronic machinery that drives the soul. Needs a soul infusion to get going.",
   "symbol": "$",
   "color": "yellow",
   "move_cost_mod": 8,

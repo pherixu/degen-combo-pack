@@ -1370,7 +1370,7 @@
   {
     "type": "mutation",
     "id": "DISTANCESELF_SPELL",
-    "name": { "str": "Spell: Distance Self" },
+    "name": { "str": "Spell: Dislocate Self" },
     "points": 2,
     "description": "You learn the associated spell. IF YOU SELECT THE MUTATION YOU WILL HAVE THE SPELL FOREVER. IF YOU DE-SELECT THE TRAIT YOU WILL STILL HAVE THE SPELL.",
     "starting_trait": true,

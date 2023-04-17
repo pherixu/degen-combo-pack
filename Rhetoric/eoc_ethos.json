@@ -1,0 +1,297 @@
+[
+{
+    "type": "effect_on_condition",
+    "id": "eoc_rhetoric",
+    "effect": [ { "run_eocs": [ { "id": "eoc_ethos" } ] } ],
+    "false_effect": { "run_eocs": [ { "id": "eoc_rhetoric_2" } ] },
+    "condition": { "u_is_wearing": "ethos" }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_rhetoric_2",
+    "effect": [ { "run_eocs": [ { "id": "eoc_pathos" } ] } ],
+    "false_effect": { "run_eocs": [ { "id": "eoc_rhetoric_3" } ] },
+    "condition": { "u_is_wearing": "pathos" }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_rhetoric_3",
+    "effect": [ { "run_eocs": [ { "id": "eoc_logos" } ] } ],
+    "false_effect": {
+        "u_message": "Without Rhetoric you stand no chance of arguing with Reality.",
+        "type": "warning"
+      },
+    "condition": { "u_is_wearing": "logos" }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_ethos",
+    "effect": [ { "run_eocs": [ { "id": "eoc_ethos_destruction" } ] } ],
+    "false_effect": { "run_eocs": [ { "id": "eoc_ethos_2" } ] },
+    "condition": { "u_is_wearing": "destruction_symbol" }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_ethos_2",
+    "effect": [ { "run_eocs": [ { "id": "eoc_ethos_preservation" } ] } ],
+    "false_effect": [ { "run_eocs": [ { "id": "eoc_ethos_3" } ] } ],
+    "condition": { "u_is_wearing": "preservation_symbol" }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_ethos_3",
+    "effect": [ { "run_eocs": [ { "id": "eoc_ethos_creation" } ] } ],
+    "false_effect": {
+        "u_message": "The Three Great Statements are the foundation of your argument. Without them, there is no Rhetoric.",
+        "type": "warning",
+        "popup": true
+      },
+    "condition": { "u_is_wearing": "creation_symbol" }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_ethos_destruction",
+    "effect": [ { "u_cast_spell": { "id": "ethos_destruction_time_space_energy", "hit_self": true } }, 
+	{
+        "u_message": "Ethical Destruction of Time, Space, and Energy: You lose corporeality.",
+        "popup": false
+    } ],
+    "false_effect": [ { "run_eocs": [ { "id": "eoc_ethos_destruction_time_space" } ] } ],
+    "condition": { "and": [ { "u_is_wearing": "time_symbol_on" }, { "u_is_wearing": "energy_symbol_on" }, { "u_is_wearing": "space_symbol_on" } ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_ethos_destruction_time_space",
+    "effect": [ { "u_cast_spell": { "id": "ethos_destruction_time_space", "hit_self": true } }, 
+	{
+        "u_message": "Ethical Destruction of Time and Space: Your perception of Reality suddenly changes.",
+        "popup": false
+    } ],
+    "false_effect": [ { "run_eocs": [ { "id": "eoc_ethos_destruction_time_energy" } ] } ],
+    "condition": { "and": [ { "u_is_wearing": "time_symbol_on" }, { "u_is_wearing": "space_symbol_on" } ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_ethos_destruction_time_energy",
+    "effect": [
+	{ "u_cast_spell": { "id": "ethos_destruction_time_energy", "hit_self": true } },
+	{
+        "u_message": "Ethical Destruction of Time and Energy: Reality weakens gravity's effect on you.",
+        "popup": false
+    } ],
+    "false_effect": [ { "run_eocs": [ { "id": "eoc_ethos_destruction_energy_space" } ] } ],
+    "condition": { "and": [ { "u_is_wearing": "time_symbol_on" }, { "u_is_wearing": "energy_symbol_on" } ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_ethos_destruction_energy_space",
+    "effect": [ { "u_cast_spell": { "id": "ethos_destruction_energy_space", "hit_self": true } },
+	{
+        "u_message": "Ethical Destruction of Energy and Space: Nearby fires dissipate.",
+        "popup": false
+    } ],
+    "false_effect": [ { "run_eocs": [ { "id": "eoc_ethos_destruction_time" } ] } ],
+    "condition": { "and": [ { "u_is_wearing": "space_symbol_on" }, { "u_is_wearing": "energy_symbol_on" } ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_ethos_destruction_time",
+    "effect": [ { "u_cast_spell": { "id": "ethos_destruction_time", "hit_self": true } },
+	{
+        "u_message": "Ethical Destruction of Time: Reality seems to move much slower.",
+        "popup": false
+    } ],
+    "false_effect": [ { "run_eocs": [ { "id": "eoc_ethos_destruction_space" } ] } ],
+    "condition": { "and": [ { "u_is_wearing": "time_symbol_on" } ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_ethos_destruction_space",
+    "effect": [ { "u_cast_spell": { "id": "ethos_destruction_space", "hit_self": true } },
+	{
+        "u_message": "Ethical Destruction of Space: What breathing room you once had quickly disappears.",
+        "popup": false
+    } ],
+    "false_effect": [ { "run_eocs": [ { "id": "eoc_ethos_destruction_energy" } ] } ],
+    "condition": { "and": [ { "u_is_wearing": "space_symbol_on" } ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_ethos_destruction_energy",
+    "effect": [
+	{ "u_cast_spell": { "id": "ethos_destruction_energy", "hit_self": true } },
+	{
+        "u_message": "Ethical Destruction of Energy: Your connection to gravity is destroyed.",
+        "popup": false
+    }
+	],
+    "false_effect": [ { "u_cast_spell": { "id": "ethos_destruction", "hit_self": true } },
+	{
+        "u_message": "Ethical Destruction: Reality loses it's perception of you.",
+        "popup": false
+    } ],
+    "condition": { "and": [ { "u_is_wearing": "energy_symbol_on" } ] }
+  },
+ {
+    "type": "effect_on_condition",
+    "id": "eoc_ethos_preservation",
+    "effect": [ { "u_cast_spell": { "id": "ethos_preservation_time_space_energy", "hit_self": true } },
+	{
+        "u_message": "Ethical Preservation of Time, Space, and Energy: The clock on your life stops ticking for a moment.",
+        "popup": false
+    } ],
+    "false_effect": [ { "run_eocs": [ { "id": "eoc_ethos_preservation_time_space" } ] } ],
+    "condition": { "and": [ { "u_is_wearing": "time_symbol_on" }, { "u_is_wearing": "energy_symbol_on" }, { "u_is_wearing": "space_symbol_on" } ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_ethos_preservation_time_space",
+    "effect": [ { "u_cast_spell": { "id": "ethos_preservation_time_space", "hit_self": true } },
+	{
+        "u_message": "Ethical Preservation of Time and Space: Time and Space are condensed into a small token.",
+        "popup": false
+    } ],
+    "false_effect": [ { "run_eocs": [ { "id": "eoc_ethos_preservation_time_energy" } ] } ],
+    "condition": { "and": [ { "u_is_wearing": "time_symbol_on" }, { "u_is_wearing": "space_symbol_on" } ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_ethos_preservation_time_energy",
+    "effect": [ { "u_cast_spell": { "id": "ethos_preservation_time_energy", "hit_self": true } },
+	{
+        "u_message": "Ethical Preservation of Time and Energy: Reality conserves your time and energy, making you feel slightly less tired.",
+        "popup": false
+    } ],
+    "false_effect": [ { "run_eocs": [ { "id": "eoc_ethos_preservation_energy_space" } ] } ],
+    "condition": { "and": [ { "u_is_wearing": "time_symbol_on" }, { "u_is_wearing": "energy_symbol_on" } ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_ethos_preservation_energy_space",
+    "effect": [ { "u_cast_spell": { "id": "ethos_preservation_energy_space", "hit_self": true } },
+	{
+        "u_message": "Ethical Preservation of Energy and Space: Reality weakens your inertia.",
+        "popup": false
+    } ],
+    "false_effect": [ { "run_eocs": [ { "id": "eoc_ethos_preservation_time" } ] } ],
+    "condition": { "and": [ { "u_is_wearing": "space_symbol_on" }, { "u_is_wearing": "energy_symbol_on" } ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_ethos_preservation_time",
+    "effect": [ { "u_cast_spell": { "id": "ethos_preservation_time", "hit_self": true } },
+	{
+        "u_message": "Ethical Preservation of Time: Reality conserves time now to be used later.",
+        "popup": false
+    } ],
+    "false_effect": [ { "run_eocs": [ { "id": "eoc_ethos_preservation_space" } ] } ],
+    "condition": { "and": [ { "u_is_wearing": "time_symbol_on" } ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_ethos_preservation_space",
+    "effect": [ { "u_cast_spell": { "id": "ethos_preservation_space", "hit_self": true } },
+	{
+        "u_message": "Ethical Preservation of Space: Reality preserves some space into a token, which can be activated to teleport a short distance.",
+        "popup": false
+    } ],
+    "false_effect": [ { "run_eocs": [ { "id": "eoc_ethos_preservation_energy" } ] } ],
+    "condition": { "and": [ { "u_is_wearing": "space_symbol_on" } ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_ethos_preservation_energy",
+    "effect": [ { "u_cast_spell": { "id": "ethos_preservation_energy", "hit_self": true } },
+	{
+        "u_message": "Ethical Preservation of Energy: Reality converts some of your current energy into a token which can be used at any point to restore fatigue.",
+        "popup": false
+    } ],
+    "false_effect": [ { "u_cast_spell": { "id": "ethos_preservation", "hit_self": true } },
+	{
+        "u_message": "Ethical Preservation: Reality is looking out for your safety.",
+        "popup": false
+    } ],
+    "condition": { "and": [ { "u_is_wearing": "energy_symbol_on" } ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_ethos_creation",
+    "effect": [ { "u_cast_spell": { "id": "ethos_creation_time_space_energy", "hit_self": true } },
+	{
+        "u_message": "Ethical Creation of Time, Space, and Energy: Reality creates a token used to designate a target for Translocation.",
+        "popup": false
+    } ],
+    "false_effect": [ { "run_eocs": [ { "id": "eoc_ethos_creation_time_space" } ] } ],
+    "condition": { "and": [ { "u_is_wearing": "time_symbol_on" }, { "u_is_wearing": "energy_symbol_on" }, { "u_is_wearing": "space_symbol_on" } ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_ethos_creation_time_space",
+    "effect": [ { "u_cast_spell": { "id": "ethos_creation_time_space", "hit_self": true } },
+	{
+        "u_message": "Ethical Creation of Time and Space: Reality reserves some space-time into a token which can be used to Translocate.",
+        "popup": false
+    } ],
+    "false_effect": [ { "run_eocs": [ { "id": "eoc_ethos_creation_time_energy" } ] } ],
+    "condition": { "and": [ { "u_is_wearing": "time_symbol_on" }, { "u_is_wearing": "space_symbol_on" } ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_ethos_creation_time_energy",
+    "effect": [ { "u_cast_spell": { "id": "ethos_creation_time_energy", "hit_self": true } },
+	{
+        "u_message": "Ethical Creation of Time and Energy: Reality alters your mind's processes.",
+        "popup": false
+    } ],
+    "false_effect": [ { "run_eocs": [ { "id": "eoc_ethos_creation_energy_space" } ] } ],
+    "condition": { "and": [ { "u_is_wearing": "time_symbol_on" }, { "u_is_wearing": "energy_symbol_on" } ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_ethos_creation_energy_space",
+    "effect": [ { "u_cast_spell": { "id": "ethos_creation_energy_space", "hit_self": true } },
+	{
+        "u_message": "Ethical Creation of Energy and Space: Your mind feels more attuned to Reality.",
+        "popup": false
+    } ],
+    "false_effect": [ { "run_eocs": [ { "id": "eoc_ethos_creation_time" } ] } ],
+    "condition": { "and": [ { "u_is_wearing": "space_symbol_on" }, { "u_is_wearing": "energy_symbol_on" } ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_ethos_creation_time",
+    "effect": [ { "u_cast_spell": { "id": "ethos_creation_time", "hit_self": true } },
+	{
+        "u_message": "Ethical Creation of Time: Reality gives you just a little more time to play.",
+        "popup": false
+    } ],
+    "false_effect": [ { "run_eocs": [ { "id": "eoc_ethos_creation_space" } ] } ],
+    "condition": { "and": [ { "u_is_wearing": "time_symbol_on" } ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_ethos_creation_space",
+    "effect": [ { "u_cast_spell": { "id": "ethos_creation_space" } },
+	{
+        "u_message": "Ethical Creation of Space: Reality picks you up and puts you somewhere else.",
+        "popup": false
+    } ],
+    "false_effect": [ { "run_eocs": [ { "id": "eoc_ethos_creation_energy" } ] } ],
+    "condition": { "and": [ { "u_is_wearing": "space_symbol_on" } ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_ethos_creation_energy",
+    "effect": [ { "u_cast_spell": { "id": "ethos_creation_energy", "hit_self": true } },
+	{
+        "u_message": "Ethical Creation of Energy: Reality bends one energy into another, draining you later for energy now.",
+        "popup": false
+    } ],
+    "false_effect": [ { "u_cast_spell": { "id": "ethos_creation", "hit_self": true } },
+	{
+        "u_message": "Ethical Creation: Reality rapidly alters your physical form.",
+        "popup": false
+    } ],
+    "condition": { "and": [ { "u_is_wearing": "energy_symbol_on" } ] }
+  }
+]

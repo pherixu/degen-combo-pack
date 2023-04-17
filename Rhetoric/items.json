@@ -1,0 +1,501 @@
+[
+  {
+  "id": "statement_invoker",
+  "type": "TOOL_ARMOR",
+  "name": {
+    "str": "essential statement statuary"
+  },
+  "description": "A tool used by the Orators known as Sophists to hold the secrets of Life and Death. The Three Statements, which Rhetoric and Death share - Destruction, Preservation, and Creation. As with Rhetoric, the Sophist is nothing without at least one.",
+  "looks_like": "silver_necklace",
+  "weight": "18 g",
+  "volume": "30 ml",
+  "price": 100,
+  "price_postapoc": 10,
+  "material": [
+    "alien_liquid"
+  ],
+  "pocket_data": [
+      {
+        "//": "Binding",
+        "pocket_type": "CONTAINER",
+        "rigid": false,
+        "max_contains_weight": "2 kg",
+        "max_contains_volume": "2500 ml",
+        "max_item_length": "300 mm",
+        "moves": 150,
+        "item_restriction": [
+          "paper",
+          "militarymap",
+          "survivormap",
+          "roadmap",
+          "subwaymap",
+          "trailmap",
+          "touristmap",
+          "restaurantmap",
+          "flyer",
+          "survnote",
+          "character_sheet",
+          "newest_newspaper",
+          "many_years_old_newspaper",
+          "years_old_newspaper",
+          "one_year_old_newspaper",
+          "months_old_newspaper",
+          "weeks_old_newspaper",
+          "necropolis_leaflet",
+          "death_note",
+          "note_mutant_alpha_boss",
+          "evac_pamphlet"
+        ]
+      }
+    ],
+  "symbol": "u",
+  "color": "brown",
+  "use_action": { "type": "cast_spell", "spell_id": "invoke_statements", "no_fail": true, "level": 1, "need_wielding": true  },
+  "flags": [
+    "TRADER_AVOID", 
+	"SEMITANGIBLE"
+  ]
+},
+{
+  "id": "symbol_invoker",
+  "type": "TOOL_ARMOR",
+  "name": {
+    "str": "rudimentary symbol quill"
+  },
+  "description": "A tool used by the Orators known as Sophists to translate the message in the stars. The Three Questions, which Reality cannot ignore - Time, Space, and Energy. They are the channels that guide Rhetoric and Statements alike.",
+  "looks_like": "silver_necklace",
+  "weight": "18 g",
+  "volume": "30 ml",
+  "price": 100,
+  "price_postapoc": 10,
+  "material": [
+    "alien_liquid"
+  ],
+  "symbol": "u",
+  "color": "brown",
+  "use_action": [ { "type": "cast_spell", "spell_id": "invoke_symbols", "no_fail": true, "level": 1, "need_wielding": true }, { "type": "inscribe", "verb": "Write", "gerund": "Written", "on_terrain": false, "material_restricted": false } ],
+  "flags": [
+    "TRADER_AVOID", 
+	"WRITE_MESSAGE",
+	"SEMITANGIBLE"
+  ]
+},
+  {
+    "type": "ARMOR",
+    "id": "ethos",
+    "symbol": ".",
+    "color": "white",
+    "name": "Rhetoric: ETHOS",
+    "description": "Appealing by virtue of the speaker's character - Draws realities' attention to one's self.",
+    "price": 0,
+    "price_postapoc": 0,
+    "material": [ "alien_liquid" ],
+	"use_action": [
+      {
+        "target": "pathos",
+        "msg": "You enflare your voice with emotion.",
+        "menu_text": "Intone Pathos",
+		"moves": 150,
+		"active": true,
+        "type": "transform"
+      }
+    ],
+	"armor": [ { "coverage": 10, "covers": [ "hand_l", "hand_r" ], "encumbrance": 5 } ],
+	"flags": [ "INTEGRATED", "TRADER_AVOID" ],
+    "weight": "3 g",
+    "volume": "1 ml"
+  },
+  {
+    "type": "ARMOR",
+    "id": "pathos",
+    "symbol": ".",
+    "color": "white",
+    "name": "Rhetoric: PATHOS",
+    "description": "Appealing by virtue of the speaker's emotion - Pulls on the sympathy inherent in reality.",
+    "price": 0,
+    "price_postapoc": 0,
+    "material": [ "alien_liquid" ],
+	"use_action": [
+      {
+        "target": "logos",
+        "msg": "You temper your voice with logic.",
+        "menu_text": "Intone Logos",
+		"moves": 150,
+		"active": true,
+        "type": "transform"
+      }
+    ],
+	"armor": [ { "coverage": 10, "covers": [ "hand_l", "hand_r" ], "encumbrance": 10 } ],
+	"flags": [ "INTEGRATED", "TRADER_AVOID" ],
+    "weight": "3 g",
+    "volume": "1 ml"
+  },
+  {
+    "type": "ARMOR",
+    "id": "logos",
+    "symbol": ".",
+    "color": "white",
+    "name": "Rhetoric: LOGOS",
+    "description": "Appealing by virtue of the speaker's logic - Directs realities' attention towards another.",
+    "price": 0,
+    "price_postapoc": 0,
+    "material": [ "alien_liquid" ],
+	"use_action": [
+      {
+        "target": "ethos",
+        "msg": "You inflect your voice with character.",
+        "menu_text": "Intone Ethos",
+		"moves": 150,
+		"active": true,
+        "type": "transform"
+      }
+    ],
+	"armor": [ { "coverage": 10, "covers": [ "hand_l", "hand_r" ], "encumbrance": 15 } ],
+	"flags": [ "INTEGRATED", "TRADER_AVOID" ],
+    "weight": "3 g",
+    "volume": "1 ml"
+  },
+  {
+  "id": "destruction_symbol",
+  "type": "ARMOR",
+  "name": {
+    "str": "Statement: Destruction"
+  },
+  "description": "The condition of destruction.",
+  "looks_like": "silver_necklace",
+  "weight": "18 g",
+  "volume": "30 ml",
+  "price": 100,
+  "price_postapoc": 10,
+  "material": [
+    "alien_liquid"
+  ],
+  "armor": [ { "coverage": 10, "covers": [ "mouth" ], "encumbrance": 10 } ],
+  "symbol": "u",
+  "color": "brown",
+  "use_action": [
+    {
+        "target": "preservation_symbol",
+        "msg": "You state preservation's presence.",
+        "menu_text": "State 'Preservation'",
+		"moves": 100,
+		"active": true,
+        "type": "transform"
+      }
+  ],
+  "flags": [
+    "TRADER_AVOID", 
+	"AURA",
+	"INTEGRATED"
+  ]
+},
+{
+  "id": "preservation_symbol",
+  "type": "ARMOR",
+  "name": {
+    "str": "Statement: Preservation"
+  },
+  "description": "The condition of preservation.",
+  "looks_like": "silver_necklace",
+  "weight": "18 g",
+  "volume": "30 ml",
+  "price": 100,
+  "price_postapoc": 10,
+  "material": [
+    "alien_liquid"
+  ],
+  "armor": [ { "coverage": 10, "covers": [ "mouth" ], "encumbrance": 10 } ],
+  "symbol": "u",
+  "color": "brown",
+  "use_action": [
+    {
+        "target": "creation_symbol",
+        "msg": "You state creation's presence.",
+        "menu_text": "State 'Creation'",
+		"moves": 100,
+		"active": true,
+        "type": "transform"
+      }
+  ],
+  "flags": [
+    "TRADER_AVOID", 
+	"AURA",
+	"INTEGRATED"
+  ]
+},
+{
+  "id": "creation_symbol",
+  "type": "ARMOR",
+  "name": {
+    "str": "Statement: Creation"
+  },
+  "description": "The condition of creation.",
+  "looks_like": "silver_necklace",
+  "weight": "18 g",
+  "volume": "30 ml",
+  "price": 100,
+  "price_postapoc": 10,
+  "material": [
+    "alien_liquid"
+  ],
+  "armor": [ { "coverage": 10, "covers": [ "mouth" ], "encumbrance": 10 } ],
+  "symbol": "u",
+  "color": "brown",
+  "use_action": [
+    {
+        "target": "destruction_symbol",
+        "msg": "You state destruction's presence.",
+        "menu_text": "State 'Destruction'",
+		"moves": 100,
+		"active": true,
+        "type": "transform"
+      }
+  ],
+  "flags": [
+    "TRADER_AVOID",
+    "AURA",	
+	"INTEGRATED"
+  ]
+},
+{
+  "id": "time_symbol",
+  "type": "ARMOR",
+  "name": {
+    "str": "Symbol: time"
+  },
+  "description": "An argument of which time is not the subject.",
+  "looks_like": "silver_necklace",
+  "weight": "18 g",
+  "volume": "30 ml",
+  "price": 100,
+  "price_postapoc": 10,
+  "material": [
+    "alien_liquid"
+  ],
+  "armor": [ { "coverage": 10, "covers": [ "mouth" ], "encumbrance": 0 } ],
+  "symbol": "u",
+  "color": "brown",
+  "use_action": [
+    {
+        "target": "time_symbol_on",
+        "msg": "You bring time into your argument.",
+        "menu_text": "Subjugate 'Time'",
+		"moves": 50,
+		"active": true,
+        "type": "transform"
+      }
+  ],
+  "flags": [
+    "TRADER_AVOID",
+    "INTEGRATED",	
+	"SEMITANGIBLE"
+  ]
+},
+{
+  "id": "time_symbol_on",
+  "type": "ARMOR",
+  "name": {
+    "str": "Symbol: time"
+  },
+  "description": "An argument of which time is the subject.",
+  "looks_like": "silver_necklace",
+  "weight": "18 g",
+  "volume": "30 ml",
+  "price": 100,
+  "price_postapoc": 10,
+  "material": [
+    "alien_liquid"
+  ],
+  "armor": [ { "coverage": 10, "covers": [ "mouth" ], "encumbrance": 5 } ],
+  "symbol": "u",
+  "color": "brown",
+  "use_action": [
+    {
+        "target": "time_symbol",
+        "msg": "You take time out of your argument.",
+        "menu_text": "Silence 'Time'",
+		"moves": 50,
+		"active": false,
+        "type": "transform"
+      }
+  ],
+  "flags": [
+    "TRADER_AVOID",
+    "AURA",	
+	"INTEGRATED"
+  ]
+},
+{
+  "id": "space_symbol",
+  "type": "ARMOR",
+  "name": {
+    "str": "Symbol: space"
+  },
+  "description": "An argument of which space is not the subject.",
+  "looks_like": "silver_necklace",
+  "weight": "18 g",
+  "volume": "30 ml",
+  "price": 100,
+  "price_postapoc": 10,
+  "material": [
+    "alien_liquid"
+  ],
+  "armor": [ { "coverage": 10, "covers": [ "mouth" ], "encumbrance": 0 } ],
+  "symbol": "u",
+  "color": "brown",
+  "use_action": [
+    {
+        "target": "space_symbol_on",
+        "msg": "You bring space into your argument.",
+        "menu_text": "Subjugate 'Space'",
+		"moves": 50,
+		"active": true,
+        "type": "transform"
+      }
+  ],
+  "flags": [
+    "TRADER_AVOID", 
+	"AURA",
+	"INTEGRATED",
+	"SEMITANGIBLE"
+  ]
+},
+{
+  "id": "space_symbol_on",
+  "type": "ARMOR",
+  "name": {
+    "str": "Symbol: space"
+  },
+  "description": "An argument of which space is the subject.",
+  "looks_like": "silver_necklace",
+  "weight": "18 g",
+  "volume": "30 ml",
+  "price": 100,
+  "price_postapoc": 10,
+  "material": [
+    "alien_liquid"
+  ],
+  "armor": [ { "coverage": 10, "covers": [ "mouth" ], "encumbrance": 5 } ],
+  "symbol": "u",
+  "color": "brown",
+  "use_action": [
+    {
+        "target": "space_symbol",
+        "msg": "You take space out of your argument.",
+        "menu_text": "Silence 'Space'",
+		"moves": 50,
+		"active": false,
+        "type": "transform"
+      }
+  ],
+  "flags": [
+    "TRADER_AVOID", 
+	"AURA",
+	"INTEGRATED"
+  ]
+},
+{
+  "id": "energy_symbol",
+  "type": "ARMOR",
+  "name": {
+    "str": "Symbol: energy"
+  },
+  "description": "An argument of which energy is not the subject.",
+  "looks_like": "silver_necklace",
+  "weight": "18 g",
+  "volume": "30 ml",
+  "price": 100,
+  "price_postapoc": 10,
+  "material": [
+    "alien_liquid"
+  ],
+  "armor": [ { "coverage": 10, "covers": [ "mouth" ], "encumbrance": 0 } ],
+  "symbol": "u",
+  "color": "brown",
+  "use_action": [
+    {
+        "target": "energy_symbol_on",
+        "msg": "You bring energy into your argument.",
+        "menu_text": "Subjugate 'Energy'",
+		"moves": 50,
+		"active": true,
+        "type": "transform"
+      }
+  ],
+  "flags": [
+    "TRADER_AVOID", 
+	"AURA",
+	"INTEGRATED",
+	"SEMITANGIBLE"
+  ]
+},
+{
+  "id": "energy_symbol_on",
+  "type": "ARMOR",
+  "name": {
+    "str": "Symbol: energy"
+  },
+  "description": "An argument of which energy is the subject.",
+  "looks_like": "silver_necklace",
+  "weight": "18 g",
+  "volume": "30 ml",
+  "price": 100,
+  "price_postapoc": 10,
+  "material": [
+    "alien_liquid"
+  ],
+  "armor": [ { "coverage": 10, "covers": [ "mouth" ], "encumbrance": 5 } ],
+  "symbol": "u",
+  "color": "brown",
+  "use_action": [
+    {
+        "target": "energy_symbol",
+        "msg": "You take energy out of your argument.",
+        "menu_text": "Silence 'Energy'",
+		"moves": 50,
+		"active": false,
+        "type": "transform"
+      }
+  ],
+  "flags": [
+    "TRADER_AVOID", 
+	"AURA",
+	"INTEGRATED"
+  ]
+},
+{
+    "type": "BOOK",
+    "id": "social_contract",
+    "category": "manuals",
+    "symbol": ",",
+    "color": "white",
+    "name": { "str": "Social Contract" },
+    "description": "Rhetoric - The art of persuasion in it's purest form: Ethos, Logos, and Pathos. Statements - That which is being conveyed in argument. Symbols - The tools used to convery this art. Those known as Sophists adorn with Rhetoric, Statements, and Symbols alike to persuade Reality itself, bending it to their word. This book describes the discipline needed to become one such Orator.",
+    "price": 0,
+    "price_postapoc": 0,
+	"skill": "speech",
+    "max_level": 3,
+    "intelligence": 8,
+    "material": [ "paper" ],
+    "weight": "3 g",
+    "volume": "1 ml"
+  },
+  {
+    "type": "BOOK",
+    "id": "rhetorical_sophistry",
+    "category": "manuals",
+    "symbol": ",",
+    "color": "white",
+    "name": { "str": "Rhetorical Sophistry" },
+    "description": "The teachings that flowed through the Sophists. Rhetoric flows within.",
+    "price": 0,
+    "price_postapoc": 0,
+	"use_action": {
+      "type": "learn_spell",
+      "spells": [ "rhetoric" ]
+    },
+    "material": [ "paper" ],
+    "weight": "3 g",
+    "volume": "1 ml"
+  }
+]

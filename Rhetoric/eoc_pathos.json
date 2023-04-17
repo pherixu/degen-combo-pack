@@ -1,0 +1,273 @@
+[
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_pathos",
+    "effect": [ { "run_eocs": [ { "id": "eoc_pathos_destruction" } ] } ],
+    "false_effect": { "run_eocs": [ { "id": "eoc_pathos_2" } ] },
+    "condition": { "u_is_wearing": "destruction_symbol" }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_pathos_2",
+    "effect": [ { "run_eocs": [ { "id": "eoc_pathos_preservation" } ] } ],
+    "false_effect": [ { "run_eocs": [ { "id": "eoc_pathos_3" } ] } ],
+    "condition": { "u_is_wearing": "preservation_symbol" }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_pathos_3",
+    "effect": [ { "run_eocs": [ { "id": "eoc_pathos_creation" } ] } ],
+    "false_effect": {
+        "u_message": "The Three Great Statements are the foundation of your argument. Without them, there is no Rhetoric.",
+        "type": "warning",
+        "popup": true
+      },
+    "condition": { "u_is_wearing": "creation_symbol" }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_pathos_destruction",
+    "effect": [ { "u_cast_spell": { "id": "pathos_destruction_time_space_energy", "hit_self": true } }, 
+	{
+        "u_message": "Pathological Destruction of Time, Space, and Energy: The area fills with unbreathable gas.",
+        "popup": false
+    } ],
+    "false_effect": [ { "run_eocs": [ { "id": "eoc_pathos_destruction_time_space" } ] } ],
+    "condition": { "and": [ { "u_is_wearing": "time_symbol_on" }, { "u_is_wearing": "energy_symbol_on" }, { "u_is_wearing": "space_symbol_on" } ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_pathos_destruction_time_space",
+    "effect": [ { "u_cast_spell": { "id": "pathos_destruction_time_space", "hit_self": true } }, 
+	{
+        "u_message": "Pathological Destruction of Time and Space: A bubble of negative time forms around you.",
+        "popup": false
+    } ],
+    "false_effect": [ { "run_eocs": [ { "id": "eoc_pathos_destruction_time_energy" } ] } ],
+    "condition": { "and": [ { "u_is_wearing": "time_symbol_on" }, { "u_is_wearing": "space_symbol_on" } ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_pathos_destruction_time_energy",
+    "effect": [
+	{ "u_cast_spell": { "id": "pathos_destruction_time_energy", "hit_self": true } },
+	{
+        "u_message": "Pathological Destruction of Time and Energy: The sound energy you create doesn't seem to ripple through Reality with the same verbosity.",
+        "popup": false
+    } ],
+    "false_effect": [ { "run_eocs": [ { "id": "eoc_pathos_destruction_energy_space" } ] } ],
+    "condition": { "and": [ { "u_is_wearing": "time_symbol_on" }, { "u_is_wearing": "energy_symbol_on" } ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_pathos_destruction_energy_space",
+    "effect": [ { "u_cast_spell": { "id": "pathos_destruction_energy_space", "hit_self": true } },
+	{
+        "u_message": "Pathological Destruction of Energy and Space: Nearby fires dissipate.",
+        "popup": false
+    } ],
+    "false_effect": [ { "run_eocs": [ { "id": "eoc_pathos_destruction_time" } ] } ],
+    "condition": { "and": [ { "u_is_wearing": "space_symbol_on" }, { "u_is_wearing": "energy_symbol_on" } ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_pathos_destruction_time",
+    "effect": [ { "u_cast_spell": { "id": "pathos_destruction_time", "hit_self": true } },
+	{
+        "u_message": "Pathological Destruction of Time: At the cost of your own health, you steal some of Reality's.",
+        "popup": false
+    } ],
+    "false_effect": [ { "run_eocs": [ { "id": "eoc_pathos_destruction_space" } ] } ],
+    "condition": { "and": [ { "u_is_wearing": "time_symbol_on" } ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_pathos_destruction_space",
+    "effect": [ { "u_cast_spell": { "id": "pathos_destruction_space", "hit_self": true } },
+	{
+        "u_message": "Pathological Destruction of Space: You summon familiars.",
+        "popup": false
+    } ],
+    "false_effect": [ { "run_eocs": [ { "id": "eoc_pathos_destruction_energy" } ] } ],
+    "condition": { "and": [ { "u_is_wearing": "space_symbol_on" } ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_pathos_destruction_energy",
+    "effect": [
+	{ "u_cast_spell": { "id": "pathos_destruction_energy", "hit_self": true } },
+	{
+        "u_message": "Pathological Destruction of Energy: Friend and foe alike feel pure energy rack their bodies.",
+        "popup": false
+    }
+	],
+    "false_effect": [ { "u_cast_spell": { "id": "pathos_destruction", "hit_self": true } },
+	{
+        "u_message": "Pathological Destruction: You feel a sudden weight in your pocket.",
+        "popup": false
+    } ],
+    "condition": { "and": [ { "u_is_wearing": "energy_symbol_on" } ] }
+  },
+ {
+    "type": "effect_on_condition",
+    "id": "eoc_pathos_preservation",
+    "effect": [ { "u_cast_spell": { "id": "pathos_preservation_time_space_energy", "hit_self": true } },
+	{
+        "u_message": "Pathological Preservation of Time, Space, and Energy: Reality ends your feud with nearby beings entirely.",
+        "popup": false
+    } ],
+    "false_effect": [ { "run_eocs": [ { "id": "eoc_pathos_preservation_time_space" } ] } ],
+    "condition": { "and": [ { "u_is_wearing": "time_symbol_on" }, { "u_is_wearing": "energy_symbol_on" }, { "u_is_wearing": "space_symbol_on" } ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_pathos_preservation_time_space",
+    "effect": [ { "u_cast_spell": { "id": "pathos_preservation_time_space", "hit_self": true } },
+	{
+        "u_message": "Pathological Preservation of Time and Space: You seem more familiar with your surroundings.",
+        "popup": false
+    } ],
+    "false_effect": [ { "run_eocs": [ { "id": "eoc_pathos_preservation_time_energy" } ] } ],
+    "condition": { "and": [ { "u_is_wearing": "time_symbol_on" }, { "u_is_wearing": "space_symbol_on" } ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_pathos_preservation_time_energy",
+    "effect": [ { "u_cast_spell": { "id": "pathos_preservation_time_energy", "hit_self": true } },
+	{
+        "u_message": "Pathological Preservation of Time and Energy: There's no longer a need to hunt or be hunted.",
+        "popup": false
+    } ],
+    "false_effect": [ { "run_eocs": [ { "id": "eoc_pathos_preservation_energy_space" } ] } ],
+    "condition": { "and": [ { "u_is_wearing": "time_symbol_on" }, { "u_is_wearing": "energy_symbol_on" } ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_pathos_preservation_energy_space",
+    "effect": [ { "u_cast_spell": { "id": "pathos_preservation_energy_space", "hit_self": true } },
+	{
+        "u_message": "Pathological Preservation of Energy and Space: A space opens which preserves energy.",
+        "popup": false
+    } ],
+    "false_effect": [ { "run_eocs": [ { "id": "eoc_pathos_preservation_time" } ] } ],
+    "condition": { "and": [ { "u_is_wearing": "space_symbol_on" }, { "u_is_wearing": "energy_symbol_on" } ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_pathos_preservation_time",
+    "effect": [ { "u_cast_spell": { "id": "pathos_preservation_time", "hit_self": true } },
+	{
+        "u_message": "Pathological Preservation of Time: Reality turns your time into health.",
+        "popup": false
+    } ],
+    "false_effect": [ { "run_eocs": [ { "id": "eoc_pathos_preservation_space" } ] } ],
+    "condition": { "and": [ { "u_is_wearing": "time_symbol_on" } ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_pathos_preservation_space",
+    "effect": [ { "u_cast_spell": { "id": "pathos_preservation_space", "hit_self": true } },
+	{
+        "u_message": "Pathological Preservation of Space: Space seems to bend around you.",
+        "popup": false
+    } ],
+    "false_effect": [ { "run_eocs": [ { "id": "eoc_pathos_preservation_energy" } ] } ],
+    "condition": { "and": [ { "u_is_wearing": "space_symbol_on" } ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_pathos_preservation_energy",
+    "effect": [ { "u_cast_spell": { "id": "pathos_preservation_energy", "hit_self": true } },
+	{
+        "u_message": "Pathological Preservation of Energy: Energy that passes into you now passes out of you, doubling again.",
+        "popup": false
+    } ],
+    "false_effect": [ { "u_cast_spell": { "id": "pathos_preservation", "hit_self": true } },
+	{
+        "u_message": "Pathological Preservation: Reality creates some safety for both you and another.",
+        "popup": false
+    } ],
+    "condition": { "and": [ { "u_is_wearing": "energy_symbol_on" } ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_pathos_creation",
+    "effect": [ { "u_cast_spell": { "id": "pathos_creation_time_space_energy", "hit_self": true } },
+	{
+        "u_message": "Pathological Creation of Time, Space, and Energy: The power of Night shrouds the area.",
+        "popup": false
+    } ],
+    "false_effect": [ { "run_eocs": [ { "id": "eoc_pathos_creation_time_space" } ] } ],
+    "condition": { "and": [ { "u_is_wearing": "time_symbol_on" }, { "u_is_wearing": "energy_symbol_on" }, { "u_is_wearing": "space_symbol_on" } ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_pathos_creation_time_space",
+    "effect": [ { "u_cast_spell": { "id": "pathos_creation_time_space", "hit_self": true } },
+	{
+        "u_message": "Pathological Creation of Time and Space: Reality gives you the chance to be somewhere else, now.",
+        "popup": false
+    } ],
+    "false_effect": [ { "run_eocs": [ { "id": "eoc_pathos_creation_time_energy" } ] } ],
+    "condition": { "and": [ { "u_is_wearing": "time_symbol_on" }, { "u_is_wearing": "space_symbol_on" } ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_pathos_creation_time_energy",
+    "effect": [ { "u_cast_spell": { "id": "pathos_creation_time_energy", "hit_self": true } },
+	{
+        "u_message": "Pathological Creation of Time and Energy: Reality gives darkness itself a break.",
+        "popup": false
+    } ],
+    "false_effect": [ { "run_eocs": [ { "id": "eoc_pathos_creation_energy_space" } ] } ],
+    "condition": { "and": [ { "u_is_wearing": "time_symbol_on" }, { "u_is_wearing": "energy_symbol_on" } ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_pathos_creation_energy_space",
+    "effect": [ { "u_cast_spell": { "id": "pathos_creation_energy_space", "hit_self": true } },
+	{
+        "u_message": "Pathological Creation of Energy and Space: Steel rains from the sky above you.",
+        "popup": false
+    } ],
+    "false_effect": [ { "run_eocs": [ { "id": "eoc_pathos_creation_time" } ] } ],
+    "condition": { "and": [ { "u_is_wearing": "space_symbol_on" }, { "u_is_wearing": "energy_symbol_on" } ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_pathos_creation_time",
+    "effect": [ { "u_cast_spell": { "id": "pathos_creation_time", "hit_self": true } },
+	{
+        "u_message": "Pathological Creation of Time: Reality creates a bubble of paused time around you.",
+        "popup": false
+    } ],
+    "false_effect": [ { "run_eocs": [ { "id": "eoc_pathos_creation_space" } ] } ],
+    "condition": { "and": [ { "u_is_wearing": "time_symbol_on" } ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_pathos_creation_space",
+    "effect": [ { "u_cast_spell": { "id": "pathos_creation_space", "hit_self": true } },
+	{
+        "u_message": "Pathological Creation of Space: The space above you bends and then pops back into place, sending a shockwave down that grounds you.",
+        "popup": false
+    } ],
+    "false_effect": [ { "run_eocs": [ { "id": "eoc_pathos_creation_energy" } ] } ],
+    "condition": { "and": [ { "u_is_wearing": "space_symbol_on" } ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_pathos_creation_energy",
+    "effect": [ { "u_cast_spell": { "id": "pathos_creation_energy", "hit_self": true } },
+	{
+        "u_message": "Pathological Creation of Energy: You feel more attached to the walls around you.",
+        "popup": false
+    } ],
+    "false_effect": [ { "u_cast_spell": { "id": "pathos_creation", "hit_self": true } },
+	{
+        "u_message": "Pathological Creation: Beings of both inclinations appear.",
+        "popup": false
+    } ],
+    "condition": { "and": [ { "u_is_wearing": "energy_symbol_on" } ] }
+  }
+]

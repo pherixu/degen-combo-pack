@@ -84,7 +84,7 @@
 		]
     }
 	],
-    "flags": [ "TARDIS", "SEMITANGIBLE", "NO_TAKEOFF", "AURA", "ONLY_ONE", "ZERO_WEIGHT" ]
+    "flags": [ "TARDIS", "SEMITANGIBLE", "INTEGRATED", "AURA", "ONLY_ONE", "ZERO_WEIGHT" ]
   },
   {
     "id": "cursed_spirit_1",
@@ -191,7 +191,7 @@
       ]
     }
 	],
-    "flags": [ "TRADER_AVOID", "TARDIS", "SEMITANGIBLE", "NO_TAKEOFF", "AURA", "ONLY_ONE", "ZERO_WEIGHT" ]
+    "flags": [ "TRADER_AVOID", "TARDIS", "SEMITANGIBLE", "INTEGRATED", "AURA", "ONLY_ONE", "ZERO_WEIGHT" ]
   },
   {
     "id": "cursed_spirit_2",
@@ -366,7 +366,7 @@
       ]
     }
 	],
-    "flags": [ "TRADER_AVOID", "TARDIS", "SEMITANGIBLE", "NO_TAKEOFF", "AURA", "ONLY_ONE", "ZERO_WEIGHT" ]
+    "flags": [ "TRADER_AVOID", "TARDIS", "SEMITANGIBLE", "INTEGRATED", "AURA", "ONLY_ONE", "ZERO_WEIGHT" ]
   },
   {
     "id": "cursed_spirit_3",
@@ -614,7 +614,7 @@
       ]
     }
 	],
-    "flags": [ "TRADER_AVOID", "TARDIS", "SEMITANGIBLE", "NO_TAKEOFF", "AURA", "ONLY_ONE", "ZERO_WEIGHT" ]
+    "flags": [ "TRADER_AVOID", "TARDIS", "SEMITANGIBLE", "INTEGRATED", "AURA", "ONLY_ONE", "ZERO_WEIGHT" ]
   },
   {
     "id": "spirit_2",
@@ -767,7 +767,7 @@
       ]
     }
 	],
-    "flags": [ "TARDIS", "SEMITANGIBLE", "NO_TAKEOFF", "AURA", "ONLY_ONE", "ZERO_WEIGHT" ]
+    "flags": [ "TARDIS", "SEMITANGIBLE", "INTEGRATED", "AURA", "ONLY_ONE", "ZERO_WEIGHT" ]
   },
   {
     "id": "spirit_3",
@@ -984,7 +984,7 @@
       ]
     }
 	],
-    "flags": [ "TARDIS", "SEMITANGIBLE", "AURA", "NO_TAKEOFF", "ONLY_ONE", "ZERO_WEIGHT" ]
+    "flags": [ "TARDIS", "SEMITANGIBLE", "AURA", "INTEGRATED", "ONLY_ONE", "ZERO_WEIGHT" ]
   },
   {
     "id": "spirit_int",

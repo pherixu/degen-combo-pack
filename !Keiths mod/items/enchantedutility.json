@@ -703,7 +703,7 @@
       "passive_effects": [ { "id": "pact_of_flame_enchantment3" } ],
       "charge_info": { "recharge_type": "periodic", "time": "3 d", "regenerate_ammo": true }
     },
-    "flags": [ "NO_UNLOAD", "NO_RELOAD", "STURDY", "NO_TAKEOFF" ],
+    "flags": [ "NO_UNLOAD", "NO_RELOAD", "STURDY" ],
     "use_action": [
       {
         "type": "musical_instrument",
@@ -1829,7 +1829,7 @@
         "type": "transform"
       }
     ],
-    "flags": [ "WATER_FRIENDLY", "SKINTIGHT", "NO_TAKEOFF" ]
+    "flags": [ "WATER_FRIENDLY", "SKINTIGHT", "INTEGRATED" ]
   },
   {
     "id": "magi_staff_minor",
@@ -2829,7 +2829,7 @@
     "to_hit": 3,
     "bashing": 14,
     "cutting": 3,
-    "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "ONLY_ONE", "TRADER_AVOID", "AURA", "NO_TAKEOFF", "NONCONDUCTIVE" ],
+    "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "ONLY_ONE", "TRADER_AVOID", "AURA", "INTEGRATED", "NONCONDUCTIVE" ],
     "material": [ "steel" ],
     "symbol": "/",
     "color": "brown",
@@ -2892,7 +2892,7 @@
     "to_hit": 3,
     "bashing": 14,
     "cutting": 3,
-    "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "ONLY_ONE", "TRADER_AVOID", "AURA", "NO_TAKEOFF", "NONCONDUCTIVE" ],
+    "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "ONLY_ONE", "TRADER_AVOID", "AURA", "INTEGRATED", "NONCONDUCTIVE" ],
     "material": [ "steel" ],
     "symbol": "/",
     "color": "brown",
@@ -2953,7 +2953,7 @@
     "to_hit": 3,
     "bashing": 14,
     "cutting": 3,
-    "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "AURA", "ONLY_ONE", "TRADER_AVOID", "NO_TAKEOFF", "NONCONDUCTIVE" ],
+    "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "AURA", "ONLY_ONE", "TRADER_AVOID", "INTEGRATED", "NONCONDUCTIVE" ],
     "material": [ "steel" ],
     "symbol": "/",
     "color": "brown",
@@ -3161,7 +3161,7 @@
       "OVERSIZE",
       "TRADER_AVOID",
       "AURA",
-      "NO_TAKEOFF",
+      "INTEGRATED",
       "NONCONDUCTIVE"
     ],
     "material": [ "steel" ],

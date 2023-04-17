@@ -934,10 +934,10 @@
     "id": "mon_goblin_mage",
     "type": "MONSTER",
     "copy-from": "mon_goblin_warrior",
-    "name": { "str": "goblin mage" },
+    "name": { "str": "goblin shaman" },
     "symbol": "M",
     "color": "brown",
-    "description": "A dastardly little thing, hunched with a gleam in it's eye. The infamous goblin mage, source of the goblin's real power.",
+    "description": "A dastardly little thing, hunched with a gleam in it's eye. The infamous goblin shaman, source of the goblin's real power.",
     "hp": 135,
     "dodge": 6,
     "melee_dice_sides": 8,
@@ -949,13 +949,13 @@
         "type": "spell",
         "spell_data": { "id": "manatouched_seeker_bolts", "min_level": 1 },
         "cooldown": 20,
-        "monster_message": "The mage allows the magic trapped in him to released."
+        "monster_message": "The shaman pulls spines and thorns from a pouch, imploring them to fly at their enemies."
       },
       {
         "type": "spell",
         "spell_data": { "id": "summon_goblin_squad", "min_level": 1 },
         "cooldown": 40,
-        "monster_message": "The goblin mage conjures forth more imps from the darkest reach."
+        "monster_message": "The shaman pitches a cloud of dust, new goblins forming from it mid-air.."
       }
     ],
     "melee_damage": [ { "damage_type": "cut", "amount": 4 } ],
@@ -989,10 +989,10 @@
     "id": "mon_goblin_mage_upgrade",
     "type": "MONSTER",
     "copy-from": "mon_goblin_warrior",
-    "name": { "str": "goblin mage" },
+    "name": { "str": "goblin shaman" },
     "symbol": "M",
     "color": "brown",
-    "description": "A dastardly little thing, hunched with a gleam in it's eye. The infamous goblin mage, source of the goblin's real power.",
+    "description": "A dastardly little thing, hunched with a gleam in it's eye. The infamous goblin shaman, source of the goblin's real power.",
     "hp": 135,
     "dodge": 6,
 	"armor_fire": 20, 
@@ -1008,17 +1008,23 @@
       { "emit_id": "emit_safe_shoppers", "delay": "1 s" }
     ],
     "special_attacks": [
+	  {
+        "type": "spell",
+        "spell_data": { "id": "manatouched_seeker_bolts", "min_level": 1 },
+        "cooldown": 20,
+        "monster_message": "The shaman pulls spines and thorns from a pouch, imploring them to fly at their enemies."
+      },
       {
         "type": "spell",
         "spell_data": { "id": "phase_skulker_teleport", "min_level": 1 },
         "cooldown": 20,
-        "monster_message": "The goblin mage keenly teleports."
+        "monster_message": "The shaman produces a small trinket and crushes it, keenly teleporting."
       },
       {
         "type": "spell",
         "spell_data": { "id": "summon_goblin_squad", "min_level": 1 },
         "cooldown": 20,
-        "monster_message": "The goblin mage conjures forth more imps from the darkest reach."
+        "monster_message": "The shaman pitches a cloud of dust, new goblins forming from it mid-air."
       }
     ],
     "melee_damage": [ { "damage_type": "cut", "amount": 4 } ],
@@ -1044,7 +1050,7 @@
         { "item": "boots_scrap", "prob": 40 },
         { "item": "armguard_scrap", "prob": 40 },
         { "item": "cuirass_scrap", "prob": 40 },
-        { "group": "enchanted_misc", "prob": 7 },
+        { "group": "enchanted_small_items", "prob": 10 },
         { "group": "enchanted_melee_weapons_plus1", "prob": 100 }
       ]
     }
@@ -1163,6 +1169,133 @@
     "min_duration": 36000,
     "max_duration": 180000,
     "duration_increment": 5000
+  },
+  {
+    "id": "mon_orc_mage",
+    "type": "MONSTER",
+    "copy-from": "mon_orc_warrior",
+    "name": { "str": "orc chanter" },
+    "description": "An orc loose metal plate that is continuously chanting in a foul language, seemingly encouraging the rest of the tribe into a blood rage.",
+    "hp": 97,
+    "dodge": 3,
+    "aggression": 100,
+    "color": "red",
+	"armor_bash": 40, 
+    "melee_dice_sides": 8,
+    "melee_damage": [ { "damage_type": "cut", "amount": 5 } ],
+	"special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": { "id": "orc_mage_bellow", "min_level": 1 },
+        "cooldown": 20,
+        "monster_message": "The chanter bellows and howls, the other orcs filling with battle fervor."
+      },
+      {
+        "type": "spell",
+        "spell_data": { "id": "orc_mage_soothe", "min_level": 1 },
+        "cooldown": 20,
+        "monster_message": "The chanter hums a low tone, seeming to push wounded nearby orcs into a painless fury."
+      }
+    ],
+	"flags": [ "SEES", "HEARS", "WARM", "BASHES", "FILTHY", "PATH_AVOID_DANGER_1", "SWARMS", "GROUP_MORALE" ],
+    "death_drops": {
+      "subtype": "collection",
+      "items": [
+        { "item": "helmet_scrap", "prob": 20 },
+        { "item": "legguard_scrap", "prob": 10 },
+        { "item": "boots_scrap", "prob": 10 },
+        { "item": "armguard_scrap", "prob": 30 },
+        { "item": "cuirass_scrap", "prob": 20 },
+        { "item": "loincloth_fur", "prob": 10 },
+        { "item": "footrags_fur", "prob": 10 },
+        { "item": "gloves_wraps_fur", "prob": 10 },
+	    { "group": "mussto_windinst", "prob": 100 },
+		{ "group": "harddrugs", "prob": 100 },
+        { "item": "bellywrap_fur", "prob": 5 },
+        { "item": "chestwrap_fur", "prob": 5 }
+      ]
+    }
+  },
+  {
+    "id": "mon_orc_mage_upgrade",
+    "type": "MONSTER",
+    "copy-from": "mon_orc_warrior",
+    "name": { "str": "orc chanter" },
+    "description": "An orc in loose metal plate that is continuously chanting in a foul language, seemingly encouraging the rest of the tribe into a blood rage.",
+    "hp": 97,
+    "dodge": 3,
+    "aggression": 100,
+    "color": "red",
+	"armor_bash": 40, 
+    "melee_dice_sides": 8,
+    "melee_damage": [ { "damage_type": "cut", "amount": 5 } ],
+	"special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": { "id": "orc_mage_bellow", "min_level": 1 },
+        "cooldown": 10,
+        "monster_message": "The chanter bellows and howls, the other orcs filling with battle fervor."
+      },
+      {
+        "type": "spell",
+        "spell_data": { "id": "orc_mage_soothe", "min_level": 1 },
+        "cooldown": 10,
+        "monster_message": "The chanter hums a low tone, seeming to push wounded orcs into a painless fury."
+      }
+    ],
+	"flags": [ "SEES", "HEARS", "WARM", "BASHES", "FILTHY", "PATH_AVOID_DANGER_1", "SWARMS", "GROUP_MORALE", "HIT_AND_RUN" ],
+    "death_drops": {
+      "subtype": "collection",
+      "items": [
+        { "item": "helmet_scrap", "prob": 20 },
+        { "item": "legguard_scrap", "prob": 10 },
+        { "item": "boots_scrap", "prob": 10 },
+        { "item": "armguard_scrap", "prob": 30 },
+        { "item": "cuirass_scrap", "prob": 20 },
+        { "item": "loincloth_fur", "prob": 10 },
+        { "item": "footrags_fur", "prob": 10 },
+        { "item": "gloves_wraps_fur", "prob": 10 },
+	    { "group": "mussto_windinst", "prob": 100 },
+        { "item": "bellywrap_fur", "prob": 5 },
+        { "item": "chestwrap_fur", "prob": 5 },
+        { "item": "warhammer", "prob": 100 }
+      ]
+    }
+  },
+  {
+    "type": "effect_type",
+    "name": [ "Enraged" ],
+    "desc": [ "Enraged" ],
+    "id": "battle_fervor",
+    "rating": "neutral",
+    "base_mods": { "speed_mod": [ 50 ] }
+  },
+  {
+    "id": "orc_mage_bellow",
+    "type": "SPELL",
+    "name": "Orc Bellow",
+    "description": "",
+    "valid_targets": [ "ally", "self" ],
+    "min_aoe": 20,
+    "max_aoe": 20,
+	"min_duration": 1000, 
+	"max_duration": 1000,
+    "shape": "blast",
+    "effect": "attack",
+    "effect_str": "battle_fervor"
+  },
+  {
+    "id": "orc_mage_soothe",
+    "type": "SPELL",
+    "name": "Orc Bellow",
+    "description": "",
+    "valid_targets": [ "ally", "self" ],
+    "min_aoe": 3,
+    "max_aoe": 3,
+	"min_damage": -10, 
+	"max_damage": -10,
+    "shape": "blast",
+    "effect": "attack"
   },
    {
     "id": "mon_kelkememnon",

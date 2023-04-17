@@ -1,0 +1,273 @@
+[
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_logos",
+    "effect": [ { "run_eocs": [ { "id": "eoc_logos_destruction" } ] } ],
+    "false_effect": { "run_eocs": [ { "id": "eoc_logos_2" } ] },
+    "condition": { "u_is_wearing": "destruction_symbol" }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_logos_2",
+    "effect": [ { "run_eocs": [ { "id": "eoc_logos_preservation" } ] } ],
+    "false_effect": [ { "run_eocs": [ { "id": "eoc_logos_3" } ] } ],
+    "condition": { "u_is_wearing": "preservation_symbol" }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_logos_3",
+    "effect": [ { "run_eocs": [ { "id": "eoc_logos_creation" } ] } ],
+    "false_effect": {
+        "u_message": "The Three Great Statements are the foundation of your argument. Without them, there is no Rhetoric.",
+        "type": "warning",
+        "popup": true
+      },
+    "condition": { "u_is_wearing": "creation_symbol" }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_logos_destruction",
+    "effect": [ { "u_cast_spell": { "id": "logos_destruction_time_space_energy", "hit_self": true } }, 
+	{
+        "u_message": "Logical Destruction of Time, Space, and Energy: The forms of beings near to you are inexplicably altered.",
+        "popup": false
+    } ],
+    "false_effect": [ { "run_eocs": [ { "id": "eoc_logos_destruction_time_space" } ] } ],
+    "condition": { "and": [ { "u_is_wearing": "time_symbol_on" }, { "u_is_wearing": "energy_symbol_on" }, { "u_is_wearing": "space_symbol_on" } ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_logos_destruction_time_space",
+    "effect": [ { "u_cast_spell": { "id": "logos_destruction_time_space", "hit_self": true } }, 
+	{
+        "u_message": "Logical Destruction of Time and Space: Nearby beings are ripped apart.",
+        "popup": false
+    } ],
+    "false_effect": [ { "run_eocs": [ { "id": "eoc_logos_destruction_time_energy" } ] } ],
+    "condition": { "and": [ { "u_is_wearing": "time_symbol_on" }, { "u_is_wearing": "space_symbol_on" } ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_logos_destruction_time_energy",
+    "effect": [
+	{ "u_cast_spell": { "id": "logos_destruction_time_energy", "hit_self": true } },
+	{
+        "u_message": "Logical Destruction of Time and Energy: Viscious energy slowly creeps into the bodies of nearby beings.",
+        "popup": false
+    } ],
+    "false_effect": [ { "run_eocs": [ { "id": "eoc_logos_destruction_energy_space" } ] } ],
+    "condition": { "and": [ { "u_is_wearing": "time_symbol_on" }, { "u_is_wearing": "energy_symbol_on" } ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_logos_destruction_energy_space",
+    "effect": [ { "u_cast_spell": { "id": "logos_destruction_energy_space", "hit_self": true } },
+	{
+        "u_message": "Logical Destruction of Energy and Space: The space around you feels an energetic impact.",
+        "popup": false
+    } ],
+    "false_effect": [ { "run_eocs": [ { "id": "eoc_logos_destruction_time" } ] } ],
+    "condition": { "and": [ { "u_is_wearing": "space_symbol_on" }, { "u_is_wearing": "energy_symbol_on" } ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_logos_destruction_time",
+    "effect": [ { "u_cast_spell": { "id": "logos_destruction_time", "hit_self": true } },
+	{
+        "u_message": "Logical Destruction of Time: Time pauses for all but you.",
+        "popup": false
+    } ],
+    "false_effect": [ { "run_eocs": [ { "id": "eoc_logos_destruction_space" } ] } ],
+    "condition": { "and": [ { "u_is_wearing": "time_symbol_on" } ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_logos_destruction_space",
+    "effect": [ { "u_cast_spell": { "id": "logos_destruction_space", "hit_self": true } },
+	{
+        "u_message": "Logical Destruction of Space: Space warps and beings nearby are pulled into you.",
+        "popup": false
+    } ],
+    "false_effect": [ { "run_eocs": [ { "id": "eoc_logos_destruction_energy" } ] } ],
+    "condition": { "and": [ { "u_is_wearing": "space_symbol_on" } ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_logos_destruction_energy",
+    "effect": [
+	{ "u_cast_spell": { "id": "logos_destruction_energy", "hit_self": true } },
+	{
+        "u_message": "Logical Destruction of Energy: Beings you face lose energy.",
+        "popup": false
+    }
+	],
+    "false_effect": [ { "u_cast_spell": { "id": "logos_destruction", "hit_self": true } },
+	{
+        "u_message": "Logical Destruction: Reality aids you in destroying others.",
+        "popup": false
+    } ],
+    "condition": { "and": [ { "u_is_wearing": "energy_symbol_on" } ] }
+  },
+ {
+    "type": "effect_on_condition",
+    "id": "eoc_logos_preservation",
+    "effect": [ { "u_cast_spell": { "id": "logos_preservation_time_space_energy" } },
+	{
+        "u_message": "Logical Preservation of Time, Space, and Energy: Some beings near you start exhibiting signs of being stunned.",
+        "popup": false
+    } ],
+    "false_effect": [ { "run_eocs": [ { "id": "eoc_logos_preservation_time_space" } ] } ],
+    "condition": { "and": [ { "u_is_wearing": "time_symbol_on" }, { "u_is_wearing": "energy_symbol_on" }, { "u_is_wearing": "space_symbol_on" } ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_logos_preservation_time_space",
+    "effect": [ { "u_cast_spell": { "id": "logos_preservation_time_space", "hit_self": true } },
+	{
+        "u_message": "Logical Preservation of Time and Space: beings in your vicinity experience slow Reality.",
+        "popup": false
+    } ],
+    "false_effect": [ { "run_eocs": [ { "id": "eoc_logos_preservation_time_energy" } ] } ],
+    "condition": { "and": [ { "u_is_wearing": "time_symbol_on" }, { "u_is_wearing": "space_symbol_on" } ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_logos_preservation_time_energy",
+    "effect": [ { "u_cast_spell": { "id": "logos_preservation_time_energy" } },
+	{
+        "u_message": "Logical Preservation of Time and Energy: An efficient form of travel appears nearby.",
+        "popup": false
+    } ],
+    "false_effect": [ { "run_eocs": [ { "id": "eoc_logos_preservation_energy_space" } ] } ],
+    "condition": { "and": [ { "u_is_wearing": "time_symbol_on" }, { "u_is_wearing": "energy_symbol_on" } ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_logos_preservation_energy_space",
+    "effect": [ { "u_cast_spell": { "id": "logos_preservation_energy_space" } },
+	{
+        "u_message": "Logical Preservation of Energy and Space: Reality preserves the energy in nearby spaces by crystallizing it into stones.",
+        "popup": false
+    } ],
+    "false_effect": [ { "run_eocs": [ { "id": "eoc_logos_preservation_time" } ] } ],
+    "condition": { "and": [ { "u_is_wearing": "space_symbol_on" }, { "u_is_wearing": "energy_symbol_on" } ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_logos_preservation_time",
+    "effect": [ { "u_cast_spell": { "id": "logos_preservation_time", "hit_self": true } },
+	{
+        "u_message": "Logical Preservation of Time: Reality preserves this moment in your memories; several moments actually.",
+        "popup": false
+    } ],
+    "false_effect": [ { "run_eocs": [ { "id": "eoc_logos_preservation_space" } ] } ],
+    "condition": { "and": [ { "u_is_wearing": "time_symbol_on" } ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_logos_preservation_space",
+    "effect": [ { "u_cast_spell": { "id": "logos_preservation_space" } },
+	{
+        "u_message": "Logical Preservation of Space: Reality preserves the space, but not the beings, around you.",
+        "popup": false
+    } ],
+    "false_effect": [ { "run_eocs": [ { "id": "eoc_logos_preservation_energy" } ] } ],
+    "condition": { "and": [ { "u_is_wearing": "space_symbol_on" } ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_logos_preservation_energy",
+    "effect": [ { "u_cast_spell": { "id": "logos_preservation_energy" } },
+	{
+        "u_message": "Logical Preservation of Energy: Reality stops being visible to some nearby beings.",
+        "popup": false
+    } ],
+    "false_effect": [ { "u_cast_spell": { "id": "logos_preservation", "hit_self": true } },
+	{
+        "u_message": "Logical Preservation: Reality takes weak beings near you and puts them somewhere else.",
+        "popup": false
+    } ],
+    "condition": { "and": [ { "u_is_wearing": "energy_symbol_on" } ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_logos_creation",
+    "effect": [ { "u_cast_spell": { "id": "logos_creation_time_space_energy", "hit_self": true } },
+	{
+        "u_message": "Logical Creation of Time, Space, and Energy: Reality conjures beings of it's own design.",
+        "popup": false
+    } ],
+    "false_effect": [ { "run_eocs": [ { "id": "eoc_logos_creation_time_space" } ] } ],
+    "condition": { "and": [ { "u_is_wearing": "time_symbol_on" }, { "u_is_wearing": "energy_symbol_on" }, { "u_is_wearing": "space_symbol_on" } ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_logos_creation_time_space",
+    "effect": [ { "u_cast_spell": { "id": "logos_creation_time_space", "hit_self": true } },
+	{
+        "u_message": "Logical Creation of Time and Space: Reality channels into a bolt of lightning.",
+        "popup": false
+    } ],
+    "false_effect": [ { "run_eocs": [ { "id": "eoc_logos_creation_time_energy" } ] } ],
+    "condition": { "and": [ { "u_is_wearing": "time_symbol_on" }, { "u_is_wearing": "space_symbol_on" } ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_logos_creation_time_energy",
+    "effect": [ { "u_cast_spell": { "id": "logos_creation_time_energy", "hit_self": true } },
+	{
+        "u_message": "Logical Creation of Time and Energy: Reality creates evolutional energy.",
+        "popup": false
+    } ],
+    "false_effect": [ { "run_eocs": [ { "id": "eoc_logos_creation_energy_space" } ] } ],
+    "condition": { "and": [ { "u_is_wearing": "time_symbol_on" }, { "u_is_wearing": "energy_symbol_on" } ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_logos_creation_energy_space",
+    "effect": [ { "u_cast_spell": { "id": "logos_creation_energy_space", "hit_self": true } },
+	{
+        "u_message": "Logical Creation of Energy and Space: Reality creates a crystallized spatial energy.",
+        "popup": false
+    } ],
+    "false_effect": [ { "run_eocs": [ { "id": "eoc_logos_creation_time" } ] } ],
+    "condition": { "and": [ { "u_is_wearing": "space_symbol_on" }, { "u_is_wearing": "energy_symbol_on" } ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_logos_creation_time",
+    "effect": [ { "u_cast_spell": { "id": "logos_creation_time", "hit_self": true } },
+	{
+        "u_message": "Logical Creation of Time: Time creeps back into nearby corpses.",
+        "popup": false
+    } ],
+    "false_effect": [ { "run_eocs": [ { "id": "eoc_logos_creation_space" } ] } ],
+    "condition": { "and": [ { "u_is_wearing": "time_symbol_on" } ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_logos_creation_space",
+    "effect": [ { "u_cast_spell": { "id": "logos_creation_space", "hit_self": true } },
+	{
+        "u_message": "Logical Creation of Space: Reality seems to push with you.",
+        "popup": false
+    } ],
+    "false_effect": [ { "run_eocs": [ { "id": "eoc_logos_creation_energy" } ] } ],
+    "condition": { "and": [ { "u_is_wearing": "space_symbol_on" } ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_logos_creation_energy",
+    "effect": [ { "u_cast_spell": { "id": "logos_creation_energy" } },
+	{
+        "u_message": "Logical Creation of Energy: Reality energizes those around you.",
+        "popup": false
+    } ],
+    "false_effect": [ { "u_cast_spell": { "id": "logos_creation", "hit_self": true } },
+	{
+        "u_message": "Logical Creation: Reality creates a being of pure evolutional horror.",
+        "popup": false
+    } ],
+    "condition": { "and": [ { "u_is_wearing": "energy_symbol_on" } ] }
+  }
+]

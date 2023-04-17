@@ -1,0 +1,82 @@
+[
+{
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "social_contract",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_OTHER",
+    "skill_used": "speech",
+    "skills_required": [ "speech", 1 ],
+    "difficulty": 1,
+    "time": "2 h",
+    "autolearn": true,
+	"using": [ [ "drawing_tool", 100 ] ],
+    "components": [
+      [ [ "paper", 100 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "ethos",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_OTHER",
+    "skill_used": "speech",
+    "skills_required": [ "speech", 1 ],
+    "difficulty": 1,
+    "time": "1 s",
+    "autolearn": false,
+    "book_learn": [ [ "social_contract", 1 ] ],
+    "components": [
+      [ [ "social_contract", 1 ] ]
+    ]
+  },
+
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "statement_invoker",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_OTHER",
+    "skill_used": "speech",
+    "skills_required": [ "speech", 1 ],
+    "difficulty": 1,
+    "time": "1 s",
+    "autolearn": false,
+    "book_learn": [ [ "social_contract", 1 ] ],
+    "components": [
+      [ [ "paper", 100 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "symbol_invoker",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_OTHER",
+    "skill_used": "speech",
+    "skills_required": [ "speech", 1 ],
+    "difficulty": 1,
+    "time": "1 s",
+    "autolearn": false,
+    "book_learn": [ [ "social_contract", 1 ] ],
+    "using": [ [ "drawing_tool", 100 ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "rhetorical_sophistry",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_OTHER",
+    "skill_used": "speech",
+    "skills_required": [ "speech", 3 ],
+    "difficulty": 3,
+    "time": "2 h",
+    "autolearn": false,
+    "book_learn": [ [ "social_contract", 1 ] ],
+    "using": [ [ "drawing_tool", 100 ] ],
+    "components": [
+      [ [ "paper", 100 ] ]
+    ]
+  }
+]

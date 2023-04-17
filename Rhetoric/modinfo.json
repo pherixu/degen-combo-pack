@@ -1,0 +1,12 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "rhetoric",
+    "name": "Rhetoric",
+    "authors": [ "KeefTeefa" ],
+    "maintainers": [ "KeefTeefa" ],
+    "description": "Use symbology to convince reality itself to bend to your will.",
+    "category": "content",
+    "dependencies": [ "dda" ]
+  }
+]

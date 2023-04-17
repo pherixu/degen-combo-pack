@@ -62,6 +62,7 @@
     "max_damage": 15,
     "base_casting_time": 0,
     "energy_source": "STAMINA",
+	"damage_type": "pure",
     "difficulty": 2,
     "sound_description": "a whoosh"
   },
@@ -160,6 +161,7 @@
     "min_range": 3,
     "max_range": 3,
     "energy_source": "STAMINA",
+	"damage_type": "pure", 
     "difficulty": 2,
     "sound_description": "a whoosh"
   },

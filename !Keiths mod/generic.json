@@ -490,7 +490,7 @@
       },
       {
         "type": "reveal_map",
-        "radius": 150,
+        "radius": 250,
         "terrain": [
           "hiway",
           "road",
@@ -500,6 +500,8 @@
           "control_tower_0",
           "pwr_large_entrance",
 		  "post_office_overrun",
+		  "post_office", 
+		  "post_office_1",
           "loffice_tower_1",
           "office_tower_2_a1",
           "lab_subway_vent_shaft_surface",
@@ -507,7 +509,6 @@
           "haz_sar_1_1",
           "cathedral_b_NW",
           "exodii_base_x0y0z0",
-          "aircraft_carrier_1a",
           "outpost",
           "bunker",
           "lmoe",
@@ -520,6 +521,12 @@
           "central_lab_train_depot",
           "lab_train_depot",
           { "om_terrain": "magic_academy_ground", "om_terrain_match_type": "TYPE" },
+		  { "om_terrain": "magic_academy_operator", "om_terrain_match_type": "TYPE" },
+		  { "om_terrain": "bank_raiders", "om_terrain_match_type": "TYPE" },
+		  { "om_terrain": "bank_altar", "om_terrain_match_type": "TYPE" },
+		  { "om_terrain": "office_towermage", "om_terrain_match_type": "TYPE" },
+		  { "om_terrain": "demonfort", "om_terrain_match_type": "CONTAINS" },
+		  { "om_terrain": "aircraft_carrier", "om_terrain_match_type": "CONTAINS" },
           { "om_terrain": "corpse_head", "om_terrain_match_type": "TYPE" },
           { "om_terrain": "magic_shop", "om_terrain_match_type": "TYPE" },
           { "om_terrain": "wizardtower1_ground", "om_terrain_match_type": "TYPE" },
@@ -529,7 +536,7 @@
           "police",
           "mil_base_road_entrance"
         ],
-        "message": "You add roads and facilities to your map."
+        "message": "You preen the intel for locations of interest."
       }
     ]
   },
@@ -2210,8 +2217,8 @@
   {
     "id": "ortiels_aura",
     "type": "ARMOR",
-    "name": { "str": "ortiel's essence" },
-    "description": "You have absorbed the essence of Ortiel, becoming much more powerful.",
+    "name": { "str": "ortiel's contract" },
+    "description": "You have absorbed the contract of Ortiel, stealing it's power at no cost to your self. You feel stronger and faster in combat. The contract clearly states the terms of it's release; at the foot of the Prince of Darkness.",
     "weight": "1 g",
     "volume": "1 ml",
     "longest_side": "1 cm",
@@ -2241,8 +2248,8 @@
   {
     "id": "omnaths_aura",
     "type": "ARMOR",
-    "name": { "str": "omnaths's essence" },
-    "description": "You have absorbed the essence of Omnath, becoming much more powerful.",
+    "name": { "str": "omnaths's contract" },
+    "description": "You have absorbed the contract of Omnath, stealing it's power at no cost to your self. You feel much more perceptive of magic. The contract clearly states the terms of it's release; at the foot of the Prince of Darkness.",
     "weight": "1 g",
     "volume": "1 ml",
     "longest_side": "1 cm",
@@ -2268,8 +2275,8 @@
   {
     "id": "yidris_aura",
     "type": "ARMOR",
-    "name": { "str": "yidris' essence" },
-    "description": "You have absorbed the essence of Omnath, becoming much more powerful.",
+    "name": { "str": "yidris' contract" },
+    "description": "You have absorbed the contract of Omnath, stealing it's power at no cost to your self. You feel dextrous and vigorous energy all throughout your body. The contract clearly states the terms of it's release; at the foot of the Prince of Darkness.",
     "weight": "1 g",
     "volume": "1 ml",
     "longest_side": "1 cm",
@@ -2295,8 +2302,8 @@
   {
     "id": "atraxas_aura",
     "type": "ARMOR",
-    "name": { "str": "atraxa's essence" },
-    "description": "You have absorbed the essence of Ortiel, becoming much more powerful.",
+    "name": { "str": "atraxa's contract" },
+    "description": "You have absorbed the contract of Atraxa, stealing it's power at no cost to your self. You feel intellectually keen to your own health. The contract clearly states the terms of it's release; at the foot of the Prince of Darkness.",
     "weight": "1 g",
     "volume": "1 ml",
     "longest_side": "1 cm",
@@ -2375,7 +2382,7 @@
     "to_hit": 3,
     "bashing": 14,
     "cutting": 3,
-    "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "TRADER_AVOID", "AURA", "NO_TAKEOFF", "NONCONDUCTIVE" ],
+    "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "TRADER_AVOID", "AURA", "INTEGRATED", "NONCONDUCTIVE" ],
     "material": [ "steel" ],
     "symbol": "/",
     "color": "brown",
@@ -2433,7 +2440,7 @@
     "to_hit": 3,
     "bashing": 14,
     "cutting": 3,
-    "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "TRADER_AVOID", "AURA", "NO_TAKEOFF", "NONCONDUCTIVE" ],
+    "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "TRADER_AVOID", "AURA", "INTEGRATED", "NONCONDUCTIVE" ],
     "material": [ "steel" ],
     "symbol": "/",
     "color": "brown",
@@ -2491,7 +2498,7 @@
     "to_hit": 3,
     "bashing": 14,
     "cutting": 3,
-    "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "TRADER_AVOID", "AURA", "NO_TAKEOFF", "NONCONDUCTIVE" ],
+    "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "TRADER_AVOID", "AURA", "INTEGRATED", "NONCONDUCTIVE" ],
     "material": [ "steel" ],
     "symbol": "/",
     "color": "brown",
@@ -2511,7 +2518,7 @@
     "to_hit": 3,
     "bashing": 14,
     "cutting": 3,
-    "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "TRADER_AVOID", "AURA", "NO_TAKEOFF", "NONCONDUCTIVE" ],
+    "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "TRADER_AVOID", "AURA", "INTEGRATED", "NONCONDUCTIVE" ],
     "material": [ "steel" ],
     "symbol": "/",
     "color": "brown",
@@ -2719,26 +2726,75 @@
     "volume": "1 ml"
   },
   {
+    "type": "effect_on_condition",
+    "id": "eoc_desperate_letter",
+    "effect": 
+	    [
+            {
+              "u_location_variable": { "global_val": "OM_post_office_overrun" },
+              "target_params": { 
+				"om_terrain": "post_office_overrun",
+				"om_terrain_match_type": "TYPE",
+				"om_replace": "post_office", 
+			    "search_range": 1000,
+			    "min_distance": 10,
+			    "random": false 
+			  },
+              "fail_message": "The envelope rips!"
+            },
+			{ "run_eocs": 
+			[
+              {
+                 "id": "eoc_desperate_letter2"
+		      }
+	        ] 
+			}
+      ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_desperate_letter2",
+    "effect": 
+	[
+	    {  
+		   "u_teleport": { "global_val": "OM_post_office_overrun" },
+           "fail_message": "The letter is blank!",
+		   "force": false
+	    },
+		{
+        "u_message": "You get sucked into the envelope.",
+        "popup": false
+        }
+	]
+  },
+  {
+    "id": "eoc_desperate_letter",
+    "type": "SPELL",
+    "name": "Open Envelope (Perhaps Rather Slowly)",
+    "description": "",
+    "valid_targets": [ "self" ],
+    "effect": "effect_on_condition",
+    "effect_str": "eoc_desperate_letter",
+    "shape": "blast",
+    "energy_source": "MANA",
+    "difficulty": 4,
+    "base_casting_time": 0,
+    "base_energy_cost": 0,
+    "max_level": 20
+  },
+  {
     "type": "GENERIC",
     "id": "desperate_letter",
     "category": "books",
     "symbol": ",",
     "color": "white",
     "name": { "str": "desperate letter" },
-    "description": "A letter from an official at a local post office begging for assistance. They claim to have been overrun by creatures of the night, but that seems a little dramatic for 2-day delivery.",
+    "description": "A letter with the words 'DONT DEAD, OPEN INSIDE' written in blood on the front.",
     "price": 0,
     "price_postapoc": 0,
     "material": [ "paper" ],
-	 "use_action": [
-      {
-        "type": "reveal_map",
-        "radius": 5000,
-        "terrain": [
-          { "om_terrain": "post_office_overrun", "om_terrain_match_type": "TYPE" }
-        ],
-        "message": "You add the location of the post office to your map."
-      }
-    ],
+	"flags": [ "SINGLE_USE" ],
+	"use_action": { "type": "cast_spell", "spell_id": "eoc_desperate_letter", "no_fail": true, "level": 1, "need_wielding": true },
     "weight": "3 g",
     "volume": "1 ml"
   },
@@ -2856,56 +2912,11 @@
     "volume": "1 ml"
   },
   {
-    "id": "ortiels_contract",
-    "type": "BOOK",
-    "category": "manuals",
-    "symbol": ",",
-    "color": "white",
-    "name": { "str": "Ortiel's contract" },
-    "description": "A brief contract binding an entity to a higher, or perhaps lower, power.",
-    "price": 0,
-    "price_postapoc": 0,
-	"looks_like": "paper",
-    "material": [ "paper" ],
-    "weight": "3 g",
-    "volume": "1 ml"
-  },
-  {
-    "id": "yidris_contract",
-    "type": "BOOK",
-    "category": "manuals",
-    "symbol": ",",
-    "color": "white",
-	"looks_like": "paper",
-    "name": { "str": "Yidris' contract" },
-    "description": "A brief contract binding an entity to a higher, or perhaps lower, power.",
-    "price": 0,
-    "price_postapoc": 0,
-    "material": [ "paper" ],
-    "weight": "3 g",
-    "volume": "1 ml"
-  },
-  {
-    "id": "atraxas_contract",
-    "type": "BOOK",
-    "category": "manuals",
-    "symbol": ",",
-    "color": "white",
-	"looks_like": "paper",
-    "name": { "str": "Atraxa's contract" },
-    "description": "A brief contract binding an entity to a higher, or perhaps lower, power.",
-    "price": 0,
-    "price_postapoc": 0,
-    "material": [ "paper" ],
-    "weight": "3 g",
-    "volume": "1 ml"
-  },
-  {
     "id": "broken_contract",
-    "type": "BOOK",
-    "category": "manuals",
-    "name": { "str": "broken contract", "str_pl": "broken contracts" },
-    "description": "A contract of which the seal has been painstakingly broken. Activating and reading it aloud might draw the ire of whatever resides on the other side of magic...",
+    "type": "GENERIC",
+	"category": "BOOKS",
+    "name": { "str": "broken seal", "str_pl": "broken seals" },
+    "description": "A seal stamped in Color itself, beckoning directly to the lowest reach. The foolish might cast it into the blood of an animate circle, binding the creditor to their will for a brief period.",
     "weight": "1 g",
     "volume": "10 ml",
 	"looks_like": "paper",
@@ -2913,7 +2924,8 @@
     "price": 10000,
     "material": [ "aether" ],
     "symbol": "c",
-	"use_action": { "type": "cast_spell", "spell_id": "summon_devil", "no_fail": true, "level": 1, "need_wielding": true },
+	"flags": [ "SINGLE_USE" ],
+	"use_action": { "type": "cast_spell", "spell_id": "summon_devil_friendly", "no_fail": true, "level": 1, "need_wielding": true },
     "color": "black"
   },
   {
@@ -2939,7 +2951,7 @@
     "type": "BOOK",
 	"category": "manuals",
     "name": { "str": "chunk of devil", "str_pl": "chunk of devil" },
-    "description": "A piece ripped off of the devil themself. It oozes cash and souls constantly, and would sell for a very pretty penny to the right buyer.",
+    "description": "A piece ripped off of the devil themself. It oozes souls constantly, and would sell for a very pretty penny to the right buyer.",
     "weight": "1 g",
     "volume": "10 ml",
     "longest_side": "1 cm",
@@ -2947,12 +2959,10 @@
     "price": 1000000,
     "material": [ "brimstone" ], 
     "symbol": "c",
-	"charges_per_use": 3,
-	"use_action": { "type": "cast_spell", "spell_id": "chunk_of_devil_spell", "no_fail": true, "level": 1, "need_wielding": true },
 	"relic_data": {
-      "charge_info": { "recharge_type": "periodic", "time": "1 d", "regenerate_ammo": true }
+      "charge_info": { "recharge_type": "periodic", "time": "3 d", "regenerate_ammo": true }
     },
-	"pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "decaying_soul_ammo": 3 } } ],
+	"pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "decaying_soul_ammo": 13 } } ],
     "color": "white"
   },
   {
@@ -2978,7 +2988,7 @@
 	"looks_like": "water_clean",
     "count": 1,
     "longest_side": "1 cm",
-    "price": 10000,
+    "price": 5000,
     "material": [ "aether" ],
     "symbol": "c",
 	"use_action": { "type": "cast_spell", "spell_id": "use_tear", "no_fail": true, "level": 1, "need_wielding": true },
