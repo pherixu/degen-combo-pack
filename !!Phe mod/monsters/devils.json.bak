@@ -227,7 +227,7 @@
     { "id": "SHOCKSTORM", "cooldown": 12, "range": 1 },
       {
         "type": "spell",
-        "spell_data": { "id": "phase_shrike_teleport", "min_level": 1 },
+        "spell_data": { "id": "phase_strike_teleport", "min_level": 1 },
         "cooldown": 4,
         "monster_message": "the simulacrum warps towards you with a magical spell."
       }
@@ -589,7 +589,7 @@
     { "id": "SPIT_SAP", "cooldown": 5, "min_mul": 1, "max_mul": 2 },
       {
         "type": "spell",
-        "spell_data": { "id": "phase_shrike_teleport", "min_level": 1 },
+        "spell_data": { "id": "phase_strike_teleport", "min_level": 1 },
         "cooldown": 25,
         "monster_message": "the geo-saurian leaps towards you with it's hunting spear."
       }
