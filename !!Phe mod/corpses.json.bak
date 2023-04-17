@@ -19,8 +19,8 @@
           "values": [
             { "value": "MAX_MANA", "add": 50 },
             { "value": "BONUS_DAMAGE", "add": 2000 },
-			{ "value": "ARMOR_BASH", "add": -3 },
-			{ "value": "ARMOR_CUT", "add": -3 },
+			{ "value": "ARMOR_BASH", "add": 3 },
+			{ "value": "ARMOR_CUT", "add": 3 },
 			{ "value": "ARMOR_BULLET", "add": 10 },
             { "value": "STRENGTH", "add": 1 },
             { "value": "DEXTERITY", "add": 1 },

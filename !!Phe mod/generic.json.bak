@@ -312,7 +312,7 @@
 	"flags": [ "SINGLE_USE" ],
 	"color": "green",
     "charges_per_use": 0,
-    "description": "A sleek yet sharp chunk of white mineral, tingly to the touch."
+    "description": "A sleek yet sharp chunk of white mineral, tingly to the touch.",
 	
   }, 
   
@@ -326,7 +326,7 @@
 	"flags": [ "SINGLE_USE" ],
 	"color": "green",
     "charges_per_use": 0,
-    "description": "A deep blue mineral with white cleavage, cold to the touch."
+    "description": "A deep blue mineral with white cleavage, cold to the touch.",
 	
   }, 
   
@@ -340,7 +340,7 @@
 	"flags": [ "SINGLE_USE" ],
 	"color": "green",
     "charges_per_use": 0,
-    "description": "A charred-looking mineral with a smooth exterior, hot to the touch."
+    "description": "A charred-looking mineral with a smooth exterior, hot to the touch.",
 	
   }, 
   
@@ -354,7 +354,7 @@
 	"flags": [ "SINGLE_USE" ],
 	"color": "green",
     "charges_per_use": 0,
-    "description": "A slightly fluorescent mineral with a bright verdant tint, acidic to the touch."
+    "description": "A slightly fluorescent mineral with a bright verdant tint, acidic to the touch.",
 	
   }, 
   

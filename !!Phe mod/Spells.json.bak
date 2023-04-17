@@ -289,7 +289,7 @@
     "min_range": 5,
     "max_range": 30,
     "range_increment": 1.5,
-    "learn_spells": { "poly_crys_husk": 10 }
+    "learn_spells": { "poly_crys_husk": 1 }
   },
   
 	  {

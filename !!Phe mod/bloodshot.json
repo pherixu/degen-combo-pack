@@ -1,0 +1,519 @@
+[
+
+
+
+ {
+    "type": "ammunition_type",
+    "id": "fire_bloodshot",
+    "name": "Crimsonite Bloodshot",
+    "default": "fire_bloodshot"
+  },
+  
+  {
+    "type": "ammunition_type",
+    "id": "raw_bloodshot",
+    "name": "Raw Bloodshot",
+    "default": "raw_bloodshot"
+  },
+
+  {
+    "type": "ammunition_type",
+    "id": "ice_bloodshot",
+    "name": "Ceruleum Bloodshot",
+    "default": "ice_bloodshot"
+  },
+   
+  {
+    "type": "ammunition_type",
+    "id": "elec_bloodshot",
+    "name": "Argentium Bloodshot",
+    "default": "elec_bloodshot"
+  },
+   
+  {
+    "type": "ammunition_type",
+    "id": "acid_bloodshot",
+    "name": "Viridite Bloodshot",
+    "default": "acid_bloodshot"
+  },
+
+
+  {
+    "id": "raw_bloodshot",
+    "name": "Raw Bloodstone",
+    "copy-from": "straw_doll",
+    "type": "AMMO",
+	"material": [ "hflesh" ],
+    "count": 5,
+    "stack_size": 20,
+	"flags": [ "SINGLE_USE" ],
+	"color": "red",
+	"ammo_type": "raw_bloodshot",
+    "charges_per_use": 0,
+    "range": 48,
+    "damage": { "damage_type": "bullet", "amount": 37, "armor_penetration": 8 },
+    "dispersion": 8,
+    "recoil": 4300,
+    "description": "An inert clot of magical blood, calcified and brittle"
+	
+  }, 
+  {
+    "id": "fire_bloodshot",
+    "name": "Crimsonite Bloodshot",
+    "copy-from": "straw_doll",
+    "type": "AMMO",
+	"material": [ "hflesh" ],
+	"flags": [ "SINGLE_USE" ],
+	"color": "red",
+	"ammo_type": "fire_bloodshot",
+    "charges_per_use": 0,
+    "range": 48,
+    "damage": { "damage_type": "heat", "amount": 57, "armor_penetration": 8 },
+    "dispersion": 8,
+    "recoil": 4300,
+    "description": "Bloodshot composed of Crimsonite primer that allows for a seemingly normal gunshot that inflicts grievous damage",
+    "use_action": { "type": "cast_spell", "spell_id": "crimson_shot", "no_fail": true, "level": 1}
+	
+  },
+
+  {
+    "id": "ice_bloodshot",
+    "name": "Ceruleum Bloodshot",
+    "copy-from": "straw_doll",
+    "type": "AMMO",
+	"material": [ "hflesh" ],
+	"flags": [ "SINGLE_USE" ],
+	"color": "blue",
+	"ammo_type": "ice_bloodshot",
+    "range": 48,
+    "damage": { "damage_type": "cold", "amount": 57, "armor_penetration": 8 },
+    "dispersion": 8,
+    "recoil": 4300,
+    "charges_per_use": 0,
+    "description": "Bloodshot composed of Ceruleum primer that allows for a seemingly normal gunshot that inflicts grievous damage",
+    "use_action": { "type": "cast_spell", "spell_id": "ceruleum_shot", "no_fail": true, "level": 1}
+	
+  },
+
+  {
+    "id": "elec_bloodshot",
+    "name": "Argentium Bloodshot",
+    "copy-from": "straw_doll",
+    "type": "AMMO",
+	"material": [ "hflesh" ],
+	"flags": [ "SINGLE_USE" ],
+	"color": "white",
+	"ammo_type": "elec_bloodshot",
+    "range": 48,
+    "damage": { "damage_type": "electric", "amount": 57, "armor_penetration": 8 },
+    "dispersion": 8,
+    "recoil": 4300,
+    "charges_per_use": 0,
+    "description": "Bloodshot composed of Argentium primer that allows for a seemingly normal gunshot that inflicts grievous damage",
+    "use_action": { "type": "cast_spell", "spell_id": "argent_shot", "no_fail": true, "level": 1}
+	
+  },
+
+  {
+    "id": "acid_bloodshot",
+    "name": "Viridite Bloodshot",
+    "copy-from": "straw_doll",
+    "type": "AMMO",
+	"material": [ "hflesh" ],
+	"flags": [ "SINGLE_USE" ],
+	"color": "green",
+	"ammo_type": "acid_bloodshot",
+    "range": 48,
+    "damage": { "damage_type": "acid", "amount": 57, "armor_penetration": 8 },
+    "dispersion": 8,
+    "recoil": 4300,
+    "charges_per_use": 0,
+    "description": "Bloodshot composed of Viridite primer that allows for a seemingly normal gunshot that inflicts grievous damage",
+    "use_action": { "type": "cast_spell", "spell_id": "virid_shot", "no_fail": true, "level": 1}
+	
+  },
+     
+
+{
+    "id": "run_eoc_crimson",
+    "type": "SPELL",
+    "name": "crimson test",
+    "description": "test",
+    "valid_targets": [ "self" ],
+    "effect": "effect_on_condition",
+    "effect_str": "eoc_crimson",
+    "shape": "blast",
+    "energy_source": "MANA",
+    "difficulty": 1,
+    "base_casting_time": 0,
+    "base_energy_cost": 0,
+    "max_level": 1
+  },
+  
+    {
+    "id": "crimson_shot",
+    "type": "SPELL",
+    "name": "Crimsonite Blast",
+    "description": "Causes an intense force at the location, damaging the target.",
+    "valid_targets": [ "hostile" ],
+    "flags": [ "NO_LEGS", "NO_HANDS", "NO_FAIL" ],
+	"extra_effects": [
+      { "id": "run_eoc_crimson", "hit_self": true }
+    ],
+    "effect": "attack",
+    "shape": "blast",
+    "damage_type": "stab",
+    "min_damage": 18,
+    "damage_increment": 4.0,
+    "max_damage": 80,
+    "min_range": 8,
+    "range_increment": 0.5,
+    "max_range": 11,
+    "base_energy_cost": 7,
+    "difficulty": 1,
+    "max_level": 1,
+    "base_casting_time": 300,
+    "energy_source": "MANA"
+  },
+  
+    
+    {
+    "id": "ceruleum_shot",
+    "type": "SPELL",
+    "name": "Ceruleum Blast",
+    "description": "Causes an intense force at the location, damaging the target.",
+    "valid_targets": [ "hostile" ],
+    "flags": [ "NO_LEGS", "NO_HANDS", "NO_FAIL" ],
+    "effect": "attack",
+    "shape": "line",
+    "damage_type": "cold",
+    "min_damage": 28,
+    "damage_increment": 4.0,
+    "max_damage": 80,
+    "min_range": 4,
+    "range_increment": 0.5,
+    "max_range": 11,
+    "base_energy_cost": 7,
+    "difficulty": 1,
+    "max_level": 1,
+	"min_aoe": 2,
+    "max_aoe": 2,
+    "base_casting_time": 300,
+    "energy_source": "MANA"
+  },
+  
+  
+    {
+    "id": "siphon_mana",
+    "type": "SPELL",
+    "name": "Gunbreaker Siphoning",
+    "description": "",
+    "valid_targets": [ "self" ],
+    "energy_source": "MANA",
+    "effect": "recover_energy",
+    "effect_str": "MANA",
+    "shape": "blast",
+    "base_casting_time": 0,
+    "min_damage": 15,
+    "max_damage": 15,
+    "max_level": 1,
+    "base_energy_cost": 0,
+    "difficulty": 1
+  },
+  
+    
+    {
+    "id": "siphon_hp",
+    "type": "SPELL",
+    "name": "Gunbreaker Siphoning",
+    "description": "",
+    "valid_targets": [ "self" ],
+    "energy_source": "MANA",
+    "effect": "recover_energy",
+    "effect_str": "HP",
+    "shape": "blast",
+    "base_casting_time": 0,
+    "min_damage": 13,
+    "max_damage": 13,
+    "max_level": 1,
+    "base_energy_cost": 0,
+    "difficulty": 1
+  },
+  
+    
+    {
+    "id": "siphon_stam",
+    "type": "SPELL",
+    "name": "Gunbreaker Siphoning",
+    "description": "",
+    "valid_targets": [ "self" ],
+    "energy_source": "STAMINA",
+    "effect": "recover_energy",
+    "effect_str": "STAMINA",
+    "shape": "blast",
+    "base_casting_time": 0,
+    "min_damage": 38,
+    "max_damage": 38,
+    "max_level": 1,
+    "base_energy_cost": 0,
+    "difficulty": 1
+  },
+  
+  
+    {
+    "type": "effect_type",
+    "id": "revved",
+    "name": [ "Revved Up!" ],
+    "desc": [ "Move fast baby, don't be slow!" ],
+    "apply_message": "Move fast baby, don't be slow... Step aside, reload, time to go!",
+    "remove_message": "You return to your normal speed.",
+    "rating": "good",
+    "base_mods": {  "stamina_min": [ 150 ], "speed_mod": [ 300 ] }
+  },
+  
+  {
+    "id": "rev_engine",
+    "type": "SPELL",
+    "name": "Rev Engine",
+    "description": "You throttle your gunblade engine.",
+    "valid_targets": [ "self" ],
+    "flags": [ "LOUD", "NO_FAIL", "NO_LEGS", "NO_PROJECTILE" ],
+    "effect": "attack",
+    "effect_str": "revved",
+    "shape": "blast",
+    "energy_source": "MANA",
+    "difficulty": 4,
+    "base_casting_time": 200,
+    "base_energy_cost": 100,
+    "max_level": 1,
+    "min_duration": 600,
+    "max_duration": 12000,
+    "duration_increment": 600
+  },
+  
+        {
+    "type": "SPELL",
+    "id": "lance_dash",
+    "name": "Lancer Drive",
+    "description": "gunbreaker dash spell.",
+    "valid_targets": [ "hostile", "ground" ],
+    "flags": [ "NO_FAIL" ],
+    "effect": "dash",
+    "effect_str": "downed",
+    "shape": "cone",
+    "min_damage": 30,
+    "max_damage": 350,
+    "damage_increment": 1,
+    "damage_type": "bash",
+    "min_range": 8,
+    "max_range": 8,
+    "field_id": "fd_smoke",
+	"min_aoe": 3,
+    "max_aoe": 3,
+    "min_field_intensity": 1,
+    "max_field_intensity": 1,
+    "base_casting_time": 100,
+    "base_energy_cost": 10,
+    "max_level": 35,
+    "energy_source": "MANA"
+  },
+	  
+	
+	  
+	  
+	  
+    {
+    "id": "argent_shot",
+    "type": "SPELL",
+    "name": "Argentium Blast",
+    "description": "Causes an intense force at the location, damaging the target.",
+    "valid_targets": [ "hostile" ],
+    "flags": [ "NO_LEGS", "NO_HANDS", "NO_FAIL" ],
+    "effect": "attack",
+    "shape": "blast",
+    "damage_type": "electric",
+    "min_damage": 28,
+    "damage_increment": 4.0,
+    "max_damage": 80,
+    "min_range": 7,
+    "range_increment": 0.5,
+    "max_range": 11,
+    "base_energy_cost": 7,
+    "difficulty": 1,
+    "max_level": 1,
+	"min_aoe": 5,
+    "max_aoe": 5,
+    "base_casting_time": 300,
+    "energy_source": "MANA"
+  },
+  
+      {
+    "id": "shotgun_flurry",
+    "type": "SPELL",
+    "name": "Shotgun Flurry",
+    "description": "Quickly flourish your shotgun-breaker while shooting simultaneously.",
+    "valid_targets": [ "hostile" ],
+    "flags": [ "NO_LEGS", "NO_HANDS", "NO_FAIL" ],
+    "effect": "attack",
+    "shape": "cone",
+    "damage_type": "bullet",
+    "min_damage": 10,
+    "damage_increment": 4.0,
+    "max_damage": 18,
+    "min_range": 2,
+    "range_increment": 0.5,
+    "max_range": 11,
+    "base_energy_cost": 7,
+    "difficulty": 1,
+	"min_aoe": 200,
+    "max_aoe": 200,
+    "max_level": 1,
+    "base_casting_time": 100,
+    "energy_source": "MANA"
+  },
+  
+    {
+    "id": "crimson_shot2",
+    "type": "SPELL",
+    "name": "Crimsonite Blast",
+    "description": "Causes an intense force at the location, damaging the target.",
+    "valid_targets": [ "hostile" ],
+    "flags": [ "LOUD", "NO_HANDS", "NO_PROJECTILE", "NO_FAIL"],
+    "effect": "attack",
+    "shape": "blast",
+    "damage_type": "stab",
+    "min_damage": 25,
+    "damage_increment": 4.0,
+    "max_damage": 800,
+    "min_range": 60,
+    "range_increment": 0.5,
+    "max_range": 110,
+    "base_energy_cost": 1,
+	"min_aoe": 1,
+    "max_aoe": 2,
+    "difficulty": 1,
+    "max_level": 1,
+    "base_casting_time": 1,
+    "energy_source": "MANA"
+  },
+    {
+    "id": "crimson_shot3",
+    "type": "SPELL",
+    "name": "Crimsonite Blast Dummy",
+    "description": "d the target.",
+    "valid_targets": [ "hostile" ],
+    "flags": [ "LOUD", "NO_HANDS", "RANDOM_TARGET", "NO_PROJECTILE", "NO_FAIL"],
+    "effect": "attack",
+    "shape": "blast",
+    "damage_type": "stab",
+    "min_damage": 1,
+    "damage_increment": 4.0,
+    "max_damage": 1,
+    "min_range": 10,
+	"min_aoe": 5,
+    "max_aoe": 18,
+    "range_increment": 0.5,
+    "max_range": 10,
+    "base_energy_cost": 1,
+    "difficulty": 1,
+    "max_level": 1,
+    "base_casting_time": 1,
+    "energy_source": "MANA",
+	 "extra_effects": [ { "id": "crimson_shot2" }]
+  },
+  
+  
+  
+    {
+    "id": "stinger_bolts",
+    "type": "SPELL",
+    "name": "Stinger Bolts",
+    "effect": "attack",
+    "shape": "blast",
+    "description": "Fires bolts of acid from your fingertips that home in on randomly selected targets in range.",
+    "valid_targets": [ "hostile" ],
+    "spell_class": "MANA_SEEKER_BOLTS",
+    "min_damage": 6,
+    "max_damage": 10,
+    "damage_increment": 1,
+    "max_level": 12,
+    "min_range": 6,
+    "max_range": 12,
+    "range_increment": 0.5,
+    "energy_source": "MANA",
+    "base_energy_cost": 250,
+    "base_casting_time": 85,
+    "final_casting_time": 85,
+    "damage_type": "pure",
+    "sound_description": "a zing",
+    "flags": [ "RANDOM_TARGET", "SOMATIC", "NO_LEGS", "MUST_HAVE_CLASS_TO_LEARN" ],
+    "extra_effects": [ { "id": "acid_missile" }, { "id": "acid_missile" }, { "id": "acid_missile" }	]
+  },
+  
+    
+    {
+    "id": "virid_shot",
+    "type": "SPELL",
+    "name": "Virid Shot",
+    "effect": "attack",
+    "shape": "blast",
+    "description": "Fires bolts of acid from your fingertips that home in on randomly selected targets in range.",
+    "valid_targets": [ "hostile" ],
+    "spell_class": "MANA_SEEKER_BOLTS",
+    "min_damage": 6,
+    "max_damage": 28,
+    "damage_increment": 1,
+    "max_level": 12,
+    "min_range": 6,
+    "max_range": 12,
+    "range_increment": 0.5,
+    "energy_source": "MANA",
+    "base_energy_cost": 250,
+    "base_casting_time": 85,
+    "final_casting_time": 85,
+    "damage_type": "pure",
+    "sound_description": "a zing",
+    "flags": [ "RANDOM_TARGET", "SOMATIC", "NO_LEGS", "MUST_HAVE_CLASS_TO_LEARN" ],
+    "extra_effects": [ { "id": "acid_missile" }, { "id": "acid_missile" }, { "id": "acid_missile" }	]
+  },
+  
+  
+  
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_crimson",
+    "effect": { "u_cast_spell": { "id": "crimson_shot2" } },
+    "false_effect": { "u_cast_spell": { "id": "hurt_hand" } },
+    "condition": 
+        { "u_has_wielded_with_flag": "GUNBREAKER_FOCUS" }
+      
+    
+  },
+
+
+    {
+    "id":"acid_missile",
+    "type": "SPELL",
+    "name": "Magic Missile",
+    "description": "Stinger breaker use action!",
+    "valid_targets": [ "hostile" ],
+    "flags": [ "VERBAL", "SOMATIC", "NO_LEGS", "SILENT", "NO_PROJECTILE", "RANDOM_TARGET"	],
+    "min_damage": 28,
+    "damage_increment": 1.5,
+    "damage_type": "acid",
+    "max_damage": 30,
+    "min_range": 8,
+    "range_increment": 0.8,
+    "max_range": 20,
+    "base_energy_cost": 50,
+    "difficulty": 1,
+    "max_level": 15,
+    "base_casting_time": 100,
+    "energy_source": "MANA",
+    "shape": "blast",
+    "effect": "attack"
+  }
+  
+  
+  
+]

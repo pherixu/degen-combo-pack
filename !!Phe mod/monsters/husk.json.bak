@@ -31,6 +31,8 @@
     "harvest": "human2",
     "special_attacks": [ { "type": "bite", "cooldown": 10 }, [ "GRAB", 7 ], [ "scratch", 20 ] ],
     "death_drops": "huskdrops",
+    "burn_into": "mon_zombie_scorched",
+    "fungalize_into": "mon_zombie_fungus",
     "flags": [
       "SEES",
       "HEARS",

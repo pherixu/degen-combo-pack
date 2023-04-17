@@ -1,0 +1,178 @@
+[
+ {
+    "type": "npc_class",
+    "id": "NC_PAWNS",
+    "name": { "str": "Elf" },
+    "job_description": "...",
+	"common": true,
+    "traits": [
+      { "group": "trait_mutant_npc_common" },
+      { "group": "BG_survival_story_UNIVERSAL" },
+      { "group": "trait_group_SPELLS", "prob": 50 },
+      { "group": "trait_group_SPELLS", "prob": 50 },
+      { "group": "trait_group_SPELLS", "prob": 50 },
+      { "group": "trait_group_elfa" },
+      { "distribution": [ { "group": "trait_group_elfa_nonthres" }, { "group": "trait_group_elfa_postthres" } ] }
+    ],
+    "bonus_str": { "rng": [ 1, 2 ] },
+    "bonus_dex": { "rng": [ 2, 4 ] },
+    "bonus_int": { "rng": [ 2, 4 ] },
+    "bonus_per": { "rng": [ 2, 4 ] },
+    "skills": [
+      { "skill": "ALL", "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "rng": [ 1, 2 ] } ] } ] } },
+      { "skill": "melee", "bonus": { "rng": [ 1, 4 ] } },
+	  { "skill": "dodge", "bonus": { "rng": [ 3, 6 ] } },
+	  { "skill": "spellcraft", "bonus": { "rng": [ 1, 4 ] } },
+	  { "skill": "gun", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "archery", "bonus": { "rng": [ 3, 6 ] } }
+    ]
+  },
+  {
+    "type": "npc",
+    "id": "NC_PAWNS",
+    "name_suffix": "Pawn",
+    "class": "NC_PAWNS",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_PAWN",
+    "faction": "lapin"
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_PAWN",
+    "dynamic_line": {
+      "u_has_var": "talked_to_pawn",
+      "type": "dialogue",
+      "context": "NC_PAWNS",
+      "value": "yes",
+      "no": "Well met arisen.",
+      "yes": "If there is aught I should do, say it."
+    },
+    "responses": [
+      {
+        "text": "Hello.",
+        "topic": "TALK_PAWN_INTRO",
+        "effect": { "u_add_var": "talked_to_pawn", "type": "dialogue", "context": "NC_PAWNS", "value": "yes" }
+      },
+      {
+        "switch": true,
+        "default": true,
+        "text": "Do you want to come with me?",
+        "trial": { "type": "PERSUADE", "difficulty": 20 },
+        "success": { "topic": "TALK_PAWN_FRIENDLY", "opinion": { "trust": 0, "value": 1 } },
+        "failure": { "topic": "TALK__PAWN_FEARFUL", "opinion": { "anger": 0, "fear": 0 } }
+      },
+	  {
+        "switch": true,
+        "default": true,
+        "text": "Saw some rabbits that way, wanna go see?",
+        "trial": { "type": "LIE", "difficulty": 30 },
+        "success": { "topic": "TALK_PAWN_FRIENDLY", "opinion": { "trust": 0, "value": 1 } },
+        "failure": { "topic": "TALK_PAWN_ANGRY", "opinion": { "anger": 0, "fear": 0 } }
+      },
+      {
+        "switch": true,
+        "default": true,
+        "text": "You should come with me for your own sake.",
+        "trial": { "type": "INTIMIDATE", "difficulty": 40, "mod": [ [ "AGGRESSION", -2 ], [ "BRAVERY", -2 ] ] },
+        "success": { "topic": "TALK_PAWN_FEARFUL", "opinion": { "trust": -4, "fear": 3, "value": -1, "anger": 4 } },
+        "failure": { "topic": "TALK_PAWN_ANGRY", "opinion": { "trust": -4, "value": -5, "anger": 10 } }
+      },
+      { "text": "Goodbye.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "TALK_PAWN_FRIENDLY",
+    "type": "talk_topic",
+    "dynamic_line": "If there is aught I should do, say it",
+    "responses": [
+      {
+        "text": "I need your help in my journey.",
+        "trial": { "type": "PERSUADE", "difficulty": 20, "mod": [ [ "value", 2 ] ] },
+        "success": { "topic": "TALK_AGREE_FOLLOW", "effect": "follow", "opinion": { "trust": 1, "value": 1 } },
+        "failure": { "topic": "TALK_DENY_FOLLOW", "effect": "deny_follow", "opinion": { "trust": -1, "fear": 1 } }
+      },
+      { "text": "Bye.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "TALK_PAWN_WARY",
+    "type": "talk_topic",
+    "dynamic_line": "..?",
+    "responses": [
+      {
+        "text": "...",
+        "trial": { "type": "PERSUADE", "difficulty": 30, "mod": [ [ "TRUST", 2 ], [ "VALUE", 2 ] ] },
+        "success": { "topic": "TALK_PAWN_FRIENDLY", "opinion": { "trust": 1, "value": 1 } },
+        "failure": { "topic": "TALK_PAWN_LEAVE" }
+      },
+      {
+        "text": "You look strong. Let's go.",
+        "trial": { "type": "INTIMIDATE", "difficulty": 30, "mod": [ [ "AGGRESSION", -2 ], [ "BRAVERY", -2 ] ] },
+        "success": { "topic": "TALK_PAWN_FEARFUL", "opinion": { "trust": -4, "fear": 3, "value": -1, "anger": 4 } },
+        "failure": { "topic": "TALK_PAWN_ANGRY", "opinion": { "trust": -4, "value": -5, "anger": 10 } }
+      },
+      { "text": "Forget it. No use to anybody.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "TALK_PAWN_FEARFUL",
+    "type": "talk_topic",
+    "dynamic_line": "..!",
+    "responses": [
+      {
+        "text": "Last warning.",
+        "trial": { "type": "INTIMIDATE", "difficulty": 30, "mod": [ [ "VALUE", 2 ], [ "TRUST", 2 ], [ "BRAVERY", -2 ] ] },
+        "success": { "topic": "TALK_AGREE_FOLLOW", "effect": "follow", "opinion": { "trust": -4, "fear": 3, "value": -1, "anger": 4 } },
+        "failure": { "topic": "TALK_OPERATOR_ANGRY", "opinion": { "trust": 4, "value": -5, "anger": 10 } }
+      },
+      {
+        "text": "Get out of my sight.",
+        "topic": "TALK_DONE",
+        "effect": "flee",
+        "opinion": { "trust": -1, "fear": -2, "anger": -2 }
+      },
+      {
+        "text": "...",
+        "trial": { "type": "PERSUADE", "difficulty": 30 },
+        "success": { "topic": "TALK_DONE", "opinion": { "trust": 1, "value": 1, "anger": -1 } },
+        "failure": { "topic": "TALK_PAWN_ANGRY", "opinion": { "trust": 4, "value": -5, "anger": 10 } }
+      }
+    ]
+  },
+  {
+    "id": "TALK_PAWN_ANGRY",
+    "type": "talk_topic",
+    "dynamic_line": "...",
+    "responses": [
+      {
+        "text": "Alright, you asked for this.",
+        "trial": { "type": "INTIMIDATE", "difficulty": 20, "mod": [ [ "VALUE", 2 ], [ "TRUST", 2 ], [ "BRAVERY", -2 ] ] },
+        "success": { "topic": "TALK_DONE", "effect": "flee" },
+        "failure": { "topic": "TALK_DONE", "effect": "hostile" }
+      },
+      { "text": "Why shouldn't you?", "topic": "TALK_DONE", "effect": "hostile" },
+	  {
+        "text": "?!?!",
+        "trial": { "type": "LIE", "difficulty": 30 },
+        "success": { "topic": "TALK_AGREE_FOLLOW", "opinion": { "trust": 1, "value": 1, "anger": -1 } },
+        "failure": { "topic": "TALK_DONE", "effect": "hostile" }
+      },
+      {
+        "text": "....",
+        "trial": { "type": "PERSUADE", "difficulty": 30 },
+        "success": { "topic": "TALK_DONE", "opinion": { "trust": 1, "value": 1, "anger": -1 } },
+        "failure": { "topic": "TALK_DONE", "effect": "hostile" }
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_PAWN_INTRO",
+    "dynamic_line": "...",
+    "responses": [
+      { "text": ".", "topic": "TALK_DONE" }
+    ]
+  }
+  
+]
