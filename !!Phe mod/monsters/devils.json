@@ -1,7 +1,5 @@
 [
-
-
-    {
+  {
     "id": "emit_dark_haze",
     "type": "emit",
     "field": "fd_web2",
@@ -9,9 +7,7 @@
     "qty": 6,
     "chance": 90
   },
-  
-  
-    {
+  {
     "id": "emit_rubble",
     "type": "emit",
     "field": "fd_rubble",
@@ -19,8 +15,24 @@
     "qty": 6,
     "chance": 90
   },
-  
-  
+    {
+    "type": "MONSTER_FACTION",
+    "name": "devil",
+    "friendly": [ "zombie", "magical_beast", "nether", "goblin" ],
+	"hate": [ "demon" ]
+  },
+  {
+    "type": "MONSTER_FACTION",
+    "name": "goblin",
+	"copy_from": "goblin",
+	"friendly": [ "nether", "devil" ]
+  },
+  {
+    "type": "SPECIES",
+    "id": "DEVIL",
+    "description": "shadowy figures of unknown origin.",
+    "anger_triggers": [ "HURT", "PLAYER_CLOSE", "PLAYER_WEAK", "FRIEND_ATTACKED", "SOUND" ]
+  },
   {
     "type": "effect_type",
     "id": "darkhaze",
@@ -35,12 +47,11 @@
     "show_in_info": true,
     "show_intensity": false
   },
-  
-   {
+  {
     "id": "fd_web2",
     "type": "field_type",
-    "legacy_enum_id": 5,
 	"looks_like": "fd_smoke",
+    "legacy_enum_id": 5,
     "intensity_levels": [
       {
         "name": "light haze",
@@ -55,7 +66,7 @@
           { "effect_id": "webbed", "intensity": 2, "min_duration": "1 m", "immune_in_vehicle": true, "is_environmental": false }
         ]
       },
-	   {
+      {
         "name": "thick haze",
         "sym": "}",
         "effects": [
@@ -80,7 +91,6 @@
     },
     "display_field": true
   },
-  
   {
     "id": "mon_test",
     "type": "MONSTER",
@@ -101,7 +111,7 @@
     "morale": 100,
     "melee_skill": 1,
     "melee_dice": 1,
-	"looks_like": "mon_zombie",
+    "looks_like": "mon_zombie",
     "melee_dice_sides": 1,
     "melee_damage": [ { "damage_type": "bash", "amount": 1 } ],
     "armor_cut": 1,
@@ -109,10 +119,7 @@
     "weakpoint_sets": [ "wps_humanoid_body" ],
     "families": [ "prof_intro_biology", "prof_wp_zombie" ],
     "harvest": "human2",
-	
-	"emit_fields": [
-      { "emit_id": "emit_dark_haze", "delay": "1 s" }
-    ],
+    "emit_fields": [ { "emit_id": "emit_dark_haze", "delay": "1 s" } ],
     "special_attacks": [
       {
         "type": "spell",
@@ -128,7 +135,7 @@
       "SMELLS",
       "STUMBLES",
       "WARM",
-	  "HIT_AND_RUN",
+      "HIT_AND_RUN",
       "BASHES",
       "GROUP_BASH",
       "NO_BREATHE",
@@ -136,9 +143,7 @@
       "PUSH_MON"
     ]
   },
-  
-  
-    {
+  {
     "type": "item_group",
     "id": "devildrops",
     "subtype": "collection",
@@ -154,9 +159,7 @@
       { "item": "antoninianus", "prob": 5 }
     ]
   },
-  
-    
-        {
+  {
     "type": "SPELL",
     "id": "simulacrum_dash",
     "name": "Simulacrum Drive",
@@ -172,27 +175,22 @@
     "damage_type": "bash",
     "min_range": 8,
     "max_range": 8,
-	"min_aoe": 4,
+    "min_aoe": 4,
     "max_aoe": 4,
     "base_casting_time": 100,
     "base_energy_cost": 10,
     "max_level": 35,
     "energy_source": "MANA"
   },
-
-
-
-	  
-  
   {
     "id": "mon_simulacrum",
     "type": "MONSTER",
     "name": "Derelict Simulacrum",
     "description": "A haywire construct that freed itself from the clutches of a wizard. It's blank expression conveys hostility.",
-    "default_faction": "nether",
-	"looks_like": "mon_hallu_mannequin",
+    "default_faction": "devil",
+    "looks_like": "mon_hallu_mannequin",
     "bodytype": "human",
-    "species": [ "HORROR" ],
+    "species": [ "DEVIL" ],
     "material": [ "iflesh", "demon_chitin" ],
     "diff": 2,
     "volume": "30000 ml",
@@ -212,7 +210,7 @@
     "armor_elec": 1,
     "armor_acid": 1,
     "armor_fire": 50,
-	"armor_cut": 30,
+    "armor_cut": 30,
     "armor_stab": 15,
     "armor_bullet": 50,
     "armor_bash": 30,
@@ -220,15 +218,14 @@
     "vision_night": 50,
     "death_drops": "devildrops",
     "harvest": "human2",
-  
     "special_attacks": [
       [ "RANGED_PULL", 10 ],
-	  [ "GRAB", 7 ],
-	  [ "GRAB_DRAG", 7 ],
-    { "id": "SHOCKSTORM", "cooldown": 12, "range": 1 },
+      [ "GRAB", 7 ],
+      [ "GRAB_DRAG", 7 ],
+      { "id": "SHOCKSTORM", "cooldown": 12, "range": 1 },
       {
         "type": "spell",
-        "spell_data": { "id": "phase_shrike_teleport", "min_level": 1 },
+        "spell_data": { "id": "phase_strike_teleport", "min_level": 1 },
         "cooldown": 4,
         "monster_message": "the simulacrum warps towards you with a magical spell."
       }
@@ -244,20 +241,18 @@
       "DRIPS_GASOLINE",
       "CLIMBS",
       "NO_BREATHE",
-	  "HIT_AND_RUN",
+      "HIT_AND_RUN",
       "PATH_AVOID_DANGER_1",
       "PUSH_MON"
     ]
   },
-  
-    {
+  {
     "type": "monstergroup",
     "name": "GROUP_DOLL",
-	"override": true,
-    "monsters": [ { "monster": "mon_marionette2" }]
+    "override": true,
+    "monsters": [ { "monster": "mon_marionette2" } ]
   },
-  
-   {
+  {
     "id": "call_marionette",
     "type": "SPELL",
     "name": "Call Marionettes",
@@ -281,18 +276,15 @@
     "effect": "summon",
     "effect_str": "GROUP_DOLL"
   },
-  
-
-
   {
     "id": "mon_marionette",
     "type": "MONSTER",
     "name": "Bourreau Marionette",
     "description": "A haunting construct with it's guillotine arms suspended in the air by magical transluscent threads, made to look as if it were flying",
-    "default_faction": "nether",
-	"looks_like": "mon_zombie_brute_winged",
+    "default_faction": "devil",
+    "looks_like": "mon_zombie_brute_winged",
     "bodytype": "human",
-    "species": [ "HORROR" ],
+    "species": [ "DEVIL" ],
     "material": [ "iflesh", "demon_chitin" ],
     "diff": 2,
     "volume": "30000 ml",
@@ -312,7 +304,7 @@
     "armor_elec": 50,
     "armor_acid": 25,
     "armor_fire": 1,
-	"armor_cut": 30,
+    "armor_cut": 30,
     "armor_stab": 35,
     "armor_bullet": 50,
     "armor_bash": 10,
@@ -320,12 +312,11 @@
     "vision_night": 50,
     "death_drops": "devildrops",
     "harvest": "human2",
-  
     "special_attacks": [
       [ "RATTLE", 7 ],
       [ "SHRIEK_STUN", 7 ],
       [ "SHRIEK_ALERT", 7 ],
-	  [ "GRAB", 7 ],
+      [ "GRAB", 7 ],
       {
         "type": "spell",
         "spell_data": { "id": "call_marionette", "min_level": 1 },
@@ -346,22 +337,20 @@
       "WEBWALK",
       "CLIMBS",
       "NO_BREATHE",
-	  "HIT_AND_RUN",
+      "HIT_AND_RUN",
       "PATH_AVOID_DANGER_1",
       "PUSH_MON"
     ]
   },
-  
-  
   {
     "id": "mon_marionette2",
     "type": "MONSTER",
-    "name": "Bourreau Marionette",
+    "name": "Bourreau marionette",
     "description": "A haunting construct with it's guillotine arms suspended in the air by magical transluscent threads, made to look as if it were flying",
-    "default_faction": "nether",
-	"looks_like": "mon_zombie_brute_winged",
+    "default_faction": "devil",
+    "looks_like": "mon_zombie_brute_winged",
     "bodytype": "human",
-    "species": [ "HORROR" ],
+    "species": [ "DEVIL" ],
     "material": [ "iflesh", "demon_chitin" ],
     "diff": 2,
     "volume": "30000 ml",
@@ -381,7 +370,7 @@
     "armor_elec": 50,
     "armor_acid": 25,
     "armor_fire": 1,
-	"armor_cut": 30,
+    "armor_cut": 30,
     "armor_stab": 35,
     "armor_bullet": 50,
     "armor_bash": 10,
@@ -389,13 +378,7 @@
     "vision_night": 50,
     "death_drops": "devildrops",
     "harvest": "human2",
-  
-    "special_attacks": [
-      [ "RATTLE", 7 ],
-      [ "SHRIEK_STUN", 7 ],
-      [ "SHRIEK_ALERT", 7 ],
-	  [ "GRAB", 7 ]
-    ],
+    "special_attacks": [ [ "RATTLE", 7 ], [ "SHRIEK_STUN", 7 ], [ "SHRIEK_ALERT", 7 ], [ "GRAB", 7 ] ],
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "STALK", "PLAYER_WEAK", "PLAYER_CLOSE" ],
     "flags": [
       "SEES",
@@ -409,16 +392,12 @@
       "WEBWALK",
       "CLIMBS",
       "NO_BREATHE",
-	  "HIT_AND_RUN",
+      "HIT_AND_RUN",
       "PATH_AVOID_DANGER_1",
       "PUSH_MON"
     ]
   },
-  
-
-
-     
-        {
+  {
     "type": "SPELL",
     "id": "rubble_cast",
     "name": "Rubble Cast",
@@ -435,7 +414,7 @@
     "min_range": 8,
     "max_range": 8,
     "field_id": "fd_rubble",
-	"min_aoe": 2,
+    "min_aoe": 2,
     "max_aoe": 2,
     "min_field_intensity": 1,
     "max_field_intensity": 1,
@@ -444,13 +423,7 @@
     "max_level": 35,
     "energy_source": "STAMINA"
   },
-  
-  
-
-
-  
-     
-        {
+  {
     "type": "SPELL",
     "id": "dark_haze_cast",
     "name": "Dark Haze Cast",
@@ -467,7 +440,7 @@
     "min_range": 8,
     "max_range": 8,
     "field_id": "fd_web2",
-	"min_aoe": 2,
+    "min_aoe": 2,
     "max_aoe": 2,
     "min_field_intensity": 1,
     "max_field_intensity": 1,
@@ -476,17 +449,15 @@
     "max_level": 35,
     "energy_source": "STAMINA"
   },
-  
-  
   {
     "id": "mon_shadow_seer",
     "type": "MONSTER",
     "name": "Shadow Seer",
     "description": "A concerning figure cloaked in shadow spreading evil mist about.",
-    "default_faction": "nether",
-	"looks_like": "mon_halloween_ghost",
+    "default_faction": "devil",
+    "looks_like": "mon_halloween_ghost",
     "bodytype": "human",
-    "species": [ "HORROR" ],
+    "species": [ "DEVIL" ],
     "material": [ "iflesh", "demon_chitin" ],
     "diff": 2,
     "volume": "30000 ml",
@@ -506,7 +477,7 @@
     "armor_elec": 1,
     "armor_acid": 50,
     "armor_fire": 1,
-	"armor_cut": 30,
+    "armor_cut": 30,
     "armor_stab": 15,
     "armor_bullet": 50,
     "armor_bash": 30,
@@ -514,13 +485,10 @@
     "vision_night": 50,
     "death_drops": "devildrops",
     "harvest": "human2",
-	 "emit_fields": [
-      { "emit_id": "emit_dark_haze", "delay": "5 s" }
-    ],
-  
+    "emit_fields": [ { "emit_id": "emit_dark_haze", "delay": "5 s" } ],
     "special_attacks": [
       [ "RANGED_PULL", 8 ],
-	  [ "GRAB", 10 ],
+      [ "GRAB", 10 ],
       {
         "type": "spell",
         "spell_data": { "id": "dark_haze_cast", "min_level": 1 },
@@ -537,24 +505,20 @@
       "WEBWALK",
       "CLIMBS",
       "NO_BREATHE",
-	  "HIT_AND_RUN",
+      "HIT_AND_RUN",
       "PATH_AVOID_DANGER_1",
       "PUSH_MON"
     ]
-  },  
-  
-
-  
-  
+  },
   {
     "id": "mon_saurian",
     "type": "MONSTER",
     "name": "Geo-Saurian",
     "description": "Saurian!",
-    "default_faction": "nether",
-	"looks_like": "mon_gator",
+    "default_faction": "devil",
+    "looks_like": "mon_gator",
     "bodytype": "gator",
-    "species": [ "HORROR" ],
+    "species": [ "DEVIL" ],
     "material": [ "iflesh", "demon_chitin" ],
     "diff": 2,
     "volume": "30000 ml",
@@ -573,8 +537,8 @@
     "armor_cold": 1,
     "armor_elec": 50,
     "armor_acid": 50,
-    "armor_fire":25,
-	"armor_cut": 10,
+    "armor_fire": 25,
+    "armor_cut": 10,
     "armor_stab": 30,
     "armor_bullet": 50,
     "armor_bash": 30,
@@ -582,12 +546,11 @@
     "vision_night": 50,
     "death_drops": "devildrops",
     "harvest": "human2",
-  
     "special_attacks": [
-	  [ "GRAB", 10 ],
-    { "id": "LUNGE", "cooldown": 8, "max_range": 5 },
-    { "type": "leap", "cooldown": 3, "max_range": 5 },
-    { "id": "SPIT_SAP", "cooldown": 5, "min_mul": 1, "max_mul": 2 },
+      [ "GRAB", 10 ],
+      { "id": "LUNGE", "cooldown": 8, "max_range": 5 },
+      { "type": "leap", "cooldown": 3, "max_range": 5 },
+      { "id": "SPIT_SAP", "cooldown": 5, "min_mul": 1, "max_mul": 2 },
       {
         "type": "spell",
         "spell_data": { "id": "phase_shrike_teleport", "min_level": 1 },
@@ -607,11 +570,10 @@
       "WEBWALK",
       "CLIMBS",
       "NO_BREATHE",
-	  "HIT_AND_RUN",
+      "HIT_AND_RUN",
       "HARDTOSHOOT",
       "PATH_AVOID_DANGER_1",
       "PUSH_MON"
     ]
-  } 
-  
+  }
 ]
