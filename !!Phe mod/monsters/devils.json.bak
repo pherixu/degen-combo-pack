@@ -40,6 +40,7 @@
     "id": "fd_web2",
     "type": "field_type",
     "legacy_enum_id": 5,
+	"looks_like": "fd_smoke",
     "intensity_levels": [
       {
         "name": "light haze",
@@ -227,7 +228,7 @@
     { "id": "SHOCKSTORM", "cooldown": 12, "range": 1 },
       {
         "type": "spell",
-        "spell_data": { "id": "phase_strike_teleport", "min_level": 1 },
+        "spell_data": { "id": "phase_shrike_teleport", "min_level": 1 },
         "cooldown": 4,
         "monster_message": "the simulacrum warps towards you with a magical spell."
       }

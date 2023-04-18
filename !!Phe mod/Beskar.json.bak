@@ -792,7 +792,7 @@
     "id": "reinforced_windshield",
     "item": "reinforced_glass_sheet1",
     "durability": 999,
-    "damage_reduction": { "all": 999 },
+    "damage_reduction": { "all": 999 }
     "type": "vehicle_part"
   },
 

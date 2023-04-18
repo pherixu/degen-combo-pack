@@ -40,6 +40,7 @@
     "id": "fd_web2",
     "type": "field_type",
     "legacy_enum_id": 5,
+	"looks_like": "fd_smoke",
     "intensity_levels": [
       {
         "name": "light haze",
