@@ -1,0 +1,51 @@
+[
+  
+  {
+    "type": "tool_quality",
+    "id": "CIBORIUM",
+    "name": { "str": "grafting" }
+  },
+  
+  {
+    "type": "construction_group",
+    "id": "ciborium",
+    "name": "Begin Grafting Incubator Ritual"
+  },
+   {
+    "type": "construction",
+    "id": "constr_ciborium",
+    "group": "ciborium",
+    "category": "FURN",
+    "required_skills": [ [ "spellcraft", 1 ] ],
+    "time": "30 m",
+	"activity_level": "LIGHT_EXERCISE",
+    "components": [ [ [ "magic_corpse", 1 ] ], [["crimsonite", 1]], [["viridite", 1]], [["ceruleum", 1]], [["argentium", 1]] ],
+    "pre_special": "check_empty",
+    "post_terrain": "f_zen_garden"
+  },
+  {
+    "type": "furniture",
+    "id": "f_ciborium",
+    "name": "Arcane Ciborium",
+    "move_cost_mod": 3,
+	"looks_like": "f_exodii_scanner",
+    "symbol": "O",
+    "color": "white",
+	"crafting_pseudo_item": "fake_ciborium",
+    "required_str": -1,
+    "flags": [ "ALLOW_FIELD_EFFECT", "TRANSPARENT", "TINY" ],
+    "description": "A grandiose-looking chalice with gold plating in the basin of the cup, and glowing sigils around the rim. A small pedestal resides at the base of the dish, made for filling with a magical tincture and imbuing it into a specific item. "
+  },
+  {
+    "id": "fake_ciborium",
+    "type": "TOOL",
+    "name": { "str": "fake ciborium (pseudo item)", "str_pl": "fake ciboria (pseudo items)" },
+    "description": "Pseudo item for the magic circle.",
+    "weight": "1 g",
+    "volume": "1 ml",
+    "symbol": "[",
+    "color": "dark_gray",
+    "qualities": [ [ "CIBORIUM", 1 ]   ],
+    "flags": [ "TRADER_AVOID" ]
+  }
+]

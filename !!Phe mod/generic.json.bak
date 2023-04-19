@@ -510,7 +510,7 @@
     "fun": -6,
     "use_action": {
       "type": "learn_spell",
-      "spells": [ "ioun_argent",  "ioun_virid",  "ioun_crimson",  "ioun_ceruleum"]
+      "spells": [ "first_things_first", "summon_bike", "summon_cold", "magic_drive", "summon_extinguisher" ]
     }
   },
   

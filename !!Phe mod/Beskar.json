@@ -195,35 +195,73 @@
     "material": [ "copper" ],
     "symbol": ";",
     "color": "brown",
-    "qualities": [["CUT", 99],
-["GRASS_CUT", 99],
-["CUT_FINE", 99],
-["GLARE", 99],
-["SHEAR", 99],
-["CHURN", 99],
-["LEATHER_AWL", 99],
-["SEW_CURVED", 99],
-["ANESTHESIA", 99],
-["FISHING", 99],
-["SMOOTH", 99],
-["WELD", 99],
-["HAMMER", 99],
-["HAMMER_FINE", 99],
-["HAMMER_SOFT", 99],
-["SAW_W", 99],
-["SAW_M", 99],
-["SAW_M_FINE", 99],
-["COOK", 99],
-["BOIL", 99],
-["CONTAIN", 99],
-["CHEM", 99],
-["SMOKE_PIPE", 99],
-["DISTILL", 99],
-["AXE", 99],
-["DIG", 99],
-["WRENCH", 99],
-["WRENCH_FINE", 99],
-["SCREW", 99]
+    "qualities":[    ["CUT", 99],
+    ["GRASS_CUT", 99],
+    ["CUT_FINE", 99],
+    ["GLARE", 99],
+    ["SHEAR", 99],
+    ["CHURN", 99],
+    ["LEATHER_AWL", 99],
+    ["SEW_CURVED", 99],
+    ["ANESTHESIA", 99],
+    ["SMOOTH", 99],
+    ["WELD", 99],
+    ["HAMMER", 99],
+    ["HAMMER_FINE", 99],
+    ["HAMMER_SOFT", 99],
+    ["SAW_W", 99],
+    ["SAW_M", 99],
+    ["SAW_M_FINE", 99],
+    ["COOK", 99],
+    ["BOIL", 99],
+    ["CONTAIN", 99],
+    ["CHEM", 99],
+    ["SMOKE_PIPE", 99],
+    ["DISTILL", 99],
+    ["AXE", 99],
+    ["DIG", 99],
+    ["WRENCH", 99],
+    ["WRENCH_FINE", 99],
+    ["SCREW", 99],
+    ["SCREW_FINE", 99],
+    ["BUTCHER", 99],
+    ["DRILL", 99],
+    ["DRILL_ROCK", 99],
+    ["PRY", 99],
+    ["PRYING_NAIL", 99],
+    ["PUNCH", 99],
+    ["WRITE", 99],
+    ["LIFT", 99],
+    ["JACK", 99],
+    ["SELF_JACK", 99],
+    ["HOSE", 99],
+    ["CHISEL", 99],
+    ["CHISEL_WOOD", 99],
+    ["SEW", 99],
+    ["KNIT", 99],
+    ["PULL", 99],
+    ["ANVIL", 99],
+    ["ANALYSIS", 99],
+    ["CONCENTRATE", 99],
+    ["SEPARATE", 99],
+    ["FINE_DISTILL", 99],
+    ["CHROMATOGRAPHY", 99],
+    ["GRIND", 99],
+    ["FINE_GRIND", 99],
+    ["REAM", 99],
+    ["FILE", 99],
+    ["VISE", 99],
+    ["PRESSURIZATION", 99],
+    ["LOCKPICK", 99],
+    ["EXTRACT", 99],
+    ["FILTER", 99],
+    ["SUSPENDING", 99],
+    ["ROPE", 99],
+    ["SURFACE", 99],
+    ["WHEEL_FAST", 99],
+    ["FABRIC_CUT", 99],
+    ["OVEN", 99],
+    ["CUT_GLASS", 99]
 ],
     "flags": [ "STAB", "SHEATH_KNIFE" ],
     "weapon_category": [ "KNIVES" ]
@@ -249,7 +287,7 @@
     "flags": [ "INITIAL_PART", "MOUNTABLE" ],
     "categories": [ "hull" ],
     "durability": 999,
-    "damage_reduction": { "all": 99 }
+    "damage_reduction": { "all": 999 }
   },
   
   
@@ -311,7 +349,7 @@
         "using": [ [ "repair_welding_standard", 2 ], [ "soldering_standard", 10 ], [ "vehicle_wrench_1", 1 ], [ "vehicle_screw", 1 ] ]
       }
     },
-    "damage_reduction": { "all": 99 }
+    "damage_reduction": { "all": 999 }
   },
   
   
@@ -365,7 +403,7 @@
       "repair": { "skills": [ [ "mechanics", 5 ] ], "time": "60 m", "using": [ [ "repair_welding_standard", 1 ] ] }
     },
     "flags": [ "SHOCK_ABSORBER" ],
-    "damage_reduction": { "all": 99 }
+    "damage_reduction": { "all": 999 }
   },
  {
     "id": "rebar_plate1",
@@ -456,7 +494,7 @@
       "repair": { "skills": [ [ "mechanics", 3 ] ], "time": "60 m", "using": [ [ "repair_welding_standard", 2 ] ] }
     },
     "extend": { "categories": [ "cargo" ], "flags": [ "OPAQUE", "CARGO", "COVERED", "HALF_BOARD", "LOCKABLE_CARGO" ] },
-    "damage_reduction": { "all": 99 }
+    "damage_reduction": { "all": 999 }
   },
   
   
@@ -485,7 +523,7 @@
     },
     "flags": [ "CARGO", "BOARDABLE", "COVERED", "LOCKABLE_CARGO" ],
     "breaks_into": "ig_vp_frame",
-    "damage_reduction": { "all": 99 }
+    "damage_reduction": { "all": 999 }
   },
   
   
@@ -791,6 +829,9 @@
     "copy-from": "reinforced_windshield_abstract",
     "id": "reinforced_windshield",
     "item": "reinforced_glass_sheet1",
+    "folded_volume": "1 ml",
+    "folding_time": "1 minute",
+    "unfolding_time": "1 minute", 
     "durability": 999,
     "damage_reduction": { "all": 999 },
     "type": "vehicle_part"
@@ -818,7 +859,83 @@
   "longest_side": "122 cm",
   "bashing": 6,
   "to_hit": -6
-}
+},
+
+
+  {
+    "type": "vehicle_part",
+    "id": "wing_mirror1",
+    "name": { "str": "Capsule Corp. wing mirror" },
+    "symbol": "o",
+    "categories": [ "other" ],
+    "color": "light_cyan",
+    "symbols": { "left": "o", "right": "o" },
+    "folded_volume": "1 ml",
+    "folding_time": "1 minute",
+    "unfolding_time": "1 minute", 
+    "broken_symbol": "*",
+    "broken_color": "dark_gray",
+    "damage_modifier": 10,
+    "durability": 20,
+    "description": "A small mirror, mounted outside the vehicle.  If you see the mirror, your vision is expanded as though you were standing where the mirror is.",
+    "item": "mirror",
+    "location": "structure",
+    "requirements": {
+      "install": { "skills": [ [ "mechanics", 1 ] ], "time": "100 s", "using": [ [ "vehicle_screw", 1 ] ] },
+      "removal": { "skills": [ [ "mechanics", 1 ] ], "time": "100 s", "using": [ [ "vehicle_screw", 1 ] ] },
+      "repair": { "skills": [ [ "mechanics", 1 ] ], "time": "20 s", "using": [ [ "adhesive", 1 ] ] }
+    },
+    "flags": [ "VISION", "PROTRUSION", "UNMOUNT_ON_DAMAGE" ],
+    "breaks_into": [ { "item": "glass_shard", "count": [ 0, 16 ] } ]
+  },
+  {
+    "type": "vehicle_part",
+    "id": "inboard_mirror1",
+    "name": { "str": "Capsule Corp. inboard mirror" },
+    "symbol": "o",
+    "categories": [ "other" ],
+    "color": "light_cyan",
+    "broken_symbol": "*",
+    "broken_color": "dark_gray",
+    "folded_volume": "1 ml",
+    "folding_time": "1 minute",
+    "unfolding_time": "1 minute", 
+    "damage_modifier": 10,
+    "durability": 30,
+    "description": "A small mirror, mounted inside the vehicle.  If you see the mirror, your vision is expanded as though you were standing where the mirror is.",
+    "item": "mirror",
+    "location": "on_windshield",
+    "requirements": {
+      "install": { "skills": [ [ "mechanics", 1 ] ], "time": "100 s", "using": [ [ "vehicle_screw", 1 ] ] },
+      "removal": { "skills": [ [ "mechanics", 1 ] ], "time": "100 s", "using": [ [ "vehicle_screw", 1 ] ] },
+      "repair": { "skills": [ [ "mechanics", 1 ] ], "time": "20 s", "using": [ [ "adhesive", 1 ] ] }
+    },
+    "flags": [ "VISION" ],
+    "breaks_into": [ { "item": "glass_shard", "count": [ 0, 16 ] } ]
+  },
+  
+    {
+    "type": "vehicle_part",
+    "id": "hdroof1",
+    "name": { "str": "Capsule Corp. roof" },
+    "symbol": "#",
+    "categories": [ "hull" ],
+    "color": "dark_gray",
+    "broken_symbol": "#",
+    "broken_color": "dark_gray",
+    "durability": 1000,
+    "description": "A thick metal roof.",
+    "item": "steel_plate",
+    "location": "roof",
+    "requirements": {
+      "install": { "skills": [ [ "mechanics", 1 ] ], "time": "60 m", "using": [ [ "welding_standard", 5 ] ] },
+      "removal": { "skills": [ [ "mechanics", 2 ] ], "time": "30 m", "using": [ [ "vehicle_weld_removal", 1 ] ] },
+      "repair": { "skills": [ [ "mechanics", 2 ] ], "time": "60 m", "using": [ [ "repair_welding_standard", 3 ] ] }
+    },
+    "flags": [ "ROOF" ],
+    "breaks_into": "ig_vp_steel_plate",
+    "damage_reduction": { "all": 999 }
+  }
 
 
 ]

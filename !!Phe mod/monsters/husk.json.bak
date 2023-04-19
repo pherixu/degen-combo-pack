@@ -29,10 +29,7 @@
     "weakpoint_sets": [ "wps_humanoid_body" ],
     "families": [ "prof_intro_biology", "prof_wp_zombie" ],
     "harvest": "human2",
-    "special_attacks": [ { "type": "bite", "cooldown": 10 }, [ "GRAB", 7 ], [ "scratch", 20 ] ],
     "death_drops": "huskdrops",
-    "burn_into": "mon_zombie_scorched",
-    "fungalize_into": "mon_zombie_fungus",
     "flags": [
       "SEES",
       "HEARS",
@@ -80,7 +77,7 @@
     "melee_dice": 3,
 	"looks_like": "mon_zombie",
     "melee_dice_sides": 6,
-    "melee_damage": [ { "damage_type": "stab", "amount": 5 } ],
+    "melee_damage": [ { "damage_type": "stab", "amount": 7 } ],
     "dodge": 7,
     "armor_bash": 1,
     "armor_cut": 15,
@@ -94,11 +91,12 @@
     "vision_night": 35,
     "weakpoint_sets": [ "wps_humanoid_body" ],
     "families": [ "prof_intro_biology", "prof_wp_zombie" ],
+	"special_attacks": [
+      [ "IMPALE", 5 ],
+      [ "SMASH", 5 ],
+    ],
     "harvest": "human_crys",
-    "special_attacks": [ { "type": "bite", "cooldown": 3 }, [ "GRAB", 8 ], [ "scratch", 10 ] ],
     "death_drops": "huskdrops",
-    "burn_into": "mon_zombie_scorched",
-    "fungalize_into": "mon_zombie_fungus",
     "flags": [
       "SEES",
       "HEARS",
@@ -134,6 +132,10 @@
 	"looks_like": "mon_zombie",
     "melee_dice_sides": 6,
     "melee_damage": [ { "damage_type": "acid", "amount": 5 } ],
+	"special_attacks": [
+      [ "IMPALE", 5 ],
+      [ "SMASH", 5 ]
+    ],
     "dodge": 7,
     "armor_bash": 25,
     "armor_cut": 1,
@@ -148,10 +150,7 @@
     "weakpoint_sets": [ "wps_humanoid_body" ],
     "families": [ "prof_intro_biology", "prof_wp_zombie" ],
     "harvest": "human_nox",
-    "special_attacks": [ { "type": "bite", "cooldown": 10 }, [ "GRAB", 7 ], [ "scratch", 20 ] ],
     "death_drops": "huskdrops",
-    "burn_into": "mon_zombie_scorched",
-    "fungalize_into": "mon_zombie_fungus",
     "flags": [
       "SEES",
       "HEARS",

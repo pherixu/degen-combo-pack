@@ -116,6 +116,8 @@
       ],
     "description_affix": "covered_in",
     "decrease_intensity_on_contact": true,
+    "immunity_data": { "flags": [ "ACIDPROOF" ] },
+    "immune_mtypes": [ "mon_slug_druid" ],
     "priority": 2,
     "phase": "gas",
     "display_items": false,
@@ -161,6 +163,8 @@
     ],
     "description_affix": "covered_in",
     "decrease_intensity_on_contact": true,
+    "immunity_data": { "flags": [ "WORM_WIZ" ] },
+    "immune_mtypes": [ "mon_worm_wizard" ],
     "priority": 2,
     "phase": "solid",
     "display_items": false,
@@ -204,8 +208,8 @@
       }
     ],
     "description_affix": "covered_in",
-    "immunity_data": { "flags": [ "WEBWALK" ] },
-    "immune_mtypes": [ "mon_spider_web", "mon_spider_web_s", "mon_mutant_arthropod" ],
+    "immunity_data": { "flags": [ "SHADOW_SEER" ] },
+    "immune_mtypes": [ "mon_shadow_seer" ],
     "decrease_intensity_on_contact": true,
     "priority": 2,
     "phase": "solid",
@@ -257,8 +261,8 @@
       [ "DARKMAN", 1 ],
       {
         "type": "spell",
-        "spell_data": { "id": "rubble_cast", "min_level": 1 },
-        "cooldown": 4,
+        "spell_data": { "id": "summon_slugs", "min_level": 1 },
+        "cooldown": 1,
         "monster_message": "the simulacrum warps towards you with a magical spell."
       }
     ],
@@ -281,18 +285,128 @@
   
     {
     "type": "item_group",
-    "id": "devildrops",
+    "id": "wormdrops",
     "subtype": "collection",
     "entries": [
       { "item": "tear_of_child", "prob": 20 },
       { "item": "raw_bloodshot", "prob": 80, "count-min": 1, "count-max": 3 },
-      { "item": "viridite", "prob": 18, "count-min": 1, "count-max": 2 },
-      { "item": "ceruleum", "prob": 18, "count-min": 1, "count-max": 2 },
-      { "item": "crimsonite", "prob": 18, "count-min": 1, "count-max": 2 },
-      { "item": "argentium", "prob": 18, "count-min": 1, "count-max": 2 },
-      { "item": "decaying_soul", "prob": 7 },
-      { "item": "twisted_soul", "prob": 1 },
-      { "item": "antoninianus", "prob": 5 }
+      { "item": "worm_grease", "prob": 99, "count-min": 1, "count-max": 3 },
+      { "item": "viridite", "prob": 25, "count-min": 1, "count-max": 2 },
+      { "item": "ceruleum", "prob": 25, "count-min": 1, "count-max": 2 },
+      { "item": "crimsonite", "prob": 25, "count-min": 1, "count-max": 2 },
+      { "item": "argentium", "prob": 25, "count-min": 1, "count-max": 2 },
+      { "item": "decaying_soul", "prob": 17 },
+      { "item": "twisted_soul", "prob": 11 },
+      { "item": "antoninianus", "prob": 15 }
+    ]
+  },
+    
+    {
+    "type": "item_group",
+    "id": "slugdrops",
+    "subtype": "collection",
+    "entries": [
+      { "item": "tear_of_child", "prob": 20 },
+      { "item": "raw_bloodshot", "prob": 80, "count-min": 1, "count-max": 3 },
+      { "item": "slug_tallow", "prob": 99, "count-min": 1, "count-max": 3 },
+      { "item": "viridite", "prob": 25, "count-min": 1, "count-max": 2 },
+      { "item": "ceruleum", "prob": 25, "count-min": 1, "count-max": 2 },
+      { "item": "crimsonite", "prob": 25, "count-min": 1, "count-max": 2 },
+      { "item": "argentium", "prob": 25, "count-min": 1, "count-max": 2 },
+      { "item": "decaying_soul", "prob": 17 },
+      { "item": "twisted_soul", "prob": 11 },
+      { "item": "antoninianus", "prob": 15 }
+    ]
+  },
+    
+    {
+    "type": "item_group",
+    "id": "simulacrumdrops",
+    "subtype": "collection",
+    "entries": [
+      { "item": "tear_of_child", "prob": 20 },
+      { "item": "raw_bloodshot", "prob": 80, "count-min": 1, "count-max": 3 },
+      { "item": "simulacrum_heart", "prob": 99 },
+      { "item": "viridite", "prob": 25, "count-min": 1, "count-max": 2 },
+      { "item": "ceruleum", "prob": 25, "count-min": 1, "count-max": 2 },
+      { "item": "crimsonite", "prob": 25, "count-min": 1, "count-max": 2 },
+      { "item": "argentium", "prob": 25, "count-min": 1, "count-max": 2 },
+      { "item": "decaying_soul", "prob": 17 },
+      { "item": "twisted_soul", "prob": 11 },
+      { "item": "antoninianus", "prob": 15 }
+    ]
+  },
+    
+    {
+    "type": "item_group",
+    "id": "seerdrops",
+    "subtype": "collection",
+    "entries": [
+      { "item": "tear_of_child", "prob": 20 },
+      { "item": "raw_bloodshot", "prob": 80, "count-min": 1, "count-max": 3 },
+      { "item": "shadow_sliver", "prob": 99, "count-min": 1, "count-max": 3 },
+      { "item": "viridite", "prob": 25, "count-min": 1, "count-max": 2 },
+      { "item": "ceruleum", "prob": 25, "count-min": 1, "count-max": 2 },
+      { "item": "crimsonite", "prob": 25, "count-min": 1, "count-max": 2 },
+      { "item": "argentium", "prob": 25, "count-min": 1, "count-max": 2 },
+      { "item": "decaying_soul", "prob": 17 },
+      { "item": "twisted_soul", "prob": 11 },
+      { "item": "antoninianus", "prob": 15 }
+    ]
+  },
+    
+    {
+    "type": "item_group",
+    "id": "sauriandrops",
+    "subtype": "collection",
+    "entries": [
+      { "item": "tear_of_child", "prob": 20 },
+      { "item": "raw_bloodshot", "prob": 80, "count-min": 1, "count-max": 3 },
+      { "item": "saurian_tail", "prob": 99 },
+      { "item": "viridite", "prob": 25, "count-min": 1, "count-max": 2 },
+      { "item": "ceruleum", "prob": 25, "count-min": 1, "count-max": 2 },
+      { "item": "crimsonite", "prob": 25, "count-min": 1, "count-max": 2 },
+      { "item": "argentium", "prob": 25, "count-min": 1, "count-max": 2 },
+      { "item": "decaying_soul", "prob": 17 },
+      { "item": "twisted_soul", "prob": 11 },
+      { "item": "antoninianus", "prob": 15 }
+    ]
+  },
+    
+    {
+    "type": "item_group",
+    "id": "marionettedrops",
+    "subtype": "collection",
+    "entries": [
+      { "item": "tear_of_child", "prob": 20 },
+      { "item": "raw_bloodshot", "prob": 80, "count-min": 1, "count-max": 3 },
+      { "item": "marionette_doll", "prob": 99, "count-min": 1, "count-max": 3 },
+      { "item": "viridite", "prob": 25, "count-min": 1, "count-max": 2 },
+      { "item": "ceruleum", "prob": 25, "count-min": 1, "count-max": 2 },
+      { "item": "crimsonite", "prob": 25, "count-min": 1, "count-max": 2 },
+      { "item": "argentium", "prob": 25, "count-min": 1, "count-max": 2 },
+      { "item": "decaying_soul", "prob": 17 },
+      { "item": "twisted_soul", "prob": 11 },
+      { "item": "antoninianus", "prob": 15 }
+    ]
+  },
+     {
+    "type": "item_group",
+    "id": "graftedmessdrops",
+    "subtype": "collection",
+    "entries": [
+      { "item": "tear_of_child", "prob": 20 },
+      { "item": "grafted_arm1", "prob": 50},
+      { "item": "magic_corpse", "prob": 50},
+      { "item": "husk_spawner", "prob": 50},
+      { "item": "grafted_arm2", "prob": 50},
+      { "item": "viridite", "prob": 25, "count-min": 1, "count-max": 2 },
+      { "item": "ceruleum", "prob": 25, "count-min": 1, "count-max": 2 },
+      { "item": "crimsonite", "prob": 25, "count-min": 1, "count-max": 2 },
+      { "item": "argentium", "prob": 25, "count-min": 1, "count-max": 2 },
+      { "item": "decaying_soul", "prob": 17 },
+      { "item": "twisted_soul", "prob": 11 },
+      { "item": "antoninianus", "prob": 15 }
     ]
   },
   
@@ -408,8 +522,8 @@
     "name": "mana drain",
     "description": "",
     "valid_targets": [ "hostile" ],
-    "min_damage": -150,
-    "max_damage": -150,
+    "min_damage": -950,
+    "max_damage": -950,
     "max_level": 35,
     "min_range": 4,
     "max_range": 4,
@@ -442,8 +556,8 @@
     "melee_skill": 6,
     "melee_dice": 2,
     "melee_dice_sides": 8,
-    "melee_damage": [ { "damage_type": "cold", "amount": 6 } ],
-    "dodge": 7,
+    "melee_damage": [ { "damage_type": "acid", "amount": 10 } ],
+    "dodge": 4,
     "armor_cold": 30,
     "armor_elec": 20,
     "armor_acid": 50,
@@ -454,7 +568,7 @@
     "armor_bash": 20,
     "vision_day": 10,
     "vision_night": 50,
-    "death_drops": "devildrops",
+    "death_drops": "wormdrops",
     "harvest": "human2",
 	 "emit_fields": [
       { "emit_id": "emit_wormsmoke", "delay": "5 s" }
@@ -468,21 +582,21 @@
       {
         "type": "spell",
         "spell_data": { "id": "phase_shrike_teleport", "min_level": 1 },
-        "cooldown": 4,
+        "cooldown": 9,
         "monster_message": "the slug druid warps towards you with a magical spell."
       },
 	  {
         "type": "spell",
-        "spell_data": { "id": "rubble_cast", "min_level": 1 },
-        "cooldown": 6,
-        "monster_message": "the slug druid drops earth around you."
+        "spell_data": { "id": "worm_drain", "min_level": 1 },
+        "cooldown": 5,
+        "monster_message": "the worm wizard saps your magical energy."
       },
 	  
       {
         "type": "spell",
         "spell_data": { "id": "worm_cast", "min_level": 1 },
-        "cooldown": 10,
-        "monster_message": "the slug druid casts Grievous Spores!"
+        "cooldown": 20,
+        "monster_message": "the worm wizard casts magical darkness!"
       }
     ],
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "STALK", "PLAYER_WEAK", "PLAYER_CLOSE" ],
@@ -491,6 +605,7 @@
       "SMELLS",
       "HEARS",
       "WEBWALK",
+      "VENOM",
       "CLIMBS",
       "NO_BREATHE",
       "PATH_AVOID_DANGER_1",
@@ -499,6 +614,123 @@
   },
   
   
+  {
+    "id": "wizard_dart",
+    "type": "SPELL",
+    "name": "Wizard Flare",
+    "description": "Causes an intense heat at the location, damaging the target.",
+    "valid_targets": [ "hostile" ],
+    "flags": [ "CONCENTRATE", "SOMATIC", "LOUD", "NO_PROJECTILE" ],
+    "effect": "attack",
+    "shape": "blast",
+    "damage_type": "heat",
+    "min_damage": 25,
+    "damage_increment": 4.0,
+    "max_damage": 25,
+    "min_range": 5,
+    "range_increment": 0.5,
+    "max_range": 11,
+    "min_aoe": 3,
+    "max_aoe": 3,
+    "base_energy_cost": 1,
+    "difficulty": 1,
+    "max_level": 1,
+    "base_casting_time": 100,
+    "energy_source": "MANA"
+  },
+    
+  {
+    "id": "mon_worm_archwizard",
+    "type": "MONSTER",
+    "name": "Worm Archwizard",
+    "description": "A highly intelligent species of telepathic worm, quite offended by your first opinion of it.",
+    "default_faction": "nether",
+	"looks_like": "mon_dark_wyrm",
+    "bodytype": "human",
+    "species": [ "HORROR" ],
+    "material": [ "iflesh", "demon_chitin" ],
+    "diff": 2,
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "hp": 400,
+    "speed": 110,
+    "symbol": "h",
+    "color": "red",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 6,
+    "melee_dice": 2,
+    "melee_dice_sides": 8,
+    "melee_damage": [ { "damage_type": "heat", "amount": 20 } ],
+    "dodge": 4,
+    "armor_cold": 40,
+    "armor_elec": 30,
+    "armor_acid": 60,
+    "armor_fire": 20,
+	"armor_cut": 30,
+    "armor_stab": 25,
+    "armor_bullet": 60,
+    "armor_bash": 30,
+    "vision_day": 10,
+    "vision_night": 50,
+    "death_drops": "wormdrops",
+    "harvest": "human2",
+	 "emit_fields": [
+      { "emit_id": "emit_wormsmoke", "delay": "5 s" }
+    ],
+  
+    "special_attacks": [
+      [ "RANGED_PULL", 10 ],
+	  [ "GRAB", 7 ],
+	  [ "GRAB_DRAG", 7 ],
+      {
+        "type": "spell",
+        "spell_data": { "id": "wizard_dart", "min_level": 1 },
+        "cooldown": 6,
+        "monster_message": "the slug druid warps towards you with a magical spell."
+      },
+	  {
+        "type": "spell",
+        "spell_data": { "id": "worm_drain", "min_level": 1 },
+        "cooldown": 4,
+        "monster_message": "the worm wizard saps your magical energy."
+      },
+	  {
+        "type": "spell",
+        "spell_data": { "id": "phase_shrike_teleport", "min_level": 1 },
+        "cooldown": 6,
+        "monster_message": "the worm wizard saps your magical energy."
+      },
+	  {
+        "type": "spell",
+        "spell_data": { "id": "phase_skulker_teleport", "min_level": 1 },
+        "cooldown": 6,
+        "monster_message": "the worm wizard saps your magical energy."
+      },
+	  
+      {
+        "type": "spell",
+        "spell_data": { "id": "worm_cast", "min_level": 1 },
+        "cooldown": 14,
+        "monster_message": "the worm wizard casts magical darkness!"
+      }
+    ],
+    "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "STALK", "PLAYER_WEAK", "PLAYER_CLOSE" ],
+    "flags": [
+      "SEES",
+      "SMELLS",
+      "HEARS",
+      "WEBWALK",
+      "VENOM",
+      "CLIMBS",
+      "NO_BREATHE",
+      "PATH_AVOID_DANGER_1",
+      "PUSH_MON"
+    ]
+  },
+  
+  
+
   
   {
     "id": "mon_slug_druid",
@@ -526,7 +758,7 @@
 	 "emit_fields": [
       { "emit_id": "emit_druidspore", "delay": "5 s" }
     ],
-    "dodge": 7,
+    "dodge": 4,
     "armor_cold": 1,
     "armor_elec": 10,
     "armor_acid": 50,
@@ -537,7 +769,7 @@
     "armor_bash": 20,
     "vision_day": 10,
     "vision_night": 50,
-    "death_drops": "devildrops",
+    "death_drops": "slugdrops",
     "harvest": "human2",
   
     "special_attacks": [
@@ -545,8 +777,6 @@
 	  [ "ACID", 7 ],
 	  [ "ACID_ACCURATE", 7 ],
 	  [ "ACID_BARF", 7 ],
-	  [ "GRAB", 7 ],
-	  [ "GRAB_DRAG", 7 ],
       {
         "type": "spell",
         "spell_data": { "id": "phase_shrike_teleport", "min_level": 1 },
@@ -573,7 +803,7 @@
       "SMELLS",
       "ACIDPROOF",
       "ACIDTRAIL",
-      "ACIDBLOOD",
+      "ACID_BLOOD",
       "HEARS",
       "WEBWALK",
       "CLIMBS",
@@ -582,6 +812,228 @@
       "PUSH_MON"
     ]
   },
+  
+  
+  {
+    "id": "druid_dart",
+    "type": "SPELL",
+    "name": "Druid Flare",
+    "description": "Causes an intense heat at the location, damaging the target.",
+    "valid_targets": [ "hostile" ],
+    "flags": [ "CONCENTRATE", "SOMATIC", "LOUD", "NO_PROJECTILE" ],
+    "effect": "attack",
+    "shape": "blast",
+    "damage_type": "acid",
+    "min_damage": 20,
+    "damage_increment": 4.0,
+    "max_damage": 20,
+    "min_range": 5,
+    "range_increment": 0.5,
+    "max_range": 11,
+    "min_aoe": 2,
+    "max_aoe": 2,
+    "base_energy_cost": 1,
+    "difficulty": 1,
+    "max_level": 1,
+    "base_casting_time": 100,
+    "energy_source": "MANA"
+  },
+    {
+    "id": "summon_slugs",
+    "type": "SPELL",
+    "name": "Slug Mages",
+    "description": "Survival not guaranteed.",
+    "valid_targets": [ "ground" ],
+    "min_damage": 3,
+    "max_damage": 3,
+    "min_range": 10,
+    "max_range": 10,
+    "min_aoe": 5,
+    "max_aoe": 5,
+    "base_casting_time": 0,
+    "energy_source": "MANA",
+    "max_level": 10,
+    "difficulty": 6,
+    "min_duration": 120000,
+    "max_duration": 120000,
+    "base_energy_cost": 500,
+    "flags": [ "HOSTILE_SUMMON", "RANDOM_TARGET", "NO_PROJECTILE", "SPAWN_GROUP" ],
+    "shape": "blast",
+    "effect": "summon",
+    "effect_str": "GROUP_SLUG"
+  },
+  
+    {
+    "type": "monstergroup",
+    "name": "GROUP_SLUG",
+	"override": true,
+    "monsters": [ { "monster": "mon_slug_mageling" }]
+  },
+  
+  {
+    "id": "mon_slug_archdruid",
+    "type": "MONSTER",
+    "name": "Slug Archdruid",
+    "description": "A highly intelligent species of spellcasting-slug, and a guardian of nature.",
+    "default_faction": "nether",
+	"looks_like": "mon_slug_giant",
+    "bodytype": "human",
+    "species": [ "HORROR" ],
+    "material": [ "iflesh", "demon_chitin" ],
+    "diff": 2,
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "hp": 400,
+    "speed": 110,
+    "symbol": "h",
+    "color": "red",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 8,
+    "melee_dice": 3,
+    "melee_dice_sides": 9,
+    "melee_damage": [ { "damage_type": "acid", "amount": 20 } ],
+	 "emit_fields": [
+      { "emit_id": "emit_druidspore", "delay": "2 s" }
+    ],
+    "dodge": 4,
+    "armor_cold": 20,
+    "armor_elec": 20,
+    "armor_acid": 70,
+    "armor_fire": 30,
+	"armor_cut": 30,
+    "armor_stab": 25,
+    "armor_bullet": 60,
+    "armor_bash": 30,
+    "vision_day": 15,
+    "vision_night": 50,
+    "death_drops": "slugdrops",
+    "harvest": "human2",
+  
+    "special_attacks": [
+      [ "RANGED_PULL", 7 ],
+      [ "SMASH", 7 ],
+      [ "GROW_VINE", 7 ],
+	  [ "ACID", 7 ],
+	  [ "ACID_ACCURATE", 7 ],
+	  [ "ACID_BARF", 7 ],
+      {
+        "type": "spell",
+        "spell_data": { "id": "phase_shrike_teleport", "min_level": 1 },
+        "cooldown": 7,
+        "monster_message": "the slug druid warps towards you with a magical spell."
+      },
+	  {
+        "type": "spell",
+        "spell_data": { "id": "druid_dart", "min_level": 1 },
+        "cooldown": 7,
+        "monster_message": "the slug druid drops earth around you."
+      },
+	  
+      {
+        "type": "spell",
+        "spell_data": { "id": "summon_slugs", "min_level": 1 },
+        "cooldown": 7,
+        "monster_message": "the slug druid calls it's students!"
+      }
+    ],
+    "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "STALK", "PLAYER_WEAK", "PLAYER_CLOSE" ],
+    "flags": [
+      "SEES",
+      "SMELLS",
+      "ACIDPROOF",
+      "ACIDTRAIL",
+      "ACID_BLOOD",
+      "VENOM",
+      "HEARS",
+      "WEBWALK",
+      "CLIMBS",
+      "NO_BREATHE",
+      "PATH_AVOID_DANGER_1",
+      "PUSH_MON"
+    ]
+  },
+  
+  
+  
+  
+  {
+    "id": "mon_slug_mageling",
+    "type": "MONSTER",
+    "name": "Slug Archdruid",
+    "description": "A highly intelligent species of spellcasting-slug, and a student of nature.",
+    "default_faction": "nether",
+	"looks_like": "mon_slug_small",
+    "bodytype": "human",
+    "species": [ "HORROR" ],
+    "material": [ "iflesh", "demon_chitin" ],
+    "diff": 2,
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "hp": 100,
+    "speed": 110,
+    "symbol": "h",
+    "color": "red",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 5,
+    "melee_dice": 2,
+    "melee_dice_sides": 6,
+    "melee_damage": [ { "damage_type": "acid", "amount": 10 } ],
+	 "emit_fields": [
+      { "emit_id": "emit_druidspore", "delay": "7 s" }
+    ],
+    "dodge": 4,
+    "armor_cold": 10,
+    "armor_elec": 10,
+    "armor_acid": 40,
+    "armor_fire": 20,
+	"armor_cut": 10,
+    "armor_stab": 15,
+    "armor_bullet": 60,
+    "armor_bash": 10,
+    "vision_day": 15,
+    "vision_night": 50,
+    "death_drops": "slugdrops",
+    "harvest": "human2",
+  
+    "special_attacks": [
+	  [ "ACID", 5 ],
+	  [ "SPIT_SAP", 5 ],
+	  [ "ACID_ACCURATE", 5 ],
+      {
+        "type": "spell",
+        "spell_data": { "id": "phase_shrike_teleport", "min_level": 1 },
+        "cooldown": 7,
+        "monster_message": "the slug druid warps towards you with a magical spell."
+      },
+	  
+      {
+        "type": "spell",
+        "spell_data": { "id": "spore_cast", "min_level": 1 },
+        "cooldown": 7,
+        "monster_message": "the slug druid casts Grievous Spores!"
+      }
+    ],
+    "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "STALK", "PLAYER_WEAK", "PLAYER_CLOSE" ],
+    "flags": [
+      "SEES",
+      "SMELLS",
+      "ACIDPROOF",
+      "SHORTACIDTRAIL",
+      "ACID_BLOOD",
+      "RANGED_ATTACKER",
+      "SWARMS",
+      "HEARS",
+      "WEBWALK",
+      "CLIMBS",
+      "NO_BREATHE",
+      "PATH_AVOID_DANGER_1",
+      "PUSH_MON"
+    ]
+  },
+  
+  
   
 	  
   
@@ -619,7 +1071,7 @@
     "armor_bash": 30,
     "vision_day": 10,
     "vision_night": 50,
-    "death_drops": "devildrops",
+    "death_drops": "simulacrumdrops",
     "harvest": "human2",
   
     "special_attacks": [
@@ -660,6 +1112,149 @@
       "PUSH_MON"
     ]
   },
+  
+  
+  
+  {
+    "id": "mon_simulacrum2",
+    "type": "MONSTER",
+    "name": "Inert Simulacrum",
+    "description": "A haywire construct that freed itself from the clutches of a wizard. It's blank expression conveys hostility.",
+    "default_faction": "nether",
+	"looks_like": "mon_hallu_mannequin",
+    "bodytype": "human",
+    "species": [ "HORROR" ],
+    "material": [ "iflesh", "demon_chitin" ],
+    "diff": 2,
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "hp": 100,
+    "speed": 1,
+    "symbol": "h",
+    "color": "red",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 1,
+    "melee_dice": 1,
+    "melee_dice_sides": 1,
+    "melee_damage": [ { "damage_type": "cold", "amount": 1 } ],
+    "dodge": 7,
+    "armor_cold": 25,
+    "armor_elec": 1,
+    "armor_acid": 1,
+    "armor_fire": 25,
+	"armor_cut": 30,
+    "armor_stab": 15,
+    "armor_bullet": 50,
+    "armor_bash": 30,
+    "vision_day": 10,
+    "vision_night": 50,
+    "death_drops": "simulacrumdrops",
+    "harvest": "human2",
+  
+    "special_attacks": [
+	  [ "GRAB_DRAG", 7 ]
+    ],
+    "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "STALK", "PLAYER_WEAK", "PLAYER_CLOSE" ],
+    "flags": [
+      "SEES",
+      "SMELLS",
+      "HEARS",
+      "GRABS",
+      "WEBWALK",
+      "CLIMBS",
+      "NO_BREATHE",
+	  "HIT_AND_RUN",
+      "PATH_AVOID_DANGER_1",
+      "PUSH_MON"
+    ]
+  },
+  
+  
+  
+
+  {
+    "id": "mon_grafted_mess",
+    "type": "MONSTER",
+    "name": "Grafted Mess",
+    "description": "Perhaps this thing was once a power-hungry wizard, judging by all the spellcasting",
+    "default_faction": "nether",
+	"looks_like": "mon_devourer_lab_sec",
+    "bodytype": "human",
+    "species": [ "HORROR" ],
+    "material": [ "iflesh", "demon_chitin" ],
+    "diff": 2,
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "hp": 100,
+    "speed": 160,
+    "symbol": "h",
+    "color": "red",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 6,
+    "melee_dice": 2,
+    "melee_dice_sides": 8,
+    "melee_damage": [ { "damage_type": "bash", "amount": 12 } ],
+    "dodge": 7,
+    "armor_cold": 25,
+    "armor_elec": 25,
+    "armor_acid": 25,
+    "armor_fire": 1,
+	"armor_cut": 15,
+    "armor_stab": 15,
+    "armor_bullet": 36,
+    "armor_bash": 10,
+    "vision_day": 10,
+    "vision_night": 50,
+    "death_drops": "marionettedrops",
+    "harvest": "human2",
+  
+    "special_attacks": [
+      [ "IMPALE", 7 ],
+      [ "SMASH", 7 ],
+      [ "GENERATOR", 7 ],
+      [ "FLESH_TENDRIL", 7 ],
+      [ "FLESH_GOLEM", 7 ],
+	  [ "GRAB", 7 ],
+      {
+        "type": "spell",
+        "spell_data": { "id": "summon_husk", "min_level": 1 },
+        "cooldown": 40,
+        "monster_message": "The marionette shrieks wildly and calls forth more of it's kind."
+      },{
+        "type": "spell",
+        "spell_data": { "id": "summon_crys_husk", "min_level": 1 },
+        "cooldown": 40,
+        "monster_message": "The marionette shrieks wildly and calls forth more of it's kind."
+      },{
+        "type": "spell",
+        "spell_data": { "id": "summon_nox_husk", "min_level": 1 },
+        "cooldown": 40,
+        "monster_message": "The marionette shrieks wildly and calls forth more of it's kind."
+      }
+    ],
+    "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "STALK", "PLAYER_WEAK", "PLAYER_CLOSE" ],
+    "flags": [
+      "SEES",
+      "SMELLS",
+      "HEARS",
+      "SWARMS",
+      "GROUP_BASH",
+      "GROUP_MORALE",
+      "HARDTOSHOOT",
+      "BASHES",
+      "WEBWALK",
+      "CLIMBS",
+      "NO_BREATHE",
+	  "HIT_AND_RUN",
+      "PATH_AVOID_DANGER_1",
+      "PUSH_MON"
+    ]
+  },
+  
+  
+  
   
     {
     "type": "monstergroup",
@@ -729,7 +1324,7 @@
     "armor_bash": 10,
     "vision_day": 10,
     "vision_night": 50,
-    "death_drops": "devildrops",
+    "death_drops": "marionettedrops",
     "harvest": "human2",
   
     "special_attacks": [
@@ -798,7 +1393,7 @@
     "armor_bash": 10,
     "vision_day": 10,
     "vision_night": 50,
-    "death_drops": "devildrops",
+    "death_drops": "marionettedrops",
     "harvest": "human2",
   
     "special_attacks": [
@@ -896,7 +1491,7 @@
     "armor_bash": 30,
     "vision_day": 10,
     "vision_night": 50,
-    "death_drops": "devildrops",
+    "death_drops": "seerdrops",
     "harvest": "human2",
 	 "emit_fields": [
       { "emit_id": "emit_dark_haze", "delay": "5 s" }
@@ -949,7 +1544,7 @@
     "diff": 2,
     "volume": "30000 ml",
     "weight": "40750 g",
-    "hp": 250,
+    "hp": 220,
     "speed": 130,
     "symbol": "h",
     "color": "red",
@@ -970,7 +1565,7 @@
     "armor_bash": 30,
     "vision_day": 10,
     "vision_night": 50,
-    "death_drops": "devildrops",
+    "death_drops": "sauriandrops",
     "harvest": "human2",
   
     "special_attacks": [
