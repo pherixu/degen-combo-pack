@@ -2292,6 +2292,21 @@
     "components": [ [ [ "grafted_arm1", 1 ] ], [["simulacrum_heart", 1]] ]
   },
   
+  {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "vibrant_halo",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "qualities": [ { "id": "GRAFTING", "level": 1 },{ "id": "BUTCHER", "level": 99 } ],
+    "skill_used": "spellcraft",
+    "difficulty": 3,
+    "time": "1 h",
+    "autolearn": true,
+    "components": [ [ [ "ioun_argent", 1 ] ], [["ioun_ceruleum", 1]],[ [ "ioun_crimson", 1 ] ], [["ioun_virid", 1]] ]
+  },
+  
+  
   
   {
     "id": "spell_req_ioun_virid",

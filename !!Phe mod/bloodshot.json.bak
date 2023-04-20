@@ -301,7 +301,7 @@
     "effect": "dash",
     "effect_str": "downed",
     "shape": "cone",
-    "min_damage": 80,
+    "min_damage": 30,
     "max_damage": 350,
     "damage_increment": 1,
     "damage_type": "bash",

@@ -367,6 +367,44 @@
   },
   
   
+  {
+    "id": "vibrant_halo",
+    "type": "ARMOR",
+    "name": { "str": "Vibrant Halo" },
+    "description": "A shining beam of colorful light.",
+    "weight": "1 g",
+    "volume": "1 ml",
+    "longest_side": "1 cm",
+    "price": 2000,
+    "price_postapoc": 250,
+    "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "TRADER_AVOID", "AURA", "NO_TAKEOFF", "NONCONDUCTIVE" ],
+    "material": [ "steel" ],
+    "symbol": "/",
+    "color": "brown",
+	"relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            { "value": "MAX_MANA", "add": 1000 },
+			{ "value": "ARMOR_BASH", "add": 13 },
+			{ "value": "ARMOR_CUT", "add": 13 },
+			{ "value": "ARMOR_BULLET", "add": 50 },
+			{ "value": "ARMOR_ACID", "add": 15 },
+			{ "value": "ARMOR_HEAT", "add": 15 },
+			{ "value": "ARMOR_COLD", "add": 15 },
+			{ "value": "ARMOR_ELEC", "add": 15 },
+            { "value": "BONUS_BLOCK", "add": 1 },
+            { "value": "SPEED", "add": 25 },
+            { "value": "DEXTERITY", "add": 4 },
+            { "value": "INTELLIGENCE", "add": 4 },
+            { "value": "PERCEPTION", "add": 4 },
+            { "value": "MAX_STAMINA", "add": 500 }
+          ]
+        }
+      ]
+  }},
     
   {
     "id": "ioun_virid",

@@ -307,7 +307,13 @@
     "material": [ "steel" ],
     "symbol": "/",
     "color": "brown",
+	"charges_per_use": 0,
 	"armor": [ { "encumbrance": 2, "coverage": 100, "covers": [ "torso" ] } ],
+	
+	
+	"use_action":[
+	  { "type": "cast_spell", "spell_id": "stop_construct", "no_fail": true, "level": 1 }
+	],
 	"relic_data": {
       "passive_effects": [
         {
@@ -508,7 +514,7 @@
         {
           "has": "WORN",
           "condition": "ALWAYS",
-		  "ench_effects": [ { "effect": "graft_sores1", "intensity": 1 } ],
+		  "ench_effects": [ { "effect": "graft_sores1", "intensity": 1 }, { "effect": "shadowsight", "intensity": 1 } ],
           "values": [
             { "value": "MAX_MANA", "add": 100 },
 			{ "value": "ARMOR_BASH", "add": -3 },
@@ -546,7 +552,7 @@
         {
           "has": "WORN",
           "condition": "ALWAYS",
-		  "ench_effects": [ { "effect": "graft_sores2", "intensity": 1 } ],
+		  "ench_effects": [ { "effect": "graft_sores2", "intensity": 1 }, { "effect": "shadowsight", "intensity": 1 } ],
           "values": [
             { "value": "MAX_MANA", "add": 100 },
 			{ "value": "ARMOR_BASH", "add": -3 },
@@ -579,6 +585,10 @@
     "symbol": "/",
     "color": "brown",
 	"armor": [ { "encumbrance": 8, "coverage": 100, "covers": [ "torso", "arm_l"  ] } ],
+	
+	"use_action":[
+	  { "type": "cast_spell", "spell_id": "cut_string", "no_fail": true, "level": 1 }
+	],
 	"relic_data": {
       "passive_effects": [
         {
@@ -616,6 +626,10 @@
     "symbol": "/",
     "color": "brown",
 	"armor": [ { "encumbrance": 8, "coverage": 100, "covers": [ "torso", "arm_r"  ] } ],
+	
+	"use_action":[
+	  { "type": "cast_spell", "spell_id": "cut_string", "no_fail": true, "level": 1 }
+	],
 	"relic_data": {
       "passive_effects": [
         {
@@ -659,7 +673,7 @@
         {
           "has": "WORN",
           "condition": "ALWAYS",
-		  "ench_effects": [ { "effect": "graft_sores5", "intensity": 1 } ],
+		  "ench_effects": [ { "effect": "graft_sores5", "intensity": 1 }, { "effect": "slugsight", "intensity": 1 } ],
           "values": [
             { "value": "MAX_MANA", "add": 100 },
 			{ "value": "ARMOR_BASH", "add": -3 },
@@ -697,7 +711,7 @@
         {
           "has": "WORN",
           "condition": "ALWAYS",
-		  "ench_effects": [ { "effect": "graft_sores6", "intensity": 1 } ],
+		  "ench_effects": [ { "effect": "graft_sores6", "intensity": 1 }, { "effect": "slugsight", "intensity": 1 } ],
           "values": [
             { "value": "MAX_MANA", "add": 100 },
 			{ "value": "ARMOR_BASH", "add": -3 },
@@ -734,7 +748,7 @@
         {
           "has": "WORN",
           "condition": "ALWAYS",
-		  "ench_effects": [ { "effect": "graft_sores7", "intensity": 1 } ],
+		  "ench_effects": [ { "effect": "graft_sores7", "intensity": 1 } , { "effect": "wormsight", "intensity": 1 }],
           "values": [
             { "value": "MAX_MANA", "add": 100 },
 			{ "value": "ARMOR_BASH", "add": -3 },
@@ -773,7 +787,7 @@
         {
           "has": "WORN",
           "condition": "ALWAYS",
-		  "ench_effects": [ { "effect": "graft_sores8", "intensity": 1 } ],
+		  "ench_effects": [ { "effect": "graft_sores8", "intensity": 1 }, { "effect": "wormsight", "intensity": 1 }],
           "values": [
             { "value": "MAX_MANA", "add": 100 },
 			{ "value": "ARMOR_BASH", "add": -3 },
@@ -805,6 +819,10 @@
     "symbol": "/",
     "color": "brown",
 	"armor": [ { "encumbrance": 8, "coverage": 100, "covers": [ "torso", "arm_r"  ] } ],
+	
+	"use_action":[
+	  { "type": "cast_spell", "spell_id": "stop_construct", "no_fail": true, "level": 1 }
+	],
 	"relic_data": {
       "passive_effects": [
         {
@@ -842,6 +860,10 @@
     "symbol": "/",
     "color": "brown",
 	"armor": [ { "encumbrance": 8, "coverage": 100, "covers": [ "torso", "arm_l"  ] } ],
+	
+	"use_action":[
+	  { "type": "cast_spell", "spell_id": "stop_construct", "no_fail": true, "level": 1 }
+	],
 	"relic_data": {
       "passive_effects": [
         {

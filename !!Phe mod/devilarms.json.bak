@@ -2662,14 +2662,14 @@
           "hit_you_effect": [ { "id": "shotgun_flurry" } ],
 		  "values": [
             { "value": "BONUS_BLOCK", "add": 4 },
-            { "value": "EXTRA_COLD", "add": -20 },
-            { "value": "EXTRA_BULLET", "add": -20 },
-            { "value": "EXTRA_BASH", "add": -20 },
-            { "value": "EXTRA_ACID", "add": -20 },
-            { "value": "EXTRA_HEAT", "add": -20 },
-            { "value": "EXTRA_ELEC", "add": -20 },
-            { "value": "EXTRA_CUT", "add": -20 },
-            { "value": "EXTRA_STAB", "add": -20 },
+            { "value": "EXTRA_COLD", "add": -15 },
+            { "value": "EXTRA_BULLET", "add": -15 },
+            { "value": "EXTRA_BASH", "add": -15 },
+            { "value": "EXTRA_ACID", "add": -15 },
+            { "value": "EXTRA_HEAT", "add": -15 },
+            { "value": "EXTRA_ELEC", "add": -15 },
+            { "value": "EXTRA_CUT", "add": -15 },
+            { "value": "EXTRA_STAB", "add": -15 },
             { "value": "ITEM_DAMAGE_BULLET", "add": 25 }
           ]
         }
@@ -2722,15 +2722,14 @@
           "condition": "ALWAYS",
           "hit_you_effect": [ { "id": "shotgun_flurry" } ],
 		  "values": [
-            { "value": "BONUS_BLOCK", "add": 4 },
-            { "value": "EXTRA_COLD", "add": -20 },
-            { "value": "EXTRA_BULLET", "add": -20 },
-            { "value": "EXTRA_BASH", "add": -20 },
-            { "value": "EXTRA_ACID", "add": -20 },
-            { "value": "EXTRA_HEAT", "add": -20 },
-            { "value": "EXTRA_ELEC", "add": -20 },
-            { "value": "EXTRA_CUT", "add": -20 },
-            { "value": "EXTRA_STAB", "add": -20 },
+            { "value": "EXTRA_COLD", "add": -15 },
+            { "value": "EXTRA_BULLET", "add": -15 },
+            { "value": "EXTRA_BASH", "add": -15 },
+            { "value": "EXTRA_ACID", "add": -15 },
+            { "value": "EXTRA_HEAT", "add": -15 },
+            { "value": "EXTRA_ELEC", "add": -15 },
+            { "value": "EXTRA_CUT", "add": -15 },
+            { "value": "EXTRA_STAB", "add": -15 },
             { "value": "ITEM_DAMAGE_BULLET", "add": 25 }
           ]
         }
@@ -2783,15 +2782,14 @@
           "condition": "ALWAYS",
           "hit_you_effect": [ { "id": "shotgun_flurry" } ],
 		  "values": [
-            { "value": "BONUS_BLOCK", "add": 4 },
-            { "value": "EXTRA_COLD", "add": -20 },
-            { "value": "EXTRA_BULLET", "add": -20 },
-            { "value": "EXTRA_BASH", "add": -20 },
-            { "value": "EXTRA_ACID", "add": -20 },
-            { "value": "EXTRA_HEAT", "add": -20 },
-            { "value": "EXTRA_ELEC", "add": -20 },
-            { "value": "EXTRA_CUT", "add": -20 },
-            { "value": "EXTRA_STAB", "add": -20 },
+            { "value": "EXTRA_COLD", "add": -15 },
+            { "value": "EXTRA_BULLET", "add": -15 },
+            { "value": "EXTRA_BASH", "add": -15 },
+            { "value": "EXTRA_ACID", "add": -15 },
+            { "value": "EXTRA_HEAT", "add": -15 },
+            { "value": "EXTRA_ELEC", "add": -15 },
+            { "value": "EXTRA_CUT", "add": -15 },
+            { "value": "EXTRA_STAB", "add": -15 },
             { "value": "ITEM_DAMAGE_BULLET", "add": 25 }
           ]
         }
@@ -2845,15 +2843,14 @@
           "condition": "ALWAYS",
           "hit_you_effect": [ { "id": "shotgun_flurry" } ],
 		  "values": [
-            { "value": "BONUS_BLOCK", "add": 4 },
-            { "value": "EXTRA_COLD", "add": -20 },
-            { "value": "EXTRA_BULLET", "add": -20 },
-            { "value": "EXTRA_BASH", "add": -20 },
-            { "value": "EXTRA_ACID", "add": -20 },
-            { "value": "EXTRA_HEAT", "add": -20 },
-            { "value": "EXTRA_ELEC", "add": -20 },
-            { "value": "EXTRA_CUT", "add": -20 },
-            { "value": "EXTRA_STAB", "add": -20 },
+            { "value": "EXTRA_COLD", "add": -15 },
+            { "value": "EXTRA_BULLET", "add": -15 },
+            { "value": "EXTRA_BASH", "add": -15 },
+            { "value": "EXTRA_ACID", "add": -15 },
+            { "value": "EXTRA_HEAT", "add": -15 },
+            { "value": "EXTRA_ELEC", "add": -15 },
+            { "value": "EXTRA_CUT", "add": -15 },
+            { "value": "EXTRA_STAB", "add": -15 },
             { "value": "ITEM_DAMAGE_BULLET", "add": 25 }
           ]
         }
@@ -2908,15 +2905,14 @@
           "condition": "ALWAYS",
           "hit_you_effect": [ { "id": "elec_cone" } ],
 		  "values": [
-            { "value": "BONUS_BLOCK", "add": 4 },
-            { "value": "EXTRA_COLD", "add": -20 },
-            { "value": "EXTRA_BULLET", "add": -20 },
-            { "value": "EXTRA_BASH", "add": -20 },
-            { "value": "EXTRA_ACID", "add": -20 },
-            { "value": "EXTRA_HEAT", "add": -20 },
-            { "value": "EXTRA_ELEC", "add": -20 },
-            { "value": "EXTRA_CUT", "add": -20 },
-            { "value": "EXTRA_STAB", "add": -20 },
+            { "value": "EXTRA_COLD", "add": -15 },
+            { "value": "EXTRA_BULLET", "add": -15 },
+            { "value": "EXTRA_BASH", "add": -15 },
+            { "value": "EXTRA_ACID", "add": -15 },
+            { "value": "EXTRA_HEAT", "add": -15 },
+            { "value": "EXTRA_ELEC", "add": -15 },
+            { "value": "EXTRA_CUT", "add": -15 },
+            { "value": "EXTRA_STAB", "add": -15 },
             { "value": "ITEM_DAMAGE_ELEC", "add": 25 }
           ]
         }
@@ -2971,15 +2967,14 @@
           "condition": "ALWAYS",
           "hit_you_effect": [ { "id": "elec_cone" } ],
 		  "values": [
-            { "value": "BONUS_BLOCK", "add": 4 },
-            { "value": "EXTRA_COLD", "add": -20 },
-            { "value": "EXTRA_BULLET", "add": -20 },
-            { "value": "EXTRA_BASH", "add": -20 },
-            { "value": "EXTRA_ACID", "add": -20 },
-            { "value": "EXTRA_HEAT", "add": -20 },
-            { "value": "EXTRA_ELEC", "add": -20 },
-            { "value": "EXTRA_CUT", "add": -20 },
-            { "value": "EXTRA_STAB", "add": -20 },
+            { "value": "EXTRA_COLD", "add": -15 },
+            { "value": "EXTRA_BULLET", "add": -15 },
+            { "value": "EXTRA_BASH", "add": -15 },
+            { "value": "EXTRA_ACID", "add": -15 },
+            { "value": "EXTRA_HEAT", "add": -15 },
+            { "value": "EXTRA_ELEC", "add": -15 },
+            { "value": "EXTRA_CUT", "add": -15 },
+            { "value": "EXTRA_STAB", "add": -15 },
             { "value": "ITEM_DAMAGE_ELEC", "add": 25 }
           ]
         }
@@ -3034,15 +3029,14 @@
           "condition": "ALWAYS",
           "hit_you_effect": [ { "id": "elec_cone" } ],
 		  "values": [
-            { "value": "BONUS_BLOCK", "add": 4 },
-            { "value": "EXTRA_COLD", "add": -20 },
-            { "value": "EXTRA_BULLET", "add": -20 },
-            { "value": "EXTRA_BASH", "add": -20 },
-            { "value": "EXTRA_ACID", "add": -20 },
-            { "value": "EXTRA_HEAT", "add": -20 },
-            { "value": "EXTRA_ELEC", "add": -20 },
-            { "value": "EXTRA_CUT", "add": -20 },
-            { "value": "EXTRA_STAB", "add": -20 },
+            { "value": "EXTRA_COLD", "add": -15 },
+            { "value": "EXTRA_BULLET", "add": -15 },
+            { "value": "EXTRA_BASH", "add": -15 },
+            { "value": "EXTRA_ACID", "add": -15 },
+            { "value": "EXTRA_HEAT", "add": -15 },
+            { "value": "EXTRA_ELEC", "add": -15 },
+            { "value": "EXTRA_CUT", "add": -15 },
+            { "value": "EXTRA_STAB", "add": -15 },
             { "value": "ITEM_DAMAGE_ELEC", "add": 25 }
           ]
         }
@@ -3096,15 +3090,14 @@
           "condition": "ALWAYS",
           "hit_you_effect": [ { "id": "elec_cone" } ],
 		  "values": [
-            { "value": "BONUS_BLOCK", "add": 4 },
-            { "value": "EXTRA_COLD", "add": -20 },
-            { "value": "EXTRA_BULLET", "add": -20 },
-            { "value": "EXTRA_BASH", "add": -20 },
-            { "value": "EXTRA_ACID", "add": -20 },
-            { "value": "EXTRA_HEAT", "add": -20 },
-            { "value": "EXTRA_ELEC", "add": -20 },
-            { "value": "EXTRA_CUT", "add": -20 },
-            { "value": "EXTRA_STAB", "add": -20 },
+            { "value": "EXTRA_COLD", "add": -15 },
+            { "value": "EXTRA_BULLET", "add": -15 },
+            { "value": "EXTRA_BASH", "add": -15 },
+            { "value": "EXTRA_ACID", "add": -15 },
+            { "value": "EXTRA_HEAT", "add": -15 },
+            { "value": "EXTRA_ELEC", "add": -15 },
+            { "value": "EXTRA_CUT", "add": -15 },
+            { "value": "EXTRA_STAB", "add": -15 },
             { "value": "ITEM_DAMAGE_ELEC", "add": 25 }
           ]
         }
@@ -3158,15 +3151,14 @@
           "condition": "ALWAYS",
           "hit_you_effect": [ { "id": "stinger_bolts" } ],
 		  "values": [
-            { "value": "BONUS_BLOCK", "add": 4 },
-            { "value": "EXTRA_COLD", "add": -20 },
-            { "value": "EXTRA_BULLET", "add": -20 },
-            { "value": "EXTRA_BASH", "add": -20 },
-            { "value": "EXTRA_ACID", "add": -20 },
-            { "value": "EXTRA_HEAT", "add": -20 },
-            { "value": "EXTRA_ELEC", "add": -20 },
-            { "value": "EXTRA_CUT", "add": -20 },
-            { "value": "EXTRA_STAB", "add": -20 },
+            { "value": "EXTRA_COLD", "add": -15 },
+            { "value": "EXTRA_BULLET", "add": -15 },
+            { "value": "EXTRA_BASH", "add": -15 },
+            { "value": "EXTRA_ACID", "add": -15 },
+            { "value": "EXTRA_HEAT", "add": -15 },
+            { "value": "EXTRA_ELEC", "add": -15 },
+            { "value": "EXTRA_CUT", "add": -15 },
+            { "value": "EXTRA_STAB", "add": -15 },
             { "value": "ITEM_DAMAGE_ACID", "add": 25 }
           ]
         }
@@ -3220,15 +3212,14 @@
           "condition": "ALWAYS",
           "hit_you_effect": [ { "id": "stinger_bolts" } ],
 		  "values": [
-            { "value": "BONUS_BLOCK", "add": 4 },
-            { "value": "EXTRA_COLD", "add": -20 },
-            { "value": "EXTRA_BULLET", "add": -20 },
-            { "value": "EXTRA_BASH", "add": -20 },
-            { "value": "EXTRA_ACID", "add": -20 },
-            { "value": "EXTRA_HEAT", "add": -20 },
-            { "value": "EXTRA_ELEC", "add": -20 },
-            { "value": "EXTRA_CUT", "add": -20 },
-            { "value": "EXTRA_STAB", "add": -20 },
+            { "value": "EXTRA_COLD", "add": -15 },
+            { "value": "EXTRA_BULLET", "add": -15 },
+            { "value": "EXTRA_BASH", "add": -15 },
+            { "value": "EXTRA_ACID", "add": -15 },
+            { "value": "EXTRA_HEAT", "add": -15 },
+            { "value": "EXTRA_ELEC", "add": -15 },
+            { "value": "EXTRA_CUT", "add": -15 },
+            { "value": "EXTRA_STAB", "add": -15 },
             { "value": "ITEM_DAMAGE_ACID", "add": 25 }
           ]
         }
@@ -3281,15 +3272,14 @@
           "condition": "ALWAYS",
           "hit_you_effect": [ { "id": "stinger_bolts" } ],
 		  "values": [
-            { "value": "BONUS_BLOCK", "add": 4 },
-            { "value": "EXTRA_COLD", "add": -20 },
-            { "value": "EXTRA_BULLET", "add": -20 },
-            { "value": "EXTRA_BASH", "add": -20 },
-            { "value": "EXTRA_ACID", "add": -20 },
-            { "value": "EXTRA_HEAT", "add": -20 },
-            { "value": "EXTRA_ELEC", "add": -20 },
-            { "value": "EXTRA_CUT", "add": -20 },
-            { "value": "EXTRA_STAB", "add": -20 },
+            { "value": "EXTRA_COLD", "add": -15 },
+            { "value": "EXTRA_BULLET", "add": -15 },
+            { "value": "EXTRA_BASH", "add": -15 },
+            { "value": "EXTRA_ACID", "add": -15 },
+            { "value": "EXTRA_HEAT", "add": -15 },
+            { "value": "EXTRA_ELEC", "add": -15 },
+            { "value": "EXTRA_CUT", "add": -15 },
+            { "value": "EXTRA_STAB", "add": -15 },
             { "value": "ITEM_DAMAGE_ACID", "add": 25 }
           ]
         }
@@ -3342,15 +3332,14 @@
           "condition": "ALWAYS",
           "hit_you_effect": [ { "id": "stinger_bolts" } ],
 		  "values": [
-            { "value": "BONUS_BLOCK", "add": 4 },
-            { "value": "EXTRA_COLD", "add": -20 },
-            { "value": "EXTRA_BULLET", "add": -20 },
-            { "value": "EXTRA_BASH", "add": -20 },
-            { "value": "EXTRA_ACID", "add": -20 },
-            { "value": "EXTRA_HEAT", "add": -20 },
-            { "value": "EXTRA_ELEC", "add": -20 },
-            { "value": "EXTRA_CUT", "add": -20 },
-            { "value": "EXTRA_STAB", "add": -20 },
+            { "value": "EXTRA_COLD", "add": -15 },
+            { "value": "EXTRA_BULLET", "add": -15 },
+            { "value": "EXTRA_BASH", "add": -15 },
+            { "value": "EXTRA_ACID", "add": -15 },
+            { "value": "EXTRA_HEAT", "add": -15 },
+            { "value": "EXTRA_ELEC", "add": -15 },
+            { "value": "EXTRA_CUT", "add": -15 },
+            { "value": "EXTRA_STAB", "add": -15 },
             { "value": "ITEM_DAMAGE_ACID", "add": 25 }
           ]
         }
@@ -3407,15 +3396,14 @@
           "condition": "ALWAYS",
           "hit_you_effect": [ { "id": "fire_cone" } ],
 		  "values": [
-            { "value": "BONUS_BLOCK", "add": 4 },
-            { "value": "EXTRA_COLD", "add": -20 },
-            { "value": "EXTRA_BULLET", "add": -20 },
-            { "value": "EXTRA_BASH", "add": -20 },
-            { "value": "EXTRA_ACID", "add": -20 },
-            { "value": "EXTRA_HEAT", "add": -20 },
-            { "value": "EXTRA_ELEC", "add": -20 },
-            { "value": "EXTRA_CUT", "add": -20 },
-            { "value": "EXTRA_STAB", "add": -20 },
+            { "value": "EXTRA_COLD", "add": -15 },
+            { "value": "EXTRA_BULLET", "add": -15 },
+            { "value": "EXTRA_BASH", "add": -15 },
+            { "value": "EXTRA_ACID", "add": -15 },
+            { "value": "EXTRA_HEAT", "add": -15 },
+            { "value": "EXTRA_ELEC", "add": -15 },
+            { "value": "EXTRA_CUT", "add": -15 },
+            { "value": "EXTRA_STAB", "add": -15 },
             { "value": "ITEM_DAMAGE_HEAT", "add": 25 }
           ]
         }
@@ -3470,15 +3458,14 @@
           "condition": "ALWAYS",
           "hit_you_effect": [ { "id": "fire_cone" } ],
 		  "values": [
-            { "value": "BONUS_BLOCK", "add": 4 },
-            { "value": "EXTRA_COLD", "add": -20 },
-            { "value": "EXTRA_BULLET", "add": -20 },
-            { "value": "EXTRA_BASH", "add": -20 },
-            { "value": "EXTRA_ACID", "add": -20 },
-            { "value": "EXTRA_HEAT", "add": -20 },
-            { "value": "EXTRA_ELEC", "add": -20 },
-            { "value": "EXTRA_CUT", "add": -20 },
-            { "value": "EXTRA_STAB", "add": -20 },
+            { "value": "EXTRA_COLD", "add": -15 },
+            { "value": "EXTRA_BULLET", "add": -15 },
+            { "value": "EXTRA_BASH", "add": -15 },
+            { "value": "EXTRA_ACID", "add": -15 },
+            { "value": "EXTRA_HEAT", "add": -15 },
+            { "value": "EXTRA_ELEC", "add": -15 },
+            { "value": "EXTRA_CUT", "add": -15 },
+            { "value": "EXTRA_STAB", "add": -15 },
             { "value": "ITEM_DAMAGE_HEAT", "add": 25 }
           ]
         }
@@ -3531,15 +3518,14 @@
           "condition": "ALWAYS",
           "hit_you_effect": [ { "id": "fire_cone" } ],
 		  "values": [
-            { "value": "BONUS_BLOCK", "add": 4 },
-            { "value": "EXTRA_COLD", "add": -20 },
-            { "value": "EXTRA_BULLET", "add": -20 },
-            { "value": "EXTRA_BASH", "add": -20 },
-            { "value": "EXTRA_ACID", "add": -20 },
-            { "value": "EXTRA_HEAT", "add": -20 },
-            { "value": "EXTRA_ELEC", "add": -20 },
-            { "value": "EXTRA_CUT", "add": -20 },
-            { "value": "EXTRA_STAB", "add": -20 },
+            { "value": "EXTRA_COLD", "add": -15 },
+            { "value": "EXTRA_BULLET", "add": -15 },
+            { "value": "EXTRA_BASH", "add": -15 },
+            { "value": "EXTRA_ACID", "add": -15 },
+            { "value": "EXTRA_HEAT", "add": -15 },
+            { "value": "EXTRA_ELEC", "add": -15 },
+            { "value": "EXTRA_CUT", "add": -15 },
+            { "value": "EXTRA_STAB", "add": -15 },
             { "value": "ITEM_DAMAGE_HEAT", "add": 25 }
           ]
         }
@@ -3593,15 +3579,14 @@
           "condition": "ALWAYS",
           "hit_you_effect": [ { "id": "fire_cone" } ],
 		  "values": [
-            { "value": "BONUS_BLOCK", "add": 4 },
-            { "value": "EXTRA_COLD", "add": -20 },
-            { "value": "EXTRA_BULLET", "add": -20 },
-            { "value": "EXTRA_BASH", "add": -20 },
-            { "value": "EXTRA_ACID", "add": -20 },
-            { "value": "EXTRA_HEAT", "add": -20 },
-            { "value": "EXTRA_ELEC", "add": -20 },
-            { "value": "EXTRA_CUT", "add": -20 },
-            { "value": "EXTRA_STAB", "add": -20 },
+            { "value": "EXTRA_COLD", "add": -15 },
+            { "value": "EXTRA_BULLET", "add": -15 },
+            { "value": "EXTRA_BASH", "add": -15 },
+            { "value": "EXTRA_ACID", "add": -15 },
+            { "value": "EXTRA_HEAT", "add": -15 },
+            { "value": "EXTRA_ELEC", "add": -15 },
+            { "value": "EXTRA_CUT", "add": -15 },
+            { "value": "EXTRA_STAB", "add": -15 },
             { "value": "ITEM_DAMAGE_HEAT", "add": 25 }
           ]
         }
@@ -3655,15 +3640,14 @@
           "condition": "ALWAYS",
           "hit_you_effect": [ { "id": "ice_cone" } ],
 		  "values": [
-            { "value": "BONUS_BLOCK", "add": 4 },
-            { "value": "EXTRA_COLD", "add": -20 },
-            { "value": "EXTRA_BULLET", "add": -20 },
-            { "value": "EXTRA_BASH", "add": -20 },
-            { "value": "EXTRA_ACID", "add": -20 },
-            { "value": "EXTRA_HEAT", "add": -20 },
-            { "value": "EXTRA_ELEC", "add": -20 },
-            { "value": "EXTRA_CUT", "add": -20 },
-            { "value": "EXTRA_STAB", "add": -20 },
+            { "value": "EXTRA_COLD", "add": -15 },
+            { "value": "EXTRA_BULLET", "add": -15 },
+            { "value": "EXTRA_BASH", "add": -15 },
+            { "value": "EXTRA_ACID", "add": -15 },
+            { "value": "EXTRA_HEAT", "add": -15 },
+            { "value": "EXTRA_ELEC", "add": -15 },
+            { "value": "EXTRA_CUT", "add": -15 },
+            { "value": "EXTRA_STAB", "add": -15 },
             { "value": "ITEM_DAMAGE_COLD", "add": 25 }
           ]
         }
@@ -3723,15 +3707,14 @@
           "condition": "ALWAYS",
           "hit_you_effect": [ { "id": "ice_cone" } ],
 		  "values": [
-            { "value": "BONUS_BLOCK", "add": 4 },
-            { "value": "EXTRA_COLD", "add": -20 },
-            { "value": "EXTRA_BULLET", "add": -20 },
-            { "value": "EXTRA_BASH", "add": -20 },
-            { "value": "EXTRA_ACID", "add": -20 },
-            { "value": "EXTRA_HEAT", "add": -20 },
-            { "value": "EXTRA_ELEC", "add": -20 },
-            { "value": "EXTRA_CUT", "add": -20 },
-            { "value": "EXTRA_STAB", "add": -20 },
+            { "value": "EXTRA_COLD", "add": -15 },
+            { "value": "EXTRA_BULLET", "add": -15 },
+            { "value": "EXTRA_BASH", "add": -15 },
+            { "value": "EXTRA_ACID", "add": -15 },
+            { "value": "EXTRA_HEAT", "add": -15 },
+            { "value": "EXTRA_ELEC", "add": -15 },
+            { "value": "EXTRA_CUT", "add": -15 },
+            { "value": "EXTRA_STAB", "add": -15 },
             { "value": "ITEM_DAMAGE_COLD", "add": 25 }
           ]
         }
@@ -3785,15 +3768,14 @@
           "condition": "ALWAYS",
           "hit_you_effect": [ { "id": "ice_cone" } ],
 		  "values": [
-            { "value": "BONUS_BLOCK", "add": 4 },
-            { "value": "EXTRA_COLD", "add": -20 },
-            { "value": "EXTRA_BULLET", "add": -20 },
-            { "value": "EXTRA_BASH", "add": -20 },
-            { "value": "EXTRA_ACID", "add": -20 },
-            { "value": "EXTRA_HEAT", "add": -20 },
-            { "value": "EXTRA_ELEC", "add": -20 },
-            { "value": "EXTRA_CUT", "add": -20 },
-            { "value": "EXTRA_STAB", "add": -20 },
+            { "value": "EXTRA_COLD", "add": -15 },
+            { "value": "EXTRA_BULLET", "add": -15 },
+            { "value": "EXTRA_BASH", "add": -15 },
+            { "value": "EXTRA_ACID", "add": -15 },
+            { "value": "EXTRA_HEAT", "add": -15 },
+            { "value": "EXTRA_ELEC", "add": -15 },
+            { "value": "EXTRA_CUT", "add": -15 },
+            { "value": "EXTRA_STAB", "add": -15 },
             { "value": "ITEM_DAMAGE_COLD", "add": 25 }
           ]
         }

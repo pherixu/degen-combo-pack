@@ -84,7 +84,46 @@
     "show_in_info": true,
     "show_intensity": false
   },
+  
+  {
+    "type": "effect_type",
+    "id": "shadowsight",
+    "name": [ "Shadow Sight" ],
+    "desc": [ "You are prepared to face the shadow seer's illusions." ],
+    "apply_message": "You are sanctified in light!",
+    "rating": "good",
+    "flags": [ "SHADOW_SEER" ],
+    "max_intensity": 3,  
+    "show_in_info": true,
+    "show_intensity": false
+  },
 
+  {
+    "type": "effect_type",
+    "id": "wormsight",
+    "name": [ "Worm Warding" ],
+    "desc": [ "You are prepared to face the worm wizard and it's vile smoke." ],
+    "apply_message": "You are sanctified in light!",
+    "rating": "good",
+    "flags": [ "WORM_WIZ" ],
+    "max_intensity": 3,  
+    "show_in_info": true,
+    "show_intensity": false
+  },
+
+
+  {
+    "type": "effect_type",
+    "id": "slugsight",
+    "name": [ "Slug Shielding" ],
+    "desc": [ "You are prepared to face the slug druid's spores." ],
+    "apply_message": "You are sanctified in light!",
+    "rating": "good",
+    "flags": [ "ACIDPROOF" ],
+    "max_intensity": 3,  
+    "show_in_info": true,
+    "show_intensity": false
+  },
 
     
    {
@@ -373,6 +412,9 @@
     ]
   },
     
+	
+	
+	
     {
     "type": "item_group",
     "id": "marionettedrops",
@@ -760,13 +802,13 @@
     ],
     "dodge": 4,
     "armor_cold": 1,
-    "armor_elec": 10,
+    "armor_elec": 20,
     "armor_acid": 50,
-    "armor_fire": 20,
-	"armor_cut": 20,
+    "armor_fire": 30,
+	"armor_cut": 30,
     "armor_stab": 15,
     "armor_bullet": 30,
-    "armor_bash": 20,
+    "armor_bash": 30,
     "vision_day": 10,
     "vision_night": 50,
     "death_drops": "slugdrops",
@@ -1035,6 +1077,185 @@
   
   
   
+  
+	  
+  
+  {
+    "id": "mon_archaeodemon",
+    "type": "MONSTER",
+    "name": "Archaeo-Demon",
+    "description": "A massive ancient devil scribed all-over in enchanted sigils and runes. It's protective magic is nigh impenetrable...",
+    "default_faction": "nether",
+	"looks_like": "mon_flying_polyp",
+    "bodytype": "human",
+    "species": [ "HORROR" ],
+    "material": [ "iflesh", "demon_chitin" ],
+    "diff": 2,
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "hp": 500,
+    "speed": 180,
+    "symbol": "h",
+    "color": "red",
+    "aggression": 100,
+    "morale": 100,
+    "armor_penetration": 25,
+    "melee_skill": 6,
+    "melee_dice": 2,
+    "melee_dice_sides": 8,
+    "melee_damage": [ { "damage_type": "heat", "amount": 10 } ],
+    "dodge": 7,
+    "armor_pure": 25	,
+    "armor_cold": 99,
+    "armor_elec": 99,
+    "armor_acid": 99,
+    "armor_fire": 99,
+	"armor_cut": 99,
+    "armor_stab": 99,
+    "armor_bullet": 999,
+    "armor_bash": 99,
+    "vision_day": 10,
+    "vision_night": 50,
+    "death_drops": "simulacrumdrops",
+    "harvest": "human2",
+  
+    "special_attacks": [
+	  [ "GRAB", 7 ],
+	  [ "SMASH", 7 ],
+	  [ "GRAB_DRAG", 7 ],
+    { "id": "SHOCKSTORM", "cooldown": 7, "range": 6 },
+      {
+        "type": "spell",
+        "spell_data": { "id": "point_flare", "min_level": 16 },
+        "cooldown": 7,
+        "monster_message": "the simulacrum warps towards you with a magical spell."
+      },
+      {
+        "type": "spell",
+        "spell_data": { "id": "ice_spike", "min_level": 16 },
+        "cooldown": 7,
+        "monster_message": "the simulacrum warps towards you with a magical spell."
+      },
+      {
+        "type": "spell",
+        "spell_data": { "id": "phase_shrike_teleport", "min_level": 1 },
+        "cooldown": 7,
+        "monster_message": "the simulacrum warps towards you with a magical spell."
+      },
+      {
+        "type": "spell",
+        "spell_data": { "id": "phase_skulker_teleport", "min_level": 1 },
+        "cooldown": 7,
+        "monster_message": "the simulacrum warps towards you with a magical spell."
+      }
+    ],
+    "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "STALK", "PLAYER_WEAK", "PLAYER_CLOSE" ],
+    "flags": [
+      "SEES",
+      "SMELLS",
+      "HEARS",
+      "RANGED_ATTACKER",
+      "GRABS",
+      "WEBWALK",
+      "CLIMBS",
+      "NO_BREATHE",
+	  "HIT_AND_RUN",
+      "PATH_AVOID_DANGER_1",
+      "PUSH_MON"
+    ]
+  },
+  
+  
+   
+  
+  {
+    "id": "mon_archaeodemon2",
+    "type": "MONSTER",
+    "name": "Archaeo-Demon",
+    "description": "The magical etchings on the ancient beast have been cast away and it's pulpy exterior writhes and thrashes",
+    "default_faction": "nether",
+	"looks_like": "mon_flying_polyp",
+    "bodytype": "human",
+    "species": [ "HORROR" ],
+    "material": [ "iflesh", "demon_chitin" ],
+    "diff": 2,
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "hp": 350,
+    "speed": 180,
+    "symbol": "h",
+    "color": "red",
+    "aggression": 100,
+    "morale": 100,
+    "armor_penetration": 25,
+    "melee_skill": 6,
+    "melee_dice": 2,
+    "melee_dice_sides": 8,
+    "melee_damage": [ { "damage_type": "heat", "amount": 10 } ],
+    "dodge": 7,
+    "armor_pure": 25	,
+    "armor_cold": 19,
+    "armor_elec": 19,
+    "armor_acid": 19,
+    "armor_fire": 19,
+	"armor_cut": 29,
+    "armor_stab": 29,
+    "armor_bullet": 999,
+    "armor_bash": 29,
+    "vision_day": 10,
+    "vision_night": 50,
+    "death_drops": "simulacrumdrops",
+    "harvest": "human2",
+  
+    "special_attacks": [
+	  [ "GRAB", 7 ],
+	  [ "SMASH", 7 ],
+	  [ "GRAB_DRAG", 7 ],
+    { "id": "SHOCKSTORM", "cooldown": 7, "range": 6 },
+      {
+        "type": "spell",
+        "spell_data": { "id": "point_flare", "min_level": 16 },
+        "cooldown": 17,
+        "monster_message": "the simulacrum warps towards you with a magical spell."
+      },
+      {
+        "type": "spell",
+        "spell_data": { "id": "ice_spike", "min_level": 16 },
+        "cooldown": 17,
+        "monster_message": "the simulacrum warps towards you with a magical spell."
+      },
+      {
+        "type": "spell",
+        "spell_data": { "id": "phase_shrike_teleport", "min_level": 1 },
+        "cooldown": 17,
+        "monster_message": "the simulacrum warps towards you with a magical spell."
+      },
+      {
+        "type": "spell",
+        "spell_data": { "id": "phase_skulker_teleport", "min_level": 1 },
+        "cooldown": 17,
+        "monster_message": "the simulacrum warps towards you with a magical spell."
+      }
+    ],
+    "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "STALK", "PLAYER_WEAK", "PLAYER_CLOSE" ],
+    "flags": [
+      "SEES",
+      "SMELLS",
+      "HEARS",
+      "RANGED_ATTACKER",
+      "GRABS",
+      "WEBWALK",
+      "CLIMBS",
+      "NO_BREATHE",
+	  "HIT_AND_RUN",
+      "PATH_AVOID_DANGER_1",
+      "PUSH_MON"
+    ]
+  },
+  
+  
+  
+  
 	  
   
   {
@@ -1102,7 +1323,6 @@
       "SEES",
       "SMELLS",
       "HEARS",
-      "DRIPS_GASOLINE",
       "GRABS",
       "WEBWALK",
       "CLIMBS",
@@ -1220,18 +1440,18 @@
       {
         "type": "spell",
         "spell_data": { "id": "summon_husk", "min_level": 1 },
-        "cooldown": 40,
-        "monster_message": "The marionette shrieks wildly and calls forth more of it's kind."
+        "cooldown": 10,
+        "monster_message": "out of the grafted mound crawls a shambling husk!"
       },{
         "type": "spell",
         "spell_data": { "id": "summon_crys_husk", "min_level": 1 },
-        "cooldown": 40,
-        "monster_message": "The marionette shrieks wildly and calls forth more of it's kind."
+        "cooldown": 10,
+        "monster_message": "out of the grafted mound crawls a crystalline husk!"
       },{
         "type": "spell",
         "spell_data": { "id": "summon_nox_husk", "min_level": 1 },
-        "cooldown": 40,
-        "monster_message": "The marionette shrieks wildly and calls forth more of it's kind."
+        "cooldown": 10,
+        "monster_message": "out of the grafted mound crawls a noxious husk!"
       }
     ],
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "STALK", "PLAYER_WEAK", "PLAYER_CLOSE" ],
@@ -1258,6 +1478,13 @@
   
     {
     "type": "monstergroup",
+    "name": "GROUP_DOLL1",
+	"override": true,
+    "monsters": [ { "monster": "mon_marionette" }]
+  },
+  
+    {
+    "type": "monstergroup",
     "name": "GROUP_DOLL",
 	"override": true,
     "monsters": [ { "monster": "mon_marionette2" }]
@@ -1271,8 +1498,8 @@
     "valid_targets": [ "ground" ],
     "min_damage": 2,
     "max_damage": 2,
-    "min_range": 10,
-    "max_range": 10,
+    "min_range": 7,
+    "max_range": 7,
     "min_aoe": 5,
     "max_aoe": 5,
     "base_casting_time": 0,
@@ -1289,11 +1516,112 @@
   },
   
 
+   {
+    "id": "call_marionette1",
+    "type": "SPELL",
+    "name": "Call Marionettes",
+    "description": "Survival not guaranteed.",
+    "valid_targets": [ "ground" ],
+    "min_damage": 2,
+    "max_damage": 2,
+    "min_range": 7,
+    "max_range": 7,
+    "min_aoe": 5,
+    "max_aoe": 5,
+    "base_casting_time": 0,
+    "energy_source": "MANA",
+    "max_level": 10,
+    "difficulty": 6,
+    "min_duration": 120000,
+    "max_duration": 120000,
+    "base_energy_cost": 500,
+    "flags": [ "HOSTILE_SUMMON", "RANDOM_TARGET", "NO_PROJECTILE", "SPAWN_GROUP" ],
+    "shape": "blast",
+    "effect": "summon",
+    "effect_str": "GROUP_DOLL1"
+  },
+  
+
+  {
+    "id": "mon_marionette_master",
+    "type": "MONSTER",
+    "name": "Marionette Master",
+    "description": "Black strings tendril out of this shadowy figures body from all angles... so it is he who has controlled them all along!",
+    "default_faction": "nether",
+	"looks_like": "mon_zombie_master",
+    "bodytype": "human",
+    "species": [ "HORROR" ],
+    "material": [ "iflesh", "demon_chitin" ],
+    "diff": 2,
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "hp": 200,
+    "speed": 160,
+    "symbol": "h",
+    "color": "red",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 6,
+    "melee_dice": 2,
+    "melee_dice_sides": 8,
+    "melee_damage": [ { "damage_type": "cut", "amount": 12 } ],
+    "dodge": 7,
+    "armor_cold": 50,
+    "armor_elec": 50,
+    "armor_acid": 25,
+    "armor_fire": 11,
+	"armor_cut": 30,
+    "armor_stab": 35,
+    "armor_bullet": 50,
+    "armor_bash": 10,
+    "vision_day": 10,
+    "vision_night": 50,
+    "death_drops": "marionettedrops",
+    "harvest": "human2",
+  
+    "special_attacks": [
+      [ "RATTLE", 7 ],
+      [ "SHRIEK_STUN", 7 ],
+      [ "SHRIEK_ALERT", 7 ],
+	  [ "GRAB", 7 ],
+      [ "PARA_STING", 7 ],
+      {
+        "type": "spell",
+        "spell_data": { "id": "call_marionette1", "min_level": 1 },
+        "cooldown": 35,
+        "monster_message": "The marionette shrieks wildly and calls forth more of it's kind."
+      },
+      {
+        "type": "spell",
+        "spell_data": { "id": "call_marionette", "min_level": 1 },
+        "cooldown": 20,
+        "monster_message": "The marionette shrieks wildly and calls forth more of it's kind."
+      }
+    ],
+    "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "STALK", "PLAYER_WEAK", "PLAYER_CLOSE" ],
+    "flags": [
+      "SEES",
+      "SMELLS",
+      "HEARS",
+      "SWARMS",
+      "GROUP_BASH",
+      "GROUP_MORALE",
+      "HARDTOSHOOT",
+      "BASHES",
+      "WEBWALK",
+      "CLIMBS",
+      "NO_BREATHE",
+	  "HIT_AND_RUN",
+      "PATH_AVOID_DANGER_1",
+      "PUSH_MON"
+    ]
+  },
+  
 
   {
     "id": "mon_marionette",
     "type": "MONSTER",
-    "name": "Bourreau Marionette",
+    "name": "Bourreau Marionette (Stringed)",
     "description": "A haunting construct with it's guillotine arms suspended in the air by magical transluscent threads, made to look as if it were flying",
     "default_faction": "nether",
 	"looks_like": "mon_zombie_brute_winged",
@@ -1362,7 +1690,7 @@
   {
     "id": "mon_marionette2",
     "type": "MONSTER",
-    "name": "Bourreau Marionette",
+    "name": "Bourreau Marionette (Stringless)",
     "description": "A haunting construct with it's guillotine arms suspended in the air by magical transluscent threads, made to look as if it were flying",
     "default_faction": "nether",
 	"looks_like": "mon_zombie_brute_winged",
