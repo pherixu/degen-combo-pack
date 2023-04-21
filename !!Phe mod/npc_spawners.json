@@ -1,0 +1,96 @@
+
+
+
+
+
+[ 
+ {
+    "type": "SPELL",
+    "id": "summon_thrall2",
+    "name": "Summon Pawn",
+    "description": "Conjures a pawn from the rift to serve you in this plane.",
+    "valid_targets": [ "hostile", "ground", "self", "ally" ],
+    "effect": "spawn_item",
+	"effect_str": "thrall_token2",
+    "shape": "blast",
+	"energy_source": "MANA",
+	"min_aoe": 3,
+	"max_aoe": 5,
+	"aoe_increment": 0.2,
+	"difficulty": 1,
+	"max_level": 1,
+	"components": "spell_components_summon_thrall",
+	"flags": [ "PERMANENT" ],
+    "base_casting_time": 0,
+	"base_energy_cost": 0,
+	"range_increment": 0.3,
+    "min_range": 10,
+    "max_range": 15
+  },
+    {
+    "id": "spell_components_summon_thrall",
+    "type": "requirement",
+    "components": [ [ [ "denarius", 10 ] ] ]
+  },
+    {
+    "type": "GENERIC",
+    "category": "currency",
+    "id": "thrall_token2",
+    "name": { "str": "thrall token", "str_pl": "thrall tokens" },
+    "description": "Each of these mithril coins has a profile of Valzain, and strangely each of these coins is defaced in some way. Something is off about this one.",
+    "price": 25000,
+    "price_postapoc": 25000,
+    "weight": "5 g",
+    "volume": "250 ml",
+    "to_hit": -3,
+    "color": "light_gray",
+    "symbol": "$",
+    "material": [ "mithril_metal" ],
+	"use_action": 
+	{
+    "type": "place_npc",
+    "npc_class_id": "NC_PAWNS",
+    "summon_msg": "You summon a pawn!",
+    "place_randomly": true,
+	"charges_to_use": 10,
+    "moves": 1,
+    "radius": 1 
+	},
+	    "flags": [ "SINGLE_USE" ]
+  },
+    {
+    "id": "small_wooden_idol2",
+    "type": "BOOK",
+    "category": "manuals",
+    "name": { "str": "small wooden idol"},
+    "description": "A strange wooden idol.",
+    "weight": "1200 g",
+    "volume": "1200 ml",
+    "price": 100,
+    "material": [ "wood" ],
+    "symbol": "t",
+    "color": "brown",
+    "fun": -6,
+    "use_action": {
+      "type": "learn_spell",
+      "spells": [ "summon_thrall2" ]
+    }
+  },
+    {
+    "result": "small_wooden_idol2",
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_OTHER",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": "50 m",
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [ [ [ "2x4", 1 ] ] ]
+  }
+]
+
+
+
+

@@ -398,9 +398,10 @@
             { "value": "BONUS_BLOCK", "add": 1 },
             { "value": "SPEED", "add": 25 },
             { "value": "DEXTERITY", "add": 4 },
+            { "value": "STRENGTH", "add": 4 },
             { "value": "INTELLIGENCE", "add": 4 },
             { "value": "PERCEPTION", "add": 4 },
-            { "value": "STAMINA", "add": 4 }
+            { "value": "MAX_STAMINA", "add": 500 }
           ]
         }
       ]
@@ -606,6 +607,39 @@
     "use_action": { "type": "cast_spell", "spell_id": "poly_crys_husk", "no_fail": true, "level": 20, "need_wielding": true }
 	
   },
+  
+  
+  
+  
+
+  {
+    "id": "rune_fragments",
+    "name": "Rune Fragments",
+    "copy-from": "straw_doll",
+    "type": "GENERIC",
+	"flags": [ "SINGLE_USE" ],
+	"material": [ "hflesh" ],
+    "charges_per_use": 0,
+    "description": "A small handful of teeth, claw, and bones from a runic whelp.",
+    "use_action": { "type": "cast_spell", "spell_id": "stop_construct", "no_fail": true, "level": 1, "need_wielding": true }
+  }, 
+
+  {
+    "id": "ancient_lexicon",
+    "name": "Ancient Lexicon",
+    "copy-from": "straw_doll",
+    "type": "BOOK",
+    "category": "manuals",
+	"flags": [ "SINGLE_USE" ],
+	"material": [ "hflesh" ],
+    "charges_per_use": 0,
+    "description": "A collection of designs created by an ancient race of runic spellcasters.",
+    "use_action": { "type": "cast_spell", "spell_id": "stop_construct", "no_fail": true, "level": 1, "need_wielding": true }
+  },  
+
+
+  
+  
   
 	    {
     "id": "tail_stamina",

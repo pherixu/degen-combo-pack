@@ -1,15 +1,84 @@
 [
+  {
+  "type": "GENERIC",
+  "id": "ciborium",
+  "looks_like": "f_exodii_scanner",
+  "symbol": "7",
+    "description": "A grandiose-looking chalice with gold plating in the basin of the cup, and glowing sigils around the rim. A small pedestal resides at the base of the dish, made for filling with a magical tincture and imbuing it into a specific item. ",
+  "color": "yellow_red",
+  "name": {
+    "str": "arcane ciborium"
+  },
+  "material": [
+    "steel"
+  ],
+  "longest_side": "135 cm",
+  "volume": "100 L",
+  "weight": "50 kg"
+},
+  {
+  "type": "GENERIC",
+  "id": "bezel",
+  "looks_like": "f_orrery",
+  "symbol": "7",
+    "description": "A large spiring bezel with multiple revolving limbs, meant to be equipped with focusing crystals to imbue whatever object lay in the center.",
+  "color": "yellow_red",
+  "name": {
+    "str": "arcane ciborium"
+  },
+  "material": [
+    "steel"
+  ],
+  "longest_side": "135 cm",
+  "volume": "100 L",
+  "weight": "50 kg"
+},
+
+  {
+  "type": "GENERIC",
+  "id": "abyssal_crucible",
+  "looks_like": "tr_telepad",
+  "symbol": "7",
+    "description": "A shallow cauldron filled to the brim with a deep void that seems to peer back at you as you examine it, used by ancient black mages for imbuing.",
+  "color": "yellow_red",
+  "name": {
+    "str": "arcane ciborium"
+  },
+  "material": [
+    "steel"
+  ],
+  "longest_side": "135 cm",
+  "volume": "100 L",
+  "weight": "50 kg"
+},
+  {
+  "type": "GENERIC",
+  "id": "rune_tablet",
+  "looks_like": "f_grave_stone_old",
+  "symbol": "7",
+    "description": "A primordial runic tablet etched with countless designs and symbols across the entire surface, used as a blueprint for creating sigils. ",
+  "color": "yellow_red",
+  "name": {
+    "str": "arcane ciborium"
+  },
+  "material": [
+    "steel"
+  ],
+  "longest_side": "135 cm",
+  "volume": "100 L",
+  "weight": "50 kg"
+},
   
   {
     "type": "tool_quality",
     "id": "CIBORIUM",
-    "name": { "str": "grafting" }
+    "name": { "str": "ciborium" }
   },
   
   {
     "type": "construction_group",
     "id": "ciborium",
-    "name": "Begin Grafting Incubator Ritual"
+    "name": "Begin Crafting a Ciborium"
   },
    {
     "type": "construction",
@@ -19,7 +88,7 @@
     "required_skills": [ [ "spellcraft", 1 ] ],
     "time": "30 m",
 	"activity_level": "LIGHT_EXERCISE",
-    "components": [ [ [ "magic_corpse", 1 ] ], [["crimsonite", 1]], [["viridite", 1]], [["ceruleum", 1]], [["argentium", 1]] ],
+    "components": [ [ [ "rune_fragments", 5 ] ], [["crimsonite", 1]], [["viridite", 1]], [["ceruleum", 1]], [["argentium", 1]] ],
     "pre_special": "check_empty",
     "post_terrain": "f_ciborium"
   },
@@ -27,13 +96,21 @@
     "type": "furniture",
     "id": "f_ciborium",
     "name": "Arcane Ciborium",
+	"deconstruct": {
+    "items": [
+      {
+        "item": "ciborium",
+        "count": 1
+      }
+    ]
+  },
     "move_cost_mod": 3,
 	"looks_like": "f_exodii_scanner",
     "symbol": "O",
     "color": "white",
 	"crafting_pseudo_item": "fake_ciborium",
     "required_str": -1,
-    "flags": [ "ALLOW_FIELD_EFFECT", "TRANSPARENT", "TINY" ],
+    "flags": [ "ALLOW_FIELD_EFFECT", "TRANSPARENT", "TINY", "EASY_DECONSTRUCT"],
     "description": "A grandiose-looking chalice with gold plating in the basin of the cup, and glowing sigils around the rim. A small pedestal resides at the base of the dish, made for filling with a magical tincture and imbuing it into a specific item. "
   },
   {
@@ -46,6 +123,190 @@
     "symbol": "[",
     "color": "dark_gray",
     "qualities": [ [ "CIBORIUM", 1 ]   ],
+    "flags": [ "TRADER_AVOID" ]
+  },
+  
+  
+  
+  
+  
+  {
+    "type": "tool_quality",
+    "id": "BEZEL",
+    "name": { "str": "imbuing" }
+  },
+  
+  {
+    "type": "construction_group",
+    "id": "bezel",
+    "name": "Begin Crafting a Bezel"
+  },
+   {
+    "type": "construction",
+    "id": "constr_bezel",
+    "group": "bezel",
+    "category": "FURN",
+    "required_skills": [ [ "spellcraft", 1 ] ],
+    "time": "30 m",
+	"activity_level": "LIGHT_EXERCISE",
+    "components": [ [ [ "rune_fragments", 5 ] ], [["crimsonite_core", 1]], [["viridite_core", 1]], [["ceruleum_core", 1]], [["argentium_core", 1]] ],
+    "pre_special": "check_empty",
+    "post_terrain": "f_bezel"
+  },
+  {
+    "type": "furniture",
+    "id": "f_bezel",
+    "name": "Focusing Bezel",
+    "move_cost_mod": 3,
+	"looks_like": "f_orrery",
+    "symbol": "O",  
+	"deconstruct": {
+    "items": [
+      {
+        "item": "bezel",
+        "count": 1
+      }
+    ]},
+    "color": "white",
+	"crafting_pseudo_item": "fake_bezel",
+    "required_str": -1,
+    "flags": [ "ALLOW_FIELD_EFFECT", "TRANSPARENT", "TINY", "EASY_DECONSTRUCT" ],
+    "description": "A large spiring bezel with multiple revolving limbs, meant to be equipped with focusing crystals to imbue whatever object lay in the center."
+  },
+  {
+    "id": "fake_bezel",
+    "type": "TOOL",
+    "name": { "str": "fake bezel (pseudo item)", "str_pl": "fake bezels (pseudo items)" },
+    "description": "Pseudo item for the magic circle.",
+    "weight": "1 g",
+    "volume": "1 ml",
+    "symbol": "[",
+    "color": "dark_gray",
+    "qualities": [ [ "BEZEL", 1 ]   ],
+    "flags": [ "TRADER_AVOID" ]
+  },
+  
+  
+  
+  
+  
+    
+  {
+    "type": "tool_quality",
+    "id": "DARK_POT",
+    "name": { "str": "abyssal crucible" }
+  },
+  
+  {
+    "type": "construction_group",
+    "id": "abyssal_crucible",
+    "name": "Begin Crafting an Abyssal Crucible"
+  },
+   {
+    "type": "construction",
+    "id": "constr_abyssal_crucible",
+    "group": "abyssal_crucible",
+    "category": "FURN",
+    "required_skills": [ [ "spellcraft", 1 ] ],
+    "time": "30 m",
+	"activity_level": "LIGHT_EXERCISE",
+    "components": [ [ [ "dark_spirit", 1 ] ], [["crimsonite", 1]], [["viridite", 1]], [["ceruleum", 1]], [["argentium", 1]] ],
+    "pre_special": "check_empty",
+    "post_terrain": "f_abyssal_crucible"
+  },
+  {
+    "type": "furniture",
+    "id": "f_abyssal_crucible",
+    "name": "Abyssal Crucible",
+    "move_cost_mod": 3,
+	"looks_like": "tr_telepad",
+    "symbol": "O",
+	"deconstruct": {
+    "items": [
+      {
+        "item": "abyssal_crucible",
+        "count": 1
+      }
+    ]},
+    "color": "white",
+	"crafting_pseudo_item": "fake_abyssal_crucible",
+    "required_str": -1,
+    "flags": [ "ALLOW_FIELD_EFFECT", "TRANSPARENT", "TINY", "EASY_DECONSTRUCT" ],
+    "description": "A shallow cauldron filled to the brim with a deep void that seems to peer back at you as you examine it, used by ancient black mages for imbuing."
+  },
+  {
+    "id": "fake_abyssal_crucible",
+    "type": "TOOL",
+    "name": { "str": "fake abyssal crucible (pseudo item)", "str_pl": "fake abyssal crucibles (pseudo items)" },
+    "description": "Pseudo item for the magic circle.",
+    "weight": "1 g",
+    "volume": "1 ml",
+    "symbol": "[",
+    "color": "dark_gray",
+    "qualities": [ [ "DARK_POT", 1 ]   ],
+    "flags": [ "TRADER_AVOID" ]
+  },
+  
+  
+  
+  
+  
+  
+  
+  {
+    "type": "tool_quality",
+    "id": "RUNE_TAB",
+    "name": { "str": "grafting" }
+  },
+  
+  {
+    "type": "construction_group",
+    "id": "rune_tablet",
+    "name": "Construct the Runic Swage Tablet"
+  },
+   {
+    "type": "construction",
+    "id": "constr_runetablet",
+    "group": "ciborium",
+    "category": "FURN",
+    "required_skills": [ [ "spellcraft", 1 ] ],
+    "time": "30 m",
+	"activity_level": "LIGHT_EXERCISE",
+    "components": [ [ [ "rune_fragments", 10 ] ], [["ancient_lexicon", 1]] ],
+    "pre_special": "check_empty",
+    "post_terrain": "f_runetablet"
+  },
+  {
+    "type": "furniture",
+    "id": "f_runetablet",
+    "name": "Rune Swage Tablet",  
+	"deconstruct": {
+    "items": [
+      {
+        "item": "rune_tablet",
+        "count": 1
+      }
+    ]
+  },
+    "move_cost_mod": 3,
+	"looks_like": "f_grave_stone_old",
+    "symbol": "O",
+    "color": "white",
+	"crafting_pseudo_item": "fake_runetablet",
+    "required_str": -1,
+    "flags": [ "ALLOW_FIELD_EFFECT", "TRANSPARENT", "TINY", "EASY_DECONSTRUCT" ],
+    "description": "A primordial runic tablet etched with countless designs and symbols across the entire surface, used as a blueprint for creating sigils. "
+  },
+  {
+    "id": "fake_runetablet",
+    "type": "TOOL",
+    "name": { "str": "fake rune tablet (pseudo item)", "str_pl": "fake rune tablets (pseudo items)" },
+    "description": "Pseudo item for the magic circle.",
+    "weight": "1 g",
+    "volume": "1 ml",
+    "symbol": "[",
+    "color": "dark_gray",
+    "qualities": [ [ "RUNE_TAB", 1 ]   ],
     "flags": [ "TRADER_AVOID" ]
   }
 ]

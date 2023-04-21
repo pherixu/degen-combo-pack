@@ -15,6 +15,7 @@
     "type": "construction",
     "id": "constr_graft_station",
     "group": "graft_station",
+	"looks_like": "mon_blood_sacrifice",
     "category": "FURN",
     "required_skills": [ [ "spellcraft", 1 ] ],
     "time": "30 m",
@@ -28,7 +29,7 @@
     "id": "f_graft_station",
     "name": "Grafting Incubator",
     "move_cost_mod": 3,
-	"looks_like": "mon_human_sacrifice",
+	"looks_like": "mon_blood_sacrifice",
     "symbol": "O",
     "color": "white",
 	"crafting_pseudo_item": "fake_graft_station",
@@ -39,6 +40,7 @@
   {
     "id": "fake_graft_station",
     "type": "TOOL",
+	"looks_like": "mon_human_sacrifice",
     "name": { "str": "fake zen (pseudo item)", "str_pl": "fake zens (pseudo items)" },
     "description": "Pseudo item for the magic circle.",
     "weight": "1 g",
@@ -514,7 +516,7 @@
         {
           "has": "WORN",
           "condition": "ALWAYS",
-		  "ench_effects": [ { "effect": "graft_sores1", "intensity": 1 } ],
+		  "ench_effects": [ { "effect": "graft_sores1", "intensity": 1 }, { "effect": "shadowsight", "intensity": 1 } ],
           "values": [
             { "value": "MAX_MANA", "add": 100 },
 			{ "value": "ARMOR_BASH", "add": -3 },
@@ -552,7 +554,7 @@
         {
           "has": "WORN",
           "condition": "ALWAYS",
-		  "ench_effects": [ { "effect": "graft_sores2", "intensity": 1 } ],
+		  "ench_effects": [ { "effect": "graft_sores2", "intensity": 1 }, { "effect": "shadowsight", "intensity": 1 } ],
           "values": [
             { "value": "MAX_MANA", "add": 100 },
 			{ "value": "ARMOR_BASH", "add": -3 },
@@ -673,7 +675,7 @@
         {
           "has": "WORN",
           "condition": "ALWAYS",
-		  "ench_effects": [ { "effect": "graft_sores5", "intensity": 1 } ],
+		  "ench_effects": [ { "effect": "graft_sores5", "intensity": 1 }, { "effect": "slugsight", "intensity": 1 } ],
           "values": [
             { "value": "MAX_MANA", "add": 100 },
 			{ "value": "ARMOR_BASH", "add": -3 },
@@ -711,7 +713,7 @@
         {
           "has": "WORN",
           "condition": "ALWAYS",
-		  "ench_effects": [ { "effect": "graft_sores6", "intensity": 1 } ],
+		  "ench_effects": [ { "effect": "graft_sores6", "intensity": 1 }, { "effect": "slugsight", "intensity": 1 } ],
           "values": [
             { "value": "MAX_MANA", "add": 100 },
 			{ "value": "ARMOR_BASH", "add": -3 },
@@ -748,7 +750,7 @@
         {
           "has": "WORN",
           "condition": "ALWAYS",
-		  "ench_effects": [ { "effect": "graft_sores7", "intensity": 1 } ],
+		  "ench_effects": [ { "effect": "graft_sores7", "intensity": 1 } , { "effect": "wormsight", "intensity": 1 }],
           "values": [
             { "value": "MAX_MANA", "add": 100 },
 			{ "value": "ARMOR_BASH", "add": -3 },
@@ -787,7 +789,7 @@
         {
           "has": "WORN",
           "condition": "ALWAYS",
-		  "ench_effects": [ { "effect": "graft_sores8", "intensity": 1 }],
+		  "ench_effects": [ { "effect": "graft_sores8", "intensity": 1 }, { "effect": "wormsight", "intensity": 1 }],
           "values": [
             { "value": "MAX_MANA", "add": 100 },
 			{ "value": "ARMOR_BASH", "add": -3 },

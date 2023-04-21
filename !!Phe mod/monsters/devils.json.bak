@@ -11,6 +11,19 @@
   },
   
   
+  
+  
+    {
+    "id": "emit_runewater",
+    "type": "emit",
+    "field": "fd_runewater",
+    "intensity": 3,
+    "qty": 9,
+    "chance": 90
+  },
+  
+  
+  
     {
     "id": "emit_rubble",
     "type": "emit",
@@ -55,14 +68,33 @@
       "pain_chance": [ 150, 900 ],
       "hurt_min": [ 1 ],
       "hurt_chance": [ 450, 2700 ],
-      "stamina_amount": [ -500 ],
-      "cough_chance": [ 80 ],
+      "stamina_amount": [ -1500 ],
+      "cough_chance": [ 580 ],
 	  "speed_mod": [ -10 ]
     },
     "scaling_mods": {"stamina_amount": [ -500 ], "speed_mod": [ -5 ] },
     "show_in_info": true,
     "show_intensity": false
   },
+  
+  
+  {
+    "type": "effect_type",
+    "id": "runewater",
+    "name": [ "Doused in Runewater" ],
+    "desc": [ "You're covered in refreshing mist!" ],
+    "apply_message": "You are invigorated by the water!",
+    "rating": "bad",
+    "miss_messages": [ [ "Water seeps into your skin.", 1 ] ],
+    "max_intensity": 3,  
+      "base_mods": {
+      "dex_mod": [ 3 ],
+	  "speed_mod": [ 40 ]
+    },
+    "show_in_info": true,
+    "show_intensity": false
+  },
+
 
   
   {
@@ -173,11 +205,61 @@
   
   
   
+  
+  
+   {
+    "id": "fd_runewater",
+    "type": "field_type",
+    "legacy_enum_id": 5,
+	"looks_like": "fd_plasma",
+    "intensity_levels": [
+      {
+        "name": "light rune water",
+        "sym": "}",
+        "effects": [
+          { "effect_id": "druidspore", "intensity": 1, "min_duration": "1 m", "immune_in_vehicle": true, "is_environmental": false }
+        ]
+      },
+      {
+        "name": "rune water",
+        "effects": [
+          { "effect_id": "druidspore", "intensity": 2, "min_duration": "1 m", "immune_in_vehicle": true, "is_environmental": false }
+        ]
+      },
+	   {
+        "name": "heavy rune water",
+        "sym": "}",
+        "effects": [
+          { "effect_id": "druidspore", "intensity": 3, "min_duration": "1 m", "immune_in_vehicle": true, "is_environmental": false }
+        ]
+      }
+      ],
+    "description_affix": "covered_in",
+    "decrease_intensity_on_contact": true,
+    "priority": 2,
+    "phase": "gas",
+    "display_items": false,
+    "bash": {
+      "str_min": 1,
+      "str_max": 3,
+      "sound_vol": 2,
+      "sound_fail_vol": 2,
+      "sound": "hsh!",
+      "msg_success": "You cast away the magical spores."
+    },
+    "display_field": true
+  },
+  
+  
+  
+  
+  
+  
    {
     "id": "fd_web3",
     "type": "field_type",
     "legacy_enum_id": 5,
-	"looks_like": "fd_smoke",
+	"looks_like": "tr_goo",
     "intensity_levels": [
       {
         "name": "light worm smoke",
@@ -322,6 +404,168 @@
   },
   
   
+  
+  
+  
+  
+  {
+    "type": "SPELL",
+    "id": "death_test",
+    "name": "Hellfire",
+    "description": "Tear at your life force, spilling your inner fire from your heart and all around you.",
+    "valid_targets": [ "hostile" ],
+    "flags": [ "VERBAL", "SOMATIC", "NO_LEGS", "PERMANENT", "NO_PROJECTILE", "IGNORE_WALLS" ],
+    "min_aoe": 9,
+    "max_aoe": 9,
+    "base_casting_time": 200,
+    "base_energy_cost": 3,
+    "damage_type": "heat",
+    "difficulty": 3,
+    "max_level": 15,
+    "min_range": 15,
+    "max_range": 15,
+    "min_damage": 11,
+    "max_damage": 15,
+    "effect": "attack",
+    "shape": "blast",
+    "energy_source": "HP",
+    "field_id": "fd_fire",
+    "field_chance": 90,
+    "min_field_intensity": 2,
+    "max_field_intensity": 2
+  },
+  
+  
+  {
+    "id": "mon_test1",
+    "type": "MONSTER",
+    "name": { "str": "suicider test" },
+    "description": "A horrible creation, barely able to move and imbibed with dark magic",
+    "default_faction": "zombie",
+    "bodytype": "human",
+    "categories": [ "CLASSIC" ],
+    "species": [ "ZOMBIE", "HUMAN" ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 160,
+    "speed": 299,
+    "material": [ "flesh" ],
+    "symbol": "Z",
+    "color": "light_green",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 99,
+    "melee_dice": 1,
+	"looks_like": "tr_portal",
+    "melee_dice_sides": 1,
+    "melee_damage": [ { "damage_type": "heat", "amount": 2 } ],
+    "armor_cut": 1,
+    "vision_night": 1,
+    "weakpoint_sets": [ "wps_humanoid_body" ],
+    "families": [ "prof_intro_biology", "prof_wp_zombie" ],
+	"death_function": { "effect": { "id": "death_test"},"hit_self": true, "corpse_type": "NO_CORPSE"},
+    "harvest": "human2",
+	
+    "special_attacks": [["SUICIDE",3]
+    ],
+    "death_drops": "huskdrops",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "STUMBLES",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "NO_BREATHE",
+      "REVIVES",
+      "PUSH_MON"
+    ]
+  },
+  
+    {
+    "type": "SPELL",
+    "id": "summon_flame",
+    "name": "Hellfire",
+    "description": "Tear at your life force, spilling your inner fire from your heart and all around you.",
+    "valid_targets": [ "ground" ],
+    "flags": [ "VERBAL", "SOMATIC", "NO_LEGS", "PERMANENT", "NO_PROJECTILE", "IGNORE_WALLS" ],
+    "min_aoe": 7,
+    "max_aoe": 7,
+    "base_casting_time": 200,
+    "base_energy_cost": 3,
+    "difficulty": 3,
+    "max_level": 15,
+    "min_range": 15,
+    "max_range": 15,
+    "effect": "attack",
+    "shape": "blast",
+    "energy_source": "HP",
+    "field_id": "fd_fire",
+    "field_chance": 10,
+    "min_field_intensity": 2,
+    "max_field_intensity": 2
+  },
+  
+  
+  
+    {
+    "type": "item_group",
+    "id": "multicoredrops",
+    "subtype": "collection",
+    "entries": [
+      { "item": "tear_of_child", "prob": 20 },
+      { "item": "raw_bloodshot", "prob": 80, "count-min": 1, "count-max": 3 },
+      { "item": "viridite", "prob": 65, "count-min": 1, "count-max": 2 },
+      { "item": "ceruleum", "prob": 65, "count-min": 1, "count-max": 2 },
+      { "item": "crimsonite", "prob": 65, "count-min": 1, "count-max": 2 },
+      { "item": "argentium", "prob": 65, "count-min": 1, "count-max": 2 },
+      { "item": "decaying_soul", "prob": 17 },
+      { "item": "twisted_soul", "prob": 11 },
+      { "item": "antoninianus", "prob": 15 }
+    ]
+  },
+  
+  
+  
+    {
+    "type": "item_group",
+    "id": "runewhelpdrops",
+    "subtype": "collection",
+    "entries": [
+      { "item": "tear_of_child", "prob": 20 },
+      { "item": "raw_bloodshot", "prob": 80, "count-min": 1, "count-max": 3 },
+      { "item": "rune_fragments", "prob": 99, "count-min": 4, "count-max": 9 },
+      { "item": "viridite", "prob": 45, "count-min": 1, "count-max": 2 },
+      { "item": "ceruleum", "prob": 45, "count-min": 1, "count-max": 2 },
+      { "item": "crimsonite", "prob": 45, "count-min": 1, "count-max": 2 },
+      { "item": "argentium", "prob": 45, "count-min": 1, "count-max": 2 },
+      { "item": "decaying_soul", "prob": 17 },
+      { "item": "twisted_soul", "prob": 11 },
+      { "item": "antoninianus", "prob": 15 }
+    ]
+  },
+  
+  
+    {
+    "type": "item_group",
+    "id": "archaeodemondrops",
+    "subtype": "collection",
+    "entries": [
+      { "item": "tear_of_child", "prob": 20 },
+      { "item": "raw_bloodshot", "prob": 80, "count-min": 1, "count-max": 3 },
+      { "item": "ancient_lexicon", "prob": 99 },
+      { "item": "viridite", "prob": 25, "count-min": 1, "count-max": 2 },
+      { "item": "ceruleum", "prob": 25, "count-min": 1, "count-max": 2 },
+      { "item": "crimsonite", "prob": 25, "count-min": 1, "count-max": 2 },
+      { "item": "argentium", "prob": 25, "count-min": 1, "count-max": 2 },
+      { "item": "decaying_soul", "prob": 17 },
+      { "item": "twisted_soul", "prob": 11 },
+      { "item": "antoninianus", "prob": 15 }
+    ]
+  },
+  
+  
     {
     "type": "item_group",
     "id": "wormdrops",
@@ -422,7 +666,7 @@
     "entries": [
       { "item": "tear_of_child", "prob": 20 },
       { "item": "raw_bloodshot", "prob": 80, "count-min": 1, "count-max": 3 },
-      { "item": "marionette_doll", "prob": 99, "count-min": 1, "count-max": 3 },
+      { "item": "marionette_doll", "prob": 99},
       { "item": "viridite", "prob": 25, "count-min": 1, "count-max": 2 },
       { "item": "ceruleum", "prob": 25, "count-min": 1, "count-max": 2 },
       { "item": "crimsonite", "prob": 25, "count-min": 1, "count-max": 2 },
@@ -590,7 +834,7 @@
     "volume": "30000 ml",
     "weight": "40750 g",
     "hp": 200,
-    "speed": 110,
+    "speed": 100,
     "symbol": "h",
     "color": "red",
     "aggression": 100,
@@ -695,7 +939,7 @@
     "volume": "30000 ml",
     "weight": "40750 g",
     "hp": 400,
-    "speed": 110,
+    "speed": 100,
     "symbol": "h",
     "color": "red",
     "aggression": 100,
@@ -788,7 +1032,7 @@
     "volume": "30000 ml",
     "weight": "40750 g",
     "hp": 200,
-    "speed": 110,
+    "speed": 100,
     "symbol": "h",
     "color": "red",
     "aggression": 100,
@@ -926,7 +1170,7 @@
     "volume": "30000 ml",
     "weight": "40750 g",
     "hp": 400,
-    "speed": 110,
+    "speed": 100,
     "symbol": "h",
     "color": "red",
     "aggression": 100,
@@ -1002,7 +1246,7 @@
   {
     "id": "mon_slug_mageling",
     "type": "MONSTER",
-    "name": "Slug Archdruid",
+    "name": "Slug Mageling",
     "description": "A highly intelligent species of spellcasting-slug, and a student of nature.",
     "default_faction": "nether",
 	"looks_like": "mon_slug_small",
@@ -1078,6 +1322,166 @@
   
   
   
+  
+  
+  
+  {
+    "id": "mon_runewhelp",
+    "type": "MONSTER",
+    "name": "Runic Whelp",
+    "description": "A highly intelligent species of spellcasting-slug, and a student of nature.",
+    "default_faction": "nether",
+	"looks_like": "mon_slug_small",
+    "bodytype": "human",
+    "species": [ "HORROR" ],
+    "material": [ "iflesh", "demon_chitin" ],
+    "diff": 2,
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "hp": 80,
+    "speed": 180,
+    "symbol": "h",
+    "color": "red",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 5,
+    "melee_dice": 2,
+    "melee_dice_sides": 6,
+    "melee_damage": [ { "damage_type": "acid", "amount": 10 } ],
+    "dodge": 4,
+    "armor_cold": 40,
+    "armor_elec": 20,
+    "armor_acid": 40,
+    "armor_fire": 40,
+	"armor_cut": 10,
+    "armor_stab": 15,
+    "armor_bullet": 60,
+    "armor_bash": 10,
+    "vision_day": 15,
+    "vision_night": 50,
+    "death_drops": "runewhelpdrops",
+    "harvest": "human2",
+  
+    "special_attacks": [
+	  [ "HOWL", 5 ],
+	  [ "TINDALOS_TELEPORT", 5 ],
+	  [ "SHRIEK_STUN", 5 ],
+      {
+        "type": "spell",
+        "spell_data": { "id": "phase_shrike_teleport", "min_level": 1 },
+        "cooldown": 5,
+        "monster_message": "the runic beast leaps into the air before disappearing and reappearing elsewhere!"
+      },
+	  
+      {
+        "type": "spell",
+        "spell_data": { "id": "phase_skulker_teleport", "min_level": 1 },
+        "cooldown": 5,
+        "monster_message": "the runic beast leaps into the air before disappearing and reappearing elsewhere!"
+      }
+    ],
+    "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "STALK", "PLAYER_WEAK", "PLAYER_CLOSE" ],
+    "flags": [
+      "SEES",
+      "SMELLS",
+      "GROUP_BASH",
+      "ACIDPROOF",
+      "GROUP_MORALE",
+      "BASHES",
+      "HARDTOSHOOT",
+      "SWARMS",
+      "HEARS",
+      "WEBWALK",
+      "CLIMBS",
+      "NO_BREATHE",
+      "PATH_AVOID_DANGER_1",
+      "PUSH_MON"
+    ]
+  },
+  
+  
+  
+  
+  
+  {
+    "id": "mon_runeshark",
+    "type": "MONSTER",
+    "name": "Bolide Runeshark",
+    "description": "A runic beast swimming through the ground as if it were water, taking along with it the thunderous might of the sea.",
+    "default_faction": "nether",
+	"looks_like": "mon_zhark",
+    "bodytype": "human",
+    "species": [ "HORROR" ],
+    "material": [ "iflesh", "demon_chitin" ],
+    "diff": 2,
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "hp": 80,
+    "speed": 180,
+    "symbol": "h",
+    "color": "red",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 5,
+    "melee_dice": 2,
+    "melee_dice_sides": 6,
+    "melee_damage": [ { "damage_type": "cold", "amount": 10 } ],
+	 "emit_fields": [
+      { "emit_id": "emit_runewater", "delay": "4 s" }
+    ],
+    "dodge": 5,
+    "armor_cold": 30,
+    "armor_elec": 40,
+    "armor_acid": 10,
+    "armor_fire": 10,
+	"armor_cut": 10,
+    "armor_stab": 15,
+    "armor_bullet": 60,
+    "armor_bash": 10,
+    "vision_day": 15,
+    "vision_night": 50,
+    "death_drops": "runewhelpdrops",
+    "harvest": "human2",
+  
+    "special_attacks": [
+    { "type": "leap", "cooldown": 3, "max_range": 5 },
+	  [ "LUNGE", 3 ],
+	  [ "SHOCKSTORM", 2 ],
+      {
+        "type": "spell",
+        "spell_data": { "id": "phase_shrike_teleport", "min_level": 1 },
+        "cooldown": 4,
+        "monster_message": "the runic beast leaps into the air before disappearing and reappearing elsewhere!"
+      },
+	  
+      {
+        "type": "spell",
+        "spell_data": { "id": "phase_skulker_teleport", "min_level": 1 },
+        "cooldown": 4,
+        "monster_message": "the runic beast leaps into the air before disappearing and reappearing elsewhere!"
+      }
+    ],
+    "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "STALK", "PLAYER_WEAK", "PLAYER_CLOSE" ],
+    "flags": [
+      "SEES",
+      "SMELLS",
+      "GROUP_BASH",
+      "ACIDPROOF",
+      "GROUP_MORALE",
+      "BASHES",
+      "HIT_AND_RUN",
+      "SWARMS",
+      "HEARS",
+      "WEBWALK",
+      "CLIMBS",
+      "NO_BREATHE",
+      "PATH_AVOID_DANGER_1",
+      "PUSH_MON"
+    ]
+  },
+  
+  
+  
 	  
   
   {
@@ -1116,7 +1520,7 @@
     "armor_bash": 99,
     "vision_day": 10,
     "vision_night": 50,
-    "death_drops": "simulacrumdrops",
+    "death_drops": "archaeodemondrops",
     "harvest": "human2",
   
     "special_attacks": [
@@ -1204,7 +1608,7 @@
     "armor_bash": 29,
     "vision_day": 10,
     "vision_night": 50,
-    "death_drops": "simulacrumdrops",
+    "death_drops": "archaeodemondrops",
     "harvest": "human2",
   
     "special_attacks": [
@@ -1254,6 +1658,83 @@
   },
   
   
+  
+  
+  
+  
+	  
+  
+  {
+    "id": "mon_coreconstruct",
+    "type": "MONSTER",
+    "name": "Multi-Core Construct",
+    "description": "A large construct equipped with brightly assembled pieces of various alloys",
+    "default_faction": "nether",
+	"looks_like": "mon_plasticgolem",
+    "bodytype": "human",
+    "species": [ "HORROR" ],
+    "material": [ "iflesh", "demon_chitin" ],
+    "diff": 2,
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "hp": 150,
+    "speed": 120,
+    "symbol": "h",
+    "color": "red",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 4,
+    "melee_dice": 2,
+    "melee_dice_sides": 8,
+    "melee_damage": [ { "damage_type": "heat", "amount": 6 } ],
+    "dodge": 4,
+    "armor_cold": 20,
+    "armor_elec": 1,
+    "armor_acid": 1,
+    "armor_fire": 20,
+	"armor_cut": 15,
+    "armor_stab": 15,
+    "armor_bullet": 30,
+    "armor_bash": 1,
+    "vision_day": 10,
+    "vision_night": 50,
+    "death_drops": "multicoredrops",
+    "harvest": "human2",
+  
+    "special_attacks": [
+      [ "RANGED_PULL", 10 ],
+	  [ "GRAB", 7 ],
+	  [ "BIO_OP_IMPALE", 7 ],
+	  [ "BIO_OP_TAKEDOWN", 7 ],
+	  [ "SMASH", 7 ],
+	  [ "GRAB_DRAG", 7 ],
+      {
+        "type": "spell",
+        "spell_data": { "id": "phase_shrike_teleport", "min_level": 1 },
+        "cooldown": 4,
+        "monster_message": "the simulacrum warps towards you with a magical spell."
+      },
+      {
+        "type": "spell",
+        "spell_data": { "id": "phase_skulker_teleport", "min_level": 1 },
+        "cooldown": 4,
+        "monster_message": "the simulacrum warps towards you with a magical spell."
+      }
+    ],
+    "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "STALK", "PLAYER_WEAK", "PLAYER_CLOSE" ],
+    "flags": [
+      "SEES",
+      "SMELLS",
+      "HEARS",
+      "GRABS",
+      "WEBWALK",
+      "CLIMBS",
+      "NO_BREATHE",
+	  "HIT_AND_RUN",
+      "PATH_AVOID_DANGER_1",
+      "PUSH_MON"
+    ]
+  },
   
   
 	  
@@ -1407,7 +1888,7 @@
     "volume": "30000 ml",
     "weight": "40750 g",
     "hp": 100,
-    "speed": 160,
+    "speed": 120,
     "symbol": "h",
     "color": "red",
     "aggression": 100,
@@ -1417,9 +1898,9 @@
     "melee_dice_sides": 8,
     "melee_damage": [ { "damage_type": "bash", "amount": 12 } ],
     "dodge": 7,
-    "armor_cold": 25,
-    "armor_elec": 25,
-    "armor_acid": 25,
+    "armor_cold": 15,
+    "armor_elec": 15,
+    "armor_acid": 15,
     "armor_fire": 1,
 	"armor_cut": 15,
     "armor_stab": 15,
@@ -1569,7 +2050,7 @@
     "armor_cold": 50,
     "armor_elec": 50,
     "armor_acid": 25,
-    "armor_fire": 1,
+    "armor_fire": 11,
 	"armor_cut": 30,
     "armor_stab": 35,
     "armor_bullet": 50,

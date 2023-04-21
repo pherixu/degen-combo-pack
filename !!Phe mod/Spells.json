@@ -261,6 +261,33 @@
   },
   
   
+  
+   	  {
+    "id": "archaeo_poly",
+    "type": "SPELL",
+    "name": "Strip Archaeo-shell",
+    "description": "Adorn your husk in shimmering blood crystal.",
+    "valid_targets": [ "hostile" ],
+    "flags": [ "SPAWN_WITH_DEATH_DROPS", "VERBAL", "SOMATIC", "NO_LEGS", "NO_PROJECTILE" ],
+    "effect": "targeted_polymorph",
+    "effect_str": "mon_archaeodemon2",
+    "shape": "blast",
+    "energy_source": "HP",
+	"targeted_monster_ids": [ "mon_archaeodemon" ],
+    "base_casting_time": 100,
+    "base_energy_cost": 40,
+    "difficulty": 1,
+    "max_level": 10,
+    "min_damage": 300,
+    "max_damage": 400,
+    "damage_increment": 5,
+    "damage_type": "pure",
+    "min_range": 6,
+    "max_range": 30,
+    "range_increment": 1.5
+  },
+  
+  
    	  {
     "id": "stop_construct",
     "type": "SPELL",

@@ -2306,6 +2306,23 @@
     "components": [ [ [ "ioun_argent", 1 ] ], [["ioun_ceruleum", 1]],[ [ "ioun_crimson", 1 ] ], [["ioun_virid", 1]] ]
   },
   
+  {
+    "result": "ciborium",
+    "type": "uncraft",
+    "activity_level": "LIGHT_EXERCISE",
+    "time": "360 m",
+    "components": [
+      [ [ "cable", 6 ] ],
+      [ [ "steel_chunk", 5 ] ],
+      [ [ "steel_lump", 2 ] ],
+      [ [ "scrap", 14 ] ],
+      [ [ "steel_plate", 3 ] ],
+      [ [ "circsaw_blade", 2 ] ],
+      [ [ "plastic_chunk", 8 ] ],
+      [ [ "motor_small", 1 ] ]
+    ]
+  },
+  
   
   {
     "id": "spell_req_ioun_virid",

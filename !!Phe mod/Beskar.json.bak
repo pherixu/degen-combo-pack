@@ -1,5 +1,40 @@
 [
 
+    {
+    "id": "jetstream_holster",
+    "type": "ARMOR",
+    "name": { "str": "Jetstream Holster" },
+    "description": "A large mechanism and handle are built at the handle-end of the sheath, speeds up the sheathing action to unreal amounts.",
+    "weight": "1625 g",
+    "volume": "2 L",
+    "price": 7500,
+    "price_postapoc": 500,
+    "bashing": 4,
+    "material": [ "steel", "leather" ],
+    "symbol": "[",
+    "looks_like": "sheath",
+    "color": "brown",
+    "material_thickness": 1,
+    "pocket_data": [
+      {
+        "magazine_well": "1500 ml",
+        "max_contains_volume": "3 L",
+        "max_contains_weight": "4 kg",
+        "max_item_length": "130 cm",
+        "moves": -200,
+        "holster": true,
+        "flag_restriction": [ "SHEATH_SWORD" ]
+      }
+    ],
+    "use_action": { "type": "holster", "holster_prompt": "Sheath sword", "holster_msg": "You sheath your %s" },
+    "flags": [ "BELTED", "OVERSIZE", "WATER_FRIENDLY" ],
+    "armor": [ { "encumbrance": [ 3, 5 ], "coverage": 100, "covers": [ "torso" ], "specifically_covers": [ "torso_waist" ] } ]
+  },
+  
+  
+  
+  
+  
   
     {
     "type": "material",
@@ -122,7 +157,7 @@
     "armor": [
       {
         "material": [
-          { "type": "beskar", "covered_by_mat": 95, "thickness": 2.8 },
+          { "type": "beskar", "covered_by_mat": 100, "thickness": 2.8 },
           { "type": "beskar_chain", "covered_by_mat": 100, "thickness": 1.2 },
           { "type": "leather", "covered_by_mat": 1, "thickness": 1.0 }
         ],
@@ -132,7 +167,7 @@
       },
       {
         "material": [
-          { "type": "beskar", "covered_by_mat": 95, "thickness": 0.55 },
+          { "type": "beskar", "covered_by_mat": 100, "thickness": 0.55 },
           { "type": "beskar_chain", "covered_by_mat": 100, "thickness": 1.2 },
           { "type": "leather", "covered_by_mat": 1, "thickness": 1.0 }
         ],
@@ -142,7 +177,7 @@
       },
       {
         "material": [
-          { "type": "beskar", "covered_by_mat": 95, "thickness": 0.55 },
+          { "type": "beskar", "covered_by_mat": 100, "thickness": 0.55 },
           { "type": "beskar_chain", "covered_by_mat": 100, "thickness": 1.2 },
           { "type": "leather", "covered_by_mat": 1, "thickness": 1.0 }
         ],
@@ -152,6 +187,14 @@
       }
     ]
   },
+  
+  
+  
+  
+  
+  
+  
+  
   {
     "id": "mando_helm",
     "type": "ARMOR",
@@ -169,15 +212,82 @@
     "color": "light_gray",
     "armor": [
       { "covers": [ "head" ], "coverage": 100, "encumbrance_modifiers": [  "WELL_SUPPORTED" ] },
-      { "covers": [ "mouth" ], "rigid_layer_only": true, "coverage": 100, "encumbrance": 15 },
-      { "covers": [ "eyes" ], "rigid_layer_only": true, "coverage": 100, "encumbrance": 10 }
+      { "covers": [ "mouth" ], "coverage": 100, "encumbrance": 15 },
+      { "covers": [ "eyes" ], "coverage": 100, "encumbrance": 10 }
     ],
     "warmth": 10,
     "material_thickness": 9,
     "environmental_protection": 1,
     "techniques": [ "WBLOCK_3" ],
-    "flags": [ "VARSIZE", "STURDY" ]
+	"relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+			{ "value": "ARMOR_BASH", "add": 15 },
+			{ "value": "ARMOR_CUT", "add": 15 },
+			{ "value": "ARMOR_BULLET", "add": 50 },
+			{ "value": "ARMOR_ACID", "add": 20 },
+			{ "value": "ARMOR_HEAT", "add": 20 },
+			{ "value": "ARMOR_COLD", "add": 20 },
+			{ "value": "ARMOR_ELEC", "add": 20 },
+            { "value": "BONUS_BLOCK", "add": 4 },
+            { "value": "SPEED", "add": 55 },
+            { "value": "STRENGTH", "add": 4 },
+            { "value": "DEXTERITY", "add": 4 },
+            { "value": "INTELLIGENCE", "add": 4 },
+            { "value": "PERCEPTION", "add": 4 },
+            { "value": "MAX_STAMINA", "add": 500 }
+          ]
+        }
+      ],
+    "flags": [ "VARSIZE", "NO_TAKEOFF", "STURDY" ]
+  }
   },
+  
+  
+  
+  
+  
+  
+    {
+    "id": "cheat_bag",
+    "type": "ARMOR",
+    "name": { "str": "holdin' thangs" },
+    "description": "just holdin' thangs!",
+    "weight": "1 g",
+    "volume": "1 ml",
+    "price": 50000,
+    "bashing": 1,
+    "cutting": 1,
+    "material": [ "alien_liquid" ],
+    "symbol": "O",
+    "color": "white",
+	"properties": [ [ "creature_size_capacity", "MEDIUM" ] ],
+    "pocket_data": [
+      {
+        "rigid": true,
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "1000 L",
+        "max_contains_weight": "1000 kg",
+        "moves": 600,
+        "max_item_length": "1 km",
+		"volume_multiplier": 0.0,
+        "weight_multiplier": 0.0
+      }
+    ],
+	"armor": [
+      {
+        "encumbrance": 0,
+        "covers": [ "hand_l", "hand_r" ],
+        "specifically_covers": [ "hand_wrist_l", "hand_wrist_r" ]
+      }
+    ],
+    "flags": [ "TRADER_AVOID", "TARDIS", "SEMITANGIBLE", "AURA", "RADIO_INVOKE_PROC", "RADIO_MODABLE", "ZERO_WEIGHT" ]
+  },
+  
+  
   
   {
     "id": "cheat_knife",
@@ -204,8 +314,6 @@
     ["LEATHER_AWL", 99],
     ["SEW_CURVED", 99],
     ["ANESTHESIA", 99],
-    ["FISHING_ROD", 99],
-    ["FISH_TRAP", 99],
     ["SMOOTH", 99],
     ["WELD", 99],
     ["HAMMER", 99],
@@ -379,7 +487,7 @@
       "repair": { "skills": [ [ "mechanics", 3 ] ], "time": "60 m", "using": [ [ "repair_welding_standard", 1 ] ] }
     },
     "flags": [ "ARMOR" ],
-    "damage_reduction": { "all": 99, "cut": 95, "stab": 95 }
+    "damage_reduction": { "all": 99, "cut": 100, "stab": 95 }
   },
   {
     "id": "spring_plate1",

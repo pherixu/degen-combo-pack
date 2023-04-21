@@ -2306,8 +2306,6 @@
     "components": [ [ [ "ioun_argent", 1 ] ], [["ioun_ceruleum", 1]],[ [ "ioun_crimson", 1 ] ], [["ioun_virid", 1]] ]
   },
   
-  
-  
   {
     "id": "spell_req_ioun_virid",
     "type": "requirement",
