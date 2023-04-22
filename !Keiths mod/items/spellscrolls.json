@@ -8,6 +8,35 @@
     "price": 100000
   },
   {
+  "id": "big_envelope",
+  "type": "GENERIC",
+  "category": "container",
+  "name": {
+    "str": "large envelope"
+  },
+  "looks_like": "paper",
+  "description": "A flat paper container with a sealable flap, used to enclose a letter or other paper goods. Larger than most envelopes, it must contain something important.",
+  "weight": "476 g",
+  "volume": "501 ml",
+  "longest_side": "241 mm",
+  "price": 0,
+  "price_postapoc": 0,
+  "material": [
+    "paper"
+  ],
+  "pocket_data": [
+    {
+      "pocket_type": "CONTAINER",
+      "max_contains_volume": "500 ml",
+      "max_contains_weight": "475 g",
+      "max_item_length": "240 mm",
+      "moves": 400
+    }
+  ],
+  "symbol": "`",
+  "color": "white"
+},
+  {
     "type": "BOOK",
     "copy-from": "record_accounting",
     "name": "corporate accounting ledger",
@@ -65,7 +94,7 @@
     "//": "Classless spell",
     "looks_like": "net",
     "name": { "str": "cerebral lattice", "str_pl": "cerebral lattices" },
-    "description": "An electronic weave that goes over the head that interacts with the neurons, rewiring them to understand a new magics.",
+    "description": "An electronic weave that goes over the head that interacts with the neurons, rewiring them to understand new magics.",
     "use_action": { "type": "learn_spell", "spells": [ "bio_for_stamina", "pain_nervous_system" ] }
   },
   {
@@ -474,11 +503,23 @@
     "copy-from": "spell_scroll",
     "id": "spell_scroll_directed_mana",
     "//": "Classless spell",
-    "looks_like": "envelope",
+    "looks_like": "creepy_doll",
     "name": { "str": "collectible robot", "str_pl": "collectible robots" },
     "fun": 3,
     "description": "Hey, this is the exact one you were looking for!",
     "use_action": { "type": "learn_spell", "spells": [ "directed_prone" ] }
+  },
+  {
+    "type": "BOOK",
+    "copy-from": "spell_scroll",
+    "id": "spell_scroll_indirected_mana",
+    "//": "Classless spell",
+    "looks_like": "creepy_doll",
+    "name": { "str": "the collection", "str_pl": "the collection" },
+    "fun": 3,
+	"price": 1000000,
+    "description": "You've got 'em all, baby! You'll be beating back buyers with a stick!",
+    "use_action": { "type": "learn_spell", "spells": [ "indirected_prone" ] }
   },
   {
     "type": "BOOK",

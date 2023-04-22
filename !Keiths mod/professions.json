@@ -1,74 +1,4 @@
 [
-{
-    "type": "scenario",
-    "id": "magic_basement",
-    "copy-from": "magic_basement",
-    "extend": { "professions": [ 
-	"ranchersoon", 
-	"psychic", 
-	"magictailor", 
-	"cheatingfencer", 
-	"magicgunslinger", 
-	"paralegal", 
-	"magicmechanic", 
-	"magic_bow_hunter", 
-	"magicmedic", 
-	"buddingtechie", 
-	"forceful_mage", 
-	"ailing_artist", 
-	"magicmartialartist",
-    "fishierman", 
-	"courier", 
-	"budding_soulmancer", 
-	"budding_magician", 
-	"foodplace_fanatic", 
-	"gaming_prodigy", 
-	"corporate_bodyguard", 
-	"bio_dog", 
-	"frost_wizard", 
-    "gateinstallationtech", 
-	"paranoidpriest", 
-	"proburglar", 
-	"famous_boxer", 
-	"drunkard",	
-	"blamelessdude", 
-	"paranormalinvestigator" ] }
- },
- {
-    "type": "scenario",
-    "id": "lake_retreat",
-    "copy-from": "lake_retreat",
-    "extend": { "professions": [ 
-	"ranchersoon", 
-	"psychic", 
-	"magictailor", 
-	"cheatingfencer", 
-	"magicgunslinger", 
-	"paralegal", 
-	"magicmechanic", 
-	"magic_bow_hunter", 
-	"magicmedic", 
-	"buddingtechie", 
-	"forceful_mage", 
-	"ailing_artist", 
-	"magicmartialartist",
-    "fishierman", 
-	"courier", 
-	"budding_soulmancer", 
-	"budding_magician", 
-	"foodplace_fanatic", 
-	"gaming_prodigy", 
-	"corporate_bodyguard", 
-	"bio_dog", 
-	"frost_wizard", 
-    "gateinstallationtech", 
-	"paranoidpriest", 
-	"proburglar", 
-	"famous_boxer", 
-	"drunkard",	
-	"blamelessdude", 
-	"paranormalinvestigator" ] }
- },
   {
     "id": "MISSION_CLEANSE",
     "type": "mission_definition",
@@ -151,6 +81,38 @@
       "female": [ "bra", "panties" ]
     },
     "skills": [ { "level": 1, "name": "survival" }, { "level": 1, "name": "spellcraft" } ]
+  },
+  {
+    "type": "profession",
+    "id": "professional_postman",
+    "name": "Professional Mail Carrier",
+    "description": "Neither snow nor rain nor heat nor gloom of night stays you from the swift completion of your appointed rounds, but nobody said anything about demons. Well, maybe they said one or two things...",
+    "points": 0,
+    "skills": [ { "level": 1, "name": "driving" }, { "level": 1, "name": "spellcraft" } ],
+    "items": {
+      "both": {
+        "items": [
+          "postman_hat",
+          "postman_shirt",
+          "mbag",
+          "dog_whistle",
+          "wristwatch",
+          "leather_belt",
+          "postman_shorts",
+          "knit_scarf",
+          "socks",
+          "sneakers"
+        ],
+        "entries": [
+          { "item": "desperate_letter", "container-item": "big_envelope" },
+          { "item": "spell_scroll_extract_memory", "container-item": "big_envelope" },
+          { "item": "spell_scroll_transgate_place", "container-item": "big_envelope" },
+          { "group": "charged_smart_phone" }
+        ]
+      },
+      "male": [ "briefs" ],
+      "female": [ "bra", "panties" ]
+    }
   },
   {
     "type": "profession",

@@ -16,6 +16,20 @@
   {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
+    "result": "tricorne_aura",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_ETHEREALTAILOR",
+    "skill_used": "spellcraft", 
+    "difficulty": 0,
+    "book_learn": [ [ "spell_scroll_spiritual_invisibility", 0 ] ],
+    "autolearn": true,
+    "time": "1 m",
+    "byproducts": [ [ "spell_scroll_spiritual_invisibility", 1 ] ],
+    "components": [ [ [ "spell_scroll_spiritual_invisibility", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
     "result": "pants_aura",
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_ETHEREALTAILOR",
