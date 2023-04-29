@@ -7,14 +7,27 @@
     "subcategory": "CSC_ENCHANTED_CORPO",
     "skill_used": "spellcraft",
     "difficulty": 7,
-    "qualities": [ { "id": "MANA_INFUSE", "level": 1 }, { "id": "POWER_ALTAR", "level": 1 } ],
     "proficiencies": [ { "proficiency": "prof_alchemy" } ],
     "time": "2 h",
 	"reversible": true,
     "autolearn": true,
     "book_learn": [ [ "vergists_manual", 4 ], [ "big_book_of_metaknowledge" ], [ "book_anthology_an" ] ],
     "tools": [ [ [ "surface_heat", 20, "LIST" ] ] ],
-    "components": [ [ [ "human_cooked", 1 ] ], [ [ "tear_of_child", 3 ] ], [ [ "brimstone_sliver", 9 ] ] ]
+    "components": [ [ [ "money_hundred", 1 ] ], [ [ "tear_of_child", 1 ] ], [ [ "brimstone_sliver", 9 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "spell_scroll_indirected_mana",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_CORPO",
+    "skill_used": "spellcraft",
+    "difficulty": 7,
+    "time": "1 s",
+	"reversible": true,
+    "autolearn": true,
+    "book_learn": [ [ "big_book_of_metaknowledge" ], [ "wayward_memory_TUOMAES" ] ],
+    "components": [ [ [ "spell_scroll_directed_mana", 3 ] ] ]
   },
   {
     "type": "recipe",
@@ -161,7 +174,8 @@
     "proficiencies": [ { "proficiency": "prof_alchemy" } ],
     "time": "1 h",
     "autolearn": true,
-    "qualities": [ { "id": "CHISEL", "level": 1 }, { "id": "MANA_INFUSE", "level": 1 } ],
+	"reversible": true,
+    "qualities": [ { "id": "CHISEL", "level": 1 } ],
     "book_learn": [ [ "wayward_memory_TFOP", 4 ] ],
     "tools": [ [ [ "surface_heat", 20, "LIST" ] ] ],
     "components": [
@@ -173,7 +187,7 @@
         [ "feces_manure", 1 ],
         [ "fetid_goop", 1 ]
       ],
-      [ [ "animal_blood", 13 ] ],
+      [ [ "animal_blood", 3 ] ],
       [ [ "chem_sulphur", 7 ] ]
     ]
   },
@@ -194,7 +208,8 @@
         [ "basketball", 1 ],
         [ "baseball", 1 ],
         [ "beach_volleyball", 1 ],
-        [ "creepy_doll", 1 ]
+        [ "creepy_doll", 1 ],
+		[ "spell_scroll_indirected_mana", 1 ]
       ]
     ]
   },
@@ -394,7 +409,7 @@
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_CORPO",
     "skill_used": "spellcraft",
-    "difficulty": 3,
+    "difficulty": 5,
     "qualities": [ { "id": "MANA_INFUSE", "level": 1 }, { "id": "MANA_WEAVE", "level": 1 }, { "id": "POWER_ALTAR", "level": 2 }, { "id": "RED_CIRCLE", "level": 1 } ],
     "time": "8 h",
     "autolearn": true,
@@ -489,7 +504,7 @@
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_CORPO",
     "skill_used": "speech",
-    "difficulty": 3,
+    "difficulty": 1,
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "time": "1 h",
     "autolearn": true,
@@ -505,7 +520,7 @@
     "skill_used": "spellcraft",
     "difficulty": 7,
 	"qualities": [ { "id": "MANA_WEAVE", "level": 1 }, { "id": "GRIND", "level": 1 } ],
-    "time": "3 h",
+    "time": "12 h",
     "autolearn": true,
     "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "wayward_memory_TOHE", 1 ] ],
     "components": [ 
@@ -555,8 +570,8 @@
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_CORPO",
     "skill_used": "spellcraft",
-    "skills_required": [ "speech", 3 ],
-    "difficulty": 3,
+    "skills_required": [ "speech", 1 ],
+    "difficulty": 1,
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "time": "1 h",
     "autolearn": true,
@@ -580,7 +595,7 @@
     "components": [
       [ [ "crystallized_mana", 500 ], [ "decaying_soul", 5 ], [ "money_strap_hundred", 5 ] ],
       [ [ "crystallized_alcohol", 15 ], [ "potion_starter", 1 ] ],
-      [ [ "spell_scroll_transgate_place", 1 ], [ "spell_scroll_translocate_self_no_hands", 1 ], [ "ring_signet", 1 ] ]
+      [ [ "spell_scroll_translocate_self_no_hands", 1 ], [ "ring_signet", 1 ] ]
     ]
   },
   {
@@ -836,7 +851,7 @@
       [ [ "ortiels_aura", 1 ] ],
       [ [ "yidris_aura", 1 ] ],
       [ [ "omnaths_aura", 1 ] ],
-      [ [ "classified_intelligence_scroll", 1 ], [ "classified_intelligence", 1 ] ],
+      [ [ "classified_intelligence_scroll", 1 ], [ "classified_intelligence", 1 ], [ "spell_scroll_summon_lab_rat", 1 ] ],
       [ [ "cleansed_soul", 1 ] ],
       [ [ "drowning_aura", 1 ] ],
       [ [ "crystallized_ink", 7 ] ],
@@ -1026,7 +1041,7 @@
     "autolearn": true,
     "qualities": [ { "id": "MANA_INFUSE", "level": 1 }, { "id": "MANA_FOCUS", "level": 1 }, { "id": "POWER_ALTAR", "level": 2 } ],
     "time": "8 h",
-    "components": [ [ [ "ceramic_mug", 1 ] ], [ [ "coffee", 1000 ] ], [ [ "spell_scroll_first_things_first", 1 ], [ "mflask_hip_whiskey", 1 ] ] ]
+    "components": [ [ [ "ceramic_mug", 1 ] ], [ [ "coffee", 1000 ] ], [ [ "spell_scroll_first_things_first", 1 ], [ "mflask_hip_whiskey", 1 ], [ "spell_scroll_mage_jump", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -1042,7 +1057,7 @@
     "autolearn": true,
     "qualities": [ { "id": "MANA_INFUSE", "level": 1 }, { "id": "MANA_FOCUS", "level": 1 }, { "id": "MAGIC_CAULDRON", "level": 2 } ],
     "time": "4 h",
-    "components": [ [ [ "family_photo", 1 ], [ "wizard_photo", 1 ], [ "wayward_memory_WGB", 1 ] ], [ [ "thermos", 1 ] ], [ [ "coffee", 500 ] ] ]
+    "components": [ [ [ "family_photo", 1 ], [ "wizard_photo", 1 ], [ "wayward_memory_WGB", 1 ], [ "spell_scroll_first_things_first", 1 ] ], [ [ "thermos", 1 ] ], [ [ "coffee", 500 ] ] ]
   },
   {
     "type": "recipe",
@@ -1075,7 +1090,7 @@
     "byproducts": [ [ "spell_scroll_translocate_self_no_hands", 1 ] ],
     "qualities": [ { "id": "MANA_INFUSE", "level": 1 }, { "id": "MANA_FOCUS", "level": 1 }, { "id": "POWER_ALTAR", "level": 2 } ],
     "time": "1 m",
-    "components": [ [ [ "spell_scroll_translocate_self_no_hands", 1 ] ], [ [ "denarius", 4 ] ] ]
+    "components": [ [ [ "spell_scroll_translocate_self_no_hands", 1 ], [ "spell_scroll_anti_teleport", 1 ], [ "spell_scroll_jump", 1 ] ], [ [ "denarius", 4 ] ] ]
   },
   {
     "type": "recipe",
@@ -1093,7 +1108,7 @@
     "time": "16 h",
     "components": [
       [ [ "spell_scroll_shadow_realm", 1 ] ],
-      [ [ "spell_scroll_anti_teleport", 1 ] ],
+      [ [ "spell_scroll_anti_teleport", 1 ], [ "spell_scroll_call_storm", 1 ] ],
       [ [ "crystallized_mana", 50 ] ],
       [ [ "twisted_soul", 1 ] ]
     ]
@@ -1113,8 +1128,8 @@
     "qualities": [ { "id": "MANA_INFUSE", "level": 1 }, { "id": "MANA_FOCUS", "level": 1 }, { "id": "POWER_ALTAR", "level": 2 } ],
     "time": "16 h",
     "components": [
-      [ [ "spell_scroll_translocate_self_no_hands", 1 ] ],
-      [ [ "spell_scroll_anti_teleport", 1 ] ],
+      [ [ "spell_scroll_first_things_first", 1 ], [ "spell_scroll_mage_jump", 1 ] ],
+	  [ [ "spell_scroll_abolish_spirit", 1 ], [ "spell_scroll_golden_aura", 1 ] ],
       [ [ "crystallized_mana", 150 ] ],
       [ [ "twisted_soul", 1 ] ]
     ]
@@ -1153,10 +1168,9 @@
     "qualities": [ { "id": "MANA_INFUSE", "level": 1 }, { "id": "MANA_FOCUS", "level": 1 }, { "id": "POWER_ALTAR", "level": 2 } ],
     "time": "16 h",
     "components": [
-      [ [ "spell_scroll_estrangement", 1 ] ],
+      [ [ "spell_scroll_crystal_place", 1 ], [ "spell_scroll_let_loose", 1 ] ],
+	  [ [ "spell_scroll_transtemporal_passage", 1 ], [ "spell_scroll_estrangement", 1 ] ],
       [ [ "crystallized_mana", 150 ] ],
-      [ [ "spell_scroll_let_loose", 1 ] ],
-      [ [ "spell_scroll_jump", 1 ] ],
       [ [ "union_suit", 1 ] ]
     ]
   },
@@ -1202,10 +1216,10 @@
     "qualities": [ { "id": "MANA_INFUSE", "level": 1 }, { "id": "MANA_FOCUS", "level": 1 }, { "id": "POWER_ALTAR", "level": 2 } ],
     "time": "16 h",
     "components": [
-      [ [ "spell_scroll_spiritual_invisibility", 1 ] ],
       [ [ "duffelbag", 1 ] ],
       [ [ "crystallized_mana", 200 ] ],
-      [ [ "spell_scroll_summon_bunny", 1 ] ]
+      [ [ "spell_scroll_spiritual_invisibility", 1 ] ],
+      [ [ "spell_scroll_summon_bunny", 1 ], [ "spell_scroll_magicians_duffel", 1 ], [ "spell_scroll_spiritual_invisibility", 1 ] ]
     ]
   },
   {
@@ -1223,11 +1237,10 @@
     "qualities": [ { "id": "MANA_INFUSE", "level": 1 }, { "id": "MANA_FOCUS", "level": 1 }, { "id": "POWER_ALTAR", "level": 2 } ],
     "time": "16 h",
     "components": [
+      [ [ "spell_scroll_gambit1", 1 ], [ "spell_scroll_close_tear", 1 ] ],
       [ [ "spell_scroll_scrying", 1 ] ],
-      [ [ "spell_scroll_gambit1", 1 ] ],
       [ [ "gold_small", 100 ] ],
-      [ [ "crystallized_mana", 200 ] ],
-      [ [ "spell_scroll_recover_health_denarius", 1 ] ]
+      [ [ "crystallized_mana", 200 ] ]
     ]
   },
   {
@@ -1245,10 +1258,10 @@
     "qualities": [ { "id": "MANA_INFUSE", "level": 1 }, { "id": "MANA_FOCUS", "level": 1 }, { "id": "POWER_ALTAR", "level": 2 } ],
     "time": "12 h",
     "components": [
-      [ [ "spell_scroll_soul_bind", 1 ] ],
+      [ [ "spell_scroll_soft_step", 1 ], [ "spell_scroll_shadow_realm", 1 ] ],
+	  [ [ "spell_scroll_soul_bind", 1 ] ],
       [ [ "decaying_soul", 7 ] ],
-      [ [ "crystallized_mana", 150 ] ],
-      [ [ "spell_scroll_soft_step", 1 ] ]
+      [ [ "crystallized_mana", 150 ] ]
     ]
   },
   {
@@ -1293,8 +1306,7 @@
     "qualities": [ { "id": "MANA_INFUSE", "level": 1 }, { "id": "MANA_FOCUS", "level": 1 }, { "id": "POWER_ALTAR", "level": 2 } ],
     "time": "13 h",
     "components": [
-      [ [ "spell_scroll_enlarge", 1 ] ],
-      [ [ "spell_scroll_marinate", 1 ] ],
+      [ [ "spell_scroll_enlarge", 1 ], [ "spell_scroll_marinate", 1 ], [ "spell_scroll_new_life", 1 ] ],
       [ [ "crystallized_mana", 200 ] ],
       [ [ "shovel", 1 ] ]
     ]
@@ -1314,11 +1326,132 @@
     "qualities": [ { "id": "MANA_INFUSE", "level": 1 }, { "id": "MANA_FOCUS", "level": 1 }, { "id": "POWER_ALTAR", "level": 2 } ],
     "time": "24 h",
     "components": [
-      [ [ "spell_scroll_flight", 1 ] ],
-      [ [ "spell_scroll_dimensional_step", 1 ] ],
-      [ [ "crystallized_mana", 300 ] ],
-      [ [ "spell_scroll_transgate_place", 1 ] ],
+      [ [ "spell_scroll_dimensional_step", 1 ], [ "spell_scroll_transgate_place", 1 ] ],
+	  [ [ "spell_scroll_flight", 1 ], [ "spell_scroll_transtemporal_passage", 1 ] ],
+      [ [ "crystallized_mana", 500 ] ],
       [ [ "old_key", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "artillerant_wand",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_CORPO",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 10,
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "book_learn": [ [ "big_book_of_metaknowledge" ], [ "wayward_memory_TOMM" ] ],
+    "autolearn": true,
+    "qualities": [ { "id": "MANA_INFUSE", "level": 1 }, { "id": "MANA_FOCUS", "level": 1 }, { "id": "POWER_ALTAR", "level": 2 } ],
+    "time": "24 h",
+    "components": [
+      [ [ "spell_scroll_artillery", 1 ], [ "spell_scroll_directed_mana", 1 ] ],
+	  [ [ "spell_scroll_mutamanation", 1 ], [ "spell_scroll_psychic_anchor", 1 ] ],
+      [ [ "crystallized_mana", 500 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "intrapsychological_nesting",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_CORPO",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 10,
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "book_learn": [ [ "big_book_of_metaknowledge" ], [ "wayward_memory_TOMM" ] ],
+    "autolearn": true,
+    "qualities": [ { "id": "MANA_INFUSE", "level": 1 }, { "id": "MANA_FOCUS", "level": 1 }, { "id": "POWER_ALTAR", "level": 2 } ],
+    "time": "24 h",
+    "components": [
+      [ [ "spell_scroll_bio_for_stamina", 1 ], [ "spell_scroll_auto_tazer", 1 ] ],
+	  [ [ "spell_scroll_estrangement", 1 ], [ "spell_scroll_dimensional_step", 1 ] ],
+      [ [ "crystallized_mana", 500 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "all_purpose_watch",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_CORPO",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 10,
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "book_learn": [ [ "big_book_of_metaknowledge" ], [ "wayward_memory_TOMM" ] ],
+    "autolearn": true,
+    "qualities": [ { "id": "MANA_INFUSE", "level": 1 }, { "id": "MANA_FOCUS", "level": 1 }, { "id": "POWER_ALTAR", "level": 2 } ],
+    "time": "24 h",
+    "components": [
+      [ [ "spell_scroll_indirected_mana", 1 ], [ "spell_scroll_golden_aura", 1 ] ],
+	  [ [ "spell_scroll_spur_steed", 1 ], [ "spell_scroll_conjure_string", 1 ] ],
+      [ [ "crystallized_mana", 1000 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "alchemists_tool_belt",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_CORPO",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 10,
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "book_learn": [ [ "big_book_of_metaknowledge" ], [ "wayward_memory_TOMM" ] ],
+    "autolearn": true,
+    "qualities": [ { "id": "MANA_INFUSE", "level": 1 }, { "id": "MANA_FOCUS", "level": 1 }, { "id": "POWER_ALTAR", "level": 2 } ],
+    "time": "24 h",
+    "components": [
+      [ [ "spell_scroll_indirected_mana", 1 ], [ "classified_intelligence_scroll", 1 ] ],
+	  [ [ "spell_scroll_untether_mana", 1 ], [ "spell_scroll_summon_horse", 1 ] ],
+	  [ [ "tool_belt", 1 ] ],
+      [ [ "crystallized_mana", 1000 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "pocket_doc",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_CORPO",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 10,
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "book_learn": [ [ "big_book_of_metaknowledge" ], [ "wayward_memory_TOMM" ] ],
+    "autolearn": true,
+    "qualities": [ { "id": "MANA_INFUSE", "level": 1 }, { "id": "MANA_FOCUS", "level": 1 }, { "id": "POWER_ALTAR", "level": 2 } ],
+    "time": "24 h",
+    "components": [
+      [ [ "spell_scroll_crystal_place", 1 ] ],
+	  [ [ "spell_scroll_estrangement", 1 ], [ "spell_scroll_beautification", 1 ] ],
+	  [ [ "spell_scroll_summon_lab_rat", 1 ], [ "spell_scroll_mutamanation", 1 ] ],
+      [ [ "crystallized_mana", 1000 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "handgun_retrofitting",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_CORPO",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 10,
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "book_learn": [ [ "big_book_of_metaknowledge" ], [ "wayward_memory_TOMM" ] ],
+    "autolearn": true,
+    "qualities": [ { "id": "MANA_INFUSE", "level": 1 }, { "id": "MANA_FOCUS", "level": 1 }, { "id": "POWER_ALTAR", "level": 2 } ],
+    "time": "24 h",
+    "components": [
+	  [ [ "spell_scroll_artillery", 1 ], [ "spell_scroll_center_of_gravity", 1 ] ],
+	  [ [ "spell_scroll_crystal_place", 1 ], [ "spell_scroll_spur_steed", 1 ] ],
+      [ [ "crystallized_mana", 500 ] ]
     ]
   },
   {
@@ -1336,10 +1469,10 @@
     "qualities": [ { "id": "MANA_INFUSE", "level": 1 }, { "id": "MANA_FOCUS", "level": 1 }, { "id": "POWER_ALTAR", "level": 2 } ],
     "time": "15 h",
     "components": [
-      [ [ "spell_scroll_spawn_white_wolfs_staff", 1 ] ],
+      [ [ "spell_scroll_spawn_white_wolfs_staff", 1 ], [ "spell_scroll_cold_flash", 1 ] ],
+	  [ [ "spell_scroll_bullet_immune", 1 ], [ "spell_scroll_conjure_mirror", 1 ] ],
       [ [ "enchanted_pirate_blouse", 1 ] ],
-      [ [ "crystallized_mana", 200 ] ],
-      [ [ "spell_scroll_bullet_immune", 1 ] ]
+      [ [ "crystallized_mana", 200 ] ]
     ]
   },
   {
@@ -1357,8 +1490,7 @@
     "qualities": [ { "id": "MANA_INFUSE", "level": 1 }, { "id": "MANA_FOCUS", "level": 1 }, { "id": "POWER_ALTAR", "level": 2 } ],
     "time": "7 h",
     "components": [
-      [ [ "spell_scroll_crystal_place", 1 ] ],
-      [ [ "spell_scroll_transgate_place", 2 ] ],
+      [ [ "spell_scroll_crystal_place", 1 ], [ "spell_scroll_transgate_place", 2 ], [ "spell_scroll_jump", 1 ] ],
       [ [ "crystallized_mana", 200 ] ],
       [ [ "orichalcum_ingot", 3 ] ]
     ]
@@ -1378,8 +1510,7 @@
     "qualities": [ { "id": "MANA_INFUSE", "level": 1 }, { "id": "MANA_FOCUS", "level": 1 }, { "id": "POWER_ALTAR", "level": 2 } ],
     "time": "8 h",
     "components": [
-      [ [ "spell_scroll_shoulder_charge", 1 ] ],
-      [ [ "spell_scroll_recover_mana_stamina", 1 ] ],
+      [ [ "spell_scroll_shoulder_charge", 1 ], [ "spell_scroll_recover_mana_stamina", 1 ], [ "spell_scroll_enlarge", 1 ] ],
       [ [ "crystallized_mana", 200 ] ]
     ]
   },
@@ -1397,7 +1528,7 @@
     "autolearn": true,
     "qualities": [ { "id": "MANA_INFUSE", "level": 1 }, { "id": "MANA_FOCUS", "level": 1 }, { "id": "POWER_ALTAR", "level": 2 } ],
     "time": "8 h",
-    "components": [ [ [ "spell_scroll_marinate", 1 ] ], [ [ "spell_scroll_spawn_gas", 1 ] ], [ [ "crystallized_mana", 200 ] ] ]
+    "components": [ [ [ "spell_scroll_marinate", 1 ], [ "spell_scroll_spawn_gas", 1 ], [ "spell_scroll_summon_kayak", 1 ] ], [ [ "crystallized_mana", 200 ] ] ]
   },
   {
     "type": "recipe",
@@ -1413,7 +1544,7 @@
     "autolearn": true,
     "qualities": [ { "id": "MANA_INFUSE", "level": 1 }, { "id": "MANA_FOCUS", "level": 1 }, { "id": "POWER_ALTAR", "level": 2 } ],
     "time": "8 h",
-    "components": [ [ [ "spell_scroll_love", 1 ] ], [ [ "spell_scroll_charge_energy", 1 ] ], [ [ "crystallized_mana", 200 ] ] ]
+    "components": [ [ [ "spell_scroll_love", 1 ], [ "spell_scroll_charge_energy", 1 ], [ "spell_scroll_ghost_cleanse", 1 ] ], [ [ "crystallized_mana", 200 ] ] ]
   },
   {
     "type": "recipe",
@@ -1497,14 +1628,14 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 10 ],
     "difficulty": 10,
-    "book_learn": [ [ "big_book_of_metaknowledge" ] ],
+    "book_learn": [ [ "big_book_of_metaknowledge" ], [ "wayward_memory_TBOT" ] ],
     "autolearn": true,
     "qualities": [ { "id": "MANA_INFUSE", "level": 1 }, { "id": "MANA_FOCUS", "level": 1 }, { "id": "POWER_ALTAR", "level": 2 } ],
     "time": "7 h",
     "components": [
       [ [ "spell_scroll_recover_mana_fatigue", 1 ] ],
-      [ [ "spell_scroll_new_life", 1 ] ],
-      [ [ "spell_scroll_dimensional_resonance", 1 ] ]
+      [ [ "spell_scroll_new_life", 1 ], [ "spell_scroll_wicked_ritual", 1 ] ],
+      [ [ "spell_scroll_dimensional_resonance", 1 ], [ "spell_scroll_translocate_self_no_hands", 1 ] ]
     ]
   },
   {
@@ -2225,7 +2356,7 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 5 ],
     "difficulty": 5,
-    "qualities": [ { "id": "CONTAIN", "level": 1 } ],
+    "qualities": [ { "id": "CONTAIN", "level": 1 }, { "id": "CHEM", "level": 1 }, { "id": "MAGIC_CAULDRON", "level": 2 } ],
     "time": "1 m",
     "autolearn": true,
     "using": [ [ "drawing_tool", 500 ] ],
@@ -2235,7 +2366,7 @@
       [ 
 		[ "candle_lit", 13 ], 
 		[ "spiral_stone", 1 ], 
-		[ "leaves", 33 ], 
+		[ "leaves", 333 ], 
 		[ "resin_chunk", 33 ] 
 	  ],
       [
@@ -2341,7 +2472,7 @@
     "difficulty": 3,
     "time": "1 m",
     "autolearn": true,
-	"qualities": [ { "id": "CHEM", "level": 1 }, { "id": "MAGIC_CAULDRON", "level": 2 } ],
+	"qualities": [ { "id": "DISTILL", "level": 1 }, { "id": "MAGIC_CAULDRON", "level": 2 } ],
     "tools": [ [ [ "water_boiling_heat", 21, "LIST" ] ] ],
     "book_learn": [ [ "coloring_book", 1 ], [ "wayward_memory_EIC", 1 ], [ "big_book_of_metaknowledge", 1 ] ],
     "components": [ [ [ "mercury", 30 ], [ "crystallized_mana", 50 ], [ "dragon_nail", 13 ] ], [ [ "bleach", 30 ], [ "tear_of_child", 7 ], [ "potion_starter", 1 ] ] ]
@@ -3050,7 +3181,7 @@
     "components": [
       [ [ "pilot_light", 1 ] ],
       [ [ "superglue", 1 ], [ "duct_tape", 75 ], [ "cordage", 1, "LIST" ] ],
-      [ [ "crystal_mana", 10 ], [ "brimstone_sliver", 13 ] ],
+      [ [ "crystal_mana", 10 ], [ "brimstone_sliver", 13 ], [ "spell_scroll_love", 1 ] ],
       [ [ "incendiary", 50 ] ]
     ]
   },

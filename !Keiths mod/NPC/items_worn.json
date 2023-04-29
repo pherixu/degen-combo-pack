@@ -1,4 +1,15 @@
 [
+{
+    "type": "item_group",
+    "id": "worn_elves",
+    "subtype": "collection",
+    "items": [
+      { "item": "armor_lorica", "prob": 100 },
+      { "item": "leathersandals", "prob": 100 },
+      { "item": "tunic", "prob": 100 },
+      { "item": "pants_fur", "prob": 100 }
+    ]
+  },
   {
     "type": "item_group",
     "id": "NC_MAGIC_OPERATOR_worn",
