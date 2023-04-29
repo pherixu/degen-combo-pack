@@ -1,7 +1,32 @@
 [
-
-
+  {
+	"type": "MONSTER_FACTION",
+	"name": "devil",
+	"friendly": [ "zombie", "magical_beast", "nether", "goblin", "demon" ]
+  },
     {
+	"type": "MONSTER_FACTION",
+	"name": "zombie",
+	"friendly": [ "devil" ]
+  },
+  {
+	"type": "MONSTER_FACTION",
+	"name": "demon",
+	"friendly": [ "devil" ]
+  },
+  {
+	"type": "MONSTER_FACTION",
+	"name": "goblin",
+	"copy_from": "goblin",
+	"friendly": [ "devil" ]
+  },
+  {
+	"type": "SPECIES",
+	"id": "DEVIL",
+	"description": "shadowy figures of unknown origin.",
+	"anger_triggers": [ "HURT", "PLAYER_CLOSE", "PLAYER_WEAK", "FRIEND_ATTACKED", "SOUND" ]
+  },
+  {
     "id": "emit_dark_haze",
     "type": "emit",
     "field": "fd_web2",
@@ -9,11 +34,7 @@
     "qty": 6,
     "chance": 90
   },
-  
-  
-  
-  
-    {
+  {
     "id": "emit_runewater",
     "type": "emit",
     "field": "fd_runewater",
@@ -21,10 +42,7 @@
     "qty": 9,
     "chance": 90
   },
-  
-  
-  
-    {
+  {
     "id": "emit_rubble",
     "type": "emit",
     "field": "fd_rubble",
@@ -32,16 +50,15 @@
     "qty": 6,
     "chance": 90
   },
-  
-      {
+  {
     "id": "emit_druidspore",
     "type": "emit",
     "field": "fd_spore2",
     "intensity": 1,
     "qty": 6,
     "chance": 90
-  }, 
-      {
+  },
+  {
     "id": "emit_wormsmoke",
     "type": "emit",
     "field": "fd_web3",
@@ -49,7 +66,6 @@
     "qty": 6,
     "chance": 90
   },
-  
   {
     "type": "effect_type",
     "id": "druidspore",
@@ -58,8 +74,8 @@
     "apply_message": "You are cursed by druid's spores!",
     "rating": "bad",
     "miss_messages": [ [ "The magical spores cloud your mind.", 1 ] ],
-    "max_intensity": 3,  
-      "base_mods": {
+    "max_intensity": 3,
+    "base_mods": {
       "per_mod": [ -4 ],
       "dex_mod": [ -3 ],
       "str_mod": [ -3 ],
@@ -70,33 +86,25 @@
       "hurt_chance": [ 450, 2700 ],
       "stamina_amount": [ -1500 ],
       "cough_chance": [ 580 ],
-	  "speed_mod": [ -10 ]
+      "speed_mod": [ -10 ]
     },
-    "scaling_mods": {"stamina_amount": [ -500 ], "speed_mod": [ -5 ] },
+    "scaling_mods": { "stamina_amount": [ -500 ], "speed_mod": [ -5 ] },
     "show_in_info": true,
     "show_intensity": false
   },
-  
-  
   {
     "type": "effect_type",
-    "id": "runewater",
+    "id": "rwater",
     "name": [ "Doused in Runewater" ],
     "desc": [ "You're covered in refreshing mist!" ],
     "apply_message": "You are invigorated by the water!",
-    "rating": "bad",
+    "rating": "good",
     "miss_messages": [ [ "Water seeps into your skin.", 1 ] ],
-    "max_intensity": 3,  
-      "base_mods": {
-      "dex_mod": [ 3 ],
-	  "speed_mod": [ 40 ]
-    },
+    "max_intensity": 3,
+    "base_mods": { "dex_mod": [ 3 ], "speed_mod": [ 40 ] },
     "show_in_info": true,
     "show_intensity": false
   },
-
-
-  
   {
     "type": "effect_type",
     "id": "wormsmoke",
@@ -106,17 +114,11 @@
     "rating": "bad",
     "miss_messages": [ [ "Your sight fills with blinding visions.", 1 ] ],
     "flags": [ "BLIND" ],
-    "max_intensity": 3,  
-      "base_mods": {
-      "per_mod": [ -4 ],
-      "int_mod": [ -5 ],
-      "pain_min": [ 1 ],
-	  "speed_mod": [ -15 ]
-    },
+    "max_intensity": 3,
+    "base_mods": { "per_mod": [ -4 ], "int_mod": [ -5 ], "pain_min": [ 1 ], "speed_mod": [ -15 ] },
     "show_in_info": true,
     "show_intensity": false
   },
-  
   {
     "type": "effect_type",
     "id": "shadowsight",
@@ -125,11 +127,10 @@
     "apply_message": "You are sanctified in light!",
     "rating": "good",
     "flags": [ "SHADOW_SEER" ],
-    "max_intensity": 3,  
+    "max_intensity": 3,
     "show_in_info": true,
     "show_intensity": false
   },
-
   {
     "type": "effect_type",
     "id": "wormsight",
@@ -138,12 +139,10 @@
     "apply_message": "You are sanctified in light!",
     "rating": "good",
     "flags": [ "WORM_WIZ" ],
-    "max_intensity": 3,  
+    "max_intensity": 3,
     "show_in_info": true,
     "show_intensity": false
   },
-
-
   {
     "type": "effect_type",
     "id": "slugsight",
@@ -152,39 +151,55 @@
     "apply_message": "You are sanctified in light!",
     "rating": "good",
     "flags": [ "ACIDPROOF" ],
-    "max_intensity": 3,  
+    "max_intensity": 3,
     "show_in_info": true,
     "show_intensity": false
   },
-
-    
-   {
+  {
     "id": "fd_spore2",
     "type": "field_type",
     "legacy_enum_id": 5,
-	"looks_like": "mon_spore",
+    "looks_like": "mon_spore",
     "intensity_levels": [
       {
         "name": "light druid spores",
         "sym": "}",
         "effects": [
-          { "effect_id": "druidspore", "intensity": 1, "min_duration": "1 m", "immune_in_vehicle": true, "is_environmental": false }
+          {
+            "effect_id": "druidspore",
+            "intensity": 1,
+            "min_duration": "1 m",
+            "immune_in_vehicle": true,
+            "is_environmental": false
+          }
         ]
       },
       {
         "name": "druid spores",
         "effects": [
-          { "effect_id": "druidspore", "intensity": 2, "min_duration": "1 m", "immune_in_vehicle": true, "is_environmental": false }
+          {
+            "effect_id": "druidspore",
+            "intensity": 2,
+            "min_duration": "1 m",
+            "immune_in_vehicle": true,
+            "is_environmental": false
+          }
         ]
       },
-	   {
+      {
         "name": "thick druid spores",
         "sym": "}",
         "effects": [
-          { "effect_id": "druidspore", "intensity": 3, "min_duration": "1 m", "immune_in_vehicle": true, "is_environmental": false }
+          {
+            "effect_id": "druidspore",
+            "intensity": 3,
+            "min_duration": "1 m",
+            "immune_in_vehicle": true,
+            "is_environmental": false
+          }
         ]
       }
-      ],
+    ],
     "description_affix": "covered_in",
     "decrease_intensity_on_contact": true,
     "immunity_data": { "flags": [ "ACIDPROOF" ] },
@@ -202,38 +217,51 @@
     },
     "display_field": true
   },
-  
-  
-  
-  
-  
-   {
+  {
     "id": "fd_runewater",
     "type": "field_type",
     "legacy_enum_id": 5,
-	"looks_like": "fd_plasma",
+    "looks_like": "fd_plasma",
     "intensity_levels": [
       {
         "name": "light rune water",
         "sym": "}",
         "effects": [
-          { "effect_id": "druidspore", "intensity": 1, "min_duration": "1 m", "immune_in_vehicle": true, "is_environmental": false }
+          {
+            "effect_id": "rwater",
+            "intensity": 1,
+            "min_duration": "1 m",
+            "immune_in_vehicle": true,
+            "is_environmental": false
+          }
         ]
       },
       {
         "name": "rune water",
         "effects": [
-          { "effect_id": "druidspore", "intensity": 2, "min_duration": "1 m", "immune_in_vehicle": true, "is_environmental": false }
+          {
+            "effect_id": "rwater",
+            "intensity": 2,
+            "min_duration": "1 m",
+            "immune_in_vehicle": true,
+            "is_environmental": false
+          }
         ]
       },
-	   {
+      {
         "name": "heavy rune water",
         "sym": "}",
         "effects": [
-          { "effect_id": "druidspore", "intensity": 3, "min_duration": "1 m", "immune_in_vehicle": true, "is_environmental": false }
+          {
+            "effect_id": "rwater",
+            "intensity": 3,
+            "min_duration": "1 m",
+            "immune_in_vehicle": true,
+            "is_environmental": false
+          }
         ]
       }
-      ],
+    ],
     "description_affix": "covered_in",
     "decrease_intensity_on_contact": true,
     "priority": 2,
@@ -249,17 +277,11 @@
     },
     "display_field": true
   },
-  
-  
-  
-  
-  
-  
-   {
+  {
     "id": "fd_web3",
     "type": "field_type",
     "legacy_enum_id": 5,
-	"looks_like": "tr_goo",
+    "looks_like": "tr_goo",
     "intensity_levels": [
       {
         "name": "light worm smoke",
@@ -274,7 +296,7 @@
           { "effect_id": "blind", "intensity": 2, "min_duration": "30 s", "immune_in_vehicle": true, "is_environmental": false }
         ]
       },
-	   {
+      {
         "name": "heavy worm smoke",
         "sym": "}",
         "effects": [
@@ -299,13 +321,11 @@
     },
     "display_field": true
   },
-  
-  
-   {
+  {
     "id": "fd_web2",
     "type": "field_type",
     "legacy_enum_id": 5,
-	"looks_like": "fd_smoke",
+    "looks_like": "fd_smoke",
     "intensity_levels": [
       {
         "name": "light haze",
@@ -320,7 +340,7 @@
           { "effect_id": "webbed", "intensity": 2, "min_duration": "1 m", "immune_in_vehicle": true, "is_environmental": false }
         ]
       },
-	   {
+      {
         "name": "thick haze",
         "sym": "}",
         "effects": [
@@ -345,7 +365,6 @@
     },
     "display_field": true
   },
-  
   {
     "id": "mon_test",
     "type": "MONSTER",
@@ -366,7 +385,7 @@
     "morale": 100,
     "melee_skill": 1,
     "melee_dice": 1,
-	"looks_like": "mon_zombie",
+    "looks_like": "mon_zombie",
     "melee_dice_sides": 1,
     "melee_damage": [ { "damage_type": "bash", "amount": 1 } ],
     "armor_cut": 1,
@@ -374,10 +393,7 @@
     "weakpoint_sets": [ "wps_humanoid_body" ],
     "families": [ "prof_intro_biology", "prof_wp_zombie" ],
     "harvest": "human2",
-	 "emit_fields": [
-      { "emit_id": "emit_dark_haze", "delay": "5 s" }
-    ],
-	
+    "emit_fields": [ { "emit_id": "emit_dark_haze", "delay": "5 s" } ],
     "special_attacks": [
       [ "DARKMAN", 1 ],
       {
@@ -394,7 +410,7 @@
       "SMELLS",
       "STUMBLES",
       "WARM",
-	  "HIT_AND_RUN",
+      "HIT_AND_RUN",
       "BASHES",
       "GROUP_BASH",
       "NO_BREATHE",
@@ -402,12 +418,6 @@
       "PUSH_MON"
     ]
   },
-  
-  
-  
-  
-  
-  
   {
     "type": "SPELL",
     "id": "death_test",
@@ -434,8 +444,6 @@
     "min_field_intensity": 2,
     "max_field_intensity": 2
   },
-  
-  
   {
     "id": "mon_test1",
     "type": "MONSTER",
@@ -456,34 +464,20 @@
     "morale": 100,
     "melee_skill": 99,
     "melee_dice": 1,
-	"looks_like": "tr_portal",
+    "looks_like": "tr_portal",
     "melee_dice_sides": 1,
     "melee_damage": [ { "damage_type": "heat", "amount": 2 } ],
     "armor_cut": 1,
     "vision_night": 1,
     "weakpoint_sets": [ "wps_humanoid_body" ],
     "families": [ "prof_intro_biology", "prof_wp_zombie" ],
-	"death_function": { "effect": { "id": "death_test"},"hit_self": true, "corpse_type": "NO_CORPSE"},
+    "death_function": { "effect": { "id": "death_test" }, "hit_self": true, "corpse_type": "NO_CORPSE" },
     "harvest": "human2",
-	
-    "special_attacks": [["SUICIDE",3]
-    ],
+    "special_attacks": [ [ "SUICIDE", 3 ] ],
     "death_drops": "huskdrops",
-    "flags": [
-      "SEES",
-      "HEARS",
-      "SMELLS",
-      "STUMBLES",
-      "WARM",
-      "BASHES",
-      "GROUP_BASH",
-      "NO_BREATHE",
-      "REVIVES",
-      "PUSH_MON"
-    ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "GROUP_BASH", "NO_BREATHE", "REVIVES", "PUSH_MON" ]
   },
-  
-    {
+  {
     "type": "SPELL",
     "id": "summon_flame",
     "name": "Hellfire",
@@ -506,10 +500,7 @@
     "min_field_intensity": 2,
     "max_field_intensity": 2
   },
-  
-  
-  
-    {
+  {
     "type": "item_group",
     "id": "multicoredrops",
     "subtype": "collection",
@@ -525,10 +516,7 @@
       { "item": "antoninianus", "prob": 15 }
     ]
   },
-  
-  
-  
-    {
+  {
     "type": "item_group",
     "id": "runewhelpdrops",
     "subtype": "collection",
@@ -545,9 +533,7 @@
       { "item": "antoninianus", "prob": 15 }
     ]
   },
-  
-  
-    {
+  {
     "type": "item_group",
     "id": "archaeodemondrops",
     "subtype": "collection",
@@ -564,9 +550,7 @@
       { "item": "antoninianus", "prob": 15 }
     ]
   },
-  
-  
-    {
+  {
     "type": "item_group",
     "id": "wormdrops",
     "subtype": "collection",
@@ -583,8 +567,7 @@
       { "item": "antoninianus", "prob": 15 }
     ]
   },
-    
-    {
+  {
     "type": "item_group",
     "id": "slugdrops",
     "subtype": "collection",
@@ -601,8 +584,7 @@
       { "item": "antoninianus", "prob": 15 }
     ]
   },
-    
-    {
+  {
     "type": "item_group",
     "id": "simulacrumdrops",
     "subtype": "collection",
@@ -619,8 +601,7 @@
       { "item": "antoninianus", "prob": 15 }
     ]
   },
-    
-    {
+  {
     "type": "item_group",
     "id": "seerdrops",
     "subtype": "collection",
@@ -637,8 +618,7 @@
       { "item": "antoninianus", "prob": 15 }
     ]
   },
-    
-    {
+  {
     "type": "item_group",
     "id": "sauriandrops",
     "subtype": "collection",
@@ -655,18 +635,14 @@
       { "item": "antoninianus", "prob": 15 }
     ]
   },
-    
-	
-	
-	
-    {
+  {
     "type": "item_group",
     "id": "marionettedrops",
     "subtype": "collection",
     "entries": [
       { "item": "tear_of_child", "prob": 20 },
       { "item": "raw_bloodshot", "prob": 80, "count-min": 1, "count-max": 3 },
-      { "item": "marionette_doll", "prob": 99},
+      { "item": "marionette_doll", "prob": 99 },
       { "item": "viridite", "prob": 25, "count-min": 1, "count-max": 2 },
       { "item": "ceruleum", "prob": 25, "count-min": 1, "count-max": 2 },
       { "item": "crimsonite", "prob": 25, "count-min": 1, "count-max": 2 },
@@ -676,16 +652,16 @@
       { "item": "antoninianus", "prob": 15 }
     ]
   },
-     {
+  {
     "type": "item_group",
     "id": "graftedmessdrops",
     "subtype": "collection",
     "entries": [
       { "item": "tear_of_child", "prob": 20 },
-      { "item": "grafted_arm1", "prob": 50},
-      { "item": "magic_corpse", "prob": 50},
-      { "item": "husk_spawner", "prob": 50},
-      { "item": "grafted_arm2", "prob": 50},
+      { "item": "grafted_arm1", "prob": 50 },
+      { "item": "magic_corpse", "prob": 50 },
+      { "item": "husk_spawner", "prob": 50 },
+      { "item": "grafted_arm2", "prob": 50 },
       { "item": "viridite", "prob": 25, "count-min": 1, "count-max": 2 },
       { "item": "ceruleum", "prob": 25, "count-min": 1, "count-max": 2 },
       { "item": "crimsonite", "prob": 25, "count-min": 1, "count-max": 2 },
@@ -695,9 +671,7 @@
       { "item": "antoninianus", "prob": 15 }
     ]
   },
-  
-    
-        {
+  {
     "type": "SPELL",
     "id": "simulacrum_dash",
     "name": "Simulacrum Drive",
@@ -713,17 +687,14 @@
     "damage_type": "bash",
     "min_range": 8,
     "max_range": 8,
-	"min_aoe": 4,
+    "min_aoe": 4,
     "max_aoe": 4,
     "base_casting_time": 100,
     "base_energy_cost": 10,
     "max_level": 35,
     "energy_source": "MANA"
   },
-
-
-     
-        {
+  {
     "type": "SPELL",
     "id": "rubble_cast",
     "name": "Rubble Cast",
@@ -740,7 +711,7 @@
     "min_range": 1,
     "max_range": 1,
     "field_id": "fd_rubble",
-	"min_aoe": 3,
+    "min_aoe": 3,
     "max_aoe": 3,
     "min_field_intensity": 1,
     "max_field_intensity": 1,
@@ -749,7 +720,7 @@
     "max_level": 35,
     "energy_source": "STAMINA"
   },
-	          {
+  {
     "type": "SPELL",
     "id": "spore_cast",
     "name": "Spore Cast",
@@ -766,7 +737,7 @@
     "min_range": 5,
     "max_range": 5,
     "field_id": "fd_spore2",
-	"min_aoe": 1,
+    "min_aoe": 1,
     "max_aoe": 1,
     "min_field_intensity": 3,
     "max_field_intensity": 3,
@@ -775,8 +746,7 @@
     "max_level": 35,
     "energy_source": "STAMINA"
   },
-	  
-  	          {
+  {
     "type": "SPELL",
     "id": "worm_cast",
     "name": "Worm Smoke Cast",
@@ -793,7 +763,7 @@
     "min_range": 4,
     "max_range": 4,
     "field_id": "fd_spore2",
-	"min_aoe": 2,
+    "min_aoe": 2,
     "max_aoe": 2,
     "min_field_intensity": 3,
     "max_field_intensity": 3,
@@ -802,7 +772,7 @@
     "max_level": 35,
     "energy_source": "STAMINA"
   },
-	    {
+  {
     "id": "worm_drain",
     "type": "SPELL",
     "name": "mana drain",
@@ -819,16 +789,15 @@
     "flags": [ "RANDOM_DAMAGE", "RANDOM_TARGET" ],
     "difficulty": 3
   },
-    
   {
     "id": "mon_worm_wizard",
     "type": "MONSTER",
     "name": "Worm Wizard",
     "description": "A highly intelligent species of telepathic worm, quite offended by your first opinion of it.",
-    "default_faction": "nether",
-	"looks_like": "mon_dark_wyrm",
+    "default_faction": "devil",
+    "looks_like": "mon_dark_wyrm",
     "bodytype": "human",
-    "species": [ "HORROR" ],
+    "species": [ "DEVIL" ],
     "material": [ "iflesh", "demon_chitin" ],
     "diff": 2,
     "volume": "30000 ml",
@@ -840,7 +809,7 @@
     "aggression": 100,
     "morale": 100,
     "melee_skill": 6,
-    "melee_dice": 2,
+    "melee_dice": 1,
     "melee_dice_sides": 8,
     "melee_damage": [ { "damage_type": "acid", "amount": 10 } ],
     "dodge": 4,
@@ -848,7 +817,7 @@
     "armor_elec": 20,
     "armor_acid": 50,
     "armor_fire": 10,
-	"armor_cut": 20,
+    "armor_cut": 20,
     "armor_stab": 15,
     "armor_bullet": 30,
     "armor_bash": 20,
@@ -856,28 +825,24 @@
     "vision_night": 50,
     "death_drops": "wormdrops",
     "harvest": "human2",
-	 "emit_fields": [
-      { "emit_id": "emit_wormsmoke", "delay": "5 s" }
-    ],
-  
+    "emit_fields": [ { "emit_id": "emit_wormsmoke", "delay": "5 s" } ],
     "special_attacks": [
       [ "RANGED_PULL", 10 ],
-	  [ "GRAB", 7 ],
-	  [ "GRAB_DRAG", 7 ],
-	  [ "FLESH_TENDRIL", 7 ],
+      [ "GRAB", 7 ],
+      [ "GRAB_DRAG", 7 ],
+      [ "FLESH_TENDRIL", 7 ],
       {
         "type": "spell",
         "spell_data": { "id": "phase_shrike_teleport", "min_level": 1 },
         "cooldown": 9,
         "monster_message": "the slug druid warps towards you with a magical spell."
       },
-	  {
+      {
         "type": "spell",
         "spell_data": { "id": "worm_drain", "min_level": 1 },
         "cooldown": 5,
         "monster_message": "the worm wizard saps your magical energy."
       },
-	  
       {
         "type": "spell",
         "spell_data": { "id": "worm_cast", "min_level": 1 },
@@ -886,20 +851,8 @@
       }
     ],
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "STALK", "PLAYER_WEAK", "PLAYER_CLOSE" ],
-    "flags": [
-      "SEES",
-      "SMELLS",
-      "HEARS",
-      "WEBWALK",
-      "VENOM",
-      "CLIMBS",
-      "NO_BREATHE",
-      "PATH_AVOID_DANGER_1",
-      "PUSH_MON"
-    ]
+    "flags": [ "SEES", "SMELLS", "HEARS", "WEBWALK", "VENOM", "CLIMBS", "NO_BREATHE", "PATH_AVOID_DANGER_1", "PUSH_MON" ]
   },
-  
-  
   {
     "id": "wizard_dart",
     "type": "SPELL",
@@ -924,16 +877,15 @@
     "base_casting_time": 100,
     "energy_source": "MANA"
   },
-    
   {
     "id": "mon_worm_archwizard",
     "type": "MONSTER",
     "name": "Worm Archwizard",
     "description": "A highly intelligent species of telepathic worm, quite offended by your first opinion of it.",
-    "default_faction": "nether",
-	"looks_like": "mon_dark_wyrm",
+    "default_faction": "devil",
+    "looks_like": "mon_dark_wyrm",
     "bodytype": "human",
-    "species": [ "HORROR" ],
+    "species": [ "DEVIL" ],
     "material": [ "iflesh", "demon_chitin" ],
     "diff": 2,
     "volume": "30000 ml",
@@ -953,7 +905,7 @@
     "armor_elec": 30,
     "armor_acid": 60,
     "armor_fire": 20,
-	"armor_cut": 30,
+    "armor_cut": 30,
     "armor_stab": 25,
     "armor_bullet": 60,
     "armor_bash": 30,
@@ -961,39 +913,35 @@
     "vision_night": 50,
     "death_drops": "wormdrops",
     "harvest": "human2",
-	 "emit_fields": [
-      { "emit_id": "emit_wormsmoke", "delay": "5 s" }
-    ],
-  
+    "emit_fields": [ { "emit_id": "emit_wormsmoke", "delay": "5 s" } ],
     "special_attacks": [
       [ "RANGED_PULL", 10 ],
-	  [ "GRAB", 7 ],
-	  [ "GRAB_DRAG", 7 ],
+      [ "GRAB", 7 ],
+      [ "GRAB_DRAG", 7 ],
       {
         "type": "spell",
         "spell_data": { "id": "wizard_dart", "min_level": 1 },
         "cooldown": 6,
         "monster_message": "the slug druid warps towards you with a magical spell."
       },
-	  {
+      {
         "type": "spell",
         "spell_data": { "id": "worm_drain", "min_level": 1 },
         "cooldown": 4,
         "monster_message": "the worm wizard saps your magical energy."
       },
-	  {
+      {
         "type": "spell",
         "spell_data": { "id": "phase_shrike_teleport", "min_level": 1 },
         "cooldown": 6,
         "monster_message": "the worm wizard saps your magical energy."
       },
-	  {
+      {
         "type": "spell",
         "spell_data": { "id": "phase_skulker_teleport", "min_level": 1 },
         "cooldown": 6,
         "monster_message": "the worm wizard saps your magical energy."
       },
-	  
       {
         "type": "spell",
         "spell_data": { "id": "worm_cast", "min_level": 1 },
@@ -1002,37 +950,23 @@
       }
     ],
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "STALK", "PLAYER_WEAK", "PLAYER_CLOSE" ],
-    "flags": [
-      "SEES",
-      "SMELLS",
-      "HEARS",
-      "WEBWALK",
-      "VENOM",
-      "CLIMBS",
-      "NO_BREATHE",
-      "PATH_AVOID_DANGER_1",
-      "PUSH_MON"
-    ]
+    "flags": [ "SEES", "SMELLS", "HEARS", "WEBWALK", "VENOM", "CLIMBS", "NO_BREATHE", "PATH_AVOID_DANGER_1", "PUSH_MON" ]
   },
-  
-  
-
-  
   {
     "id": "mon_slug_druid",
     "type": "MONSTER",
     "name": "Slug Druid",
     "description": "A highly intelligent species of spellcasting-slug, and a guardian of nature.",
-    "default_faction": "nether",
-	"looks_like": "mon_slug_giant",
+    "default_faction": "devil",
+    "looks_like": "mon_slug_giant",
     "bodytype": "human",
-    "species": [ "HORROR" ],
+    "species": [ "DEVIL" ],
     "material": [ "iflesh", "demon_chitin" ],
     "diff": 2,
     "volume": "30000 ml",
     "weight": "40750 g",
     "hp": 200,
-    "speed": 100,
+    "speed": 80,
     "symbol": "h",
     "color": "red",
     "aggression": 100,
@@ -1041,15 +975,13 @@
     "melee_dice": 2,
     "melee_dice_sides": 8,
     "melee_damage": [ { "damage_type": "heat", "amount": 6 } ],
-	 "emit_fields": [
-      { "emit_id": "emit_druidspore", "delay": "5 s" }
-    ],
+    "emit_fields": [ { "emit_id": "emit_druidspore", "delay": "5 s" } ],
     "dodge": 4,
     "armor_cold": 1,
     "armor_elec": 20,
     "armor_acid": 50,
     "armor_fire": 30,
-	"armor_cut": 30,
+    "armor_cut": 30,
     "armor_stab": 15,
     "armor_bullet": 30,
     "armor_bash": 30,
@@ -1057,25 +989,23 @@
     "vision_night": 50,
     "death_drops": "slugdrops",
     "harvest": "human2",
-  
     "special_attacks": [
       [ "RANGED_PULL", 10 ],
-	  [ "ACID", 7 ],
-	  [ "ACID_ACCURATE", 7 ],
-	  [ "ACID_BARF", 7 ],
+      [ "ACID", 7 ],
+      [ "ACID_ACCURATE", 7 ],
+      [ "ACID_BARF", 7 ],
       {
         "type": "spell",
         "spell_data": { "id": "phase_shrike_teleport", "min_level": 1 },
         "cooldown": 4,
         "monster_message": "the slug druid warps towards you with a magical spell."
       },
-	  {
+      {
         "type": "spell",
         "spell_data": { "id": "rubble_cast", "min_level": 1 },
         "cooldown": 6,
         "monster_message": "the slug druid drops earth around you."
       },
-	  
       {
         "type": "spell",
         "spell_data": { "id": "spore_cast", "min_level": 1 },
@@ -1098,8 +1028,6 @@
       "PUSH_MON"
     ]
   },
-  
-  
   {
     "id": "druid_dart",
     "type": "SPELL",
@@ -1124,7 +1052,7 @@
     "base_casting_time": 100,
     "energy_source": "MANA"
   },
-    {
+  {
     "id": "summon_slugs",
     "type": "SPELL",
     "name": "Slug Mages",
@@ -1148,29 +1076,27 @@
     "effect": "summon",
     "effect_str": "GROUP_SLUG"
   },
-  
-    {
+  {
     "type": "monstergroup",
     "name": "GROUP_SLUG",
-	"override": true,
-    "monsters": [ { "monster": "mon_slug_mageling" }]
+    "override": true,
+    "monsters": [ { "monster": "mon_slug_mageling" } ]
   },
-  
   {
     "id": "mon_slug_archdruid",
     "type": "MONSTER",
     "name": "Slug Archdruid",
     "description": "A highly intelligent species of spellcasting-slug, and a guardian of nature.",
-    "default_faction": "nether",
-	"looks_like": "mon_slug_giant",
+    "default_faction": "devil",
+    "looks_like": "mon_slug_giant",
     "bodytype": "human",
-    "species": [ "HORROR" ],
+    "species": [ "DEVIL" ],
     "material": [ "iflesh", "demon_chitin" ],
     "diff": 2,
     "volume": "30000 ml",
     "weight": "40750 g",
     "hp": 400,
-    "speed": 100,
+    "speed": 80,
     "symbol": "h",
     "color": "red",
     "aggression": 100,
@@ -1179,15 +1105,13 @@
     "melee_dice": 3,
     "melee_dice_sides": 9,
     "melee_damage": [ { "damage_type": "acid", "amount": 20 } ],
-	 "emit_fields": [
-      { "emit_id": "emit_druidspore", "delay": "2 s" }
-    ],
+    "emit_fields": [ { "emit_id": "emit_druidspore", "delay": "2 s" } ],
     "dodge": 4,
     "armor_cold": 20,
     "armor_elec": 20,
     "armor_acid": 70,
     "armor_fire": 30,
-	"armor_cut": 30,
+    "armor_cut": 30,
     "armor_stab": 25,
     "armor_bullet": 60,
     "armor_bash": 30,
@@ -1195,27 +1119,25 @@
     "vision_night": 50,
     "death_drops": "slugdrops",
     "harvest": "human2",
-  
     "special_attacks": [
       [ "RANGED_PULL", 7 ],
       [ "SMASH", 7 ],
       [ "GROW_VINE", 7 ],
-	  [ "ACID", 7 ],
-	  [ "ACID_ACCURATE", 7 ],
-	  [ "ACID_BARF", 7 ],
+      [ "ACID", 7 ],
+      [ "ACID_ACCURATE", 7 ],
+      [ "ACID_BARF", 7 ],
       {
         "type": "spell",
         "spell_data": { "id": "phase_shrike_teleport", "min_level": 1 },
         "cooldown": 7,
         "monster_message": "the slug druid warps towards you with a magical spell."
       },
-	  {
+      {
         "type": "spell",
         "spell_data": { "id": "druid_dart", "min_level": 1 },
         "cooldown": 7,
         "monster_message": "the slug druid drops earth around you."
       },
-	  
       {
         "type": "spell",
         "spell_data": { "id": "summon_slugs", "min_level": 1 },
@@ -1239,25 +1161,21 @@
       "PUSH_MON"
     ]
   },
-  
-  
-  
-  
   {
     "id": "mon_slug_mageling",
     "type": "MONSTER",
     "name": "Slug Mageling",
     "description": "A highly intelligent species of spellcasting-slug, and a student of nature.",
-    "default_faction": "nether",
-	"looks_like": "mon_slug_small",
+    "default_faction": "devil",
+    "looks_like": "mon_slug_small",
     "bodytype": "human",
-    "species": [ "HORROR" ],
+    "species": [ "DEVIL" ],
     "material": [ "iflesh", "demon_chitin" ],
     "diff": 2,
     "volume": "30000 ml",
     "weight": "40750 g",
     "hp": 100,
-    "speed": 110,
+    "speed": 85,
     "symbol": "h",
     "color": "red",
     "aggression": 100,
@@ -1266,15 +1184,13 @@
     "melee_dice": 2,
     "melee_dice_sides": 6,
     "melee_damage": [ { "damage_type": "acid", "amount": 10 } ],
-	 "emit_fields": [
-      { "emit_id": "emit_druidspore", "delay": "7 s" }
-    ],
+    "emit_fields": [ { "emit_id": "emit_druidspore", "delay": "7 s" } ],
     "dodge": 4,
     "armor_cold": 10,
     "armor_elec": 10,
     "armor_acid": 40,
     "armor_fire": 20,
-	"armor_cut": 10,
+    "armor_cut": 10,
     "armor_stab": 15,
     "armor_bullet": 60,
     "armor_bash": 10,
@@ -1282,18 +1198,16 @@
     "vision_night": 50,
     "death_drops": "slugdrops",
     "harvest": "human2",
-  
     "special_attacks": [
-	  [ "ACID", 5 ],
-	  [ "SPIT_SAP", 5 ],
-	  [ "ACID_ACCURATE", 5 ],
+      [ "ACID", 5 ],
+      [ "SPIT_SAP", 5 ],
+      [ "ACID_ACCURATE", 5 ],
       {
         "type": "spell",
         "spell_data": { "id": "phase_shrike_teleport", "min_level": 1 },
         "cooldown": 7,
         "monster_message": "the slug druid warps towards you with a magical spell."
       },
-	  
       {
         "type": "spell",
         "spell_data": { "id": "spore_cast", "min_level": 1 },
@@ -1318,28 +1232,21 @@
       "PUSH_MON"
     ]
   },
-  
-  
-  
-  
-  
-  
-  
   {
     "id": "mon_runewhelp",
     "type": "MONSTER",
     "name": "Runic Whelp",
     "description": "A highly intelligent species of spellcasting-slug, and a student of nature.",
-    "default_faction": "nether",
-	"looks_like": "mon_slug_small",
+    "default_faction": "devil",
+    "looks_like": "mon_slug_small",
     "bodytype": "human",
-    "species": [ "HORROR" ],
+    "species": [ "DEVIL" ],
     "material": [ "iflesh", "demon_chitin" ],
     "diff": 2,
     "volume": "30000 ml",
     "weight": "40750 g",
     "hp": 80,
-    "speed": 180,
+    "speed": 100,
     "symbol": "h",
     "color": "red",
     "aggression": 100,
@@ -1353,7 +1260,7 @@
     "armor_elec": 20,
     "armor_acid": 40,
     "armor_fire": 40,
-	"armor_cut": 10,
+    "armor_cut": 10,
     "armor_stab": 15,
     "armor_bullet": 60,
     "armor_bash": 10,
@@ -1361,18 +1268,15 @@
     "vision_night": 50,
     "death_drops": "runewhelpdrops",
     "harvest": "human2",
-  
     "special_attacks": [
-	  [ "HOWL", 5 ],
-	  [ "TINDALOS_TELEPORT", 5 ],
-	  [ "SHRIEK_STUN", 5 ],
+      [ "HOWL", 5 ],
+      [ "SHRIEK_STUN", 5 ],
       {
         "type": "spell",
         "spell_data": { "id": "phase_shrike_teleport", "min_level": 1 },
         "cooldown": 5,
         "monster_message": "the runic beast leaps into the air before disappearing and reappearing elsewhere!"
       },
-	  
       {
         "type": "spell",
         "spell_data": { "id": "phase_skulker_teleport", "min_level": 1 },
@@ -1398,20 +1302,15 @@
       "PUSH_MON"
     ]
   },
-  
-  
-  
-  
-  
   {
     "id": "mon_runeshark",
     "type": "MONSTER",
     "name": "Bolide Runeshark",
     "description": "A runic beast swimming through the ground as if it were water, taking along with it the thunderous might of the sea.",
-    "default_faction": "nether",
-	"looks_like": "mon_zhark",
+    "default_faction": "devil",
+    "looks_like": "mon_zhark",
     "bodytype": "human",
-    "species": [ "HORROR" ],
+    "species": [ "DEVIL" ],
     "material": [ "iflesh", "demon_chitin" ],
     "diff": 2,
     "volume": "30000 ml",
@@ -1423,37 +1322,33 @@
     "aggression": 100,
     "morale": 100,
     "melee_skill": 5,
-    "melee_dice": 2,
+    "melee_dice": 1,
     "melee_dice_sides": 6,
     "melee_damage": [ { "damage_type": "cold", "amount": 10 } ],
-	 "emit_fields": [
-      { "emit_id": "emit_runewater", "delay": "4 s" }
-    ],
+    "emit_fields": [ { "emit_id": "emit_runewater", "delay": "4 s" } ],
     "dodge": 3,
-    "armor_cold": 30,
+    "armor_cold": 15,
     "armor_elec": 40,
-    "armor_acid": 10,
-    "armor_fire": 10,
-	"armor_cut": 10,
-    "armor_stab": 15,
+    "armor_acid": 5,
+    "armor_fire": 5,
+    "armor_cut": 5,
+    "armor_stab": 8,
     "armor_bullet": 60,
     "armor_bash": 10,
-    "vision_day": 15,
+    "vision_day": 4,
     "vision_night": 50,
     "death_drops": "runewhelpdrops",
     "harvest": "human2",
-  
     "special_attacks": [
-    { "type": "leap", "cooldown": 3, "max_range": 5 },
-	  [ "LUNGE", 3 ],
-	  [ "SHOCKSTORM", 2 ],
+      { "type": "leap", "cooldown": 3, "max_range": 5 },
+	  { "id": "SHOCKSTORM", "cooldown": 14, "range": 2 },
+      [ "LUNGE", 3 ],
       {
         "type": "spell",
         "spell_data": { "id": "phase_shrike_teleport", "min_level": 1 },
         "cooldown": 4,
         "monster_message": "the runic beast leaps into the air before disappearing and reappearing elsewhere!"
       },
-	  
       {
         "type": "spell",
         "spell_data": { "id": "phase_skulker_teleport", "min_level": 1 },
@@ -1479,20 +1374,15 @@
       "PUSH_MON"
     ]
   },
-  
-  
-  
-	  
-  
   {
     "id": "mon_archaeodemon",
     "type": "MONSTER",
     "name": "Archaeo-Demon",
     "description": "A massive ancient devil scribed all-over in enchanted sigils and runes. It's protective magic is nigh impenetrable...",
-    "default_faction": "nether",
-	"looks_like": "mon_flying_polyp",
+    "default_faction": "devil",
+    "looks_like": "mon_flying_polyp",
     "bodytype": "human",
-    "species": [ "HORROR" ],
+    "species": [ "DEVIL" ],
     "material": [ "iflesh", "demon_chitin" ],
     "diff": 2,
     "volume": "30000 ml",
@@ -1509,12 +1399,12 @@
     "melee_dice_sides": 8,
     "melee_damage": [ { "damage_type": "heat", "amount": 10 } ],
     "dodge": 7,
-    "armor_pure": 25	,
+    "armor_pure": 25,
     "armor_cold": 99,
     "armor_elec": 99,
     "armor_acid": 99,
     "armor_fire": 99,
-	"armor_cut": 99,
+    "armor_cut": 99,
     "armor_stab": 99,
     "armor_bullet": 999,
     "armor_bash": 99,
@@ -1522,12 +1412,11 @@
     "vision_night": 50,
     "death_drops": "archaeodemondrops",
     "harvest": "human2",
-  
     "special_attacks": [
-	  [ "GRAB", 7 ],
-	  [ "SMASH", 7 ],
-	  [ "GRAB_DRAG", 7 ],
-    { "id": "SHOCKSTORM", "cooldown": 7, "range": 6 },
+      [ "GRAB", 7 ],
+      [ "SMASH", 7 ],
+      [ "GRAB_DRAG", 7 ],
+      { "id": "SHOCKSTORM", "cooldown": 7, "range": 6 },
       {
         "type": "spell",
         "spell_data": { "id": "point_flare", "min_level": 16 },
@@ -1563,24 +1452,20 @@
       "WEBWALK",
       "CLIMBS",
       "NO_BREATHE",
-	  "HIT_AND_RUN",
+      "HIT_AND_RUN",
       "PATH_AVOID_DANGER_1",
       "PUSH_MON"
     ]
   },
-  
-  
-   
-  
   {
     "id": "mon_archaeodemon2",
     "type": "MONSTER",
     "name": "Archaeo-Demon",
     "description": "The magical etchings on the ancient beast have been cast away and it's pulpy exterior writhes and thrashes",
-    "default_faction": "nether",
-	"looks_like": "mon_flying_polyp",
+    "default_faction": "devil",
+    "looks_like": "mon_flying_polyp",
     "bodytype": "human",
-    "species": [ "HORROR" ],
+    "species": [ "DEVIL" ],
     "material": [ "iflesh", "demon_chitin" ],
     "diff": 2,
     "volume": "30000 ml",
@@ -1597,12 +1482,12 @@
     "melee_dice_sides": 8,
     "melee_damage": [ { "damage_type": "heat", "amount": 10 } ],
     "dodge": 7,
-    "armor_pure": 25	,
+    "armor_pure": 25,
     "armor_cold": 19,
     "armor_elec": 19,
     "armor_acid": 19,
     "armor_fire": 19,
-	"armor_cut": 29,
+    "armor_cut": 29,
     "armor_stab": 29,
     "armor_bullet": 999,
     "armor_bash": 29,
@@ -1610,12 +1495,11 @@
     "vision_night": 50,
     "death_drops": "archaeodemondrops",
     "harvest": "human2",
-  
     "special_attacks": [
-	  [ "GRAB", 7 ],
-	  [ "SMASH", 7 ],
-	  [ "GRAB_DRAG", 7 ],
-    { "id": "SHOCKSTORM", "cooldown": 7, "range": 6 },
+      [ "GRAB", 7 ],
+      [ "SMASH", 7 ],
+      [ "GRAB_DRAG", 7 ],
+      { "id": "SHOCKSTORM", "cooldown": 7, "range": 6 },
       {
         "type": "spell",
         "spell_data": { "id": "point_flare", "min_level": 16 },
@@ -1651,28 +1535,20 @@
       "WEBWALK",
       "CLIMBS",
       "NO_BREATHE",
-	  "HIT_AND_RUN",
+      "HIT_AND_RUN",
       "PATH_AVOID_DANGER_1",
       "PUSH_MON"
     ]
   },
-  
-  
-  
-  
-  
-  
-	  
-  
   {
     "id": "mon_coreconstruct",
     "type": "MONSTER",
     "name": "Multi-Core Construct",
     "description": "A large construct equipped with brightly assembled pieces of various alloys",
-    "default_faction": "nether",
-	"looks_like": "mon_plasticgolem",
+    "default_faction": "devil",
+    "looks_like": "mon_plasticgolem",
     "bodytype": "human",
-    "species": [ "HORROR" ],
+    "species": [ "DEVIL" ],
     "material": [ "iflesh", "demon_chitin" ],
     "diff": 2,
     "volume": "30000 ml",
@@ -1692,7 +1568,7 @@
     "armor_elec": 1,
     "armor_acid": 1,
     "armor_fire": 20,
-	"armor_cut": 15,
+    "armor_cut": 15,
     "armor_stab": 15,
     "armor_bullet": 30,
     "armor_bash": 1,
@@ -1700,14 +1576,13 @@
     "vision_night": 50,
     "death_drops": "multicoredrops",
     "harvest": "human2",
-  
     "special_attacks": [
       [ "RANGED_PULL", 10 ],
-	  [ "GRAB", 7 ],
-	  [ "BIO_OP_IMPALE", 7 ],
-	  [ "BIO_OP_TAKEDOWN", 7 ],
-	  [ "SMASH", 7 ],
-	  [ "GRAB_DRAG", 7 ],
+      [ "GRAB", 7 ],
+      [ "BIO_OP_IMPALE", 7 ],
+      [ "BIO_OP_TAKEDOWN", 7 ],
+      [ "SMASH", 7 ],
+      [ "GRAB_DRAG", 7 ],
       {
         "type": "spell",
         "spell_data": { "id": "phase_shrike_teleport", "min_level": 1 },
@@ -1730,24 +1605,20 @@
       "WEBWALK",
       "CLIMBS",
       "NO_BREATHE",
-	  "HIT_AND_RUN",
+      "HIT_AND_RUN",
       "PATH_AVOID_DANGER_1",
       "PUSH_MON"
     ]
   },
-  
-  
-	  
-  
   {
     "id": "mon_simulacrum",
     "type": "MONSTER",
     "name": "Derelict Simulacrum",
     "description": "A haywire construct that freed itself from the clutches of a wizard. It's blank expression conveys hostility.",
-    "default_faction": "nether",
-	"looks_like": "mon_hallu_mannequin",
+    "default_faction": "devil",
+    "looks_like": "mon_hallu_mannequin",
     "bodytype": "human",
-    "species": [ "HORROR" ],
+    "species": [ "DEVIL" ],
     "material": [ "iflesh", "demon_chitin" ],
     "diff": 2,
     "volume": "30000 ml",
@@ -1767,25 +1638,24 @@
     "armor_elec": 1,
     "armor_acid": 1,
     "armor_fire": 50,
-	"armor_cut": 30,
-    "armor_stab": 15,
+    "armor_cut": 30,
+    "armor_stab": 1,
     "armor_bullet": 50,
     "armor_bash": 30,
     "vision_day": 10,
     "vision_night": 50,
     "death_drops": "simulacrumdrops",
     "harvest": "human2",
-  
     "special_attacks": [
       [ "RANGED_PULL", 10 ],
-	  [ "GRAB", 7 ],
-	  [ "BIO_OP_BIOJUTSU", 7 ],
-	  [ "BIO_OP_DISARM", 7 ],
-	  [ "BIO_OP_IMPALE", 7 ],
-	  [ "BIO_OP_TAKEDOWN", 7 ],
-	  [ "SMASH", 7 ],
-	  [ "GRAB_DRAG", 7 ],
-    { "id": "SHOCKSTORM", "cooldown": 12, "range": 1 },
+      [ "GRAB", 7 ],
+      [ "BIO_OP_BIOJUTSU", 7 ],
+      [ "BIO_OP_DISARM", 7 ],
+      [ "BIO_OP_IMPALE", 7 ],
+      [ "BIO_OP_TAKEDOWN", 7 ],
+      [ "SMASH", 7 ],
+      [ "GRAB_DRAG", 7 ],
+      { "id": "SHOCKSTORM", "cooldown": 12, "range": 1 },
       {
         "type": "spell",
         "spell_data": { "id": "phase_shrike_teleport", "min_level": 1 },
@@ -1808,23 +1678,20 @@
       "WEBWALK",
       "CLIMBS",
       "NO_BREATHE",
-	  "HIT_AND_RUN",
+      "HIT_AND_RUN",
       "PATH_AVOID_DANGER_1",
       "PUSH_MON"
     ]
   },
-  
-  
-  
   {
     "id": "mon_simulacrum2",
     "type": "MONSTER",
     "name": "Inert Simulacrum",
     "description": "A haywire construct that freed itself from the clutches of a wizard. It's blank expression conveys hostility.",
-    "default_faction": "nether",
-	"looks_like": "mon_hallu_mannequin",
+    "default_faction": "devil",
+    "looks_like": "mon_hallu_mannequin",
     "bodytype": "human",
-    "species": [ "HORROR" ],
+    "species": [ "DEVIL" ],
     "material": [ "iflesh", "demon_chitin" ],
     "diff": 2,
     "volume": "30000 ml",
@@ -1844,18 +1711,15 @@
     "armor_elec": 1,
     "armor_acid": 1,
     "armor_fire": 25,
-	"armor_cut": 30,
-    "armor_stab": 15,
+    "armor_cut": 30,
+    "armor_stab": 5,
     "armor_bullet": 50,
     "armor_bash": 30,
     "vision_day": 10,
     "vision_night": 50,
     "death_drops": "simulacrumdrops",
     "harvest": "human2",
-  
-    "special_attacks": [
-	  [ "GRAB_DRAG", 7 ]
-    ],
+    "special_attacks": [ [ "GRAB_DRAG", 7 ] ],
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "STALK", "PLAYER_WEAK", "PLAYER_CLOSE" ],
     "flags": [
       "SEES",
@@ -1865,24 +1729,20 @@
       "WEBWALK",
       "CLIMBS",
       "NO_BREATHE",
-	  "HIT_AND_RUN",
+      "HIT_AND_RUN",
       "PATH_AVOID_DANGER_1",
       "PUSH_MON"
     ]
   },
-  
-  
-  
-
   {
     "id": "mon_grafted_mess",
     "type": "MONSTER",
     "name": "Grafted Mess",
     "description": "Perhaps this thing was once a power-hungry wizard, judging by all the spellcasting",
-    "default_faction": "nether",
-	"looks_like": "mon_devourer_lab_sec",
+    "default_faction": "devil",
+    "looks_like": "mon_devourer_lab_sec",
     "bodytype": "human",
-    "species": [ "HORROR" ],
+    "species": [ "DEVIL" ],
     "material": [ "iflesh", "demon_chitin" ],
     "diff": 2,
     "volume": "30000 ml",
@@ -1902,7 +1762,7 @@
     "armor_elec": 15,
     "armor_acid": 15,
     "armor_fire": 1,
-	"armor_cut": 15,
+    "armor_cut": 15,
     "armor_stab": 15,
     "armor_bullet": 36,
     "armor_bash": 10,
@@ -1910,25 +1770,26 @@
     "vision_night": 50,
     "death_drops": "graftedmessdrops",
     "harvest": "human2",
-  
     "special_attacks": [
       [ "IMPALE", 7 ],
       [ "SMASH", 7 ],
       [ "GENERATOR", 7 ],
       [ "FLESH_TENDRIL", 7 ],
       [ "FLESH_GOLEM", 7 ],
-	  [ "GRAB", 7 ],
+      [ "GRAB", 7 ],
       {
         "type": "spell",
         "spell_data": { "id": "summon_husk", "min_level": 1 },
         "cooldown": 10,
         "monster_message": "out of the grafted mound crawls a shambling husk!"
-      },{
+      },
+      {
         "type": "spell",
         "spell_data": { "id": "summon_crys_husk", "min_level": 1 },
         "cooldown": 10,
         "monster_message": "out of the grafted mound crawls a crystalline husk!"
-      },{
+      },
+      {
         "type": "spell",
         "spell_data": { "id": "summon_nox_husk", "min_level": 1 },
         "cooldown": 10,
@@ -1948,30 +1809,24 @@
       "WEBWALK",
       "CLIMBS",
       "NO_BREATHE",
-	  "HIT_AND_RUN",
+      "HIT_AND_RUN",
       "PATH_AVOID_DANGER_1",
       "PUSH_MON"
     ]
   },
-  
-  
-  
-  
-    {
+  {
     "type": "monstergroup",
     "name": "GROUP_DOLL1",
-	"override": true,
-    "monsters": [ { "monster": "mon_marionette" }]
+    "override": true,
+    "monsters": [ { "monster": "mon_marionette" } ]
   },
-  
-    {
+  {
     "type": "monstergroup",
     "name": "GROUP_DOLL",
-	"override": true,
-    "monsters": [ { "monster": "mon_marionette2" }]
+    "override": true,
+    "monsters": [ { "monster": "mon_marionette2" } ]
   },
-  
-   {
+  {
     "id": "call_marionette",
     "type": "SPELL",
     "name": "Call Marionettes",
@@ -1995,9 +1850,7 @@
     "effect": "summon",
     "effect_str": "GROUP_DOLL"
   },
-  
-
-   {
+  {
     "id": "call_marionette1",
     "type": "SPELL",
     "name": "Call Marionettes",
@@ -2021,17 +1874,15 @@
     "effect": "summon",
     "effect_str": "GROUP_DOLL1"
   },
-  
-
   {
     "id": "mon_marionette_master",
     "type": "MONSTER",
     "name": "Marionette Master",
     "description": "Black strings tendril out of this shadowy figures body from all angles... so it is he who has controlled them all along!",
-    "default_faction": "nether",
-	"looks_like": "mon_zombie_master",
+    "default_faction": "devil",
+    "looks_like": "mon_zombie_master",
     "bodytype": "human",
-    "species": [ "HORROR" ],
+    "species": [ "DEVIL" ],
     "material": [ "iflesh", "demon_chitin" ],
     "diff": 2,
     "volume": "30000 ml",
@@ -2051,7 +1902,7 @@
     "armor_elec": 50,
     "armor_acid": 25,
     "armor_fire": 11,
-	"armor_cut": 30,
+    "armor_cut": 30,
     "armor_stab": 35,
     "armor_bullet": 50,
     "armor_bash": 10,
@@ -2059,12 +1910,11 @@
     "vision_night": 50,
     "death_drops": "marionettedrops",
     "harvest": "human2",
-  
     "special_attacks": [
       [ "RATTLE", 7 ],
       [ "SHRIEK_STUN", 7 ],
       [ "SHRIEK_ALERT", 7 ],
-	  [ "GRAB", 7 ],
+      [ "GRAB", 7 ],
       [ "PARA_STING", 7 ],
       {
         "type": "spell",
@@ -2092,22 +1942,20 @@
       "WEBWALK",
       "CLIMBS",
       "NO_BREATHE",
-	  "HIT_AND_RUN",
+      "HIT_AND_RUN",
       "PATH_AVOID_DANGER_1",
       "PUSH_MON"
     ]
   },
-  
-
   {
     "id": "mon_marionette",
     "type": "MONSTER",
     "name": "Bourreau Marionette (Stringed)",
     "description": "A haunting construct with it's guillotine arms suspended in the air by magical transluscent threads, made to look as if it were flying",
-    "default_faction": "nether",
-	"looks_like": "mon_zombie_brute_winged",
+    "default_faction": "devil",
+    "looks_like": "mon_zombie_brute_winged",
     "bodytype": "human",
-    "species": [ "HORROR" ],
+    "species": [ "DEVIL" ],
     "material": [ "iflesh", "demon_chitin" ],
     "diff": 2,
     "volume": "30000 ml",
@@ -2127,7 +1975,7 @@
     "armor_elec": 50,
     "armor_acid": 15,
     "armor_fire": 1,
-	"armor_cut": 30,
+    "armor_cut": 30,
     "armor_stab": 35,
     "armor_bullet": 50,
     "armor_bash": 10,
@@ -2135,12 +1983,11 @@
     "vision_night": 50,
     "death_drops": "marionettedrops",
     "harvest": "human2",
-  
     "special_attacks": [
       [ "RATTLE", 7 ],
       [ "SHRIEK_STUN", 7 ],
       [ "SHRIEK_ALERT", 7 ],
-	  [ "GRAB", 7 ],
+      [ "GRAB", 7 ],
       {
         "type": "spell",
         "spell_data": { "id": "call_marionette", "min_level": 1 },
@@ -2161,22 +2008,20 @@
       "WEBWALK",
       "CLIMBS",
       "NO_BREATHE",
-	  "HIT_AND_RUN",
+      "HIT_AND_RUN",
       "PATH_AVOID_DANGER_1",
       "PUSH_MON"
     ]
   },
-  
-  
   {
     "id": "mon_marionette2",
     "type": "MONSTER",
     "name": "Bourreau Marionette (Stringless)",
     "description": "A haunting construct with it's guillotine arms suspended in the air by magical transluscent threads, made to look as if it were flying",
-    "default_faction": "nether",
-	"looks_like": "mon_zombie_brute_winged",
+    "default_faction": "devil",
+    "looks_like": "mon_zombie_brute_winged",
     "bodytype": "human",
-    "species": [ "HORROR" ],
+    "species": [ "DEVIL" ],
     "material": [ "iflesh", "demon_chitin" ],
     "diff": 2,
     "volume": "30000 ml",
@@ -2196,7 +2041,7 @@
     "armor_elec": 50,
     "armor_acid": 25,
     "armor_fire": 1,
-	"armor_cut": 30,
+    "armor_cut": 30,
     "armor_stab": 35,
     "armor_bullet": 50,
     "armor_bash": 10,
@@ -2204,13 +2049,7 @@
     "vision_night": 50,
     "death_drops": "marionettedrops",
     "harvest": "human2",
-  
-    "special_attacks": [
-      [ "RATTLE", 7 ],
-      [ "SHRIEK_STUN", 7 ],
-      [ "SHRIEK_ALERT", 7 ],
-	  [ "GRAB", 7 ]
-    ],
+    "special_attacks": [ [ "RATTLE", 7 ], [ "SHRIEK_STUN", 7 ], [ "SHRIEK_ALERT", 7 ], [ "GRAB", 7 ] ],
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "STALK", "PLAYER_WEAK", "PLAYER_CLOSE" ],
     "flags": [
       "SEES",
@@ -2224,21 +2063,12 @@
       "WEBWALK",
       "CLIMBS",
       "NO_BREATHE",
-	  "HIT_AND_RUN",
+      "HIT_AND_RUN",
       "PATH_AVOID_DANGER_1",
       "PUSH_MON"
     ]
   },
-  
-
-
-  
-  
-
-
-  
-     
-        {
+  {
     "type": "SPELL",
     "id": "dark_haze_cast",
     "name": "Dark Haze Cast",
@@ -2255,7 +2085,7 @@
     "min_range": 8,
     "max_range": 8,
     "field_id": "fd_web2",
-	"min_aoe": 2,
+    "min_aoe": 2,
     "max_aoe": 2,
     "min_field_intensity": 1,
     "max_field_intensity": 1,
@@ -2264,17 +2094,15 @@
     "max_level": 35,
     "energy_source": "STAMINA"
   },
-  
-  
   {
     "id": "mon_shadow_seer",
     "type": "MONSTER",
     "name": "Shadow Seer",
     "description": "A concerning figure cloaked in shadow spreading evil mist about.",
-    "default_faction": "nether",
-	"looks_like": "mon_halloween_ghost",
+    "default_faction": "devil",
+    "looks_like": "mon_halloween_ghost",
     "bodytype": "human",
-    "species": [ "HORROR" ],
+    "species": [ "DEVIL" ],
     "material": [ "iflesh", "demon_chitin" ],
     "diff": 2,
     "volume": "30000 ml",
@@ -2294,7 +2122,7 @@
     "armor_elec": 1,
     "armor_acid": 50,
     "armor_fire": 1,
-	"armor_cut": 30,
+    "armor_cut": 30,
     "armor_stab": 15,
     "armor_bullet": 50,
     "armor_bash": 30,
@@ -2302,13 +2130,10 @@
     "vision_night": 50,
     "death_drops": "seerdrops",
     "harvest": "human2",
-	 "emit_fields": [
-      { "emit_id": "emit_dark_haze", "delay": "5 s" }
-    ],
-  
+    "emit_fields": [ { "emit_id": "emit_dark_haze", "delay": "5 s" } ],
     "special_attacks": [
       [ "RANGED_PULL", 8 ],
-	  [ "GRAB", 10 ],
+      [ "GRAB", 10 ],
       {
         "type": "spell",
         "spell_data": { "id": "dark_haze_cast", "min_level": 1 },
@@ -2325,30 +2150,20 @@
       "WEBWALK",
       "CLIMBS",
       "NO_BREATHE",
-	  "HIT_AND_RUN",
+      "HIT_AND_RUN",
       "PATH_AVOID_DANGER_1",
       "PUSH_MON"
     ]
-  },  
-  
-  
-  
-  
-  
-  
-  
-
-  
-  
+  },
   {
     "id": "mon_saurian",
     "type": "MONSTER",
     "name": "Geo-Saurian",
     "description": "Saurian!",
-    "default_faction": "nether",
-	"looks_like": "mon_gator",
+    "default_faction": "devil",
+    "looks_like": "mon_gator",
     "bodytype": "gator",
-    "species": [ "HORROR" ],
+    "species": [ "DEVIL" ],
     "material": [ "iflesh", "demon_chitin" ],
     "diff": 2,
     "volume": "30000 ml",
@@ -2367,8 +2182,8 @@
     "armor_cold": 1,
     "armor_elec": 50,
     "armor_acid": 50,
-    "armor_fire":25,
-	"armor_cut": 1,
+    "armor_fire": 25,
+    "armor_cut": 1,
     "armor_stab": 30,
     "armor_bullet": 50,
     "armor_bash": 30,
@@ -2376,12 +2191,11 @@
     "vision_night": 50,
     "death_drops": "sauriandrops",
     "harvest": "human2",
-  
     "special_attacks": [
-	  [ "GRAB", 10 ],
-    { "id": "LUNGE", "cooldown": 8, "max_range": 5 },
-    { "type": "leap", "cooldown": 3, "max_range": 5 },
-    { "id": "SPIT_SAP", "cooldown": 5, "min_mul": 1, "max_mul": 2 },
+      [ "GRAB", 10 ],
+      { "id": "LUNGE", "cooldown": 8, "max_range": 5 },
+      { "type": "leap", "cooldown": 3, "max_range": 5 },
+      { "id": "SPIT_SAP", "cooldown": 5, "min_mul": 1, "max_mul": 2 },
       {
         "type": "spell",
         "spell_data": { "id": "phase_shrike_teleport", "min_level": 1 },
@@ -2401,11 +2215,10 @@
       "WEBWALK",
       "CLIMBS",
       "NO_BREATHE",
-	  "HIT_AND_RUN",
+      "HIT_AND_RUN",
       "HARDTOSHOOT",
       "PATH_AVOID_DANGER_1",
       "PUSH_MON"
     ]
-  } 
-  
+  }
 ]
