@@ -19,6 +19,25 @@
     "color": "black"
   },
   {
+    "id": "tricorne_aura",
+    "type": "ARMOR",
+    "name": { "str": "illusory tricorne" },
+    "description": "A tricorne that you can see (and fits you perfectly) but cannot feel in any way.",
+    "weight": "1 g",
+    "volume": "1 ml",
+    "longest_side": "1 cm",
+    "looks_like": "tricorne",
+    "price": 2000,
+    "price_postapoc": 250,
+    "to_hit": 3,
+    "bashing": 14,
+    "cutting": 3,
+    "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "ONLY_ONE", "TRADER_AVOID", "AURA", "NONCONDUCTIVE" ],
+    "material": [ "cotton" ],
+    "symbol": ".",
+    "color": "black"
+  },
+  {
     "id": "pants_leather_aura",
     "type": "ARMOR",
     "name": { "str": "illusory slacks" },

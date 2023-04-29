@@ -126,13 +126,12 @@
     "id": "pact_of_flame_enchantment",
     "condition": "ALWAYS",
     "intermittent_activation": { "effects": [ { "frequency": "7 d", "spell_effects": [ { "id": "spawn_spell_scroll_devil" } ] } ] },
-    "values": [ { "value": "MAX_MANA", "add": 2000 }, { "value": "REGEN_MANA", "multiply": 0.5 } ]
+    "values": [ { "value": "MAX_MANA", "add": 2000 }, { "value": "REGEN_MANA", "multiply": 0.5 }, { "value": "LUMINATION", "add": 15 } ]
   },
   {
     "type": "enchantment",
     "id": "pact_of_flame_enchantment2",
     "condition": "ALWAYS",
-    "intermittent_activation": { "effects": [ { "frequency": "24 h", "spell_effects": [ { "id": "summon_flame" } ] } ] },
     "values": [ { "value": "INTELLIGENCE", "add": 4 } ]
   },
   {

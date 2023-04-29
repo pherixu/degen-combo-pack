@@ -181,7 +181,7 @@
     "bashing": 14,
     "cutting": 3,
     "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "ONLY_ONE", "TRADER_AVOID", "AURA", "INTEGRATED", "NONCONDUCTIVE" ],
-    "material": [ "flesh" ],
+    "material": [ "magical_material" ],
     "symbol": ".",
     "charges_per_use": 1,
     "color": "brown",
@@ -270,7 +270,7 @@
     "bashing": 14,
     "cutting": 3,
     "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "ONLY_ONE", "TRADER_AVOID", "AURA", "INTEGRATED", "NONCONDUCTIVE" ],
-    "material": [ "flesh" ],
+    "material": [ "magical_material" ],
     "symbol": ".",
     "color": "brown",
     "use_action": [ { "type": "cast_spell", "spell_id": "summon_heat", "no_fail": true, "level": 1, "need_worn": true } ],
@@ -323,7 +323,7 @@
       "INTEGRATED",
       "NONCONDUCTIVE"
     ],
-    "material": [ "flesh" ],
+    "material": [ "magical_material" ],
     "symbol": ".",
     "color": "brown",
     "armor": [
@@ -386,7 +386,7 @@
     "bashing": 14,
     "cutting": 3,
     "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "ONLY_ONE", "TRADER_AVOID", "AURA", "INTEGRATED", "NONCONDUCTIVE" ],
-    "material": [ "flesh" ],
+    "material": [ "magical_material" ],
     "symbol": ".",
     "color": "brown",
     "relic_data": { "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "mutations": [ "LIGHTWEIGHT", "BEAUTIFUL2" ] } ] }
@@ -416,7 +416,7 @@
     "bashing": 14,
     "cutting": 3,
     "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "ONLY_ONE", "TRADER_AVOID", "AURA", "INTEGRATED", "NONCONDUCTIVE", "PSYSHIELD_PARTIAL", "DIMENSIONAL_ANCHOR", "PORTAL_PROOF" ],
-    "material": [ "flesh" ],
+    "material": [ "magical_material" ],
     "symbol": ".",
     "color": "brown"
   },
@@ -434,7 +434,7 @@
     "bashing": 14,
     "cutting": 3,
     "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "ONLY_ONE", "TRADER_AVOID", "AURA", "INTEGRATED", "NONCONDUCTIVE", "PSYSHIELD_PARTIAL", "PORTAL_PROOF" ],
-    "material": [ "flesh" ],
+    "material": [ "magical_material" ],
     "symbol": ".",
     "color": "brown"
   },
@@ -442,7 +442,7 @@
     "id": "enlargement_aura",
     "type": "ARMOR",
     "name": { "str": "Enlargement Aura" },
-    "description": "He's huge.",
+    "description": "LIKE A TONKA TRUCK.",
     "weight": "1 g",
     "volume": "1 ml",
     "longest_side": "1 cm",
@@ -458,7 +458,7 @@
     "relic_data": {
       "passive_effects": [
         { "has": "WORN", "condition": "ALWAYS", "mutations": [ "HUGE", "PONDEROUS3", "MUT_TOUGH2", "TERRIFYING" ] }, 
-		{ "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "INTELLIGENCE", "add": 1 } ] }
+		{ "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "STRENGTH", "add": 3 } ] }
       ]
     }
   },
@@ -727,7 +727,7 @@
     "longest_side": "1 cm",
     "price": 5000,
     "price_postapoc": 10,
-    "material": [ "alien_liquid" ],
+    "material": [ "magical_material" ],
     "symbol": "c",
     "color": "white",
     "use_action": { "type": "cast_spell", "spell_id": "spawn_fast_reader_aura", "no_fail": true, "level": 1, "need_wielding": true }
@@ -744,7 +744,7 @@
     "longest_side": "1 cm",
     "price": 5000,
     "price_postapoc": 10,
-    "material": [ "alien_liquid" ],
+    "material": [ "magical_material" ],
     "symbol": "c",
     "color": "white",
     "use_action": { "type": "cast_spell", "spell_id": "spawn_fast_reader_aura2", "no_fail": true, "level": 1, "need_wielding": true }
@@ -761,7 +761,7 @@
     "longest_side": "1 cm",
     "price": 5000,
     "price_postapoc": 10,
-    "material": [ "alien_liquid" ],
+    "material": [ "magical_material" ],
     "symbol": "c",
     "color": "white",
     "use_action": { "type": "cast_spell", "spell_id": "spawn_fast_reader_aura3", "no_fail": true, "level": 1, "need_wielding": true }

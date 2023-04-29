@@ -69,6 +69,58 @@
     }
   },
   {
+    "type": "palette",
+    "id": "demonfort_palette",
+    "terrain": {
+      " ": "t_floor_metal_gangway",
+      "d": "t_floor_metal_gangway",
+      "W": "t_rock_smooth",
+      "D": "t_door_metal_bulkhead_o",
+      "s": "t_floor_metal_gangway",
+      ".": "t_concrete",
+      ",": "t_thconc_floor",
+      "&": "t_thconc_floor",
+      "T": "t_thconc_floor",
+      "t": "t_thconc_floor",
+      "6": "t_concrete",
+      "R": "t_concrete",
+      "b": "t_concrete",
+      "F": "t_concrete",
+      "Y": "t_concrete",
+      "#": "t_concrete",
+      "L": "t_concrete",
+      "B": "t_concrete",
+      "w": "t_concrete",
+      "X": "t_concrete",
+      "=": "t_concrete",
+      "c": "t_concrete",
+      "A": "t_open_air",
+      ">": "t_slope_down",
+      "<": "t_slope_up",
+      "f": "t_rock_floor_no_roof",
+      "O": "t_concrete"
+    },
+    "furniture": {
+      "c": "f_arcade_machine",
+      "T": "f_toilet",
+      "&": "f_machinery_old",
+      "#": "f_displaycase",
+      "6": "f_alien_scar",
+      "R": "f_rack_wood",
+      "b": "f_target",
+	  "7": "f_magic_circle",
+      "F": "f_grave_stone",
+      "Y": "f_dancing_pole",
+      "L": "f_alien_pod",
+      "t": "f_trashcan",
+      "B": "f_alien_table",
+      "w": "f_locker",
+      "X": "f_crate_c",
+      "=": "f_piano"
+    },
+    "toilets": { "T": {  } }
+  },
+  {
     "type": "mapgen",
     "method": "json",
     "om_terrain": [
@@ -78,7 +130,7 @@
     ],
     "weight": 250,
     "object": {
-      "fill_ter": "t_dirt",
+      "fill_ter": "t_floor_metal_gangway",
       "rows": [
         "                                                                                                ",
         "                                         WWW                                                    ",
@@ -153,14 +205,14 @@
         "                                                                                                ",
         "                                                                                                "
       ],
-      "palettes": [ "fort_palette" ],
+      "palettes": [ "demonfort_palette" ],
       "items": {
-        "t": [ { "item": "brimstone_ammunition", "chance": 50, "repeat": [ 1, 3 ] } ],
+        "t": [ { "item": "brimstone_ammunition", "chance": 50, "repeat": [ 3, 5 ] } ],
         "R": [ { "item": "spellbook_loot_2", "chance": 50, "repeat": [ 1, 3 ] } ],
         "#": [ { "item": "gloves", "chance": 75 } ],
         "L": { "item": "enchanted_combat_items", "chance": 70, "repeat": [ 1, 3 ] },
-        "F": { "item": "enchanted_misc", "chance": 70 },
-        "w": { "item": "benjamins", "chance": 100, "repeat": [ 3, 7 ] },
+        "F": { "item": "enchanted_misc", "chance": 70, "repeat": [ 1, 3 ] },
+        "w": { "item": "benjamins", "chance": 100, "repeat": [ 5, 10 ] },
         "=": { "item": "ammo_cannon", "chance": 100 },
         "X": { "item": "fort_crate", "chance": 70, "repeat": [ 1, 10 ] },
         "O": { "item": "fort_powderbarrel", "chance": 100 }
@@ -169,7 +221,7 @@
         "?": "f_stone_throne"
       },
       "place_loot": [  ],
-      "place_monsters": [ { "monster": "GROUP_DEMONFORT", "x": [ 40, 45 ], "y": [ 33, 36 ], "repeat": [ 8, 16 ], "density": 0.1 } ]
+      "place_monsters": [ { "monster": "GROUP_DEMONFORT", "x": [ 34, 40 ], "y": [ 30, 40 ], "repeat": [ 15, 20 ], "density": 0.1 } ]
     }
   },
   {
@@ -182,7 +234,7 @@
     ],
     "weight": 250,
     "object": {
-      "fill_ter": "t_dirt",
+      "fill_ter": "t_floor_metal_gangway",
       "rows": [
         "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
         "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfffAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
@@ -202,7 +254,7 @@
         "AAffffffffffffffAAAAAAAAAAAfffffffAAAAAAAAAAAAAAAAfffffffAAAAAAAAAAAAffffffffffffffAAAAAAAAAAAAA",
         "AAffffQfffffffffffffffffffffffffAAAAAAAAAAAAAAAAAAAAffffffffffffffffffffffffffQffffAAAAAAAAAAAAA",
         "AAffffffffffffffffffffffffffffAAAAAAAAAAAAAAAAAAAAAAAAfffffffffffffffffffffffffffffAAAAAAAAAAAAA",
-        "AAfffffffffffffffffffffffffAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAffffffffffffffffffffffffffAAAAAAAAAAAAA",
+        "AAffffffZffffffffffffffffffAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfffffffffffffffffZffffffffAAAAAAAAAAAAA",
         "AAAfffffffffffffffffffff>>>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA>>>ffffffffffffffffffffffAAAAAAAAAAAAAA",
         "AAAAfffffffffffAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfffffffffAAAAAAAAAAAAAAA",
         "AAAAAffffffffffAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfffffffffAAAAAAAAAAAAAAAA",
@@ -257,11 +309,11 @@
         "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
         "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
       ],
-      "palettes": [ "fort_palette" ],
+      "palettes": [ "demonfort_palette" ],
       "items": {  },
       "place_loot": [  ],
       "place_monsters": [  ],
-      "monsters": { "Z": { "monster": "GROUP_MAGES", "chance": 100, "repeat": 2 } },
+      "monsters": { "Z": { "monster": "GROUP_MAGES", "chance": 100, "repeat": 4 } },
       "vehicles": { "U": { "vehicle": "cannon_3in", "chance": 100 }, "Q": { "vehicle": "cannon_3in_plugged", "chance": 100 } }
     }
   },
@@ -295,7 +347,7 @@
     ],
     "name": "demonic fortress",
     "sym": "F",
-    "color": "red",
+    "color": "black",
     "see_cost": 3
   },
   {
