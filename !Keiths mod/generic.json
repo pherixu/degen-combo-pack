@@ -107,7 +107,7 @@
     "id": "constr_stone_altar",
     "group": "build_stone_altar",
     "category": "FURN",
-    "required_skills": [ [ "speech", 3 ], [ "fabrication", 1 ] ],
+    "required_skills": [ [ "spellcraft", 3 ], [ "fabrication", 3 ] ],
     "time": "6 h",
 	"activity_level": "LIGHT_EXERCISE",
     "components": [ [ [ "skull_human", 3 ] ], [ [ "rock_large", 3 ] ], [ [ "blood", 3 ] ] ],
@@ -251,7 +251,7 @@
     "coverage": 60,
     "required_str": -1,
     "crafting_pseudo_item": "fake_altar_essence",
-    "looks_like": "f_orrery",
+    "looks_like": "f_attunement_altar",
     "emissions": [ "emit_glimmer" ],
     "flags": [ "TRANSPARENT", "PLACE_ITEM", "MOUNTABLE", "FLAT_SURF", "USABLE_FIRE" ],
     "deconstruct": {
@@ -332,7 +332,7 @@
     "move_cost_mod": 2,
     "coverage": 60,
     "required_str": -1,
-	"looks_like": "f_machinery_old",
+	"looks_like": "f_orrery",
     "crafting_pseudo_item": "fake_scroll_printer",
     "emissions": [ "emit_glimmer" ],
     "flags": [ "TRANSPARENT", "PLACE_ITEM", "MOUNTABLE", "FLAT_SURF", "USABLE_FIRE" ],
@@ -2591,15 +2591,7 @@
           "crazed_note",
           "magical_times_old",
           "magical_times_recent",
-		  "pocket_dimension",
-		  "survivors_memory_1", 
-		  "survivors_memory_2", 
-		  "survivors_memory_3", 
-		  "survivors_memory_4", 
-		  "survivors_memory_5", 
-		  "survivors_memory_6", 
-		  "survivors_memory_7", 
-		  "desperate_letter"
+		  "pocket_dimension"
         ]
       }
     ]
@@ -2685,15 +2677,7 @@
           "crazed_note",
           "magical_times_old",
           "magical_times_recent",
-		  "pocket_dimension", 
-		  "survivors_memory_1", 
-		  "survivors_memory_2", 
-		  "survivors_memory_3", 
-		  "survivors_memory_4", 
-		  "survivors_memory_5", 
-		  "survivors_memory_6", 
-		  "survivors_memory_7", 
-		  "desperate_letter"
+		  "pocket_dimension"
         ]
       }
     ]
@@ -2998,7 +2982,7 @@
     "type": "AMMO",
     "ammo_type": "brimstone_ammo",
     "name": { "str": "innocent tear", "str_pl": "innocent tears" },
-    "description": "A lone tear, glistening so brightly that it could only drop from an innocent eye. Essentially sadness. Crush in the palm of your hand to ground yourself into this reality, keeping you from drifting into the land of dreams.",
+    "description": "A lone tear, glistening so brightly that it could only drop from an innocent eye. Essentially sadness. Crush in the palm of your hand to stave off the encroaching tide of apathy.",
     "weight": "1 g",
     "volume": "10 ml",
 	"looks_like": "water_clean",

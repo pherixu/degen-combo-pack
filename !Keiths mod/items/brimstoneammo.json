@@ -490,6 +490,10 @@
     {
       "id": "SAW_M",
       "level": 1
+    },
+	{
+      "id": "RED_CIRCLE",
+      "level": 1
     }
   ],
   "components": [
@@ -603,6 +607,10 @@
     },
     {
       "id": "SAW_M",
+      "level": 1
+    },
+	{
+      "id": "BLUE_CIRCLE",
       "level": 1
     }
   ],
@@ -718,6 +726,10 @@
     {
       "id": "SAW_M",
       "level": 1
+    },
+	{
+      "id": "GREEN_CIRCLE",
+      "level": 1
     }
   ],
   "components": [
@@ -831,6 +843,10 @@
     },
     {
       "id": "SAW_M",
+      "level": 1
+    },
+	{
+      "id": "BLACK_CIRCLE",
       "level": 1
     }
   ],
@@ -946,6 +962,10 @@
     {
       "id": "SAW_M",
       "level": 1
+    },
+	{
+      "id": "WHITE_CIRCLE",
+      "level": 1
     }
   ],
   "components": [
@@ -1055,6 +1075,10 @@
     },
     {
       "id": "SAW_M",
+      "level": 1
+    },
+	{
+      "id": "RED_CIRCLE",
       "level": 1
     }
   ],
@@ -1166,6 +1190,10 @@
     {
       "id": "SAW_M",
       "level": 1
+    },
+	{
+      "id": "BLUE_CIRCLE",
+      "level": 1
     }
   ],
   "components": [
@@ -1275,6 +1303,10 @@
     },
     {
       "id": "SAW_M",
+      "level": 1
+    },
+	{
+      "id": "GREEN_CIRCLE",
       "level": 1
     }
   ],
@@ -1386,6 +1418,10 @@
     {
       "id": "SAW_M",
       "level": 1
+    },
+	{
+      "id": "BLACK_CIRCLE",
+      "level": 1
     }
   ],
   "components": [
@@ -1495,6 +1531,10 @@
     },
     {
       "id": "SAW_M",
+      "level": 1
+    },
+	{
+      "id": "WHITE_CIRCLE",
       "level": 1
     }
   ],
@@ -2137,6 +2177,10 @@
     {
       "id": "CUT",
       "level": 2
+    },
+	{
+      "id": "RED_CIRCLE",
+      "level": 1
     }
   ],
   "proficiencies": [
@@ -2183,7 +2227,7 @@
   },
   "symbol": "=",
   "color": "red",
-  "description": "A prepared blunderbuss shot comprised of flechettes of brimstone. Simple enough that it doesn't require a magic circle to enchant.",
+  "description": "A prepared blunderbuss shot comprised of flechettes of brimstone.",
   "material": [
     "plastic",
     "powder",
@@ -2242,6 +2286,10 @@
     {
       "id": "CUT",
       "level": 2
+    },
+	{
+      "id": "BLUE_CIRCLE",
+      "level": 1
     }
   ],
   "proficiencies": [
@@ -2288,7 +2336,7 @@
   },
   "symbol": "=",
   "color": "red",
-  "description": "A prepared blunderbuss shot comprised of flechettes of brimstone. Simple enough that it doesn't require a magic circle to enchant.",
+  "description": "A prepared blunderbuss shot comprised of flechettes of brimstone.",
   "material": [
     "plastic",
     "powder",
@@ -2347,6 +2395,10 @@
     {
       "id": "CUT",
       "level": 2
+    },
+	{
+      "id": "GREEN_CIRCLE",
+      "level": 1
     }
   ],
   "proficiencies": [
@@ -2393,7 +2445,7 @@
   },
   "symbol": "=",
   "color": "red",
-  "description": "A prepared blunderbuss shot comprised of flechettes of brimstone. Simple enough that it doesn't require a magic circle to enchant.",
+  "description": "A prepared blunderbuss shot comprised of flechettes of brimstone.",
   "material": [
     "plastic",
     "powder",
@@ -2452,6 +2504,10 @@
     {
       "id": "CUT",
       "level": 2
+    },
+	{
+      "id": "BLACK_CIRCLE",
+      "level": 1
     }
   ],
   "proficiencies": [
@@ -2498,7 +2554,7 @@
   },
   "symbol": "=",
   "color": "red",
-  "description": "A prepared blunderbuss shot comprised of flechettes of brimstone. Simple enough that it doesn't require a magic circle to enchant.",
+  "description": "A prepared blunderbuss shot comprised of flechettes of brimstone.",
   "material": [
     "plastic",
     "powder",
@@ -2557,6 +2613,10 @@
     {
       "id": "CUT",
       "level": 2
+    },
+	{
+      "id": "WHITE_CIRCLE",
+      "level": 1
     }
   ],
   "proficiencies": [
@@ -2603,7 +2663,7 @@
   },
   "symbol": "=",
   "color": "red",
-  "description": "A prepared blunderbuss shot comprised of flechettes of brimstone. Simple enough that it doesn't require a magic circle to enchant.",
+  "description": "A prepared blunderbuss shot comprised of flechettes of brimstone.",
   "material": [
     "plastic",
     "powder",
@@ -2642,8 +2702,8 @@
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_CORPO",
     "skill_used": "spellcraft",
-    "skills_required": [ "spellcraft", 3 ],
-    "difficulty": 3,
+    "skills_required": [ "spellcraft", 7 ],
+    "difficulty": 7,
     "qualities": [ { "id": "RED_CIRCLE", "level": 1 }, { "id": "MANA_WEAVE", "level": 1 } ],
     "time": "10 s",
     "autolearn": true,
@@ -2671,8 +2731,8 @@
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_CORPO",
     "skill_used": "spellcraft",
-    "skills_required": [ "spellcraft", 3 ],
-    "difficulty": 3,
+    "skills_required": [ "spellcraft", 7 ],
+    "difficulty": 7,
     "qualities": [ { "id": "BLUE_CIRCLE", "level": 1 }, { "id": "MANA_WEAVE", "level": 1 } ],
     "time": "10 s",
     "autolearn": true,
@@ -2700,8 +2760,8 @@
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_CORPO",
     "skill_used": "spellcraft",
-    "skills_required": [ "spellcraft", 3 ],
-    "difficulty": 3,
+    "skills_required": [ "spellcraft", 7 ],
+    "difficulty": 7,
     "qualities": [ { "id": "GREEN_CIRCLE", "level": 1 }, { "id": "MANA_WEAVE", "level": 1 } ],
     "time": "10 s",
     "autolearn": true,
@@ -2729,8 +2789,8 @@
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_CORPO",
     "skill_used": "spellcraft",
-    "skills_required": [ "spellcraft", 3 ],
-    "difficulty": 3,
+    "skills_required": [ "spellcraft", 7 ],
+    "difficulty": 7,
     "qualities": [ { "id": "BLACK_CIRCLE", "level": 1 }, { "id": "MANA_WEAVE", "level": 1 } ],
     "time": "10 s",
     "autolearn": true,
@@ -2758,8 +2818,8 @@
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_CORPO",
     "skill_used": "spellcraft",
-    "skills_required": [ "spellcraft", 3 ],
-    "difficulty": 3,
+    "skills_required": [ "spellcraft", 7 ],
+    "difficulty": 7,
     "qualities": [ { "id": "WHITE_CIRCLE", "level": 1 }, { "id": "MANA_WEAVE", "level": 1 } ],
     "time": "10 s",
     "autolearn": true,
@@ -3363,102 +3423,6 @@
         "stick",
         4
       ]
-    ]
-  ]
-},
-{
-  "type": "recipe",
-  "activity_level": "LIGHT_EXERCISE",
-  "result": "brimstone_shiv",
-  "category": "CC_WEAPON",
-  "subcategory": "CSC_WEAPON_CUTTING",
-  "skill_used": "spellcraft",
-  "skills_required": [],
-  "time": "1 m",
-  "reversible": true,
-  "autolearn": true,
-  "components": [
-    [
-      [
-        "brimstone_sliver",
-        1
-      ]
-    ],
-    [
-      [
-        "cotton_patchwork",
-        1
-      ],
-      [
-        "duct_tape",
-        10
-      ]
-    ]
-  ]
-},
-{
-    "id": "shiv_fire",
-    "type": "SPELL",
-    "name": "Fire",
-    "description": "",
-    "effect": "attack",
-    "shape": "blast",
-    "flags": [ "NO_LEGS", "IGNITE_FLAMMABLE" ],
-    "valid_targets": [ "hostile" ],
-    "max_level": 10,
-    "min_damage": 1,
-    "max_damage": 1,
-    "base_casting_time": 0,
-    "energy_source": "STAMINA",
-    "difficulty": 2,
-	"damage_type": "heat",
-    "sound_description": "a fwoosh"
-  },
-{
-  "type": "GENERIC",
-  "id": "brimstone_shiv",
-  "symbol": ",",
-  "color": "light_cyan",
-  "name": {
-    "str": "brimstone shiv"
-  },
-  "description": "A brimstone shard with wrapping at one end so it can be safely wielded.",
-  "material": [
-    "brimstone",
-    "cotton"
-  ],
-  "weight": "115 g",
-  "price_postapoc": 10,
-  "volume": "30 ml",
-  "longest_side": "20 cm",
-  "cutting": 6,
-  "to_hit": {
-    "grip": "none",
-    "length": "hand",
-    "surface": "line",
-    "balance": "good"
-  },
-  "flags": [
-    "SHEATH_KNIFE",
-    "CONDUCTIVE",
-    "FRAGILE_MELEE"
-  ],
-  "weapon_category": [
-    "SHIVS"
-  ],
-  "relic_data": {
-      "passive_effects": [
-        {
-          "has": "WIELD",
-          "condition": "ALWAYS",
-          "hit_you_effect": [ { "id": "shiv_fire" } ]
-        }
-      ]
-    },
-  "qualities": [
-    [
-      "BUTCHER",
-      -18
     ]
   ]
 },
@@ -4262,7 +4226,7 @@
   "result": "brimstone_nail",
   "category": "CC_OTHER",
   "subcategory": "CSC_OTHER_MATERIALS",
-  "skill_used": "spellcraft",
+  "skill_used": "fabrication",
   "difficulty": 1,
   "time": "3 h",
   "autolearn": true,
@@ -4287,6 +4251,12 @@
         1
       ]
     ]
+  ],
+  "qualities": [
+	{
+      "id": "RED_CIRCLE",
+      "level": 1
+    }
   ],
   "tools": [
     [
@@ -4303,7 +4273,7 @@
   "result": "blue_brimstone_nail",
   "category": "CC_OTHER",
   "subcategory": "CSC_OTHER_MATERIALS",
-  "skill_used": "spellcraft",
+  "skill_used": "fabrication",
   "difficulty": 1,
   "time": "3 h",
   "autolearn": true,
@@ -4328,6 +4298,12 @@
         1
       ]
     ]
+  ],
+  "qualities": [
+	{
+      "id": "BLUE_CIRCLE",
+      "level": 1
+    }
   ],
   "tools": [
     [
@@ -4344,7 +4320,7 @@
   "result": "green_brimstone_nail",
   "category": "CC_OTHER",
   "subcategory": "CSC_OTHER_MATERIALS",
-  "skill_used": "spellcraft",
+  "skill_used": "fabrication",
   "difficulty": 1,
   "time": "3 h",
   "autolearn": true,
@@ -4369,6 +4345,12 @@
         1
       ]
     ]
+  ],
+  "qualities": [
+	{
+      "id": "GREEN_CIRCLE",
+      "level": 1
+    }
   ],
   "tools": [
     [
@@ -4385,7 +4367,7 @@
   "result": "black_brimstone_nail",
   "category": "CC_OTHER",
   "subcategory": "CSC_OTHER_MATERIALS",
-  "skill_used": "spellcraft",
+  "skill_used": "fabrication",
   "difficulty": 1,
   "time": "3 h",
   "autolearn": true,
@@ -4410,6 +4392,12 @@
         1
       ]
     ]
+  ],
+  "qualities": [
+	{
+      "id": "BLACK_CIRCLE",
+      "level": 1
+    }
   ],
   "tools": [
     [
@@ -4426,7 +4414,7 @@
   "result": "white_brimstone_nail",
   "category": "CC_OTHER",
   "subcategory": "CSC_OTHER_MATERIALS",
-  "skill_used": "spellcraft",
+  "skill_used": "fabrication",
   "difficulty": 1,
   "time": "3 h",
   "autolearn": true,
@@ -4451,6 +4439,12 @@
         1
       ]
     ]
+  ],
+  "qualities": [
+	{
+      "id": "WHITE_CIRCLE",
+      "level": 1
+    }
   ],
   "tools": [
     [
@@ -4872,7 +4866,7 @@
     "stack_size": 1,
     "ammo_type": "cannon",
     "range": 50,
-    "damage": { "damage_type": "heat", "amount": 380 },
+    "damage": { "damage_type": "heat", "amount": 352 },
     "//": "4 pound cannonball weighs 28000 grains,shot at 1215 ft/s by a 3in ordnance rifle, equals 124459 joules of muzzle energy according to Shooters Calculator, round down from square root 352.78",
     "dispersion": 620,
     "recoil": 26250,
@@ -4896,7 +4890,7 @@
     "stack_size": 1,
     "ammo_type": "cannon",
     "range": 50,
-    "damage": { "damage_type": "cold", "amount": 380 },
+    "damage": { "damage_type": "cold", "amount": 352 },
     "//": "4 pound cannonball weighs 28000 grains,shot at 1215 ft/s by a 3in ordnance rifle, equals 124459 joules of muzzle energy according to Shooters Calculator, round down from square root 352.78",
     "dispersion": 620,
     "recoil": 26250,
@@ -4920,7 +4914,7 @@
     "stack_size": 1,
     "ammo_type": "cannon",
     "range": 50,
-    "damage": { "damage_type": "acid", "amount": 380 },
+    "damage": { "damage_type": "acid", "amount": 352 },
     "//": "4 pound cannonball weighs 28000 grains,shot at 1215 ft/s by a 3in ordnance rifle, equals 124459 joules of muzzle energy according to Shooters Calculator, round down from square root 352.78",
     "dispersion": 620,
     "recoil": 26250,
@@ -4944,7 +4938,7 @@
     "stack_size": 1,
     "ammo_type": "cannon",
     "range": 50,
-    "damage": { "damage_type": "biological", "amount": 380 },
+    "damage": { "damage_type": "biological", "amount": 352 },
     "//": "4 pound cannonball weighs 28000 grains,shot at 1215 ft/s by a 3in ordnance rifle, equals 124459 joules of muzzle energy according to Shooters Calculator, round down from square root 352.78",
     "dispersion": 620,
     "recoil": 26250,
@@ -4968,7 +4962,7 @@
     "stack_size": 1,
     "ammo_type": "cannon",
     "range": 50,
-    "damage": { "damage_type": "electric", "amount": 380 },
+    "damage": { "damage_type": "electric", "amount": 352 },
     "//": "4 pound cannonball weighs 28000 grains,shot at 1215 ft/s by a 3in ordnance rifle, equals 124459 joules of muzzle energy according to Shooters Calculator, round down from square root 352.78",
     "dispersion": 620,
     "recoil": 26250,
@@ -4985,7 +4979,7 @@
   "skill_used": "fabrication",
   "difficulty": 3,
   "skills_required": [
-    "spellcraft",
+    "gun",
     1
   ],
   "time": "1 m",
@@ -5000,6 +4994,10 @@
     {
       "id": "CUT",
       "level": 2
+    },
+	{
+      "id": "RED_CIRCLE",
+      "level": 1
     }
   ],
   "proficiencies": [
@@ -5037,7 +5035,7 @@
   "skill_used": "fabrication",
   "difficulty": 3,
   "skills_required": [
-    "spellcraft",
+    "gun",
     1
   ],
   "time": "1 m",
@@ -5052,6 +5050,10 @@
     {
       "id": "CUT",
       "level": 2
+    },
+	{
+      "id": "BLUE_CIRCLE",
+      "level": 1
     }
   ],
   "proficiencies": [
@@ -5089,7 +5091,7 @@
   "skill_used": "fabrication",
   "difficulty": 3,
   "skills_required": [
-    "spellcraft",
+    "gun",
     1
   ],
   "time": "1 m",
@@ -5104,6 +5106,10 @@
     {
       "id": "CUT",
       "level": 2
+    },
+	{
+      "id": "GREEN_CIRCLE",
+      "level": 1
     }
   ],
   "proficiencies": [
@@ -5141,7 +5147,7 @@
   "skill_used": "fabrication",
   "difficulty": 3,
   "skills_required": [
-    "spellcraft",
+    "gun",
     1
   ],
   "time": "1 m",
@@ -5156,6 +5162,10 @@
     {
       "id": "CUT",
       "level": 2
+    },
+	{
+      "id": "WHITE_CIRCLE",
+      "level": 1
     }
   ],
   "proficiencies": [
@@ -5193,7 +5203,7 @@
   "skill_used": "fabrication",
   "difficulty": 3,
   "skills_required": [
-    "spellcraft",
+    "gun",
     1
   ],
   "time": "1 m",
@@ -5208,6 +5218,10 @@
     {
       "id": "CUT",
       "level": 2
+    },
+	{
+      "id": "BLACK_CIRCLE",
+      "level": 1
     }
   ],
   "proficiencies": [
@@ -5245,7 +5259,7 @@
   "skill_used": "fabrication",
   "difficulty": 3,
   "skills_required": [
-    "spellcraft",
+    "gun",
     1
   ],
   "time": "1 m",
@@ -5260,6 +5274,10 @@
     {
       "id": "CUT",
       "level": 2
+    },
+	{
+      "id": "RED_CIRCLE",
+      "level": 1
     }
   ],
   "proficiencies": [
@@ -5297,7 +5315,7 @@
   "skill_used": "fabrication",
   "difficulty": 3,
   "skills_required": [
-    "spellcraft",
+    "gun",
     1
   ],
   "time": "1 m",
@@ -5312,6 +5330,10 @@
     {
       "id": "CUT",
       "level": 2
+    },
+	{
+      "id": "BLUE_CIRCLE",
+      "level": 1
     }
   ],
   "proficiencies": [
@@ -5349,7 +5371,7 @@
   "skill_used": "fabrication",
   "difficulty": 3,
   "skills_required": [
-    "spellcraft",
+    "gun",
     1
   ],
   "time": "1 m",
@@ -5364,6 +5386,10 @@
     {
       "id": "CUT",
       "level": 2
+    },
+	{
+      "id": "GREEN_CIRCLE",
+      "level": 1
     }
   ],
   "proficiencies": [
@@ -5401,7 +5427,7 @@
   "skill_used": "fabrication",
   "difficulty": 3,
   "skills_required": [
-    "spellcraft",
+    "gun",
     1
   ],
   "time": "1 m",
@@ -5416,6 +5442,10 @@
     {
       "id": "CUT",
       "level": 2
+    },
+	{
+      "id": "BLACK_CIRCLE",
+      "level": 1
     }
   ],
   "proficiencies": [
@@ -5453,7 +5483,7 @@
   "skill_used": "fabrication",
   "difficulty": 3,
   "skills_required": [
-    "spellcraft",
+    "gun",
     1
   ],
   "time": "1 m",
@@ -5468,6 +5498,10 @@
     {
       "id": "CUT",
       "level": 2
+    },
+	{
+      "id": "WHITE_CIRCLE",
+      "level": 1
     }
   ],
   "proficiencies": [
@@ -5500,7 +5534,7 @@
     "id": "brimstone_flintlock_ammo",
     "type": "AMMO",
     "name": { "str": "hot brimstone paper cartridge" },
-    "description": "A paper cartridge containing black powder and a piece of brimstone.  Historically used to reload muzzleloaders in a more reasonable time. A simple enough round that even trifling spellcrafters can change it's element without the use of a magic circle.",
+    "description": "A paper cartridge containing black powder and a piece of brimstone.  Historically used to reload muzzleloaders in a more reasonable time.",
     "weight": "40 g",
     "volume": "10 ml",
     "price": 1100,
@@ -5512,7 +5546,7 @@
     "stack_size": 10,
     "ammo_type": "flintlock",
     "range": 6,
-    "damage": { "damage_type": "heat", "amount": 35 },
+    "damage": { "damage_type": "heat", "amount": 30 },
     "dispersion": 90,
     "recoil": 1500,
     "loudness": 70,
@@ -5522,7 +5556,7 @@
     "id": "brimstone_flintlock_shot",
     "type": "AMMO",
     "name": { "str": "hot brimstone paper shot cartridge" },
-    "description": "A paper cartridge containing black powder and pieces of brimstone.  Historically used to reload muzzleloaders in a more reasonable time. A simple enough round that even trifling spellcrafters can change it's element without the use of a magic circle.",
+    "description": "A paper cartridge containing black powder and pieces of brimstone.  Historically used to reload muzzleloaders in a more reasonable time.",
     "weight": "40 g",
     "volume": "10 ml",
     "price": 1100,
@@ -5534,7 +5568,7 @@
     "stack_size": 10,
     "ammo_type": "flintlock",
     "range": 4,
-    "damage": { "damage_type": "heat", "amount": 30 },
+    "damage": { "damage_type": "heat", "amount": 25 },
     "shot_damage": { "damage_type": "heat", "amount": 8 },
     "projectile_count": 9,
     "shot_spread": 20,
@@ -5547,7 +5581,7 @@
     "id": "blue_brimstone_flintlock_ammo",
     "type": "AMMO",
     "name": { "str": "cold brimstone paper cartridge" },
-    "description": "A paper cartridge containing black powder and a piece of brimstone.  Historically used to reload muzzleloaders in a more reasonable time. A simple enough round that even trifling spellcrafters can change it's element without the use of a magic circle.",
+    "description": "A paper cartridge containing black powder and a piece of brimstone.  Historically used to reload muzzleloaders in a more reasonable time.",
     "weight": "40 g",
     "volume": "10 ml",
     "price": 1100,
@@ -5559,7 +5593,7 @@
     "stack_size": 10,
     "ammo_type": "flintlock",
     "range": 6,
-    "damage": { "damage_type": "cold", "amount": 35 },
+    "damage": { "damage_type": "cold", "amount": 30 },
     "dispersion": 90,
     "recoil": 1500,
     "loudness": 70,
@@ -5569,7 +5603,7 @@
     "id": "blue_brimstone_flintlock_shot",
     "type": "AMMO",
     "name": { "str": "cold brimstone paper shot cartridge" },
-    "description": "A paper cartridge containing black powder and pieces of brimstone.  Historically used to reload muzzleloaders in a more reasonable time. A simple enough round that even trifling spellcrafters can change it's element without the use of a magic circle.",
+    "description": "A paper cartridge containing black powder and pieces of brimstone.  Historically used to reload muzzleloaders in a more reasonable time.",
     "weight": "40 g",
     "volume": "10 ml",
     "price": 1100,
@@ -5581,7 +5615,7 @@
     "stack_size": 10,
     "ammo_type": "flintlock",
     "range": 4,
-    "damage": { "damage_type": "cold", "amount": 30 },
+    "damage": { "damage_type": "cold", "amount": 25 },
     "shot_damage": { "damage_type": "cold", "amount": 8 },
     "projectile_count": 9,
     "shot_spread": 20,
@@ -5594,7 +5628,7 @@
     "id": "green_brimstone_flintlock_ammo",
     "type": "AMMO",
     "name": { "str": "acidic brimstone paper cartridge" },
-    "description": "A paper cartridge containing black powder and a piece of brimstone.  Historically used to reload muzzleloaders in a more reasonable time. A simple enough round that even trifling spellcrafters can change it's element without the use of a magic circle.",
+    "description": "A paper cartridge containing black powder and a piece of brimstone.  Historically used to reload muzzleloaders in a more reasonable time.",
     "weight": "40 g",
     "volume": "10 ml",
     "price": 1100,
@@ -5606,7 +5640,7 @@
     "stack_size": 10,
     "ammo_type": "flintlock",
     "range": 6,
-    "damage": { "damage_type": "acid", "amount": 35 },
+    "damage": { "damage_type": "acid", "amount": 30 },
     "dispersion": 90,
     "recoil": 1500,
     "loudness": 70,
@@ -5616,7 +5650,7 @@
     "id": "green_brimstone_flintlock_shot",
     "type": "AMMO",
     "name": { "str": "acidic brimstone paper shot cartridge" },
-    "description": "A paper cartridge containing black powder and pieces of brimstone.  Historically used to reload muzzleloaders in a more reasonable time. A simple enough round that even trifling spellcrafters can change it's element without the use of a magic circle.",
+    "description": "A paper cartridge containing black powder and pieces of brimstone.  Historically used to reload muzzleloaders in a more reasonable time.",
     "weight": "40 g",
     "volume": "10 ml",
     "price": 1100,
@@ -5628,7 +5662,7 @@
     "stack_size": 10,
     "ammo_type": "flintlock",
     "range": 4,
-    "damage": { "damage_type": "acid", "amount": 30 },
+    "damage": { "damage_type": "acid", "amount": 25 },
     "shot_damage": { "damage_type": "acid", "amount": 8 },
     "projectile_count": 9,
     "shot_spread": 20,
@@ -5641,7 +5675,7 @@
     "id": "black_brimstone_flintlock_ammo",
     "type": "AMMO",
     "name": { "str": "biological brimstone paper cartridge" },
-    "description": "A paper cartridge containing black powder and a piece of brimstone.  Historically used to reload muzzleloaders in a more reasonable time. A simple enough round that even trifling spellcrafters can change it's element without the use of a magic circle.",
+    "description": "A paper cartridge containing black powder and a piece of brimstone.  Historically used to reload muzzleloaders in a more reasonable time.",
     "weight": "40 g",
     "volume": "10 ml",
     "price": 1100,
@@ -5653,7 +5687,7 @@
     "stack_size": 10,
     "ammo_type": "flintlock",
     "range": 6,
-    "damage": { "damage_type": "biological", "amount": 35 },
+    "damage": { "damage_type": "biological", "amount": 30 },
     "dispersion": 90,
     "recoil": 1500,
     "loudness": 70,
@@ -5663,7 +5697,7 @@
     "id": "black_brimstone_flintlock_shot",
     "type": "AMMO",
     "name": { "str": "biological brimstone paper shot cartridge" },
-    "description": "A paper cartridge containing black powder and pieces of brimstone.  Historically used to reload muzzleloaders in a more reasonable time. A simple enough round that even trifling spellcrafters can change it's element without the use of a magic circle.",
+    "description": "A paper cartridge containing black powder and pieces of brimstone.  Historically used to reload muzzleloaders in a more reasonable time.",
     "weight": "40 g",
     "volume": "10 ml",
     "price": 1100,
@@ -5675,7 +5709,7 @@
     "stack_size": 10,
     "ammo_type": "flintlock",
     "range": 4,
-    "damage": { "damage_type": "biological", "amount": 30 },
+    "damage": { "damage_type": "biological", "amount": 25 },
     "shot_damage": { "damage_type": "biological", "amount": 8 },
     "projectile_count": 9,
     "shot_spread": 20,
@@ -5688,7 +5722,7 @@
     "id": "white_brimstone_flintlock_ammo",
     "type": "AMMO",
     "name": { "str": "electrical brimstone paper cartridge" },
-    "description": "A paper cartridge containing black powder and a piece of brimstone.  Historically used to reload muzzleloaders in a more reasonable time. A simple enough round that even trifling spellcrafters can change it's element without the use of a magic circle.",
+    "description": "A paper cartridge containing black powder and a piece of brimstone.  Historically used to reload muzzleloaders in a more reasonable time.",
     "weight": "40 g",
     "volume": "10 ml",
     "price": 1100,
@@ -5700,7 +5734,7 @@
     "stack_size": 10,
     "ammo_type": "flintlock",
     "range": 6,
-    "damage": { "damage_type": "electric", "amount": 35 },
+    "damage": { "damage_type": "electric", "amount": 30 },
     "dispersion": 90,
     "recoil": 1500,
     "loudness": 70,
@@ -5710,7 +5744,7 @@
     "id": "white_brimstone_flintlock_shot",
     "type": "AMMO",
     "name": { "str": "electrical brimstone paper shot cartridge" },
-    "description": "A paper cartridge containing black powder and pieces of brimstone.  Historically used to reload muzzleloaders in a more reasonable time. A simple enough round that even trifling spellcrafters can change it's element without the use of a magic circle.",
+    "description": "A paper cartridge containing black powder and pieces of brimstone.  Historically used to reload muzzleloaders in a more reasonable time.",
     "weight": "40 g",
     "volume": "10 ml",
     "price": 1100,
@@ -5722,7 +5756,7 @@
     "stack_size": 10,
     "ammo_type": "flintlock",
     "range": 4,
-    "damage": { "damage_type": "electric", "amount": 30 },
+    "damage": { "damage_type": "electric", "amount": 25 },
     "shot_damage": { "damage_type": "electric", "amount": 8 },
     "projectile_count": 9,
     "shot_spread": 20,
@@ -5730,995 +5764,5 @@
     "recoil": 1500,
     "loudness": 90,
     "effects": [ "COOKOFF", "MUZZLE_SMOKE", "SHOT", "BLACKPOWDER", "RECYCLED" ]
-  },
-  {
-    "id": "brimstone_44army",
-    "type": "AMMO",
-    "name": { "str": "hot brimstone .44 paper cartridge" },
-    "description": "A paper cartridge containing a premeasured amount of black powder and a brimstone projectile.  Used by the Colt M1860 Army. A simple enough round that even trifling spellcrafters can change it's element without the use of a magic circle.",
-    "weight": "7 g",
-    "volume": "20 ml",
-    "price": 350,
-    "price_postapoc": 1000,
-    "material": [ "paper", "powder", "lead" ],
-    "symbol": "=",
-    "color": "white",
-    "count": 25,
-    "ammo_type": "44paper",
-    "range": 18,
-    "damage": { "damage_type": "heat", "amount": 32 },
-    "dispersion": 70,
-    "recoil": 580,
-    "effects": [ "COOKOFF", "RECYCLED", "MUZZLE_SMOKE", "BLACKPOWDER" ]
-  },
-  {
-    "id": "cold_brimstone_44army",
-    "type": "AMMO",
-    "name": { "str": "cold brimstone .44 paper cartridge" },
-    "description": "A paper cartridge containing a premeasured amount of black powder and a brimstone projectile.  Used by the Colt M1860 Army. A simple enough round that even trifling spellcrafters can change it's element without the use of a magic circle.",
-    "weight": "7 g",
-    "volume": "20 ml",
-    "price": 350,
-    "price_postapoc": 1000,
-    "material": [ "paper", "powder", "lead" ],
-    "symbol": "=",
-    "color": "white",
-    "count": 25,
-    "ammo_type": "44paper",
-    "range": 18,
-    "damage": { "damage_type": "cold", "amount": 32 },
-    "dispersion": 70,
-    "recoil": 580,
-    "effects": [ "COOKOFF", "RECYCLED", "MUZZLE_SMOKE", "BLACKPOWDER" ]
-  },
-  {
-    "id": "electric_brimstone_44army",
-    "type": "AMMO",
-    "name": { "str": "electrical brimstone .44 paper cartridge" },
-    "description": "A paper cartridge containing a premeasured amount of black powder and a brimstone projectile.  Used by the Colt M1860 Army. A simple enough round that even trifling spellcrafters can change it's element without the use of a magic circle.",
-    "weight": "7 g",
-    "volume": "20 ml",
-    "price": 350,
-    "price_postapoc": 1000,
-    "material": [ "paper", "powder", "lead" ],
-    "symbol": "=",
-    "color": "white",
-    "count": 25,
-    "ammo_type": "44paper",
-    "range": 18,
-    "damage": { "damage_type": "electric", "amount": 32 },
-    "dispersion": 70,
-    "recoil": 580,
-    "effects": [ "COOKOFF", "RECYCLED", "MUZZLE_SMOKE", "BLACKPOWDER" ]
-  },
-  {
-    "id": "acid_brimstone_44army",
-    "type": "AMMO",
-    "name": { "str": "acidic brimstone .44 paper cartridge" },
-    "description": "A paper cartridge containing a premeasured amount of black powder and a brimstone projectile.  Used by the Colt M1860 Army. A simple enough round that even trifling spellcrafters can change it's element without the use of a magic circle.",
-    "weight": "7 g",
-    "volume": "20 ml",
-    "price": 350,
-    "price_postapoc": 1000,
-    "material": [ "paper", "powder", "lead" ],
-    "symbol": "=",
-    "color": "white",
-    "count": 25,
-    "ammo_type": "44paper",
-    "range": 18,
-    "damage": { "damage_type": "acid", "amount": 32 },
-    "dispersion": 70,
-    "recoil": 580,
-    "effects": [ "COOKOFF", "RECYCLED", "MUZZLE_SMOKE", "BLACKPOWDER" ]
-  },
-  {
-    "id": "bio_brimstone_44army",
-    "type": "AMMO",
-    "name": { "str": "biological brimstone .44 paper cartridge" },
-    "description": "A paper cartridge containing a premeasured amount of black powder and a brimstone projectile.  Used by the Colt M1860 Army. A simple enough round that even trifling spellcrafters can change it's element without the use of a magic circle.",
-    "weight": "7 g",
-    "volume": "20 ml",
-    "price": 350,
-    "price_postapoc": 1000,
-    "material": [ "paper", "powder", "lead" ],
-    "symbol": "=",
-    "color": "white",
-    "count": 25,
-    "ammo_type": "44paper",
-    "range": 18,
-    "damage": { "damage_type": "biological", "amount": 32 },
-    "dispersion": 70,
-    "recoil": 580,
-    "effects": [ "COOKOFF", "RECYCLED", "MUZZLE_SMOKE", "BLACKPOWDER" ]
-  },
-  {
-  "result": "brimstone_44army",
-  "type": "recipe",
-  "activity_level": "LIGHT_EXERCISE",
-  "category": "CC_AMMO",
-  "subcategory": "CSC_AMMO_PISTOL",
-  "skill_used": "fabrication",
-  "difficulty": 1,
-  "skills_required": [
-    "spellcraft",
-    1
-  ],
-  "time": "1 m",
-  "batch_time_factors": [
-    60,
-    5
-  ],
-  "book_learn": [
-    [
-      "manual_pistol",
-      3
-    ],
-    [
-      "recipe_bullets",
-      3
-    ],
-    [
-      "big_book_of_metaknowledge",
-      3
-    ]
-  ],
-  "charges": 1,
-  "reversible": true,
-  "qualities": [
-    {
-      "id": "CUT",
-      "level": 2
-    }
-  ],
-  "proficiencies": [
-    {
-      "proficiency": "prof_handloading"
-    }
-  ],
-  "components": [
-    [
-      [
-        "chem_black_powder",
-        4
-      ]
-    ],
-	[
-      [
-        "brimstone_sliver",
-        1
-      ]
-    ],
-    [
-      [
-        "lgpistol_primer",
-        1
-      ]
-    ],
-    [
-      [
-        "paper",
-        1
-      ],
-      [
-        "aluminum_foil",
-        1
-      ]
-    ]
-  ]
-},
-{
-  "result": "cold_brimstone_44army",
-  "type": "recipe",
-  "activity_level": "LIGHT_EXERCISE",
-  "category": "CC_AMMO",
-  "subcategory": "CSC_AMMO_PISTOL",
-  "skill_used": "fabrication",
-  "difficulty": 1,
-  "skills_required": [
-    "spellcraft",
-    1
-  ],
-  "time": "1 m",
-  "batch_time_factors": [
-    60,
-    5
-  ],
-  "book_learn": [
-    [
-      "manual_pistol",
-      3
-    ],
-    [
-      "recipe_bullets",
-      3
-    ],
-    [
-      "big_book_of_metaknowledge",
-      3
-    ]
-  ],
-  "charges": 1,
-  "reversible": true,
-  "qualities": [
-    {
-      "id": "CUT",
-      "level": 2
-    }
-  ],
-  "proficiencies": [
-    {
-      "proficiency": "prof_handloading"
-    }
-  ],
-  "components": [
-    [
-      [
-        "chem_black_powder",
-        4
-      ]
-    ],
-	[
-      [
-        "brimstone_sliver",
-        1
-      ]
-    ],
-    [
-      [
-        "lgpistol_primer",
-        1
-      ]
-    ],
-    [
-      [
-        "paper",
-        1
-      ],
-      [
-        "aluminum_foil",
-        1
-      ]
-    ]
-  ]
-},
-{
-  "result": "acid_brimstone_44army",
-  "type": "recipe",
-  "activity_level": "LIGHT_EXERCISE",
-  "category": "CC_AMMO",
-  "subcategory": "CSC_AMMO_PISTOL",
-  "skill_used": "fabrication",
-  "difficulty": 1,
-  "skills_required": [
-    "spellcraft",
-    1
-  ],
-  "time": "1 m",
-  "batch_time_factors": [
-    60,
-    5
-  ],
-  "book_learn": [
-    [
-      "manual_pistol",
-      3
-    ],
-    [
-      "recipe_bullets",
-      3
-    ],
-    [
-      "big_book_of_metaknowledge",
-      3
-    ]
-  ],
-  "charges": 1,
-  "reversible": true,
-  "qualities": [
-    {
-      "id": "CUT",
-      "level": 2
-    }
-  ],
-  "proficiencies": [
-    {
-      "proficiency": "prof_handloading"
-    }
-  ],
-  "components": [
-    [
-      [
-        "chem_black_powder",
-        4
-      ]
-    ],
-	[
-      [
-        "brimstone_sliver",
-        1
-      ]
-    ],
-    [
-      [
-        "lgpistol_primer",
-        1
-      ]
-    ],
-    [
-      [
-        "paper",
-        1
-      ],
-      [
-        "aluminum_foil",
-        1
-      ]
-    ]
-  ]
-},
-{
-  "result": "electric_brimstone_44army",
-  "type": "recipe",
-  "activity_level": "LIGHT_EXERCISE",
-  "category": "CC_AMMO",
-  "subcategory": "CSC_AMMO_PISTOL",
-  "skill_used": "fabrication",
-  "difficulty": 1,
-  "skills_required": [
-    "spellcraft",
-    1
-  ],
-  "time": "1 m",
-  "batch_time_factors": [
-    60,
-    5
-  ],
-  "book_learn": [
-    [
-      "manual_pistol",
-      3
-    ],
-    [
-      "recipe_bullets",
-      3
-    ],
-    [
-      "big_book_of_metaknowledge",
-      3
-    ]
-  ],
-  "charges": 1,
-  "reversible": true,
-  "qualities": [
-    {
-      "id": "CUT",
-      "level": 2
-    }
-  ],
-  "proficiencies": [
-    {
-      "proficiency": "prof_handloading"
-    }
-  ],
-  "components": [
-    [
-      [
-        "chem_black_powder",
-        4
-      ]
-    ],
-	[
-      [
-        "brimstone_sliver",
-        1
-      ]
-    ],
-    [
-      [
-        "lgpistol_primer",
-        1
-      ]
-    ],
-    [
-      [
-        "paper",
-        1
-      ],
-      [
-        "aluminum_foil",
-        1
-      ]
-    ]
-  ]
-},
-{
-  "result": "bio_brimstone_44army",
-  "type": "recipe",
-  "activity_level": "LIGHT_EXERCISE",
-  "category": "CC_AMMO",
-  "subcategory": "CSC_AMMO_PISTOL",
-  "skill_used": "fabrication",
-  "difficulty": 1,
-  "skills_required": [
-    "spellcraft",
-    1
-  ],
-  "time": "1 m",
-  "batch_time_factors": [
-    60,
-    5
-  ],
-  "book_learn": [
-    [
-      "manual_pistol",
-      3
-    ],
-    [
-      "recipe_bullets",
-      3
-    ],
-    [
-      "big_book_of_metaknowledge",
-      3
-    ]
-  ],
-  "charges": 1,
-  "reversible": true,
-  "qualities": [
-    {
-      "id": "CUT",
-      "level": 2
-    }
-  ],
-  "proficiencies": [
-    {
-      "proficiency": "prof_handloading"
-    }
-  ],
-  "components": [
-    [
-      [
-        "chem_black_powder",
-        4
-      ]
-    ],
-	[
-      [
-        "brimstone_sliver",
-        1
-      ]
-    ],
-    [
-      [
-        "lgpistol_primer",
-        1
-      ]
-    ],
-    [
-      [
-        "paper",
-        1
-      ],
-      [
-        "aluminum_foil",
-        1
-      ]
-    ]
-  ]
-},
-{
-  "id": "brimstone_50bmg",
-  "type": "AMMO",
-  "name": {
-    "str_sp": "hot brimstone .50 BMG M33 Ball"
-  },
-  "description": ".50 BMG ammunition with a mild brimstone cored 661gr FMJ bullet.  The .50 BMG is a very powerful rifle round designed for anti-aircraft use, later adapted to anti-vehicular and anti-personnel roles.  Its stupendous energy and armor piercing capabilities make it one of the most deadly rounds available, offset only by its drastic recoil and noise.",
-  "weight": "114 g",
-  "volume": "451 ml",
-  "price": 2200,
-  "price_postapoc": 2500,
-  "flags": [
-    "IRREPLACEABLE_CONSUMABLE"
-  ],
-  "material": [
-    "brass",
-	"brimstone",
-    "powder"
-  ],
-  "symbol": "=",
-  "color": "dark_gray",
-  "count": 25,
-  "stack_size": 10,
-  "ammo_type": "50",
-  "casing": "50_casing",
-  "range": 110,
-  "damage": {
-    "damage_type": "heat",
-    "amount": 131,
-    "armor_penetration": 28
-  },
-  "dispersion": 150,
-  "recoil": 26250,
-  "effects": [
-    "COOKOFF",
-    "NEVER_MISFIRES"
-  ]
-},
-{
-  "id": "cold_brimstone_50bmg",
-  "type": "AMMO",
-  "name": {
-    "str_sp": "cold brimstone .50 BMG M33 Ball"
-  },
-  "description": ".50 BMG ammunition with a mild brimstone cored 661gr FMJ bullet.  The .50 BMG is a very powerful rifle round designed for anti-aircraft use, later adapted to anti-vehicular and anti-personnel roles.  Its stupendous energy and armor piercing capabilities make it one of the most deadly rounds available, offset only by its drastic recoil and noise.",
-  "weight": "114 g",
-  "volume": "451 ml",
-  "price": 2200,
-  "price_postapoc": 2500,
-  "flags": [
-    "IRREPLACEABLE_CONSUMABLE"
-  ],
-  "material": [
-    "brass",
-	"brimstone",
-    "powder"
-  ],
-  "symbol": "=",
-  "color": "dark_gray",
-  "count": 25,
-  "stack_size": 10,
-  "ammo_type": "50",
-  "casing": "50_casing",
-  "range": 110,
-  "damage": {
-    "damage_type": "cold",
-    "amount": 131,
-    "armor_penetration": 28
-  },
-  "dispersion": 150,
-  "recoil": 26250,
-  "effects": [
-    "COOKOFF",
-    "NEVER_MISFIRES"
-  ]
-},
-{
-  "id": "acid_brimstone_50bmg",
-  "type": "AMMO",
-  "name": {
-    "str_sp": "acidic brimstone .50 BMG M33 Ball"
-  },
-  "description": ".50 BMG ammunition with a mild brimstone cored 661gr FMJ bullet.  The .50 BMG is a very powerful rifle round designed for anti-aircraft use, later adapted to anti-vehicular and anti-personnel roles.  Its stupendous energy and armor piercing capabilities make it one of the most deadly rounds available, offset only by its drastic recoil and noise.",
-  "weight": "114 g",
-  "volume": "451 ml",
-  "price": 2200,
-  "price_postapoc": 2500,
-  "flags": [
-    "IRREPLACEABLE_CONSUMABLE"
-  ],
-  "material": [
-    "brass",
-	"brimstone",
-    "powder"
-  ],
-  "symbol": "=",
-  "color": "dark_gray",
-  "count": 25,
-  "stack_size": 10,
-  "ammo_type": "50",
-  "casing": "50_casing",
-  "range": 110,
-  "damage": {
-    "damage_type": "acid",
-    "amount": 131,
-    "armor_penetration": 28
-  },
-  "dispersion": 150,
-  "recoil": 26250,
-  "effects": [
-    "COOKOFF",
-    "NEVER_MISFIRES"
-  ]
-},
-{
-  "id": "biological_brimstone_50bmg",
-  "type": "AMMO",
-  "name": {
-    "str_sp": "biological brimstone .50 BMG M33 Ball"
-  },
-  "description": ".50 BMG ammunition with a mild brimstone cored 661gr FMJ bullet.  The .50 BMG is a very powerful rifle round designed for anti-aircraft use, later adapted to anti-vehicular and anti-personnel roles.  Its stupendous energy and armor piercing capabilities make it one of the most deadly rounds available, offset only by its drastic recoil and noise.",
-  "weight": "114 g",
-  "volume": "451 ml",
-  "price": 2200,
-  "price_postapoc": 2500,
-  "flags": [
-    "IRREPLACEABLE_CONSUMABLE"
-  ],
-  "material": [
-    "brass",
-	"brimstone",
-    "powder"
-  ],
-  "symbol": "=",
-  "color": "dark_gray",
-  "count": 25,
-  "stack_size": 10,
-  "ammo_type": "50",
-  "casing": "50_casing",
-  "range": 110,
-  "damage": {
-    "damage_type": "biological",
-    "amount": 131,
-    "armor_penetration": 28
-  },
-  "dispersion": 150,
-  "recoil": 26250,
-  "effects": [
-    "COOKOFF",
-    "NEVER_MISFIRES"
-  ]
-},
-{
-  "id": "electric_brimstone_50bmg",
-  "type": "AMMO",
-  "name": {
-    "str_sp": "electrical brimstone .50 BMG M33 Ball"
-  },
-  "description": ".50 BMG ammunition with a mild brimstone cored 661gr FMJ bullet.  The .50 BMG is a very powerful rifle round designed for anti-aircraft use, later adapted to anti-vehicular and anti-personnel roles.  Its stupendous energy and armor piercing capabilities make it one of the most deadly rounds available, offset only by its drastic recoil and noise.",
-  "weight": "114 g",
-  "volume": "451 ml",
-  "price": 2200,
-  "price_postapoc": 2500,
-  "flags": [
-    "IRREPLACEABLE_CONSUMABLE"
-  ],
-  "material": [
-    "brass",
-	"brimstone",
-    "powder"
-  ],
-  "symbol": "=",
-  "color": "dark_gray",
-  "count": 25,
-  "stack_size": 10,
-  "ammo_type": "50",
-  "casing": "50_casing",
-  "range": 110,
-  "damage": {
-    "damage_type": "electric",
-    "amount": 131,
-    "armor_penetration": 28
-  },
-  "dispersion": 150,
-  "recoil": 26250,
-  "effects": [
-    "COOKOFF",
-    "NEVER_MISFIRES"
-  ]
-},
-{
-  "result": "brimstone_50bmg",
-  "type": "recipe",
-  "activity_level": "LIGHT_EXERCISE",
-  "category": "CC_ENCHANTED",
-  "subcategory": "CSC_ENCHANTED_CORPO",
-  "skill_used": "fabrication",
-  "difficulty": 4,
-  "skills_required": [
-    "spellcraft",
-    4
-  ],
-  "time": "2 m",
-  "batch_time_factors": [
-    60,
-    5
-  ],
-  "book_learn": [
-    [
-      "big_book_of_metaknowledge",
-      1
-    ],
-    [
-      "recipe_bullets",
-      2
-    ]
-  ],
-  "qualities": [
-	{
-      "id": "RED_CIRCLE",
-      "level": 1
-    }
-  ],
-  "charges": 1,
-  "reversible": true,
-  "using": [
-    [
-      "bullet_forming",
-      2
-    ],
-    [
-      "ammo_bullet",
-      2
-    ]
-  ],
-  "proficiencies": [
-    {
-      "proficiency": "prof_handloading"
-    }
-  ],
-  "components": [
-    [
-      [
-        "brimstone_chunk",
-         25
-      ]
-    ],
-    [
-      [
-        "50_casing",
-        1
-      ]
-    ]
-  ]
-},
-{
-  "result": "cold_brimstone_50bmg",
-  "type": "recipe",
-  "activity_level": "LIGHT_EXERCISE",
-  "category": "CC_ENCHANTED",
-  "subcategory": "CSC_ENCHANTED_CORPO",
-  "skill_used": "fabrication",
-  "difficulty": 4,
-  "skills_required": [
-    "spellcraft",
-    4
-  ],
-  "time": "2 m",
-  "batch_time_factors": [
-    60,
-    5
-  ],
-  "book_learn": [
-    [
-      "big_book_of_metaknowledge",
-      1
-    ],
-    [
-      "recipe_bullets",
-      2
-    ]
-  ],
-  "qualities": [
-	{
-      "id": "BLUE_CIRCLE",
-      "level": 1
-    }
-  ],
-  "charges": 1,
-  "reversible": true,
-  "using": [
-    [
-      "bullet_forming",
-      2
-    ],
-    [
-      "ammo_bullet",
-      2
-    ]
-  ],
-  "proficiencies": [
-    {
-      "proficiency": "prof_handloading"
-    }
-  ],
-  "components": [
-    [
-      [
-        "brimstone_chunk",
-        25
-      ]
-    ],
-    [
-      [
-        "50_casing",
-        1
-      ]
-    ]
-  ]
-},
-{
-  "result": "acid_brimstone_50bmg",
-  "type": "recipe",
-  "activity_level": "LIGHT_EXERCISE",
-  "category": "CC_ENCHANTED",
-  "subcategory": "CSC_ENCHANTED_CORPO",
-  "skill_used": "fabrication",
-  "difficulty": 4,
-  "skills_required": [
-    "spellcraft",
-    4
-  ],
-  "time": "2 m",
-  "batch_time_factors": [
-    60,
-    5
-  ],
-  "book_learn": [
-    [
-      "big_book_of_metaknowledge",
-      1
-    ],
-    [
-      "recipe_bullets",
-      2
-    ]
-  ],
-  "qualities": [
-	{
-      "id": "GREEN_CIRCLE",
-      "level": 1
-    }
-  ],
-  "charges": 1,
-  "reversible": true,
-  "using": [
-    [
-      "bullet_forming",
-      2
-    ],
-    [
-      "ammo_bullet",
-      2
-    ]
-  ],
-  "proficiencies": [
-    {
-      "proficiency": "prof_handloading"
-    }
-  ],
-  "components": [
-    [
-      [
-        "brimstone_chunk",
-        25
-      ]
-    ],
-    [
-      [
-        "50_casing",
-        1
-      ]
-    ]
-  ]
-},
-{
-  "result": "electric_brimstone_50bmg",
-  "type": "recipe",
-  "activity_level": "LIGHT_EXERCISE",
-  "category": "CC_ENCHANTED",
-  "subcategory": "CSC_ENCHANTED_CORPO",
-  "skill_used": "fabrication",
-  "difficulty": 4,
-  "skills_required": [
-    "spellcraft",
-    4
-  ],
-  "time": "2 m",
-  "batch_time_factors": [
-    60,
-    5
-  ],
-  "book_learn": [
-    [
-      "big_book_of_metaknowledge",
-      1
-    ],
-    [
-      "recipe_bullets",
-      2
-    ]
-  ],
-  "qualities": [
-	{
-      "id": "WHITE_CIRCLE",
-      "level": 1
-    }
-  ],
-  "charges": 1,
-  "reversible": true,
-  "using": [
-    [
-      "bullet_forming",
-      2
-    ],
-    [
-      "ammo_bullet",
-      2
-    ]
-  ],
-  "proficiencies": [
-    {
-      "proficiency": "prof_handloading"
-    }
-  ],
-  "components": [
-    [
-      [
-        "brimstone_chunk",
-        25
-      ]
-    ],
-    [
-      [
-        "50_casing",
-        1
-      ]
-    ]
-  ]
-},
-{
-  "result": "biological_brimstone_50bmg",
-  "type": "recipe",
-  "activity_level": "LIGHT_EXERCISE",
-  "category": "CC_ENCHANTED",
-  "subcategory": "CSC_ENCHANTED_CORPO",
-  "skill_used": "fabrication",
-  "difficulty": 4,
-  "skills_required": [
-    "spellcraft",
-    4
-  ],
-  "time": "2 m",
-  "batch_time_factors": [
-    60,
-    5
-  ],
-  "book_learn": [
-    [
-      "big_book_of_metaknowledge",
-      1
-    ],
-    [
-      "recipe_bullets",
-      2
-    ]
-  ],
-  "qualities": [
-	{
-      "id": "BLACK_CIRCLE",
-      "level": 1
-    }
-  ],
-  "charges": 1,
-  "reversible": true,
-  "using": [
-    [
-      "bullet_forming",
-      2
-    ],
-    [
-      "ammo_bullet",
-      2
-    ]
-  ],
-  "proficiencies": [
-    {
-      "proficiency": "prof_handloading"
-    }
-  ],
-  "components": [
-    [
-      [
-        "brimstone_chunk",
-        25
-      ]
-    ],
-    [
-      [
-        "50_casing",
-        1
-      ]
-    ]
-  ]
-}
+  }
 ]

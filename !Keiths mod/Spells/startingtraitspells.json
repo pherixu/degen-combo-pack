@@ -1279,7 +1279,7 @@
   {
     "type": "mutation",
     "id": "CALLWILD_SPELL",
-    "name": { "str": "Spell: Call to Oneness" },
+    "name": { "str": "Spell: Call Wild" },
     "points": 2,
     "description": "You learn the associated spell. IF YOU SELECT THE MUTATION YOU WILL HAVE THE SPELL FOREVER. IF YOU DE-SELECT THE TRAIT YOU WILL STILL HAVE THE SPELL.",
     "starting_trait": true,

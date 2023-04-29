@@ -454,7 +454,7 @@
     {
       "x": -2,
       "y": 0,
-      "chance": 50,
+      "chance": 15,
       "item_groups": [
         "benjamins"
       ]
@@ -470,7 +470,7 @@
     {
       "x": -2,
       "y": 2,
-      "chance": 50,
+      "chance": 9,
       "item_groups": [
         "benjamins"
       ]
@@ -494,7 +494,7 @@
     {
       "x": -2,
       "y": 2,
-      "chance": 50,
+      "chance": 14,
       "item_groups": [
         "mail"
       ]
@@ -502,7 +502,7 @@
     {
       "x": -2,
       "y": 0,
-      "chance": 50,
+      "chance": 15,
       "item_groups": [
         "mail"
       ]
@@ -510,7 +510,7 @@
     {
       "x": -3,
       "y": 0,
-      "chance": 15,
+      "chance": 2,
       "item_groups": [
         "letters"
       ]
@@ -518,7 +518,7 @@
     {
       "x": -3,
       "y": 2,
-      "chance": 50,
+      "chance": 10,
       "item_groups": [
         "mail"
       ]
@@ -526,7 +526,7 @@
     {
       "x": -3,
       "y": 2,
-      "chance": 25,
+      "chance": 5,
       "item_groups": [
         "mail_postal"
       ]
@@ -544,8 +544,8 @@
       ],
       "place_monsters": [ { "monster": "GROUP_MAGES", "x": [ 0, 23 ], "y": [ 0, 23 ], "repeat": [ 0, 1 ], "density": 0.1 } ],
       "place_loot": [
-        { "item": "desperate_letter", "x": [ 7, 8 ], "y": [ 12, 14 ], "chance": 100 },
-        { "item": "postman_hat", "x": [ 6, 8 ], "y": [ 12, 14 ], "chance": 60 },
+        { "item": "desperate_letter", "x": [ 15, 17 ], "y": [ 7, 9 ], "chance": 100 },
+        { "item": "postman_hat", "x": [ 15, 17 ], "y": [ 7, 9 ], "chance": 60 },
         { "item": "wand_magic_missile_minor", "x": [ 4, 8 ], "y": [ 11, 13 ], "repeat": [ 3, 6 ], "chance": 30 },
         { "item": "corpse_gunned", "x": 7, "y": 12, "chance": 100 },
         { "item": "corpse_gunned", "x": 7, "y": 14, "chance": 100 },
