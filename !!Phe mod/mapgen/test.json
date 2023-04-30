@@ -176,8 +176,7 @@
       "palettes": [ "roof_palette" ]
     }
   },
-  
-    {
+  {
     "type": "overmap_special",
     "id": "shrine1",
     "overmaps": [
@@ -190,15 +189,9 @@
     "city_sizes": [ 0, 20 ],
     "occurrences": [ 1, 5 ]
   },
-  
-  
   {
     "type": "overmap_terrain",
-    "id": [
-      "shrine1",
-      "shrine1_roof",
-      "shrine1_roof2"
-    ],
+    "id": [ "shrine1", "shrine1_roof", "shrine1_roof2" ],
     "name": "Shrine",
     "sym": "#",
     "color": "red",

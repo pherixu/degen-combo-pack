@@ -1,4 +1,5 @@
-   [{
+[
+  {
     "type": "GENERIC",
     "id": "magic_blood",
     "name": { "str_sp": "focused blood" },
@@ -28,15 +29,15 @@
     "id": "WORM_WIZ",
     "type": "json_flag"
   },
-    {
+  {
     "id": "CRYS_CORPSE",
     "type": "json_flag"
   },
-    {
+  {
     "id": "NOX_CORPSE",
     "type": "json_flag"
   },
-    {
+  {
     "id": "GUNBREAKER_FOCUS",
     "type": "json_flag"
   },
@@ -56,7 +57,7 @@
     "volume": "250 ml",
     "delete": { "flags": [ "SMOKABLE" ] }
   },
-   {
+  {
     "type": "GENERIC",
     "id": "nox_shell",
     "name": { "str_sp": "Noxious Pelt" },
@@ -85,8 +86,8 @@
     "material": [ "alien_liquid" ],
     "symbol": "c",
     "color": "white"
-    },
-	{
+  },
+  {
     "id": "nox_soul",
     "type": "COMESTIBLE",
     "category": "other",
@@ -100,8 +101,7 @@
     "material": [ "alien_liquid" ],
     "symbol": "c",
     "color": "white"
-    },
-  
+  },
   {
     "type": "mutation",
     "id": "lichness1",
@@ -114,9 +114,6 @@
     "types": [ "SKIN" ],
     "armor": [ { "part_types": [ "torso", "head", "arm", "hand", "leg", "foot", "mouth", "tail" ], "bash": 1 } ]
   },
-  
-  
-  
   {
     "id": "dark_spirit",
     "type": "ARMOR",
@@ -127,21 +124,21 @@
     "longest_side": "1 cm",
     "price": 2000,
     "price_postapoc": 250,
-    "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "TRADER_AVOID", "AURA", "NO_TAKEOFF", "NONCONDUCTIVE" ],
+    "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "TRADER_AVOID", "AURA", "NONCONDUCTIVE" ],
     "material": [ "steel" ],
     "symbol": "/",
     "color": "brown",
-	"relic_data": {
+    "relic_data": {
       "passive_effects": [
         {
           "has": "WORN",
           "condition": "ALWAYS",
-		  "mutations": ["lichness1"],
+          "mutations": [ "lichness1" ],
           "values": [
             { "value": "MAX_MANA", "add": 100 },
-			{ "value": "ARMOR_BASH", "add": 3 },
-			{ "value": "ARMOR_CUT", "add": 3 },
-			{ "value": "ARMOR_BULLET", "add": 10 },
+            { "value": "ARMOR_BASH", "add": -3 },
+            { "value": "ARMOR_CUT", "add": -3 },
+            { "value": "ARMOR_BULLET", "add": -10 },
             { "value": "STRENGTH", "add": 2 },
             { "value": "DEXTERITY", "add": 2 },
             { "value": "PERCEPTION", "add": 2 },
@@ -153,7 +150,8 @@
           ]
         }
       ]
-  }},
+    }
+  },
   {
     "id": "fire_heart",
     "type": "ARMOR",
@@ -168,17 +166,17 @@
     "material": [ "steel" ],
     "symbol": "/",
     "color": "brown",
-	"relic_data": {
+    "relic_data": {
       "passive_effects": [
         {
           "has": "WORN",
           "condition": "ALWAYS",
-          
-        "values": [ { "value": "CLIMATE_CONTROL_HEAT", "add": 5000 }, { "value": "CLIMATE_CONTROL_CHILL", "add": 5000 } ]
+          "values": [ { "value": "CLIMATE_CONTROL_HEAT", "add": 5000 }, { "value": "CLIMATE_CONTROL_CHILL", "add": 5000 } ]
         }
       ]
-  }},
-    {
+    }
+  },
+  {
     "type": "mutation",
     "id": "lichness2",
     "name": { "str": "Apprentice Lichery" },
@@ -187,34 +185,33 @@
     "ugliness": 3,
     "bodytemp_modifiers": [ -2500, -2500 ],
     "description": "As you delve into the arts of lichcraft, your body grows painful and cold. Is this worth it for the power?",
-    "types": [ "SKIN" ],
-    "armor": [ { "part_types": [ "torso", "head", "arm", "hand", "leg", "foot", "mouth", "tail" ], "bash": 1 } ]
+    "types": [ "SKIN" ]
   },
-   {
+  {
     "id": "dark_spirit2",
     "type": "ARMOR",
     "name": { "str": "Ghastly Aura" },
-    "description": "A presence possessed only by the most Machiavellian wizards in history.",
+    "description": "A presence possessed only by the most machiavellian wizards in history.",
     "weight": "1 g",
     "volume": "1 ml",
     "longest_side": "1 cm",
     "price": 2000,
     "price_postapoc": 250,
-    "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "TRADER_AVOID", "AURA", "NO_TAKEOFF", "NONCONDUCTIVE" ],
+    "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "TRADER_AVOID", "AURA", "NONCONDUCTIVE" ],
     "material": [ "steel" ],
     "symbol": "/",
     "color": "brown",
-	"relic_data": {
+    "relic_data": {
       "passive_effects": [
         {
           "has": "WORN",
           "condition": "ALWAYS",
-		  "mutations": ["lichness2"],
+          "mutations": [ "lichness2" ],
           "values": [
             { "value": "MAX_MANA", "add": 400 },
-			{ "value": "ARMOR_BASH", "add": 12 },
-			{ "value": "ARMOR_CUT", "add": 12 },
-			{ "value": "ARMOR_BULLET", "add": 40 },
+            { "value": "ARMOR_BASH", "add": -12 },
+            { "value": "ARMOR_CUT", "add": -12 },
+            { "value": "ARMOR_BULLET", "add": -40 },
             { "value": "STRENGTH", "add": 5 },
             { "value": "DEXTERITY", "add": 5 },
             { "value": "PERCEPTION", "add": 5 },
@@ -226,7 +223,8 @@
           ]
         }
       ]
-  }},
+    }
+  },
   {
     "type": "GENERIC",
     "id": "crys_blood",
@@ -261,34 +259,38 @@
     "volume": "250 ml",
     "phase": "liquid"
   },
- {
+  {
     "id": "husk_spawner",
     "name": "Ominous Fetish",
     "copy-from": "straw_doll",
     "type": "TOOL",
-	"flags": [ "SINGLE_USE" ],
-	"material": [ "hflesh" ],
+    "flags": [ "SINGLE_USE" ],
+    "material": [ "hflesh" ],
     "charges_per_use": 0,
     "description": "There is certainly evil energies surrounding this doll, whatever creature it summons must be a horror.",
     "use_action": { "type": "cast_spell", "spell_id": "summon_husk", "no_fail": true, "level": 1, "need_wielding": true }
-  },  
-  
-   {
+  },
+  {
     "id": "nox_kidney",
     "name": "Putrid Growth",
     "copy-from": "straw_doll",
     "type": "TOOL",
-	"material": [ "hflesh" ],
-	"color": "red",
+    "material": [ "hflesh" ],
+    "color": "red",
     "charges_per_use": 0,
     "description": "A once pristine organ that now won't stop spewing and oozing evil magic",
     "use_action": { "type": "cast_spell", "spell_id": "toxify_blood", "no_fail": true, "level": 20, "need_wielding": true },
-	"pocket_data": [ { "pocket_type": "CONTAINER",
-		"max_contains_volume": "5 L",
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "5 L",
         "max_contains_weight": "20 kg",
         "max_item_volume": "5 L",
-        "max_item_length": "6 meter", "watertight": true, "item_restriction": [ "nox_blood" ] }],
-		
+        "max_item_length": "6 meter",
+        "watertight": true,
+        "item_restriction": [ "nox_blood" ]
+      }
+    ],
     "relic_data": { "charge_info": { "recharge_type": "periodic", "time": "1 m", "regenerate_ammo": true } }
   },
   {
@@ -296,77 +298,68 @@
     "name": "Crystalline Kidney",
     "copy-from": "straw_doll",
     "type": "TOOL",
-	"material": [ "hflesh" ],
-	"color": "red",
+    "material": [ "hflesh" ],
+    "color": "red",
     "charges_per_use": 0,
     "description": "A kidney, soft and supple yet entirely crystalline.",
-    "use_action": {
-  "type": "cast_spell", "spell_id": "crystallize_blood", "no_fail": true, "level": 20, "need_wielding": true},
-	"pocket_data": [ { "pocket_type": "CONTAINER",
-		"max_contains_volume": "5 L",
+    "use_action": { "type": "cast_spell", "spell_id": "crystallize_blood", "no_fail": true, "level": 20, "need_wielding": true },
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "5 L",
         "max_contains_weight": "20 kg",
         "max_item_volume": "5 L",
-        "max_item_length": "6 meter", "watertight": true, "item_restriction": [ "magic_blood" ] }],
-		
+        "max_item_length": "6 meter",
+        "watertight": true,
+        "item_restriction": [ "magic_blood" ]
+      }
+    ],
     "relic_data": { "charge_info": { "recharge_type": "periodic", "time": "1 m", "regenerate_ammo": true } }
   },
-  
-    {
+  {
     "id": "argentium",
     "name": "Argentium Shard",
     "copy-from": "steel_chunk",
     "type": "TOOL",
-	"material": [ "hflesh" ],
-	"flags": [ "SINGLE_USE" ],
-	"color": "green",
+    "material": [ "hflesh" ],
+    "flags": [ "SINGLE_USE" ],
+    "color": "green",
     "charges_per_use": 0,
     "description": "A sleek yet sharp chunk of white mineral, tingly to the touch."
-	
-  }, 
-  
-    
-    {
+  },
+  {
     "id": "ceruleum",
     "name": "Ceruleum Shard",
     "copy-from": "steel_chunk",
     "type": "TOOL",
-	"material": [ "hflesh" ],
-	"flags": [ "SINGLE_USE" ],
-	"color": "green",
+    "material": [ "hflesh" ],
+    "flags": [ "SINGLE_USE" ],
+    "color": "green",
     "charges_per_use": 0,
     "description": "A deep blue mineral with white cleavage, cold to the touch."
-	
-  }, 
-  
-    
-    {
+  },
+  {
     "id": "crimsonite",
     "name": "Crimsonite Shard",
     "copy-from": "steel_chunk",
     "type": "TOOL",
-	"material": [ "hflesh" ],
-	"flags": [ "SINGLE_USE" ],
-	"color": "green",
+    "material": [ "hflesh" ],
+    "flags": [ "SINGLE_USE" ],
+    "color": "green",
     "charges_per_use": 0,
     "description": "A charred-looking mineral with a smooth exterior, hot to the touch."
-	
-  }, 
-  
-    
-    {
+  },
+  {
     "id": "viridite",
     "name": "Viridite Shard",
     "copy-from": "steel_chunk",
     "type": "TOOL",
-	"material": [ "hflesh" ],
-	"flags": [ "SINGLE_USE" ],
-	"color": "green",
+    "material": [ "hflesh" ],
+    "flags": [ "SINGLE_USE" ],
+    "color": "green",
     "charges_per_use": 0,
     "description": "A slightly fluorescent mineral with a bright verdant tint, acidic to the touch."
-	
   },
-  
-  
   {
     "id": "vibrant_halo",
     "type": "ARMOR",
@@ -381,20 +374,20 @@
     "material": [ "steel" ],
     "symbol": "/",
     "color": "brown",
-	"relic_data": {
+    "relic_data": {
       "passive_effects": [
         {
           "has": "WORN",
           "condition": "ALWAYS",
           "values": [
             { "value": "MAX_MANA", "add": 1000 },
-			{ "value": "ARMOR_BASH", "add": 13 },
-			{ "value": "ARMOR_CUT", "add": 13 },
-			{ "value": "ARMOR_BULLET", "add": 50 },
-			{ "value": "ARMOR_ACID", "add": 15 },
-			{ "value": "ARMOR_HEAT", "add": 15 },
-			{ "value": "ARMOR_COLD", "add": 15 },
-			{ "value": "ARMOR_ELEC", "add": 15 },
+            { "value": "ARMOR_BASH", "add": 13 },
+            { "value": "ARMOR_CUT", "add": 13 },
+            { "value": "ARMOR_BULLET", "add": 50 },
+            { "value": "ARMOR_ACID", "add": 15 },
+            { "value": "ARMOR_HEAT", "add": 15 },
+            { "value": "ARMOR_COLD", "add": 15 },
+            { "value": "ARMOR_ELEC", "add": 15 },
             { "value": "BONUS_BLOCK", "add": 1 },
             { "value": "SPEED", "add": 25 },
             { "value": "DEXTERITY", "add": 4 },
@@ -405,8 +398,8 @@
           ]
         }
       ]
-  }},
-    
+    }
+  },
   {
     "id": "ioun_virid",
     "type": "ARMOR",
@@ -421,23 +414,24 @@
     "material": [ "steel" ],
     "symbol": "/",
     "color": "brown",
-	"relic_data": {
+    "relic_data": {
       "passive_effects": [
         {
           "has": "WORN",
           "condition": "ALWAYS",
           "values": [
             { "value": "MAX_MANA", "add": 100 },
-			{ "value": "ARMOR_BASH", "add": 3 },
-			{ "value": "ARMOR_CUT", "add": 3 },
-			{ "value": "ARMOR_BULLET", "add": 10 },
-			{ "value": "ARMOR_ACID", "add": 10 },
+            { "value": "ARMOR_BASH", "add": 3 },
+            { "value": "ARMOR_CUT", "add": 3 },
+            { "value": "ARMOR_BULLET", "add": 10 },
+            { "value": "ARMOR_ACID", "add": 10 },
             { "value": "BONUS_BLOCK", "add": 1 },
             { "value": "DEXTERITY", "add": 2 }
           ]
         }
       ]
-  }},
+    }
+  },
   {
     "id": "ioun_crimson",
     "type": "ARMOR",
@@ -452,24 +446,24 @@
     "material": [ "steel" ],
     "symbol": "/",
     "color": "brown",
-	"relic_data": {
+    "relic_data": {
       "passive_effects": [
         {
           "has": "WORN",
           "condition": "ALWAYS",
           "values": [
             { "value": "MAX_MANA", "add": 100 },
-			{ "value": "ARMOR_BASH", "add": 3 },
-			{ "value": "ARMOR_CUT", "add": 3 },
+            { "value": "ARMOR_BASH", "add": 3 },
+            { "value": "ARMOR_CUT", "add": 3 },
             { "value": "BONUS_BLOCK", "add": 1 },
-			{ "value": "ARMOR_BULLET", "add": 10 },
-			{ "value": "ARMOR_HEAT", "add": 10 },
+            { "value": "ARMOR_BULLET", "add": 10 },
+            { "value": "ARMOR_HEAT", "add": 10 },
             { "value": "STRENGTH", "add": 2 }
           ]
         }
       ]
-  }},
-  
+    }
+  },
   {
     "id": "ioun_ceruleum",
     "type": "ARMOR",
@@ -484,23 +478,24 @@
     "material": [ "steel" ],
     "symbol": "/",
     "color": "brown",
-	"relic_data": {
+    "relic_data": {
       "passive_effects": [
         {
           "has": "WORN",
           "condition": "ALWAYS",
           "values": [
             { "value": "MAX_MANA", "add": 100 },
-			{ "value": "ARMOR_BASH", "add": 3 },
-			{ "value": "ARMOR_CUT", "add": 3 },
-			{ "value": "ARMOR_BULLET", "add": 10 },
-			{ "value": "ARMOR_COLD", "add": 10 },
+            { "value": "ARMOR_BASH", "add": 3 },
+            { "value": "ARMOR_CUT", "add": 3 },
+            { "value": "ARMOR_BULLET", "add": 10 },
+            { "value": "ARMOR_COLD", "add": 10 },
             { "value": "BONUS_BLOCK", "add": 1 },
             { "value": "INTELLIGENCE", "add": 2 }
           ]
         }
       ]
-  }},
+    }
+  },
   {
     "id": "ioun_argent",
     "type": "ARMOR",
@@ -515,24 +510,24 @@
     "material": [ "steel" ],
     "symbol": "/",
     "color": "brown",
-	"relic_data": {
+    "relic_data": {
       "passive_effects": [
         {
           "has": "WORN",
           "condition": "ALWAYS",
           "values": [
             { "value": "MAX_MANA", "add": 100 },
-			{ "value": "ARMOR_BASH", "add": 3 },
-			{ "value": "ARMOR_CUT", "add": 3 },
+            { "value": "ARMOR_BASH", "add": 3 },
+            { "value": "ARMOR_CUT", "add": 3 },
             { "value": "BONUS_BLOCK", "add": 1 },
-			{ "value": "ARMOR_BULLET", "add": 10 },
-			{ "value": "ARMOR_ELEC", "add": 10 },
+            { "value": "ARMOR_BULLET", "add": 10 },
+            { "value": "ARMOR_ELEC", "add": 10 },
             { "value": "PERCEPTION", "add": 2 }
           ]
         }
       ]
-  }},
-  
+    }
+  },
   {
     "id": "ioun_book",
     "type": "BOOK",
@@ -547,25 +542,20 @@
     "symbol": "?",
     "color": "light_red",
     "fun": -6,
-    "use_action": {
-      "type": "learn_spell",
-      "spells": [ "ioun_argent",  "ioun_virid",  "ioun_crimson",  "ioun_ceruleum"]
-    }
+    "use_action": { "type": "learn_spell", "spells": [ "ioun_argent", "ioun_virid", "ioun_crimson", "ioun_ceruleum" ] }
   },
-  
   {
     "id": "nox_heart",
     "name": "Grotesque Amalgam",
     "copy-from": "straw_doll",
     "type": "TOOL",
-	"material": [ "hflesh" ],
-	"flags": [ "SINGLE_USE" ],
-	"color": "green",
+    "material": [ "hflesh" ],
+    "flags": [ "SINGLE_USE" ],
+    "color": "green",
     "charges_per_use": 0,
     "description": "A collection of stray gibs from your dark experiments.",
     "use_action": { "type": "cast_spell", "spell_id": "poly_nox_husk", "no_fail": true, "level": 20, "need_wielding": true }
-	
-  }, 
+  },
   {
     "id": "corpse_hook",
     "type": "ARMOR",
@@ -590,58 +580,45 @@
         "item_restriction": [ "crys_puppet", "nox_puppet", "magic_corpse" ]
       }
     ],
-	
     "use_action": { "type": "holster" },
-    "armor": [ { "encumbrance": [ 3, 15 ], "coverage": 10, "covers": [ "torso" ]} ]
+    "armor": [ { "encumbrance": [ 3, 15 ], "coverage": 10, "covers": [ "torso" ] } ]
   },
   {
     "id": "crystal_heart",
     "name": "Crystalline Heart",
     "copy-from": "straw_doll",
     "type": "TOOL",
-	"material": [ "hflesh" ],
-	"flags": [ "SINGLE_USE" ],
-	"color": "red",
+    "material": [ "hflesh" ],
+    "flags": [ "SINGLE_USE" ],
+    "color": "red",
     "charges_per_use": 0,
     "description": "A magical crystalline organ capable of functioning as a heart.",
     "use_action": { "type": "cast_spell", "spell_id": "poly_crys_husk", "no_fail": true, "level": 20, "need_wielding": true }
-	
   },
-  
-  
-  
-  
-
   {
     "id": "rune_fragments",
     "name": "Rune Fragments",
     "copy-from": "straw_doll",
     "type": "GENERIC",
-	"flags": [ "SINGLE_USE" ],
-	"material": [ "hflesh" ],
+    "flags": [ "SINGLE_USE" ],
+    "material": [ "hflesh" ],
     "charges_per_use": 0,
     "description": "A small handful of teeth, claw, and bones from a runic monster.",
     "use_action": { "type": "cast_spell", "spell_id": "stop_construct", "no_fail": true, "level": 1, "need_wielding": true }
-  }, 
-
+  },
   {
     "id": "ancient_lexicon",
     "name": "Ancient Lexicon",
     "copy-from": "straw_doll",
     "type": "BOOK",
     "category": "manuals",
-	"flags": [ "SINGLE_USE" ],
-	"material": [ "hflesh" ],
+    "flags": [ "SINGLE_USE" ],
+    "material": [ "hflesh" ],
     "charges_per_use": 0,
     "description": "A collection of designs created by an ancient race of runic spellcasters.",
     "use_action": { "type": "cast_spell", "spell_id": "stop_construct", "no_fail": true, "level": 1, "need_wielding": true }
-  },  
-
-
-  
-  
-  
-	    {
+  },
+  {
     "id": "tail_stamina",
     "type": "SPELL",
     "name": "Stamina Heal",
@@ -658,19 +635,18 @@
     "flags": [ "RANDOM_DAMAGE", "RANDOM_TARGET" ],
     "difficulty": 1
   },
-   {
+  {
     "id": "saurian_tail",
     "name": "Saurian Tail",
     "copy-from": "straw_doll",
     "type": "GENERIC",
-	"flags": [ "SINGLE_USE" ],
-	"material": [ "hflesh" ],
+    "flags": [ "SINGLE_USE" ],
+    "material": [ "hflesh" ],
     "charges_per_use": 0,
     "description": "The tail of a lizard-like pack beast of Gransys, consume it to regain some stamina.",
     "use_action": { "type": "cast_spell", "spell_id": "tail_stamina", "no_fail": true, "level": 1, "need_wielding": true }
-  }, 
-
-	    {
+  },
+  {
     "id": "mana_heal",
     "type": "SPELL",
     "name": "Mana Heal",
@@ -687,69 +663,59 @@
     "flags": [ "RANDOM_DAMAGE", "RANDOM_TARGET" ],
     "difficulty": 1
   },
-
   {
     "id": "simulacrum_heart",
     "name": "Simulacrum Heart",
     "copy-from": "straw_doll",
     "type": "GENERIC",
-	"flags": [ "SINGLE_USE" ],
-	"material": [ "hflesh" ],
+    "flags": [ "SINGLE_USE" ],
+    "material": [ "hflesh" ],
     "charges_per_use": 0,
     "description": "The heart of a sentient simulacrum, clearly created by a great archwizard.",
     "use_action": { "type": "cast_spell", "spell_id": "stop_construct", "no_fail": true, "level": 1, "need_wielding": true }
-  },  
-
-
+  },
   {
     "id": "slug_tallow",
     "name": "Slug Tallow",
     "copy-from": "straw_doll",
     "type": "TOOL",
-	"flags": [ "SINGLE_USE" ],
-	"material": [ "hflesh" ],
+    "flags": [ "SINGLE_USE" ],
+    "material": [ "hflesh" ],
     "charges_per_use": 0,
     "description": "The oil from a highly advanced magical slug, definitely was sentient.",
     "use_action": { "type": "cast_spell", "spell_id": "mana_heal", "no_fail": true, "level": 1, "need_wielding": true }
-  },  
-
-
+  },
   {
     "id": "worm_grease",
     "name": "Worm Grease",
     "copy-from": "straw_doll",
     "type": "TOOL",
-	"flags": [ "SINGLE_USE" ],
-	"material": [ "hflesh" ],
+    "flags": [ "SINGLE_USE" ],
+    "material": [ "hflesh" ],
     "charges_per_use": 0,
     "description": "The oil from a highly advanced magical worm, pretty disgusting.",
     "use_action": { "type": "cast_spell", "spell_id": "mana_heal", "no_fail": true, "level": 1, "need_wielding": true }
-  },  
-
-
-
+  },
   {
     "id": "shadow_sliver",
     "name": "Shadowy Sliver",
     "copy-from": "straw_doll",
     "type": "TOOL",
-	"flags": [ "SINGLE_USE" ],
-	"material": [ "hflesh" ],
+    "flags": [ "SINGLE_USE" ],
+    "material": [ "hflesh" ],
     "charges_per_use": 0,
     "description": "A small piece of the shadow seer.",
     "use_action": { "type": "cast_spell", "spell_id": "mana_heal", "no_fail": true, "level": 1, "need_wielding": true }
-  },  
-
-
+  },
   {
     "id": "marionette_doll",
     "name": "Marionette Doll",
     "copy-from": "straw_doll",
     "type": "TOOL",
-	"flags": [ "SINGLE_USE" ],
-	"material": [ "hflesh" ],
+    "flags": [ "SINGLE_USE" ],
+    "material": [ "hflesh" ],
     "charges_per_use": 0,
     "description": "A fleshy doll with eyes that seem to follow your every movement.",
     "use_action": { "type": "cast_spell", "spell_id": "cut_string", "no_fail": true, "level": 1, "need_wielding": true }
   }
-  ]
+]

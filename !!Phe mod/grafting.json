@@ -1,26 +1,30 @@
 [
-
   {
     "type": "tool_quality",
     "id": "GRAFTING",
     "name": { "str": "grafting" }
   },
-  
   {
     "type": "construction_group",
     "id": "graft_station",
     "name": "Begin Grafting Incubator Ritual"
   },
-   {
+  {
     "type": "construction",
     "id": "constr_graft_station",
     "group": "graft_station",
-	"looks_like": "mon_blood_sacrifice",
+    "looks_like": "mon_blood_sacrifice",
     "category": "FURN",
     "required_skills": [ [ "spellcraft", 1 ] ],
     "time": "30 m",
-	"activity_level": "LIGHT_EXERCISE",
-    "components": [ [ [ "magic_corpse", 1 ] ], [["crimsonite", 1]], [["viridite", 1]], [["ceruleum", 1]], [["argentium", 1]] ],
+    "activity_level": "LIGHT_EXERCISE",
+    "components": [
+      [ [ "magic_corpse", 1 ] ],
+      [ [ "crimsonite", 1 ] ],
+      [ [ "viridite", 1 ] ],
+      [ [ "ceruleum", 1 ] ],
+      [ [ "argentium", 1 ] ]
+    ],
     "pre_special": "check_empty",
     "post_terrain": "f_graft_station"
   },
@@ -29,10 +33,10 @@
     "id": "f_graft_station",
     "name": "Grafting Incubator",
     "move_cost_mod": 3,
-	"looks_like": "mon_blood_sacrifice",
+    "looks_like": "mon_blood_sacrifice",
     "symbol": "O",
     "color": "white",
-	"crafting_pseudo_item": "fake_graft_station",
+    "crafting_pseudo_item": "fake_graft_station",
     "required_str": -1,
     "flags": [ "ALLOW_FIELD_EFFECT", "TRANSPARENT", "TINY" ],
     "description": "A human body that is magically sedated and cursed with vile enchantments, still breathing, upon an altar etched with various magical sigils."
@@ -40,17 +44,17 @@
   {
     "id": "fake_graft_station",
     "type": "TOOL",
-	"looks_like": "mon_blood_sacrifice",
+    "looks_like": "mon_blood_sacrifice",
     "name": { "str": "fake zen (pseudo item)", "str_pl": "fake zens (pseudo items)" },
     "description": "Pseudo item for the magic circle.",
     "weight": "1 g",
     "volume": "1 ml",
     "symbol": "[",
     "color": "dark_gray",
-    "qualities": [ [ "GRAFTING", 1 ], [ "BUTCHER", 99 ], [ "SURFACE", 99 ],  [ "CUT", 99 ],  [ "CUT_FINE", 99 ]   ],
+    "qualities": [ [ "GRAFTING", 1 ], [ "BUTCHER", 99 ], [ "SURFACE", 99 ], [ "CUT", 99 ], [ "CUT_FINE", 99 ] ],
     "flags": [ "TRADER_AVOID" ]
   },
-{
+  {
     "type": "effect_type",
     "id": "graft_sores15",
     "name": [ "Grafting Sores" ],
@@ -58,8 +62,8 @@
     "max_intensity": 100,
     "part_descs": true,
     "base_mods": { "speed_mod": [ -2 ], "pain_amount": [ 2 ] }
-},
-{
+  },
+  {
     "type": "effect_type",
     "id": "graft_sores16",
     "name": [ "Grafting Sores" ],
@@ -67,8 +71,8 @@
     "max_intensity": 100,
     "part_descs": true,
     "base_mods": { "speed_mod": [ -2 ], "pain_amount": [ 2 ] }
-},
-{
+  },
+  {
     "type": "effect_type",
     "id": "graft_sores17",
     "name": [ "Grafting Sores" ],
@@ -76,8 +80,8 @@
     "max_intensity": 100,
     "part_descs": true,
     "base_mods": { "speed_mod": [ -2 ], "pain_amount": [ 2 ] }
-},
-{
+  },
+  {
     "type": "effect_type",
     "id": "graft_sores18",
     "name": [ "Grafting Sores" ],
@@ -85,8 +89,8 @@
     "max_intensity": 100,
     "part_descs": true,
     "base_mods": { "speed_mod": [ -2 ], "pain_amount": [ 2 ] }
-},
-{
+  },
+  {
     "type": "effect_type",
     "id": "graft_sores19",
     "name": [ "Grafting Sores" ],
@@ -94,8 +98,8 @@
     "max_intensity": 100,
     "part_descs": true,
     "base_mods": { "speed_mod": [ -2 ], "pain_amount": [ 2 ] }
-},
-{
+  },
+  {
     "type": "effect_type",
     "id": "graft_sores20",
     "name": [ "Grafting Sores" ],
@@ -103,8 +107,8 @@
     "max_intensity": 100,
     "part_descs": true,
     "base_mods": { "speed_mod": [ -2 ], "pain_amount": [ 2 ] }
-},
-{
+  },
+  {
     "type": "effect_type",
     "id": "graft_sores21",
     "name": [ "Grafting Sores" ],
@@ -112,9 +116,8 @@
     "max_intensity": 100,
     "part_descs": true,
     "base_mods": { "speed_mod": [ -2 ], "pain_amount": [ 2 ] }
-},
-
-{
+  },
+  {
     "type": "effect_type",
     "id": "graft_sores8",
     "name": [ "Grafting Sores" ],
@@ -123,7 +126,7 @@
     "part_descs": true,
     "base_mods": { "speed_mod": [ -2 ], "pain_amount": [ 2 ] }
   },
-{
+  {
     "type": "effect_type",
     "id": "graft_sores6",
     "name": [ "Grafting Sores" ],
@@ -132,7 +135,7 @@
     "part_descs": true,
     "base_mods": { "speed_mod": [ -2 ], "pain_amount": [ 2 ] }
   },
-    {
+  {
     "type": "effect_type",
     "id": "graft_sores9",
     "name": [ "Grafting Sores" ],
@@ -141,7 +144,7 @@
     "part_descs": true,
     "base_mods": { "speed_mod": [ -2 ], "pain_amount": [ 2 ] }
   },
-    {
+  {
     "type": "effect_type",
     "id": "graft_sores10",
     "name": [ "Grafting Sores" ],
@@ -150,7 +153,7 @@
     "part_descs": true,
     "base_mods": { "speed_mod": [ -2 ], "pain_amount": [ 2 ] }
   },
-    {
+  {
     "type": "effect_type",
     "id": "graft_sores11",
     "name": [ "Grafting Sores" ],
@@ -159,7 +162,7 @@
     "part_descs": true,
     "base_mods": { "speed_mod": [ -2 ], "pain_amount": [ 2 ] }
   },
-    {
+  {
     "type": "effect_type",
     "id": "graft_sores12",
     "name": [ "Grafting Sores" ],
@@ -168,7 +171,7 @@
     "part_descs": true,
     "base_mods": { "speed_mod": [ -2 ], "pain_amount": [ 2 ] }
   },
-    {
+  {
     "type": "effect_type",
     "id": "graft_sores13",
     "name": [ "Grafting Sores" ],
@@ -177,7 +180,7 @@
     "part_descs": true,
     "base_mods": { "speed_mod": [ -2 ], "pain_amount": [ 2 ] }
   },
-    {
+  {
     "type": "effect_type",
     "id": "graft_sores6",
     "name": [ "Grafting Sores" ],
@@ -186,7 +189,7 @@
     "part_descs": true,
     "base_mods": { "speed_mod": [ -2 ], "pain_amount": [ 2 ] }
   },
-    {
+  {
     "type": "effect_type",
     "id": "graft_sores14",
     "name": [ "Grafting Sores" ],
@@ -195,8 +198,7 @@
     "part_descs": true,
     "base_mods": { "speed_mod": [ -2 ], "pain_amount": [ 2 ] }
   },
-    
-    {
+  {
     "type": "effect_type",
     "id": "graft_sores",
     "name": [ "Grafting Sores" ],
@@ -205,8 +207,7 @@
     "part_descs": true,
     "base_mods": { "speed_mod": [ -2 ], "pain_amount": [ 2 ] }
   },
-  
-    {
+  {
     "type": "effect_type",
     "id": "graft_sores1",
     "name": [ "Grafting Sores" ],
@@ -215,7 +216,7 @@
     "part_descs": true,
     "base_mods": { "speed_mod": [ -2 ], "pain_amount": [ 2 ] }
   },
-    {
+  {
     "type": "effect_type",
     "id": "graft_sores2",
     "name": [ "Grafting Sores" ],
@@ -224,7 +225,7 @@
     "part_descs": true,
     "base_mods": { "speed_mod": [ -2 ], "pain_amount": [ 2 ] }
   },
-    {
+  {
     "type": "effect_type",
     "id": "graft_sores3",
     "name": [ "Grafting Sores" ],
@@ -233,7 +234,7 @@
     "part_descs": true,
     "base_mods": { "speed_mod": [ -2 ], "pain_amount": [ 2 ] }
   },
-    {
+  {
     "type": "effect_type",
     "id": "graft_sores4",
     "name": [ "Grafting Sores" ],
@@ -242,7 +243,7 @@
     "part_descs": true,
     "base_mods": { "speed_mod": [ -2 ], "pain_amount": [ 2 ] }
   },
-    {
+  {
     "type": "effect_type",
     "id": "graft_sores5",
     "name": [ "Grafting Sores" ],
@@ -251,7 +252,7 @@
     "part_descs": true,
     "base_mods": { "speed_mod": [ -2 ], "pain_amount": [ 2 ] }
   },
-    {
+  {
     "type": "effect_type",
     "id": "graft_sores7",
     "name": [ "Grafting Sores" ],
@@ -274,19 +275,19 @@
     "material": [ "steel" ],
     "symbol": "/",
     "color": "brown",
-	"armor": [ { "encumbrance": 8, "coverage": 100, "covers": [ "torso", "arm_l"  ] } ],
-	"relic_data": {
+    "armor": [ { "encumbrance": 8, "coverage": 100, "covers": [ "torso", "arm_l" ] } ],
+    "relic_data": {
       "passive_effects": [
         {
           "has": "WORN",
           "condition": "ALWAYS",
-		  "ench_effects": [ { "effect": "graft_sores", "intensity": 1 } ],
+          "ench_effects": [ { "effect": "graft_sores", "intensity": 1 } ],
           "values": [
             { "value": "MAX_MANA", "add": 100 },
-			{ "value": "ARMOR_BASH", "add": -3 },
-			{ "value": "ARMOR_CUT", "add": -3 },
-			{ "value": "ARMOR_STAB", "add": -3 },
-			{ "value": "ARMOR_BULLET", "add": -10 },
+            { "value": "ARMOR_BASH", "add": -3 },
+            { "value": "ARMOR_CUT", "add": -3 },
+            { "value": "ARMOR_STAB", "add": -3 },
+            { "value": "ARMOR_BULLET", "add": -10 },
             { "value": "STRENGTH", "add": 2 },
             { "value": "BONUS_BLOCK", "add": 1 },
             { "value": "DEXTERITY", "add": 1 },
@@ -294,8 +295,9 @@
           ]
         }
       ]
-  }},  
-      {
+    }
+  },
+  {
     "id": "grafted_simulacrum_heart",
     "type": "ARMOR",
     "name": { "str": "Grafted Simulacrum Heart" },
@@ -309,39 +311,34 @@
     "material": [ "steel" ],
     "symbol": "/",
     "color": "brown",
-	"charges_per_use": 0,
-	"armor": [ { "encumbrance": 2, "coverage": 100, "covers": [ "torso" ] } ],
-	
-	
-	"use_action":[
-	  { "type": "cast_spell", "spell_id": "stop_construct", "no_fail": true, "level": 1 }
-	],
-	"relic_data": {
+    "charges_per_use": 0,
+    "armor": [ { "encumbrance": 2, "coverage": 100, "covers": [ "torso" ] } ],
+    "use_action": [ { "type": "cast_spell", "spell_id": "stop_construct", "no_fail": true, "level": 1 } ],
+    "relic_data": {
       "passive_effects": [
         {
           "has": "WORN",
           "condition": "ALWAYS",
-		  "ench_effects": [ { "effect": "graft_sores11", "intensity": 1 } ],
+          "ench_effects": [ { "effect": "graft_sores11", "intensity": 1 } ],
           "values": [
             { "value": "MAX_MANA", "add": 250 },
-			{ "value": "SPEED", "add": 20 },
-			{ "value": "ARMOR_BASH", "add": -3 },
-			{ "value": "ARMOR_CUT", "add": -3 },
-			{ "value": "ARMOR_STAB", "add": -3 },
-			{ "value": "ARMOR_BULLET", "add": -10 },
-			{ "value": "ARMOR_ACID", "add": -5 },
-			{ "value": "ARMOR_ELEC", "add": -5 },
-			{ "value": "ARMOR_HEAT", "add": -5 },
-			{ "value": "ARMOR_COLD", "add": -5 },
+            { "value": "SPEED", "add": 20 },
+            { "value": "ARMOR_BASH", "add": -3 },
+            { "value": "ARMOR_CUT", "add": -3 },
+            { "value": "ARMOR_STAB", "add": -3 },
+            { "value": "ARMOR_BULLET", "add": -10 },
+            { "value": "ARMOR_ACID", "add": -5 },
+            { "value": "ARMOR_ELEC", "add": -5 },
+            { "value": "ARMOR_HEAT", "add": -5 },
+            { "value": "ARMOR_COLD", "add": -5 },
             { "value": "INTELLIGENCE", "add": 4 },
             { "value": "DEXTERITY", "add": 1 }
           ]
         }
       ]
-  }},  
-  
-  
-      {
+    }
+  },
+  {
     "id": "grafted_crimsonite_heart",
     "type": "ARMOR",
     "name": { "str": "Grafted Crimsonite Heart" },
@@ -355,31 +352,31 @@
     "material": [ "steel" ],
     "symbol": "/",
     "color": "brown",
-	"armor": [ { "encumbrance": 2, "coverage": 100, "covers": [ "torso" ] } ],
-	"relic_data": {
+    "armor": [ { "encumbrance": 2, "coverage": 100, "covers": [ "torso" ] } ],
+    "relic_data": {
       "passive_effects": [
         {
           "has": "WORN",
           "condition": "ALWAYS",
-		  "ench_effects": [ { "effect": "graft_sores12", "intensity": 1 } ],
+          "ench_effects": [ { "effect": "graft_sores12", "intensity": 1 } ],
           "values": [
             { "value": "MAX_MANA", "add": 250 },
             { "value": "MAX_STAMINA", "add": 800 },
-			{ "value": "SPEED", "add": 5 },
-			{ "value": "ARMOR_BASH", "add": -3 },
-			{ "value": "ARMOR_CUT", "add": -3 },
-			{ "value": "ARMOR_STAB", "add": -3 },
-			{ "value": "ARMOR_BULLET", "add": -10 },
-			{ "value": "ARMOR_HEAT", "add": -15 },
-			{ "value": "ARMOR_COLD", "add": 5 },
+            { "value": "SPEED", "add": 5 },
+            { "value": "ARMOR_BASH", "add": -3 },
+            { "value": "ARMOR_CUT", "add": -3 },
+            { "value": "ARMOR_STAB", "add": -3 },
+            { "value": "ARMOR_BULLET", "add": -10 },
+            { "value": "ARMOR_HEAT", "add": -15 },
+            { "value": "ARMOR_COLD", "add": 5 },
             { "value": "INTELLIGENCE", "add": 4 },
             { "value": "DEXTERITY", "add": 1 }
           ]
         }
       ]
-  }},  
-    
-      {
+    }
+  },
+  {
     "id": "grafted_ceruleum_heart",
     "type": "ARMOR",
     "name": { "str": "Grafted Ceruleum Heart" },
@@ -393,31 +390,31 @@
     "material": [ "steel" ],
     "symbol": "/",
     "color": "brown",
-	"armor": [ { "encumbrance": 2, "coverage": 100, "covers": [ "torso" ] } ],
-	"relic_data": {
+    "armor": [ { "encumbrance": 2, "coverage": 100, "covers": [ "torso" ] } ],
+    "relic_data": {
       "passive_effects": [
         {
           "has": "WORN",
           "condition": "ALWAYS",
-		  "ench_effects": [ { "effect": "graft_sores13", "intensity": 1 } ],
+          "ench_effects": [ { "effect": "graft_sores13", "intensity": 1 } ],
           "values": [
             { "value": "MAX_MANA", "add": 250 },
             { "value": "MAX_STAMINA", "add": 800 },
-			{ "value": "SPEED", "add": 5 },
-			{ "value": "ARMOR_BASH", "add": -3 },
-			{ "value": "ARMOR_CUT", "add": -3 },
-			{ "value": "ARMOR_STAB", "add": -3 },
-			{ "value": "ARMOR_BULLET", "add": -10 },
-			{ "value": "ARMOR_COLD", "add": -15 },
-			{ "value": "ARMOR_HEAT", "add": 5 },
+            { "value": "SPEED", "add": 5 },
+            { "value": "ARMOR_BASH", "add": -3 },
+            { "value": "ARMOR_CUT", "add": -3 },
+            { "value": "ARMOR_STAB", "add": -3 },
+            { "value": "ARMOR_BULLET", "add": -10 },
+            { "value": "ARMOR_COLD", "add": -15 },
+            { "value": "ARMOR_HEAT", "add": 5 },
             { "value": "INTELLIGENCE", "add": 4 },
             { "value": "DEXTERITY", "add": 1 }
           ]
         }
       ]
-  }},  
-    
-      {
+    }
+  },
+  {
     "id": "grafted_virid_heart",
     "type": "ARMOR",
     "name": { "str": "Grafted Virid Heart" },
@@ -431,32 +428,31 @@
     "material": [ "steel" ],
     "symbol": "/",
     "color": "brown",
-	"armor": [ { "encumbrance": 2, "coverage": 100, "covers": [ "torso" ] } ],
-	"relic_data": {
+    "armor": [ { "encumbrance": 2, "coverage": 100, "covers": [ "torso" ] } ],
+    "relic_data": {
       "passive_effects": [
         {
           "has": "WORN",
           "condition": "ALWAYS",
-		  "ench_effects": [ { "effect": "graft_sores14", "intensity": 1 } ],
+          "ench_effects": [ { "effect": "graft_sores14", "intensity": 1 } ],
           "values": [
             { "value": "MAX_MANA", "add": 250 },
             { "value": "MAX_STAMINA", "add": 800 },
-			{ "value": "SPEED", "add": 5 },
-			{ "value": "ARMOR_BASH", "add": -3 },
-			{ "value": "ARMOR_CUT", "add": -3 },
-			{ "value": "ARMOR_STAB", "add": -3 },
-			{ "value": "ARMOR_BULLET", "add": -10 },
-			{ "value": "ARMOR_ACID", "add": -15 },
-			{ "value": "ARMOR_ELEC", "add": 5 },
+            { "value": "SPEED", "add": 5 },
+            { "value": "ARMOR_BASH", "add": -3 },
+            { "value": "ARMOR_CUT", "add": -3 },
+            { "value": "ARMOR_STAB", "add": -3 },
+            { "value": "ARMOR_BULLET", "add": -10 },
+            { "value": "ARMOR_ACID", "add": -15 },
+            { "value": "ARMOR_ELEC", "add": 5 },
             { "value": "INTELLIGENCE", "add": 4 },
             { "value": "DEXTERITY", "add": 1 }
           ]
         }
       ]
-  }},  
-    
-    
-      {
+    }
+  },
+  {
     "id": "grafted_argent_heart",
     "type": "ARMOR",
     "name": { "str": "Grafted Argentium Heart" },
@@ -470,32 +466,30 @@
     "material": [ "steel" ],
     "symbol": "/",
     "color": "brown",
-	"armor": [ { "encumbrance": 2, "coverage": 100, "covers": [ "torso" ] } ],
-	"relic_data": {
+    "armor": [ { "encumbrance": 2, "coverage": 100, "covers": [ "torso" ] } ],
+    "relic_data": {
       "passive_effects": [
         {
           "has": "WORN",
           "condition": "ALWAYS",
-		  "ench_effects": [ { "effect": "graft_sores15", "intensity": 1 } ],
+          "ench_effects": [ { "effect": "graft_sores15", "intensity": 1 } ],
           "values": [
             { "value": "MAX_MANA", "add": 250 },
             { "value": "MAX_STAMINA", "add": 800 },
-			{ "value": "SPEED", "add": 5 },
-			{ "value": "ARMOR_BASH", "add": -3 },
-			{ "value": "ARMOR_CUT", "add": -3 },
-			{ "value": "ARMOR_STAB", "add": -3 },
-			{ "value": "ARMOR_BULLET", "add": -10 },
-			{ "value": "ARMOR_ACID", "add": 5 },
-			{ "value": "ARMOR_ELEC", "add": -15 },
+            { "value": "SPEED", "add": 5 },
+            { "value": "ARMOR_BASH", "add": -3 },
+            { "value": "ARMOR_CUT", "add": -3 },
+            { "value": "ARMOR_STAB", "add": -3 },
+            { "value": "ARMOR_BULLET", "add": -10 },
+            { "value": "ARMOR_ACID", "add": 5 },
+            { "value": "ARMOR_ELEC", "add": -15 },
             { "value": "INTELLIGENCE", "add": 4 },
             { "value": "DEXTERITY", "add": 1 }
           ]
         }
       ]
-  }},  
-    
-  
-    
+    }
+  },
   {
     "id": "grafted_arm_shadow_1",
     "type": "ARMOR",
@@ -510,19 +504,19 @@
     "material": [ "steel" ],
     "symbol": "/",
     "color": "brown",
-	"armor": [ { "encumbrance": 8, "coverage": 100, "covers": [ "torso", "arm_l"  ] } ],
-	"relic_data": {
+    "armor": [ { "encumbrance": 8, "coverage": 100, "covers": [ "torso", "arm_l" ] } ],
+    "relic_data": {
       "passive_effects": [
         {
           "has": "WORN",
           "condition": "ALWAYS",
-		  "ench_effects": [ { "effect": "graft_sores1", "intensity": 1 }, { "effect": "shadowsight", "intensity": 1 } ],
+          "ench_effects": [ { "effect": "graft_sores1", "intensity": 1 }, { "effect": "shadowsight", "intensity": 1 } ],
           "values": [
             { "value": "MAX_MANA", "add": 100 },
-			{ "value": "ARMOR_BASH", "add": -3 },
-			{ "value": "ARMOR_CUT", "add": -3 },
-			{ "value": "ARMOR_STAB", "add": -3 },
-			{ "value": "ARMOR_BULLET", "add": -10 },
+            { "value": "ARMOR_BASH", "add": -3 },
+            { "value": "ARMOR_CUT", "add": -3 },
+            { "value": "ARMOR_STAB", "add": -3 },
+            { "value": "ARMOR_BULLET", "add": -10 },
             { "value": "STRENGTH", "add": 2 },
             { "value": "BONUS_BLOCK", "add": 1 },
             { "value": "BONUS_BLOCK", "add": 1 },
@@ -531,9 +525,8 @@
           ]
         }
       ]
-  }},  
-  
-      
+    }
+  },
   {
     "id": "grafted_arm_shadow_2",
     "type": "ARMOR",
@@ -548,19 +541,19 @@
     "material": [ "steel" ],
     "symbol": "/",
     "color": "brown",
-	"armor": [ { "encumbrance": 8, "coverage": 100, "covers": [ "torso", "arm_r"  ] } ],
-	"relic_data": {
+    "armor": [ { "encumbrance": 8, "coverage": 100, "covers": [ "torso", "arm_r" ] } ],
+    "relic_data": {
       "passive_effects": [
         {
           "has": "WORN",
           "condition": "ALWAYS",
-		  "ench_effects": [ { "effect": "graft_sores2", "intensity": 1 }, { "effect": "shadowsight", "intensity": 1 } ],
+          "ench_effects": [ { "effect": "graft_sores2", "intensity": 1 }, { "effect": "shadowsight", "intensity": 1 } ],
           "values": [
             { "value": "MAX_MANA", "add": 100 },
-			{ "value": "ARMOR_BASH", "add": -3 },
-			{ "value": "ARMOR_CUT", "add": -3 },
-			{ "value": "ARMOR_STAB", "add": -3 },
-			{ "value": "ARMOR_BULLET", "add": -10 },
+            { "value": "ARMOR_BASH", "add": -3 },
+            { "value": "ARMOR_CUT", "add": -3 },
+            { "value": "ARMOR_STAB", "add": -3 },
+            { "value": "ARMOR_BULLET", "add": -10 },
             { "value": "STRENGTH", "add": 2 },
             { "value": "BONUS_BLOCK", "add": 1 },
             { "value": "DEXTERITY", "add": 1 },
@@ -568,10 +561,8 @@
           ]
         }
       ]
-  }},  
-  
-    
-      
+    }
+  },
   {
     "id": "grafted_arm_marionette_1",
     "type": "ARMOR",
@@ -586,23 +577,20 @@
     "material": [ "steel" ],
     "symbol": "/",
     "color": "brown",
-	"armor": [ { "encumbrance": 8, "coverage": 100, "covers": [ "torso", "arm_l"  ] } ],
-	
-	"use_action":[
-	  { "type": "cast_spell", "spell_id": "cut_string", "no_fail": true, "level": 1 }
-	],
-	"relic_data": {
+    "armor": [ { "encumbrance": 8, "coverage": 100, "covers": [ "torso", "arm_l" ] } ],
+    "use_action": [ { "type": "cast_spell", "spell_id": "cut_string", "no_fail": true, "level": 1 } ],
+    "relic_data": {
       "passive_effects": [
         {
           "has": "WORN",
           "condition": "ALWAYS",
-		  "ench_effects": [ { "effect": "graft_sores3", "intensity": 1 } ],
+          "ench_effects": [ { "effect": "graft_sores3", "intensity": 1 } ],
           "values": [
             { "value": "MAX_MANA", "add": 100 },
-			{ "value": "ARMOR_BASH", "add": -3 },
-			{ "value": "ARMOR_CUT", "add": -3 },
-			{ "value": "ARMOR_STAB", "add": -3 },
-			{ "value": "ARMOR_BULLET", "add": -10 },
+            { "value": "ARMOR_BASH", "add": -3 },
+            { "value": "ARMOR_CUT", "add": -3 },
+            { "value": "ARMOR_STAB", "add": -3 },
+            { "value": "ARMOR_BULLET", "add": -10 },
             { "value": "STRENGTH", "add": 2 },
             { "value": "BONUS_BLOCK", "add": 1 },
             { "value": "DEXTERITY", "add": 1 },
@@ -610,9 +598,8 @@
           ]
         }
       ]
-  }},  
-  
-        
+    }
+  },
   {
     "id": "grafted_arm_marionette_2",
     "type": "ARMOR",
@@ -627,23 +614,20 @@
     "material": [ "steel" ],
     "symbol": "/",
     "color": "brown",
-	"armor": [ { "encumbrance": 8, "coverage": 100, "covers": [ "torso", "arm_r"  ] } ],
-	
-	"use_action":[
-	  { "type": "cast_spell", "spell_id": "cut_string", "no_fail": true, "level": 1 }
-	],
-	"relic_data": {
+    "armor": [ { "encumbrance": 8, "coverage": 100, "covers": [ "torso", "arm_r" ] } ],
+    "use_action": [ { "type": "cast_spell", "spell_id": "cut_string", "no_fail": true, "level": 1 } ],
+    "relic_data": {
       "passive_effects": [
         {
           "has": "WORN",
           "condition": "ALWAYS",
-		  "ench_effects": [ { "effect": "graft_sores4", "intensity": 1 } ],
+          "ench_effects": [ { "effect": "graft_sores4", "intensity": 1 } ],
           "values": [
             { "value": "MAX_MANA", "add": 100 },
-			{ "value": "ARMOR_BASH", "add": -3 },
-			{ "value": "ARMOR_CUT", "add": -3 },
-			{ "value": "ARMOR_STAB", "add": -3 },
-			{ "value": "ARMOR_BULLET", "add": -10 },
+            { "value": "ARMOR_BASH", "add": -3 },
+            { "value": "ARMOR_CUT", "add": -3 },
+            { "value": "ARMOR_STAB", "add": -3 },
+            { "value": "ARMOR_BULLET", "add": -10 },
             { "value": "STRENGTH", "add": 2 },
             { "value": "BONUS_BLOCK", "add": 1 },
             { "value": "DEXTERITY", "add": 1 },
@@ -651,10 +635,8 @@
           ]
         }
       ]
-  }},  
-  
-    
-        
+    }
+  },
   {
     "id": "grafted_arm_slug_2",
     "type": "ARMOR",
@@ -669,19 +651,19 @@
     "material": [ "steel" ],
     "symbol": "/",
     "color": "brown",
-	"armor": [ { "encumbrance": 8, "coverage": 100, "covers": [ "torso", "arm_r"  ] } ],
-	"relic_data": {
+    "armor": [ { "encumbrance": 8, "coverage": 100, "covers": [ "torso", "arm_r" ] } ],
+    "relic_data": {
       "passive_effects": [
         {
           "has": "WORN",
           "condition": "ALWAYS",
-		  "ench_effects": [ { "effect": "graft_sores5", "intensity": 1 }, { "effect": "slugsight", "intensity": 1 } ],
+          "ench_effects": [ { "effect": "graft_sores5", "intensity": 1 }, { "effect": "slugsight", "intensity": 1 } ],
           "values": [
             { "value": "MAX_MANA", "add": 100 },
-			{ "value": "ARMOR_BASH", "add": -3 },
-			{ "value": "ARMOR_CUT", "add": -3 },
-			{ "value": "ARMOR_STAB", "add": -3 },
-			{ "value": "ARMOR_BULLET", "add": -10 },
+            { "value": "ARMOR_BASH", "add": -3 },
+            { "value": "ARMOR_CUT", "add": -3 },
+            { "value": "ARMOR_STAB", "add": -3 },
+            { "value": "ARMOR_BULLET", "add": -10 },
             { "value": "STRENGTH", "add": 2 },
             { "value": "BONUS_BLOCK", "add": 1 },
             { "value": "DEXTERITY", "add": 1 },
@@ -689,10 +671,8 @@
           ]
         }
       ]
-  }},  
-  
-    
-        
+    }
+  },
   {
     "id": "grafted_arm_slug_1",
     "type": "ARMOR",
@@ -707,19 +687,19 @@
     "material": [ "steel" ],
     "symbol": "/",
     "color": "brown",
-	"armor": [ { "encumbrance": 8, "coverage": 100, "covers": [ "torso", "arm_l"  ] } ],
-	"relic_data": {
+    "armor": [ { "encumbrance": 8, "coverage": 100, "covers": [ "torso", "arm_l" ] } ],
+    "relic_data": {
       "passive_effects": [
         {
           "has": "WORN",
           "condition": "ALWAYS",
-		  "ench_effects": [ { "effect": "graft_sores6", "intensity": 1 }, { "effect": "slugsight", "intensity": 1 } ],
+          "ench_effects": [ { "effect": "graft_sores6", "intensity": 1 }, { "effect": "slugsight", "intensity": 1 } ],
           "values": [
             { "value": "MAX_MANA", "add": 100 },
-			{ "value": "ARMOR_BASH", "add": -3 },
-			{ "value": "ARMOR_CUT", "add": -3 },
-			{ "value": "ARMOR_STAB", "add": -3 },
-			{ "value": "ARMOR_BULLET", "add": -10 },
+            { "value": "ARMOR_BASH", "add": -3 },
+            { "value": "ARMOR_CUT", "add": -3 },
+            { "value": "ARMOR_STAB", "add": -3 },
+            { "value": "ARMOR_BULLET", "add": -10 },
             { "value": "STRENGTH", "add": 2 },
             { "value": "BONUS_BLOCK", "add": 1 },
             { "value": "DEXTERITY", "add": 1 },
@@ -727,10 +707,9 @@
           ]
         }
       ]
-  }},  
-  
-  
-    {
+    }
+  },
+  {
     "id": "grafted_arm_worm_1",
     "type": "ARMOR",
     "name": { "str": "Grafted Left Arm (Worm Grease Dram)" },
@@ -744,19 +723,19 @@
     "material": [ "steel" ],
     "symbol": "/",
     "color": "brown",
-	"armor": [ { "encumbrance": 8, "coverage": 100, "covers": [ "torso", "arm_l"  ] } ],
-	"relic_data": {
+    "armor": [ { "encumbrance": 8, "coverage": 100, "covers": [ "torso", "arm_l" ] } ],
+    "relic_data": {
       "passive_effects": [
         {
           "has": "WORN",
           "condition": "ALWAYS",
-		  "ench_effects": [ { "effect": "graft_sores7", "intensity": 1 } , { "effect": "wormsight", "intensity": 1 }],
+          "ench_effects": [ { "effect": "graft_sores7", "intensity": 1 }, { "effect": "wormsight", "intensity": 1 } ],
           "values": [
             { "value": "MAX_MANA", "add": 100 },
-			{ "value": "ARMOR_BASH", "add": -3 },
-			{ "value": "ARMOR_CUT", "add": -3 },
-			{ "value": "ARMOR_STAB", "add": -3 },
-			{ "value": "ARMOR_BULLET", "add": -10 },
+            { "value": "ARMOR_BASH", "add": -3 },
+            { "value": "ARMOR_CUT", "add": -3 },
+            { "value": "ARMOR_STAB", "add": -3 },
+            { "value": "ARMOR_BULLET", "add": -10 },
             { "value": "STRENGTH", "add": 2 },
             { "value": "BONUS_BLOCK", "add": 1 },
             { "value": "DEXTERITY", "add": 1 },
@@ -764,12 +743,9 @@
           ]
         }
       ]
-  }},  
-  
-  
-  
-  
-    {
+    }
+  },
+  {
     "id": "grafted_arm_worm_2",
     "type": "ARMOR",
     "name": { "str": "Grafted Right Arm (Worm Grease Dram)" },
@@ -783,19 +759,19 @@
     "material": [ "steel" ],
     "symbol": "/",
     "color": "brown",
-	"armor": [ { "encumbrance": 8, "coverage": 100, "covers": [ "torso", "arm_r"  ] } ],
-	"relic_data": {
+    "armor": [ { "encumbrance": 8, "coverage": 100, "covers": [ "torso", "arm_r" ] } ],
+    "relic_data": {
       "passive_effects": [
         {
           "has": "WORN",
           "condition": "ALWAYS",
-		  "ench_effects": [ { "effect": "graft_sores8", "intensity": 1 }, { "effect": "wormsight", "intensity": 1 }],
+          "ench_effects": [ { "effect": "graft_sores8", "intensity": 1 }, { "effect": "wormsight", "intensity": 1 } ],
           "values": [
             { "value": "MAX_MANA", "add": 100 },
-			{ "value": "ARMOR_BASH", "add": -3 },
-			{ "value": "ARMOR_CUT", "add": -3 },
-			{ "value": "ARMOR_STAB", "add": -3 },
-			{ "value": "ARMOR_BULLET", "add": -10 },
+            { "value": "ARMOR_BASH", "add": -3 },
+            { "value": "ARMOR_CUT", "add": -3 },
+            { "value": "ARMOR_STAB", "add": -3 },
+            { "value": "ARMOR_BULLET", "add": -10 },
             { "value": "STRENGTH", "add": 2 },
             { "value": "BONUS_BLOCK", "add": 1 },
             { "value": "DEXTERITY", "add": 1 },
@@ -803,10 +779,9 @@
           ]
         }
       ]
-  }},  
-  
-  
-      {
+    }
+  },
+  {
     "id": "grafted_arm_simulacrum_2",
     "type": "ARMOR",
     "name": { "str": "Grafted Right Arm (Simulacrum Inertizor)" },
@@ -820,23 +795,20 @@
     "material": [ "steel" ],
     "symbol": "/",
     "color": "brown",
-	"armor": [ { "encumbrance": 8, "coverage": 100, "covers": [ "torso", "arm_r"  ] } ],
-	
-	"use_action":[
-	  { "type": "cast_spell", "spell_id": "stop_construct", "no_fail": true, "level": 1 }
-	],
-	"relic_data": {
+    "armor": [ { "encumbrance": 8, "coverage": 100, "covers": [ "torso", "arm_r" ] } ],
+    "use_action": [ { "type": "cast_spell", "spell_id": "stop_construct", "no_fail": true, "level": 1 } ],
+    "relic_data": {
       "passive_effects": [
         {
           "has": "WORN",
           "condition": "ALWAYS",
-		  "ench_effects": [ { "effect": "graft_sores", "intensity": 1 } ],
+          "ench_effects": [ { "effect": "graft_sores", "intensity": 1 } ],
           "values": [
             { "value": "MAX_MANA", "add": 100 },
-			{ "value": "ARMOR_BASH", "add": -3 },
-			{ "value": "ARMOR_CUT", "add": -3 },
-			{ "value": "ARMOR_STAB", "add": -3 },
-			{ "value": "ARMOR_BULLET", "add": -10 },
+            { "value": "ARMOR_BASH", "add": -3 },
+            { "value": "ARMOR_CUT", "add": -3 },
+            { "value": "ARMOR_STAB", "add": -3 },
+            { "value": "ARMOR_BULLET", "add": -10 },
             { "value": "STRENGTH", "add": 2 },
             { "value": "BONUS_BLOCK", "add": 1 },
             { "value": "DEXTERITY", "add": 1 },
@@ -844,10 +816,9 @@
           ]
         }
       ]
-  }},  
-  
-    
-      {
+    }
+  },
+  {
     "id": "grafted_arm_simulacrum_1",
     "type": "ARMOR",
     "name": { "str": "Grafted Left Arm (Simulacrum Inertizor)" },
@@ -861,23 +832,20 @@
     "material": [ "steel" ],
     "symbol": "/",
     "color": "brown",
-	"armor": [ { "encumbrance": 8, "coverage": 100, "covers": [ "torso", "arm_l"  ] } ],
-	
-	"use_action":[
-	  { "type": "cast_spell", "spell_id": "stop_construct", "no_fail": true, "level": 1 }
-	],
-	"relic_data": {
+    "armor": [ { "encumbrance": 8, "coverage": 100, "covers": [ "torso", "arm_l" ] } ],
+    "use_action": [ { "type": "cast_spell", "spell_id": "stop_construct", "no_fail": true, "level": 1 } ],
+    "relic_data": {
       "passive_effects": [
         {
           "has": "WORN",
           "condition": "ALWAYS",
-		  "ench_effects": [ { "effect": "graft_sores9", "intensity": 1 } ],
+          "ench_effects": [ { "effect": "graft_sores9", "intensity": 1 } ],
           "values": [
             { "value": "MAX_MANA", "add": 100 },
-			{ "value": "ARMOR_BASH", "add": -3 },
-			{ "value": "ARMOR_CUT", "add": -3 },
-			{ "value": "ARMOR_STAB", "add": -3 },
-			{ "value": "ARMOR_BULLET", "add": -10 },
+            { "value": "ARMOR_BASH", "add": -3 },
+            { "value": "ARMOR_CUT", "add": -3 },
+            { "value": "ARMOR_STAB", "add": -3 },
+            { "value": "ARMOR_BULLET", "add": -10 },
             { "value": "STRENGTH", "add": 2 },
             { "value": "BONUS_BLOCK", "add": 1 },
             { "value": "DEXTERITY", "add": 1 },
@@ -885,10 +853,8 @@
           ]
         }
       ]
-  }},  
-  
-  
-  
+    }
+  },
   {
     "id": "grafted_arm2",
     "type": "ARMOR",
@@ -903,19 +869,19 @@
     "material": [ "steel" ],
     "symbol": "/",
     "color": "brown",
-	"armor": [ { "encumbrance": 8, "coverage": 100, "covers": [ "torso", "arm_r"  ] } ],
-	"relic_data": {
+    "armor": [ { "encumbrance": 8, "coverage": 100, "covers": [ "torso", "arm_r" ] } ],
+    "relic_data": {
       "passive_effects": [
         {
           "has": "WORN",
           "condition": "ALWAYS",
-		  "ench_effects": [ { "effect": "graft_sores10", "intensity": 1 } ],
+          "ench_effects": [ { "effect": "graft_sores10", "intensity": 1 } ],
           "values": [
             { "value": "MAX_MANA", "add": 100 },
-			{ "value": "ARMOR_BASH", "add": -3 },
-			{ "value": "ARMOR_CUT", "add": -3 },
-			{ "value": "ARMOR_STAB", "add": -3 },
-			{ "value": "ARMOR_BULLET", "add": -10 },
+            { "value": "ARMOR_BASH", "add": -3 },
+            { "value": "ARMOR_CUT", "add": -3 },
+            { "value": "ARMOR_STAB", "add": -3 },
+            { "value": "ARMOR_BULLET", "add": -10 },
             { "value": "STRENGTH", "add": 2 },
             { "value": "BONUS_BLOCK", "add": 1 },
             { "value": "DEXTERITY", "add": 1 },
@@ -923,5 +889,6 @@
           ]
         }
       ]
-  }}
+    }
+  }
 ]

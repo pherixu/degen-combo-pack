@@ -3,11 +3,10 @@
     "type": "MOD_INFO",
     "ident": "Two Hand Path Sorcery",
     "name": "Two Hand Path Sorcery",
-    "authors": [ "phe" ] ,
-    "maintainers": [ "phe" ] ,
-    "description": "pure kino in here" ,
+    "authors": [ "phe" ],
+    "maintainers": [ "phe" ],
+    "description": "pure kino in here",
     "category": "content",
     "dependencies": [ "dda" ]
   }
-  
 ]

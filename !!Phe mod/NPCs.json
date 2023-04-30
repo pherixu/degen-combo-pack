@@ -1,75 +1,112 @@
 [
-
   {
     "id": "all_gunblades",
     "type": "item_group",
     "subtype": "collection",
-    "items": [ { "item": "engine_shotgun_crimson" }, { "item": "engine_acid_crimson" } ,
-			   { "item": "engine_shotgun_ceruleum" }, { "item": "engine_acid_ceruleum" }  ,
-			   { "item": "engine_shotgun_virid" }, { "item": "engine_acid_virid" } ,
-			   { "item": "engine_shotgun_argent" }, { "item": "engine_acid_argent" },
-			   { "item": "engine_frost_ceruleum" }, { "item": "engine_fire_ceruleum" }  ,
-			   { "item": "engine_frost_virid" }, { "item": "engine_fire_virid" } ,
-			   { "item": "engine_frost_argent" }, { "item": "engine_fire_argent" },
-			   { "item": "engine_frost_crimson" }, { "item": "engine_fire_crimson" } ,
-			   { "item": "engine_elec_crimson" }, { "item": "engine_elec_virid" } ,
-			   { "item": "engine_elec_ceruleum" }, { "item": "engine_elec_argent" } ,
-			   
-			   
-			   { "item": "tandem_frost_ceruleum" }, { "item": "tandem_fire_ceruleum" }  ,
-			   { "item": "tandem_frost_virid" }, { "item": "tandem_fire_virid" } ,
-			   { "item": "tandem_frost_argent" }, { "item": "tandem_fire_argent" },
-			   { "item": "tandem_frost_crimson" }, { "item": "tandem_fire_crimson" },
-			   { "item": "tandem_acid_ceruleum" }, { "item": "tandem_shotgun_ceruleum" }  ,
-			   { "item": "tandem_acid_virid" }, { "item": "tandem_shotgun_virid" } ,
-			   { "item": "tandem_acid_argent" }, { "item": "tandem_shotgun_argent" },
-			   { "item": "tandem_acid_crimson" }, { "item": "tandem_shotgun_crimson" } ,
-			   { "item": "tandem_elec_crimson" }, { "item": "tandem_elec_virid" } ,
-			   { "item": "tandem_elec_ceruleum" }, { "item": "tandem_elec_argent" } ,
-			   
-			   
-			   { "item": "lance_frost_ceruleum" }, { "item": "lance_fire_ceruleum" }  ,
-			   { "item": "lance_frost_virid" }, { "item": "lance_fire_virid" } ,
-			   { "item": "lance_frost_argent" }, { "item": "lance_fire_argent" },
-			   { "item": "lance_frost_crimson" }, { "item": "lance_fire_crimson" },
-			   { "item": "lance_acid_ceruleum" }, { "item": "lance_shotgun_ceruleum" }  ,
-			   { "item": "lance_acid_virid" }, { "item": "lance_shotgun_virid" } ,
-			   { "item": "lance_acid_argent" }, { "item": "lance_shotgun_argent" },
-			   { "item": "lance_acid_crimson" }, { "item": "lance_shotgun_crimson" } ,
-			   { "item": "lance_elec_crimson" }, { "item": "lance_elec_virid" } ,
-			   { "item": "lance_elec_ceruleum" }, { "item": "lance_elec_argent" } ,
-			   
-			   
-			   
-			    { "item": "aegis_frost_ceruleum" }, { "item": "aegis_fire_ceruleum" }  ,
-				{ "item": "aegis_frost_virid" }, { "item": "aegis_fire_virid" } ,
-				{ "item": "aegis_frost_argent" }, { "item": "aegis_fire_argent" },
-				{ "item": "aegis_frost_crimson" }, { "item": "aegis_fire_crimson" },
-				{ "item": "aegis_acid_ceruleum" }, { "item": "aegis_shotgun_ceruleum" }  ,
-				{ "item": "aegis_acid_virid" }, { "item": "aegis_shotgun_virid" } ,
-				{ "item": "aegis_acid_argent" }, { "item": "aegis_shotgun_argent" },
-				{ "item": "aegis_acid_crimson" }, { "item": "aegis_shotgun_crimson" },
-			   { "item": "aegis_elec_crimson" }, { "item": "aegis_elec_virid" } ,
-			   { "item": "aegis_elec_ceruleum" }, { "item": "aegis_elec_argent" } ,
-				
-
-			   
-			   { "item": "siphon_frost_ceruleum" }, { "item": "siphon_fire_ceruleum" }  ,
-			   { "item": "siphon_frost_virid" }, { "item": "siphon_fire_virid" } ,
-			   { "item": "siphon_frost_argent" }, { "item": "siphon_fire_argent" },
-			   { "item": "siphon_frost_crimson" }, { "item": "siphon_fire_crimson" },
-			   { "item": "siphon_acid_ceruleum" }, { "item": "siphon_shotgun_ceruleum" }  ,
-			   { "item": "siphon_acid_virid" }, { "item": "siphon_shotgun_virid" } ,
-			   { "item": "siphon_acid_argent" }, { "item": "siphon_shotgun_argent" },
-			   { "item": "siphon_acid_crimson" }, { "item": "siphon_shotgun_crimson" } ,
-			   { "item": "siphon_elec_crimson" }, { "item": "siphon_elec_virid" } ,
-			   { "item": "siphon_elec_ceruleum" }, { "item": "siphon_elec_argent" } 
-			   
-	]
+    "items": [
+      { "item": "engine_shotgun_crimson" },
+      { "item": "engine_acid_crimson" },
+      { "item": "engine_shotgun_ceruleum" },
+      { "item": "engine_acid_ceruleum" },
+      { "item": "engine_shotgun_virid" },
+      { "item": "engine_acid_virid" },
+      { "item": "engine_shotgun_argent" },
+      { "item": "engine_acid_argent" },
+      { "item": "engine_frost_ceruleum" },
+      { "item": "engine_fire_ceruleum" },
+      { "item": "engine_frost_virid" },
+      { "item": "engine_fire_virid" },
+      { "item": "engine_frost_argent" },
+      { "item": "engine_fire_argent" },
+      { "item": "engine_frost_crimson" },
+      { "item": "engine_fire_crimson" },
+      { "item": "engine_elec_crimson" },
+      { "item": "engine_elec_virid" },
+      { "item": "engine_elec_ceruleum" },
+      { "item": "engine_elec_argent" },
+      { "item": "tandem_frost_ceruleum" },
+      { "item": "tandem_fire_ceruleum" },
+      { "item": "tandem_frost_virid" },
+      { "item": "tandem_fire_virid" },
+      { "item": "tandem_frost_argent" },
+      { "item": "tandem_fire_argent" },
+      { "item": "tandem_frost_crimson" },
+      { "item": "tandem_fire_crimson" },
+      { "item": "tandem_acid_ceruleum" },
+      { "item": "tandem_shotgun_ceruleum" },
+      { "item": "tandem_acid_virid" },
+      { "item": "tandem_shotgun_virid" },
+      { "item": "tandem_acid_argent" },
+      { "item": "tandem_shotgun_argent" },
+      { "item": "tandem_acid_crimson" },
+      { "item": "tandem_shotgun_crimson" },
+      { "item": "tandem_elec_crimson" },
+      { "item": "tandem_elec_virid" },
+      { "item": "tandem_elec_ceruleum" },
+      { "item": "tandem_elec_argent" },
+      { "item": "lance_frost_ceruleum" },
+      { "item": "lance_fire_ceruleum" },
+      { "item": "lance_frost_virid" },
+      { "item": "lance_fire_virid" },
+      { "item": "lance_frost_argent" },
+      { "item": "lance_fire_argent" },
+      { "item": "lance_frost_crimson" },
+      { "item": "lance_fire_crimson" },
+      { "item": "lance_acid_ceruleum" },
+      { "item": "lance_shotgun_ceruleum" },
+      { "item": "lance_acid_virid" },
+      { "item": "lance_shotgun_virid" },
+      { "item": "lance_acid_argent" },
+      { "item": "lance_shotgun_argent" },
+      { "item": "lance_acid_crimson" },
+      { "item": "lance_shotgun_crimson" },
+      { "item": "lance_elec_crimson" },
+      { "item": "lance_elec_virid" },
+      { "item": "lance_elec_ceruleum" },
+      { "item": "lance_elec_argent" },
+      { "item": "aegis_frost_ceruleum" },
+      { "item": "aegis_fire_ceruleum" },
+      { "item": "aegis_frost_virid" },
+      { "item": "aegis_fire_virid" },
+      { "item": "aegis_frost_argent" },
+      { "item": "aegis_fire_argent" },
+      { "item": "aegis_frost_crimson" },
+      { "item": "aegis_fire_crimson" },
+      { "item": "aegis_acid_ceruleum" },
+      { "item": "aegis_shotgun_ceruleum" },
+      { "item": "aegis_acid_virid" },
+      { "item": "aegis_shotgun_virid" },
+      { "item": "aegis_acid_argent" },
+      { "item": "aegis_shotgun_argent" },
+      { "item": "aegis_acid_crimson" },
+      { "item": "aegis_shotgun_crimson" },
+      { "item": "aegis_elec_crimson" },
+      { "item": "aegis_elec_virid" },
+      { "item": "aegis_elec_ceruleum" },
+      { "item": "aegis_elec_argent" },
+      { "item": "siphon_frost_ceruleum" },
+      { "item": "siphon_fire_ceruleum" },
+      { "item": "siphon_frost_virid" },
+      { "item": "siphon_fire_virid" },
+      { "item": "siphon_frost_argent" },
+      { "item": "siphon_fire_argent" },
+      { "item": "siphon_frost_crimson" },
+      { "item": "siphon_fire_crimson" },
+      { "item": "siphon_acid_ceruleum" },
+      { "item": "siphon_shotgun_ceruleum" },
+      { "item": "siphon_acid_virid" },
+      { "item": "siphon_shotgun_virid" },
+      { "item": "siphon_acid_argent" },
+      { "item": "siphon_shotgun_argent" },
+      { "item": "siphon_acid_crimson" },
+      { "item": "siphon_shotgun_crimson" },
+      { "item": "siphon_elec_crimson" },
+      { "item": "siphon_elec_virid" },
+      { "item": "siphon_elec_ceruleum" },
+      { "item": "siphon_elec_argent" }
+    ]
   },
-
-
- {
+  {
     "type": "item_group",
     "id": "mando_worn",
     "subtype": "collection",
@@ -91,8 +128,6 @@
       { "item": "professional_pendant", "prob": 1 }
     ]
   },
-  
-  
   {
     "type": "item_group",
     "id": "mando_carry",
@@ -106,10 +141,7 @@
       { "item": "money_hundred", "count": [ 10, 300 ] }
     ]
   },
-
-  
-  
- {
+  {
     "type": "item_group",
     "id": "gunbreaker_worn",
     "subtype": "collection",
@@ -131,10 +163,6 @@
       { "item": "professional_pendant", "prob": 1 }
     ]
   },
-  
-  
-  
-  
   {
     "type": "item_group",
     "id": "gunbreaker_carry",
@@ -147,11 +175,7 @@
       { "item": "money_hundred", "count": [ 10, 300 ] }
     ]
   },
-
-
-
-
- {
+  {
     "type": "item_group",
     "id": "graft_worn",
     "subtype": "collection",
@@ -173,8 +197,6 @@
       { "item": "professional_pendant", "prob": 1 }
     ]
   },
-  
-  
   {
     "type": "item_group",
     "id": "graft_carry",
@@ -188,17 +210,12 @@
       { "item": "money_hundred", "count": [ 10, 300 ] }
     ]
   },
-
-  
-
-
-
- {
+  {
     "type": "npc_class",
     "id": "NC_PAWNS",
     "name": { "str": "Pawn" },
     "job_description": "...",
-	"common": true,
+    "common": true,
     "traits": [
       { "group": "trait_mutant_npc_common" },
       { "group": "BG_survival_story_UNIVERSAL" },
@@ -215,9 +232,9 @@
     "skills": [
       { "skill": "ALL", "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "rng": [ 1, 2 ] } ] } ] } },
       { "skill": "melee", "bonus": { "rng": [ 1, 4 ] } },
-	  { "skill": "dodge", "bonus": { "rng": [ 3, 6 ] } },
-	  { "skill": "spellcraft", "bonus": { "rng": [ 1, 4 ] } },
-	  { "skill": "gun", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 3, 6 ] } },
+      { "skill": "spellcraft", "bonus": { "rng": [ 1, 4 ] } },
+      { "skill": "gun", "bonus": { "rng": [ 1, 2 ] } },
       { "skill": "archery", "bonus": { "rng": [ 3, 6 ] } }
     ]
   },
@@ -256,7 +273,7 @@
         "success": { "topic": "TALK_PAWN_FRIENDLY", "opinion": { "trust": 0, "value": 1 } },
         "failure": { "topic": "TALK__PAWN_FEARFUL", "opinion": { "anger": 0, "fear": 0 } }
       },
-	  {
+      {
         "switch": true,
         "default": true,
         "text": "Saw some rabbits that way, wanna go see?",
@@ -346,7 +363,7 @@
         "failure": { "topic": "TALK_DONE", "effect": "hostile" }
       },
       { "text": "Why shouldn't you?", "topic": "TALK_DONE", "effect": "hostile" },
-	  {
+      {
         "text": "?!?!",
         "trial": { "type": "LIE", "difficulty": 30 },
         "success": { "topic": "TALK_AGREE_FOLLOW", "opinion": { "trust": 1, "value": 1, "anger": -1 } },
@@ -364,42 +381,19 @@
     "type": "talk_topic",
     "id": "TALK_PAWN_INTRO",
     "dynamic_line": "...",
-    "responses": [
-      { "text": ".", "topic": "TALK_DONE" }
-    ]
+    "responses": [ { "text": ".", "topic": "TALK_DONE" } ]
   },
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
- {
+  {
     "type": "npc_class",
     "id": "jedi",
     "name": { "str": "Jedi" },
     "job_description": "...",
-	"common": true,
-      "traits": [
+    "common": true,
+    "traits": [
       { "trait": "LEVITATE" },
       { "trait": "LEVITATE2" },
-	  {"trait": "MANA_SUBTLE_SPELL" },
-      {"trait": "MANA_SILENT_SPELL" },
+      { "trait": "MANA_SUBTLE_SPELL" },
+      { "trait": "MANA_SILENT_SPELL" },
       { "group": "trait_mutant_npc_common" },
       { "group": "trait_group_manatouched_postthres" },
       { "group": "trait_group_operator" },
@@ -473,7 +467,7 @@
       { "skill": "unarmed", "bonus": { "rng": [ 6, 8 ] } },
       { "skill": "spellcraft", "bonus": { "rng": [ 8, 11 ] } }
     ],
-	"spells": [
+    "spells": [
       { "id": "bullet_immune", "level": 10 },
       { "id": "directed_prone", "level": 10 },
       { "id": "dislocate", "level": 10 },
@@ -525,7 +519,7 @@
         "success": { "topic": "TALK_JEDI_FRIENDLY", "opinion": { "trust": 0, "value": 1 } },
         "failure": { "topic": "TALK__PAWN_FEARFUL", "opinion": { "anger": 0, "fear": 0 } }
       },
-	  {
+      {
         "switch": true,
         "default": true,
         "text": "There are imperials around here...",
@@ -558,30 +552,19 @@
       { "text": "Bye.", "topic": "TALK_DONE" }
     ]
   },
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
- {
+  {
     "type": "npc_class",
     "id": "gunbreaker",
     "name": { "str": "Gunbreaker" },
     "worn_override": "gunbreaker_worn",
     "carry_override": "gunbreaker_carry",
     "job_description": "...",
-	"common": true,
-      "traits": [
+    "common": true,
+    "traits": [
       { "trait": "LEVITATE" },
       { "trait": "LEVITATE2" },
-	  {"trait": "MANA_SUBTLE_SPELL" },
-      {"trait": "MANA_SILENT_SPELL" },
+      { "trait": "MANA_SUBTLE_SPELL" },
+      { "trait": "MANA_SILENT_SPELL" },
       { "group": "trait_mutant_npc_common" },
       { "group": "trait_group_manatouched_postthres" },
       { "group": "trait_group_operator" },
@@ -655,7 +638,7 @@
       { "skill": "unarmed", "bonus": { "rng": [ 3, 5 ] } },
       { "skill": "spellcraft", "bonus": { "rng": [ 8, 11 ] } }
     ],
-	"spells": [
+    "spells": [
       { "id": "bullet_immune", "level": 10 },
       { "id": "directed_prone", "level": 10 },
       { "id": "dislocate", "level": 10 },
@@ -707,7 +690,7 @@
         "success": { "topic": "TALK_GB_FRIENDLY", "opinion": { "trust": 0, "value": 1 } },
         "failure": { "topic": "TALK__PAWN_FEARFUL", "opinion": { "anger": 0, "fear": 0 } }
       },
-	  {
+      {
         "switch": true,
         "default": true,
         "text": "I know where to find some loot...",
@@ -740,33 +723,14 @@
       { "text": "Bye.", "topic": "TALK_DONE" }
     ]
   },
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
- {
+  {
     "type": "npc_class",
     "id": "mando",
     "name": { "str": "Mandalorian" },
     "job_description": "...",
     "worn_override": "mando_worn",
     "carry_override": "mando_carry",
-	"common": true,
+    "common": true,
     "traits": [
       { "trait": "LEVITATE" },
       { "trait": "LEVITATE2" },
@@ -871,7 +835,7 @@
         "success": { "topic": "TALK_MANDO_FRIENDLY", "opinion": { "trust": 0, "value": 1 } },
         "failure": { "topic": "TALK__PAWN_FEARFUL", "opinion": { "anger": 0, "fear": 0 } }
       },
-	  {
+      {
         "switch": true,
         "default": true,
         "text": "Don't worry, I also walk the path...",
@@ -904,47 +868,4 @@
       { "text": "Bye.", "topic": "TALK_DONE" }
     ]
   }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
 ]

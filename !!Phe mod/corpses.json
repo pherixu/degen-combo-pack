@@ -1,4 +1,5 @@
-  [{
+[
+  {
     "type": "GENERIC",
     "id": "magic_corpse",
     "symbol": "%",
@@ -7,11 +8,11 @@
     "description": "A magical dead body.",
     "//": "most of the properties depend on the monster type and are created at runtime!",
     "price": 0,
-	"weight": "80 kg",
+    "weight": "80 kg",
     "volume": "0 ml",
     "harvest": "human2",
     "flags": [ "TRADER_AVOID", "TARDIS", "CORPSE", "MAG_CORPSE", "MAGIC_FOCUS" ],
-	"relic_data": {
+    "relic_data": {
       "passive_effects": [
         {
           "has": "WIELD",
@@ -19,9 +20,9 @@
           "values": [
             { "value": "MAX_MANA", "add": 50 },
             { "value": "BONUS_DAMAGE", "add": 2000 },
-			{ "value": "ARMOR_BASH", "add": -3 },
-			{ "value": "ARMOR_CUT", "add": -3 },
-			{ "value": "ARMOR_BULLET", "add": 10 },
+            { "value": "ARMOR_BASH", "add": -3 },
+            { "value": "ARMOR_CUT", "add": -3 },
+            { "value": "ARMOR_BULLET", "add": 10 },
             { "value": "STRENGTH", "add": 1 },
             { "value": "DEXTERITY", "add": 1 },
             { "value": "PERCEPTION", "add": 1 },
@@ -32,15 +33,14 @@
           ]
         }
       ]
-  }
+    }
   },
-    {
+  {
     "type": "enchantment",
     "id": "crys_puppet_aura",
     "values": [ { "value": "STRENGTH", "add": 4 } ],
     "has": "WIELD",
-	"condition": "ALWAYS"
-	
+    "condition": "ALWAYS"
   },
   {
     "type": "GENERIC",
@@ -48,7 +48,7 @@
     "symbol": "%",
     "harvest": "human2",
     "color": "white",
-	"weight": "80 kg",
+    "weight": "80 kg",
     "name": { "str": "Crystalline Puppet" },
     "conditional_names": [
       { "type": "FLAG", "condition": "FIELD_DRESS", "name": { "str": "carcass", "str_pl": "carcasses" } },
@@ -61,18 +61,18 @@
     "price": 0,
     "volume": "1 ml",
     "flags": [ "TRADER_AVOID", "TARDIS", "MAG_CORPSE", "MAGIC_FOCUS" ],
-	"relic_data": {
+    "relic_data": {
       "passive_effects": [
-	  { "id": "crys_puppet_aura" },
+        { "id": "crys_puppet_aura" },
         {
           "values": [
             { "value": "MAX_MANA", "add": 500 },
-			{ "value": "ARMOR_BASH", "add": 8 },
-			{ "value": "ARMOR_CUT", "add": 14 },
-			{ "value": "ARMOR_STAB", "add": 14 },
-			{ "value": "ARMOR_HEAT", "add": 20 },
-			{ "value": "MELEE_DAMAGE", "add": 28 },
-			{ "value": "ARMOR_BULLET", "add": 55 },
+            { "value": "ARMOR_BASH", "add": 8 },
+            { "value": "ARMOR_CUT", "add": 14 },
+            { "value": "ARMOR_STAB", "add": 14 },
+            { "value": "ARMOR_HEAT", "add": 20 },
+            { "value": "MELEE_DAMAGE", "add": 28 },
+            { "value": "ARMOR_BULLET", "add": 55 },
             { "value": "STRENGTH", "add": 1 },
             { "value": "DEXTERITY", "add": 2 },
             { "value": "BONUS_BLOCK", "add": 4 },
@@ -86,9 +86,9 @@
           ]
         }
       ]
-  }
+    }
   },
-    {
+  {
     "type": "GENERIC",
     "id": "nox_puppet",
     "symbol": "%",
@@ -105,21 +105,21 @@
     "//": "most of the properties depend on the monster type and are created at runtime!",
     "price": 0,
     "volume": "1 ml",
-	"weight": "80 kg",
+    "weight": "80 kg",
     "flags": [ "TRADER_AVOID", "TARDIS", "MAG_CORPSE", "MAGIC_FOCUS" ],
-	"relic_data": {
+    "relic_data": {
       "passive_effects": [
         {
           "has": "WIELD",
           "condition": "ALWAYS",
           "values": [
             { "value": "MAX_MANA", "add": 1000 },
-			{ "value": "ARMOR_BIO", "add": 14 },
-			{ "value": "ARMOR_CUT", "add": 8 },
-			{ "value": "ARMOR_STAB", "add": 8 },
-			{ "value": "ARMOR_COLD", "add": 20 },
-			{ "value": "MELEE_DAMAGE", "add": 18 },
-			{ "value": "ARMOR_ACID", "add": 55 },
+            { "value": "ARMOR_BIO", "add": 14 },
+            { "value": "ARMOR_CUT", "add": 8 },
+            { "value": "ARMOR_STAB", "add": 8 },
+            { "value": "ARMOR_COLD", "add": 20 },
+            { "value": "MELEE_DAMAGE", "add": 18 },
+            { "value": "ARMOR_ACID", "add": 55 },
             { "value": "STRENGTH", "add": 2 },
             { "value": "DEXTERITY", "add": 1 },
             { "value": "BONUS_BLOCK", "add": 2 },
@@ -134,6 +134,6 @@
           ]
         }
       ]
+    }
   }
-  }
-  ]
+]

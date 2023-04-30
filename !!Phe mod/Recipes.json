@@ -1,9 +1,5 @@
 [
-
-
-
-
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "siphon_acid_crimson",
@@ -12,15 +8,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "siphon_trigger", 1 ] ], [ [ "acid_breaker", 1 ] ], [ [ "crimsonite_core", 1 ] ]  ]
+    "components": [ [ [ "siphon_trigger", 1 ] ], [ [ "acid_breaker", 1 ] ], [ [ "crimsonite_core", 1 ] ] ]
   },
-  
-
-
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "siphon_acid_virid",
@@ -29,15 +22,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "siphon_trigger", 1 ] ], [ [ "acid_breaker", 1 ] ], [ [ "viridite_core", 1 ] ]  ]
+    "components": [ [ [ "siphon_trigger", 1 ] ], [ [ "acid_breaker", 1 ] ], [ [ "viridite_core", 1 ] ] ]
   },
-  
-  
-
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "siphon_acid_ceruleum",
@@ -46,17 +36,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "siphon_trigger", 1 ] ], [ [ "acid_breaker", 1 ] ], [ [ "ceruleum_core", 1 ] ]  ]
+    "components": [ [ [ "siphon_trigger", 1 ] ], [ [ "acid_breaker", 1 ] ], [ [ "ceruleum_core", 1 ] ] ]
   },
-  
-  
-  
-  
-
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "siphon_acid_argent",
@@ -65,16 +50,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "siphon_trigger", 1 ] ], [ [ "acid_breaker", 1 ] ], [ [ "argentium_core", 1 ] ]  ]
+    "components": [ [ [ "siphon_trigger", 1 ] ], [ [ "acid_breaker", 1 ] ], [ [ "argentium_core", 1 ] ] ]
   },
-  
-  
-  
-
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "siphon_frost_ceruleum",
@@ -83,16 +64,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "siphon_trigger", 1 ] ], [ [ "frost_breaker", 1 ] ], [ [ "ceruleum_core", 1 ] ]  ]
+    "components": [ [ [ "siphon_trigger", 1 ] ], [ [ "frost_breaker", 1 ] ], [ [ "ceruleum_core", 1 ] ] ]
   },
-  
-    
-  
-
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "siphon_frost_crimson",
@@ -101,16 +78,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "siphon_trigger", 1 ] ], [ [ "frost_breaker", 1 ] ], [ [ "crimsonite_core", 1 ] ]  ]
+    "components": [ [ [ "siphon_trigger", 1 ] ], [ [ "frost_breaker", 1 ] ], [ [ "crimsonite_core", 1 ] ] ]
   },
-  
-    
-  
-
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "siphon_frost_virid",
@@ -119,16 +92,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "siphon_trigger", 1 ] ], [ [ "frost_breaker", 1 ] ], [ [ "viridite_core", 1 ] ]  ]
+    "components": [ [ [ "siphon_trigger", 1 ] ], [ [ "frost_breaker", 1 ] ], [ [ "viridite_core", 1 ] ] ]
   },
-  
-    
-  
-
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "siphon_frost_argent",
@@ -137,15 +106,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "siphon_trigger", 1 ] ], [ [ "frost_breaker", 1 ] ], [ [ "argentium_core", 1 ] ]  ]
+    "components": [ [ [ "siphon_trigger", 1 ] ], [ [ "frost_breaker", 1 ] ], [ [ "argentium_core", 1 ] ] ]
   },
-  
-  
-  
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "siphon_fire_argent",
@@ -154,14 +120,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "siphon_trigger", 1 ] ], [ [ "fire_breaker", 1 ] ], [ [ "argentium_core", 1 ] ]  ]
+    "components": [ [ [ "siphon_trigger", 1 ] ], [ [ "fire_breaker", 1 ] ], [ [ "argentium_core", 1 ] ] ]
   },
-  
-  
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "siphon_fire_crimson",
@@ -170,14 +134,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "siphon_trigger", 1 ] ], [ [ "fire_breaker", 1 ] ], [ [ "crimsonite_core", 1 ] ]  ]
+    "components": [ [ [ "siphon_trigger", 1 ] ], [ [ "fire_breaker", 1 ] ], [ [ "crimsonite_core", 1 ] ] ]
   },
-  
-  
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "siphon_fire_virid",
@@ -186,13 +148,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "siphon_trigger", 1 ] ], [ [ "fire_breaker", 1 ] ], [ [ "viridite_core", 1 ] ]  ]
+    "components": [ [ [ "siphon_trigger", 1 ] ], [ [ "fire_breaker", 1 ] ], [ [ "viridite_core", 1 ] ] ]
   },
-  
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "siphon_fire_ceruleum",
@@ -201,14 +162,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "siphon_trigger", 1 ] ], [ [ "fire_breaker", 1 ] ], [ [ "ceruleum_core", 1 ] ]  ]
+    "components": [ [ [ "siphon_trigger", 1 ] ], [ [ "fire_breaker", 1 ] ], [ [ "ceruleum_core", 1 ] ] ]
   },
-  
-  
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "siphon_elec_ceruleum",
@@ -217,14 +176,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "siphon_trigger", 1 ] ], [ [ "elec_breaker", 1 ] ], [ [ "ceruleum_core", 1 ] ]  ]
+    "components": [ [ [ "siphon_trigger", 1 ] ], [ [ "elec_breaker", 1 ] ], [ [ "ceruleum_core", 1 ] ] ]
   },
-  
-  
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "siphon_elec_crimson",
@@ -233,14 +190,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "siphon_trigger", 1 ] ], [ [ "elec_breaker", 1 ] ], [ [ "crimsonite_core", 1 ] ]  ]
+    "components": [ [ [ "siphon_trigger", 1 ] ], [ [ "elec_breaker", 1 ] ], [ [ "crimsonite_core", 1 ] ] ]
   },
-  
-  
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "siphon_elec_virid",
@@ -249,15 +204,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "siphon_trigger", 1 ] ], [ [ "elec_breaker", 1 ] ], [ [ "viridite_core", 1 ] ]  ]
+    "components": [ [ [ "siphon_trigger", 1 ] ], [ [ "elec_breaker", 1 ] ], [ [ "viridite_core", 1 ] ] ]
   },
-  
-  
-  
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "siphon_elec_argent",
@@ -266,14 +218,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "siphon_trigger", 1 ] ], [ [ "elec_breaker", 1 ] ], [ [ "argentium_core", 1 ] ]  ]
+    "components": [ [ [ "siphon_trigger", 1 ] ], [ [ "elec_breaker", 1 ] ], [ [ "argentium_core", 1 ] ] ]
   },
-  
-   
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "siphon_shotgun_argent",
@@ -282,14 +232,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "siphon_trigger", 1 ] ], [ [ "shotgun_breaker", 1 ] ], [ [ "argentium_core", 1 ] ]  ]
+    "components": [ [ [ "siphon_trigger", 1 ] ], [ [ "shotgun_breaker", 1 ] ], [ [ "argentium_core", 1 ] ] ]
   },
-  
-  
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "siphon_shotgun_virid",
@@ -298,14 +246,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "siphon_trigger", 1 ] ], [ [ "shotgun_breaker", 1 ] ], [ [ "viridite_core", 1 ] ]  ]
+    "components": [ [ [ "siphon_trigger", 1 ] ], [ [ "shotgun_breaker", 1 ] ], [ [ "viridite_core", 1 ] ] ]
   },
-  
-  
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "siphon_shotgun_ceruleum",
@@ -314,13 +260,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "siphon_trigger", 1 ] ], [ [ "shotgun_breaker", 1 ] ], [ [ "ceruleum_core", 1 ] ]  ]
+    "components": [ [ [ "siphon_trigger", 1 ] ], [ [ "shotgun_breaker", 1 ] ], [ [ "ceruleum_core", 1 ] ] ]
   },
-  
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "siphon_shotgun_crimson",
@@ -329,16 +274,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "siphon_trigger", 1 ] ], [ [ "shotgun_breaker", 1 ] ], [ [ "crimsonite_core", 1 ] ]  ]
+    "components": [ [ [ "siphon_trigger", 1 ] ], [ [ "shotgun_breaker", 1 ] ], [ [ "crimsonite_core", 1 ] ] ]
   },
-  
-  
-  
-
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "engine_acid_crimson",
@@ -347,14 +288,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "rev_trigger", 1 ] ], [ [ "acid_breaker", 1 ] ], [ [ "crimsonite_core", 1 ] ]  ]
+    "components": [ [ [ "rev_trigger", 1 ] ], [ [ "acid_breaker", 1 ] ], [ [ "crimsonite_core", 1 ] ] ]
   },
-  
-  
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "engine_acid_ceruleum",
@@ -363,15 +302,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "rev_trigger", 1 ] ], [ [ "acid_breaker", 1 ] ], [ [ "ceruleum_core", 1 ] ]  ]
+    "components": [ [ [ "rev_trigger", 1 ] ], [ [ "acid_breaker", 1 ] ], [ [ "ceruleum_core", 1 ] ] ]
   },
-
-  
-  
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "engine_acid_argent",
@@ -380,13 +316,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "rev_trigger", 1 ] ], [ [ "acid_breaker", 1 ] ], [ [ "argentium_core", 1 ] ]  ]
+    "components": [ [ [ "rev_trigger", 1 ] ], [ [ "acid_breaker", 1 ] ], [ [ "argentium_core", 1 ] ] ]
   },
-
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "engine_acid_virid",
@@ -395,14 +330,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "rev_trigger", 1 ] ], [ [ "acid_breaker", 1 ] ], [ [ "viridite_core", 1 ] ]  ]
+    "components": [ [ [ "rev_trigger", 1 ] ], [ [ "acid_breaker", 1 ] ], [ [ "viridite_core", 1 ] ] ]
   },
-
-
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "engine_frost_virid",
@@ -411,15 +344,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "rev_trigger", 1 ] ], [ [ "frost_breaker", 1 ] ], [ [ "viridite_core", 1 ] ]  ]
+    "components": [ [ [ "rev_trigger", 1 ] ], [ [ "frost_breaker", 1 ] ], [ [ "viridite_core", 1 ] ] ]
   },
-
-  
-
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "engine_frost_argent",
@@ -428,14 +358,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "rev_trigger", 1 ] ], [ [ "frost_breaker", 1 ] ], [ [ "argentium_core", 1 ] ]  ]
+    "components": [ [ [ "rev_trigger", 1 ] ], [ [ "frost_breaker", 1 ] ], [ [ "argentium_core", 1 ] ] ]
   },
-
-  
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "engine_frost_ceruleum",
@@ -444,14 +372,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "rev_trigger", 1 ] ], [ [ "frost_breaker", 1 ] ], [ [ "ceruleum_core", 1 ] ]  ]
+    "components": [ [ [ "rev_trigger", 1 ] ], [ [ "frost_breaker", 1 ] ], [ [ "ceruleum_core", 1 ] ] ]
   },
-
-
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "engine_frost_crimson",
@@ -460,15 +386,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "rev_trigger", 1 ] ], [ [ "frost_breaker", 1 ] ], [ [ "crimsonite_core", 1 ] ]  ]
+    "components": [ [ [ "rev_trigger", 1 ] ], [ [ "frost_breaker", 1 ] ], [ [ "crimsonite_core", 1 ] ] ]
   },
-
-  
-  
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "engine_fire_crimson",
@@ -477,14 +400,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "rev_trigger", 1 ] ], [ [ "fire_breaker", 1 ] ], [ [ "crimsonite_core", 1 ] ]  ]
+    "components": [ [ [ "rev_trigger", 1 ] ], [ [ "fire_breaker", 1 ] ], [ [ "crimsonite_core", 1 ] ] ]
   },
-
-  
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "engine_fire_ceruleum",
@@ -493,13 +414,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "rev_trigger", 1 ] ], [ [ "fire_breaker", 1 ] ], [ [ "ceruleum_core", 1 ] ]  ]
+    "components": [ [ [ "rev_trigger", 1 ] ], [ [ "fire_breaker", 1 ] ], [ [ "ceruleum_core", 1 ] ] ]
   },
- 
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "engine_fire_virid",
@@ -508,14 +428,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "rev_trigger", 1 ] ], [ [ "fire_breaker", 1 ] ], [ [ "viridite_core", 1 ] ]  ]
+    "components": [ [ [ "rev_trigger", 1 ] ], [ [ "fire_breaker", 1 ] ], [ [ "viridite_core", 1 ] ] ]
   },
-
- 
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "engine_fire_argent",
@@ -524,14 +442,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "rev_trigger", 1 ] ], [ [ "fire_breaker", 1 ] ], [ [ "argentium_core", 1 ] ]  ]
+    "components": [ [ [ "rev_trigger", 1 ] ], [ [ "fire_breaker", 1 ] ], [ [ "argentium_core", 1 ] ] ]
   },
-
- 
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "engine_elec_ceruleum",
@@ -540,14 +456,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "rev_trigger", 1 ] ], [ [ "elec_breaker", 1 ] ], [ [ "ceruleum_core", 1 ] ]  ]
+    "components": [ [ [ "rev_trigger", 1 ] ], [ [ "elec_breaker", 1 ] ], [ [ "ceruleum_core", 1 ] ] ]
   },
-
- 
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "engine_elec_argent",
@@ -556,15 +470,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "rev_trigger", 1 ] ], [ [ "elec_breaker", 1 ] ], [ [ "argentium_core", 1 ] ]  ]
+    "components": [ [ [ "rev_trigger", 1 ] ], [ [ "elec_breaker", 1 ] ], [ [ "argentium_core", 1 ] ] ]
   },
-
-
- 
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "engine_elec_crimson",
@@ -573,13 +484,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "rev_trigger", 1 ] ], [ [ "elec_breaker", 1 ] ], [ [ "crimsonite_core", 1 ] ]  ]
+    "components": [ [ [ "rev_trigger", 1 ] ], [ [ "elec_breaker", 1 ] ], [ [ "crimsonite_core", 1 ] ] ]
   },
- 
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "engine_elec_virid",
@@ -588,14 +498,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "rev_trigger", 1 ] ], [ [ "elec_breaker", 1 ] ], [ [ "viridite_core", 1 ] ]  ]
+    "components": [ [ [ "rev_trigger", 1 ] ], [ [ "elec_breaker", 1 ] ], [ [ "viridite_core", 1 ] ] ]
   },
-
-
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "engine_shotgun_virid",
@@ -604,14 +512,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "rev_trigger", 1 ] ], [ [ "shotgun_breaker", 1 ] ], [ [ "viridite_core", 1 ] ]  ]
+    "components": [ [ [ "rev_trigger", 1 ] ], [ [ "shotgun_breaker", 1 ] ], [ [ "viridite_core", 1 ] ] ]
   },
-
-
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "engine_shotgun_argent",
@@ -620,15 +526,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "rev_trigger", 1 ] ], [ [ "shotgun_breaker", 1 ] ], [ [ "argentium_core", 1 ] ]  ]
+    "components": [ [ [ "rev_trigger", 1 ] ], [ [ "shotgun_breaker", 1 ] ], [ [ "argentium_core", 1 ] ] ]
   },
-
-
-
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "engine_shotgun_ceruleum",
@@ -637,15 +540,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "rev_trigger", 1 ] ], [ [ "shotgun_breaker", 1 ] ], [ [ "ceruleum_core", 1 ] ]  ]
+    "components": [ [ [ "rev_trigger", 1 ] ], [ [ "shotgun_breaker", 1 ] ], [ [ "ceruleum_core", 1 ] ] ]
   },
-
-
-
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "engine_shotgun_crimson",
@@ -654,23 +554,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "rev_trigger", 1 ] ], [ [ "shotgun_breaker", 1 ] ], [ [ "crimsonite_core", 1 ] ]  ]
+    "components": [ [ [ "rev_trigger", 1 ] ], [ [ "shotgun_breaker", 1 ] ], [ [ "crimsonite_core", 1 ] ] ]
   },
-
-
-
-
-
-
-
-  
-  
-  
-
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "lance_acid_crimson",
@@ -679,14 +568,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "lance_trigger", 1 ] ], [ [ "acid_breaker", 1 ] ], [ [ "crimsonite_core", 1 ] ]  ]
+    "components": [ [ [ "lance_trigger", 1 ] ], [ [ "acid_breaker", 1 ] ], [ [ "crimsonite_core", 1 ] ] ]
   },
-
-
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "lance_acid_ceruleum",
@@ -695,13 +582,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "lance_trigger", 1 ] ], [ [ "acid_breaker", 1 ] ], [ [ "ceruleum_core", 1 ] ]  ]
+    "components": [ [ [ "lance_trigger", 1 ] ], [ [ "acid_breaker", 1 ] ], [ [ "ceruleum_core", 1 ] ] ]
   },
-
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "lance_acid_argent",
@@ -710,13 +596,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "lance_trigger", 1 ] ], [ [ "acid_breaker", 1 ] ], [ [ "argentium_core", 1 ] ]  ]
+    "components": [ [ [ "lance_trigger", 1 ] ], [ [ "acid_breaker", 1 ] ], [ [ "argentium_core", 1 ] ] ]
   },
-
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "lance_acid_virid",
@@ -725,13 +610,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "lance_trigger", 1 ] ], [ [ "acid_breaker", 1 ] ], [ [ "viridite_core", 1 ] ]  ]
+    "components": [ [ [ "lance_trigger", 1 ] ], [ [ "acid_breaker", 1 ] ], [ [ "viridite_core", 1 ] ] ]
   },
-  
-      {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "lance_fire_crimson",
@@ -740,13 +624,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "lance_trigger", 1 ] ], [ [ "fire_breaker", 1 ] ], [ [ "crimsonite_core", 1 ] ]  ]
+    "components": [ [ [ "lance_trigger", 1 ] ], [ [ "fire_breaker", 1 ] ], [ [ "crimsonite_core", 1 ] ] ]
   },
-
-      {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "lance_fire_ceruleum",
@@ -755,13 +638,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "lance_trigger", 1 ] ], [ [ "fire_breaker", 1 ] ], [ [ "ceruleum_core", 1 ] ]  ]
+    "components": [ [ [ "lance_trigger", 1 ] ], [ [ "fire_breaker", 1 ] ], [ [ "ceruleum_core", 1 ] ] ]
   },
-
-      {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "lance_fire_virid",
@@ -770,13 +652,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "lance_trigger", 1 ] ], [ [ "fire_breaker", 1 ] ], [ [ "viridite_core", 1 ] ]  ]
+    "components": [ [ [ "lance_trigger", 1 ] ], [ [ "fire_breaker", 1 ] ], [ [ "viridite_core", 1 ] ] ]
   },
-
-      {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "lance_fire_argent",
@@ -785,13 +666,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "lance_trigger", 1 ] ], [ [ "fire_breaker", 1 ] ], [ [ "argentium_core", 1 ] ]  ]
+    "components": [ [ [ "lance_trigger", 1 ] ], [ [ "fire_breaker", 1 ] ], [ [ "argentium_core", 1 ] ] ]
   },
-
-      {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "lance_frost_argent",
@@ -800,14 +680,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "lance_trigger", 1 ] ], [ [ "frost_breaker", 1 ] ], [ [ "argentium_core", 1 ] ]  ]
+    "components": [ [ [ "lance_trigger", 1 ] ], [ [ "frost_breaker", 1 ] ], [ [ "argentium_core", 1 ] ] ]
   },
-
-
-      {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "lance_frost_virid",
@@ -816,14 +694,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "lance_trigger", 1 ] ], [ [ "frost_breaker", 1 ] ], [ [ "viridite_core", 1 ] ]  ]
+    "components": [ [ [ "lance_trigger", 1 ] ], [ [ "frost_breaker", 1 ] ], [ [ "viridite_core", 1 ] ] ]
   },
-  
-  
-      {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "lance_frost_crimson",
@@ -832,14 +708,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "lance_trigger", 1 ] ], [ [ "frost_breaker", 1 ] ], [ [ "crimsonite_core", 1 ] ]  ]
+    "components": [ [ [ "lance_trigger", 1 ] ], [ [ "frost_breaker", 1 ] ], [ [ "crimsonite_core", 1 ] ] ]
   },
-
-
-      {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "lance_frost_ceruleum",
@@ -848,14 +722,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "lance_trigger", 1 ] ], [ [ "frost_breaker", 1 ] ], [ [ "ceruleum_core", 1 ] ]  ]
+    "components": [ [ [ "lance_trigger", 1 ] ], [ [ "frost_breaker", 1 ] ], [ [ "ceruleum_core", 1 ] ] ]
   },
-
-
-      {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "lance_elec_ceruleum",
@@ -864,14 +736,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "lance_trigger", 1 ] ], [ [ "elec_breaker", 1 ] ], [ [ "ceruleum_core", 1 ] ]  ]
+    "components": [ [ [ "lance_trigger", 1 ] ], [ [ "elec_breaker", 1 ] ], [ [ "ceruleum_core", 1 ] ] ]
   },
-
-
-      {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "lance_elec_crimson",
@@ -880,14 +750,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "lance_trigger", 1 ] ], [ [ "elec_breaker", 1 ] ], [ [ "crimsonite_core", 1 ] ]  ]
+    "components": [ [ [ "lance_trigger", 1 ] ], [ [ "elec_breaker", 1 ] ], [ [ "crimsonite_core", 1 ] ] ]
   },
-
-
-      {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "lance_elec_argent",
@@ -896,14 +764,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "lance_trigger", 1 ] ], [ [ "elec_breaker", 1 ] ], [ [ "argentium_core", 1 ] ]  ]
+    "components": [ [ [ "lance_trigger", 1 ] ], [ [ "elec_breaker", 1 ] ], [ [ "argentium_core", 1 ] ] ]
   },
-
-
-      {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "lance_elec_virid",
@@ -912,15 +778,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "lance_trigger", 1 ] ], [ [ "elec_breaker", 1 ] ], [ [ "viridite_core", 1 ] ]  ]
+    "components": [ [ [ "lance_trigger", 1 ] ], [ [ "elec_breaker", 1 ] ], [ [ "viridite_core", 1 ] ] ]
   },
-
-
-
-      {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "lance_shotgun_crimson",
@@ -929,14 +792,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "lance_trigger", 1 ] ], [ [ "shotgun_breaker", 1 ] ], [ [ "crimsonite_core", 1 ] ]  ]
+    "components": [ [ [ "lance_trigger", 1 ] ], [ [ "shotgun_breaker", 1 ] ], [ [ "crimsonite_core", 1 ] ] ]
   },
-
-
-      {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "lance_shotgun_virid",
@@ -945,15 +806,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "lance_trigger", 1 ] ], [ [ "shotgun_breaker", 1 ] ], [ [ "viridite_core", 1 ] ]  ]
+    "components": [ [ [ "lance_trigger", 1 ] ], [ [ "shotgun_breaker", 1 ] ], [ [ "viridite_core", 1 ] ] ]
   },
-
-
-
-      {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "lance_shotgun_argent",
@@ -962,14 +820,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "lance_trigger", 1 ] ], [ [ "shotgun_breaker", 1 ] ], [ [ "argentium_core", 1 ] ]  ]
+    "components": [ [ [ "lance_trigger", 1 ] ], [ [ "shotgun_breaker", 1 ] ], [ [ "argentium_core", 1 ] ] ]
   },
-
-
-      {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "lance_shotgun_ceruleum",
@@ -978,13 +834,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "lance_trigger", 1 ] ], [ [ "shotgun_breaker", 1 ] ], [ [ "ceruleum_core", 1 ] ]  ]
+    "components": [ [ [ "lance_trigger", 1 ] ], [ [ "shotgun_breaker", 1 ] ], [ [ "ceruleum_core", 1 ] ] ]
   },
-
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "aegis_acid_crimson",
@@ -993,13 +848,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "aegis_trigger", 1 ] ], [ [ "acid_breaker", 1 ] ], [ [ "crimsonite_core", 1 ] ]  ]
+    "components": [ [ [ "aegis_trigger", 1 ] ], [ [ "acid_breaker", 1 ] ], [ [ "crimsonite_core", 1 ] ] ]
   },
-
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "aegis_acid_ceruleum",
@@ -1008,13 +862,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "aegis_trigger", 1 ] ], [ [ "acid_breaker", 1 ] ], [ [ "ceruleum_core", 1 ] ]  ]
+    "components": [ [ [ "aegis_trigger", 1 ] ], [ [ "acid_breaker", 1 ] ], [ [ "ceruleum_core", 1 ] ] ]
   },
-
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "aegis_acid_argent",
@@ -1023,16 +876,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "aegis_trigger", 1 ] ], [ [ "acid_breaker", 1 ] ], [ [ "argentium_core", 1 ] ]  ]
+    "components": [ [ [ "aegis_trigger", 1 ] ], [ [ "acid_breaker", 1 ] ], [ [ "argentium_core", 1 ] ] ]
   },
-  
-  
-  
-
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "aegis_acid_virid",
@@ -1041,15 +890,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "aegis_trigger", 1 ] ], [ [ "acid_breaker", 1 ] ], [ [ "viridite_core", 1 ] ]  ]
+    "components": [ [ [ "aegis_trigger", 1 ] ], [ [ "acid_breaker", 1 ] ], [ [ "viridite_core", 1 ] ] ]
   },
-  
-  
-
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "aegis_elec_argent",
@@ -1058,14 +904,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "aegis_trigger", 1 ] ], [ [ "elec_breaker", 1 ] ], [ [ "argentium_core", 1 ] ]  ]
+    "components": [ [ [ "aegis_trigger", 1 ] ], [ [ "elec_breaker", 1 ] ], [ [ "argentium_core", 1 ] ] ]
   },
-  
-  
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "aegis_elec_crimson",
@@ -1074,14 +918,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "aegis_trigger", 1 ] ], [ [ "elec_breaker", 1 ] ], [ [ "crimsonite_core", 1 ] ]  ]
+    "components": [ [ [ "aegis_trigger", 1 ] ], [ [ "elec_breaker", 1 ] ], [ [ "crimsonite_core", 1 ] ] ]
   },
-  
-  
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "aegis_elec_ceruleum",
@@ -1090,14 +932,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "aegis_trigger", 1 ] ], [ [ "elec_breaker", 1 ] ], [ [ "ceruleum_core", 1 ] ]  ]
+    "components": [ [ [ "aegis_trigger", 1 ] ], [ [ "elec_breaker", 1 ] ], [ [ "ceruleum_core", 1 ] ] ]
   },
-  
-  
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "aegis_elec_virid",
@@ -1106,14 +946,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "aegis_trigger", 1 ] ], [ [ "elec_breaker", 1 ] ], [ [ "viridite_core", 1 ] ]  ]
+    "components": [ [ [ "aegis_trigger", 1 ] ], [ [ "elec_breaker", 1 ] ], [ [ "viridite_core", 1 ] ] ]
   },
-  
-  
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "aegis_fire_argent",
@@ -1122,13 +960,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "aegis_trigger", 1 ] ], [ [ "fire_breaker", 1 ] ], [ [ "argentium_core", 1 ] ]  ]
+    "components": [ [ [ "aegis_trigger", 1 ] ], [ [ "fire_breaker", 1 ] ], [ [ "argentium_core", 1 ] ] ]
   },
-  
-      {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "aegis_fire_crimson",
@@ -1137,13 +974,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "aegis_trigger", 1 ] ], [ [ "fire_breaker", 1 ] ], [ [ "crimsonite_core", 1 ] ]  ]
+    "components": [ [ [ "aegis_trigger", 1 ] ], [ [ "fire_breaker", 1 ] ], [ [ "crimsonite_core", 1 ] ] ]
   },
-  
-      {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "aegis_fire_ceruleum",
@@ -1152,13 +988,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "aegis_trigger", 1 ] ], [ [ "fire_breaker", 1 ] ], [ [ "ceruleum_core", 1 ] ]  ]
+    "components": [ [ [ "aegis_trigger", 1 ] ], [ [ "fire_breaker", 1 ] ], [ [ "ceruleum_core", 1 ] ] ]
   },
-  
-      {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "aegis_fire_virid",
@@ -1167,13 +1002,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "aegis_trigger", 1 ] ], [ [ "fire_breaker", 1 ] ], [ [ "viridite_core", 1 ] ]  ]
+    "components": [ [ [ "aegis_trigger", 1 ] ], [ [ "fire_breaker", 1 ] ], [ [ "viridite_core", 1 ] ] ]
   },
-  
-      {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "aegis_frost_argent",
@@ -1182,14 +1016,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "aegis_trigger", 1 ] ], [ [ "frost_breaker", 1 ] ], [ [ "argentium_core", 1 ] ]  ]
+    "components": [ [ [ "aegis_trigger", 1 ] ], [ [ "frost_breaker", 1 ] ], [ [ "argentium_core", 1 ] ] ]
   },
-  
-  
-      {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "aegis_frost_crimson",
@@ -1198,14 +1030,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "aegis_trigger", 1 ] ], [ [ "frost_breaker", 1 ] ], [ [ "crimsonite_core", 1 ] ]  ]
+    "components": [ [ [ "aegis_trigger", 1 ] ], [ [ "frost_breaker", 1 ] ], [ [ "crimsonite_core", 1 ] ] ]
   },
-  
-  
-      {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "aegis_frost_ceruleum",
@@ -1214,14 +1044,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "aegis_trigger", 1 ] ], [ [ "frost_breaker", 1 ] ], [ [ "ceruleum_core", 1 ] ]  ]
+    "components": [ [ [ "aegis_trigger", 1 ] ], [ [ "frost_breaker", 1 ] ], [ [ "ceruleum_core", 1 ] ] ]
   },
-  
-  
-      {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "aegis_frost_virid",
@@ -1230,15 +1058,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "aegis_trigger", 1 ] ], [ [ "frost_breaker", 1 ] ], [ [ "viridite_core", 1 ] ]  ]
+    "components": [ [ [ "aegis_trigger", 1 ] ], [ [ "frost_breaker", 1 ] ], [ [ "viridite_core", 1 ] ] ]
   },
- 
- 
- 
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "aegis_shotgun_argent",
@@ -1247,14 +1072,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "aegis_trigger", 1 ] ], [ [ "shotgun_breaker", 1 ] ], [ [ "argentium_core", 1 ] ]  ]
+    "components": [ [ [ "aegis_trigger", 1 ] ], [ [ "shotgun_breaker", 1 ] ], [ [ "argentium_core", 1 ] ] ]
   },
-  
-   
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "aegis_shotgun_virid",
@@ -1263,14 +1086,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "aegis_trigger", 1 ] ], [ [ "shotgun_breaker", 1 ] ], [ [ "viridite_core", 1 ] ]  ]
+    "components": [ [ [ "aegis_trigger", 1 ] ], [ [ "shotgun_breaker", 1 ] ], [ [ "viridite_core", 1 ] ] ]
   },
-  
-   
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "aegis_shotgun_ceruleum",
@@ -1279,14 +1100,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "aegis_trigger", 1 ] ], [ [ "shotgun_breaker", 1 ] ], [ [ "ceruleum_core", 1 ] ]  ]
+    "components": [ [ [ "aegis_trigger", 1 ] ], [ [ "shotgun_breaker", 1 ] ], [ [ "ceruleum_core", 1 ] ] ]
   },
-  
-  
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "aegis_shotgun_crimson",
@@ -1295,13 +1114,11 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "aegis_trigger", 1 ] ], [ [ "shotgun_breaker", 1 ] ], [ [ "crimsonite_core", 1 ] ]  ]
+    "components": [ [ [ "aegis_trigger", 1 ] ], [ [ "shotgun_breaker", 1 ] ], [ [ "crimsonite_core", 1 ] ] ]
   },
-  
-  
   {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
@@ -1311,13 +1128,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "akimbo_trigger", 1 ] ], [ [ "shotgun_breaker", 1 ] ], [ [ "crimsonite_core", 1 ] ]  ]
+    "components": [ [ [ "akimbo_trigger", 1 ] ], [ [ "shotgun_breaker", 1 ] ], [ [ "crimsonite_core", 1 ] ] ]
   },
-  
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "tandem_shotgun_ceruleum",
@@ -1326,15 +1142,11 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "akimbo_trigger", 1 ] ], [ [ "shotgun_breaker", 1 ] ], [ [ "ceruleum_core", 1 ] ]  ]
+    "components": [ [ [ "akimbo_trigger", 1 ] ], [ [ "shotgun_breaker", 1 ] ], [ [ "ceruleum_core", 1 ] ] ]
   },
-  
-  
-
-  
   {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
@@ -1344,15 +1156,11 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "akimbo_trigger", 1 ] ], [ [ "shotgun_breaker", 1 ] ], [ [ "argentium_core", 1 ] ]  ]
+    "components": [ [ [ "akimbo_trigger", 1 ] ], [ [ "shotgun_breaker", 1 ] ], [ [ "argentium_core", 1 ] ] ]
   },
-  
-  
-  
-  
   {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
@@ -1362,13 +1170,11 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "akimbo_trigger", 1 ] ], [ [ "shotgun_breaker", 1 ] ], [ [ "viridite_core", 1 ] ]  ]
+    "components": [ [ [ "akimbo_trigger", 1 ] ], [ [ "shotgun_breaker", 1 ] ], [ [ "viridite_core", 1 ] ] ]
   },
-  
-    
   {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
@@ -1378,13 +1184,11 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "akimbo_trigger", 1 ] ], [ [ "acid_breaker", 1 ] ], [ [ "crimsonite_core", 1 ] ]  ]
+    "components": [ [ [ "akimbo_trigger", 1 ] ], [ [ "acid_breaker", 1 ] ], [ [ "crimsonite_core", 1 ] ] ]
   },
-  
-      
   {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
@@ -1394,13 +1198,11 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "akimbo_trigger", 1 ] ], [ [ "acid_breaker", 1 ] ], [ [ "argentium_core", 1 ] ]  ]
+    "components": [ [ [ "akimbo_trigger", 1 ] ], [ [ "acid_breaker", 1 ] ], [ [ "argentium_core", 1 ] ] ]
   },
-  
-      
   {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
@@ -1410,13 +1212,11 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "akimbo_trigger", 1 ] ], [ [ "acid_breaker", 1 ] ], [ [ "viridite_core", 1 ] ]  ]
+    "components": [ [ [ "akimbo_trigger", 1 ] ], [ [ "acid_breaker", 1 ] ], [ [ "viridite_core", 1 ] ] ]
   },
-  
-      
   {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
@@ -1426,12 +1226,11 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "akimbo_trigger", 1 ] ], [ [ "acid_breaker", 1 ] ], [ [ "ceruleum_core", 1 ] ]  ]
+    "components": [ [ [ "akimbo_trigger", 1 ] ], [ [ "acid_breaker", 1 ] ], [ [ "ceruleum_core", 1 ] ] ]
   },
-        
   {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
@@ -1441,13 +1240,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "akimbo_trigger", 1 ] ], [ [ "elec_breaker", 1 ] ], [ [ "ceruleum_core", 1 ] ]  ]
+    "components": [ [ [ "akimbo_trigger", 1 ] ], [ [ "elec_breaker", 1 ] ], [ [ "ceruleum_core", 1 ] ] ]
   },
-  
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "tandem_elec_virid",
@@ -1456,14 +1254,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "akimbo_trigger", 1 ] ], [ [ "elec_breaker", 1 ] ], [ [ "viridite_core", 1 ] ]  ]
+    "components": [ [ [ "akimbo_trigger", 1 ] ], [ [ "elec_breaker", 1 ] ], [ [ "viridite_core", 1 ] ] ]
   },
-  
-  
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "tandem_elec_crimson",
@@ -1472,13 +1268,11 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "akimbo_trigger", 1 ] ], [ [ "elec_breaker", 1 ] ], [ [ "crimsonite_core", 1 ] ]  ]
+    "components": [ [ [ "akimbo_trigger", 1 ] ], [ [ "elec_breaker", 1 ] ], [ [ "crimsonite_core", 1 ] ] ]
   },
-
-
   {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
@@ -1488,12 +1282,11 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "akimbo_trigger", 1 ] ], [ [ "elec_breaker", 1 ] ], [ [ "argentium_core", 1 ] ]  ]
+    "components": [ [ [ "akimbo_trigger", 1 ] ], [ [ "elec_breaker", 1 ] ], [ [ "argentium_core", 1 ] ] ]
   },
-
   {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
@@ -1503,13 +1296,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "akimbo_trigger", 1 ] ], [ [ "fire_breaker", 1 ] ], [ [ "ceruleum_core", 1 ] ]  ]
+    "components": [ [ [ "akimbo_trigger", 1 ] ], [ [ "fire_breaker", 1 ] ], [ [ "ceruleum_core", 1 ] ] ]
   },
-
- {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "tandem_fire_crimson",
@@ -1518,13 +1310,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "akimbo_trigger", 1 ] ], [ [ "fire_breaker", 1 ] ], [ [ "crimsonite_core", 1 ] ]  ]
+    "components": [ [ [ "akimbo_trigger", 1 ] ], [ [ "fire_breaker", 1 ] ], [ [ "crimsonite_core", 1 ] ] ]
   },
-
- {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "tandem_fire_argent",
@@ -1533,13 +1324,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "akimbo_trigger", 1 ] ], [ [ "fire_breaker", 1 ] ], [ [ "argentium_core", 1 ] ]  ]
+    "components": [ [ [ "akimbo_trigger", 1 ] ], [ [ "fire_breaker", 1 ] ], [ [ "argentium_core", 1 ] ] ]
   },
-
- {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "tandem_fire_virid",
@@ -1548,13 +1338,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "akimbo_trigger", 1 ] ], [ [ "fire_breaker", 1 ] ], [ [ "viridite_core", 1 ] ]  ]
+    "components": [ [ [ "akimbo_trigger", 1 ] ], [ [ "fire_breaker", 1 ] ], [ [ "viridite_core", 1 ] ] ]
   },
-
- {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "tandem_frost_crimson",
@@ -1563,14 +1352,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "akimbo_trigger", 1 ] ], [ [ "frost_breaker", 1 ] ], [ [ "crimsonite_core", 1 ] ]  ]
+    "components": [ [ [ "akimbo_trigger", 1 ] ], [ [ "frost_breaker", 1 ] ], [ [ "crimsonite_core", 1 ] ] ]
   },
-
-
- {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "tandem_frost_ceruleum",
@@ -1579,14 +1366,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "akimbo_trigger", 1 ] ], [ [ "frost_breaker", 1 ] ], [ [ "ceruleum_core", 1 ] ]  ]
+    "components": [ [ [ "akimbo_trigger", 1 ] ], [ [ "frost_breaker", 1 ] ], [ [ "ceruleum_core", 1 ] ] ]
   },
-
-
- {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "tandem_frost_argent",
@@ -1595,14 +1380,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "akimbo_trigger", 1 ] ], [ [ "frost_breaker", 1 ] ], [ [ "argentium_core", 1 ] ]  ]
+    "components": [ [ [ "akimbo_trigger", 1 ] ], [ [ "frost_breaker", 1 ] ], [ [ "argentium_core", 1 ] ] ]
   },
-
-
- {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "tandem_frost_virid",
@@ -1611,18 +1394,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "akimbo_trigger", 1 ] ], [ [ "frost_breaker", 1 ] ], [ [ "viridite_core", 1 ] ]  ]
+    "components": [ [ [ "akimbo_trigger", 1 ] ], [ [ "frost_breaker", 1 ] ], [ [ "viridite_core", 1 ] ] ]
   },
-
-
-
-
-
-
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "siphon_trigger",
@@ -1631,14 +1408,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "raw_bloodshot", 3 ] ], [ [ "dark_spirit", 1 ] ]  ]
+    "components": [ [ [ "raw_bloodshot", 3 ] ], [ [ "dark_spirit", 1 ] ] ]
   },
-  
-
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "aegis_trigger",
@@ -1647,14 +1422,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "raw_bloodshot", 3 ] ], [ [ "dark_spirit", 1 ] ]  ]
+    "components": [ [ [ "raw_bloodshot", 3 ] ], [ [ "dark_spirit", 1 ] ] ]
   },
-  
-
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "rev_trigger",
@@ -1663,14 +1436,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "raw_bloodshot", 3 ] ], [ [ "dark_spirit", 1 ] ]  ]
+    "components": [ [ [ "raw_bloodshot", 3 ] ], [ [ "dark_spirit", 1 ] ] ]
   },
-  
-
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "akimbo_trigger",
@@ -1679,14 +1450,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "raw_bloodshot", 3 ] ], [ [ "dark_spirit", 1 ] ]  ]
+    "components": [ [ [ "raw_bloodshot", 3 ] ], [ [ "dark_spirit", 1 ] ] ]
   },
-  
-
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "lance_trigger",
@@ -1695,14 +1464,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "raw_bloodshot", 3 ] ], [ [ "dark_spirit", 1 ] ]  ]
+    "components": [ [ [ "raw_bloodshot", 3 ] ], [ [ "dark_spirit", 1 ] ] ]
   },
-  
-
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "ceruleum_core",
@@ -1711,14 +1478,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "raw_bloodshot", 3 ] ], [ [ "ceruleum", 1 ] ]  ]
+    "components": [ [ [ "raw_bloodshot", 3 ] ], [ [ "ceruleum", 1 ] ] ]
   },
-  
-
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "crimsonite_core",
@@ -1727,14 +1492,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "raw_bloodshot", 3 ] ], [ [ "crimsonite", 1 ] ]  ]
+    "components": [ [ [ "raw_bloodshot", 3 ] ], [ [ "crimsonite", 1 ] ] ]
   },
-  
-
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "viridite_core",
@@ -1743,14 +1506,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "raw_bloodshot", 3 ] ], [ [ "viridite", 1 ] ]  ]
+    "components": [ [ [ "raw_bloodshot", 3 ] ], [ [ "viridite", 1 ] ] ]
   },
-  
-
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "argentium_core",
@@ -1759,14 +1520,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "raw_bloodshot", 3 ] ], [ [ "argentium", 1 ] ]  ]
+    "components": [ [ [ "raw_bloodshot", 3 ] ], [ [ "argentium", 1 ] ] ]
   },
-  
-
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "fire_breaker",
@@ -1775,14 +1534,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "raw_bloodshot", 3 ] ], [ [ "crimsonite", 1 ] ]  ]
+    "components": [ [ [ "raw_bloodshot", 3 ] ], [ [ "crimsonite", 1 ] ] ]
   },
-  
-
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "frost_breaker",
@@ -1791,14 +1548,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "raw_bloodshot", 3 ] ], [ [ "ceruleum", 1 ] ]  ]
+    "components": [ [ [ "raw_bloodshot", 3 ] ], [ [ "ceruleum", 1 ] ] ]
   },
-  
-
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "elec_breaker",
@@ -1807,14 +1562,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "raw_bloodshot", 3 ] ], [ [ "argentium", 1 ] ]  ]
+    "components": [ [ [ "raw_bloodshot", 3 ] ], [ [ "argentium", 1 ] ] ]
   },
-  
-
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "acid_breaker",
@@ -1823,15 +1576,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "raw_bloodshot", 3 ] ], [ [ "viridite", 1 ] ]  ]
+    "components": [ [ [ "raw_bloodshot", 3 ] ], [ [ "viridite", 1 ] ] ]
   },
-  
-
-
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "shotgun_breaker",
@@ -1840,15 +1590,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "raw_bloodshot", 5 ] ], [ [ "shot_00", 1 ] ]  ]
+    "components": [ [ [ "raw_bloodshot", 5 ] ], [ [ "shot_00", 1 ] ] ]
   },
-  
-
-
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "elec_bloodshot",
@@ -1857,14 +1604,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "raw_bloodshot", 1 ] ], [ [ "argentium", 1 ] ]  ]
+    "components": [ [ [ "raw_bloodshot", 1 ] ], [ [ "argentium", 1 ] ] ]
   },
-  
-
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "acid_bloodshot",
@@ -1873,14 +1618,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "raw_bloodshot", 1 ] ], [ [ "viridite", 1 ] ]  ]
+    "components": [ [ [ "raw_bloodshot", 1 ] ], [ [ "viridite", 1 ] ] ]
   },
-  
-  
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "ice_bloodshot",
@@ -1889,14 +1632,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "raw_bloodshot", 1 ] ], [ [ "ceruleum", 1 ] ]  ]
+    "components": [ [ [ "raw_bloodshot", 1 ] ], [ [ "ceruleum", 1 ] ] ]
   },
-  
-  
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "fire_bloodshot",
@@ -1905,14 +1646,12 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "reversible": true,
     "autolearn": true,
-    "components": [ [ [ "raw_bloodshot", 1 ] ], [ [ "crimsonite", 1 ] ]  ]
+    "components": [ [ [ "raw_bloodshot", 1 ] ], [ [ "crimsonite", 1 ] ] ]
   },
-  
-
-{
+  {
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
     "result": "magic_blood",
@@ -1923,8 +1662,7 @@
     "time": "15 m",
     "autolearn": true,
     "components": [ [ [ "edible_blood", 2, "LIST" ] ] ]
-  } ,
-  
+  },
   {
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
@@ -1935,9 +1673,8 @@
     "difficulty": 1,
     "time": "15 m",
     "autolearn": true,
-    "components": [ [ [ "crys_blood", 1 ] ], [["fetid_goop", 5]] ]
-  } , 
-
+    "components": [ [ [ "crys_blood", 1 ] ], [ [ "fetid_goop", 5 ] ] ]
+  },
   {
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
@@ -1948,9 +1685,9 @@
     "difficulty": 1,
     "time": "15 m",
     "autolearn": true,
-    "components": [ [ [ "magic_kidney", 1 ] ], [["crys_blood", 5]] ]
-  } ,
-    {
+    "components": [ [ [ "magic_kidney", 1 ] ], [ [ "crys_blood", 5 ] ] ]
+  },
+  {
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
     "result": "nox_heart",
@@ -1960,8 +1697,8 @@
     "difficulty": 1,
     "time": "15 m",
     "autolearn": true,
-    "components": [ [ [ "magic_kidney", 1 ] ], [["fetid_goop", 5]] ]
-  } ,
+    "components": [ [ [ "magic_kidney", 1 ] ], [ [ "fetid_goop", 5 ] ] ]
+  },
   {
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
@@ -1972,9 +1709,9 @@
     "difficulty": 1,
     "time": "15 m",
     "autolearn": true,
-    "components": [ [ [ "magic_kidney", 1 ] ], [["fetid_goop", 15]] ]
-  } ,
-   {
+    "components": [ [ [ "magic_kidney", 1 ] ], [ [ "fetid_goop", 15 ] ] ]
+  },
+  {
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
     "result": "dark_spirit2",
@@ -1985,8 +1722,8 @@
     "time": "15 m",
     "autolearn": true,
     "components": [ [ [ "dark_spirit", 4 ] ] ]
-  } ,
-{
+  },
+  {
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
     "result": "blood",
@@ -1994,12 +1731,12 @@
     "subcategory": "CSC_ENCHANTED_OTHER",
     "skill_used": "spellcraft",
     "difficulty": 1,
-	"byproducts": [ [ "blood", 9 ] , [ "fetid_goop", 10 ] ],
+    "byproducts": [ [ "blood", 9 ], [ "fetid_goop", 10 ] ],
     "time": "30 m",
     "autolearn": true,
     "components": [ [ [ "blood_tainted", 20 ] ] ]
-  } ,
-  	{
+  },
+  {
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
     "result": "magic_corpse",
@@ -2007,7 +1744,7 @@
     "subcategory": "CSC_ENCHANTED_OTHER",
     "skill_used": "spellcraft",
     "difficulty": 1,
-    "time": "1 h",
+    "time": "1 m",
     "autolearn": true,
     "components": [ [ [ "rmi2_corpse", 1 ] ] ]
   },
@@ -2019,13 +1756,15 @@
     "subcategory": "CSC_ENCHANTED_OTHER",
     "skill_used": "spellcraft",
     "difficulty": 6,
-    "time": "1 h",
+    "time": "1 m",
     "autolearn": true,
-  "components": [
-	[["crys_soul", 1 ]],
-	[["crys_shell", 1 ]], [[ "crystal_heart", 1 ]],
-	[[ "magic_kidney", 1 ]], [[ "crys_blood", 10 ]]
-	]
+    "components": [
+      [ [ "crys_soul", 1 ] ],
+      [ [ "crys_shell", 1 ] ],
+      [ [ "crystal_heart", 1 ] ],
+      [ [ "magic_kidney", 1 ] ],
+      [ [ "crys_blood", 10 ] ]
+    ]
   },
   {
     "type": "recipe",
@@ -2035,13 +1774,15 @@
     "subcategory": "CSC_ENCHANTED_OTHER",
     "skill_used": "spellcraft",
     "difficulty": 6,
-    "time": "1 h",
+    "time": "1 m",
     "autolearn": true,
-  "components": [
-	[["nox_heart", 1 ]],
-	[["nox_shell", 1 ]], [[ "nox_heart", 1 ]],
-	[[ "husk_spawner", 1 ]], [[ "nox_blood", 10 ]]
-	]
+    "components": [
+      [ [ "nox_heart", 1 ] ],
+      [ [ "nox_shell", 1 ] ],
+      [ [ "nox_heart", 1 ] ],
+      [ [ "husk_spawner", 1 ] ],
+      [ [ "nox_blood", 10 ] ]
+    ]
   },
   {
     "type": "recipe",
@@ -2051,12 +1792,11 @@
     "subcategory": "CSC_ENCHANTED_OTHER",
     "skill_used": "spellcraft",
     "difficulty": 3,
-    "time": "1 h",
+    "time": "1 m",
     "autolearn": true,
-    "components": [ [ [ "magic_corpse", 1 ] ], [["magic_blood", 5]] ]
+    "components": [ [ [ "magic_corpse", 1 ] ], [ [ "magic_blood", 5 ] ] ]
   },
-  
-    {
+  {
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
     "result": "raw_bloodshot",
@@ -2064,12 +1804,11 @@
     "subcategory": "CSC_ENCHANTED_OTHER",
     "skill_used": "spellcraft",
     "difficulty": 2,
-    "time": "1 h",
+    "time": "1 m",
     "autolearn": true,
-    "components": [ [["magic_blood", 2]] ]
+    "components": [ [ [ "magic_blood", 2 ] ] ]
   },
-  
-   	{
+  {
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
     "result": "rmi2_corpse",
@@ -2079,55 +1818,66 @@
     "difficulty": 1,
     "time": "30 m",
     "autolearn": true,
-    "components": [ [ [ "corpse_generic_gunned", 1 ],
-					[ "corpse", 1 ],
-					 [ "corpse_half_beheaded", 1 ] ,
-					 [ "corpse_halved_upper", 1 ] ,
-					 [ "corpse_gunned", 1 ] ,
-					 [ "corpse_stabbed", 1  ],
-					 [ "corpse_scorched", 1  ],
-					 [ "corpse_painful", 1  ],
-					 [ "corpse_bloody", 1  ],
-					 [ "corpse_oldwoman_jewelry", 1  ],
-					 [ "corpse_child_gunned", 1  ],
-					 [ "corpse_child_calm", 1  ],
-					 [ "corpse_generic_girl", 1  ],
-					 [ "corpse_generic_boy", 1  ],
-					 [ "corpse_generic_female", 1  ],
-					 [ "corpse_generic_male", 1  ],
-					 [ "corpse_generic_human", 1 ] ] ]
+    "components": [
+      [
+        [ "corpse_generic_gunned", 1 ],
+        [ "corpse", 1 ],
+        [ "corpse_half_beheaded", 1 ],
+        [ "corpse_halved_upper", 1 ],
+        [ "corpse_gunned", 1 ],
+        [ "corpse_stabbed", 1 ],
+        [ "corpse_scorched", 1 ],
+        [ "corpse_painful", 1 ],
+        [ "corpse_bloody", 1 ],
+        [ "corpse_oldwoman_jewelry", 1 ],
+        [ "corpse_child_gunned", 1 ],
+        [ "corpse_child_calm", 1 ],
+        [ "corpse_generic_girl", 1 ],
+        [ "corpse_generic_boy", 1 ],
+        [ "corpse_generic_female", 1 ],
+        [ "corpse_generic_male", 1 ],
+        [ "corpse_generic_human", 1 ]
+      ]
+    ]
   },
-  
-  
   {
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
     "result": "grafted_arm1",
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_OTHER",
-    "qualities": [ { "id": "GRAFTING", "level": 1 },{ "id": "BUTCHER", "level": 99 } ],
+    "qualities": [ { "id": "GRAFTING", "level": 1 }, { "id": "BUTCHER", "level": 99 } ],
     "skill_used": "spellcraft",
     "difficulty": 3,
-    "time": "1 h",
+    "time": "1 m",
     "autolearn": true,
-    "components": [ [ [ "human_flesh", 5 ] ], [["magic_blood", 5]],  [["bone_human", 2]],  [["sinew", 5]],  [["raw_hleather", 3]]  ]
+    "components": [
+      [ [ "human_flesh", 5 ] ],
+      [ [ "magic_blood", 5 ] ],
+      [ [ "bone_human", 2 ] ],
+      [ [ "sinew", 5 ] ],
+      [ [ "raw_hleather", 3 ] ]
+    ]
   },
-  
   {
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
     "result": "grafted_arm2",
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_OTHER",
-    "qualities": [ { "id": "GRAFTING", "level": 1 },{ "id": "BUTCHER", "level": 99 } ],
+    "qualities": [ { "id": "GRAFTING", "level": 1 }, { "id": "BUTCHER", "level": 99 } ],
     "skill_used": "spellcraft",
     "difficulty": 3,
-    "time": "1 h",
+    "time": "1 m",
     "autolearn": true,
-    "components": [ [ [ "human_flesh", 5 ] ], [["magic_blood", 5]],  [["bone_human", 2]],  [["sinew", 5]],  [["raw_hleather", 3]]  ]
+    "components": [
+      [ [ "human_flesh", 5 ] ],
+      [ [ "magic_blood", 5 ] ],
+      [ [ "bone_human", 2 ] ],
+      [ [ "sinew", 5 ] ],
+      [ [ "raw_hleather", 3 ] ]
+    ]
   },
-  
-  
   {
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
@@ -2135,49 +1885,38 @@
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_OTHER",
     "skill_used": "spellcraft",
-    "qualities": [ { "id": "GRAFTING", "level": 1 },{ "id": "BUTCHER", "level": 99 } ],
+    "qualities": [ { "id": "GRAFTING", "level": 1 }, { "id": "BUTCHER", "level": 99 } ],
     "difficulty": 3,
-    "time": "1 h",
+    "time": "1 m",
     "autolearn": true,
-    "components": [ [ [ "grafted_arm1", 1 ] ], [["shadow_sliver", 1]] ]
+    "components": [ [ [ "grafted_arm1", 1 ] ], [ [ "shadow_sliver", 1 ] ] ]
   },
-  
-  
-  
-  
   {
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
     "result": "grafted_arm_shadow_2",
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_OTHER",
-    "qualities": [ { "id": "GRAFTING", "level": 1 },{ "id": "BUTCHER", "level": 99 } ],
+    "qualities": [ { "id": "GRAFTING", "level": 1 }, { "id": "BUTCHER", "level": 99 } ],
     "skill_used": "spellcraft",
     "difficulty": 3,
-    "time": "1 h",
+    "time": "1 m",
     "autolearn": true,
-    "components": [ [ [ "grafted_arm2", 1 ] ], [["shadow_sliver", 1]] ]
+    "components": [ [ [ "grafted_arm2", 1 ] ], [ [ "shadow_sliver", 1 ] ] ]
   },
-  
-  
-  
-  
   {
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
-    "qualities": [ { "id": "GRAFTING", "level": 1 },{ "id": "BUTCHER", "level": 99 } ],
+    "qualities": [ { "id": "GRAFTING", "level": 1 }, { "id": "BUTCHER", "level": 99 } ],
     "result": "grafted_arm_marionette_2",
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_OTHER",
     "skill_used": "spellcraft",
     "difficulty": 3,
-    "time": "1 h",
+    "time": "1 m",
     "autolearn": true,
-    "components": [ [ [ "grafted_arm2", 1 ] ], [["marionette_doll", 1]] ]
+    "components": [ [ [ "grafted_arm2", 1 ] ], [ [ "marionette_doll", 1 ] ] ]
   },
-  
-  
-  
   {
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
@@ -2186,16 +1925,11 @@
     "subcategory": "CSC_ENCHANTED_OTHER",
     "skill_used": "spellcraft",
     "difficulty": 3,
-    "qualities": [ { "id": "GRAFTING", "level": 1 },{ "id": "BUTCHER", "level": 99 } ],
-    "time": "1 h",
+    "qualities": [ { "id": "GRAFTING", "level": 1 }, { "id": "BUTCHER", "level": 99 } ],
+    "time": "1 m",
     "autolearn": true,
-    "components": [ [ [ "grafted_arm1", 1 ] ], [["marionette_doll", 1]] ]
+    "components": [ [ [ "grafted_arm1", 1 ] ], [ [ "marionette_doll", 1 ] ] ]
   },
-  
-  
-  
-  
-  
   {
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
@@ -2203,48 +1937,38 @@
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_OTHER",
     "skill_used": "spellcraft",
-    "qualities": [ { "id": "GRAFTING", "level": 1 },{ "id": "BUTCHER", "level": 99 } ],
+    "qualities": [ { "id": "GRAFTING", "level": 1 }, { "id": "BUTCHER", "level": 99 } ],
     "difficulty": 3,
-    "time": "1 h",
+    "time": "1 m",
     "autolearn": true,
-    "components": [ [ [ "grafted_arm1", 1 ] ], [["slug_tallow", 1]] ]
+    "components": [ [ [ "grafted_arm1", 1 ] ], [ [ "slug_tallow", 1 ] ] ]
   },
-  
-  
-  
-  
   {
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
     "result": "grafted_arm_slug_2",
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_OTHER",
-    "qualities": [ { "id": "GRAFTING", "level": 1 },{ "id": "BUTCHER", "level": 99 } ],
+    "qualities": [ { "id": "GRAFTING", "level": 1 }, { "id": "BUTCHER", "level": 99 } ],
     "skill_used": "spellcraft",
     "difficulty": 3,
-    "time": "1 h",
+    "time": "1 m",
     "autolearn": true,
-    "components": [ [ [ "grafted_arm2", 1 ] ], [["slug_tallow", 1]] ]
+    "components": [ [ [ "grafted_arm2", 1 ] ], [ [ "slug_tallow", 1 ] ] ]
   },
-  
-  
-  
-  
   {
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
     "result": "grafted_arm_worm_2",
     "category": "CC_ENCHANTED",
-    "qualities": [ { "id": "GRAFTING", "level": 1 },{ "id": "BUTCHER", "level": 99 } ],
+    "qualities": [ { "id": "GRAFTING", "level": 1 }, { "id": "BUTCHER", "level": 99 } ],
     "subcategory": "CSC_ENCHANTED_OTHER",
     "skill_used": "spellcraft",
     "difficulty": 3,
-    "time": "1 h",
+    "time": "1 m",
     "autolearn": true,
-    "components": [ [ [ "grafted_arm2", 1 ] ], [["worm_grease", 1]] ]
+    "components": [ [ [ "grafted_arm2", 1 ] ], [ [ "worm_grease", 1 ] ] ]
   },
-  
-  
   {
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
@@ -2252,16 +1976,12 @@
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_OTHER",
     "skill_used": "spellcraft",
-    "qualities": [ { "id": "GRAFTING", "level": 1 },{ "id": "BUTCHER", "level": 99 } ],
+    "qualities": [ { "id": "GRAFTING", "level": 1 }, { "id": "BUTCHER", "level": 99 } ],
     "difficulty": 3,
-    "time": "1 h",
+    "time": "1 m",
     "autolearn": true,
-    "components": [ [ [ "grafted_arm1", 1 ] ], [["worm_grease", 1]] ]
+    "components": [ [ [ "grafted_arm1", 1 ] ], [ [ "worm_grease", 1 ] ] ]
   },
-  
-  
-  
-  
   {
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
@@ -2269,71 +1989,58 @@
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_OTHER",
     "skill_used": "spellcraft",
-    "qualities": [ { "id": "GRAFTING", "level": 1 },{ "id": "BUTCHER", "level": 99 } ],
+    "qualities": [ { "id": "GRAFTING", "level": 1 }, { "id": "BUTCHER", "level": 99 } ],
     "difficulty": 3,
-    "time": "1 h",
+    "time": "1 m",
     "autolearn": true,
-    "components": [ [ [ "grafted_arm2", 1 ] ], [["simulacrum_heart", 1]] ]
+    "components": [ [ [ "grafted_arm2", 1 ] ], [ [ "simulacrum_heart", 1 ] ] ]
   },
-  
-  
-  
   {
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
     "result": "grafted_arm_simulacrum_1",
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_OTHER",
-    "qualities": [ { "id": "GRAFTING", "level": 1 },{ "id": "BUTCHER", "level": 99 } ],
+    "qualities": [ { "id": "GRAFTING", "level": 1 }, { "id": "BUTCHER", "level": 99 } ],
     "skill_used": "spellcraft",
     "difficulty": 3,
-    "time": "1 h",
+    "time": "1 m",
     "autolearn": true,
-    "components": [ [ [ "grafted_arm1", 1 ] ], [["simulacrum_heart", 1]] ]
+    "components": [ [ [ "grafted_arm1", 1 ] ], [ [ "simulacrum_heart", 1 ] ] ]
   },
-  
   {
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
     "result": "vibrant_halo",
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_OTHER",
-    "qualities": [ { "id": "GRAFTING", "level": 1 },{ "id": "BUTCHER", "level": 99 } ],
+    "qualities": [ { "id": "GRAFTING", "level": 1 }, { "id": "BUTCHER", "level": 99 } ],
     "skill_used": "spellcraft",
     "difficulty": 3,
-    "time": "1 h",
+    "time": "1 m",
     "autolearn": true,
-    "components": [ [ [ "ioun_argent", 1 ] ], [["ioun_ceruleum", 1]],[ [ "ioun_crimson", 1 ] ], [["ioun_virid", 1]] ]
+    "components": [ [ [ "ioun_argent", 1 ] ], [ [ "ioun_ceruleum", 1 ] ], [ [ "ioun_crimson", 1 ] ], [ [ "ioun_virid", 1 ] ] ]
   },
-  
   {
     "id": "spell_req_ioun_virid",
     "type": "requirement",
     "components": [ [ [ "viridite_core", 1 ] ] ]
   },
-  
-  
   {
     "id": "spell_req_ioun_argent",
     "type": "requirement",
     "components": [ [ [ "argentium_core", 1 ] ] ]
   },
-  
-  
   {
     "id": "spell_req_ioun_crimson",
     "type": "requirement",
     "components": [ [ [ "crimsonite_core", 1 ] ] ]
   },
-  
-  
   {
     "id": "spell_req_ioun_ceruleum",
     "type": "requirement",
     "components": [ [ [ "ceruleum_core", 1 ] ] ]
   },
-  
-  
   {
     "id": "iounize_virid",
     "type": "SPELL",
@@ -2430,5 +2137,4 @@
     "min_damage": 1,
     "max_damage": 1
   }
-  
-  ]
+]

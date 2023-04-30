@@ -1,19 +1,12 @@
 [
-
-  
-    
   {
     "type": "effect_on_condition",
     "id": "eoc_corpse",
     "effect": { "u_cast_spell": { "id": "hemo_bolts" } },
     "false_effect": { "u_cast_spell": { "id": "hurt_hand" } },
-    "condition": 
-        { "u_has_wielded_with_flag": "CRYS_CORPSE" }
-      
-    
+    "condition": { "u_has_wielded_with_flag": "CRYS_CORPSE" }
   },
-  
-    {
+  {
     "id": "hemo_bolts",
     "type": "SPELL",
     "name": "Shimmering Shards",
@@ -28,7 +21,7 @@
     "max_level": 12,
     "min_range": 6,
     "max_range": 12,
-	"min_aoe": 15,
+    "min_aoe": 15,
     "max_aoe": 18,
     "range_increment": 9.5,
     "energy_source": "MANA",
@@ -38,7 +31,6 @@
     "damage_type": "pure",
     "sound_description": "a zing"
   },
-  
   {
     "id": "run_eoc_corpse",
     "type": "SPELL",
@@ -54,19 +46,19 @@
     "base_energy_cost": 0,
     "max_level": 20
   },
-    {
+  {
     "type": "effect_on_condition",
     "id": "eoc_crysblood_spawn",
     "effect": { "u_cast_spell": { "id": "crystallize_blood_5" } },
     "false_effect": { "u_cast_spell": { "id": "crystallize_blood_1" } },
-    "condition": { "u_has_items":{ "item": "magic_blood", "count": 4 }}
+    "condition": { "u_has_items": { "item": "magic_blood", "count": 4 } }
   },
-   {
+  {
     "type": "effect_on_condition",
     "id": "eoc_noxblood_spawn",
     "effect": { "u_cast_spell": { "id": "toxify_blood_5" } },
     "false_effect": { "u_cast_spell": { "id": "toxify_blood_1" } },
-    "condition": { "u_has_items":{ "item": "magic_blood", "count": 4 }}
+    "condition": { "u_has_items": { "item": "magic_blood", "count": 4 } }
   },
   {
     "id": "crystallize_blood",
@@ -90,8 +82,7 @@
     "base_casting_time": 0,
     "final_casting_time": 0
   },
-  
-    {
+  {
     "id": "crystallize_blood_1",
     "type": "SPELL",
     "name": "Crystallize blood (1)",
@@ -112,8 +103,7 @@
     "base_casting_time": 0,
     "final_casting_time": 0
   },
-  
-    {
+  {
     "id": "crystallize_blood_5",
     "type": "SPELL",
     "name": "Crystallize blood (5)",
@@ -156,7 +146,7 @@
     "base_casting_time": 0,
     "final_casting_time": 0
   },
-      {
+  {
     "id": "toxify_blood_1",
     "type": "SPELL",
     "name": "toxify blood (1)",
@@ -177,8 +167,7 @@
     "base_casting_time": 0,
     "final_casting_time": 0
   },
-  
-    {
+  {
     "id": "toxify_blood_5",
     "type": "SPELL",
     "name": "toxify blood (5)",
@@ -199,23 +188,20 @@
     "base_casting_time": 0,
     "final_casting_time": 0
   },
-    {
+  {
     "id": "shardspray",
     "type": "requirement",
     "components": [ [ [ "crys_blood", 2 ] ] ]
   },
-  
-   {
+  {
     "id": "hemo_missile",
     "type": "SPELL",
     "name": "Blood Shardspray",
     "description": "Magical shards of crystalline blood shoot forth from your hands, this spell is enhanced by a crystalline puppet",
     "valid_targets": [ "hostile" ],
     "flags": [ "VERBAL", "SOMATIC", "NO_LEGS", "SILENT", "NO_PROJECTILE" ],
-	 "extra_effects": [
-      { "id": "run_eoc_corpse", "hit_self": true }
-    ],
-   "components":  "shardspray",
+    "extra_effects": [ { "id": "run_eoc_corpse", "hit_self": true } ],
+    "components": "shardspray",
     "min_damage": 9,
     "damage_increment": 4,
     "damage_type": "pure",
@@ -226,7 +212,7 @@
     "base_energy_cost": 50,
     "difficulty": 1,
     "max_level": 15,
-	"min_aoe": 40,
+    "min_aoe": 40,
     "max_aoe": 180,
     "aoe_increment": 10,
     "base_casting_time": 100,
@@ -234,8 +220,7 @@
     "shape": "cone",
     "effect": "attack"
   },
-  
-  	  {
+  {
     "id": "cut_string",
     "type": "SPELL",
     "name": "Cut String",
@@ -246,7 +231,7 @@
     "effect_str": "mon_marionette2",
     "shape": "blast",
     "energy_source": "HP",
-	"targeted_monster_ids": [ "mon_marionette" ],
+    "targeted_monster_ids": [ "mon_marionette" ],
     "base_casting_time": 200,
     "base_energy_cost": 40,
     "difficulty": 1,
@@ -259,10 +244,7 @@
     "max_range": 30,
     "range_increment": 1.5
   },
-  
-  
-  
-   	  {
+  {
     "id": "archaeo_poly",
     "type": "SPELL",
     "name": "Strip Archaeo-shell",
@@ -273,7 +255,7 @@
     "effect_str": "mon_archaeodemon2",
     "shape": "blast",
     "energy_source": "HP",
-	"targeted_monster_ids": [ "mon_archaeodemon" ],
+    "targeted_monster_ids": [ "mon_archaeodemon" ],
     "base_casting_time": 100,
     "base_energy_cost": 40,
     "difficulty": 1,
@@ -286,9 +268,7 @@
     "max_range": 30,
     "range_increment": 1.5
   },
-  
-  
-   	  {
+  {
     "id": "stop_construct",
     "type": "SPELL",
     "name": "Stop Construct",
@@ -299,7 +279,7 @@
     "effect_str": "mon_simulacrum2",
     "shape": "blast",
     "energy_source": "HP",
-	"targeted_monster_ids": [ "mon_simulacrum" ],
+    "targeted_monster_ids": [ "mon_simulacrum" ],
     "base_casting_time": 200,
     "base_energy_cost": 40,
     "difficulty": 1,
@@ -312,9 +292,7 @@
     "max_range": 30,
     "range_increment": 1.5
   },
-  
-  
-    {
+  {
     "id": "summon_husk",
     "type": "SPELL",
     "name": "Summon Shambling Husk",
@@ -336,14 +314,13 @@
     "max_range": 3,
     "min_aoe": 1,
     "max_aoe": 1,
-    "flags": [ "SOMATIC", "SPAWN_WITH_DEATH_DROPS", "VERBAL","PERMANENT", "HOSTILE_SUMMON", "CONCENTRATE" ],
+    "flags": [ "SOMATIC", "SPAWN_WITH_DEATH_DROPS", "VERBAL", "PERMANENT", "HOSTILE_SUMMON", "CONCENTRATE" ],
     "min_duration": 360000,
     "max_duration": 10800000,
     "duration_increment": 36000,
     "learn_spells": { "summon_husk": 10 }
-	},
-  
-    {
+  },
+  {
     "id": "summon_nox_husk",
     "type": "SPELL",
     "name": "Summon Shambling Husk",
@@ -365,14 +342,13 @@
     "max_range": 3,
     "min_aoe": 1,
     "max_aoe": 1,
-    "flags": [ "SOMATIC", "SPAWN_WITH_DEATH_DROPS", "VERBAL","PERMANENT", "HOSTILE_SUMMON", "CONCENTRATE" ],
+    "flags": [ "SOMATIC", "SPAWN_WITH_DEATH_DROPS", "VERBAL", "PERMANENT", "HOSTILE_SUMMON", "CONCENTRATE" ],
     "min_duration": 360000,
     "max_duration": 10800000,
     "duration_increment": 36000,
     "learn_spells": { "summon_husk": 10 }
-	},
-  
-    {
+  },
+  {
     "id": "summon_crys_husk",
     "type": "SPELL",
     "name": "Summon Shambling Husk",
@@ -394,14 +370,13 @@
     "max_range": 3,
     "min_aoe": 1,
     "max_aoe": 1,
-    "flags": [ "SOMATIC", "SPAWN_WITH_DEATH_DROPS", "VERBAL","PERMANENT", "HOSTILE_SUMMON", "CONCENTRATE" ],
+    "flags": [ "SOMATIC", "SPAWN_WITH_DEATH_DROPS", "VERBAL", "PERMANENT", "HOSTILE_SUMMON", "CONCENTRATE" ],
     "min_duration": 360000,
     "max_duration": 10800000,
     "duration_increment": 36000,
     "learn_spells": { "summon_husk": 10 }
-	},
-	
-	  {
+  },
+  {
     "id": "poly_crys_husk",
     "type": "SPELL",
     "name": "Crystalline Evolution",
@@ -412,7 +387,7 @@
     "effect_str": "mon_crys_husk",
     "shape": "blast",
     "energy_source": "HP",
-	"targeted_monster_ids": [ "mon_husk" ],
+    "targeted_monster_ids": [ "mon_husk" ],
     "base_casting_time": 200,
     "base_energy_cost": 40,
     "difficulty": 1,
@@ -426,8 +401,7 @@
     "range_increment": 1.5,
     "learn_spells": { "poly_crys_husk": 10 }
   },
-  
-	  {
+  {
     "id": "poly_nox_husk",
     "type": "SPELL",
     "name": "Noxious Evolution",
@@ -438,7 +412,7 @@
     "effect_str": "mon_nox_husk",
     "shape": "blast",
     "energy_source": "HP",
-	"targeted_monster_ids": [ "mon_husk" ],
+    "targeted_monster_ids": [ "mon_husk" ],
     "base_casting_time": 200,
     "base_energy_cost": 40,
     "difficulty": 1,
@@ -451,7 +425,5 @@
     "max_range": 30,
     "range_increment": 1.5,
     "learn_spells": { "poly_nox_husk": 10 }
-	  }
-  
-  
-  ]
+  }
+]

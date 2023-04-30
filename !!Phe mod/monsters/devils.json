@@ -7,11 +7,13 @@
     {
 	"type": "MONSTER_FACTION",
 	"name": "zombie",
-	"friendly": [ "devil" ]
+    "copy_from": "zombie",
+	"friendly": [ "devil", "demon" ]
   },
   {
 	"type": "MONSTER_FACTION",
 	"name": "demon",
+    "copy_from": "demon",
 	"friendly": [ "devil" ]
   },
   {
@@ -507,10 +509,10 @@
     "entries": [
       { "item": "tear_of_child", "prob": 20 },
       { "item": "raw_bloodshot", "prob": 80, "count-min": 1, "count-max": 3 },
-      { "item": "viridite", "prob": 65, "count-min": 1, "count-max": 2 },
-      { "item": "ceruleum", "prob": 65, "count-min": 1, "count-max": 2 },
-      { "item": "crimsonite", "prob": 65, "count-min": 1, "count-max": 2 },
-      { "item": "argentium", "prob": 65, "count-min": 1, "count-max": 2 },
+      { "item": "viridite", "prob": 100, "count-min": 1, "count-max": 2 },
+      { "item": "ceruleum", "prob": 100, "count-min": 1, "count-max": 2 },
+      { "item": "crimsonite", "prob": 100, "count-min": 1, "count-max": 2 },
+      { "item": "argentium", "prob": 100, "count-min": 1, "count-max": 2 },
       { "item": "decaying_soul", "prob": 17 },
       { "item": "twisted_soul", "prob": 11 },
       { "item": "antoninianus", "prob": 15 }
@@ -1647,14 +1649,13 @@
     "death_drops": "simulacrumdrops",
     "harvest": "human2",
     "special_attacks": [
-      [ "RANGED_PULL", 10 ],
-      [ "GRAB", 7 ],
+      [ "GRAB", 4 ],
       [ "BIO_OP_BIOJUTSU", 7 ],
       [ "BIO_OP_DISARM", 7 ],
       [ "BIO_OP_IMPALE", 7 ],
       [ "BIO_OP_TAKEDOWN", 7 ],
       [ "SMASH", 7 ],
-      [ "GRAB_DRAG", 7 ],
+      [ "GRAB_DRAG", 4 ],
       { "id": "SHOCKSTORM", "cooldown": 12, "range": 1 },
       {
         "type": "spell",
