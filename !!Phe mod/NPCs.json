@@ -269,7 +269,7 @@
         "switch": true,
         "default": true,
         "text": "Do you want to come with me?",
-        "trial": { "type": "PERSUADE", "difficulty": 20 },
+        "trial": { "type": "PERSUADE", "difficulty": 100 },
         "success": { "topic": "TALK_PAWN_FRIENDLY", "opinion": { "trust": 0, "value": 1 } },
         "failure": { "topic": "TALK__PAWN_FEARFUL", "opinion": { "anger": 0, "fear": 0 } }
       },
@@ -277,15 +277,15 @@
         "switch": true,
         "default": true,
         "text": "Saw some rabbits that way, wanna go see?",
-        "trial": { "type": "LIE", "difficulty": 30 },
+        "trial": { "type": "LIE", "difficulty": 100 },
         "success": { "topic": "TALK_PAWN_FRIENDLY", "opinion": { "trust": 0, "value": 1 } },
         "failure": { "topic": "TALK_PAWN_ANGRY", "opinion": { "anger": 0, "fear": 0 } }
       },
-      {
+	        {
         "switch": true,
         "default": true,
         "text": "You should come with me for your own sake.",
-        "trial": { "type": "INTIMIDATE", "difficulty": 40, "mod": [ [ "AGGRESSION", -2 ], [ "BRAVERY", -2 ] ] },
+        "trial": { "type": "INTIMIDATE", "difficulty": 100, "mod": [ [ "AGGRESSION", -2 ], [ "BRAVERY", -2 ] ] },
         "success": { "topic": "TALK_PAWN_FEARFUL", "opinion": { "trust": -4, "fear": 3, "value": -1, "anger": 4 } },
         "failure": { "topic": "TALK_PAWN_ANGRY", "opinion": { "trust": -4, "value": -5, "anger": 10 } }
       },
@@ -299,7 +299,7 @@
     "responses": [
       {
         "text": "I need your help in my journey.",
-        "trial": { "type": "PERSUADE", "difficulty": 20, "mod": [ [ "value", 2 ] ] },
+        "trial": { "type": "PERSUADE", "difficulty": 100, "mod": [ [ "value", 2 ] ] },
         "success": { "topic": "TALK_AGREE_FOLLOW", "effect": "follow", "opinion": { "trust": 1, "value": 1 } },
         "failure": { "topic": "TALK_DENY_FOLLOW", "effect": "deny_follow", "opinion": { "trust": -1, "fear": 1 } }
       },
