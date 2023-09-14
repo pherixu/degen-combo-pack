@@ -11,7 +11,7 @@
     "looks_like": "flashbang",
     "price": 5000,
     "to_hit": -1,
-    "bashing": 5,
+    "melee_damage": { "bash": 5 },
     "material": [ "steel", "plastic" ],
     "symbol": "*",
     "color": "dark_gray",
@@ -130,7 +130,7 @@
     "volume": "250 ml",
     "price": 50000,
     "to_hit": -4,
-    "bashing": 3,
+    "melee_damage": { "bash": 3 },
     "material": [ "plastic", "aluminum" ],
     "symbol": ";",
     "color": "red",
@@ -156,7 +156,7 @@
     "volume": "250 ml",
     "price": 50000,
     "to_hit": -4,
-    "bashing": 3,
+    "melee_damage": { "bash": 3 },
     "material": [ "plastic", "aluminum" ],
     "symbol": ";",
     "color": "red",
@@ -182,7 +182,7 @@
     "volume": "250 ml",
     "price": 50000,
     "to_hit": -4,
-    "bashing": 3,
+    "melee_damage": { "bash": 3 },
     "material": [ "plastic", "aluminum" ],
     "symbol": ";",
     "color": "red",
@@ -206,7 +206,7 @@
   },
   {
     "id": "philosophers_stone",
-    "type": "ARMOR",
+    "type": "TOOL",
     "name": { "str": "philosopher's stone" },
     "description": "The Fountain of Youth. The Holy Grail. Even they pale in comparison to this most holy of objects, for the divinity rests entirely within itself. The wearer is said to be blessed by the powers that be, a true demi-god.",
     "weight": "25 g",
@@ -222,9 +222,10 @@
 	{ "type": "cast_spell", "spell_id": "draw_crystal_circle", "no_fail": true, "level": 1, "need_worn": true }
 	],
 	"pocket_data": [
+      { "pocket_type": "MAGAZINE", "ammo_restriction": { "white_pen_ink": 10 }, "watertight": true, "rigid": true },
       {
-        "rigid": true,
         "pocket_type": "CONTAINER",
+        "rigid": true,
         "max_contains_volume": "1000 L",
         "max_contains_weight": "1000 kg",
         "moves": 100000,
@@ -283,8 +284,7 @@
 		  "spirit_bash"
         ],
         "weight_multiplier": 0.0
-      },
-      { "pocket_type": "MAGAZINE", "ammo_restriction": { "white_pen_ink": 1 }, "watertight": true }
+      }
     ],
     "relic_data": {
 	 "charge_info": { "recharge_type": "periodic", "time": "60 s", "regenerate_ammo": true },
@@ -320,7 +320,7 @@
     "weight": "3850 g",
     "volume": "3500 ml",
     "price": 2000000,
-    "bashing": 5,
+    "melee_damage": { "bash": 5 },
     "material": [ "leather" ],
     "symbol": "[",
     "looks_like": "holster",
@@ -391,7 +391,7 @@
     "longest_side": "21 cm",
     "price": 1000000,
     "to_hit": -4,
-    "bashing": 5,
+    "melee_damage": { "bash": 5 },
     "material": [ "steel" ],
     "symbol": ";",
     "color": "green",
@@ -478,7 +478,7 @@
     "base_casting_time": 0,
     "base_energy_cost": 0,
     "energy_source": "MANA",
-    "flags": [ "PERMANENT", "WITH_CONTAINER", "RANDOM_DAMAGE" ],
+    "flags": [ "PERMANENT", "RANDOM_DAMAGE" ],
     "difficulty": 5,
     "max_level": 1,
 	"min_damage": 0,
@@ -497,7 +497,7 @@
     "volume": "2010 ml",
     "price": 1000,
     "to_hit": -4,
-    "bashing": 5,
+    "melee_damage": { "bash": 5 },
     "material": [ "steel" ],
 	"flags": [ "TRADER_AVOID" ],
 	"use_action": [ 
@@ -518,7 +518,7 @@
     "volume": "2010 ml",
     "price": 1000,
     "to_hit": -4,
-    "bashing": 5,
+    "melee_damage": { "bash": 5 },
     "material": [ "steel" ],
 	"flags": [ "TRADER_AVOID" ],
 	"use_action": [ 
@@ -631,7 +631,7 @@
     "volume": "15750 ml",
     "price": 1100000,
     "to_hit": -2,
-    "bashing": 5,
+    "melee_damage": { "bash": 5 },
     "material": [ "plastic" ],
     "symbol": "[",
     "looks_like": "briefcase",
@@ -694,7 +694,7 @@
     "longest_side": "60 cm",
     "price": 1000000,
     "to_hit": { "grip": "solid", "length": "short", "surface": "any", "balance": "clumsy" },
-    "bashing": 9,
+    "melee_damage": { "bash": 9 },
     "material": [ "gold" ],
     "symbol": "}",
     "color": "yellow",
@@ -781,7 +781,7 @@
     "volume": "2500 ml",
     "longest_side": "40 cm",
     "price": 750000,
-    "bashing": 6,
+    "melee_damage": { "bash": 6 },
     "use_action": [
       "EINKTABLETPC",
       "PORTABLE_GAME",
@@ -892,7 +892,7 @@
     "weight": "907 g",
     "volume": "250 ml",
     "price": 30000,
-    "bashing": 1,
+    "melee_damage": { "bash": 1 },
     "material": [ "plastic", "steel" ],
     "symbol": ";",
     "color": "yellow",
@@ -907,7 +907,7 @@
     "weight": "2268 g",
     "volume": "1250 ml",
     "price": 50000,
-    "bashing": 1,
+    "melee_damage": { "bash": 1 },
     "material": [ "plastic", "steel" ],
     "symbol": ";",
     "color": "yellow",
@@ -1447,7 +1447,7 @@
     "weight": "1 g",
     "volume": "1 ml",
     "price": 500000,
-    "bashing": 4,
+    "melee_damage": { "bash": 4 },
     "material": [ "gold" ],
     "symbol": "[",
     "looks_like": "baldric",
@@ -1482,7 +1482,7 @@
     "weight": "1 g",
     "volume": "1 ml",
     "price": 100000,
-    "bashing": 4,
+    "melee_damage": { "bash": 4 },
     "material": [ "gold" ],
     "symbol": "[",
     "looks_like": "baldric",
@@ -1518,7 +1518,7 @@
     "weight": "1 g",
     "volume": "1 ml",
     "price": 100000,
-    "bashing": 4,
+    "melee_damage": { "bash": 4 },
     "material": [ "gold" ],
     "symbol": "[",
     "looks_like": "baldric",
@@ -1550,7 +1550,7 @@
   {
     "id": "teddy",
     "name": "teddy bear",
-    "copy-from": "teddy",
+    "copy-from": "teddy_bear",
     "type": "TOOL",
     "flags": [ "NO_UNLOAD" ],
     "charges_per_use": 5,
@@ -1618,7 +1618,7 @@
     "volume": "1000 ml",
     "longest_side": "76 cm",
     "price": 400000,
-    "bashing": 3,
+    "melee_damage": { "bash": 3 },
     "to_hit": 1,
     "material": [ "wood" ],
     "symbol": "|",
@@ -2033,6 +2033,7 @@
     "symbol": ";",
     "color": "light_gray",
     "qualities": [ [ "MANA_WEAVE", 1 ] ],
+    "melee_damage": { "stab": 1 },
     "pocket_data": [
       {
         "rigid": false,
@@ -2050,7 +2051,7 @@
         ]
       }
     ],
-    "flags": [ "STAB", "FRAGILE_MELEE", "MAGIC_FOCUS" ]
+    "flags": [ "FRAGILE_MELEE", "MAGIC_FOCUS" ]
   },
   {
     "id": "unending_pen",
@@ -2065,6 +2066,7 @@
     "symbol": ";",
     "color": "light_gray",
     "charges_per_use": 1,
+    "melee_damage": { "stab": 1 },
     "qualities": [ [ "MANA_WEAVE", 1 ] ],
     "relic_data": { "charge_info": { "recharge_type": "periodic", "time": "30 s", "regenerate_ammo": true } },
     "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "black_pen_ink": 500 }, "watertight": true, "rigid": true } ],
@@ -2072,7 +2074,7 @@
       { "type": "inscribe", "verb": "Write", "gerund": "Written", "on_terrain": false, "material_restricted": false },
       { "target": "unending_pen_green", "msg": "You click the pen.", "menu_text": "Green Ink", "type": "transform" }
     ],
-    "flags": [ "STAB", "FRAGILE_MELEE", "WRITE_MESSAGE", "MAGIC_FOCUS" ]
+    "flags": [ "FRAGILE_MELEE", "WRITE_MESSAGE", "MAGIC_FOCUS" ]
   },
   {
     "id": "unending_pen_green",
@@ -2087,6 +2089,7 @@
     "symbol": ";",
     "color": "light_gray",
     "charges_per_use": 1,
+    "melee_damage": { "stab": 1 },
     "qualities": [ [ "MANA_WEAVE", 1 ] ],
     "relic_data": { "charge_info": { "recharge_type": "periodic", "time": "30 s", "regenerate_ammo": true } },
     "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "green_pen_ink": 500 }, "watertight": true, "rigid": true } ],
@@ -2094,7 +2097,7 @@
       { "type": "inscribe", "verb": "Write", "gerund": "Written", "on_terrain": false, "material_restricted": false },
       { "target": "unending_pen_blue", "msg": "You click the pen.", "menu_text": "Blue Ink", "type": "transform" }
     ],
-    "flags": [ "STAB", "FRAGILE_MELEE", "WRITE_MESSAGE", "MAGIC_FOCUS" ]
+    "flags": [ "FRAGILE_MELEE", "WRITE_MESSAGE", "MAGIC_FOCUS" ]
   },
   {
     "id": "unending_pen_red",
@@ -2108,6 +2111,7 @@
     "material": [ "steel" ],
     "symbol": ";",
     "color": "light_gray",
+    "melee_damage": { "stab": 1 },
     "qualities": [ [ "MANA_WEAVE", 1 ] ],
     "charges_per_use": 1,
     "relic_data": { "charge_info": { "recharge_type": "periodic", "time": "30 s", "regenerate_ammo": true } },
@@ -2116,7 +2120,7 @@
       { "type": "inscribe", "verb": "Write", "gerund": "Written", "on_terrain": false, "material_restricted": false },
       { "target": "unending_pen", "msg": "You click the pen.", "menu_text": "Black Ink", "type": "transform" }
     ],
-    "flags": [ "STAB", "FRAGILE_MELEE", "WRITE_MESSAGE", "MAGIC_FOCUS" ]
+    "flags": [ "FRAGILE_MELEE", "WRITE_MESSAGE", "MAGIC_FOCUS" ]
   },
   {
     "id": "unending_pen_blue",
@@ -2131,6 +2135,7 @@
     "symbol": ";",
     "color": "light_gray",
     "charges_per_use": 1,
+    "melee_damage": { "stab": 1 },
     "qualities": [ [ "MANA_WEAVE", 1 ] ],
     "relic_data": { "charge_info": { "recharge_type": "periodic", "time": "30 s", "regenerate_ammo": true } },
     "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "blue_pen_ink": 500 }, "watertight": true, "rigid": true } ],
@@ -2138,7 +2143,7 @@
       { "type": "inscribe", "verb": "Write", "gerund": "Written", "on_terrain": false, "material_restricted": false },
       { "target": "unending_pen_red", "msg": "You click the pen.", "menu_text": "Red Ink", "type": "transform" }
     ],
-    "flags": [ "STAB", "FRAGILE_MELEE", "WRITE_MESSAGE", "MAGIC_FOCUS" ]
+    "flags": [ "FRAGILE_MELEE", "WRITE_MESSAGE", "MAGIC_FOCUS" ]
   },
   {
     "id": "walking_key",
@@ -2199,8 +2204,7 @@
     "longest_side": "1 cm",
     "price": 2000,
     "to_hit": 3,
-    "bashing": 14,
-    "cutting": 3,
+    "melee_damage": { "bash": 14, "cut": 3 },
     "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "ONLY_ONE", "TRADER_AVOID", "AURA", "NONCONDUCTIVE" ],
     "material": [ "steel" ],
     "symbol": "/",
@@ -2324,8 +2328,7 @@
     "weight": "100 g",
     "volume": "1000 ml",
     "price": 300000,
-    "bashing": 1,
-    "cutting": 1,
+    "melee_damage": { "bash": 5, "cut": 1 },
     "material": [ "steel" ],
     "symbol": "I",
     "color": "black",
@@ -2425,7 +2428,7 @@
     "volume": "6 L",
     "price": 1500000,
     "to_hit": -3,
-    "bashing": 6,
+    "melee_damage": { "bash": 6 },
     "material": [ "kevlar_layered" ],
     "symbol": "[",
     "environmental_protection": 7,
@@ -2455,7 +2458,7 @@
     "volume": "6 L",
     "price": 1500000,
     "to_hit": -3,
-    "bashing": 6,
+    "melee_damage": { "bash": 6 },
     "material": [ "kevlar_layered" ],
     "symbol": "[",
     "environmental_protection": 7,
@@ -2480,12 +2483,12 @@
     "type": "TOOL_ARMOR",
     "category": "armor",
     "name": { "str": "magic mantle" },
-    "description": "A lightweight, bullet resistant vest made to block damage from electricity. Most magical forms of damage can be resisted if the vest is attuned to do so. Suitable for wearing under clothing. Highly recommended for any field operator of a magical nature.",
+    "description": "A lightweight, bullet resistant vest made to block damage from electric. Most magical forms of damage can be resisted if the vest is attuned to do so. Suitable for wearing under clothing. Highly recommended for any field operator of a magical nature.",
     "weight": "2860 g",
     "volume": "6 L",
     "price": 1500000,
     "to_hit": -3,
-    "bashing": 6,
+    "melee_damage": { "bash": 6 },
     "material": [ "kevlar_layered" ],
     "symbol": "[",
     "environmental_protection": 7,
@@ -2515,7 +2518,7 @@
     "volume": "6 L",
     "price": 1500000,
     "to_hit": -3,
-    "bashing": 6,
+    "melee_damage": { "bash": 6 },
     "material": [ "kevlar_layered" ],
     "symbol": "[",
     "environmental_protection": 7,
@@ -2545,7 +2548,7 @@
     "volume": "6 L",
     "price": 1500000,
     "to_hit": -3,
-    "bashing": 6,
+    "melee_damage": { "bash": 6 },
     "material": [ "kevlar_layered" ],
     "symbol": "[",
     "environmental_protection": 7,
@@ -2827,8 +2830,7 @@
     "longest_side": "1 cm",
     "price": 2000,
     "to_hit": 3,
-    "bashing": 14,
-    "cutting": 3,
+    "melee_damage": { "bash": 14, "cut": 3 },
     "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "ONLY_ONE", "TRADER_AVOID", "AURA", "INTEGRATED", "NONCONDUCTIVE" ],
     "material": [ "steel" ],
     "symbol": "/",
@@ -2890,8 +2892,7 @@
     "longest_side": "1 cm",
     "price": 2000,
     "to_hit": 3,
-    "bashing": 14,
-    "cutting": 3,
+    "melee_damage": { "bash": 14, "cut": 3 },
     "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "ONLY_ONE", "TRADER_AVOID", "AURA", "INTEGRATED", "NONCONDUCTIVE" ],
     "material": [ "steel" ],
     "symbol": "/",
@@ -2951,8 +2952,7 @@
     "longest_side": "1 cm",
     "price": 100000,
     "to_hit": 3,
-    "bashing": 14,
-    "cutting": 3,
+    "melee_damage": { "bash": 14, "cut": 3 },
     "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "AURA", "ONLY_ONE", "TRADER_AVOID", "INTEGRATED", "NONCONDUCTIVE" ],
     "material": [ "steel" ],
     "symbol": "/",
@@ -3153,8 +3153,7 @@
     "longest_side": "1 cm",
     "price": 2000,
     "to_hit": 3,
-    "bashing": 14,
-    "cutting": 3,
+    "melee_damage": { "bash": 14, "cut": 3 },
     "flags": [
       "PERSONAL",
       "SEMITANGIBLE",
@@ -3423,8 +3422,7 @@
     "longest_side": "140 cm",
     "price": 700000,
     "to_hit": 3,
-    "bashing": 14,
-    "cutting": 3,
+    "melee_damage": { "bash": 14, "cut": 3 },
     "material": [ "steel", "wood" ],
     "symbol": "/",
     "color": "brown",

@@ -135,7 +135,7 @@
         " |2222222222|..oo.oo..3 ",
         " |....................3 ",
         " |.U..................3 ",
-        " |....................3 ",
+        " |..............Q.....3 ",
         " 5....................3 ",
         " |....................3 ",
         " |.........{..........3 ",
@@ -148,16 +148,63 @@
         " |....................3 ",
         " |--------------------3 "
       ],
+      "terrain": {
+        "=": "t_railing",
+        "+": "t_door_glass_c",
+        "-": "t_wall_glass",
+        ".": "t_linoleum_gray",
+        "D": "t_door_c",
+        "_": "t_pavement",
+        "Á": "t_pavement",
+        "a": "t_door_locked_interior",
+        " ": "t_region_groundcover_urban",
+        "/": "t_region_groundcover_urban",
+        "p": "t_pavement_y",
+        "s": "t_sidewalk",
+        "w": "t_window_domestic",
+        "|": "t_wall_w",
+        "3": "t_atm",
+        "4": "t_gutter_downspout"
+      },
+      "furniture": {
+        "#": "f_magic_circle",
+        "@": "f_rack",
+        "c": "f_counter",
+        "%": "f_cupboard",
+        "&": "f_trashcan",
+        "S": "f_sink",
+        "X": "f_safe_l",
+        "^": [ "f_indoor_plant", "f_indoor_plant_y" ],
+        "b": "f_bench",
+        "C": "f_chair",
+        "e": "f_fridge",
+        "I": "f_desk",
+        "Y": "f_trashcan",
+        "1": "f_server",
+        "2": "f_shredder",
+        "F": "f_filing_cabinet",
+        "f": "f_filing_cabinet",
+        "K": "f_stool",
+        "t": "f_table",
+        "v": "f_vending_c",
+        "{": "f_locker",
+        "/": "f_flagpole"
+      },
+      "items": {
+        "X": [ { "item": "brimstone_weapons", "chance": 50 }, { "item": "brimstone_ammunition", "chance": 50 }, { "item": "links", "chance": 10 } ],
+        "{": [ { "item": "enchanted_misc", "chance": 50, "repeat": 2 }, { "item": "enchanted_combat_items", "chance": 10, "repeat": 2 } ],
+        "I": { "item": "SUS_office_desk", "chance": 30 },
+        "e": { "item": "SUS_fridge_breakroom", "chance": 30 },
+        "F": { "item": "SUS_office_filing_cabinet", "chance": 75 },
+        "f": { "item": "mail_postal", "chance": 75, "repeat": [ 1, 12 ] },
+        "@": { "item": "packaging_postal", "chance": 75, "repeat": [ 1, 6 ] },
+        "Y": { "item": "trash", "chance": 50, "repeat": [ 2, 4 ] },
+        "%": { "item": "snacks", "chance": 50, "repeat": [ 2, 4 ] }
+      },
       "palettes": [ "roof_palette" ],
       "nested": { "U": { "chunks": [ "roof_2x2_infrastructure" ] }, "R": { "chunks": [ "roof_2x2_infrastructure_1" ] } },
-	  "monsters": { "P": { "monster": "GROUP_MAGES", "chance": 100, "repeat": 3 } },
-	  "furniture": {
-        "#": "f_magic_circle"
-      },
-	  "items": {
-        "X": [ { "item": "brimstone_weapons", "chance": 50 }, { "item": "brimstone_ammunition", "chance": 50 }, { "item": "links", "chance": 10 } ],
-        "{": [ { "item": "enchanted_misc", "chance": 50, "repeat": 2 }, { "item": "enchanted_combat_items", "chance": 10, "repeat": 2 } ]
-      },
+	  "monsters": { "P": { "monster": "GROUP_MAGES", "chance": 100 },
+	                "Q": { "monster": "GROUP_MAGES", "chance": 100 } },
       "place_nested": [
         {
           "chunks": [
@@ -237,7 +284,6 @@
     "type": "mapgen",
     "om_terrain": [ [ "office_towermage_roof_ne", "office_towermage_roof_nw" ], [ "office_towermage_roof_sw", "office_towermage_roof_se" ] ],
     "method": "json",
-	"palettes": [ "helipad_palette_roof" ],
     "object": {
       "fill_ter": "t_flat_roof",
       "rows": [
@@ -290,8 +336,9 @@
         "ssssssssssssssssssssssssssssssssssssssssssssssss",
         "ssssssssssssssssssssssssssssssssssssssssssssssss"
       ],
+	  "palettes": [ "helipad_palette_roof" ],
       "terrain": { ".": [ "t_flat_roof" ], ">": [ "t_stairs_down" ], "s": [ "t_open_air" ], ":": [ "t_laminated_door_glass_c" ], "=": [ "t_concrete" ], "p":  [ "t_pavement" ], "(": [ "t_glass_roof" ], "|": [ "t_rock_wall" ], "#": [ "t_glass_roof" ], "-": [ "t_rock_wall" ], "Ю": [ "t_gutter_drop" ] },
-	  "monster": { "K": { "monster": "mon_kelkememnon", "chance": 100 }, "A": { "monster": "mon_azarkan", "chance": 100 } },
+	  "monsters": { "K": { "monster": "mon_kelkememnon", "chance": 100 }, "A": { "monster": "mon_azarkan", "chance": 100 } },
 	  "traps": { "r": "tr_shadow", "v": "tr_swirling_vortex" },
 	  "place_item": [ { "item": "sunandmoon", "x": 8, "y": 7 } ],
 	  "place_items": [ { "item": "enchanted_misc", "x": [ 21, 23 ], "y": 6, "chance": 50, "repeat": 1 }, { "item": "enchanted_small_items", "x": [ 21, 23 ], "y": 6, "chance": 50, "repeat": 3 }, { "item": "jugofwhiteink", "x": [ 21, 23 ], "y": 6, "chance": 50, "repeat": 5 } ],

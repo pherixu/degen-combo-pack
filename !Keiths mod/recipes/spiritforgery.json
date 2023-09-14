@@ -452,7 +452,7 @@
     "reversible": true,
     "autolearn": true,
     "using": [ [ "tailoring_leather_patchwork_simple", 8 ] ],
-    "proficiencies": [ { "proficiency": "prof_toolsmithing" }, { "proficiency": "prof_carving", "time_multiplier": 3, "fail_multiplier": 1 } ],
+    "proficiencies": [ { "proficiency": "prof_toolsmithing" }, { "proficiency": "prof_carving", "time_multiplier": 3, "skill_penalty": 1 } ],
     "qualities": [ { "id": "HAMMER", "level": 1 }, { "id": "SEW_CURVED", "level": 1 }, { "id": "CHISEL_WOOD", "level": 1 }, { "id": "ZEN", "level": 1 } ],
 	"components": [
       [ [ "stick", 3 ] ],

@@ -314,7 +314,6 @@
     "class": "NC_MAGIC_OPERATOR",
     "attitude": 0,
     "mission": 3,
-	"common": false,
     "mission_offered": "MISSION_GET_INTEL",
     "chat": "TALK_MAGIC_OPERATOR",
     "faction": "forge_lords"
@@ -339,7 +338,6 @@
     "class": "NC_MAGIC_OPERATOR3",
     "attitude": 0,
     "mission": 3,
-	"common": false,
     "mission_offered": "MISSION_GET_INTEL_WAITING",
     "chat": "TALK_MAGIC_OPERATOR_WAITING",
     "faction": "wizards_ancient"

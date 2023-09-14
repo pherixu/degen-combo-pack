@@ -1,0 +1,12 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "magiclysm_nolimit",
+    "name": "<color_blue>Magiclysm Unlimited</color>",
+    "authors": [ "Cobweb" ],
+    "maintainers": [ "PlayerUnknown" ],
+    "description": "Remove limits on Magiclsym Magic classes. Meant for use with Magic Revamp Additions.  ",
+    "category": "misc_additions",
+    "dependencies": [ "dda", "magiclysm", "magicrevamp" ]
+  }
+]

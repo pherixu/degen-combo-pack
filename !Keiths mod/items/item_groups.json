@@ -266,7 +266,8 @@
   {
     "type": "item_group",
     "id": "religious_books_spellbooks",
-    "items": [
+    "subtype": "distribution",
+    "items": [ 
       { "item": "spell_scroll_summon_atraxa", "prob": 10 },
       { "item": "spell_scroll_new_life", "prob": 10 },
       { "item": "spell_scroll_extract_memory", "prob": 10 },
@@ -1384,7 +1385,8 @@
   {
     "type": "item_group",
     "id": "banknotes",
-	"copy-from": "banknotes",
+    "copy-from": "banknotes",
+    "extend": {
     "items": [
       { "item": "money_one", "prob": 25, "count": [ 1, 25 ] },
       { "item": "money_two", "prob": 2, "count": [ 1, 2 ] },
@@ -1393,7 +1395,8 @@
       { "item": "money_twenty", "prob": 40, "count": [ 1, 5 ] },
       { "item": "money_fifty", "prob": 30, "count": [ 1, 3 ] },
 	  { "item": "money_hundred", "prob": 25, "count": [ 1, 3 ] }
-    ]
+     ]
+    }
   },
   {
     "type": "item_group",

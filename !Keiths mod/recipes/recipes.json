@@ -3221,7 +3221,7 @@
       { "proficiency": "prof_metalworking" },
       { "proficiency": "prof_blacksmithing" },
       { "proficiency": "prof_bladesmith" },
-      { "proficiency": "prof_carving", "time_multiplier": 1.2, "fail_multiplier": 1, "learning_time_multiplier": 0.2 }
+      { "proficiency": "prof_carving", "time_multiplier": 1.2, "skill_penalty": 1, "learning_time_multiplier": 0.2 }
     ],
     "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "wayward_memory_HECVW", 1 ] ],
     "components": [
@@ -3251,7 +3251,7 @@
       { "proficiency": "prof_metalworking" },
       { "proficiency": "prof_blacksmithing" },
       { "proficiency": "prof_bladesmith" },
-      { "proficiency": "prof_carving", "time_multiplier": 1.2, "fail_multiplier": 1, "learning_time_multiplier": 0.2 }
+      { "proficiency": "prof_carving", "time_multiplier": 1.2, "skill_penalty": 1, "learning_time_multiplier": 0.2 }
     ],
     "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "wayward_memory_BAAA", 1 ] ],
     "components": [
@@ -3281,7 +3281,7 @@
       { "proficiency": "prof_metalworking" },
       { "proficiency": "prof_blacksmithing" },
       { "proficiency": "prof_bladesmith" },
-      { "proficiency": "prof_carving", "time_multiplier": 1.2, "fail_multiplier": 1, "learning_time_multiplier": 0.2 }
+      { "proficiency": "prof_carving", "time_multiplier": 1.2, "skill_penalty": 1, "learning_time_multiplier": 0.2 }
     ],
     "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "wayward_memory_BYA", 1 ] ],
     "components": [

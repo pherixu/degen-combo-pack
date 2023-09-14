@@ -12,8 +12,7 @@
     "material": [ "steel" ],
     "weight": "20500 g",
     "volume": "10500 ml",
-    "bashing": 6,
-    "cutting": 6,
+    "melee_damage": { "bash": 6, "cut": 6 },
     "to_hit": -3,
     "flags": [ "TRADER_AVOID" ]
   },
@@ -30,8 +29,7 @@
     "material": [ "steel" ],
     "weight": "40750 g",
     "volume": "30000 ml",
-    "bashing": 6,
-    "cutting": 6,
+    "melee_damage": { "bash": 6, "cut": 6 },
     "to_hit": -3,
     "flags": [ "TRADER_AVOID" ]
   },
@@ -48,8 +46,7 @@
     "material": [ "steel" ],
     "weight": "81500 g",
     "volume": "62500 ml",
-    "bashing": 6,
-    "cutting": 6,
+    "melee_damage": { "bash": 6, "cut": 6 },
     "to_hit": -3,
     "flags": [ "TRADER_AVOID" ]
   },
@@ -66,8 +63,7 @@
     "material": [ "steel" ],
     "weight": "131500 g",
     "volume": "102500 ml",
-    "bashing": 6,
-    "cutting": 6,
+    "melee_damage": { "bash": 6, "cut": 6 },
     "to_hit": -3,
     "flags": [ "TRADER_AVOID" ]
   }

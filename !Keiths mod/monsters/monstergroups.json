@@ -2,7 +2,6 @@
   {
     "name": "GROUP_NETHER",
     "type": "monstergroup",
-    "override": true,
     "default": "mon_blank",
     "monsters": [
       { "monster": "mon_blank", "weight": 135, "cost_multiplier": 0 },
@@ -28,7 +27,6 @@
   {
     "name": "GROUP_NETHER_BLOOM",
     "type": "monstergroup",
-    "override": true,
     "default": "mon_blank",
     "monsters": [
       { "monster": "mon_blank", "weight": 135, "cost_multiplier": 0 },
@@ -51,13 +49,11 @@
   {
     "type": "monstergroup",
     "name": "GROUP_TINDALOS",
-	"override": true,
     "monsters": [ { "monster": "mon_hound_tindalos" }, { "group": "GROUP_DEMONS" } ]
   },
   {
     "name": "GROUP_MIL_WEAK",
     "type": "monstergroup",
-	"override": true,
     "monsters": [
       { "monster": "mon_zombie_soldier", "weight": 645 },
 	  { "group": "GROUP_MAGES", "weight": 25, "cost_multiplier": 3 },
@@ -69,7 +65,6 @@
   {
     "name": "GROUP_MIL_STRONG",
     "type": "monstergroup",
-    "override": true,
     "monsters": [
       { "monster": "mon_zombie_soldier", "weight": 565 },
       { "monster": "mon_zombie_soldier", "weight": 100, "cost_multiplier": 2, "pack_size": [ 1, 4 ] },
@@ -103,7 +98,6 @@
   {
     "name": "GROUP_MIL_BASE",
     "type": "monstergroup",
-    "override": true,
     "monsters": [
       { "monster": "mon_zombie_soldier", "weight": 580 },
       { "monster": "mon_zombie_soldier", "weight": 100, "cost_multiplier": 2 },
@@ -129,7 +123,6 @@
   {
     "name": "GROUP_AIRCRAFT_CARRIER",
     "type": "monstergroup",
-    "override": true,
     "//": "no children, 40% tech personel 20% civilian personel (med, fire, cook, clercs etc), 20% uniformed zombie, 10% army pilots, and 10% military zeds",
     "monsters": [
       { "monster": "mon_zombie_technician", "weight": 15 },
@@ -168,7 +161,6 @@
   {
     "type": "monstergroup",
     "name": "GROUP_ZOMBIE",
-    "override": true,
     "monsters": [
       { "monster": "mon_zombie", "weight": 1, "cost_multiplier": 7, "pack_size": [ 5, 20 ] },
       { "monster": "mon_zombie", "weight": 1, "cost_multiplier": 13, "pack_size": [ 15, 40 ] },
@@ -220,7 +212,6 @@
     "type": "monstergroup",
     "name": "GROUP_NETHER_FATIGUE_FIELD",
     "default": "mon_blank",
-    "override": true,
     "monsters": [
       { "monster": "mon_flying_polyp", "weight": 100, "cost_multiplier": 0 },
       { "monster": "mon_hunting_horror", "weight": 100, "cost_multiplier": 0 },
@@ -241,7 +232,6 @@
   {
     "type": "monstergroup",
     "name": "GROUP_NETHER_PORTAL",
-    "override": true,
     "default": "mon_gracke",
     "monsters": [
       { "monster": "mon_gelatin", "weight": 200, "cost_multiplier": 0 },
@@ -275,7 +265,6 @@
   {
     "type": "monstergroup",
     "name": "GROUP_FOREST",
-    "override": true,
     "monsters": [
       { "monster": "mon_null", "weight": 920 },
       { "monster": "mon_owlbear", "weight": 10, "cost_multiplier": 10 },
@@ -311,7 +300,6 @@
   {
     "type": "monstergroup",
     "name": "GROUP_CAVE",
-    "override": true,
     "monsters": [
       { "monster": "mon_null", "weight": 835 },
       { "group": "GROUP_DEMONS", "weight": 100, "cost_multiplier": 10, "pack_size": [ 1, 4 ] },
@@ -339,7 +327,6 @@
     "type": "monstergroup",
     "name": "GROUP_CENTRAL_LAB",
     "default": "mon_zombie_scientist",
-    "override": true,
     "monsters": [
       { "monster": "mon_zombie_scientist", "weight": 150, "cost_multiplier": 0 },
       { "monster": "mon_zombie_soldier", "weight": 25, "cost_multiplier": 0, "pack_size": [ 1, 4 ] },
@@ -376,7 +363,6 @@
   {
     "type": "monstergroup",
     "name": "GROUP_LAB",
-    "override": true,
     "default": "mon_zombie_scientist",
     "monsters": [
       { "monster": "mon_blob_small", "weight": 25, "cost_multiplier": 0, "pack_size": [ 1, 4 ] },
@@ -422,7 +408,6 @@
   {
     "type": "monstergroup",
     "name": "GROUP_DISTORTED_MICROLAB",
-    "override": true,
     "default": "mon_zombie_scientist",
     "monsters": [
       { "monster": "mon_zombie_phase_skulker", "freq": 100, "cost_multiplier": 0, "pack_size": [ 2, 3 ] },
@@ -450,7 +435,6 @@
   {
     "type": "monstergroup",
     "name": "GROUP_LAB_RESEARCHERS",
-    "override": true,
     "monsters": [
       { "monster": "mon_zombie_technician", "weight": 5, "cost_multiplier": 5 },
       { "monster": "mon_feral_human_tool", "weight": 1, "cost_multiplier": 5 },
@@ -474,7 +458,6 @@
     "type": "monstergroup",
     "name": "GROUP_LAB_FEMA",
     "default": "mon_zombie_scientist",
-    "override": true,
     "//": "Mostly scientists, lab personnel and regular zombies.",
     "monsters": [
       { "monster": "mon_feral_labsecurity_9mm", "weight": 18, "cost_multiplier": 8 },
@@ -499,7 +482,6 @@
   {
     "type": "monstergroup",
     "name": "GROUP_LAB_SURFACE",
-    "override": true,
     "default": "mon_zombie_scientist",
     "monsters": [
       { "monster": "mon_feral_labsecurity_9mm", "weight": 18, "cost_multiplier": 8 },
@@ -544,7 +526,6 @@
   {
     "type": "monstergroup",
     "name": "GROUP_LAB_SECURITY",
-    "override": true,
     "default": "mon_zombie_labsecurity",
     "monsters": [
       { "monster": "mon_feral_labsecurity_9mm", "weight": 22, "cost_multiplier": 8 },
@@ -577,7 +558,6 @@
   {
     "type": "monstergroup",
     "name": "GROUP_MICROLAB",
-    "override": true,
     "monsters": [
       { "monster": "mon_blob_small", "weight": 40, "cost_multiplier": 0, "pack_size": [ 3, 6 ] },
       { "monster": "mon_feral_labsecurity_9mm", "weight": 18, "cost_multiplier": 8 },
@@ -620,7 +600,6 @@
   {
     "type": "monstergroup",
     "name": "GROUP_TOWER_GOLEM",
-    "override": true,
     "//": "Cheap golems used to defend the average wizard's tower.",
     "monsters": [
       { "monster": "mon_plasticgolem", "weight": 700 },
@@ -742,7 +721,6 @@
   {
     "type": "monstergroup",
     "name": "GROUP_GOBLIN_STANDARD",
-    "override": true,
     "monsters": [
       { "monster": "mon_goblin_warrior", "weight": 900 },
       { "monster": "mon_goblin_warrior", "weight": 35, "pack_size": [ 2, 4 ] },

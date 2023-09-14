@@ -955,7 +955,7 @@
     "id": "bio_for_stamina",
     "type": "SPELL",
     "name": "Integrated Neurological Bracing",
-    "description": "Marketed as 'The end of energy needs,' this spell drains bionic electricity in order to magically precipitate a mesh over the brain which 'jump-starts' it, restoring the user's stamina.",
+    "description": "Marketed as 'The end of energy needs,' this spell drains bionic electric in order to magically precipitate a mesh over the brain which 'jump-starts' it, restoring the user's stamina.",
     "valid_targets": [ "self" ],
     "flags": [ "CONCENTRATE", "NO_LEGS", "SOMATIC" ],
     "effect": "recover_energy",
@@ -3702,7 +3702,7 @@
     "difficulty": 4,
     "components": "spell_components_spawn_gas",
     "max_level": 10,
-    "flags": [ "SOMATIC", "VERBAL", "WITH_CONTAINER", "PERMANENT" ],
+    "flags": [ "SOMATIC", "VERBAL", "PERMANENT" ],
     "energy_source": "MANA"
   },
   {
@@ -4530,6 +4530,14 @@
     "effect_str": "finger_firelighter"
   },
   {
+    "type": "item_group",
+    "id": "group_coffee_in_mug",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "coffee", "prob": 100, "charges": 5, "container-item": "ceramic_mug" }
+    ]
+  },
+  {
     "id": "spawn_cup_of_coffee",
     "type": "SPELL",
     "name": "flick",
@@ -4546,10 +4554,10 @@
     "min_duration": 36000,
     "max_duration": 36000,
     "base_energy_cost": 10,
-    "flags": [ "SOMATIC", "PERMANENT", "WITH_CONTAINER" ],
+    "flags": [ "SOMATIC", "PERMANENT", "SPAWN_GROUP" ],
     "shape": "blast",
     "effect": "spawn_item",
-    "effect_str": "coffee"
+    "effect_str": "group_coffee_in_mug"
   },
   {
     "id": "spawn_mug",
@@ -5199,6 +5207,14 @@
     "effect_str": "pills_sleep"
   },
   {
+    "type": "item_group",
+    "id": "group_apple_cider_in_waterskin",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "apple_cider", "prob": 100, "charges": 15, "container-item": "waterskin" }
+    ]
+  },
+  {
     "id": "spawn_apple_cider",
     "type": "SPELL",
     "name": "apple cider",
@@ -5215,10 +5231,10 @@
     "base_energy_cost": 0,
     "min_duration": 28800000,
     "max_duration": 28800000,
-    "flags": [ "SOMATIC", "NO_LEGS", "WITH_CONTAINER" ],
+    "flags": [ "SOMATIC", "NO_LEGS", "PERMANENT", "SPAWN_GROUP" ],
     "shape": "blast",
     "effect": "spawn_item",
-    "effect_str": "apple_cider"
+    "effect_str": "group_apple_cider_in_waterskin"
   },
   {
     "id": "spawn_down_blanket",
@@ -5661,10 +5677,10 @@
     "energy_source": "MANA",
     "max_level": 10,
     "difficulty": 1,
-    "flags": [ "WITH_CONTAINER" ],
+    "flags": [ "PERMANENT", "SPAWN_GROUP" ],
     "shape": "blast",
     "effect": "spawn_item",
-    "effect_str": "apple_cider"
+    "effect_str": "group_apple_cider_in_waterskin"
   },
   {
     "id": "conjure_jumper_cable",
@@ -7663,7 +7679,7 @@
     "valid_targets": [ "self" ],
     "flags": [ "CONCENTRATE" ],
     "effect": "spawn_item",
-    "effect_str": "electricity_aura",
+    "effect_str": "electric_aura",
     "shape": "blast",
     "energy_source": "MANA",
     "difficulty": 1,
@@ -8211,15 +8227,24 @@
     "difficulty": 4
   },
   {
+    "type": "item_group",
+    "id": "group_wine_in_skin_plus_bread",
+    "subtype": "collection",
+    "entries": [
+      { "item": "flatbread", "prob": 100 },
+      { "item": "wine_chardonnay", "prob": 100, "charges": 15, "container-item": "waterskin" }
+    ]
+  },
+  {
     "id": "spawn_wine_bread",
     "type": "SPELL",
     "name": "Flesh and Blood",
     "description": "Meditation leaves you weary for the day.",
     "valid_targets": [ "self" ],
-    "flags": [ "CONCENTRATE", "SILENT", "NO_HANDS", "WITH_CONTAINER" ],
+    "flags": [ "CONCENTRATE", "SILENT", "NO_HANDS", "PERMANENT", "SPAWN_GROUP" ],
     "energy_source": "MANA",
     "effect": "spawn_item",
-    "effect_str": "wine_chardonnay",
+    "effect_str": "group_wine_in_skin_plus_bread",
     "extra_effects": [ { "id": "spawn_bread" } ],
     "shape": "blast",
     "base_casting_time": 0,
@@ -8235,7 +8260,7 @@
     "name": "Flesh and Blood",
     "description": "Meditation leaves you weary for the day.",
     "valid_targets": [ "self" ],
-    "flags": [ "CONCENTRATE", "SILENT", "NO_HANDS" ],
+    "flags": [ "CONCENTRATE", "SILENT", "NO_HANDS", "PERMANENT" ],
     "energy_source": "MANA",
     "effect": "spawn_item",
     "effect_str": "flatbread",
@@ -8342,19 +8367,19 @@
                 { "u_near_om_location": "cemetery_religious_city" },
                 { "u_near_om_location": "cemetery" },
                 {
-                  "compare_int": [ { "global_val": "monsters_nearby", "id": "mon_mage_ghost" }, ">=", { "const": 1 } ]
+                  "math": [ "u_monsters_nearby('mon_mage_ghost')", ">=", "1" ]
                 },
                 {
-                  "compare_int": [ { "global_val": "monsters_nearby", "id": "mon_widow_ghost" }, ">=", { "const": 1 } ]
+                  "math": [ "u_monsters_nearby('mon_widow_ghost')", ">=", "1" ]
                 },
                 {
-                  "compare_int": [ { "global_val": "monsters_nearby", "id": "mon_child_ghost" }, ">=", { "const": 1 } ]
+                  "math": [ "u_monsters_nearby('mon_child_ghost')", ">=", "1" ]
                 },
                 {
-                  "compare_int": [ { "global_val": "monsters_nearby", "id": "mon_business_ghost" }, ">=", { "const": 1 } ]
+                  "math": [ "u_monsters_nearby('mon_business_ghost')", ">=", "1" ]
                 },
                 {
-                  "compare_int": [ { "global_val": "monsters_nearby", "id": "mon_fusion_ghost" }, ">=", { "const": 1 } ]
+                  "math": [ "u_monsters_nearby('mon_fusion_ghost')", ">=", "1" ]
                 },
                 { "u_has_effect": "sleep_deprived" },
                 { "u_has_effect": "badpoison" },
