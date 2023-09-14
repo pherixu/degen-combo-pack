@@ -281,6 +281,16 @@
     "color": "i_light_gray"
   },
   {
+    "type": "monstergroup",
+    "name": "GROUP_AZARKAN",
+    "monsters": [ { "monster": "mon_azarkan" } ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_KELKEMEMNON",
+    "monsters": [ { "monster": "mon_kelkememnon" } ]
+  },
+  {
     "type": "mapgen",
     "om_terrain": [ [ "office_towermage_roof_ne", "office_towermage_roof_nw" ], [ "office_towermage_roof_sw", "office_towermage_roof_se" ] ],
     "method": "json",
@@ -338,7 +348,7 @@
       ],
 	  "palettes": [ "helipad_palette_roof" ],
       "terrain": { ".": [ "t_flat_roof" ], ">": [ "t_stairs_down" ], "s": [ "t_open_air" ], ":": [ "t_laminated_door_glass_c" ], "=": [ "t_concrete" ], "p":  [ "t_pavement" ], "(": [ "t_glass_roof" ], "|": [ "t_rock_wall" ], "#": [ "t_glass_roof" ], "-": [ "t_rock_wall" ], "Ю": [ "t_gutter_drop" ] },
-	  "monsters": { "K": { "monster": "mon_kelkememnon", "chance": 100 }, "A": { "monster": "mon_azarkan", "chance": 100 } },
+	  "monsters": { "K": { "monster": "GROUP_KELKEMEMNON", "chance": 100 }, "A": { "monster": "GROUP_AZARKAN", "chance": 100 } },
 	  "traps": { "r": "tr_shadow", "v": "tr_swirling_vortex" },
 	  "place_item": [ { "item": "sunandmoon", "x": 8, "y": 7 } ],
 	  "place_items": [ { "item": "enchanted_misc", "x": [ 21, 23 ], "y": 6, "chance": 50, "repeat": 1 }, { "item": "enchanted_small_items", "x": [ 21, 23 ], "y": 6, "chance": 50, "repeat": 3 }, { "item": "jugofwhiteink", "x": [ 21, 23 ], "y": 6, "chance": 50, "repeat": 5 } ],

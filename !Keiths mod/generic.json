@@ -77,7 +77,6 @@
     "type": "furniture",
     "id": "f_safe_l",
     "name": "safe",
-	"copy-from": "f_safe_1",
     "looks_like": "f_safe_c",
     "symbol": "X",
     "description": "A small, heavy, and near-unbreachable metal box with a rotary combination lock.  With something to listen really closely and a hell of a lot of time, you might be able to crack it.",
@@ -91,14 +90,19 @@
     "oxytorch": { "result": "f_safe_o", "duration": "14 seconds" },
     "examine_action": "safe",
     "bash": {
-      "str_min": 40,
-      "str_max": 200,
-      "sound": "screeching metal!",
-      "sound_fail": "whump!",
+      "str_min": 35,
+      "str_max": 80,
+      "sound": "metal screeching!",
+      "sound_fail": "clang!",
       "items": [
-        { "item": "steel_chunk", "count": [ 1, 5 ] },
-        { "item": "scrap", "count": [ 1, 5 ] },
-        { "item": "rock", "count": [ 1, 2 ] }
+        { "item": "scrap", "count": [ 2, 8 ] },
+        { "item": "steel_chunk", "count": [ 2, 4 ] },
+        { "item": "sheet_metal_small", "count": [ 6, 10 ] },
+        { "item": "epoxy_chunk", "count": [ 30, 50 ] },
+        { "item": "pipe", "count": 1 },
+        { "item": "blood", "count": [ 10, 20 ] },
+        { "item": "cable", "count": [ 1, 3 ] },
+        { "item": "cu_pipe", "count": 1 }
       ]
     }
   },
@@ -190,7 +194,7 @@
       "items": [
         { "item": "pipe", "count": [ 6, 12 ] },
         { "item": "cu_pipe", "count": [ 1, 4 ] },
-        { "item": "cable", "charges": [ 1, 4 ] },
+        { "item": "cable", "count": [ 1, 4 ] },
         { "item": "epoxy_chunk", "count": [ 50, 75 ] },
         { "item": "blood", "count": [ 10, 20 ] },
         { "item": "sheet_metal", "count": [ 1, 2 ] },
@@ -210,7 +214,7 @@
         { "item": "epoxy_chunk", "count": [ 30, 50 ] },
         { "item": "pipe", "count": 1 },
         { "item": "blood", "count": [ 10, 20 ] },
-        { "item": "cable", "charges": [ 1, 3 ] },
+        { "item": "cable", "count": [ 1, 3 ] },
         { "item": "cu_pipe", "count": 1 }
       ]
     },
@@ -258,7 +262,7 @@
       "items": [
         { "item": "pipe", "count": [ 6, 12 ] },
         { "item": "cu_pipe", "count": [ 1, 4 ] },
-        { "item": "cable", "charges": [ 1, 4 ] },
+        { "item": "cable", "count": [ 1, 4 ] },
         { "item": "epoxy_chunk", "count": [ 50, 75 ] },
         { "item": "blood", "count": [ 10, 20 ] },
         { "item": "sheet_metal", "count": [ 1, 2 ] },
@@ -278,7 +282,7 @@
         { "item": "epoxy_chunk", "count": [ 30, 50 ] },
         { "item": "pipe", "count": 1 },
         { "item": "blood", "count": [ 10, 20 ] },
-        { "item": "cable", "charges": [ 1, 3 ] },
+        { "item": "cable", "count": [ 1, 3 ] },
         { "item": "cu_pipe", "count": 1 }
       ]
     },
@@ -341,7 +345,7 @@
         { "item": "pipe", "count": [ 6, 12 ] },
 		{ "item": "impression_cylinder" },
         { "item": "cu_pipe", "count": [ 1, 4 ] },
-        { "item": "cable", "charges": [ 1, 4 ] },
+        { "item": "cable", "count": [ 1, 4 ] },
         { "item": "epoxy_chunk", "count": [ 50, 75 ] },
         { "item": "blood", "count": [ 10, 20 ] },
         { "item": "sheet_metal", "count": [ 1, 2 ] },
@@ -361,7 +365,7 @@
         { "item": "epoxy_chunk", "count": [ 30, 50 ] },
         { "item": "pipe", "count": 1 },
         { "item": "blood", "count": [ 10, 20 ] },
-        { "item": "cable", "charges": [ 1, 3 ] },
+        { "item": "cable", "count": [ 1, 3 ] },
         { "item": "cu_pipe", "count": 1 }
       ]
     },
@@ -380,6 +384,7 @@
       "CSC_ENCHANTED_ARMOR",
       "CSC_ENCHANTED_POTIONS",
       "CSC_ENCHANTED_RUNES",
+      "CSC_ENCHANTED_ENCHANTING",
       "CSC_ENCHANTED_MODS",
       "CSC_ENCHANTED_OTHER",
 	  "CSC_ENCHANTED_CORPO",
@@ -639,7 +644,6 @@
     "flags": [ "SEMITANGIBLE" ],
     "material": [ "alien_liquid" ],
 	"container": "flask_glass",
-	"charges": 1,
     "symbol": "-",
     "color": "white",
     "use_action": { "type": "cast_spell", "spell_id": "draw_crystal_circle", "no_fail": true, "level": 10, "need_wielding": true }
@@ -658,7 +662,6 @@
     "flags": [ "SEMITANGIBLE" ],
     "material": [ "alien_liquid" ],
 	"container": "flask_glass",
-	"charges": 1,
     "symbol": "-",
     "color": "white",
     "use_action": { "type": "cast_spell", "spell_id": "draw_flame_circle", "no_fail": true, "level": 10, "need_wielding": true }
@@ -677,7 +680,6 @@
     "flags": [ "SEMITANGIBLE" ],
     "material": [ "alien_liquid" ],
 	"container": "flask_glass",
-	"charges": 1,
     "symbol": "-",
     "color": "white",
     "use_action": { "type": "cast_spell", "spell_id": "draw_blood_circle", "no_fail": true, "level": 10, "need_wielding": true }
@@ -696,7 +698,6 @@
     "flags": [ "SEMITANGIBLE" ],
     "material": [ "alien_liquid" ],
 	"container": "flask_glass",
-	"charges": 1,
     "symbol": "-",
     "color": "white",
     "use_action": { "type": "cast_spell", "spell_id": "draw_smoke_circle", "no_fail": true, "level": 10, "need_wielding": true }
@@ -715,7 +716,6 @@
     "flags": [ "SEMITANGIBLE" ],
     "material": [ "alien_liquid" ],
 	"container": "flask_glass",
-	"charges": 1,
     "symbol": "-",
     "color": "white",
     "use_action": { "type": "cast_spell", "spell_id": "draw_bile_circle", "no_fail": true, "level": 10, "need_wielding": true }
@@ -2557,7 +2557,6 @@
           "one_year_old_newspaper",
           "months_old_newspaper",
           "weeks_old_newspaper",
-          "necropolis_leaflet",
           "death_note",
           "note_mutant_alpha_boss",
           "evac_pamphlet",
@@ -2651,7 +2650,6 @@
           "one_year_old_newspaper",
           "months_old_newspaper",
           "weeks_old_newspaper",
-          "necropolis_leaflet",
           "death_note",
           "note_mutant_alpha_boss",
           "evac_pamphlet",

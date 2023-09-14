@@ -1384,22 +1384,6 @@
   },
   {
     "type": "item_group",
-    "id": "banknotes",
-    "copy-from": "banknotes",
-    "extend": {
-    "items": [
-      { "item": "money_one", "prob": 25, "count": [ 1, 25 ] },
-      { "item": "money_two", "prob": 2, "count": [ 1, 2 ] },
-      { "item": "money_five", "prob": 6, "count": [ 1, 5 ] },
-      { "item": "money_ten", "prob": 15, "count": [ 1, 3 ] },
-      { "item": "money_twenty", "prob": 40, "count": [ 1, 5 ] },
-      { "item": "money_fifty", "prob": 30, "count": [ 1, 3 ] },
-	  { "item": "money_hundred", "prob": 25, "count": [ 1, 3 ] }
-     ]
-    }
-  },
-  {
-    "type": "item_group",
     "id": "mil_armor",
     "copy-from": "mil_armor",
     "extend": { "items": [ { "item": "magic_mantle", "prob": 3 }, { "item": "observation_platform", "prob": 3 }, { "group": "gloves", "prob": 3 } ] }

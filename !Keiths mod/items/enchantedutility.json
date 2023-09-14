@@ -2784,7 +2784,7 @@
     "weight": "1 g",
     "volume": "250 ml",
     "price": 25000,
-    "charges": 1,
+
     "stack_size": 100,
     "material": [ "powder" ],
     "symbol": "!",
@@ -2846,7 +2846,7 @@
     "weight": "1 g",
     "volume": "250 ml",
     "price": 50000,
-    "charges": 1,
+
     "stack_size": 100,
     "material": [ "powder" ],
     "symbol": "!",
@@ -2908,7 +2908,7 @@
     "weight": "1 g",
     "volume": "250 ml",
     "price": 50000,
-    "charges": 1,
+
     "stack_size": 100,
     "material": [ "powder" ],
     "symbol": "!",
