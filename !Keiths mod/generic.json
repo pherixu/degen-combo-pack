@@ -595,7 +595,7 @@
     "color": "green",
     "symbol": "$",
     "price": 1000,
-    "flags": [ "OLD_CURRENCY" ]
+    "flags": [ "OLD_CURRENCY", "BANK_NOTE_SHAPED" ]
   },
   {
     "id": "prac_piloting",

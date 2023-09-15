@@ -1,0 +1,144 @@
+[
+  {
+    "id": "wallet",
+    "type": "GENERIC",
+    "category": "container",
+    "name": { "str": "wallet" },
+    "looks_like": "bag_plastic",
+    "description": "A small, flat case used to carry items such as currency, identification documents, and laminated cards.",
+    "volume": "200 ml",
+    "weight": "60 g",
+    "price": 1,
+    "price_postapoc": 10,
+    "material": [ "plastic" ],
+    "flags": [ "COLLAPSE_CONTENTS" ],
+    "symbol": ")",
+    "color": "dark_gray",
+    "pocket_data": [
+      {
+        "//": "Folded Sleeve",
+        "pocket_type": "CONTAINER",
+        "rigid": false,
+        "max_contains_weight": "60 g",
+        "max_contains_volume": "150 ml",
+        "moves": 100,
+        "flag_restriction": [ "BANK_NOTE_SHAPED" ]
+      },
+      {
+        "//": "Card Sleeves",
+        "pocket_type": "CONTAINER",
+        "rigid": false,
+        "max_contains_weight": "60 g",
+        "max_contains_volume": "150 ml",
+        "max_item_length": "85 mm",
+        "moves": 100,
+        "flag_restriction": [ "CREDIT_CARD_SHAPED" ]
+      },
+      {
+        "//": "Coin Purse",
+        "pocket_type": "CONTAINER",
+        "rigid": false,
+        "max_contains_weight": "600 g",
+        "max_contains_volume": "150 ml",
+        "moves": 200,
+        "flag_restriction": [ "COIN_SHAPED" ]
+      }
+    ]
+  },
+  {
+    "id": "wallet_duct_tape",
+    "type": "GENERIC",
+    "copy-from": "wallet",
+    "name": { "str": "duct tape wallet" },
+    "description": "A wallet made entirely out of duct tape.",
+    "material": [ "plastic" ],
+    "flags": [ "NO_REPAIR" ]
+  },
+  {
+    "id": "wallet_leather",
+    "type": "GENERIC",
+    "copy-from": "wallet",
+    "name": { "str": "leather wallet" },
+    "description": "A wallet made of leather.",
+    "material": [ "leather" ]
+  },
+  {
+    "id": "wallet_large",
+    "type": "GENERIC",
+    "copy-from": "wallet",
+    "name": { "str": "large wallet" },
+    "description": "A flat case used to carry items such as currency, identification documents, laminated cards, and other small items.",
+    "material": [ "leather" ],
+    "volume": "285 ml",
+    "weight": "80 g",
+    "extend": { "flags": [ "FANCY" ] },
+    "pocket_data": [
+      {
+        "//": "Folded Sleeve",
+        "pocket_type": "CONTAINER",
+        "rigid": false,
+        "max_contains_weight": "80 g",
+        "max_contains_volume": "175 ml",
+        "moves": 100,
+        "flag_restriction": [ "BANK_NOTE_SHAPED" ]
+      },
+      {
+        "//": "Card Sleeves",
+        "pocket_type": "CONTAINER",
+        "rigid": false,
+        "max_contains_weight": "80 g",
+        "max_contains_volume": "175 ml",
+        "max_item_length": "10 cm",
+        "moves": 100,
+        "flag_restriction": [ "CREDIT_CARD_SHAPED" ]
+      },
+      {
+        "//": "Coin Purse",
+        "pocket_type": "CONTAINER",
+        "rigid": false,
+        "max_contains_weight": "600 g",
+        "max_contains_volume": "175 ml",
+        "moves": 200,
+        "flag_restriction": [ "COIN_SHAPED" ]
+      }
+    ]
+  },
+  {
+    "id": "wallet_stylish",
+    "type": "GENERIC",
+    "copy-from": "wallet",
+    "name": { "str": "stylish wallet" },
+    "description": "A stylish flat case used to carry items such as currency, identification documents, laminated cards, and other small items.",
+    "material": [ "leather" ],
+    "extend": { "flags": [ "FANCY" ] }
+  },
+  {
+    "id": "wallet_travel",
+    "type": "TOOL_ARMOR",
+    "category": "clothing",
+    "symbol": ";",
+    "color": "dark_gray",
+    "name": { "str": "travel wallet" },
+    "description": "A flat case with a neck strap, used to carry items such as currency, identification documents, laminated cards, and other small items.",
+    "price": 15000,
+    "price_postapoc": 250,
+    "material": [ "plastic", "leather" ],
+    "flags": [ "OVERSIZE", "BELTED", "ALLOWS_NATURAL_ATTACKS", "TARDIS", "COLLAPSE_CONTENTS", "POWERARMOR_COMPATIBLE" ],
+    "weight": "708 g",
+    "volume": "500 ml",
+    "to_hit": -1,
+    "material_thickness": 2,
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "rigid": true,
+        "max_contains_weight": "600 g",
+        "max_contains_volume": "500 ml",
+        "moves": 400,
+        "flag_restriction": [ "BANK_NOTE_SHAPED", "CREDIT_CARD_SHAPED" ]
+      }
+    ],
+    "armor": [ { "encumbrance": 2, "coverage": 100, "covers": [ "torso" ], "specifically_covers": [ "torso_neck" ] } ],
+    "melee_damage": { "bash": 1 }
+  }
+]
