@@ -543,7 +543,7 @@
   "price_postapoc": 2500,
   "weight": "30 g",
   "longest_side": "76 cm",
-  "bashing": 2,
+    "melee_damage": { "bash": 2 },
   "ammo_type": "arrow",
   "damage": {
     "damage_type": "heat",
@@ -657,8 +657,8 @@
   "price_postapoc": 2500,
   "weight": "30 g",
   "longest_side": "76 cm",
-  "bashing": 2,
-  "ammo_type": "arrow",
+    "melee_damage": { "bash": 2 },
+    "ammo_type": "arrow",
   "damage": {
     "damage_type": "cold",
     "armor_penetration": 2
@@ -771,7 +771,7 @@
   "price_postapoc": 2500,
   "weight": "30 g",
   "longest_side": "76 cm",
-  "bashing": 2,
+    "melee_damage": { "bash": 2 },
   "ammo_type": "arrow",
   "damage": {
     "damage_type": "acid",
@@ -885,7 +885,7 @@
   "price_postapoc": 2500,
   "weight": "30 g",
   "longest_side": "76 cm",
-  "bashing": 2,
+    "melee_damage": { "bash": 2 },
   "ammo_type": "arrow",
   "damage": {
     "damage_type": "biological",
@@ -999,7 +999,7 @@
   "price_postapoc": 2500,
   "weight": "30 g",
   "longest_side": "76 cm",
-  "bashing": 2,
+    "melee_damage": { "bash": 2 },
   "ammo_type": "arrow",
   "damage": {
     "damage_type": "electric",
@@ -1108,7 +1108,7 @@
   "longest_side": "400 mm",
   "price_postapoc": 5000,
   "weight": "55 g",
-  "bashing": 1,
+    "melee_damage": { "bash": 1 },
   "ammo_type": "bolt",
   "damage": {
     "damage_type": "heat",
@@ -1218,7 +1218,7 @@
   "longest_side": "400 mm",
   "price_postapoc": 5000,
   "weight": "55 g",
-  "bashing": 1,
+    "melee_damage": { "bash": 1 },
   "ammo_type": "bolt",
   "damage": {
     "damage_type": "cold",
@@ -1328,7 +1328,7 @@
   "longest_side": "400 mm",
   "price_postapoc": 5000,
   "weight": "55 g",
-  "bashing": 1,
+    "melee_damage": { "bash": 1 },
   "ammo_type": "bolt",
   "damage": {
     "damage_type": "acid",
@@ -1438,7 +1438,7 @@
   "longest_side": "400 mm",
   "price_postapoc": 5000,
   "weight": "55 g",
-  "bashing": 1,
+    "melee_damage": { "bash": 1 },
   "ammo_type": "bolt",
   "damage": {
     "damage_type": "biological",
@@ -1548,7 +1548,7 @@
   "longest_side": "400 mm",
   "price_postapoc": 5000,
   "weight": "55 g",
-  "bashing": 1,
+    "melee_damage": { "bash": 1 },
   "ammo_type": "bolt",
   "damage": {
     "damage_type": "electric",
@@ -2191,7 +2191,7 @@
   ],
   "volume": "100 ml",
   "weight": "18 g",
-  "bashing": 1,
+    "melee_damage": { "bash": 1 },
   "ammo_type": "blunderbuss",
   "damage": {
     "damage_type": "bullet",
@@ -2296,7 +2296,7 @@
   ],
   "volume": "100 ml",
   "weight": "18 g",
-  "bashing": 1,
+    "melee_damage": { "bash": 1 },
   "ammo_type": "blunderbuss",
   "damage": {
     "damage_type": "bullet",
@@ -2401,7 +2401,7 @@
   ],
   "volume": "100 ml",
   "weight": "18 g",
-  "bashing": 1,
+    "melee_damage": { "bash": 1 },
   "ammo_type": "blunderbuss",
   "damage": {
     "damage_type": "bullet",
@@ -2506,7 +2506,7 @@
   ],
   "volume": "100 ml",
   "weight": "18 g",
-  "bashing": 1,
+    "melee_damage": { "bash": 1 },
   "ammo_type": "blunderbuss",
   "damage": {
     "damage_type": "bullet",
@@ -2611,7 +2611,7 @@
   ],
   "volume": "100 ml",
   "weight": "18 g",
-  "bashing": 1,
+    "melee_damage": { "bash": 1 },
   "ammo_type": "blunderbuss",
   "damage": {
     "damage_type": "bullet",
@@ -2859,7 +2859,7 @@
   ],
   "weight": "320 g",
   "volume": "250 ml",
-  "bashing": 4,
+    "melee_damage": { "bash": 4 },
   "price_postapoc": 500000,
   "flags": [
     "DURABLE_MELEE"
@@ -2988,8 +2988,7 @@
   "longest_side": "90 cm",
   "price": 98000,
   "price_postapoc": 500000,
-  "bashing": 5,
-  "cutting": 31,
+    "melee_damage": { "bash": 5, "cut": 31 },
   "relic_data": {
       "passive_effects": [
         {
@@ -3161,7 +3160,7 @@
   ],
   "volume": "1250 ml",
   "longest_side": "80 cm",
-  "bashing": 50,
+    "melee_damage": { "bash": 50 },
   "to_hit": {
     "grip": "weapon",
     "length": "long",
@@ -3265,8 +3264,7 @@
   ],
   "volume": "1135 ml",
   "longest_side": "184 cm",
-  "bashing": 8,
-  "cutting": 29,
+    "melee_damage": { "bash": 8, "cut": 29 },
   "to_hit": {
     "grip": "solid",
     "length": "long",
@@ -3431,7 +3429,7 @@
   "price_postapoc": 10,
   "volume": "30 ml",
   "longest_side": "20 cm",
-  "cutting": 6,
+    "melee_damage": { "cut": 6 },
   "to_hit": {
     "grip": "none",
     "length": "hand",
@@ -3474,8 +3472,7 @@
   "price": 500000,
   "longest_side": "90 cm",
   "price_postapoc": 15000,
-  "bashing": 17,
-  "cutting": 34,
+    "melee_damage": { "bash": 17, "cut": 34 },
   "material": [
     "steel",
     "wood",

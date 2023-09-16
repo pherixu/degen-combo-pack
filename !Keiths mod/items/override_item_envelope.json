@@ -1,0 +1,27 @@
+[
+  {
+    "id": "envelope",
+    "type": "GENERIC",
+    "category": "container",
+    "name": { "str": "envelope" },
+    "looks_like": "paper",
+    "description": "A flat paper container with a sealable flap, used to enclose a letter or other paper goods.",
+    "weight": "6750 mg",
+    "volume": "80 ml",
+    "longest_side": "241 mm",
+    "price": 0,
+    "price_postapoc": 0,
+    "material": [ "paper" ],
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "300 ml",
+        "max_contains_weight": "300 g",
+        "max_item_length": "240 mm",
+        "moves": 10
+      }
+    ],
+    "symbol": "`",
+    "color": "white"
+  }
+]

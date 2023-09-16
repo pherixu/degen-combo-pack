@@ -47,9 +47,7 @@
     "npc_class_id": "slave",
     "summon_msg": "You summon an enslaved thrall!",
     "place_randomly": true,
-	"charges_to_use": 10,
-    "moves": 50,
-    "radius": 1 
+    "moves": 50
 	},
 	    "flags": [ "SINGLE_USE" ]
   },

@@ -37,15 +37,16 @@
             { "u_is_wearing": "yidris_aura" },
             { "u_is_wearing": "atraxas_aura" }
           ]
+        },
+        {
+          "and": [
+            { "u_query": "Do you break the four contracts' seals at the foot of their origin, drawing the ire of their infernal creditor?", "default": true }
+          ]
         }
       ]
     },
      "effect": [
-    {
-	  "query": true,
-      "query_msg": "Do you break the four contracts' seals at the foot of their origin, drawing the ire of their infernal creditor?",
-      "u_cast_spell": { "id": "summon_devil", "hit_self": true }
-	}
+      { "u_cast_spell": { "id": "summon_devil", "hit_self": true } }
 	],
      "false_effect": [ 
 	 { "u_message": "You read the inscription on the throne: 'Here rests the Prince of Darkness, the four Kings who lay at his feet having cast for him a Throne.'", "popup": true }, 
@@ -246,10 +247,10 @@
         "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfffffffZfffffffAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
         "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfffffffffffffffffAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
         "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfffffffffffffffffAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-        "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfffffffffffffffffAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfffffffYfffffffffAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
         "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfffffffffffffAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
         "AAAAfffffffAAAAAAAAAAAAAAAAAAAAAAAAffffffAAAffffffAAAAAAAAAAAAAAAAAAAAAAAAAfffffAAAAAAAAAAAAAAAA",
-        "AAAffffffffffAAAAAAAAAAAAAAAAAAAffffffAAAAAAAAAfffffffAAAAAAAAAAAAAAAAAAffffffffffAAAAAAAAAAAAAA",
+        "AAAfffYffffffAAAAAAAAAAAAAAAAAAAffffffAAAAAAAAAfffffffAAAAAAAAAAAAAAAAAAffffYfffffAAAAAAAAAAAAAA",
         "AAfffffffffffffAAAAAAAAAAAAAAAffffffAAAAAAAAAAAAfffffffAAAAAAAAAAAAAAAfffffffffffffAAAAAAAAAAAAA",
         "AAffffffffffffffAAAAAAAAAAAfffffffAAAAAAAAAAAAAAAAfffffffAAAAAAAAAAAAffffffffffffffAAAAAAAAAAAAA",
         "AAffffQfffffffffffffffffffffffffAAAAAAAAAAAAAAAAAAAAffffffffffffffffffffffffffQffffAAAAAAAAAAAAA",
@@ -285,9 +286,9 @@
         "AAAAAAAAAAAAAAAAAAffffAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAffffAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
         "AAAAAAAAAAAAAAAAfffffffffffffffffffffffffffffffffffffffffffffffffffffAAAAAAAAAAAAAAAAAAAAAAAAAAA",
         "AAAAAAAAAAAAAAAAfffffffffffffffffffffffffffffffffffffffffffffffffffffAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-        "AAAAAAAAAAAAAAfffffffffffffffffffffffffffffffffffffffffffffffffffffffffAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "AAAAAAAAAAAAAAfffYfffffffffffffffffffffffffffffffffffffffffffffffffffffAAAAAAAAAAAAAAAAAAAAAAAAA",
         "AAAAAAAAAAAAfffffffffffffffffAAAAAAAAAAAAAAAAAAAAAAAAAAAAffffffffffffffffAAAAAAAAAAAAAAAAAAAAAAA",
-        "AAAAAAAAAAAAffffffffffffffffAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAffffffffffffffffAAAAAAAAAAAAAAAAAAAAAA",
+        "AAAAAAAAAAAAffffffffffffffffAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfffYffffffffffffAAAAAAAAAAAAAAAAAAAAAA",
         "AAAAAAAAAAAAffffffffffffffffAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAffffffffffffffffAAAAAAAAAAAAAAAAAAAAAA",
         "AAAAAAAAAAAAfffffffQfffffffAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAffffffffQffffffAAAAAAAAAAAAAAAAAAAAAA",
         "AAAAAAAAAAAAfffffffffffffffAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfffffffffffffffAAAAAAAAAAAAAAAAAAAAAA",
@@ -313,7 +314,8 @@
       "items": {  },
       "place_loot": [  ],
       "place_monsters": [  ],
-      "monsters": { "Z": { "monster": "GROUP_MAGES", "chance": 100, "repeat": 4 } },
+      "monsters": { "Z": { "monster": "GROUP_MAGES", "chance": 100 },
+                    "Y": { "monster": "GROUP_MAGES", "chance": 100 } },
       "vehicles": { "U": { "vehicle": "cannon_3in", "chance": 100 }, "Q": { "vehicle": "cannon_3in_plugged", "chance": 100 } }
     }
   },

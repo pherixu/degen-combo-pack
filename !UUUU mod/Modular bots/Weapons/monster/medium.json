@@ -9,7 +9,7 @@
     "melee_dice": 2,
     "melee_dice_sides": 8,
     "melee_damage": [ { "damage_type": "cut", "amount": 2 } ],
-    "special_attacks": [ [ "GRAB", 30 ] ],
+    "special_attacks": [ { "id": "grab", "cooldown": 30 } ],
     "extend": { "flags": [ "GRABS" ] }
   },
   {
@@ -45,7 +45,7 @@
     "melee_dice": 2,
     "melee_dice_sides": 6,
     "melee_damage": [ { "damage_type": "cut", "amount": 10 } ],
-    "special_attacks": [ [ "GRAB", 30 ] ],
+    "special_attacks": [ { "id": "grab", "cooldown": 30 } ],
     "extend": { "flags": [ "GRABS" ] }
   },
   {
@@ -65,7 +65,7 @@
     "type": "MONSTER",
     "name": "medium jaw bot",
     "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a massive hydraulic jaw",
-    "special_attacks": [ [ "GRAB", 30 ] ],
+    "special_attacks": [ { "id": "grab", "cooldown": 30 } ],
     "extend": { "flags": [ "GRABS" ] },
     "melee_skill": 6,
     "melee_dice": 4,

@@ -83,7 +83,7 @@
     "effect": "attack",
     "shape": "blast",
     "energy_source": "MANA",
-    "field_id": "fd_bees",
+    "field_id": "fd_bee_swarm",
     "field_chance": 4,
     "min_duration": 30000,
     "max_duration": 30000,

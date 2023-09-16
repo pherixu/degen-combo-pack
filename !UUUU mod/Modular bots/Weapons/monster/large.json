@@ -10,7 +10,7 @@
     "melee_dice": 2,
     "melee_dice_sides": 8,
     "melee_damage": [ { "damage_type": "cut", "amount": 2 } ],
-    "special_attacks": [ [ "GRAB", 60 ] ],
+    "special_attacks": [ { "id": "grab", "cooldown": 60 } ],
     "extend": { "flags": [ "GRABS" ] }
   },
   {
@@ -49,7 +49,7 @@
     "melee_dice": 2,
     "melee_dice_sides": 6,
     "melee_damage": [ { "damage_type": "cut", "amount": 4 } ],
-    "special_attacks": [ [ "GRAB", 60 ] ],
+    "special_attacks": [ { "id": "grab", "cooldown": 60 } ],
     "extend": { "flags": [ "GRABS" ] }
   },
   {
@@ -71,7 +71,7 @@
     "name": "large jaw bot",
     "description": "One of the many models of robots employed shortly before the collapse of civilization. This one is equipped with a massive hydraulic jaw",
     "revert_to_itype": "bot_largejawbot",
-    "special_attacks": [ [ "GRAB", 60 ] ],
+    "special_attacks": [ { "id": "grab", "cooldown": 60 } ],
     "extend": { "flags": [ "GRABS" ] },
     "melee_skill": 6,
     "melee_dice": 4,

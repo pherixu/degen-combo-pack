@@ -101,10 +101,8 @@
       {
         "text": "Get out of my sight.",
 		"trial": { "type": "INTIMIDATE", "difficulty": 500, "mod": [ [ "VALUE", 2 ], [ "TRUST", 2 ], [ "BRAVERY", -2 ] ] },
-        "topic": "TALK_DONE",
-        "success": { "effect": "flee" },
-		"failure": { "topic": "TALK_OPERATOR_ANGRY", "opinion": { "trust": 4, "value": -5, "anger": 10 } },
-        "opinion": { "trust": -1, "fear": -2, "anger": -5 }
+        "success": { "effect": "flee", "topic": "TALK_DONE", "opinion": { "trust": -1, "fear": -2, "anger": -5 } },
+		"failure": { "topic": "TALK_OPERATOR_ANGRY", "opinion": { "trust": 4, "value": -5, "anger": 10 } }
       },
       {
         "text": "I'm leaving.",
